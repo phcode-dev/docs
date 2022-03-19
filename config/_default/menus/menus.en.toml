@@ -40,11 +40,6 @@
 #   weight = 15
 
 [[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20
-
-[[main]]
   name = "Get Started"
   weight = 30
   identifier = "get-started"
