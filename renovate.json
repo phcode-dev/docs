@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "Asia/Calcutta",
+  "schedule": ["after 9pm on sunday"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies", "dependencies", "otherDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "dependencies"
+    }
+  ]
+}
