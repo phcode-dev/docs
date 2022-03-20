@@ -1,6 +1,44 @@
-## Why Doks?
+## Welcome to Phoenix Documentation
+This repository hosts the code for https://docs.phcode.dev/ . Please contribute to
+this repo for helping the Phoenix/Brackets community.
 
-Nine main reasons why you should use Doks:
+## Developing
+### Requirements
+
+- [Git](https://git-scm.com/) — latest source release
+- [Node.js](https://nodejs.org/) — latest LTS version or newer
+
+After cloning this repo locally, follow the below commands to start modifying
+Phoenix docs.
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start development server
+
+```bash
+npm run start
+```
+
+After starting the server, visit http://localhost:1313/ to preview your changes.
+
+### Submitting your changes
+* Raise a pull request to this GitHub repo after making your changes.
+* [docs.phcode.dev](https://docs.phcode.dev) will be automatically updated with your code once the pull request is merged.
+
+### More Documentation
+- [commands](https://getdoks.org/docs/prologue/commands/) for common tasks.
+- [Hugo](https://gohugo.io/documentation/)
+- [Doks](https://getdoks.org/)
+
+## Based on Docs template
+
+This repo is based on the Hugo template Doks. Doks brings in the following features:
+
+We should verify docs.phcode.dev for these features!
 
 1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/doks.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
 
@@ -27,60 +65,3 @@ Nine main reasons why you should use Doks:
 - __KaTeX__ math typesetting
 - __Mermaid__ diagrams and visualization
 - __highlight.js__ syntax highlighting
-
-## Requirements
-
-- [Git](https://git-scm.com/) — latest source release
-- [Node.js](https://nodejs.org/) — latest LTS version or newer
-
-<details>
-<summary>Why Node.js?</summary>
-
-Doks uses npm (included with Node.js) to centralize dependency management, making it [easy to update](https://getdoks.org/docs/help/how-to-update/) resources, build tooling, plugins, and build scripts.
-
-</details>
-
-## Get started
-
-Start a new Doks project in three steps:
-
-### 1. Install dependencies
-
-```bash
-npm install
-```
-
-### 2. Start development server
-
-```bash
-npm run start
-```
-
-## Other commands
-
-Doks comes with [commands](https://getdoks.org/docs/prologue/commands/) for common tasks.
-
-## Documentation
-
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
-- [Doks](https://getdoks.org/)
-
-## Communities
-
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
-
-[![OC sponsor 0](https://opencollective.com/doks/tiers/sponsor/0/avatar.svg)](https://opencollective.com/doks/tiers/sponsor/0/website)
-[![OC sponsor 1](https://opencollective.com/doks/tiers/sponsor/1/avatar.svg)](https://opencollective.com/doks/tiers/sponsor/1/website)
-
-## Backers
-
-Support this project by becoming a backer. Your avatar will show up here.
-
-[![Backers](https://opencollective.com/doks/tiers/backer.svg)](https://opencollective.com/doks)
