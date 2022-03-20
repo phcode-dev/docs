@@ -25,7 +25,18 @@ npm run start
 
 After starting the server, visit http://localhost:1313/ to preview your changes.
 
-### Submitting your changes
+### 3. Verifying generated static files
+After completing development, you should verify if the static files generated
+are correct. Run the following command:
+
+```bash
+npm run build
+npm run serveStatic
+```
+
+Then go to http://127.0.0.1:8080 to verify the static file changes
+
+### 4. Submitting your changes
 * Raise a pull request to this GitHub repo after making your changes.
 * [docs.phcode.dev](https://docs.phcode.dev) will be automatically updated with your code once the pull request is merged.
 
