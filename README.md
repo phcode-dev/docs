@@ -76,3 +76,11 @@ We should verify docs.phcode.dev for these features!
 - __KaTeX__ math typesetting
 - __Mermaid__ diagrams and visualization
 - __highlight.js__ syntax highlighting
+
+## License
+AGPL 3.0
+Copyright (c) 2022-present, core.ai
+
+Based on Doks template by
+Copyright (c) 2018-present, Gridsome
+Copyright (c) 2020-present, Henk Verlinde
