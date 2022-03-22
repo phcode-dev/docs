@@ -63,7 +63,7 @@
   name = "API"
   weight = 60
   identifier = "api"
-  url = ""
+  url = "/api/"
 
 [[social]]
   name = "GitHub"
