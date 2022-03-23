@@ -8,9 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "livePreview"
-weight: 999
+    parent: "features"
+weight: 700
 toc: true
-url: "/docs/livePreview/"
 ---
 Live Preview Page
