@@ -53,7 +53,7 @@
     "katex": "0.16.3",
     "lazysizes": "5.3.2",
     "markdownlint-cli2": "0.5.1",
-    "mermaid": "8.14.0",
+    "mermaid": "9.3.0",
     "node-fetch": "3.3.0",
     "node-static": "0.7.11",
     "postcss": "8.4.19",
