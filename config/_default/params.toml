@@ -4,7 +4,7 @@
 title = "Phoenix"
 titleSeparator = "-"
 titleAddition = "Phoenix Documentation"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description = "Phoenix is IDE running in a web browser. Phoenix has various features like a live preview that helps developers to see their changes live while making code changes. Phoenix also has more than 1500 extensions and themes"
 
 ## Documentation
 # docsVersion = "0.3"
