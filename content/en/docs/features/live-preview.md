@@ -1,6 +1,6 @@
 ---
 title: "Live Preview"
-description: ""
+description: "How to do live preview with phoenix"
 lead: ""
 date: 2022-03-23T07:23:12+05:30
 lastmod: 2022-03-23T07:23:12+05:30
