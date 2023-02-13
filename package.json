@@ -60,8 +60,8 @@
     "postcss-cli": "10.1.0",
     "purgecss-whitelister": "2.4.0",
     "shx": "0.3.4",
-    "stylelint": "14.16.1",
-    "stylelint-config-standard-scss": "6.1.0"
+    "stylelint": "15.1.0",
+    "stylelint-config-standard-scss": "7.0.0"
   },
   "otherDependencies": {
     "hugo": "0.92.1"
