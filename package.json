@@ -53,7 +53,7 @@
     "katex": "0.16.4",
     "lazysizes": "5.3.2",
     "markdownlint-cli2": "0.6.0",
-    "mermaid": "9.3.0",
+    "mermaid": "9.4.0",
     "node-fetch": "3.3.0",
     "node-static": "0.7.11",
     "postcss": "8.4.21",
@@ -61,7 +61,7 @@
     "purgecss-whitelister": "2.4.0",
     "shx": "0.3.4",
     "stylelint": "15.1.0",
-    "stylelint-config-standard-scss": "7.0.0"
+    "stylelint-config-standard-scss": "7.0.1"
   },
   "otherDependencies": {
     "hugo": "0.92.1"
