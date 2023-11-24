@@ -82,7 +82,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/phcode-dev/',
             label: 'GitHub',
             position: 'right',
           },
@@ -135,7 +135,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} core.ai scientific technologies private limited"`,
+        copyright: `Copyright © ${new Date().getFullYear()} core.ai scientific technologies private limited`,
       },
       prism: {
         theme: prismThemes.github,
