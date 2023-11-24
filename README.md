@@ -3,9 +3,11 @@ This repository hosts the code for https://docs.phcode.dev/ . Please contribute 
 this repo for helping the Phoenix/Brackets community.
 
 ## License
-AGPL 3.0
+
+CC BY License
 Copyright (c) 2022-present, core.ai
-=======
+
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
