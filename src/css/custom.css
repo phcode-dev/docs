@@ -6,25 +6,26 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #f8a949; /* Soft Orange for buttons and icons */
+  --ifm-color-primary-dark: #c96f2a; /* Darker Orange for headings and important elements */
+  --ifm-color-primary-darker: #b26425; /* Even Darker Orange for emphasized text or active states */
+  --ifm-color-primary-darkest: #a2571e; /* Nearly Brown Orange for critical warnings or strong emphasis */
+  --ifm-color-primary-light: #fde7d0; /* Very Pale Orange for backgrounds that require subtle differentiation */
+  --ifm-color-primary-lighter: #fdf5ec; /* Lightest Orange-Tinted White for background areas, ensuring better contrast */
+  --ifm-color-primary-lightest: #ffffff; /* Pure White for main content background to maintain maximum contrast */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(201, 111, 42, 0.1); /* Faint Orange for code highlights to maintain readability */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #f8a949; /* Soft Orange for buttons and icons */
+  --ifm-color-primary-dark: #c96f2a; /* Darker Orange for headings and important elements */
+  --ifm-color-primary-darker: #b26425; /* Even Darker Orange for emphasized text or active states */
+  --ifm-color-primary-darkest: #a2571e; /* Nearly Brown Orange for critical warnings or strong emphasis */
+  --ifm-color-primary-light: #4d3c30; /* Dark Brownish Gray for less prominent elements to ensure legibility */
+  --ifm-color-primary-lighter: #3a2e24; /* Darker Brownish Gray for secondary backgrounds, enhancing contrast */
+  --ifm-color-primary-lightest: #2c221b; /* Even Darker Brownish Gray for main backgrounds, maximizing contrast */
+  --docusaurus-highlighted-code-line-bg: rgba(201, 111, 42, 0.2); /* Slightly more visible Orange for code highlights */
 }
+
