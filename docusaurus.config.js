@@ -13,7 +13,7 @@ const config = {
   title: 'Phoenix Code Docs',
   tagline: 'Build the web',
   favicon: 'img/favicon.ico',
-  themes: ['@docusaurus/theme-live-codeblock'],
+  themes: ['@docusaurus/theme-live-codeblock','@docusaurus/theme-mermaid'],
   // Set the production url of your site here
   url: 'https://docs.phcode.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -37,6 +37,12 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  // Enable mermaid diagrams
+  markdown: {
+    mermaid: true,
+  },
+  // Style for math formulas
+  // https://docusaurus.io/docs/markdown-features/math-equations
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -53,6 +59,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          // below 3 lines are to enable math formula
+          // https://docusaurus.io/docs/markdown-features/math-equations
           path: 'docs',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
