@@ -57,6 +57,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+       sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
+
         docs: {
           sidebarPath: './sidebars.js',
           // below 3 lines are to enable math formula
