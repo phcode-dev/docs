@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Phoenix Code',
+  title: 'Phoenix Code Docs',
   tagline: 'Build the web',
   favicon: 'img/favicon.ico',
 
