@@ -89,7 +89,18 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'api',
+        path: 'api',
+        routeBasePath: 'api',
+        sidebarPath: './sidebars.js',
+        // ... other options
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -113,6 +124,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {to: '/api/intro', label: 'API', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/phcode-dev/',
@@ -130,6 +142,10 @@ const config = {
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
+              },
+              {
+                label: 'API',
+                to: '/api/intro',
               },
             ],
           },
