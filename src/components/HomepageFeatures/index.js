@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Enhanced Inline Editors',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          Dive into a seamless coding experience with PhCode's inline editors, allowing you to edit CSS directly
+          related to specific elements, streamlining your workflow without tab-switching.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Live Preview',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+          Instantly see your HTML and CSS changes come to life in the browser with PhCode's Live Preview,
+          merging desktop efficiency with in-browser practicality for a time-saving development process.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Superior Preprocessor Support',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+          Elevate your preprocessor game with PhCode's advanced features for LESS and SCSS,
+          including Quick Edit and Live Highlight, for a more intuitive and productive coding journey.
       </>
     ),
   },
