@@ -88,7 +88,7 @@ const config = {
         },
         // Will be passed to @docusaurus/plugin-google-gtag (only enabled when explicitly specified)
         gtag: {
-          trackingID: 'G-999X9XX9XX',
+          trackingID: 'G-XMWSCV9SP1',
           anonymizeIP: false,
         },
       }),
