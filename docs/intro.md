@@ -2,46 +2,32 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Getting Started with Phoenix Code
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to Phoenix Code! Let's embark on a quick journey to get you up and running with Phoenix Code in less than 5 minutes.
 
-## Getting Started
+## Step 1: Download
 
-Get started by **creating a new site**.
+First things first, you'll need to download the Phoenix Code installer tailored to your system. We've made sure to support a wide range of platforms to get you started without a hitch.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Supported Platforms
 
-### What you'll need
+- **Mac**: Both M1 and Intel chipsets
+- **Windows**: x64 architectures
+- **Linux**: Ubuntu, Pop!_OS, Fedora, and more
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Where to Download
 
-## Generate a new site
+Navigate to [https://phcode.io](https://phcode.io) to access the download section. Choose the version compatible with your operating system to begin the download.
 
-Generate a new Docusaurus site using the **classic template**.
+## Step 2: Installation
 
-The classic template will automatically be added to your project after you run the command:
+Once the download is complete, run the installer and follow the on-screen instructions. The setup process is straightforward and designed to get Phoenix Code up and running on your machine in no time.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Prefer the Web?
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Not keen on installing software? No worries! Phoenix Code is also available as a web version. Simply visit [https://phcode.dev](https://phcode.dev) to access Phoenix Code directly from your browser. It's that easy!
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## You're All Set!
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Congratulations! You've successfully embarked on your journey with Phoenix Code. Start exploring its features and capabilities tailored to enhance your coding experience.
