@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Documentation for Phoenix Code editor <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
