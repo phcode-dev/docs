@@ -86,6 +86,11 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        // Will be passed to @docusaurus/plugin-google-gtag (only enabled when explicitly specified)
+        gtag: {
+          trackingID: 'G-999X9XX9XX',
+          anonymizeIP: false,
+        },
       }),
     ],
   ],
