@@ -174,8 +174,8 @@ const config = {
                 href: 'https://www.reddit.com/r/brackets/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/phcodedev/',
+                label: 'X',
+                href: 'https://x/phcodedev/',
               },
               {
                 label: 'YouTube',
