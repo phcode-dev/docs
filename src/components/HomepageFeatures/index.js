@@ -4,35 +4,27 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Enhanced Inline Editors',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Craft Code Visually',
+    Svg: require('@site/static/img/meetPhoenixG1.svg').default,
     description: (
       <>
-          Dive into a seamless coding experience with PhCode's inline editors, allowing you to edit CSS directly
-          related to specific elements, streamlining your workflow without tab-switching.
+          Live previews eliminate guesswork,
+
+          making web development quicker and less stressful.
       </>
     ),
   },
   {
-    title: 'Live Preview',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Runs Everywhere',
+    Svg: require('@site/static/img/allSystems.svg').default,
     description: (
       <>
-          Instantly see your HTML and CSS changes come to life in the browser with PhCode's Live Preview,
-          merging desktop efficiency with in-browser practicality for a time-saving development process.
+          Phoenix Code is natively available for macOS, Windows, and Linux.
+
+          ChromeOS or alternative platforms? Get the web version on any browser-enabled device.
       </>
     ),
-  },
-  {
-    title: 'Superior Preprocessor Support',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-          Elevate your preprocessor game with PhCode's advanced features for LESS and SCSS,
-          including Quick Edit and Live Highlight, for a more intuitive and productive coding journey.
-      </>
-    ),
-  },
+  }
 ];
 
 function Feature({Svg, title, description}) {
