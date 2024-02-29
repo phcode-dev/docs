@@ -175,7 +175,7 @@ const config = {
               },
               {
                 label: 'X',
-                href: 'https://x/phcodedev/',
+                href: 'https://x.com/phcodedev',
               },
               {
                 label: 'YouTube',
