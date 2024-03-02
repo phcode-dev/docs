@@ -7,7 +7,7 @@ The Find in Files feature in Phoenix Code is a powerful tool to quickly search f
 
 To search across your project files, use `Ctrl-Shift-F` on Windows/Linux or `Cmd-Shift-F` on Mac, or select `Find > Find in Files` from the menu. This feature searches for your term throughout the project's files and displays each occurrence with its file name, line number, and a snippet of the code for context.
 
-![Alt text](images/find/find-in-files.png)
+![Alt text](images/find/fif.png)
 
 ## Using File Filters
 
@@ -15,11 +15,13 @@ By default, Find in Files searches all files in your project folder. You can exc
 
 * Click the "No Files Excluded" dropdown from the search bar.
 
-  ![Alt text](images/find/dropdown.png)
+  ![Alt text](images/find/new-exclusion.png)
 * Choose "New Exclusion Set"
 * Enter one or more patterns to exclude/include in the dialog.
 
 To edit an exclusion set later, open the same dropdown and hover over the exclusion set in the list to reveal a pencil icon - click this to edit it.
+
+![Alt text](images/find/dropdown.png)
 
 ## Creating an Exclusion/Inclusion Filter
 
