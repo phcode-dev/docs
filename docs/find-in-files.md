@@ -15,8 +15,11 @@ To search within a specific folder in Phoenix:
 
 1. Right-click on the folder in the Files panel where you want to perform the search.
 1. From the context menu that appears, select "Find in...".
+  
   ![Alt text](images/find/folder.png)
-1. The find bar will now appear with search restricted to that folder (See `in y/` in the below image).
+
+3. The find bar will now appear with search restricted to that folder (See `in y/` in the below image).
+ 
   ![Alt text](image.png)
 
 ## Using File Filters
