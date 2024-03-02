@@ -20,7 +20,7 @@ To search within a specific folder in Phoenix:
 
 3. The find bar will now appear with search restricted to that folder (See `in y/` in the below image).
  
-  ![Alt text](image.png)
+  ![Alt text](images/find/inFolder.png)
 
 ## Using File Filters
 
@@ -59,6 +59,8 @@ This section describes the format of the exclusion/inclusion glob pattern.
    *.js
    *.json
    ```
-1. `*.js` will match `a/b/x.js`, `xyx.js`
+1. To match all JavaScript files in any directory, use `*.js`. This matches files like `a/b/x.js` and `xyz.js`.
+1. To match JavaScript files only in the project root, use `./*.js`. This matches `x.js` in the root but not `y/x.js` in a subdirectory.
+1. To match css files only in a folder `search/folder`, use `search/folder/*.css`. This matches `search/folder/x.css` but not `y/x.css`.
 1. `?.js` will match only `a/b/x.js` and not `xyx.js`
 1. `**/some_folder/**` will match `some_folder` anywhere. More complex glob patterns can be provided.
