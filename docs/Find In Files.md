@@ -21,9 +21,8 @@ By default, Find in Files searches all files in your project folder. You can exc
 
 To edit an exclusion set later, open the same dropdown and hover over the exclusion set in the list to reveal a pencil icon - click this to edit it.
 
-![Alt text](<Screenshot from 2024-03-02 19-25-25.png>)
-
 ## Creating an Exclusion/Inclusion Filter
+
 The Edit Exclusion Filter dialog in Phoenix allows you to specify which files and folders should be excluded or included during project searches.
 
 ![Alt text](images/find/dialog.png)
