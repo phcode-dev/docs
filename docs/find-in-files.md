@@ -63,8 +63,6 @@ This section describes the format of the exclusion/inclusion glob pattern.
 1. To match JavaScript files only in the project root, use `./*.js`. This matches `x.js` in the root but not `y/x.js` in a subdirectory.
 1. To match css files only in a folder `search/folder`, use `search/folder/*.css`. This matches `search/folder/x.css` but not `y/x.css`.
 1. `?.js` will match only `a/b/x.js` and not `xyx.js`
-1. `**/some_folder/**` will match `some_folder` anywhere. More complex glob patterns can be provided.
-1. `some/file.txt` which is not a glob filter path (doesn't contain *,!,[] or ?) will match any path that has it as substring. Eg. `other/some/file.txt` or `other/some/file.txt.things` , etc...
+1. `**/some_folder/**` will match `some_folder` anywhere.
 1. `[]` to declare a range of characters to match (`example.[0-9]` to match on `example.0`, `example.1`, …)
-1. `[!...]` to negate a range of characters to match (`example.[!0-9]` to match on `example.a`, `example.b`, but not `example.0`)
 1. More complex glob patterns can be provided. See: https://www.malikbrowne.com/blog/a-beginners-guide-glob-patterns/
