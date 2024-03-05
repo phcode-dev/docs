@@ -1,17 +1,29 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+arun:
+  name: Arun Bose
+  title: Maintainer of Phoenix and Brackets code editors
+  url: https://github.com/abose
+  image_url: https://github.com/abose.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+charly:
+  name: Charly P Abraham
+  title: Maintainer of Phoenix and Brackets code editors
+  url: https://github.com/charlypa
+  image_url: https://github.com/charlypa.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+kiran:
+  name: Kiran Bose
+  title: Community Contributor
+  url: https://github.com/kiranbose
+  image_url: https://github.com/kiranbose.png
+
+mathew:
+  name: Mathew Dennis
+  title: Quality Control & Social Media
+  url: https://github.com/mathewdennis1
+  image_url: https://github.com/mathewdennis1.png
+
+phoenixBot:
+  name: Phoenix Code Bot
+  title: Our little elf who keeps the whole place togather
+  url: https://github.com/phoenixide
+  image_url: https://github.com/phoenixide.png
