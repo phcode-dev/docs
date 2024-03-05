@@ -23,7 +23,7 @@ Phoenix Code marks the first large-scale, truly independent release from the Bra
 
 This release is made possible by the Phoenix Code Team- [Arun](https://github.com/abose), [Charly](https://github.com/charlypa) and [Mathew](https://github.com/mathewdennis1). Our shiny new website [phcode.io](https://phcode.io) is built by community contribution from [Kiran](https://github.com/kiranbose).
 
-We would also like to thank the S-tier community support provided byt the [Tauri](https://tauri.app/) development team, esp. [Fabian](https://github.com/FabianLars).
+We would also like to thank the S-tier community support provided by the [Tauri](https://tauri.app/) development team, esp. [Fabian](https://github.com/FabianLars).
 
 ## Looking Ahead
 
