@@ -29,40 +29,33 @@ By default, Find in Files searches all files in your project folder. You can exc
 * Click the "No Files Excluded" dropdown from the search bar.
 
   ![Alt text](images/find/new-exclusion.png)
-* Choose "New Exclusion Set"
-* Enter one or more patterns to exclude/include in the dialog.
 
-To edit an exclusion set later, open the same dropdown and hover over the exclusion set in the list to reveal a pencil icon - click this to edit it.
+Phoenix Code allows you to specify which files and folders should be excluded or included during project searches.
 
-![Alt text](images/find/dropdown.png)
+### For searching only within files matching pattern
 
-## Creating an Exclusion/Inclusion Filter
+When you select `Search in files` option from the above dropdown, the filter will search only within files and folders that match the entered patterns. Entering `*.json,*.css` will include only JSON and css files in your search results, or just enter `json` to select any files having charecters `json` in its path. See more patterns below.
 
-The Edit Exclusion Filter dialog in Phoenix allows you to specify which files and folders should be excluded or included during project searches.
+![Alt text](images/find/search_in_files.png)
 
-![Alt text](images/find/dialog.png)
+### For Excluding files
 
-### For Exclusion
-
-When the toggle is set to "Excluded", the filter will ignore files and folders that match the patterns you enter. For instance, typing `*.json` in the text area will exclude all JSON files from your search results. The dialog will show a status message like "Allows 67 of 72 files in project," meaning that 5 files matching the pattern will not be included in the search.
-
-### For Inclusion
-
-When the toggle is switched to "Included", the filter will search only within files and folders that match the entered patterns. Entering `*.json` will include only JSON files in your search results. The status message, such as "Allows 5 of 72 files in project," indicates that only 5 files fitting the pattern will be searchable.
+When you select `Exclude files` option from the above dropdown, the filter will ignore files and folders that match the patterns you enter. For instance, typing `*.json` in the text area will exclude all JSON files from your search results. See more patterns below.
 
 ## The filter pattern
 
-This section describes the format of the exclusion/inclusion glob pattern.
+This section describes the format of the exclusion/search within files glob pattern.
 
-1. Each pattern should be entered in its own line. You can specify multiple patterns in its own line Eg. 
+1. Each pattern should be entered as a comma seperated text. You can specify multiple patterns:
    ```txt
-   *.js
-   *.json
+   *.js,*.json
    ```
+1. To fuzzy search, just enter text. Eg. entering `css` will match all filenames that has the letters `css` in its path name like `x/st.css` and `cssFile.md`.
 1. To match all JavaScript files in any directory, use `*.js`. This matches files like `a/b/x.js` and `xyz.js`.
 1. To match JavaScript files only in the project root, use `./*.js`. This matches `x.js` in the root but not `y/x.js` in a subdirectory.
 1. To match css files only in a folder `search/folder`, use `search/folder/*.css`. This matches `search/folder/x.css` but not `y/x.css`.
 1. `?.js` will match only `a/b/x.js` and not `xyx.js`
 1. `**/some_folder/**` will match `some_folder` anywhere.
 1. `[]` to declare a range of characters to match (`example.[0-9]` to match on `example.0`, `example.1`, …)
+1. To search for files names with `,` in it, use escape char `\`. Eg. To match a file with name `hello,world.js`, the filter string to use is `hello\,world.js`.
 1. More complex glob patterns can be provided. See: https://www.malikbrowne.com/blog/a-beginners-guide-glob-patterns/
