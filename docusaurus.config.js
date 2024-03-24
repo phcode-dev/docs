@@ -140,6 +140,11 @@ const config = {
           {to: '/api/intro', label: 'API', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            href: 'https://phcode.io/',
+            label: 'Download',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/phcode-dev/',
             label: 'GitHub',
             position: 'right',
