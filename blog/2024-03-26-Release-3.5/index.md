@@ -1,11 +1,12 @@
 ---
-slug: release-2
-title: Phoenix Code Release 3.5.5 is out
+slug: release-3.5
+title: March-2024 Release (V-3.5) is now Live 
 authors: [arun, charly, kiran, phoenixBot]
 tags: [Native Apps, Windows, Linux, Mac, Release]
 ---
 
-The March release of Phoenix Code is out.
+The March release(3.5) of Phoenix Code is now available for download
+at [phcode.io](https://phcode.io).
 This month's update improves support for large projects, Find in Files, and app stability.
 
 ## Inline HTML Number Dials
