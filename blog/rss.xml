@@ -4,10 +4,50 @@
         <title>Phoenix Code Docs Blog</title>
         <link>https://docs.phcode.dev/blog</link>
         <description>Phoenix Code Docs Blog</description>
-        <lastBuildDate>Tue, 05 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[March-2024 Release (V-3.5) is now Live]]></title>
+            <link>https://docs.phcode.dev/blog/release-3.5</link>
+            <guid>https://docs.phcode.dev/blog/release-3.5</guid>
+            <pubDate>Tue, 26 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The March release(3.5) of Phoenix Code is now available for download]]></description>
+            <content:encoded><![CDATA[<p>The March release(3.5) of Phoenix Code is now available for download
+at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.
+This month's update improves support for large projects, Find in Files, and app stability.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="inline-html-number-dials">Inline HTML Number Dials<a href="https://docs.phcode.dev/blog/release-3.5#inline-html-number-dials" class="hash-link" aria-label="Direct link to Inline HTML Number Dials" title="Direct link to Inline HTML Number Dials">​</a></h2>
+<p>You can now use number dials in inline HTML styles, not just in CSS files.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/f56ab73b-c080-4f01-a083-f41aa10c3d16" alt="image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-filters---advanced-find-in-files">Search Filters - Advanced Find in Files<a href="https://docs.phcode.dev/blog/release-3.5#search-filters---advanced-find-in-files" class="hash-link" aria-label="Direct link to Search Filters - Advanced Find in Files" title="Direct link to Search Filters - Advanced Find in Files">​</a></h2>
+<p>All new search filters to find exactly what you want. <code>Search in files</code> or
+<code>Exclude files</code> matching the given pattern instantly.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/9a46a6a8-01a2-45db-aebc-9b280977bdc1" alt="new find in files" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-improvements">Other Improvements<a href="https://docs.phcode.dev/blog/release-3.5#other-improvements" class="hash-link" aria-label="Direct link to Other Improvements" title="Direct link to Other Improvements">​</a></h2>
+<ul>
+<li>Projects with very large number of files can now be opened.</li>
+<li>Performance improvement when opening minified CSS/JS files and other formats
+with very long lines.</li>
+<li>Added support for beautifying SCSS, SASS, LESS, TSX, and JSX files. The
+beautification feature now preserves the cursor position.</li>
+<li>Improved startup speed and overall app stability.</li>
+<li>Bug fixes and improvements to new project dialog.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.5#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:">​</a></h2>
+<ul>
+<li><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer">https://github.com/orgs/phcode-dev/discussions</a></li>
+<li><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
+<li><a href="https://opencollective.com/phoenix-ide" target="_blank" rel="noopener noreferrer"><strong>Consider supporting us</strong> on Open Collective</a>. Every contribution helps us to keep improving and expanding Phoenix Code.</li>
+</ul>
+<p>With gratitude,</p>
+<p>The Phoenix Team</p>]]></content:encoded>
+            <category>Native Apps</category>
+            <category>Windows</category>
+            <category>Linux</category>
+            <category>Mac</category>
+            <category>Release</category>
+        </item>
         <item>
             <title><![CDATA[Introducing Phoenix Code Desktop- Now on Windows, Mac & Linux]]></title>
             <link>https://docs.phcode.dev/blog/welcome</link>

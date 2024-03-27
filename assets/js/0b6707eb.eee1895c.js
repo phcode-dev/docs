@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[8646],{4140:s=>{s.exports=JSON.parse('{"label":"Native Apps","permalink":"/blog/tags/native-apps","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
