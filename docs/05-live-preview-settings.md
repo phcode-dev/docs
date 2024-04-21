@@ -28,7 +28,7 @@ Within the Live Preview Settings dialog, you can configure the following options
 
     - **Serving Folder in Project**: Specify the path to the folder in your project that your server serves (e.g., `www/`, default is `/`, ie the full project is assumed to be served by the given server).
 
-    - **Server Framework**: Choose the framework or environment your server uses from the dropdown menu. If your server supports hot reloading, check the corresponding box to enable this feature. Currently 2 options are supported- [Docusaurus](https://docusaurus.io/) and `unknown`. Select `unknown` for all frameworks that are not `Docusaurus`.
+    - **Server Framework**: Choose the framework or environment your server uses from the dropdown menu. If your server supports hot reloading, check the corresponding box to enable this feature. Currently 2 options are supported- [Docusaurus](https://docusaurus.io/) and `Custom`. Select `Custom` for all frameworks that are not `Docusaurus`.
 
 After configuring these settings, click 'Done' to save and apply your settings. The live preview will now use your custom server.
 
