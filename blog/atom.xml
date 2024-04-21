@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://docs.phcode.dev/blog</id>
+    <id>https://docs.phcode.dev/blog/</id>
     <title>Phoenix Code Docs Blog</title>
     <updated>2024-03-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://docs.phcode.dev/blog"/>
+    <link rel="alternate" href="https://docs.phcode.dev/blog/"/>
     <subtitle>Phoenix Code Docs Blog</subtitle>
     <icon>https://docs.phcode.dev/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[March-2024 Release (V-3.5) is now Live]]></title>
-        <id>https://docs.phcode.dev/blog/release-3.5</id>
-        <link href="https://docs.phcode.dev/blog/release-3.5"/>
+        <id>https://docs.phcode.dev/blog/release-3.5/</id>
+        <link href="https://docs.phcode.dev/blog/release-3.5/"/>
         <updated>2024-03-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The March release(3.5) of Phoenix Code is now available for download]]></summary>
         <content type="html"><![CDATA[<p>The March release(3.5) of Phoenix Code is now available for download
 at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.
 This month's update improves support for large projects, Find in Files, and app stability.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="inline-html-number-dials">Inline HTML Number Dials<a href="https://docs.phcode.dev/blog/release-3.5#inline-html-number-dials" class="hash-link" aria-label="Direct link to Inline HTML Number Dials" title="Direct link to Inline HTML Number Dials">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="inline-html-number-dials">Inline HTML Number Dials<a href="https://docs.phcode.dev/blog/release-3.5/#inline-html-number-dials" class="hash-link" aria-label="Direct link to Inline HTML Number Dials" title="Direct link to Inline HTML Number Dials">​</a></h2>
 <p>You can now use number dials in inline HTML styles, not just in CSS files.</p>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/f56ab73b-c080-4f01-a083-f41aa10c3d16" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-filters---advanced-find-in-files">Search Filters - Advanced Find in Files<a href="https://docs.phcode.dev/blog/release-3.5#search-filters---advanced-find-in-files" class="hash-link" aria-label="Direct link to Search Filters - Advanced Find in Files" title="Direct link to Search Filters - Advanced Find in Files">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-filters---advanced-find-in-files">Search Filters - Advanced Find in Files<a href="https://docs.phcode.dev/blog/release-3.5/#search-filters---advanced-find-in-files" class="hash-link" aria-label="Direct link to Search Filters - Advanced Find in Files" title="Direct link to Search Filters - Advanced Find in Files">​</a></h2>
 <p>All new search filters to find exactly what you want. <code>Search in files</code> or
 <code>Exclude files</code> matching the given pattern instantly.</p>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/9a46a6a8-01a2-45db-aebc-9b280977bdc1" alt="new find in files" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-improvements">Other Improvements<a href="https://docs.phcode.dev/blog/release-3.5#other-improvements" class="hash-link" aria-label="Direct link to Other Improvements" title="Direct link to Other Improvements">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-improvements">Other Improvements<a href="https://docs.phcode.dev/blog/release-3.5/#other-improvements" class="hash-link" aria-label="Direct link to Other Improvements" title="Direct link to Other Improvements">​</a></h2>
 <ul>
 <li>Projects with very large number of files can now be opened.</li>
 <li>Performance improvement when opening minified CSS/JS files and other formats
@@ -33,7 +33,7 @@ beautification feature now preserves the cursor position.</li>
 <li>Improved startup speed and overall app stability.</li>
 <li>Bug fixes and improvements to new project dialog.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.5#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.5/#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:">​</a></h2>
 <ul>
 <li><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer">https://github.com/orgs/phcode-dev/discussions</a></li>
 <li><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
@@ -65,28 +65,28 @@ beautification feature now preserves the cursor position.</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[Introducing Phoenix Code Desktop- Now on Windows, Mac & Linux]]></title>
-        <id>https://docs.phcode.dev/blog/welcome</id>
-        <link href="https://docs.phcode.dev/blog/welcome"/>
+        <id>https://docs.phcode.dev/blog/welcome/</id>
+        <link href="https://docs.phcode.dev/blog/welcome/"/>
         <updated>2024-03-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We're thrilled to share a huge update with you all today - Phoenix Code native apps are officially here! 🎉 . Get your copy from phcode.io !]]></summary>
         <content type="html"><![CDATA[<p>We're thrilled to share a huge update with you all today - Phoenix Code native apps are officially here! 🎉 . Get your copy from <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a> !</p>
 <p>We have been working hard over the last several months to make native apps possible. It took a lot of effort and perseverance with our limited resources to reach this far. We hope to have your support in doing more :)</p>
 <p>With this update,  Phoenix Code can now run almost anywhere! Native apps are available for Windows, Mac and most Linux distributions. For Chrome-OS and other platforms, simply use the web browser version; no install needed.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-back">Looking Back<a href="https://docs.phcode.dev/blog/welcome#looking-back" class="hash-link" aria-label="Direct link to Looking Back" title="Direct link to Looking Back">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-back">Looking Back<a href="https://docs.phcode.dev/blog/welcome/#looking-back" class="hash-link" aria-label="Direct link to Looking Back" title="Direct link to Looking Back">​</a></h2>
 <p>The team building Phoenix Code started its history as some of the initial team members building Brackets at Adobe from 2014. Phoenix Code took over the full time development of Brackets in 2021. We had a mammoth task to bring Brackets up to date with the latest web technologies. <a href="https://www.reddit.com/r/brackets/comments/tz06tn/brackets_community_announcement_phoenix_code/" target="_blank" rel="noopener noreferrer">The result was Phoenix Code</a>- A Platform rewrite of Brackets that allowed it to run on any Web Browser. But our users were pretty clear that a desktop app was needed.</p>
 <p>It was at this time that this hot new rust based tech called <a href="https://tauri.app/" target="_blank" rel="noopener noreferrer"><code>Tauri framework</code></a> came into the picture and we finally had the missing piece to build a truly modern and light-weight desktop app. Fast forward to 2024 and Phoenix Code now runs <em>almost</em> anywhere(<em>almost</em> as we are one step short with touch and mobile screens).</p>
 <p>Phoenix Code marks the first large-scale, truly independent release from the Brackets community. Entirely homegrown within the community, it is also the largest engineering effort put into Brackets since 2015 (including Adobe).</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="acknowledgements">Acknowledgements<a href="https://docs.phcode.dev/blog/welcome#acknowledgements" class="hash-link" aria-label="Direct link to Acknowledgements" title="Direct link to Acknowledgements">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="acknowledgements">Acknowledgements<a href="https://docs.phcode.dev/blog/welcome/#acknowledgements" class="hash-link" aria-label="Direct link to Acknowledgements" title="Direct link to Acknowledgements">​</a></h2>
 <p>This release is made possible by the Phoenix Code Team- <a href="https://github.com/abose" target="_blank" rel="noopener noreferrer">Arun</a>, <a href="https://github.com/charlypa" target="_blank" rel="noopener noreferrer">Charly</a> and <a href="https://github.com/mathewdennis1" target="_blank" rel="noopener noreferrer">Mathew</a>. Our shiny new website <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a> is built by community contribution from <a href="https://github.com/kiranbose" target="_blank" rel="noopener noreferrer">Kiran</a>.</p>
 <p>We would also like to thank the S-tier community support provided by the <a href="https://tauri.app/" target="_blank" rel="noopener noreferrer">Tauri</a> development team, esp. <a href="https://github.com/FabianLars" target="_blank" rel="noopener noreferrer">Fabian</a>.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-ahead">Looking Ahead<a href="https://docs.phcode.dev/blog/welcome#looking-ahead" class="hash-link" aria-label="Direct link to Looking Ahead" title="Direct link to Looking Ahead">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-ahead">Looking Ahead<a href="https://docs.phcode.dev/blog/welcome/#looking-ahead" class="hash-link" aria-label="Direct link to Looking Ahead" title="Direct link to Looking Ahead">​</a></h2>
 <blockquote>
 <p>Our guiding principle is to make coding as intuitive and fun as playing a video game - for web developers, designers, and students.</p>
 </blockquote>
 <p>With the native apps now available, we're starting the next phase of our journey. Beginning this month, there will be
 a new update of Phoenix Code released every month with all the features that you <a href="https://github.com/phcode-dev/phoenix/issues?q=is%3Aissue+is%3Aopen+label%3A%22customer+raised%22" target="_blank" rel="noopener noreferrer">requested</a> and <a href="https://github.com/phcode-dev/phoenix/issues?q=is%3Aissue+is%3Aopen+label%3A%22Feature+Request%22" target="_blank" rel="noopener noreferrer">more</a>.</p>
 <p>However, our ambitions come with costs, and it's your support that makes all the difference.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-you-can-support">How You Can Support:<a href="https://docs.phcode.dev/blog/welcome#how-you-can-support" class="hash-link" aria-label="Direct link to How You Can Support:" title="Direct link to How You Can Support:">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-you-can-support">How You Can Support:<a href="https://docs.phcode.dev/blog/welcome/#how-you-can-support" class="hash-link" aria-label="Direct link to How You Can Support:" title="Direct link to How You Can Support:">​</a></h2>
 <ul>
 <li><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer">https://github.com/orgs/phcode-dev/discussions</a></li>
 <li><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
