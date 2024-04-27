@@ -1,5 +1,5 @@
 ---
-title: Linux
+title: Install/Uninstall in Linux
 ---
 
 import Tabs from '@theme/Tabs';
