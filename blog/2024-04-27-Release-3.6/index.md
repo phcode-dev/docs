@@ -14,7 +14,7 @@ UX and app stability improvements.
 
 #### Custom Live Preview Servers
 
-Supports preview of PHP, React, and other dynamically rendered files with the
+Preview PHP, React, and other dynamically rendered files with the
 new server settings dialog. Read more at
 [Live Preview Settings Docs](https://docs.phcode.dev/docs/Features/live-preview-settings/).
 
