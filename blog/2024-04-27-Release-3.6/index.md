@@ -28,7 +28,7 @@ CSS class hints are now shown within the HTML files class attribute.
 
 #### Advanced CSS Tooling
 
-Support for the latests CSS/LESS/SCSS syntax. Code intelligence and error
+Support for the latest CSS/LESS/SCSS syntax. Code intelligence and error
 detection for CSS, SCSS, and LESS files.
 
 ![image](https://github.com/phcode-dev/phoenix/assets/5336369/9c083bd3-9e34-418d-a1c8-c152393c37b2)
@@ -51,7 +51,7 @@ Direct buttons to open live previews in Chrome, Edge, Safari, and Firefox.
 
 ![image](https://github.com/phcode-dev/phoenix/assets/5336369/05f92c99-8a35-45a5-a8ee-75d581e6e96a)
 
-#### Docasaurus Support
+#### Docusaurus Support
 
 Live preview [docusaurus.io](https://docusaurus.io/) based markdown
 documentation server.
