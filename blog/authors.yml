@@ -27,3 +27,15 @@ phoenixBot:
   title: Our little elf who keeps the whole place together
   url: https://github.com/phoenixide
   image_url: https://github.com/phoenixide.png
+
+andrew:
+  name: Andrew Young
+  title: Community Contributor
+  url: https://github.com/ayoung5555
+  image_url: https://github.com/ayoung5555.png
+
+faizan:
+  name: Faizan Bhagat
+  title: Community Contributor
+  url: https://github.com/faizanbhagat
+  image_url: https://github.com/faizanbhagat.png
