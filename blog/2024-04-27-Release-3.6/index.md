@@ -38,6 +38,8 @@ detection for CSS, SCSS, and LESS files.
 Clicking an element in the live preview now highlights its selector in the
 source CSS file editor.
 
+![Reverse CSS Highlighting gif](https://github.com/phcode-dev/phoenix/assets/5336369/dcb9a111-60fa-479b-8766-dd3109b2134f)
+
 #### Editor Rulers
 
 Add multiple, color-customizable rulers in the editor to better visualize line
