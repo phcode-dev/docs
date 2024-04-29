@@ -34,6 +34,7 @@ detection for CSS, SCSS, and LESS files.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="reverse-css-highlighting">Reverse CSS Highlighting<a href="https://docs.phcode.dev/blog/release-3.6/#reverse-css-highlighting" class="hash-link" aria-label="Direct link to Reverse CSS Highlighting" title="Direct link to Reverse CSS Highlighting">​</a></h4>
 <p>Clicking an element in the live preview now highlights its selector in the
 source CSS file editor.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/dcb9a111-60fa-479b-8766-dd3109b2134f" alt="Reverse CSS Highlighting gif" class="img_ev3q"></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="editor-rulers">Editor Rulers<a href="https://docs.phcode.dev/blog/release-3.6/#editor-rulers" class="hash-link" aria-label="Direct link to Editor Rulers" title="Direct link to Editor Rulers">​</a></h4>
 <p>Add multiple, color-customizable rulers in the editor to better visualize line
 lengths. <a href="https://docs.phcode.dev/docs/Features/editor-rulers/" target="_blank" rel="noopener noreferrer">Read more...</a></p>
