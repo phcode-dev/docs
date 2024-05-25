@@ -2,11 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.phcode.dev/blog/</id>
     <title>Phoenix Code Docs Blog</title>
-    <updated>2024-04-27T00:00:00.000Z</updated>
+    <updated>2024-05-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.phcode.dev/blog/"/>
     <subtitle>Phoenix Code Docs Blog</subtitle>
     <icon>https://docs.phcode.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Little Things Release (May-2024, V-3.7) is now Live]]></title>
+        <id>https://docs.phcode.dev/blog/release-3.7/</id>
+        <link href="https://docs.phcode.dev/blog/release-3.7/"/>
+        <updated>2024-05-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[May release(3.7) of Phoenix Code is now available for download at]]></summary>
+        <content type="html"><![CDATA[<p>May release(3.7) of Phoenix Code is now available for download at
+<a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.</p>
+<p>This month's release is all about Live previews and the little things that make
+your work just a bit easier. We've also addressed numerous feature requests and
+UX bug reports, along with improving app UX and stability.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="live-css-class-and-style-code-hints">Live CSS Class and Style Code Hints<a href="https://docs.phcode.dev/blog/release-3.7/#live-css-class-and-style-code-hints" class="hash-link" aria-label="Direct link to Live CSS Class and Style Code Hints" title="Direct link to Live CSS Class and Style Code Hints">​</a></h4>
+<p>Interactively edit CSS styles and classes using the up/down arrow keys in code
+hints. This is available in CSS files and inline CSS styles/class names in HTML
+files. This provides an instant boost to your HTML and CSS workflows.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/502c8751-5269-4c34-9178-5ad08f8ad837" alt="classLiveHints" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="csshtml-code-hints-improvements">CSS/HTML Code Hints improvements<a href="https://docs.phcode.dev/blog/release-3.7/#csshtml-code-hints-improvements" class="hash-link" aria-label="Direct link to CSS/HTML Code Hints improvements" title="Direct link to CSS/HTML Code Hints improvements">​</a></h4>
+<p>Improved relevance of suggestions in CSS and HTML code hints. For E.g.,
+typing <code>b</code> in a CSS file will prioritize <code>background-color</code>. Typing <code>between</code>
+will bring up relevant CSS property-value combinations like <code>align-content: space-between;</code>
+(see image below), so you don't have to remember which value is under which CSS property.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/2a9f8809-de19-43cf-bdcd-d1a5def2e080" alt="image" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="move-to-trashbin-when-deleting-files">Move to trash/bin when deleting files<a href="https://docs.phcode.dev/blog/release-3.7/#move-to-trashbin-when-deleting-files" class="hash-link" aria-label="Direct link to Move to trash/bin when deleting files" title="Direct link to Move to trash/bin when deleting files">​</a></h4>
+<p>Deleting files from the files panel in desktop apps will move the file/folder to
+trash/recycle bin instead of permanently deleting it.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ux-improvements">UX Improvements<a href="https://docs.phcode.dev/blog/release-3.7/#ux-improvements" class="hash-link" aria-label="Direct link to UX Improvements" title="Direct link to UX Improvements">​</a></h4>
+<ul>
+<li>Deleting the <code>Phoenix Code</code> folder in user <code>Documents</code> directory is now supported.</li>
+<li>Increased stability and app startup experience.</li>
+<li><code>Copy Error Message</code> button is now available in the problems panel.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/95c59e71-5ce8-4697-963e-0fa567062ab0" alt="image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.7/#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:">​</a></h2>
+<ul>
+<li><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer">https://github.com/orgs/phcode-dev/discussions</a></li>
+<li><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
+<li><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer"><strong>Consider supporting us</strong> on GitHub Sponsors</a>.
+Every contribution helps us to keep improving Phoenix Code.</li>
+</ul>
+<p>With gratitude,</p>
+<p>The Phoenix Team</p>]]></content>
+        <author>
+            <name>Arun Bose</name>
+            <uri>https://github.com/abose</uri>
+        </author>
+        <author>
+            <name>Charly P Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <author>
+            <name>Phoenix Code Bot</name>
+            <uri>https://github.com/phoenixide</uri>
+        </author>
+        <category label="Live Preview" term="Live Preview"/>
+        <category label="Live Code Hints" term="Live Code Hints"/>
+        <category label="Windows" term="Windows"/>
+        <category label="Linux" term="Linux"/>
+        <category label="Mac" term="Mac"/>
+        <category label="Release" term="Release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[April-2024 Release (V-3.6) is now Live]]></title>
         <id>https://docs.phcode.dev/blog/release-3.6/</id>
