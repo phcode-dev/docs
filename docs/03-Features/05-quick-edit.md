@@ -3,7 +3,7 @@ title: Quick Edit
 ---
 
 import React from 'react';
-import VideoPlayer from '@site/src/components/Video/video';
+import VideoPlayer from '@site/src/components/Video/player';
 
 # Quick Edit
 
