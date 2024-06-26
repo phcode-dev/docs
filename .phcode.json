@@ -3,5 +3,8 @@
     "livePreviewServerURL": "http://localhost:3000/",
     "livePreviewServerProjectPath": "/",
     "livePreviewHotReloadSupported": true,
-    "livePreviewFramework": "Docusaurus"
+    "livePreviewFramework": "Docusaurus",
+    "beautify.options": {
+        "printWidth": 80
+    }
 }
