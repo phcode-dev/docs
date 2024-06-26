@@ -14,7 +14,7 @@ with improving app UX and stability.
 
 #### HTML Validation
 
-We have added an HTML Validator to help you find errors like duplicate IDs,
+We have added HTML Validator to help you find errors like duplicate IDs,
 unrecognized tags, and more. [Read more here.](https://docs.phcode.dev)
 
 ![HTML validate](https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f)
