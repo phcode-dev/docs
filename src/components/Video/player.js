@@ -27,55 +27,54 @@ const VideoPlayer = ({ src, winLinuxTitle, macTitle }) => {
   // State to store the dynamically set title
   const [title, setTitle] = useState("");
 
-  // Effect to determine and set the appropriate title based on the user's OS.
-  // It runs once on component mount and whenever the titles props change.
+  // Determine and set the appropriate title based on the user's OS
   useEffect(() => {
     const osName = navigator.platform.toLowerCase();
     if (osName.includes('mac')) {
-      setTitle(macTitle); // Set Mac-specific title
+      setTitle(macTitle); // Set title for Mac users
     } else {
-      setTitle(winLinuxTitle); // Set Windows/Linux-specific title
+      setTitle(winLinuxTitle); // Set title for Windows/Linux users
     }
-  }, [winLinuxTitle, macTitle]); // React to changes in title props
+  }, [winLinuxTitle, macTitle]); // Dependency array to update title on prop change
 
-  // Container styles to ensure the video maintains a 16:9 aspect ratio and is responsive.
+  // CSS for the video container
   const containerStyle = {
-    position: 'relative',
-    width: '100%',
-    paddingTop: '56.25%',
-    overflow: 'hidden'
+    position: 'relative', // Relative positioning for absolute positioning of children
+    width: '100%', // Full width to ensure responsiveness
+    paddingTop: '56.25%', // Top padding to maintain a 16:9 aspect ratio
+    overflow: 'hidden' // Hide anything outside the boundaries of the container
   };
 
-  // Video styles to fill the container and be responsive.
+  // CSS for the video element itself
   const videoStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%'
+    position: 'absolute', // Absolute positioning to overlay on the container
+    top: 0, // Align to the top of the container
+    left: 0, // Align to the left of the container
+    width: '100%', // Full width to fill the container
+    height: '100%' // Full height to fill the container
   };
 
-  // Title overlay styles to enhance readability and accessibility.
+  // CSS for the title overlay
   const titleStyle = {
-    position: 'absolute',
-    bottom: '10px',
-    left: '10px',
-    right: '10px',
-    color: 'white',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Semi-transparent for visibility over diverse backgrounds
-    padding: '5px 10px',
-    borderRadius: '5px',
-    fontSize: '1em',
-    textAlign: 'center'
+    position: 'absolute', // Absolute positioning to place over the video
+    bottom: '10px', // Distance from the bottom of the container
+    left: '10px', // Distance from the left of the container
+    right: '10px', // Distance from the right of the container ensures centering
+    color: 'white', // White text for visibility against most backgrounds
+    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Semi-transparent black background for readability
+    padding: '5px 10px', // Padding around the text for aesthetics
+    borderRadius: '5px', // Rounded corners for a smoother visual appeal
+    fontSize: '1em', // Font size using relative measurement for flexibility
+    textAlign: 'center' // Center-align the text within the title block
   };
 
   return (
     <div style={containerStyle}>
       <video style={videoStyle} controls autoPlay muted loop>
         <source src={src} type="video/mp4"/>
-        Your browser does not support the video tag. // Fallback message for unsupported browsers
+        Your browser does not support the video tag.
       </video>
-      <div style={titleStyle}>{title}</div> // Display dynamically set title
+      <div style={titleStyle}>{title}</div>
     </div>
   );
 };
