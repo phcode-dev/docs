@@ -20,7 +20,7 @@
 <code>ESLint</code>. We've also addressed numerous feature requests and bug reports, along
 with improving app UX and stability.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="html-validation">HTML Validation<a class="hash-link" aria-label="Direct link to HTML Validation" title="Direct link to HTML Validation" href="https://docs.phcode.dev/blog/release-3.8/#html-validation">​</a></h4>
-<p>We have added an HTML Validator to help you find errors like duplicate IDs,
+<p>We have added HTML Validator to help you find errors like duplicate IDs,
 unrecognized tags, and more. <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">Read more here.</a></p>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f" alt="HTML validate" class="img_ev3q"></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="drag-and-drop-files-and-folders-in-desktop-apps---experimental">Drag and Drop Files and Folders in Desktop Apps - Experimental<a class="hash-link" aria-label="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" title="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" href="https://docs.phcode.dev/blog/release-3.8/#drag-and-drop-files-and-folders-in-desktop-apps---experimental">​</a></h4>
