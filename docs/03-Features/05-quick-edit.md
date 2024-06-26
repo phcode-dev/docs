@@ -37,4 +37,8 @@ Follow these steps to utilize the Quick Edit feature effectively:
 
 For a practical demonstration of the Quick Edit feature, watch the following video:
 
-<VideoPlayer src="https://docs-images.phcode.dev/videos/quick-edit/quick_edit.mp4" title="Quick Edit in Action" />
+<VideoPlayer 
+  src="https://docs-images.phcode.dev/videos/quick-edit/quick_edit.mp4"
+  winLinuxTitle="Ctrl+click for Quick Edit"
+  macTitle="Cmd+click for Quick Edit"
+/>
