@@ -20,7 +20,7 @@
 with improving app UX and stability.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="html-validation">HTML Validation<a class="hash-link" aria-label="Direct link to HTML Validation" title="Direct link to HTML Validation" href="https://docs.phcode.dev/blog/release-3.8/#html-validation">​</a></h4>
 <p>We have added HTML Validator to help you find errors like duplicate IDs,
-unrecognized tags, and more. <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">Read more here.</a></p>
+unrecognized tags, and more. <a href="https://docs.phcode.dev/docs/Features/Problems%20Panel/html-lint/" target="_blank" rel="noopener noreferrer">Read more here.</a></p>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f" alt="HTML validate" class="img_ev3q"></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="drag-and-drop-files-and-folders-in-desktop-apps---experimental">Drag and Drop Files and Folders in Desktop Apps - Experimental<a class="hash-link" aria-label="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" title="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" href="https://docs.phcode.dev/blog/release-3.8/#drag-and-drop-files-and-folders-in-desktop-apps---experimental">​</a></h4>
 <p>Drag files from Explorer (Windows) or Finder (Mac) and drop them into Phoenix
@@ -31,7 +31,7 @@ Linux distributions. To enable it, select menu
 <code>Debug -&gt; Experimental Features -&gt; Drag And Drop Files.</code></p>
 </blockquote>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/ddd96ff7-bc99-46a6-a62d-6f6f5b78438b" alt="drag and drop" class="img_ev3q"></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="eslint-projects-support">ESLint Projects Support<a class="hash-link" aria-label="Direct link to ESLint Projects Support" title="Direct link to ESLint Projects Support" href="https://docs.phcode.dev/blog/release-3.8/#eslint-projects-support">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="eslint-support">ESLint Support<a class="hash-link" aria-label="Direct link to ESLint Support" title="Direct link to ESLint Support" href="https://docs.phcode.dev/blog/release-3.8/#eslint-support">​</a></h4>
 <p>All new and simplified ESLint experience that displays all ESLint errors in a
 file. Fix one or all errors with a single click. To enable, open a project that
 uses ESLint in Phoenix Code. <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">Read more here.</a></p>
