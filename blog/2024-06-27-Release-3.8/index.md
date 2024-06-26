@@ -15,7 +15,7 @@ with improving app UX and stability.
 #### HTML Validation
 
 We have added HTML Validator to help you find errors like duplicate IDs,
-unrecognized tags, and more. [Read more here.](https://docs.phcode.dev)
+unrecognized tags, and more. [Read more here.](https://docs.phcode.dev/docs/Features/Problems%20Panel/html-lint/)
 
 ![HTML validate](https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f)
 
@@ -30,7 +30,7 @@ Code to open individual files. Drop a folder to open it as a project.
 
 ![drag and drop](https://github.com/phcode-dev/phoenix/assets/5336369/ddd96ff7-bc99-46a6-a62d-6f6f5b78438b)
 
-#### ESLint Projects Support
+#### ESLint Support
 
 All new and simplified ESLint experience that displays all ESLint errors in a
 file. Fix one or all errors with a single click. To enable, open a project that

@@ -30,9 +30,9 @@ following text:
 
 ## FAQ
 
-#### Q: Why is my custom HTML Validator custom config not working?
+#### Q: Why is my HTML Validator custom configuration not working?
 
 Phoenix Code only supports plain JSON configuration file
 [.htmlvalidate.json](https://html-validate.org/usage/index.html#configuration).
-Other config files like `.js`. `.htmlvalidate.js` and `.htmlvalidate.cjs` are
+Other config files like `.htmlvalidate.js` and `.htmlvalidate.cjs` are
 not supported.
