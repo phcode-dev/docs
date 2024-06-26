@@ -2,11 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.phcode.dev/blog/</id>
     <title>Phoenix Code Docs Blog</title>
-    <updated>2024-05-26T00:00:00.000Z</updated>
+    <updated>2024-06-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.phcode.dev/blog/"/>
     <subtitle>Phoenix Code Docs Blog</subtitle>
     <icon>https://docs.phcode.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[HTML Helpers Release (June-2024, V-3.8) is now Live]]></title>
+        <id>https://docs.phcode.dev/blog/release-3.8/</id>
+        <link href="https://docs.phcode.dev/blog/release-3.8/"/>
+        <updated>2024-06-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[June release(3.8) of Phoenix Code is now available for download at]]></summary>
+        <content type="html"><![CDATA[<p>June release(3.8) of Phoenix Code is now available for download at
+<a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.</p>
+<p>This month's release is all about <code>HTML assitance</code>, <code>Drag and Drop</code> and
+<code>ESLint</code>. We've also addressed numerous feature requests and bug reports, along
+with improving app UX and stability.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="html-validation">HTML Validation<a class="hash-link" aria-label="Direct link to HTML Validation" title="Direct link to HTML Validation" href="https://docs.phcode.dev/blog/release-3.8/#html-validation">​</a></h4>
+<p>We have added an HTML Validator to help you find errors like duplicate IDs,
+unrecognized tags, and more. <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">Read more here.</a></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f" alt="HTML validate" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="drag-and-drop-files-and-folders-in-desktop-apps---experimental">Drag and Drop Files and Folders in Desktop Apps - Experimental<a class="hash-link" aria-label="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" title="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" href="https://docs.phcode.dev/blog/release-3.8/#drag-and-drop-files-and-folders-in-desktop-apps---experimental">​</a></h4>
+<p>Drag files from Explorer (Windows) or Finder (Mac) and drop them into Phoenix
+Code to open individual files. Drop a folder to open it as a project.</p>
+<blockquote>
+<p>Note: This feature is currently disabled on Linux due to UI issues in some
+Linux distributions. To enable it, select menu
+<code>Debug -&gt; Experimental Features -&gt; Drag And Drop Files.</code></p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/ddd96ff7-bc99-46a6-a62d-6f6f5b78438b" alt="drag and drop" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="eslint-projects-support">ESLint Projects Support<a class="hash-link" aria-label="Direct link to ESLint Projects Support" title="Direct link to ESLint Projects Support" href="https://docs.phcode.dev/blog/release-3.8/#eslint-projects-support">​</a></h4>
+<p>All new and simplified ESLint experience that displays all ESLint errors in a
+file. Fix one or all errors with a single click. To enable, open a project that
+uses ESLint in Phoenix Code. <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">Read more here.</a></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/89830ae8-cd45-47fe-9628-7edc4094db4e" alt="image" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ux-improvements">UX Improvements<a class="hash-link" aria-label="Direct link to UX Improvements" title="Direct link to UX Improvements" href="https://docs.phcode.dev/blog/release-3.8/#ux-improvements">​</a></h4>
+<ul>
+<li><strong>Non-Intrusive Automatic Updates:</strong> Updates are now installed in the
+background with no more distracting dialogs when an update is available.</li>
+<li><strong>Case-Sensitive File Renaming:</strong> Renaming files to a different case, such as
+<code>a.txt</code> to <code>A.TXT</code>, is now supported.</li>
+<li><code>File &gt; New Project</code> is now renamed to <code>Start Project</code>.</li>
+<li>Increased stability and app startup experience.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" href="https://docs.phcode.dev/blog/release-3.8/#a-request-from-the-phoenix-team">​</a></h2>
+<ul>
+<li><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer">https://github.com/orgs/phcode-dev/discussions</a></li>
+<li><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
+<li><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer"><strong>Consider supporting us</strong> on GitHub Sponsors</a>.
+Every contribution helps us to keep improving Phoenix Code.</li>
+</ul>
+<p>With gratitude,</p>
+<p>The Phoenix Team</p>]]></content>
+        <author>
+            <name>Arun Bose</name>
+            <uri>https://github.com/abose</uri>
+        </author>
+        <author>
+            <name>Charly P Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <author>
+            <name>Phoenix Code Bot</name>
+            <uri>https://github.com/phoenixide</uri>
+        </author>
+        <category label="Live Preview" term="Live Preview"/>
+        <category label="Live Code Hints" term="Live Code Hints"/>
+        <category label="Windows" term="Windows"/>
+        <category label="Linux" term="Linux"/>
+        <category label="Mac" term="Mac"/>
+        <category label="Release" term="Release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Little Things Release (May-2024, V-3.7) is now Live]]></title>
         <id>https://docs.phcode.dev/blog/release-3.7/</id>
