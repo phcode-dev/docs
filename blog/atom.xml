@@ -15,7 +15,7 @@
         <summary type="html"><![CDATA[June release(3.8) of Phoenix Code is now available for download at]]></summary>
         <content type="html"><![CDATA[<p>June release(3.8) of Phoenix Code is now available for download at
 <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.</p>
-<p>This month's release is all about <code>HTML assitance</code>, <code>Drag and Drop</code> and
+<p>This month's release is all about <code>HTML assistance</code>, <code>Drag and Drop</code> and
 <code>ESLint</code>. We've also addressed numerous feature requests and bug reports, along
 with improving app UX and stability.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="html-validation">HTML Validation<a class="hash-link" aria-label="Direct link to HTML Validation" title="Direct link to HTML Validation" href="https://docs.phcode.dev/blog/release-3.8/#html-validation">​</a></h4>
