@@ -1,7 +1,7 @@
 # ESLint for Javascript Problems
 
 Phoenix Code provides a comprehensive interface for identifying and resolving
-`ESLint` issues in your `js`/`jsx` code.
+`ESLint` issues in your `js`/`jsx` files.
 
 `ESLint` is only available in desktop apps. In Browsers, `JSHint` is the default
 linter for javascript files.
