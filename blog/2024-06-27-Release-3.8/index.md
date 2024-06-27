@@ -19,7 +19,7 @@ unrecognized tags, and more. [Read more here.](https://docs.phcode.dev/docs/Feat
 
 ![HTML validate](https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f)
 
-#### Drag and Drop Files and Folders in Desktop Apps
+#### Drag and Drop Files and Folders in Desktop Apps - Experimental
 
 Drag files from Explorer (Windows) or Finder (Mac) and drop them into Phoenix
 Code to open individual files. Drop a folder to open it as a project.
