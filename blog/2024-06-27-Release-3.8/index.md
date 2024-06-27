@@ -19,7 +19,7 @@ unrecognized tags, and more. [Read more here.](https://docs.phcode.dev/docs/Feat
 
 ![HTML validate](https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f)
 
-#### Drag and Drop Files and Folders in Desktop Apps - Experimental
+#### Drag and Drop Files and Folders in Desktop Apps
 
 Drag files from Explorer (Windows) or Finder (Mac) and drop them into Phoenix
 Code to open individual files. Drop a folder to open it as a project.
@@ -27,6 +27,8 @@ Code to open individual files. Drop a folder to open it as a project.
 > Note: This feature is currently disabled on Linux due to UI issues in some
 > Linux distributions. To enable it, select menu
 > `Debug -> Experimental Features -> Drag And Drop Files.`
+
+>  This feature is not yet available in the browser version @ phcode.dev 
 
 ![drag and drop](https://github.com/phcode-dev/phoenix/assets/5336369/ddd96ff7-bc99-46a6-a62d-6f6f5b78438b)
 
