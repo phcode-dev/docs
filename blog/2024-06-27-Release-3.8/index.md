@@ -8,7 +8,7 @@ tags: [Live Preview, Live Code Hints, Windows, Linux, Mac, Release]
 June release(3.8) of Phoenix Code is now available for download at
 [phcode.io](https://phcode.io).
 
-This month's release is all about `HTML assitance`, `Drag and Drop` and
+This month's release is all about `HTML assistance`, `Drag and Drop` and
 `ESLint`. We've also addressed numerous feature requests and bug reports, along
 with improving app UX and stability.
 
