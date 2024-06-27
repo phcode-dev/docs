@@ -22,7 +22,7 @@ with improving app UX and stability.</p>
 <p>We have added HTML Validator to help you find errors like duplicate IDs,
 unrecognized tags, and more. <a href="https://docs.phcode.dev/docs/Features/Problems%20Panel/html-lint/" target="_blank" rel="noopener noreferrer">Read more here.</a></p>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f" alt="HTML validate" class="img_ev3q"></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="drag-and-drop-files-and-folders-in-desktop-apps">Drag and Drop Files and Folders in Desktop Apps<a class="hash-link" aria-label="Direct link to Drag and Drop Files and Folders in Desktop Apps" title="Direct link to Drag and Drop Files and Folders in Desktop Apps" href="https://docs.phcode.dev/blog/release-3.8/#drag-and-drop-files-and-folders-in-desktop-apps">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="drag-and-drop-files-and-folders-in-desktop-apps---experimental">Drag and Drop Files and Folders in Desktop Apps - Experimental<a class="hash-link" aria-label="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" title="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" href="https://docs.phcode.dev/blog/release-3.8/#drag-and-drop-files-and-folders-in-desktop-apps---experimental">​</a></h4>
 <p>Drag files from Explorer (Windows) or Finder (Mac) and drop them into Phoenix
 Code to open individual files. Drop a folder to open it as a project.</p>
 <blockquote>
