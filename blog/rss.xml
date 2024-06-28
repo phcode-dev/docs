@@ -9,14 +9,17 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[HTML Helpers Release (June-2024, V-3.8) is now Live]]></title>
+            <title><![CDATA[Critical Update + HTML Helpers Release (June-2024, V-3.8) is now Live]]></title>
             <link>https://docs.phcode.dev/blog/release-3.8/</link>
             <guid>https://docs.phcode.dev/blog/release-3.8/</guid>
             <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[June release(3.8) of Phoenix Code is now available for download at]]></description>
             <content:encoded><![CDATA[<p>June release(3.8) of Phoenix Code is now available for download at
 <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.</p>
-<p>This month's release is all about <code>HTML assistance</code>, <code>Drag and Drop</code> and
+<p>This update addresses a critical issue where Phoenix Code crashes in M1 Macs
+at app start after a recent macOS update. Also fixes app start issues in some
+newer Linux distributions with latest webkitGTK.</p>
+<p>This month's theme is all about <code>HTML assistance</code>, <code>Drag and Drop</code> and
 <code>ESLint</code>. We've also addressed numerous feature requests and bug reports, along
 with improving app UX and stability.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="html-validation">HTML Validation<a class="hash-link" aria-label="Direct link to HTML Validation" title="Direct link to HTML Validation" href="https://docs.phcode.dev/blog/release-3.8/#html-validation">​</a></h4>
