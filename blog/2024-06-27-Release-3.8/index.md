@@ -1,6 +1,6 @@
 ---
 slug: release-3.8
-title: HTML Helpers Release (June-2024, V-3.8) is now Live 
+title: Critical Update + HTML Helpers Release (June-2024, V-3.8) is now Live 
 authors: [arun, charly, phoenixBot]
 tags: [Live Preview, Live Code Hints, Windows, Linux, Mac, Release]
 ---
@@ -8,7 +8,11 @@ tags: [Live Preview, Live Code Hints, Windows, Linux, Mac, Release]
 June release(3.8) of Phoenix Code is now available for download at
 [phcode.io](https://phcode.io).
 
-This month's release is all about `HTML assistance`, `Drag and Drop` and
+This update addresses a critical issue where Phoenix Code crashes in M1 Macs
+at app start after a recent macOS update. Also fixes app start issues in some
+newer Linux distributions with latest webkitGTK.
+
+This month's theme is all about `HTML assistance`, `Drag and Drop` and
 `ESLint`. We've also addressed numerous feature requests and bug reports, along
 with improving app UX and stability.
 
