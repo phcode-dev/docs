@@ -24,7 +24,18 @@ const FeatureList = [
           ChromeOS or alternative platforms? Get the web version on any browser-enabled device.
       </>
     ),
-  }
+  },
+  {
+    title: 'Lightweight & Fast',
+    Svg: require('@site/static/img/fastRocket.svg').default,
+    description: (
+      <>
+          Experience lightning-fast coding without compromise whether it be on the web or the computer. 
+
+          Focus on your code, not your computer.
+      </>
+    ),
+  },
 ];
 
 function Feature({Svg, title, description}) {
