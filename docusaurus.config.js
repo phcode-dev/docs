@@ -199,6 +199,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/phcode-dev/',
               },
+              {
+                label: 'Credits',
+                href: 'https://github.com/phcode-dev/docs/blob/main/CREDITS.md',
+              }
             ],
           },
         ],
