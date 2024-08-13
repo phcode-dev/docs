@@ -27,12 +27,10 @@ const FeatureList = [
   },
   {
     title: 'Lightweight & Fast',
-    Svg: require('@site/static/img/fastRocket.svg').default,
+    Svg: require('@site/static/img/rocket.svg').default,
     description: (
       <>
-          Experience lightning-fast coding without compromise whether it be on the web or the computer. 
-
-          Focus on your code, not your computer.
+          Experience lightning-fast coding on any device - whether it be on a web browser or our desktop apps.
       </>
     ),
   },
