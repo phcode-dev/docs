@@ -2,46 +2,50 @@
 title: Themes
 ---
 
-Phoenix Code offers a wide range of themes to match your style whether you prefer the calm of dark mode or dare we say, the boldness of light mode, there's a theme for you. Switching things up is really simple, so you can easily create a coding environment that feels just right. 
+Phoenix Code provides various themes to customize your coding environment. Switching themes is straightforward and quick.
 
 ## Installing a new theme
 1. Click the extension manager button on the right panel.
    ![Open file](images/Themes/main-interface.png "click the extension manager")
-2. The modal window pops up, head to the Themes tab.
+2. In the modal window, go to the Themes tab.
    ![Open file](images/Themes/themes-tab.png "Select the themes tab")
-3. Browse through the list of available themes, pick the one that best suits your needs, and hit Install.
-4. A confirmation popup will appear, letting you know the installation was successful. Click 'Close.'
+3. Browse the available themes. Choose one and click Install.
+4. Confirm the installation in the popup window by clicking 'Close.'
    ![Open file](images/Themes/installation-successful.png "The installation is successful. Click close")
    
-And just like that, your new theme is now installed. Told you it was easy! 
+Your new theme is now installed.
+
 
 
 ## Applying a theme
 1. Click the extension manager button on the right panel.
-2. The modal window pops up, navigate to the Installed tab.
+2. In the modal window, go to the Installed tab.
    ![Open file](images/Themes/installed-tab.png "Select the installed tab")
-3. A list of all the installed extensions will appear, choose the theme and click the 'Apply' button. Finally, click 'Done'.
+3. Select the theme you want and click 'Apply.' Click 'Done' to finish.
 
-That's all, your theme is now applied. Happy Coding!
+The selected theme is now applied.
+   
+
+   
+## Removing a theme.
+To remove a theme:
+1. Click the extension manager icon on the right panel.
+2. In the modal window, go to the Installed tab.
+3. Find the theme you want to remove and click 'Remove.'
+4. Confirm by clicking 'Remove Extensions and Reload' in the popup window.
+   ![Open file](images/Themes/remove-extension.png "Removes the extension from Phoenix Code")
+
+The theme is now removed.
+
 
 
 ## Creating your own theme.
-If no theme pleases your eyes, don't worry. We’ve got you covered! You can create your own theme in Phoenix, and the best part is, other developers can use it too.
+If you want a custom theme, follow these steps:
 1. Click the extension manager icon on the right panel.
-2. The modal window pops up, navigate to the Themes tab.
-3. In the top right corner, click the 'Create Theme' button.
+2. In the modal window, go to the Themes tab.
+3. Click 'Create Theme' in the top right corner.
    ![Open file](images/Themes/create-theme.png "Click on Create theme")
 4. You’ll be redirected to Phoenix Code’s official Theme Template repository.
    ![Open file](images/Themes/theme-template-github.png "Phoenix Code's official Theme Template repository")
-5. Use the provided template to design your own theme.
-6. Once you're done, you can publish your theme so others can enjoy it too!
-   
-   
-## Removing a theme.
-If a theme no longer suits you, no worries! It’s easy to remove.
-1. Click the extension manager icon on the right panel.
-2. In the modal window, go to the Installed tab.
-3. Locate the theme you want to remove & click the Remove button next to it.
-4. After closing the modal window, click on 'Remove Extensions and Reload' in the pop-up window that appears.
-   ![Open file](images/Themes/remove-extension.png "Removes the extension from Phoenix Code")
-5. The theme will be removed, and you can choose a new one or enjoy the default look!
+5. Use the template to create your theme.
+6. Publish your theme to use it and share it with others.
