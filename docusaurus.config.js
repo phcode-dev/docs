@@ -105,6 +105,10 @@ const config = {
         // ... other options
       },
     ],
+    [
+      "@gracefullight/docusaurus-plugin-microsoft-clarity",
+      { projectId: "nq44d74m1v" },
+    ],
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
