@@ -141,7 +141,10 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/api/intro', label: 'API', position: 'left'},
+			
+	      // Temporarily commenting out this navbar link until the API content is ready
+	      //{to: '/api/intro', label: 'API', position: 'left'},
+			
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://phcode.io/',
@@ -165,10 +168,13 @@ const config = {
                 label: 'Docs',
                 to: '/docs/intro',
               },
-              {
-                label: 'API',
-                to: '/api/intro',
-              },
+				
+			        // Temporarily commenting out this footer link until the API content is ready 
+              //{
+              //  label: 'API',
+              //  to: '/api/intro',
+              //},
+
             ],
           },
           {
