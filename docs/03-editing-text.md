@@ -31,7 +31,7 @@ To revert back to a single cursor, just press the `Esc` key.
 ## Quick Edit
 With **Quick Edit**, you can edit your CSS file directly within HTML files. 
 
-[Read More](./08-quick-edit.md)
+[Read More](./04-Features/07-quick-edit.md)
 
 ---
 
@@ -49,7 +49,7 @@ With **Quick Edit**, you can edit your CSS file directly within HTML files.
 ## Find in Files
 With **Find in Files**, you can search for specific text across multiple files within a project.
 
-[Read More](./05-find-in-files.md)
+[Read More](./04-Features/04-find-in-files.md)
 
 ---
 
