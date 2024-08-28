@@ -42,7 +42,7 @@ const VideoPlayer = ({ src, winLinuxTitle, macTitle }) => {
     position: 'relative', // Relative positioning for absolute positioning of children
     width: '100%', // Full width to ensure responsiveness
     paddingTop: '56.25%', // Top padding to maintain a 16:9 aspect ratio
-    overflow: 'hidden' // Hide anything outside the boundaries of the container
+    marginBottom: '3rem' // Ensure space below to make sure Title doesn't overlap with rest of the documentation
   };
 
   // CSS for the video element itself
@@ -57,9 +57,8 @@ const VideoPlayer = ({ src, winLinuxTitle, macTitle }) => {
   // CSS for the title overlay
   const titleStyle = {
     position: 'absolute', // Absolute positioning to place over the video
-    bottom: '10px', // Distance from the bottom of the container
-    left: '10px', // Distance from the left of the container
-    right: '10px', // Distance from the right of the container ensures centering
+    top: '100%', // Position the title directly underneath the video container
+    width: '100%', // Full width of the container
     color: 'white', // White text for visibility against most backgrounds
     backgroundColor: 'rgba(0, 0, 0, 0.7)', // Semi-transparent black background for readability
     padding: '5px 10px', // Padding around the text for aesthetics
