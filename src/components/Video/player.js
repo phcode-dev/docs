@@ -59,10 +59,7 @@ const VideoPlayer = ({ src, winLinuxTitle, macTitle }) => {
     position: 'absolute', // Absolute positioning to place over the video
     top: '100%', // Position the title directly underneath the video container
     width: '100%', // Full width of the container
-    color: 'white', // White text for visibility against most backgrounds
-    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Semi-transparent black background for readability
-    padding: '5px 10px', // Padding around the text for aesthetics
-    borderRadius: '5px', // Rounded corners for a smoother visual appeal
+    paddingTop: '5px', // Space between video & text
     fontSize: '1em', // Font size using relative measurement for flexibility
     textAlign: 'center' // Center-align the text within the title block
   };
