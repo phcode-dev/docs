@@ -17,10 +17,20 @@ Syntax highlighting works by analyzing the code and applying color schemes to va
 Phoenix uses predefined rules for different programming languages to apply the appropriate colors.
 
 
+![Syntax Highlighting Default Image](images/syntaxHighlighting/syntax-highlighting.png "Syntax Highlighting in Phoenix Dark default theme") 
+Syntax Highlighting Example in a JavaScript File
+
 
 ## Theme Dependency
 
-The colors used for syntax highlighting depend on the theme you are using. Themes define the color schemes for various syntax elements, allowing you to choose a style that suits your preference or needs. 
+The colors used for syntax highlighting depend on the theme you are using. Themes define the color schemes for various syntax elements, allowing you to choose a style that suits your preference or needs.
+
+
+Syntax Highlighting Example [Theme : `Monokai Dark Soda`]
+![Syntax Highlighting Monokai Dark Soda Theme Image](images/syntaxHighlighting/syntax-highlighting-monokai-dark-soda-theme.png "Syntax Highlighting by Monokai Dark Soda Theme") 
+
+Syntax Highlighting Example [Theme : `Material Color Light`]
+![Syntax Highlighting Material Color Light Theme Image](images/syntaxHighlighting/syntax-highlighting-material-color-light-theme.png "Syntax Highlighting by Material Color Light Theme") 
 
 To learn more about Themes. [Click Here](./08-themes.md)
    
