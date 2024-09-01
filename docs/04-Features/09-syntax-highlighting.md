@@ -35,6 +35,28 @@ Syntax Highlighting Example [Theme : `Material Color Light`]
 To learn more about Themes. [Click Here](./08-themes.md)
    
 
+## Add Syntax Highlighting for a Particular File Type
+
+If you create a new file and the file type is not recognized, it will be treated as plain text by default, and no syntax highlighting will be applied. However, you can manually add syntax highlighting for the file in Phoenix.
+
+1. Click on the **Text** Button: Locate the `Text` button in the Status Bar at the bottom of the editor.
+2. Select a Language: From the dropdown list, choose the language whose syntax rules you want to apply for highlighting this file.
+
+![Adding Syntax Highlighting for a new file type](images/syntaxHighlighting/syntax-highlighting-add.png "Add Syntax Highlighting for a particular file")
+
+The file will now be treated as the selected language type, and syntax highlighting will be applied accordingly.
+
+To learn more about **File Type Associations**. [Click Here](../03-editing-text.md#file-type-associations)
+
+
+### Change Syntax Highlighting for a Particular File Type
+
+If you need to change the syntax highlighting for an existing file:
+1. Click on the **Text** Button: Click on the `Text` button in the Status Bar.
+2. Select a New Language: Choose a different language from the list to change the syntax highlighting for the file.
+The syntax highlighting will be updated according to the newly selected language.
+
+
 ## Troubleshooting
 
  * **No Highlighting** : Ensure that the file type is correctly recognized by the editor. Check the file extension and language mode.
