@@ -89,6 +89,13 @@ Now, files with `.myjs` extension will be treated as JavaScript files.
 
 ---
 
+## Beautify Code
+With **Beautify Code**, you can format your code to follow consistent styling rules, improving readability and making it easier to maintain.
+
+[Read More](./04-Features/06-beautify-code.md)
+
+---
+
 ## Insert and Overwrite Mode
 Users can toggle between **Insert Mode** and **Overwrite Mode** for different text input behaviors.
 
