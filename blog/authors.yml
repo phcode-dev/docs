@@ -10,6 +10,12 @@ charly:
   url: https://github.com/charlypa
   image_url: https://github.com/charlypa.png
 
+devvaannsh:
+  name: Devansh Agarwal
+  title: Phoenix Code Developer
+  url: https://github.com/devvaannsh
+  image_url: https://github.com/devvaannsh.png
+
 kiran:
   name: Kiran Bose
   title: Community Contributor
@@ -39,3 +45,15 @@ faizan:
   title: Community Contributor
   url: https://github.com/faizanbhagat
   image_url: https://github.com/faizanbhagat.png
+
+jozsefk9:
+  name: Jozsef
+  title: Community Contributor
+  url: https://github.com/jozsefk9
+  image_url: https://github.com/jozsefk9.png
+
+acemi1:
+  name: acemi1
+  title: Community Contributor
+  url: https://github.com/acemi1
+  image_url: https://github.com/acemi1.png
