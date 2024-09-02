@@ -1,11 +1,13 @@
 ---
 title: Editing Text
 ---
----
 
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
+**Phoenix Code Editor** provides essential features for efficient text editing. This section covers the key features.
+
+---
 
 ## Multi Cursor
 Using **Multi-Cursor**, you can place multiple cursors in different locations, allowing you to edit text simultaneously. This feature is especially useful for making quick, consistent changes across multiple lines or sections of a file.
