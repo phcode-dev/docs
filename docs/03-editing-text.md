@@ -104,8 +104,17 @@ Users can toggle between **Insert Mode** and **Overwrite Mode** for different te
 ### Understanding Insert Mode
 When in **Insert Mode**, any text you type is inserted at the current cursor position, pushing the existing text to the right.
 
+<VideoPlayer 
+  src="https://docs-images.phcode.dev/videos/editing-text/insert-mode-video.mp4"
+/>
+
 ### Understanding Overwrite Mode
 **Overwrite Mode** replaces the existing text at the cursor position with the new text you type. Instead of pushing text to the right, it overwrites the characters directly under the cursor.
+
+<VideoPlayer 
+  src="https://docs-images.phcode.dev/videos/editing-text/overwrite-mode-video.mp4"
+/>
+
 
 ### Toggle between Insert Mode & Overwrite Mode
 
