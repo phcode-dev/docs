@@ -55,6 +55,37 @@ With **Find in Files**, you can search for specific text across multiple files w
 
 ---
 
+## Auto Rename Tag
+The **Auto Rename Tag** feature updates matching tags automatically when you rename one. It works with HTML, XHTML, HTM, XML, SVG, PHP, and JSP files.
+
+### How It Works
+When you rename an opening or closing tag, the corresponding tag updates instantly.
+
+<VideoPlayer 
+  src="https://docs-images.phcode.dev/videos/editing-text/auto-rename-tag.mp4"
+/>
+
+### Enabling/Disabling Auto Rename Tag feature
+#### Toggle the Feature
+To enable or disable the **Auto Rename Tag** feature, go to `Edit` > `Auto Rename HTML Tags`.
+
+![Auto Rename Tag Disable Image](images/editingText/auto-rename-tag.png "Click on Edit & toggle Auto Rename HTML Tags option")
+
+*The **Auto Rename HTML Tags** feature is enabled by default.*
+
+#### Temporary Disabling
+To temporarily disable tag synchronization for the current tag:
+Press `ESC`.
+
+To re-enable synchronization:
+Move your cursor out of the tag and then back into the tag.
+
+<VideoPlayer 
+  src="https://docs-images.phcode.dev/videos/editing-text/auto-rename-temp-disable.mp4"
+/>
+
+---
+
 ## File Encoding
 **File encoding** is the method used to represent text in a file by converting characters into bytes. We need it to ensure that text is displayed correctly across different platforms and to handle special characters or symbols. Phoenix Code Editor supports multiple file encoding formats.
 
