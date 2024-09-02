@@ -31,7 +31,7 @@ To revert back to a single cursor, just press the `Esc` key.
 ## Quick Edit
 With **Quick Edit**, you can edit your CSS file directly within HTML files. 
 
-[Read More](./04-Features/07-quick-edit.md)
+[Read More](./04-Features/08-quick-edit.md)
 
 ---
 
