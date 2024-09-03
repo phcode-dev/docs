@@ -14,6 +14,7 @@ We have also added several `HTML and Text Editing` workflow improvements.
 ## Now Available on ChromeOS
 
 All new native ChromeOS app is now available on the Google Play Store.
+The ChromeOS app is a highly requested feature and is specially made for education and student use.
 
 [![google play icon (1)](https://github.com/user-attachments/assets/0a7f20ce-653c-43a8-ac3e-3875ea74df5b)](https://play.google.com/store/apps/details?id=prod.phcode.twa)
 
