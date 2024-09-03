@@ -13,14 +13,14 @@ We have also added several `HTML and Text Editing` workflow improvements.
 
 ## Now Available on ChromeOS
 
-All new native ChromeOS app is now available in the Google Play Store. 
-- todo add read more here...
+All new native ChromeOS app is now available on the Google Play Store.
 
 [![google play icon (1)](https://github.com/user-attachments/assets/0a7f20ce-653c-43a8-ac3e-3875ea74df5b)](https://play.google.com/store/apps/details?id=prod.phcode.twa)
 
 ## Auto rename start and end of HTML/XML/SVG tags
 
-Automatically rename paired HTML/XML/SVG tags as you type at the start or end of the tag.
+Automatically rename paired HTML/XML/SVG tags as you type at the start or end of the tag. [Read more...](https://docs.phcode.dev/docs/editing-text/#auto-rename-tag)
+
 ![tag sync](https://github.com/user-attachments/assets/ad82db8c-df1c-4c83-a5db-145caab539ec)
 
 ## Auto Tab and Spacing detection

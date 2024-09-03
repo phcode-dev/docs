@@ -5,7 +5,7 @@ title: Editing Text
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-**Phoenix Code Editor** provides essential features for efficient text editing. This section covers the key features.
+This section provides an overview of the core text and code editing features in **Phoenix Code**.
 
 ---
 
