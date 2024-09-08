@@ -41,3 +41,6 @@ Phoenix Code only supports plain JSON configuration file
 [.htmlvalidate.json](https://html-validate.org/usage/index.html#configuration).
 Other config files like `.htmlvalidate.js` and `.htmlvalidate.cjs` are not
 supported.
+
+#### Q: How is HTML linting triggered in Phoenix Code?
+HTML linting is automatically triggered when you save your file- errors and warnings are displayed in the problems panel.
