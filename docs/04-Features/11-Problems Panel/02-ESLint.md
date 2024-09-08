@@ -59,5 +59,7 @@ most common errors:
 
 2. Ensure to run `npm install` on the project and `node_modules` folder is
    present in the project at the top level.
-1. ESLint config files may have errors. Check if the problem message contains
+3. ESLint config files may have errors. Check if the problem message contains
    any references to your ESLint config file.
+
+*Note: ESLint runs automatically when you save your file. Issues and errors are displayed in the Problems Panel.*
