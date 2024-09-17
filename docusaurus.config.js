@@ -140,7 +140,7 @@ const config = {
 						label: "Docs"
 					},
 
-					{to: '/api/Writing-Extensions-And-Themes', label: 'API', position: 'left'},
+					{to: '/api/intro', label: 'API', position: 'left'},
 
 					{ to: "/blog", label: "Blog", position: "left" },
 					{
@@ -168,7 +168,7 @@ const config = {
 
 							{
 							 label: 'API',
-							 to: '/api/Writing-Extensions-And-Themes',
+							 to: '/api/intro',
 							},
 						]
 					},
