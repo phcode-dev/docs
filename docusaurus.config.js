@@ -140,8 +140,7 @@ const config = {
 						label: "Docs"
 					},
 
-					// Temporarily commenting out this navbar link until the API content is ready
-					//{to: '/api/intro', label: 'API', position: 'left'},
+					{to: '/api/Writing-Extensions-And-Themes', label: 'API', position: 'left'},
 
 					{ to: "/blog", label: "Blog", position: "left" },
 					{
@@ -165,13 +164,12 @@ const config = {
 							{
 								label: "Docs",
 								to: "/docs/intro"
-							}
+							},
 
-							// Temporarily commenting out this footer link until the API content is ready
-							//{
-							//  label: 'API',
-							//  to: '/api/intro',
-							//},
+							{
+							 label: 'API',
+							 to: '/api/Writing-Extensions-And-Themes',
+							},
 						]
 					},
 					{
