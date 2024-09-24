@@ -121,6 +121,21 @@ The **Zoom UI and Fonts** options allow you to adjust the overall interface scal
 
 ---
 
+## Indent Guide Lines
+
+**Indent Guide Lines** are vertical lines that help visually align code blocks and indicate indentation levels. They assist in understanding code hierarchy and nested structures, improving overall readability.
+
+### Enabling/Disabling Indent Guide Lines
+To enable or disable Indent Guide Lines, go to `View > Indent Guide Lines`.
+
+### Editor Preferences for Indent Guides
+You can customize indent guide behavior in the editor preferences with the following options:
+
+**editor.indentGuides**: Set to `true` to display indent guide lines; set to `false` to hide them.
+**editor.indentHideFirst**: Set to `true` to hide the first indent guide line; set to `false` to display it.
+
+---
+
 ## File Encoding
 **File encoding** is the method used to represent text in a file by converting characters into bytes. We need it to ensure that text is displayed correctly across different platforms and to handle special characters or symbols. Phoenix Code Editor supports multiple file encoding formats.
 
