@@ -86,6 +86,41 @@ Move your cursor out of the tag and then back into the tag.
 
 ---
 
+## Zoom and Font Size Adjustments
+The **Zoom UI and Fonts** options allow you to adjust the overall interface scale and font size.
+
+### Zoom UI 
+**Zoom In** :- Enlarges the overall UI, making all elements larger.
+
+**Zoom Out** :- Reduces the overall UI, making all elements smaller.
+
+### Font Size Adjustment 
+**Increase Font Size** :- Enlarges the text in the editor without affecting other UI elements.
+
+**Decrease Font Size** :- Reduces the text size in the editor without affecting other UI elements.
+
+**Restore Font Size** :- Resets the editor text to its default size.
+
+
+### Using Zoom UI and Fonts Options
+####  Using Menu
+![Zoom Image](images/editingText/zoom.png "Click on View & hover over Zoom UI and Fonts")
+
+1. Click on "View" in the menu bar.
+2. Hover over "Zoom UI and Fonts".
+3. Select the desired option from the submenu.
+
+#### Using Keyboard Shortcuts
+* **Zoom In**: `Ctrl + +`   (`Cmd + +` on MacOs)
+* **Zoom Out**: `Ctrl + -`   (`Cmd + -` on MacOs)
+* **Increase Font Size**: `Ctrl + Shift + +`   (`Cmd + Shift + +` on MacOs)
+* **Decrease Font Size**: `Ctrl + Shift + -`   (`Cmd + Shift + -` on MacOs)
+* **Restore Font Size**: `Ctrl + Shift + (`   (`Cmd + Shift + (` on MacOs)
+
+*Note :- The current zoom level is displayed next to the **Zoom In** option.*
+
+---
+
 ## File Encoding
 **File encoding** is the method used to represent text in a file by converting characters into bytes. We need it to ensure that text is displayed correctly across different platforms and to handle special characters or symbols. Phoenix Code Editor supports multiple file encoding formats.
 
