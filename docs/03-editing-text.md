@@ -149,6 +149,8 @@ To enable or disable Indent Guide Lines, go to `View > Indent Guide Lines`.
 ### Editor Preferences for Indent Guides
 You can customize indent guide behavior in the editor preferences with the following options:
 
+[Click here](#editing-preferences) to read on how to edit the preferences.
+
 **editor.indentGuides**: Set to `true` to display indent guide lines; set to `false` to hide them.
 **editor.indentHideFirst**: Set to `true` to hide the first indent guide line; set to `false` to display it.
 
