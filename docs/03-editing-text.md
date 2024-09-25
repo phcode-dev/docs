@@ -141,9 +141,12 @@ The **Zoom UI and Fonts** options allow you to adjust the overall interface scal
 
 ## Indent Guide Lines
 
+![Indent Guide Lines Image](images/editingText/indent-display.png "The vertical lines are Indent Guide Lines")
 **Indent Guide Lines** are vertical lines that help visually align code blocks and indicate indentation levels. They assist in understanding code hierarchy and nested structures, improving overall readability.
 
 ### Enabling/Disabling Indent Guide Lines
+![Indent Guide Lines Enable Image](images/editingText/indent-lines.png "Click on View menu and toggle Indent Guide Lines option")
+
 To enable or disable Indent Guide Lines, go to `View > Indent Guide Lines`.
 
 ### Editor Preferences for Indent Guides
