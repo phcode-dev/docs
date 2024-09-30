@@ -13,6 +13,8 @@ resources
 # Generated files
 .docusaurus
 .cache-loader
+api/API-Reference
+phoenix
 
 # Misc
 .DS_Store
