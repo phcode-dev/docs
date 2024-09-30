@@ -5,14 +5,15 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "npm run buildAPIDocs && docusaurus build",
+    "build": "npm run buildAPIDocsDev && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "buildAPIDocs": "shx rm -rf phoenix && shx rm -rf api/API-Reference && git clone --depth 1 --filter=blob:none --sparse https://github.com/phcode-dev/phoenix.git && cd phoenix && git sparse-checkout set docs/API-Reference && cd .. && shx cp -r phoenix/docs/API-Reference api/API-Reference && shx rm -rf phoenix"
+    "buildAPIDocsProd": "shx rm -rf phoenix && shx rm -rf api/API-Reference && git clone -b prod --depth 1 --filter=blob:none --sparse https://github.com/phcode-dev/phoenix.git && cd phoenix && git sparse-checkout set docs/API-Reference && cd .. && shx cp -r phoenix/docs/API-Reference api/API-Reference && shx rm -rf phoenix",
+    "buildAPIDocsDev": "shx rm -rf phoenix && shx rm -rf api/API-Reference && git clone --depth 1 --filter=blob:none --sparse https://github.com/phcode-dev/phoenix.git && cd phoenix && git sparse-checkout set docs/API-Reference && cd .. && shx cp -r phoenix/docs/API-Reference api/API-Reference && shx rm -rf phoenix"
   },
   "dependencies": {
     "@docusaurus/core": "3.5.2",
