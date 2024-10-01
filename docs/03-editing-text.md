@@ -1,5 +1,5 @@
 ---
-slug: ./editing-text
+slug: ../intro
 title: Editing Text
 ---
 
