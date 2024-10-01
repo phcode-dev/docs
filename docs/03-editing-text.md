@@ -51,7 +51,7 @@ To revert back to a single cursor, just press the `Esc` key.
 ## Quick Edit
 With **Quick Edit**, you can edit your CSS file directly within HTML files. 
 
-[Read More](./features/quick-edit)
+[Read More](./Features/quick-edit)
 
 ---
 
@@ -69,7 +69,7 @@ With **Quick Edit**, you can edit your CSS file directly within HTML files.
 ## Find in Files
 With **Find in Files**, you can search for specific text across multiple files within a project.
 
-[Read More](./features/find-in-files)
+[Read More](./Features/find-in-files)
 
 ---
 
@@ -198,8 +198,7 @@ Now, files with `.myjs` extension will be treated as JavaScript files.
 ## Beautify Code
 With **Beautify Code**, you can format your code to follow consistent styling rules, improving readability and making it easier to maintain.
 
-<!-- [Read More](/docs/features/beautify-code.md) -->
-[Read More](./features/beautify-code)
+[Read More](./Features/beautify-code)
 
 ---
 
