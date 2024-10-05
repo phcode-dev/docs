@@ -13,7 +13,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "buildAPIDocsProd": "shx rm -rf phoenix && shx rm -rf api/API-Reference && git clone -b prod --depth 1 --filter=blob:none --sparse https://github.com/phcode-dev/phoenix.git && cd phoenix && git sparse-checkout set docs/API-Reference && cd .. && shx cp -r phoenix/docs/API-Reference api/API-Reference && shx rm -rf phoenix",
-    "buildAPIDocsDev": "shx rm -rf phoenix && shx rm -rf api/API-Reference && git clone --depth 1 --filter=blob:none --sparse https://github.com/phcode-dev/phoenix.git && cd phoenix && git sparse-checkout set docs/API-Reference && cd .. && shx cp -r phoenix/docs/API-Reference api/API-Reference && shx rm -rf phoenix"
+    "buildAPIDocsDev": "shx rm -rf phoenix && shx rm -rf api/API-Reference && git clone --depth 1 --filter=blob:none --sparse https://github.com/phcode-dev/phoenix.git && cd phoenix && git sparse-checkout set docs/API-Reference && cd .. && shx cp -r phoenix/docs/API-Reference api/API-Reference && shx rm -rf phoenix",
+    "serveStatic": "http-server build -p 8001 -c-1"
   },
   "dependencies": {
     "@docusaurus/core": "3.5.2",
@@ -34,7 +35,8 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.5.2",
     "@docusaurus/types": "3.5.2",
-    "shx": "^0.3.4"
+    "shx": "^0.3.4",
+    "http-server": "14.1.0"
   },
   "browserslist": {
     "production": [
