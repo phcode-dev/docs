@@ -36,7 +36,7 @@
     "@docusaurus/module-type-aliases": "3.5.2",
     "@docusaurus/types": "3.5.2",
     "shx": "^0.3.4",
-    "http-server": "14.1.0"
+    "http-server": "14.1.1"
   },
   "browserslist": {
     "production": [
