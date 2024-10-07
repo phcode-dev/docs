@@ -3,6 +3,8 @@ title: Writing Extension and Themes
 ---
 
 This document outlines how to write your own extensions and themes for Phoenix Code.
+
+## Creating an extension
 Click on one of the links below and follow the instructions there to start:
 * [Create a theme](https://github.com/phcode-dev/theme-template)
 * [Create an extension](https://github.com/phcode-dev/extension-template)
