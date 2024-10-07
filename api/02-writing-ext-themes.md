@@ -11,9 +11,8 @@ Click on one of the links below and follow the instructions there to start:
 * [Create a node.js extension](https://github.com/phcode-dev/extension-node-template)
 
 ## API docs
-Please refer to the links below for extension API docs and how to's.
+Please refer to the links below for extension API docs and code references.
 * Phoenix Code APIs - [API Reference](./API-Reference/NodeConnector)
-* Common How-Tos: https://github.com/brackets-cont/brackets/wiki/How-to-Write-Extensions#common-how-tos
 * Take a look at our default extensions for code reference: https://github.com/phcode-dev/phoenix/tree/main/src/extensions/default
 
 ## Running and Debugging your extension
