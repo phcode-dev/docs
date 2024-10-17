@@ -9,24 +9,6 @@ This section provides an overview of the core text and code editing features in 
 
 ---
 
-## Editing Preferences
-You can personalize Phoenix to suit your workflow by adjusting the preferences.
-
-### Open the Preferences File: 
-![Open Preferences File Image](images/editingText/preferences.png "Click on File and then click on Open Preferences File")
-To modify the preferences, go to `File` > `Open Preferences File`.
-
-### Understanding the Preferences Layout
-Once selected, two files will appear side by side:
- * defaultPreferences.json (on the left) :- This file is a read-only file containing the default settings.
- * phcode.json (on the right) :- This file is editable and used for any custom preferences you wish to apply.
-
-### Modifying Preferences
-![Modify Preferences Image](images/editingText/modify-preferences.png "Modify phcode.json file to update the preferences settings")
-To change a preference, simply write the desired configuration and values in the **phcode.json** and save the file. These custom settings will automatically override the corresponding values in the default preferences.
-
----
-
 ## Multi Cursor
 Using **Multi-Cursor**, you can place multiple cursors in different locations, allowing you to edit text simultaneously. This feature is especially useful for making quick, consistent changes across multiple lines or sections of a file.
 
@@ -292,5 +274,23 @@ Phoenix Code Editor has a built-in file recovery feature to help you retrieve un
 
 * **Discard Changes**: To remove the unsaved changes, click `Discard`.   
 *Note: This will permanently delete the data.*
+
+---
+
+## Editing Preferences
+You can personalize Phoenix to suit your workflow by adjusting the preferences.
+
+### Open the Preferences File:
+![Open Preferences File Image](images/editingText/preferences.png "Click on File and then click on Open Preferences File")
+To modify the preferences, go to `File` > `Open Preferences File`.
+
+### Understanding the Preferences Layout
+Once selected, two files will appear side by side:
+* defaultPreferences.json (on the left) :- This file is a read-only file containing the default settings.
+* phcode.json (on the right) :- This file is editable and used for any custom preferences you wish to apply.
+
+### Modifying Preferences
+![Modify Preferences Image](images/editingText/modify-preferences.png "Modify phcode.json file to update the preferences settings")
+To change a preference, simply write the desired configuration and values in the **phcode.json** and save the file. These custom settings will automatically override the corresponding values in the default preferences.
 
 ---
