@@ -1,10 +1,14 @@
 ---
-title: Creating Node Extensions
+title: Node Integration with Extensions
 ---
 
 This document outlines how to create node extensions for **Phoenix Code**.
 
-## How to create a new Node Extension
+## What are Node Extensions
+
+Node extensions for Phoenix Code enhance the desktop version by enabling Node.js capabilities and access to npm packages. Standard extensions run in both browser and desktop builds, but only desktop builds support Node.js execution. Browser builds do not support Node.js, so extensions must handle this limitation.
+
+## How to create a Node Extension
 
 To create a new node extension for Phoenix Code, use [this template](https://github.com/phcode-dev/extension-node-template). This template extension works in the browser as well as desktop builds. In browser, it will not use node, and node.js based functionalities are not available. Desktop builds can use node capabilities.
 
