@@ -1,3 +1,6 @@
+---
+title: Popular Extensions
+---
 
 This document provides an overview of the most popular extensions available for Phoenix Code.
 

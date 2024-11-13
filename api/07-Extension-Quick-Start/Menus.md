@@ -27,7 +27,7 @@ To add a custom menu, follow these steps :-
 2. **Create the menu.** 
     
     Use `Menus.addMenu()` to add a menu to the menu bar. Provide the display name and the identifier.  *The identifier must be written in* `snake_case`.
-    <br>
+    <br />
     > Providing the identifier is necessary to display the menu on the menu bar. This identifier may later be used to add menu items inside it or even remove the menu if needed.
     
     ```jsx
