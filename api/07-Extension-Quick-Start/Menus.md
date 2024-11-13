@@ -4,11 +4,11 @@ title: Menus
 
 This document outlines the basic features of working with Menus, including:
 
-[How to add a Menu](#adding-a-menu)
-[How to add a SubMenu](#adding-a-sub-menu)
-[How to add a Menu item](#adding-a-menu-item)
-[How to position a Menu item](#position-the-menu-item)
-[How to add a keyboard shortcut to a Menu item](#attach-a-keyboard-shortcut-to-a-menu-item)
+* [How to add a Menu](#adding-a-menu)
+* [How to add a SubMenu](#adding-a-sub-menu)
+* [How to add a Menu item](#adding-a-menu-item)
+* [How to position a Menu item](#position-the-menu-item)
+* [How to add a keyboard shortcut to a Menu item](#attach-a-keyboard-shortcut-to-a-menu-item)
 
 ---
 
