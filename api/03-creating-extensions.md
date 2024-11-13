@@ -5,9 +5,8 @@ title: Creating Extensions
 This document outlines how to write your own extensions for **Phoenix Code**.
 
 ## How to create a new Extension
-Click on one of the links below and follow the instructions there to start:
-* [Create an Extension](https://github.com/phcode-dev/extension-template)
-* [Create a Node.js Extension](https://github.com/phcode-dev/extension-node-template)
+Click on the link below and follow the instructions there to start:
+[Create an Extension](https://github.com/phcode-dev/extension-template)
 
 ## API docs
 Please refer to the links below for extension API docs and code references.
