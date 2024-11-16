@@ -1,5 +1,5 @@
 ---
-title: Menus
+title: Add Menus, Menu items and Keyboard Shortcuts
 ---
 
 This document outlines the basic features of working with Menus, including:

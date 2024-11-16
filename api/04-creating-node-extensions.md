@@ -1,12 +1,17 @@
 ---
-title: Node Integration with Extensions
+title: Use node.js from your extension
 ---
 
 This document outlines how to create node extensions for **Phoenix Code**.
 
-## What are Node Extensions
+## What is a Node Extension?
 
-Node extensions for Phoenix Code enhance the desktop version by enabling Node.js capabilities and access to npm packages. Standard extensions run in both browser and desktop builds, but only desktop builds support Node.js execution. Browser builds do not support Node.js, so extensions must handle this limitation.
+Node Extensions in Phoenix Code bring the power of Node.js to your desktop development environment, unlocking access to the vast npm ecosystem for building feature-rich extensions. By leveraging Node.js runtime capabilities, these extensions can perform system-level operations like executing commands, accessing local files, or integrating with external applications – functionalities that aren't possible in traditional browser-based extensions.
+
+One of the key advantages of Node Extensions is their ability to handle computationally intensive tasks without impacting the editor's performance. While browser-based extensions run in the main thread and can potentially freeze the UI during heavy processing, Node Extensions can offload these operations to separate processes. This makes them ideal for scenarios involving extensive image processing, code analysis, or other resource-demanding tasks. Whether you're building a system integration tool or implementing complex background processing, Node Extensions provide the perfect foundation for creating powerful, responsive extensions in Phoenix Code's desktop environment.
+For cross-platform compatibility between desktop and browser environments, you can alternatively use Web Workers to handle computation-intensive tasks. This approach requires bundling any npm dependencies using webpack or similar tools before they can run in the browser. Check out our [Web Worker Communication guide](https://docs.phcode.dev/api/API-Reference/worker/WorkerComm) for detailed instructions on implementing and managing Web Workers in your extension.
+
+Important: When using Node Extensions for heavy computational tasks, make sure to fork a separate Node.js process or worker rather than running operations in the main Node.js process. This separation ensures optimal performance and stability of your extension within Phoenix Code.
 
 ## How to create a Node Extension
 
