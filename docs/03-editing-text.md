@@ -121,6 +121,26 @@ The **Zoom UI and Fonts** options allow you to adjust the overall interface scal
 
 ---
 
+## Line Height
+
+The **Line Height** feature lets you customize the vertical spacing between lines of text in the editor.
+
+### Adjusting Line Height
+
+To adjust line height:
+1. Click on `View` in the menu bar.
+2. Navigate to the `Themes...` option.
+3. Use the Line Height slider to set a value between 1 and 3. The default is 1.5.
+![Line Height](./images/editingText/line-height.png "Go to View > Themes... to adjust line height")
+
+Adjustments apply instantly, updating the editor dynamically.
+
+### Modifying Line Height via Preferences
+
+You can also modify the line height by updating the `themes.editorLineHeight` property in the preferences file. [Click Here](#editing-preferences) to read on how to edit the preferences.
+
+---
+
 ## Indent Guide Lines
 
 ![Indent Guide Lines Image](images/editingText/indent-display.png "The vertical lines are Indent Guide Lines")
