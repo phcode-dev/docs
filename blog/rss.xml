@@ -4,10 +4,69 @@
         <title>Phoenix Code Docs Blog</title>
         <link>https://docs.phcode.dev/blog</link>
         <description>Phoenix Code Docs Blog</description>
-        <lastBuildDate>Mon, 02 Sep 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Nov 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Editor Experience Release (November-2024, V-3.10) is now Live]]></title>
+            <link>https://docs.phcode.dev/blog/release-3.10</link>
+            <guid>https://docs.phcode.dev/blog/release-3.10</guid>
+            <pubDate>Sun, 24 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[November release(3.10) of Phoenix Code is now available for download at phcode.io.]]></description>
+            <content:encoded><![CDATA[<p>November release(3.10) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.</p>
+<p>This month's core theme is <code>Editor UI improvements</code>. We have fine-tuned the editing experience for better
+performance and visual feedback.
+We've also made substantial improvements to <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">docs.phcode.dev</a> to better support extension
+developers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="indent-guide-lines">Indent Guide Lines<a href="https://docs.phcode.dev/blog/release-3.10#indent-guide-lines" class="hash-link" aria-label="Direct link to Indent Guide Lines" title="Direct link to Indent Guide Lines">​</a></h2>
+<p>Phoenix Code now supports indent guidelines to help you better visualize code structure. This feature can
+be toggled via <code>View &gt; Indent Guide Lines</code>. <a href="https://docs.phcode.dev/docs/editing-text#indent-guide-lines" target="_blank" rel="noopener noreferrer">Read more...</a></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/3d9d0c55-3c9e-4ab3-bbc0-53b563d19e39" alt="image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="customizable-editor-line-height">Customizable Editor Line Height<a href="https://docs.phcode.dev/blog/release-3.10#customizable-editor-line-height" class="hash-link" aria-label="Direct link to Customizable Editor Line Height" title="Direct link to Customizable Editor Line Height">​</a></h2>
+<p>Theme Settings (<code>View &gt; Themes...</code>) now has a new <code>Line Height</code> slider. Adjust the editor line height between 1x and 3x to find your
+perfect balance of readability and screen real estate.</p>
+<p>Also added a <code>Get More...</code> button to the Themes dialog, linking directly to the themes section in Extension Manager.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/97a46d9a-e971-401d-8a77-015afa6d5972" alt="image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="linecol-indicator-relocation"><code>Line:Col</code> Indicator Relocation<a href="https://docs.phcode.dev/blog/release-3.10#linecol-indicator-relocation" class="hash-link" aria-label="Direct link to linecol-indicator-relocation" title="Direct link to linecol-indicator-relocation">​</a></h2>
+<p>Moved to the right of the status bar, accommodating future status bar extensions. Click on the <code>line:col</code> section in the
+statusbar to jump to specific lines.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/540ea992-dda0-4a2c-8042-3c6228616636" alt="image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance-tweaks">Performance Tweaks<a href="https://docs.phcode.dev/blog/release-3.10#performance-tweaks" class="hash-link" aria-label="Direct link to Performance Tweaks" title="Direct link to Performance Tweaks">​</a></h2>
+<ul>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1943" target="_blank" rel="noopener noreferrer">Major improvements to editor rendering</a> with better editor scroll
+consistency and performance, especially on Safari and macOS.</li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1937" target="_blank" rel="noopener noreferrer">Faster startup of extension manager.</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="stability-improvements">Stability Improvements<a href="https://docs.phcode.dev/blog/release-3.10#stability-improvements" class="hash-link" aria-label="Direct link to Stability Improvements" title="Direct link to Stability Improvements">​</a></h2>
+<ul>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1889" target="_blank" rel="noopener noreferrer">File recovery now does integrity checks for more reliable crash recovery.</a></li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1838" target="_blank" rel="noopener noreferrer">Fixed Markdown image link handling within href tags.</a></li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1932" target="_blank" rel="noopener noreferrer">Improved extension registry management to prevent quota issues on Mac/Linux.</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-updates">Documentation Updates<a href="https://docs.phcode.dev/blog/release-3.10#documentation-updates" class="hash-link" aria-label="Direct link to Documentation Updates" title="Direct link to Documentation Updates">​</a></h2>
+<p>Our documentation site - <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">docs.phcode.dev</a> has received a major overhaul:</p>
+<p>Updated user guide: docs.phcode.dev/docs/intro
+New API documentation for extension developers: docs.phcode.dev/api/getting-started</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="all-changes">All changes<a href="https://docs.phcode.dev/blog/release-3.10#all-changes" class="hash-link" aria-label="Direct link to All changes" title="Direct link to All changes">​</a></h2>
+<p>Please see <a href="https://github.com/phcode-dev/phoenix/commits/main/?since=2024-09-11&amp;until=2024-11-24" target="_blank" rel="noopener noreferrer">this link</a> for a full list of changes
+in GitHub.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.10#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:">​</a></h2>
+<ul>
+<li><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer">https://github.com/orgs/phcode-dev/discussions</a></li>
+<li><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
+<li><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer"><strong>Consider supporting us</strong> on GitHub Sponsors</a>. Every contribution helps us
+to keep improving Phoenix Code.</li>
+</ul>
+<p>With gratitude,</p>
+<p>The Phoenix Team</p>]]></content:encoded>
+            <category>Editor Experience</category>
+            <category>UI Improvements</category>
+            <category>Windows</category>
+            <category>Linux</category>
+            <category>Mac</category>
+            <category>Release</category>
+        </item>
         <item>
             <title><![CDATA[HTML Workflows and stability Release (September-2024, V-3.9) is now Live]]></title>
             <link>https://docs.phcode.dev/blog/release-3.9</link>
