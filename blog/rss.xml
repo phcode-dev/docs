@@ -25,7 +25,7 @@ be toggled via <code>View &gt; Indent Guide Lines</code>. <a href="https://docs.
 <p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/3d9d0c55-3c9e-4ab3-bbc0-53b563d19e39" alt="image" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="customizable-editor-line-height">Customizable Editor Line Height<a href="https://docs.phcode.dev/blog/release-3.10#customizable-editor-line-height" class="hash-link" aria-label="Direct link to Customizable Editor Line Height" title="Direct link to Customizable Editor Line Height">​</a></h2>
 <p>Theme Settings (<code>View &gt; Themes...</code>) now has a new <code>Line Height</code> slider. Adjust the editor line height between 1x and 3x to find your
-perfect balance of readability and screen real estate.</p>
+perfect balance of readability and screen real estate. <a href="https://docs.phcode.dev/docs/editing-text#line-height" target="_blank" rel="noopener noreferrer">Read more...</a></p>
 <p>Also added a <code>Get More...</code> button to the Themes dialog, linking directly to the themes section in Extension Manager.</p>
 <p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/97a46d9a-e971-401d-8a77-015afa6d5972" alt="image" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="linecol-indicator-relocation"><code>Line:Col</code> Indicator Relocation<a href="https://docs.phcode.dev/blog/release-3.10#linecol-indicator-relocation" class="hash-link" aria-label="Direct link to linecol-indicator-relocation" title="Direct link to linecol-indicator-relocation">​</a></h2>
@@ -46,8 +46,8 @@ consistency and performance, especially on Safari and macOS.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-updates">Documentation Updates<a href="https://docs.phcode.dev/blog/release-3.10#documentation-updates" class="hash-link" aria-label="Direct link to Documentation Updates" title="Direct link to Documentation Updates">​</a></h2>
 <p>Our documentation site - <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer">docs.phcode.dev</a> has received a major overhaul:</p>
-<p>Updated user guide: docs.phcode.dev/docs/intro
-New API documentation for extension developers: docs.phcode.dev/api/getting-started</p>
+<p>Updated user guide: <a href="https://docs.phcode.dev/docs/intro" target="_blank" rel="noopener noreferrer">docs.phcode.dev/docs/intro</a>
+New API documentation for extension developers: <a href="https://docs.phcode.dev/api/getting-started" target="_blank" rel="noopener noreferrer">docs.phcode.dev/api/getting-started</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="all-changes">All changes<a href="https://docs.phcode.dev/blog/release-3.10#all-changes" class="hash-link" aria-label="Direct link to All changes" title="Direct link to All changes">​</a></h2>
 <p>Please see <a href="https://github.com/phcode-dev/phoenix/commits/main/?since=2024-09-11&amp;until=2024-11-24" target="_blank" rel="noopener noreferrer">this link</a> for a full list of changes
 in GitHub.</p>
