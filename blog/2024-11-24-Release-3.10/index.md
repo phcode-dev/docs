@@ -50,8 +50,8 @@ statusbar to jump to specific lines.
 ## Documentation Updates
 Our documentation site - [docs.phcode.dev](https://docs.phcode.dev) has received a major overhaul:
 
-Updated user guide: [docs.phcode.dev/docs/intro](https://docs.phcode.dev/docs/intro)
-New API documentation for extension developers: [docs.phcode.dev/api/getting-started](https://docs.phcode.dev/api/getting-started)
+-  Updated user guide: [docs.phcode.dev/docs/intro](https://docs.phcode.dev/docs/intro)
+-  New API documentation for extension developers: [docs.phcode.dev/api/getting-started](https://docs.phcode.dev/api/getting-started)
 
 ## All changes
 
