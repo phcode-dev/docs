@@ -22,7 +22,7 @@ be toggled via `View > Indent Guide Lines`. [Read more...](https://docs.phcode.d
 ## Customizable Editor Line Height
 
 Theme Settings (`View > Themes...`) now has a new `Line Height` slider. Adjust the editor line height between 1x and 3x to find your
-perfect balance of readability and screen real estate.
+perfect balance of readability and screen real estate. [Read more...](https://docs.phcode.dev/docs/editing-text#line-height)
 
 Also added a `Get More...` button to the Themes dialog, linking directly to the themes section in Extension Manager.
 
@@ -50,8 +50,8 @@ statusbar to jump to specific lines.
 ## Documentation Updates
 Our documentation site - [docs.phcode.dev](https://docs.phcode.dev) has received a major overhaul:
 
-Updated user guide: docs.phcode.dev/docs/intro
-New API documentation for extension developers: docs.phcode.dev/api/getting-started
+Updated user guide: [docs.phcode.dev/docs/intro](https://docs.phcode.dev/docs/intro)
+New API documentation for extension developers: [docs.phcode.dev/api/getting-started](https://docs.phcode.dev/api/getting-started)
 
 ## All changes
 
