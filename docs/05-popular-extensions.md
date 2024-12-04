@@ -38,18 +38,6 @@ For more details, visit the [GitHub repository](https://github.com/DennisKehrig/
 ![Show Whitespace](./images/popular-extensions/Show-Whitespace.png)
 
 
-
-## Line Height 
-Created by: [Devvaannsh](https://github.com/devvaannsh)
-
-This extension allows users to change the line spacing in the code for better readability.
-
-For more details, visit the [GitHub repository](https://github.com/devvaannsh/custom-line-height) of the extension.
-
-`Line Height` in action :-
-![Line Height](./images/popular-extensions/Line-Height.png)
-
-
 ## 1-2-3
 Created by: [Michaljerabek](https://github.com/michaljerabek)
 
