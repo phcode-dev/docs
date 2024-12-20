@@ -26,7 +26,19 @@ The Live Preview feature in Phoenix Code provides instant feedback on changes ma
 1. Hover over the Live Preview panel.
 2. Choose your preferred browser by clicking its icon. ![Browser selected](images/livePreview/browser-choice.png "Live Preview in selected browser").
 3. Live Preview opens in the chosen browser.
-   
+
+## Reload Live Preview
+The **Reload** button ![Reload Live Preview](./images/livePreview/reload.png) in the live preview toolbar allows you to manually refresh the Live Preview pane to ensure it reflects the latest changes in your code. While Live Preview updates automatically, the Reload button can be helpful if you encounter synchronization issues.
+
+## Disable Live Preview
+You can disable the live preview panel at startup by following these steps:
+1. Click the settings icon in the toolbar (hover over the toolbar to make it appear).
+![Settings Icon](./images/livePreview/settings-gear.png)
+
+2. This will open the live preview settings menu: 
+![Settings menu](./images/livePreview/live-preview-settings-menu.png)
+3. Disable the `Show Live Preview Panel at Startup` option.
+
 
 ## Live Preview Demonstrated
 <VideoPlayer 
