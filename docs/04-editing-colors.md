@@ -55,7 +55,7 @@ ___
 The **Color Preview** feature displays the color(s) used in the current line in the gutter area.
 ![Color Preview](./images/editingColors/colorPreview.png "Color Preview")
 
-> When a line contains multiple colors, they are displayed in a container, sharing equal space. A maximum of four colors can be displayed per line.
+> A maximum of four colors can be displayed for a single line.
 
 ### Hover Interaction
 * Hovering over a color box highlights the corresponding color text in the editor with a background of the same color.
