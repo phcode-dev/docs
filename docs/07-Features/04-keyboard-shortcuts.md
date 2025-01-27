@@ -1,4 +1,4 @@
-# Change Keyboard Shortcuts
+# Keyboard Shortcuts
 
 Now you can make your own shortcuts for any menu, so you don't have to memorize a bunch of different ones for every app. It's like customizing your game controls to play your way!
 This feature is accessible in two ways: via the menu items or through the Keyboard Shortcuts panel.
