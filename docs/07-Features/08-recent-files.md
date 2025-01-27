@@ -8,7 +8,7 @@ The Recent Files dialog box provides quick access to files you’ve recently wor
 * Desktop App: Press `Ctrl + R`.
 * Browser: Press `Ctrl + Alt + Shift + O` (as `Ctrl + R` is reserved for browser reloads).
 
-To customize the keyboard shortcut, refer to [this docs](./05-keyboard-shortcuts.md#changing-a-keyboard-shortcut)
+To customize the keyboard shortcut, refer to [this docs](./keyboard-shortcuts#changing-a-keyboard-shortcut)
 
 ## About Recent Files Dialog
 
