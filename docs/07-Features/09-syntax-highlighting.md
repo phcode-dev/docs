@@ -32,7 +32,7 @@ Syntax Highlighting Example [Theme : `Monokai Dark Soda`]
 Syntax Highlighting Example [Theme : `Material Color Light`]
 ![Syntax Highlighting Material Color Light Theme Image](images/syntaxHighlighting/syntax-highlighting-material-color-light-theme.png "Syntax Highlighting by Material Color Light Theme") 
 
-To learn more about Themes. [Click Here](./09-themes.md)
+To learn more about Themes. [Click Here](./themes)
    
 
 ## Add Syntax Highlighting for a Particular File Type
