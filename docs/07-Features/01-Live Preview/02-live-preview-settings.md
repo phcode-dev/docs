@@ -9,14 +9,14 @@ There are two ways to access the Live Preview Settings dialog:
 1. **From the File Menu**:
     - Navigate to the 'File' menu at the top left of the editor.
     - Select 'Live Preview Settings' from the dropdown.
-![live-preview-settings](images/livePreview/settings-menu.png)
+![live-preview-settings](../images/livePreview/settings-menu.png)
 1. **From the Live Preview Panel**:
     - Locate the live preview panel, typically found at the right side of the editor.
     - Hover over the live preview panel title bar and click the gear icon (⚙️) located at the top right of the panel title bar.
-![live-preview-settings](images/livePreview/settings-gear.png)
+![live-preview-settings](../images/livePreview/settings-gear.png)
 ## Configuring Your Server
 
-![settings-dialog](images/livePreview/settings-dialog.png)
+![settings-dialog](../images/livePreview/settings-dialog.png)
 
 Within the Live Preview Settings dialog, you can configure the following options:
 

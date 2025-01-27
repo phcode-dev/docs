@@ -61,7 +61,7 @@ Setting up a live preview for PHP projects is straightforward with Apache and XA
 
 </Tabs>
 6. Add the following settings to your custom live preview:
-![Custom Live Preview Settings](images/phpLivePreview/phpCustomServer.png)
+![Custom Live Preview Settings](../images/phpLivePreview/phpCustomServer.png)
 Your live preview should now automatically update to reflect changes whenever PHP files are edited.
 
 ## PHP Live Preview in Action
