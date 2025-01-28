@@ -40,3 +40,49 @@ In the Clone Repository dialog, clicking on `More Options` expands additional se
 
 *If cloning fails due to authentication issues (e.g., timeout errors), you might need to manually provide your credentials.*
 
+
+## File status
+
+All files with changes are displayed in the Git panel along with their status, such as *Modified*, *Untracked*, and *Deleted*. For modified files, a Git diff button is available.
+
+![Git diff Icon](./images/git-images/git-diff-icon.png "Git diff icon")
+
+*Git diff is used to display the changes made to a file — green lines indicate added content, while red lines show removed content.*
+Clicking on the Git diff icon opens up the Git diff dialog page.
+
+![Git diff Dialog](./images/git-images/git-diff-dialog.png "Git diff dialog")
+
+### Discard changes
+
+For *Modified* and *Deleted* file statuses, a `Discard Changes...` button is shown. Clicking it will reset the changes for *Modified* files and restore *Deleted* files.
+
+For *Untracked* files, a `Delete File...` button is available. Clicking it will delete the file.
+
+![Discard changes or Delete file](./images/git-images/discard-changes.png "Discard changes or Delete file")
+
+
+
+## Commit
+
+To stage/unstage the files, click the checkbox icon at the top-left of the Git panel. This will affect all the files in the working tree. 
+
+![Stage all files](./images/git-images/stage-files.png "Stage all files")
+
+You can also stage/unstage individual files by selecting or deselecting the checkbox next to each file.
+
+Once you get all your required files to the staging area, click on the `Commit` button.
+
+![Commit the files](./images/git-images/git-commit.png "Commit the files")
+ 
+This will open up Git commit dialog box, which will display all the changes made to the files that are to be commited.
+You can enter your commit message in the input box provided. 
+
+![Git Commit dialog](./images/git-images/commit-dialog.png "Git commit dialog box")
+
+> The commit input box also displays the number of characters in the commit message. 
+
+*If your commit message is longer, you can use the `Extended` button at the top-right of the dialog. This expands the input area, making it easier to write detailed commit messages.*
+
+The commit dialog box also provides options to :-
+* **Amend Last Commit**: Selecting this option allows you to modify the most recent commit instead of creating a new one.
+* **Skip Pre-Commit Checks**: Enabling this option bypasses any pre-commit hooks or validation steps.
