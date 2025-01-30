@@ -238,6 +238,21 @@ Clicking the **Show History** button displays a complete list of commits made to
 ![Show File History](./images/git-images/show-file-history.png "Show File History")
 Clicking the **Show File History** button displays the commit history of a specific file, showing all modifications since it was added to the repository. 
 
+### History Viewer
+
+When selecting a specific commit from the history panel, the **History Viewer** appears, displaying all changes made in that commit.
+
+![History Viewer](./images/git-images/history-viewer.png "History viewer")
+
+* Each modified file is collapsed by default.
+* Clicking on a file expands it to show the exact changes.
+
+![History Viewer expanded](./images/git-images/history-viewer-expanded.png "History viewer expanded")
+
+* You can expand or collapse all files at once using the Expand All/Collapse All button.
+
+This lets you inspect changes directly within the editor.
+
 
 
 ## Branch
