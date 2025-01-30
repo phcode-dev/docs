@@ -14,7 +14,7 @@ a major version bump to 4.0.
 A decade-long journey of pushing web development forward: The Brackets story continues with Phoenix Code.
 [Read more about the story of Brackets and the journey to build Phoenix Code and the Brackets community.](https://docs.phcode.dev/blog/Blog-Legacy)
 
-This releases core theme is `Git, Color previews, UX imporovements and stability`.
+This release's core theme is `Git, Color previews, UX imporovements and stability`.
 
 ## Git for Desktop
 
