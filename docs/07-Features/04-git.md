@@ -5,58 +5,45 @@ title: Git
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
+## Getting Started with Git in Phoenix Code
+
 **Phoenix Code** includes built-in Git support, allowing you to manage version control directly within the editor. Git can be accessed from the toolbar icon or the File menu in the menu bar.
 
 ![Git Overview](./images/git-images/git-overview.png "Git Overview")
 
 > To use Git features inside Phoenix Code, ensure Git is installed on your computer. [Download Git](https://git-scm.com/downloads)
 
-Note: *For projects without an existing Git repository, the Git icon won’t appear by default. To initialize or connect a Git repository, use the File menu to set up Git for your project.*
 
-The Git Panel in **Phoenix Code** provides a simple interface for managing version control. It allows you to track changes, commit updates, interact with remote repositories and many more without leaving the editor.
+### Cloning a Repository
 
-![Git Panel](./images/git-images/git-panel.png "Git Panel")
-
-
-
-## Initializing a Git repository
-
-To initialize a Git repository in a project that doesn’t already have one, click on `File > Git > Init`. This will set up Git for your current project. After initialization, the Git icon will appear in the toolbar, indicating that version control is active.
-
-![Git Init](./images/git-images/git-init.png "Git Init")
-
-
-
-## Cloning a Git repository
-
-You can easily clone an existing project directly within the editor.
-
-### Suggested Method
+To clone an existing repository in **Phoenix Code**, follow these steps:
 
 1. Click on the `Start Project` button. 
 
 ![Start Project](./images/git-images/start-project.png "Start Project")
+> This will open the Quick Start project dialog box, which offers various options. [Read more](../05-quick-start-project.md) about Quick Start project here.
 
-> This will open the Quick Start project dialog box, with various options. [Read more](../05-quick-start-project.md) about Quick Start project here.
-
-2. Select the `Get from Git` button.
+2. Select `Get from Git`.
 
 ![Get from Git](./images/git-images/get-from-git.png "Get from Git")
 
-A dialog box will appear asking you to enter the `Git Clone URL` and the `Location` where you want to clone the repository. Fill in the URL of the project and select the location on your machine.
+3. Enter the *Git Clone URL* and choose a *location* to save the project.
 
 ![Get from Git dialog](./images/git-images/get-from-git-dialog.png "Get from Git dialog")
 
-3. Click on `Create Project`. This will clone the repository to the location you specified.
+4. Click `Create Project`. The repository will be cloned to the specified location.
 
 
-### Alternative Method
+### Alternative Cloning Method
 
-Go to `File > Git > Clone`. A dialog will appear, prompting you to enter the URL of the repository you wish to clone.
+You can also clone a repository through the menu:
+
+1. Go to `File > Git > Clone`.
+2. Enter the repository URL in the dialog that appears.
 
 ![Git Clone](./images/git-images/git-clone-dialog.png "Git Clone")
 
-### More Options
+#### More Options
 
 In the Clone Repository dialog, clicking on `More Options` expands additional settings for authentication.
 
@@ -67,6 +54,19 @@ In the Clone Repository dialog, clicking on `More Options` expands additional se
 **Save Credentials to Remote URL**: If enabled, the provided credentials (username and password) will be stored in plain text within the remote URL.
 
 *If cloning fails due to authentication issues (e.g., timeout errors), you might need to manually provide your credentials.*
+
+
+### Initializing a Git repository
+
+To initialize a Git repository in a project that doesn’t already have one, click on `File > Git > Init`. This will set up Git for your current project. After initialization, the Git icon will appear in the toolbar, indicating that version control is active.
+
+![Git Init](./images/git-images/git-init.png "Git Init")
+
+> Note: *For projects without an existing Git repository, the Git icon won’t appear by default. To initialize or connect a Git repository, use the File menu to set up Git for your project.*
+
+Once Git is set up, the Git Panel provides a user-friendly interface to manage version control. You can track changes, commit updates, interact with remote repositories, and more—all within the editor.
+
+![Git Panel](./images/git-images/git-panel.png "Git Panel")
 
 
 
