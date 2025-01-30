@@ -12,7 +12,7 @@ a major version bump to 4.0.
 
 ## The legacy of Brackets - Continued
 A decade-long journey of pushing web development forward: The Brackets story continues with Phoenix Code.
-[Read more about the story of Brackets and the journey to build Phoenix Code and the Brackets community.](Blog-Legacy)
+[Read more about the story of Brackets and the journey to build Phoenix Code and the Brackets community.](https://docs.phcode.dev/blog/Blog-Legacy)
 
 This releases core theme is `Git, Color previews, UX imporovements and stability`.
 
