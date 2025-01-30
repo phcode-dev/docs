@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2803],{31455:s=>{s.exports=JSON.parse('{"tag":{"label":"Windows","permalink":"/blog/tags/windows","allTagsPath":"/blog/tags","count":8,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/windows","page":1,"postsPerPage":10,"totalPages":1,"totalCount":8,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

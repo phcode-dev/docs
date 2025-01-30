@@ -2,11 +2,144 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.phcode.dev/blog</id>
     <title>Phoenix Code Docs Blog</title>
-    <updated>2024-11-24T00:00:00.000Z</updated>
+    <updated>2025-01-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.phcode.dev/blog"/>
     <subtitle>Phoenix Code Docs Blog</subtitle>
     <icon>https://docs.phcode.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Git It Release (January-2025, V-4.0) is now Live]]></title>
+        <id>https://docs.phcode.dev/blog/release-4.0</id>
+        <link href="https://docs.phcode.dev/blog/release-4.0"/>
+        <updated>2025-01-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2025 January release(4.0) of Phoenix Code is now available for download at phcode.io.]]></summary>
+        <content type="html"><![CDATA[<p>2025 January release(4.0) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer">phcode.io</a>.</p>
+<p>This is the largest release we had in a while, and we are happy to announce the next phase of Phoenix Code with
+a major version bump to 4.0.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-legacy-of-brackets---continued">The legacy of Brackets - Continued<a href="https://docs.phcode.dev/blog/release-4.0#the-legacy-of-brackets---continued" class="hash-link" aria-label="Direct link to The legacy of Brackets - Continued" title="Direct link to The legacy of Brackets - Continued">​</a></h2>
+<p>A decade-long journey of pushing web development forward: The Brackets story continues with Phoenix Code.
+<a href="https://docs.phcode.dev/blog/Blog-Legacy" target="_blank" rel="noopener noreferrer">Read more about the story of Brackets and the journey to build Phoenix Code and the Brackets community.</a></p>
+<p>This releases core theme is <code>Git, Color previews, UX imporovements and stability</code>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="git-for-desktop">Git for Desktop<a href="https://docs.phcode.dev/blog/release-4.0#git-for-desktop" class="hash-link" aria-label="Direct link to Git for Desktop" title="Direct link to Git for Desktop">​</a></h2>
+<p>Git is finally here.  Integrated Git source control with a clean, intuitive interface.
+Stage changes, commit, and sync with a single click while keeping your focus on the code.
+Now available in the Windows, Mac and Linux desktop apps of Phoenix code. <a href="https://docs.phcode.dev/docs/Features/git" target="_blank" rel="noopener noreferrer">Read More...</a></p>
+<p>Our Git integration is built upon the incredible work of the developers behind <a href="https://github.com/brackets-userland/brackets-git" target="_blank" rel="noopener noreferrer">Brackets-Git</a>,
+whose contributions made this possible. Thank you!</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/aeacc7c0-3ee3-4a80-9b05-f2b48140bcdd" alt="Image" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/6e7b9faf-d57b-448b-a5bb-a111c67489b5" alt="Image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="color-previews">Color Previews<a href="https://docs.phcode.dev/blog/release-4.0#color-previews" class="hash-link" aria-label="Direct link to Color Previews" title="Direct link to Color Previews">​</a></h2>
+<p>Preview the color(s) used in the file in the gutter area. Hovering over a color box highlights the corresponding color
+text in the editor to quickly jump to editing that color. <a href="https://docs.phcode.dev/docs/editing-colors#color-preview" target="_blank" rel="noopener noreferrer">Read More...</a></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/bedecc32-761b-448e-aced-61828ad3fec6" alt="image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="open-in-terminal-and-file-explorer">Open in Terminal and File Explorer<a href="https://docs.phcode.dev/blog/release-4.0#open-in-terminal-and-file-explorer" class="hash-link" aria-label="Direct link to Open in Terminal and File Explorer" title="Direct link to Open in Terminal and File Explorer">​</a></h2>
+<p>New "Open In" feature lets you instantly open directories and files in the system Terminal or File Explorer across
+Windows, macOS, and Linux desktop apps!</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/710330ae-8b34-4a51-a1f9-4c02736ed9bd" alt="Image" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="better-translations">Better Translations<a href="https://docs.phcode.dev/blog/release-4.0#better-translations" class="hash-link" aria-label="Direct link to Better Translations" title="Direct link to Better Translations">​</a></h2>
+<p>We've moved to an LLM-assisted translation framework, delivering higher-quality translations for non-English locales.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="notable-changes-and-fixes">Notable changes and fixes<a href="https://docs.phcode.dev/blog/release-4.0#notable-changes-and-fixes" class="hash-link" aria-label="Direct link to Notable changes and fixes" title="Direct link to Notable changes and fixes">​</a></h2>
+<ul>
+<li>We've removed some inconsistent and rarely used keyboard shortcuts to free up more key combinations for customization.
+<a href="https://docs.phcode.dev/docs/Features/keyboard-shortcuts" target="_blank" rel="noopener noreferrer">Easily configure your own keyboard shortcuts through the UI.</a></li>
+<li>Fixed <code>Option-[shift]-left</code> and <code>option-[shift]-right</code> keyboard shortcuts not working in mac to select/move words.</li>
+<li>Survey popups are now less intrusive, appearing as notifications without disrupting your workflow.</li>
+<li>Moved back <code>line:ch</code> status to left of statusbar. Go to line will accept <code>:ln:col</code> format along with <code>:ln,col</code>. <img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7429ae42-cb56-444c-8546-6d565bedaaf9" alt="Image" class="img_ev3q"></li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/2035" target="_blank" rel="noopener noreferrer">Remove specific files from Recent Files</a></li>
+<li>Fixes <a href="https://github.com/phcode-dev/phoenix/pull/2015" target="_blank" rel="noopener noreferrer">holding ctrl key in windows should not ui overlay mode.</a></li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1994" target="_blank" rel="noopener noreferrer">fix: <code>cmd-click</code> in mac app and safari didn't open context menu.</a></li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1999" target="_blank" rel="noopener noreferrer">Switching between Ctrl+F and Ctrl+Shift+F now correctly updates the search box with the latest selection.</a></li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/1997" target="_blank" rel="noopener noreferrer">fix: clicking on prevent defaulted A tags in desktop live preview opens browser tab.</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance--stability-tweaks">Performance &amp; Stability Tweaks<a href="https://docs.phcode.dev/blog/release-4.0#performance--stability-tweaks" class="hash-link" aria-label="Direct link to Performance &amp; Stability Tweaks" title="Direct link to Performance &amp; Stability Tweaks">​</a></h2>
+<ul>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/2055" target="_blank" rel="noopener noreferrer">Faster boot times with extension compression and load changes</a>
+consistency and performance, especially on Safari and macOS.</li>
+<li><a href="https://github.com/phcode-dev/phoenix/pull/2082" target="_blank" rel="noopener noreferrer">File recovery should only be shown on crash, and fix some file recovery issues.</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="all-changes">All changes<a href="https://docs.phcode.dev/blog/release-4.0#all-changes" class="hash-link" aria-label="Direct link to All changes" title="Direct link to All changes">​</a></h2>
+<p>Please see <a href="https://github.com/phcode-dev/phoenix/commits/main/?since=2024-11-27&amp;until=2025-01-30" target="_blank" rel="noopener noreferrer">this link</a> for a full list of changes
+in GitHub.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-4.0#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:">​</a></h2>
+<ul>
+<li><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer">https://github.com/orgs/phcode-dev/discussions</a></li>
+<li><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
+<li><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer"><strong>Consider supporting us</strong> on GitHub Sponsors</a>. Every contribution helps us
+to keep improving Phoenix Code.</li>
+</ul>
+<p>With gratitude,</p>
+<p>The Phoenix Team</p>]]></content>
+        <author>
+            <name>Arun Bose</name>
+            <uri>https://github.com/abose</uri>
+        </author>
+        <author>
+            <name>Charly P Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <author>
+            <name>Devansh Agarwal</name>
+            <uri>https://github.com/devvaannsh</uri>
+        </author>
+        <author>
+            <name>Phoenix Code Bot</name>
+            <uri>https://github.com/phoenixide</uri>
+        </author>
+        <category label="Git" term="Git"/>
+        <category label="Color previews" term="Color previews"/>
+        <category label="Version Control" term="Version Control"/>
+        <category label="open in terminal" term="open in terminal"/>
+        <category label="Stability Improvements" term="Stability Improvements"/>
+        <category label="Windows" term="Windows"/>
+        <category label="Linux" term="Linux"/>
+        <category label="Mac" term="Mac"/>
+        <category label="Release" term="Release"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Legacy of Brackets - Continues]]></title>
+        <id>https://docs.phcode.dev/blog/Blog-Legacy</id>
+        <link href="https://docs.phcode.dev/blog/Blog-Legacy"/>
+        <updated>2025-01-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A decade-long journey of pushing web development forward: The Brackets story continues with Phoenix Code.]]></summary>
+        <content type="html"><![CDATA[<p>A decade-long journey of pushing web development forward: The Brackets story continues with Phoenix Code.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="brackets-10---the-beginning">Brackets 1.0 - The Beginning<a href="https://docs.phcode.dev/blog/Blog-Legacy#brackets-10---the-beginning" class="hash-link" aria-label="Direct link to Brackets 1.0 - The Beginning" title="Direct link to Brackets 1.0 - The Beginning">​</a></h2>
+<p>Brackets 1.0 was released 10 years ago at Adobe, on the 4'th of November 2014. Atom from GitHub was the only
+peer editor at the time built based on the same web based architecture as Brackets. The web was a very different
+place then. Adobe was preparing for a post Flash world (Read: Thoughts on Flash - open letter by Steve Jobs)
+and HTML5 became a W3C Recommendation a month ago then on October 2014.</p>
+<p>Brackets was born as an editor built on web standards for building the web - a window into the future from Adobe.
+Adobe was mostly right in this vision, as Visual Studio Code (VSCode), built on similar web technologies,
+has since risen to dominate the landscape of code editors.</p>
+<p>Brackets was created to serve as a bridge between Designer and Developer workflows before the time of Figma and XD.
+But, Adobe was primarily about design tools and Brackets as a free developer tool, was never able to find a path
+among its design tool peers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="brackets-20---the-brackets-open-source-community-is-born">Brackets 2.0 - The Brackets Open Source Community is Born<a href="https://docs.phcode.dev/blog/Blog-Legacy#brackets-20---the-brackets-open-source-community-is-born" class="hash-link" aria-label="Direct link to Brackets 2.0 - The Brackets Open Source Community is Born" title="Direct link to Brackets 2.0 - The Brackets Open Source Community is Born">​</a></h2>
+<p>On January 2022, Adobe <a href="https://x.com/brackets/status/1480581149604782080" target="_blank" rel="noopener noreferrer">transitioned the development of Brackets</a> to the
+newly formed Brackets Community. Version 2.0 of Brackets was all about finding an independent foothold to
+continue the development of Brackets. We kick-started the Phoenix Code project as we figured the need to
+address nearly three years of development backlog and lay the groundwork for the next generation of Brackets.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phoenix-code---30-the-next-generation-of-brackets">Phoenix Code - 3.0, The Next Generation of Brackets<a href="https://docs.phcode.dev/blog/Blog-Legacy#phoenix-code---30-the-next-generation-of-brackets" class="hash-link" aria-label="Direct link to Phoenix Code - 3.0, The Next Generation of Brackets" title="Direct link to Phoenix Code - 3.0, The Next Generation of Brackets">​</a></h2>
+<p>With Phoenix Code, we laid the groundwork to run Brackets almost anywhere with a web browser and the first Web version
+was launched on June 2023. The desktop builds followed a year later on Feb 2024. Version 3.0 was mostly about attaining
+feature parity and stability on par with Brackets, and then exceed it.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phoenix-code---40-present--future">Phoenix Code - 4.0, Present &amp; Future<a href="https://docs.phcode.dev/blog/Blog-Legacy#phoenix-code---40-present--future" class="hash-link" aria-label="Direct link to Phoenix Code - 4.0, Present &amp; Future" title="Direct link to Phoenix Code - 4.0, Present &amp; Future">​</a></h2>
+<p>We start this year with the release of Phoenix Code 4.0, as we reach feature parity with Brackets and exceeds it
+in most cases. We have shifted back to build on the original mission of Brackets. To serve as a
+bridge between Designer and Developer workflows for the Web. To help <em>people</em> get things done simpler and faster.
+With immense gratitude for our users' support, we're excited to begin this next chapter of Phoenix Code.</p>]]></content>
+        <author>
+            <name>Arun Bose</name>
+            <uri>https://github.com/abose</uri>
+        </author>
+        <author>
+            <name>Charly P Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Brackets" term="Brackets"/>
+        <category label="Continued" term="Continued"/>
+        <category label="Phoenix Code" term="Phoenix Code"/>
+        <category label="History" term="History"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Editor Experience Release (November-2024, V-3.10) is now Live]]></title>
         <id>https://docs.phcode.dev/blog/release-3.10</id>
