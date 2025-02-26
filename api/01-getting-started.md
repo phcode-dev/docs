@@ -18,13 +18,22 @@ This page provides guidelines on how to write Extensions for **Phoenix Code**.
 
 ---
 
-### [Publishing Themes/Extensions](./publishing-extensions)
+### [Use Node.js from extension](./creating-node-extensions)
+This page explains how to use Node.js inside **Phoenix Code** extensions.
+
+---
+
+### [Debugging Extensions](./debugging-extensions)
+This page provides a detailed guide on efficiently debugging your **Phoenix Code** extensions.
+
+---
+
+### [Publishing Themes & Extensions](./publishing-extensions)
 This page provides guidelines on how to publish Themes/Extensions to **Phoenix Code**.
 
 ---
 
 ### [Available Standard Libraries](./available-standard-libs)
-
 This page lists all the standard libraries that are available for use inside **Phoenix Code**.
 
 ---
