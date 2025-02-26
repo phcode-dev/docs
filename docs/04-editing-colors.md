@@ -69,3 +69,18 @@ Clicking a color in the gutter moves the cursor to its position in the editor an
 ### Enabling/Disabling Color Preview
 
 You can enable/disable the feature by updating the `colorPreview` property in the preferences file. [Click Here](./03-editing-text.md#editing-preferences) to read on how to edit the preferences.
+
+---
+
+## Color Hints
+After typing a color related property, **Phoenix Code** displays a list of color suggestions.  
+![Color Hints](./images/editingColors/colorHints.png "Color Hints")
+
+### Previous Color Suggestions
+**(Coming Soon...)**  
+
+If a file already contains colors (named colors, hex, or RGB values), **Phoenix Code** prioritizes those colors in the hint list. Colors are sorted in **descending order** based on their usage count in the file.  
+
+![Previously Used Colors](./images/editingColors/previously-used-colors.png "Previously Used Colors")
+
+> This helps in reusing frequently used colors without manually searching for them.  
