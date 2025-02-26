@@ -4,17 +4,6 @@ title: Popular Extensions
 
 This document provides an overview of the most popular extensions available for Phoenix Code.
 
-## Emmet
-Created by: [Emmet.io](https://emmet.io)
-
-Emmet speeds up HTML and CSS coding by allowing you to write shortcuts that expand into full code snippets.
-
-For more details, visit the [website of Emmet](https://emmet.io/).
-
-`Emmet` in action :-
-![Emmet](./images/popular-extensions/emmet.gif)
-
-
 
 ## Minimap
 Created by: [Zorgzerg](https://github.com/zorgzerg)
