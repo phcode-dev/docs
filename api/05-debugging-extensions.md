@@ -1,5 +1,5 @@
 ---
-title: Debugging Extensions in Phoenix Code
+title: Debugging Extensions
 ---
 
 The Debug menu provides several options for extension development. 
