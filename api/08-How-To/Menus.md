@@ -178,10 +178,10 @@ To position the menu item before or after any item, use
 
 ```jsx
 // second parameter is for keyboard shortcut. Empty string means no shortcut.
-menu.addMenuItem(MY_COMMAND_ID, "", "before", "file.saveAs");
+menu.addMenuItem(MY_COMMAND_ID, "",  Menus.BEFORE, Commands.FILE_SAVE_AS);
 ```
 
-- Third parameter must specify “before” or “after” the item should be set.
+- Third parameter must specify `BEFORE` or `AFTER` the item should be set.
 - Fourth parameter must specify the “relativeID” of the menu item to set the position.
 
 ![Menu Item before/after](./images/menu-item-before-after.png)
