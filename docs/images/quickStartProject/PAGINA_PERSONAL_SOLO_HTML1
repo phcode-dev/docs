@@ -2,11 +2,11 @@ PAGINA_PERSONAL_SOLO_HTML1
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Pagina Personal</title>
+  <title>Mi Pagina Personal</title>
 </head>
 <body><h1>Bienvenidos a mi pagina</h1>
 <p>Me llamo Antonio. Me gusta jugar XBOX S/X. Bienvenido a mi pagina personal.</p>
-<p>Me entretengo jugaando XBOX y haciendo trucos de cartas</p>
+<p>Me entretengo jugando XBOX S/X y haciendo trucos de cartas.</p>
 <img src=gallery/my_photo.jpg alt=my photo width=300>
 <p>Visita mi pagina favorita:<a href=https:www.youtube.com>Haz click aqui</a></p>
 </body>
