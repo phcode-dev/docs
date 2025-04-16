@@ -274,7 +274,9 @@ The Phoenix Code AI Control extension provides a visual interface to verify the 
 #### Desktop App Status Check
 
 1. Open Phoenix Code
-2. Navigate to View → AI Control Status
+2. Install the extension (File → Extension Manager → "Phoenix Code AI Control")
+2. Navigate to View → AI Control Status.
+   - ![Image](https://github.com/user-attachments/assets/afa63f23-adc1-4f07-bdeb-70883c3abbd9)
 3. A dialog will appear showing your current configuration:
    - AI Status (Enabled/Disabled)
    - Platform information
@@ -294,9 +296,10 @@ The Phoenix Code AI Control extension provides a visual interface to verify the 
 
 #### Browser Version Status Check
 
-1. Open Phoenix Code in your web browser
+1. Open https://phcode.dev in your web browser
 2. Install the extension (File → Extension Manager → "Phoenix Code AI Control")
 3. Navigate to View → AI Control Status
+   - ![Image](https://github.com/user-attachments/assets/afa63f23-adc1-4f07-bdeb-70883c3abbd9)
 4. The browser will check if `ai.phcode.dev` is accessible:
    - First shows "Checking if AI is disabled..."
    - Then displays whether AI is available or blocked
