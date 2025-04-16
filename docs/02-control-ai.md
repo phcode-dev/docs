@@ -1,11 +1,11 @@
 ---
-title: AI Control for school and work
+title: AI Control For School And Work
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# AI Control for school and work
+# AI Control For School And Work
 
 🔐 Disable or manage AI features in Phoenix Code for educational and enterprise environments.
 
