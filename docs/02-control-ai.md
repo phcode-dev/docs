@@ -275,6 +275,7 @@ The Phoenix Code AI Control extension provides a visual interface to verify the 
 
 1. Open Phoenix Code
 2. Install the extension (File → Extension Manager → "Phoenix Code AI Control")
+   - ![Image](https://github.com/user-attachments/assets/ff282d9d-19dc-4fa2-9d39-a81eb2c59a62)
 2. Navigate to View → AI Control Status.
    - ![Image](https://github.com/user-attachments/assets/afa63f23-adc1-4f07-bdeb-70883c3abbd9)
 3. A dialog will appear showing your current configuration:
@@ -298,6 +299,7 @@ The Phoenix Code AI Control extension provides a visual interface to verify the 
 
 1. Open https://phcode.dev in your web browser
 2. Install the extension (File → Extension Manager → "Phoenix Code AI Control")
+   - ![Image](https://github.com/user-attachments/assets/ff282d9d-19dc-4fa2-9d39-a81eb2c59a62)
 3. Navigate to View → AI Control Status
    - ![Image](https://github.com/user-attachments/assets/afa63f23-adc1-4f07-bdeb-70883c3abbd9)
 4. The browser will check if `ai.phcode.dev` is accessible:
