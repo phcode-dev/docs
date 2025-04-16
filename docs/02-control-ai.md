@@ -60,7 +60,7 @@ Download the appropriate script for your platform from [this link](https://githu
    ```
 
 :::note
-The `--managedByEmail` parameter is optional but recommended. It provides an administrative contact for managing access to AI and educational features in the future. This email will be linked to your institution’s AI management if given.
+The `--managedByEmail` parameter is optional but recommended. It provides an administrative contact for managing access to AI and educational features in the future. This email will be linked to your institution's AI management if given.
 :::
 
 </TabItem>
@@ -133,16 +133,6 @@ Always enclose the `--allowedUsers` list in quotes to prevent parsing errors (e.
 
 ## Common Configuration Examples
 
-<Tabs
-  defaultValue="disable"
-  values={[
-    { label: 'Disable AI', value: 'disable' },
-    { label: 'Enable AI', value: 'enable' },
-    { label: 'Selective Access', value: 'selective' },
-  ]}>
-
-<TabItem value="disable">
-
 ### Disabling AI for All Users
 
 To disable AI features system-wide:
@@ -180,10 +170,6 @@ sudo ./setup_phoenix_ai_control_linux.sh --disableAI --managedByEmail school.adm
 </TabItem>
 </Tabs>
 
-</TabItem>
-
-<TabItem value="enable">
-
 ### Enabling AI for All Users
 
 To enable AI features system-wide:
@@ -220,10 +206,6 @@ sudo ./setup_phoenix_ai_control_linux.sh --managedByEmail school.admin@example.e
 
 </TabItem>
 </Tabs>
-
-</TabItem>
-
-<TabItem value="selective">
 
 ### Enabling AI for Specific Users Only
 
@@ -265,9 +247,6 @@ sudo ./setup_phoenix_ai_control_linux.sh --disableAI --allowedUsers "teacher1,ad
 :::important
 Always enclose the list of users in quotes to prevent parsing errors
 :::
-
-</TabItem>
-</Tabs>
 
 ## Verifying AI Control Status
 
@@ -350,38 +329,31 @@ The browser version of Phoenix Code will automatically detect if the domain is u
 
 ## FAQ
 
-<details>
-<summary>When will AI be enabled in Phoenix Code?</summary>
+**Q: When will AI be enabled in Phoenix Code?**
+
 Phoenix Code AI will be rolled out after May 20, 2025. Educational institutions should configure AI controls campus-wide before this date.
-</details>
 
-<details>
-<summary>How do I know if AI control is working?</summary>
+**Q: How do I know if AI control is working?**
+
 In both the desktop and browser versions, go to View → AI Control Status to see a detailed report.
-</details>
 
-<details>
-<summary>Can I allow specific users to access AI features?</summary>
+**Q: Can I allow specific users to access AI features?**
+
 Yes, but only in the desktop version. Use the `--allowedUsers` parameter with a comma-separated list of usernames when running the installation script. These users will be able to access AI features even when disabled system-wide with the `--disableAI` flag.
-</details>
 
-<details>
-<summary>Is AI control mandatory?</summary>
+**Q: Is AI control mandatory?**
+
 No, AI control is optional and meant for educational institutions or enterprises that need to regulate AI usage. By default, all users have access to AI features.
-</details>
 
-<details>
-<summary>Will blocking AI affect other Phoenix Code features?</summary>
+**Q: Will blocking AI affect other Phoenix Code features?**
+
 No, all other features of Phoenix Code will continue to work normally. Only the AI-powered features like code generation and explanations will be affected.
-</details>
 
-<details>
-<summary>How can I update the AI control configuration?</summary>
+**Q: How can I update the AI control configuration?**
+
 Simply run the installation script again with the new parameters. The script will overwrite the existing configuration file with your new settings.
-</details>
 
-<details>
-<summary>How do I re-enable AI after it has been disabled?</summary>
+**Q: How do I re-enable AI after it has been disabled?**
 
 To re-enable AI that was previously disabled:
 
@@ -421,42 +393,33 @@ sudo ./setup_phoenix_ai_control_linux.sh --managedByEmail school.admin@example.e
 </Tabs>
 
 2. For browser version, remove any firewall rules blocking `ai.phcode.dev`
-</details>
 
-<details>
-<summary>What's the difference between browser and desktop control?</summary>
-
+**Q: What's the difference between browser and desktop control?**
 - **Browser Version**: Only supports network-level blocking of `ai.phcode.dev` through your firewall
 - **Desktop Version**: Provides comprehensive control through configuration files with user-specific permissions
-</details>
 
-<details>
-<summary>Does this completely prevent AI usage?</summary>
-
+**Q: Does this completely prevent AI usage?**
 - **Desktop Version**: Yes, the control is comprehensive when properly configured using the installation scripts
 - **Browser Version**: Only if you implement network-level blocking of the `ai.phcode.dev` domain
-</details>
 
-<details>
-<summary>How can I verify that the firewall is properly blocking AI access?</summary>
+**Q: How can I verify that the firewall is properly blocking AI access?**
+
 In the browser version, use the View → AI Control Status option which will attempt to connect to the AI service and report whether it's accessible or blocked.
-</details>
 
-<details>
-<summary>Can I disable AI for some users but enable it for others?</summary>
+**Q: Can I disable AI for some users but enable it for others?**
+
 Yes, use the `--disableAI` flag to disable AI globally, then use the `--allowedUsers` parameter to specify which users should still have access. Example:
 
 ```bash
 sudo ./setup_phoenix_ai_control_linux.sh --disableAI --allowedUsers "teacher1,admin2"
 ```
-</details>
 
-<details>
-<summary>Is there a way to monitor AI usage in my organization?</summary>
+**Q: Is there a way to monitor AI usage in my organization?**
+
 When you set the `--managedByEmail` parameter, this information is used for administration purposes. Future versions will provide a dashboard for administrators to monitor and manage AI usage across their organization.
-</details>
+However, this is currently not implemented.
 
 ## Additional Resources
 
-AI complete: if someone wants to reach out for any special cases or this script doesnt work for you
-or any other special request, we will be more than happy to assist you. please reach out using https://github.com/orgs/phcode-dev/discussions/new/choose
+For any special requests or technical issues, please reach out through our discussions forum at https://github.com/orgs/phcode-dev/discussions/new/choose.
+We're committed to supporting a smooth rollout of AI controls for educational or organizational needs.
