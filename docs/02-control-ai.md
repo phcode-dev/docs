@@ -48,7 +48,7 @@ Download the appropriate script for your platform from [this link](https://githu
 #### Windows Installation
 
 1. Download the Windows Batch script:
-   - `setup_phoenix_ai_control_win.bat`
+   - [setup_phoenix_ai_control_win.bat](https://github.com/phcode-dev/phoenix-code-ai-control/releases/latest/)
 
 2. Open Command Prompt as Administrator:
    - Press Win+X and select "Command Prompt (Admin)"
@@ -70,7 +70,7 @@ The `--managedByEmail` parameter is optional but recommended. It provides an adm
 #### macOS Installation
 
 1. Download the macOS script:
-   - `setup_phoenix_ai_control_mac.sh`
+   - [setup_phoenix_ai_control_mac.sh](https://github.com/phcode-dev/phoenix-code-ai-control/releases/latest/)
 
 2. Open Terminal and navigate to your download location
 
@@ -95,7 +95,7 @@ The `--managedByEmail` parameter is optional but recommended for administrative 
 #### Linux Installation
 
 1. Download the Linux script:
-   - `setup_phoenix_ai_control_linux.sh`
+   - [setup_phoenix_ai_control_linux.sh](https://github.com/phcode-dev/phoenix-code-ai-control/releases/latest/)
 
 2. Open Terminal and navigate to your download location
 
