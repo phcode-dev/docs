@@ -10,7 +10,8 @@ import TabItem from '@theme/TabItem';
 🔐 Disable or manage AI features in Phoenix Code for educational and enterprise environments.
 
 :::info Important Timeline
-Phoenix Code AI will be rolled out after May 20, 2025. Educational institutions should configure AI controls campus-wide before this date to disable AI.
+Phoenix Code AI will be rolled out after May 20, 2025. AI features will require both a Phoenix Code account login with a free/pro AI plan and explicit user opt-in.
+Educational institutions should configure AI controls campus-wide before this date to disable AI.
 :::
 
 ## Overview
@@ -340,7 +341,8 @@ Phoenix Code AI will be rolled out after **`May 20, 2025`**. Educational institu
 
 **Q: How do I know if AI control is working?**
 
-In both the desktop and browser versions, go to View → AI Control Status to see a detailed report.
+In both the desktop and browser versions, install "Phoenix Code AI Control" extension.
+Then, go to View → AI Control Status to see a detailed report.
 
 **Q: Can I disable AI for some users but enable it for others?**
 
