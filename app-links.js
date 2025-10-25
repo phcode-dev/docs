@@ -99,5 +99,17 @@ export const appLinks = [
     {
 		from: '/app-links/ESLint',
 		to: '/docs/Features/Problems Panel/ESLint/',
+	},
+    {
+		from: '/app-links/live-preview-settings',
+		to: '/docs/Features/Live Preview/live-preview-settings',
+	},
+    {
+		from: '/app-links/editor-rulers',
+		to: '/docs/Features/editor-rulers/',
+	},
+    {
+		from: '/app-links/find-in-files',
+		to: '/docs/Features/find-in-files/',
 	}
 ];
