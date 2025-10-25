@@ -79,5 +79,25 @@ export const appLinks = [
     {
 		from: '/app-links/emmet',
 		to: '/docs/editing-text#emmet',
+	},
+    {
+		from: '/app-links/git',
+		to: '/docs/Features/git',
+	},
+    {
+		from: '/app-links/color-preview',
+		to: '/docs/editing-colors#color-preview',
+	},
+    {
+		from: '/app-links/auto-space-detection',
+		to: '/docs/editing-text/#auto-space-detection',
+	},
+    {
+		from: '/app-links/html-lint',
+		to: '/docs/Features/Problems Panel/html-lint/',
+	},
+    {
+		from: '/app-links/ESLint',
+		to: '/docs/Features/Problems Panel/ESLint/',
 	}
 ];
