@@ -7,6 +7,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import { appLinks } from "./app-links.js";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -107,6 +108,12 @@ const config = {
 		[
 			"@gracefullight/docusaurus-plugin-microsoft-clarity",
 			{ projectId: "nq44d74m1v" }
+		],
+		[
+			"@docusaurus/plugin-client-redirects",
+			{
+				redirects: appLinks,
+			}
 		]
 	],
 	themeConfig:
