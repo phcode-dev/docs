@@ -2,6 +2,9 @@
 title: Popular Extensions
 ---
 
+import React from 'react';
+import VideoPlayer from '@site/src/components/Video/player';
+
 This document provides an overview of the most popular extensions available for Phoenix Code.
 
 
@@ -15,8 +18,9 @@ For more details, visit the [GitHub repository](https://github.com/zorgzerg/brac
 `Minimap` in action :-
 ![Minimap](./images/popular-extensions/minimap.png)
 
+---
 
-## Show Whitespace 
+## Show Whitespace
 Created by: [Dennis Kehrig](https://github.com/DennisKehrig)
 
 This extension allows users to visualize spaces and tabs, making code more readable and helping maintain formatting consistency.
@@ -26,20 +30,22 @@ For more details, visit the [GitHub repository](https://github.com/DennisKehrig/
 `Show Whitespace` in action :-
 ![Show Whitespace](./images/popular-extensions/Show-Whitespace.png)
 
+---
 
 ## 1-2-3
-Created by: [Michaljerabek](https://github.com/michaljerabek)
+Created by: [Michal Jeřábek](https://github.com/michaljerabek)
 
-Generates number sequences directly in your editor, making it easy to create ordered lists or numbered markers with minimal effort.
+This extension generates number sequences directly in your editor, making it easy to create ordered lists or numbered markers with minimal effort.
 
 For more details, visit the [GitHub repository](https://github.com/michaljerabek/1-2-3) of the extension.
 
 `1-2-3` in action :-
 ![1-2-3](./images/popular-extensions/1-2-3.gif)
 
+---
 
 ## FuncDocr
-Created by: [Wikunia](https://github.com/Wikunia)
+Created by: [Ole Kröger](https://github.com/Wikunia)
 
 This extension generates JS/PHPDocs for your functions, keeping your code documented and organized.
 
@@ -48,4 +54,14 @@ For more details, visit the [GitHub repository](https://github.com/wikunia/brack
 `FuncDocr` in action :-
 ![FuncDocr](./images/popular-extensions/Func-Docr.gif)
 
+---
 
+## Remove Comments
+Created by: [Pluto](https://github.com/devvaannsh)
+
+This extension allows you to remove unwanted comments from your code. You can delete all comments at once or only those within a selected section.
+
+For more details, visit the [GitHub repository](https://github.com/devvaannsh/Remove-Comments) of the extension.
+
+`Remove Comments` in action :-
+<VideoPlayer src="https://docs-images.phcode.dev/videos/popular-extensions/remove-comments.mp4" />
