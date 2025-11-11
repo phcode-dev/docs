@@ -64,4 +64,16 @@ This extension allows you to remove unwanted comments from your code. You can de
 For more details, visit the [GitHub repository](https://github.com/devvaannsh/Remove-Comments) of the extension.
 
 `Remove Comments` in action :-
-<VideoPlayer src="https://docs-images.phcode.dev/videos/popular-extensions/remove-comments.mp4" />
+<VideoPlayer src="https://docs-images.phcode.dev/videos/popular-extensions/Remove-Comments.mp4" />
+
+---
+
+## Autosave Files on Window Blur
+Created by: [Marty Penner](https://github.com/martypenner)
+
+This extension automatically saves all unsaved files whenever Phoenix Code loses focus (for example, when you switch to another application).
+
+For more details, visit the [GitHub repository](https://github.com/martypenner/brackets-autosave-files-on-window-blur) of the extension.
+
+`Autosave Files on Window Blur` in action :-
+<VideoPlayer src="https://docs-images.phcode.dev/videos/popular-extensions/autosave.mp4" />
