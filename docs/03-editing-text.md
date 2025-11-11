@@ -87,26 +87,9 @@ Move your cursor out of the tag and then back into the tag.
 ---
 
 ## Emmet
-**Coming Soon...**
+With **Emmet**, you can write HTML and CSS faster using shorthand abbreviations. If an abbreviation is Emmet-compatible, Phoenix Code Editor shows code hints and expands it into complete code structures when selected.
 
-### Emmet in Markup Languages
-In **HTML**, **PHP** or HTML-like files such as **JSP**, when you type a valid Emmet abbreviation (for example: `ul>li`, `p`, or `!`), **Phoenix Code** displays a code hint with the abbreviation text and an Emmet icon. This icon indicates that the suggestion comes from Emmet. When you select the Emmet hint, the abbreviation is expanded into its full code snippet.
-<VideoPlayer
-  src="https://docs-images.phcode.dev/videos/editing-text/emmet-html.mp4"
-/>
-
-### Emmet in Stylesheet Languages
-Emmet also works in stylesheets (CSS, SCSS, Less). When you type an Emmet-expandable property, a list of default code hints appears with the Emmet suggestion at the top.
-<VideoPlayer
-  src="https://docs-images.phcode.dev/videos/editing-text/emmet-css.mp4"
-/>
-
-### Enabling/Disabling Emmet
-To enable or disable the **Emmet** feature, go to `Edit` > `Emmet`.
-
-![Toggle Emmet feature](./images/editingText/toggle-emmet.png "Toggle Emmet")
-
-Alternatively, you can also toggle the **Emmet** feature by updating the `emmet` property in the preferences file. [Click Here](#editing-preferences) to read on how to edit the preferences.
+[Read More](./Features/emmet)
 
 ---
 
