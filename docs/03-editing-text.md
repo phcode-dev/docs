@@ -30,6 +30,13 @@ To revert back to a single cursor, just press the `Esc` key.
 
 ---
 
+## Custom Snippets
+With **Custom Snippets**, you can define your own custom code hints. You can write short abbreviations that, when typed in the editor, expand into complete code blocks upon selection.
+
+[Read More](./Features/custom-snippets)
+
+---
+
 ## Quick Edit
 With **Quick Edit**, you can edit your CSS file directly within HTML files. 
 
