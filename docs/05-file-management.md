@@ -34,8 +34,6 @@ The File Tree updates automatically, but if files or folders appear missing, use
 You can also assign or update keyboard shortcuts for any File Tree action through the context menu.
 See the [Keyboard Shortcuts Guide](./Features/keyboard-shortcuts) for complete details.
 
----
-
 ### Sorting Files and Folders
 
 By default, the File Tree sorts folders first (in ascending order), followed by files.
@@ -52,3 +50,15 @@ See [Editing Preferences](./editing-text#editing-preferences) for details.
 Now, files and folders are sorted together in one ascending list.
 ![File tree sorted](./images/fileManagement/file-tree-sorted.png "File Tree sorted")
 > Notice how the `images` folder now appears in alphabetical order with other items.
+
+### Collapse All Folders
+
+The **Collapse All Folders** feature helps you quickly reset your view by collapsing all expanded folders to their root level, leaving only the top-level items visible in the File Tree.
+
+To collapse all folders:
+1. Hover over the File Tree header at the top-right.
+2. Click the `collapse icon` (two arrows pointing toward each other) that appears.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/file-management/collapse-folders.mp4"
+/>
