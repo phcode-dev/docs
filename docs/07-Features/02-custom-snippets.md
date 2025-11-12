@@ -48,3 +48,12 @@ The **Add Snippet** panel contains four input fields, each with placeholder exam
 | **File Extension** *optional* | Specifies which file types the snippet should be active in. For example, `.js, .ts` will make the snippet available in JavaScript and TypeScript files. <br />⚠️ Use file **extensions**, not file or language names, and separate multiple entries with commas. <br /> When left blank, the snippet works for **all** file types. |
 | **Template Text** *required* | The actual code or content your snippet expands into. For example, typing `clg` could expand to `console.log();`. |
 
+#### Example Snippet
+The image below shows a complete snippet configuration:
+
+![Snippet Example](./images/CustomSnippets/custom-snippet-example.png "Snippet Example")
+After entering the values, click `Save`.
+> Your snippet will be added to the list and can be used immediately in **Phoenix Code**.
+
+![Snippets Count](./images/CustomSnippets/custom-snippets-count.png "Snippets Count")
+In the panel header, you can see the total number of snippets you’ve added. You can create as many snippets as you like.
