@@ -133,3 +133,18 @@ Once you reach the final cursor position, pressing `Tab` again will **remove any
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/custom-snippets/cursor-snippets.mp4"
 />
+
+---
+
+## FAQ
+
+#### Q. Is there a maximum limit on the length of the abbreviation?
+Yes. **Phoenix Code** sets some limits for certain fields. The **Abbreviation** can have a maximum of 30 characters, and the **Description** can have up to 80 characters. There’s no restriction on the length of the **Template Text** or **File Extension**.
+
+#### Q. What happens if there are two snippets with the same abbreviation?
+**Phoenix Code** does not allow adding two snippets with the same abbreviation.
+However, abbreviations are *case-sensitive*, so variations like `log` and `LOG` are treated as different snippets.
+
+#### Q. Do I need to type the full abbreviation for the code hint to appear?
+Yes. The code hint appears only when you type the *complete abbreviation*.
+This is an intentional UX decision, since custom snippets have the highest priority, showing hints for partial abbreviations could clutter suggestions and hide default hints.
