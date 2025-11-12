@@ -57,3 +57,20 @@ After entering the values, click `Save`.
 
 ![Snippets Count](./images/CustomSnippets/custom-snippets-count.png "Snippets Count")
 In the panel header, you can see the total number of snippets you’ve added. You can create as many snippets as you like.
+
+---
+
+### Edit Snippet
+You can edit an existing snippet whenever you need to make changes. To edit a snippet, click the snippet you want to edit from the snippets list. This will open the **Edit Snippet** panel.
+
+![Edit Snippet](./images/CustomSnippets/edit-snippet.png "Edit Snippet")
+
+Update the fields you want to modify.
+For example, in the snippet shown below, we’ve updated the **Abbreviation** from `scr` to `script`.
+After making your changes, click `Save`.
+
+![Edit Snippet success](./images/CustomSnippets/after-edit-snippet.png "Edit Snippet success")
+
+You can see that the snippet is now updated with the new **Abbreviation**.
+
+---
