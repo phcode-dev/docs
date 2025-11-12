@@ -76,11 +76,9 @@ You can enable/disable the feature by updating the `colorPreview` property in th
 After typing a color related property, **Phoenix Code** displays a list of color suggestions.  
 ![Color Hints](./images/editingColors/colorHints.png "Color Hints")
 
-### Previous Color Suggestions
-**(Coming Soon...)**  
-
-If a file already contains colors (named colors, hex, or RGB values), **Phoenix Code** prioritizes those colors in the hint list. Colors are sorted in **descending order** based on their usage count in the file.  
+### Previously Used Color Suggestions
+If a file already contains colors, **Phoenix Code** prioritizes those colors in the color hint list. Colors are sorted in *descending order* based on their usage count in the file.
 
 ![Previously Used Colors](./images/editingColors/previously-used-colors.png "Previously Used Colors")
 
-> This helps in reusing frequently used colors without manually searching for them.  
+> This helps in reusing frequently used colors without manually searching for them.
