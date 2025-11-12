@@ -120,7 +120,7 @@ When the snippet expands:
 1. The cursor starts at `${1}`.
 2. After entering your desired text, press `Tab` to move to the next placeholder.
 3. Continue pressing `Tab` to cycle through the numbered positions.
-4. The cursor finally lands at `${0}`. *If `${0}` isn’t defined, at the **last numbered placeholder***.
+4. The cursor finally lands at `${0}`. *If `${0}` isn’t defined, it lands at the **last numbered placeholder***.
 
 Here’s an example of a snippet with numbered cursor placeholders:
 
