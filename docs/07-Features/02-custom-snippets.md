@@ -5,13 +5,21 @@ title: Custom Snippets
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-**Custom Snippets** let you create your own reusable code hints. You can define short abbreviations that expand into full code snippets when selected from the suggestions that appear as you type.
+**Custom Snippets** let you create your own reusable code hints. You can define short abbreviations that expand into full code snippets when selected from the code hints that appear as you type. In the code hint, **Phoenix Code** displays a small `Snippet` label on the right, indicating that the hint comes from custom snippets.
+
+![Custom Snippets Icon](./images/CustomSnippets/custom-snippet-icon.png "Custom Snippets icon")
 
 You can also specify which file types each snippet should work with, so they appear only where they’re relevant.
 
 Additionally, you can define the cursor position within a snippet. After expansion, **Phoenix Code** automatically places your cursor exactly where you want it, allowing you to start typing right away.
 
 The snippets you define are available globally, so you don’t need to recreate them for every folder. This helps you write code faster and stay consistent across projects.
+
+> **Note**: Custom Snippets have the highest priority and will appear above all other code hints.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/custom-snippets/custom-snippets-main.mp4"
+/>
 
 ---
 
