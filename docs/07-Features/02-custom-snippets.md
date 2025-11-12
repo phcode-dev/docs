@@ -84,3 +84,18 @@ This will immediately delete the snippet.
 > ⚠️ Caution: Deleting a snippet is permanent and cannot be undone.
 
 ---
+
+### Filter Snippets
+When you have a large collection of snippets, the **Filter** feature helps you quickly narrow down the list.
+You’ll find it on the right side of the snippets panel header.
+
+![Filter Snippet](./images/CustomSnippets/filter-snippet.png "Filter Snippet")
+
+You can filter the list by any value, such as **Abbreviation**, **Description**, **File Extension**, or **Template Text**.
+It can filter your results quickly and accurately.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/custom-snippets/filter-snippets.mp4"
+/>
+
+---
