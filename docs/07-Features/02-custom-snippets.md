@@ -99,3 +99,29 @@ It can filter your results quickly and accurately.
 />
 
 ---
+
+### Snippet Cursor Position
+
+**Phoenix Code** snippets feature is very powerful. It also allows you to define **cursor positions** within a snippet to make editing even faster.
+By adding numbered cursor placeholders, you can jump between key points in the expanded snippet using the `Tab` key.
+
+#### How It Works
+
+Inside the **Template Text**, you can include placeholders like `${1}`, `${2}`, `${3}`, and so on.
+When the snippet expands:
+1. The cursor starts at `${1}`.
+2. After entering your desired text, press `Tab` to move to the next placeholder.
+3. Continue pressing `Tab` to cycle through the numbered positions.
+4. The cursor finally lands at `${0}`. *If `${0}` isn’t defined, at the **last numbered placeholder***.
+
+Here’s an example of a snippet with numbered cursor placeholders:
+
+![Snippet Cursor Positions](./images/CustomSnippets/snippet-cursor.png "Snippet Cursor Positions")
+
+> To move backward through the placeholders, press `Shift + Tab`.
+
+Once you reach the final cursor position, pressing `Tab` again will **remove any remaining unfilled placeholders** from the expanded snippet.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/custom-snippets/cursor-snippets.mp4"
+/>
