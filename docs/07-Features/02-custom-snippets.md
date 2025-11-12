@@ -74,3 +74,13 @@ After making your changes, click `Save`.
 You can see that the snippet is now updated with the new **Abbreviation**.
 
 ---
+
+### Delete Snippet
+Deleting a snippet is simple. From the snippets list, click the *Trash Bin* icon on the right side of the snippet you want to remove.
+This will immediately delete the snippet.
+
+![Delete Snippet](./images/CustomSnippets/delete-snippet.png "Delete Snippet")
+
+> ⚠️ Caution: Deleting a snippet is permanent and cannot be undone.
+
+---
