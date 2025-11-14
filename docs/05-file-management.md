@@ -81,6 +81,13 @@ For inactive tabs, this button appears only when you hover over them.
 
 **Phoenix Code** shows a small `•` icon on tabs that have unsaved changes.
 
+If you try to close a tab with unsaved changes, **Phoenix Code** displays a confirmation dialog with three options:
+* **Don't Save**: Closes the tab without saving changes. All unsaved changes will be lost.
+* **Save**: Saves the file and then closes the tab.
+* **Cancel**: Keeps the tab open and returns you to editing.
+
+![Save File Dialog](./images/fileManagement/save-file-dialog.png "Save File Dialog")
+
 When multiple tabs have the same filename, **Phoenix Code** displays their parent folder name so you can easily tell them apart.
 > Hovering over a tab will show a tooltip with its full path.
 
