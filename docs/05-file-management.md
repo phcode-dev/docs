@@ -154,7 +154,7 @@ Set the value to `true` to enable it.
 See [Editing Preferences](./editing-text#editing-preferences) if you need help in editing the preferences.
 
 ### Limiting the Number of Tabs
-**Phoenix Code** allows you to control the maximum number of tabs visible in the Tab Bar at once.
+**Phoenix Code** allows you to control the maximum number of tabs displayed in the Tab Bar at once.
 By default, the value is set to `-1`, which means all open tabs are displayed.
 
 For example, if you want to show a maximum of **3 tabs** in the Tab Bar, you can add the following to your preferences file:
