@@ -81,7 +81,7 @@ For inactive tabs, this button appears only when you hover over them.
 
 **Phoenix Code** shows a small `•` icon on tabs that have unsaved changes.
 
-When multiple tabs have the same name, **Phoenix Code** displays their parent folder name so you can easily tell them apart.
+When multiple tabs have the same filename, **Phoenix Code** displays their parent folder name so you can easily tell them apart.
 > Hovering over a tab will show a tooltip with its full path.
 
 ![Tab Bar UI](./images/fileManagement/tab-bar-main.png "Tab Bar UI")
@@ -102,7 +102,7 @@ while the active tab in an **inactive pane** appears in *gray*.
 When you open a new file, its tab is added to the right of the existing tabs.
 If there are more tabs than can fit within the visible area, **Phoenix Code** displays a **Show Hidden Tabs** button.
 
-![Overflow button](./images/fileManagement/overflow-button.png "Overflow Button")
+![Show hidden tabs button](./images/fileManagement/overflow-button.png "Show Hidden Tabs button")
 
 Clicking this button opens a dropdown list of all tabs that are not fully visible.
 From this list, you can select a tab to bring it into view or close tabs directly from the dropdown.
@@ -135,7 +135,7 @@ then use the `Show File Tab Bar` option in the dropdown to toggle the Tab bar.
 
 ![Disable Tab Bar](./images/fileManagement/disable-tab-bar-2.png "Disable Tab Bar")
 
-#### 3. From Preferences**
+#### 3. From Preferences
 You can also toggle the Tab bar by updating the `showTabBar` option in the preferences file.
 ```json
 "tabBar.options": {
@@ -168,12 +168,6 @@ Any negative value (such as `-1`) displays all open tabs without restriction.
 When you right-click a tab, a context menu appears which has multiple options so that you can work with tabs easily.
 
 ![Tab bar context menu](./images/fileManagement/tab-bar-context-menu.png "Tab bar context menu")
-
-### Tab Bar Context Menu
-
-When you right-click a tab, a context menu appears with multiple options that make it easy to manage open files.
-
-![Tab bar context menu](./images/fileManagement/tab-bar-context-menu.png "Tab Bar Context Menu")
 
 #### Tab Bar Context Menu Options
 
