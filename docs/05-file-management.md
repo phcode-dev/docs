@@ -202,7 +202,7 @@ When you right-click a tab, a context menu appears which has multiple options so
 > These options provide quick access to common file operations directly from the Tab Bar.
 
 #### Git - Tab Bar
-**Phoenix Code** integrates with Git. The Tab Bar displays file status indicators, showing which files are untracked or modified.
+The Tab Bar displays Git file status indicators, showing which files are **untracked** or **modified**.
 
 ![Tab bar Git](./images/fileManagement/tab-bar-git.png "Tab bar Git")
 
