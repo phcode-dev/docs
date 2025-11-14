@@ -138,18 +138,18 @@ Go to `View > File Tab Bar` to toggle it on or off.
 
 #### 2. From the Sidebar
 Click the **double-arrow** icon in the top-right corner of the sidebar,
-then use the `Show File Tab Bar` option in the dropdown to toggle the Tab bar.
+then use the `Show File Tab Bar` option in the dropdown to toggle the Tab Bar.
 
 ![Disable Tab Bar](./images/fileManagement/disable-tab-bar-2.png "Disable Tab Bar")
 
 #### 3. From Preferences
-You can also toggle the Tab bar by updating the `showTabBar` option in the preferences file.
+You can also toggle the Tab Bar by updating the `showTabBar` option in the preferences file.
 ```json
 "tabBar.options": {
     "showTabBar": false
 }
 ```
-*Add this in your preferences file to hide the Tab bar.*
+*Add this in your preferences file to hide the Tab Bar.*
 Set the value to `true` to enable it.
 See [Editing Preferences](./editing-text#editing-preferences) if you need help in editing the preferences.
 
