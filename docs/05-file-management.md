@@ -328,3 +328,18 @@ The dialog shows your recently opened files. Closed files appear in gray. Hover 
 
 To view a file's full path, hover over it or check the bottom-left corner of the dialog when a file is selected.
 
+---
+
+## File Recovery
+
+**Phoenix Code** has a built-in **File Recovery** feature to help you retrieve unsaved changes after unexpected events like crashes or accidental closures.
+
+### Recovering Files After a Crash
+When you reopen the editor, if there are any unsaved changes from the previous session, a dialog box will appear with two options: `Discard` and `Restore`.
+
+![File Recovery Dialog Box](./images/fileManagement/file-recovery.png "File Recovery Dialog Box")
+
+* **Restore**: Recovers your unsaved files by reinstating all changes made before the last save.
+
+* **Discard**: Removes the unsaved changes. *This will permanently delete the data.*
+

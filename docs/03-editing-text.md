@@ -296,21 +296,6 @@ Press `Shift + F11` to toggle between `No-Distractions` Mode and `Normal` Mode.
 
 ---
 
-## File Recovery
-Phoenix Code Editor has a built-in file recovery feature to help you retrieve unsaved changes after unexpected events like crashes or accidental closures.
-
-### Recovering Files after a crash
-**Reopen the Editor**: If there are any unsaved changes from the previous session, a dialog box will appear, with two options `Discard` and `Restore`.
-
-![File Recovery Dialog Box Image](images/editingText/file-recovery.png "Click Restore to recover all the unsaved changes")
-
-* **Restore Changes**: To recover your unsaved files, simply click the `Restore` button. This action will reinstate all the changes you made to the files before the last save.
-
-* **Discard Changes**: To remove the unsaved changes, click `Discard`.   
-*Note: This will permanently delete the data.*
-
----
-
 ## Editing Preferences
 You can personalize Phoenix to suit your workflow by adjusting the preferences.
 
