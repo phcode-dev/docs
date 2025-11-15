@@ -201,7 +201,7 @@ When you right-click a tab, a context menu appears which has multiple options so
 
 > These options provide quick access to common file operations directly from the Tab Bar.
 
-#### Git - Tab Bar
+### Git - Tab Bar
 The Tab Bar displays Git file status indicators, showing which files are **untracked** or **modified**.
 
 ![Tab bar Git](./images/fileManagement/tab-bar-git.png "Tab bar Git")
@@ -210,3 +210,105 @@ The Tab Bar displays Git file status indicators, showing which files are **untra
 - An **orange marker** indicates a **modified** file.
 
 > These indicators appear only when your project is a Git repository.
+
+---
+
+## Working Files
+**Working Files** (also called **Working Tree**) provides another way to view and manage open files. It appears in the sidebar, above the **File Tree**.
+
+![Working Files](./images/fileManagement/working-files.png "Working Files")
+
+Working Files and Tab Bar are synchronized which means that any operation performed on one (closing, reordering, opening files, etc.) is automatically reflected on the other.
+
+Working Files displays the same UI elements as the Tab Bar:
+* `•` icon for unsaved files
+* `×` button to close files
+* Parent folder names when multiple files have the same filename
+* Tooltip showing full file path on hover
+* Git status indicators (green for untracked, orange for modified files)
+
+> See the [Tab Bar](#tab-bar) section for detailed explanations of these features.
+
+> **Note**: Unlike Tab Bar, you cannot control the maximum number of files displayed in Working Files.
+
+### Working Files in Split Panes
+When using split panes, each pane maintains its own list of open files in Working Files.
+
+The panes are labeled based on the split orientation:
+* **Vertical Split**: *Left* (first pane) and *Right* (second pane)
+* **Horizontal Split**: *Top* (first pane) and *Bottom* (second pane)
+
+![Working Files Split Panes](./images/fileManagement/working-files-split-panes.png "Working Files Split Panes")
+
+### Drag-Drop in Working Files
+You can reorder files in Working Files by dragging and dropping them, just like in the Tab Bar.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/file-management/drag-drop-working-files.mp4"
+/>
+
+### Showing or Hiding Working Files
+You can show or hide the Working Files panel in two ways:
+
+#### 1. From the Sidebar
+Click the **double-arrow** icon in the top-right corner of the sidebar, then use the `Show Working Files` option in the dropdown to toggle Working Files.
+
+![Disable Working Files](./images/fileManagement/disable-working-files.png "Disable Working Files")
+
+#### 2. From Preferences
+You can also toggle Working Files by updating the `showWorkingSet` property in the preferences file.
+```json
+"showWorkingSet": true
+```
+Set the value to `false` to hide Working Files.
+See [Editing Preferences](./editing-text#editing-preferences) if you need help editing the preferences.
+
+### Working Files Context Menu
+When you right-click a file in Working Files, a context menu appears with various file operations.
+
+![Working Files context menu](./images/fileManagement/working-files-context-menu.png "Working Files context menu")
+
+#### Working Files Context Menu Options
+
+* **Save File** — Saves the selected file if it has unsaved changes.
+
+* **Show in File Tree** — Highlights the selected file in the File Tree so you can locate it easily.
+
+* **Open In** — Opens the file or its location in external applications. *This option is available only in Desktop apps.*
+  - **File Explorer** (Windows) / **File Manager** (Linux): Opens the file's location in the system file browser.
+  - **Command Prompt** (Windows) / **Terminal** (Linux): Opens a terminal window at the file's directory.
+  - **Default Application**: Opens the file in the system's default application for that file type.
+
+* **Copy** — Copies the file name to the clipboard.
+
+* **Copy Path** — Copies the file's full path to the clipboard.
+
+* **Duplicate** — Creates a duplicate of the file with the same content. The duplicate is named with `(copy 1)` appended.
+  *For example: `script.js` becomes `script(copy 1).js`.*
+
+* **Download** — Downloads the file to your local system. *This option is available only in the browser version.*
+
+* **Rename** — Allows you to rename the file. When you choose this option, **Phoenix Code** highlights the file in the File Tree so you can rename it directly.
+
+* **Delete** — Deletes the file from the project and removes it from Working Files.
+
+* **Find in...** — Opens the Find dialog to search for text within the selected file.
+
+* **Replace in...** — Opens the Find and Replace dialog to search and replace text within the selected file.
+
+* **Close** — Closes the selected file and removes it from Working Files.
+
+* **Close Files Above** — Closes all files above the selected one in the Working Files list. *This option is disabled when there are no files above the selected file.*
+
+* **Close Other Files** — Closes all files except the selected one. *This option is disabled when the selected file is the only open file.*
+
+* **Close Files Below** — Closes all files below the selected one in the Working Files list. *This option is disabled when there are no files below the selected file.*
+
+* **Add to .gitignore** — Adds the selected file to the `.gitignore` file, preventing it from being tracked by Git. *This option appears only when your project is a Git repository.*
+
+* **Remove from .gitignore** — Removes the selected file from the `.gitignore` file, allowing it to be tracked by Git again. *This option appears only when your project is a Git repository.*
+
+> These options provide quick access to common file operations directly from Working Files.
+
+
+
