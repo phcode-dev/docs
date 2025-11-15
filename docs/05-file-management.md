@@ -216,7 +216,7 @@ See [Editing Preferences](./editing-text#editing-preferences) if you need help i
 
 ![Working Files](./images/fileManagement/working-files.png "Working Files")
 
-Working Files and Tab Bar are synchronized which means that any operation performed on one (closing, reordering, opening files, etc.) is automatically reflected on the other.
+Working Files and Tab Bar are synchronized, which means that any operation performed on one (closing, reordering, opening files, etc.) is automatically reflected on the other.
 
 Working Files displays the same UI elements as the Tab Bar:
 * `•` icon for unsaved files
@@ -308,4 +308,23 @@ You can also toggle Working Files by updating the `showWorkingSet` property in t
 Set the value to `false` to hide Working Files.
 See [Editing Preferences](./editing-text#editing-preferences) if you need help editing the preferences.
 
+---
+
+## Recent Files
+
+The **Recent Files** dialog provides quick access to files you've recently worked on.
+
+### Opening Recent Files
+* **Desktop App**: Press `Ctrl + R`.
+* **Browser**: Press `Ctrl + Alt + Shift + O` (as `Ctrl + R` is reserved for browser reloads).
+
+To customize the keyboard shortcut, refer to the [Keyboard Shortcuts Guide](./Features/keyboard-shortcuts#changing-a-keyboard-shortcut).
+
+![Recent Files Dialog](./images/fileManagement/recent-files.png "Recent Files Dialog Box")
+
+The dialog shows your recently opened files. Closed files appear in gray. Hover over them to see an `x` icon-click it to remove them from the list. The `Clear` button at the bottom removes all closed files at once.
+
+> Currently open files cannot be removed from this list. Close them first to remove them.
+
+To view a file's full path, hover over it or check the bottom-left corner of the dialog when a file is selected.
 
