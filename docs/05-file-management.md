@@ -127,50 +127,6 @@ Tabs can also be dragged between panes.
   src="https://docs-images.phcode.dev/videos/file-management/drag-drop-tabs.mp4"
 />
 
-
-### Showing or Hiding the Tab Bar
-You can enable or disable the Tab Bar in several ways:
-
-#### 1. From the View Menu
-Go to `View > File Tab Bar` to toggle it on or off.
-
-![View > File Tab Bar](./images/fileManagement/disable-tab-bar-1.png "View > File Tab Bar")
-
-#### 2. From the Sidebar
-Click the **double-arrow** icon in the top-right corner of the sidebar,
-then use the `Show File Tab Bar` option in the dropdown to toggle the Tab Bar.
-
-![Disable Tab Bar](./images/fileManagement/disable-tab-bar-2.png "Disable Tab Bar")
-
-#### 3. From Preferences
-You can also toggle the Tab Bar by updating the `showTabBar` option in the preferences file.
-```json
-"tabBar.options": {
-    "showTabBar": false
-}
-```
-*Add this in your preferences file to hide the Tab Bar.*
-Set the value to `true` to enable it.
-See [Editing Preferences](./editing-text#editing-preferences) if you need help in editing the preferences.
-
-### Limiting the Number of Tabs
-**Phoenix Code** allows you to control the maximum number of tabs displayed in the Tab Bar at once.
-By default, the value is set to `-1`, which means all open tabs are displayed.
-
-For example, if you want to show a maximum of **3 tabs** in the Tab Bar, you can add the following to your preferences file:
-
-```json
-"tabBar.options": {
-    "numberOfTabs": 3,
-    "showTabBar": true
-}
-```
-You can set `numberOfTabs` to any positive number to define the maximum tab limit.
-If you set it to `0`, the Tab Bar will be hidden entirely.
-Any negative value (such as `-1`) displays all open tabs without restriction.
-> The active tab is always visible, except when the `numberOfTabs` value is set to `0`.
-
-
 ### Tab Bar Context Menu
 When you right-click a tab, a context menu appears which has multiple options so that you can work with tabs easily.
 
@@ -211,6 +167,48 @@ The Tab Bar displays Git file status indicators, showing which files are **untra
 
 > These indicators appear only when your project is a Git repository.
 
+### Limiting the Number of Tabs
+**Phoenix Code** allows you to control the maximum number of tabs displayed in the Tab Bar at once.
+By default, the value is set to `-1`, which means all open tabs are displayed.
+
+For example, if you want to show a maximum of **3 tabs** in the Tab Bar, you can add the following to your preferences file:
+
+```json
+"tabBar.options": {
+    "numberOfTabs": 3,
+    "showTabBar": true
+}
+```
+You can set `numberOfTabs` to any positive number to define the maximum tab limit.
+If you set it to `0`, the Tab Bar will be hidden entirely.
+Any negative value (such as `-1`) displays all open tabs without restriction.
+> The active tab is always visible, except when the `numberOfTabs` value is set to `0`.
+
+### Showing or Hiding the Tab Bar
+You can enable or disable the Tab Bar in several ways:
+
+#### 1. From the View Menu
+Go to `View > File Tab Bar` to toggle it on or off.
+
+![View > File Tab Bar](./images/fileManagement/disable-tab-bar-1.png "View > File Tab Bar")
+
+#### 2. From the Sidebar
+Click the **double-arrow** icon in the top-right corner of the sidebar,
+then use the `Show File Tab Bar` option in the dropdown to toggle the Tab Bar.
+
+![Disable Tab Bar](./images/fileManagement/disable-tab-bar-2.png "Disable Tab Bar")
+
+#### 3. From Preferences
+You can also toggle the Tab Bar by updating the `showTabBar` option in the preferences file.
+```json
+"tabBar.options": {
+    "showTabBar": false
+}
+```
+*Add this in your preferences file to hide the Tab Bar.*
+Set the value to `true` to enable it.
+See [Editing Preferences](./editing-text#editing-preferences) if you need help in editing the preferences.
+
 ---
 
 ## Working Files
@@ -246,22 +244,6 @@ You can reorder files in Working Files by dragging and dropping them, just like 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/file-management/drag-drop-working-files.mp4"
 />
-
-### Showing or Hiding Working Files
-You can show or hide the Working Files panel in two ways:
-
-#### 1. From the Sidebar
-Click the **double-arrow** icon in the top-right corner of the sidebar, then use the `Show Working Files` option in the dropdown to toggle Working Files.
-
-![Disable Working Files](./images/fileManagement/disable-working-files.png "Disable Working Files")
-
-#### 2. From Preferences
-You can also toggle Working Files by updating the `showWorkingSet` property in the preferences file.
-```json
-"showWorkingSet": true
-```
-Set the value to `false` to hide Working Files.
-See [Editing Preferences](./editing-text#editing-preferences) if you need help editing the preferences.
 
 ### Working Files Context Menu
 When you right-click a file in Working Files, a context menu appears with various file operations.
@@ -310,5 +292,20 @@ When you right-click a file in Working Files, a context menu appears with variou
 
 > These options provide quick access to common file operations directly from Working Files.
 
+### Showing or Hiding Working Files
+You can show or hide the Working Files panel in two ways:
+
+#### 1. From the Sidebar
+Click the **double-arrow** icon in the top-right corner of the sidebar, then use the `Show Working Files` option in the dropdown to toggle Working Files.
+
+![Disable Working Files](./images/fileManagement/disable-working-files.png "Disable Working Files")
+
+#### 2. From Preferences
+You can also toggle Working Files by updating the `showWorkingSet` property in the preferences file.
+```json
+"showWorkingSet": true
+```
+Set the value to `false` to hide Working Files.
+See [Editing Preferences](./editing-text#editing-preferences) if you need help editing the preferences.
 
 
