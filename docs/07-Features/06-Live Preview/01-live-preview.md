@@ -88,7 +88,7 @@ You can close this overlay by clicking the `×` icon. **Phoenix Code** won't sho
   />
 
   - **Edit Mode**: Allows you to edit Live Preview directly. You can edit text content, delete, duplicate, drag-drop elements and much more right from the Live Preview. **Phoenix Code** will automatically update the source code.
-    [Read more about Live Preview Edit Mode](../../pro-features/live-preview-edit).
+    [Read more about Live Preview Edit Mode](../../Pro%20Features/live-preview-edit).
     > The `Edit Highlights on Hover` option in the dropdown is an Edit Mode feature.
 
 <VideoPlayer
