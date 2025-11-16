@@ -4,45 +4,136 @@ title: Live Preview
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-The Live Preview feature in Phoenix Code provides instant feedback on changes made to HTML and CSS files, enabling developers to see their edits in real-time. This feature is activated by default for HTML projects, while other project types require manual setup.
+The **Live Preview** feature in **Phoenix Code** provides instant feedback on changes made to **HTML** and **CSS** files, letting you see your edits in real-time.
 
-## Activating Live Preview for HTML Files
-1. Select the HTML file you wish to edit from the editing panel.
-   ![Open file](../images/livePreview/open.png "Open the HTML file from the editing panel")
-2. Click the lightning bolt icon, located on the right panel, to initiate Live Preview.
-   ![Lightning icon](../images/livePreview/off.png "Initiate Live Preview by clicking the lightning icon")
-3. The icon turns gold when Live Preview is active.
-   ![Lightning icon active](../images/livePreview/on.png)
-   View the side-by-side Live Preview alongside the code.
-   ![Live Preview active](../images/livePreview/livepreviewon.png "Live Preview alongside code")
+> For HTML files, Live Preview is enabled by default. For other file types, you might need to do some manual setup.
 
-## Detaching Live Preview to a New Window
-1. Hover over the Live Preview panel.
-2. Click the pop-out icon to detach Live Preview into a new window.
-   ![Detaching to new window](../images/livePreview/popout.png "Click to detach Live Preview to a new window")
-3. Live Preview will now display in your default web browser, allowing for uninterrupted coding and viewing.
+---
 
-## Selecting a Browser for Live Preview
-1. Hover over the Live Preview panel.
-2. Choose your preferred browser by clicking its icon. ![Browser selected](../images/livePreview/browser-choice.png "Live Preview in selected browser")
-3. Live Preview opens in the chosen browser.
+## Showing or Hiding Live Preview
 
-## Reload Live Preview
-![Reload Live Preview](../images/livePreview/reload.png)
-The **Reload** button in the live preview toolbar allows you to manually refresh the Live Preview pane to ensure it reflects the latest changes in your code. While Live Preview updates automatically, the Reload button can be helpful if you encounter synchronization issues.
+To show or hide Live Preview, click the **Lightning Bolt** icon at the top of the right panel.
 
-## Disable Live Preview
-You can disable the live preview panel at startup by following these steps:
-1. Click the settings icon in the toolbar (hover over the toolbar to make it appear).
-![Settings Icon](../images/livePreview/settings-gear.png)
+![Live Preview Toggle](../images/livePreview/lp-bolt.png "Live Preview toggle button")
 
-2. This will open the live preview settings menu: 
-![Settings menu](../images/livePreview/live-preview-settings-menu.png)
-3. Disable the `Show Live Preview Panel at Startup` option.
+You can use this button to toggle the visibility of the Live Preview panel.
 
+Alternatively, you can toggle Live Preview from the menu bar by clicking `File > Live Preview`, or use the keyboard shortcut.
+
+![Live Preview toggle menu option](../images/livePreview/lp-menu.png "Live Preview toggle menu option")
+
+---
+
+## Understanding the Bolt Icon
+
+The Live Preview bolt icon appears in different colors, each indicating a different status:
+
+![Live Preview gray bolt icon](../images/livePreview/lp-gray-bolt.png "Live Preview gray bolt icon")
+
+* **Gray bolt**: Live Preview is currently turned off.
+
+![Live Preview half yellow bolt icon](../images/livePreview/lp-half-bolt.png "Live Preview half yellow bolt icon")
+
+* **Half yellow bolt**: Live Preview is connecting.
+
+![Live Preview full yellow bolt icon](../images/livePreview/lp-full-bolt.png "Live Preview full yellow bolt icon")
+
+* **Full yellow bolt**: Live Preview is successfully connected. Changes will now appear in real-time.
+
+![Live Preview pink bolt icon](../images/livePreview/lp-pink-bolt.png "Live Preview pink bolt icon")
+
+* **Pink bolt**: There is a syntax error in your code. Live Preview is not updating because of that.
+
+> You can also hover over the bolt icon to see a tooltip showing the current status.
+
+### Status Overlays
+
+When there's a syntax error, the bolt icon turns pink and **Phoenix Code** also displays an overlay in Live Preview stating that there is an error.
+
+![Live Preview syntax error overlay](../images/livePreview/lp-syntax-error-overlay.png "Live Preview syntax error overlay")
+
+You can close this overlay by clicking the `×` icon. **Phoenix Code** won't show the overlay again.
+
+**Phoenix Code** also displays a connecting overlay while Live Preview is establishing a connection.
+
+![Live Preview connecting overlay](../images/livePreview/lp-connecting-overlay.png "Live Preview connecting overlay")
+
+---
+
+## Live Preview Toolbar
+
+**Phoenix Code** provides various options in the Live Preview toolbar.
+
+![Live Preview Toolbar](../images/livePreview/lp-toolbar.png "Live Preview toolbar")
+
+> The browser icons and settings button are hidden by default and appear only on hover. Browser icons are available only in the Desktop app.
+
+### Toolbar Options
+
+![Live Preview reload](../images/livePreview/lp-reload.png "Live Preview reload")
+
+* **Reload Live Preview** — Refreshes the Live Preview page. Normally, Live Preview updates in real-time but you can use this when Live Preview lags behind or doesn't update with your code changes.
+
+![Live Preview mode](../images/livePreview/lp-mode.png "Live Preview mode")
+
+* **Live Preview Modes** — Live Preview offers 3 modes: **Preview Mode**, **Highlight Mode**, and **Edit Mode**.
+
+  - **Preview Mode**: Disables all editing features. The page appears as it would in a normal browser.
+    > Live Preview still updates in real-time when you edit source code in Preview Mode.
+
+  - **Highlight Mode**: When you click an element in Live Preview, a highlight marker appears showing the element's position, padding, and margin. **Phoenix Code** also moves your cursor in the editor to that element so you can start editing directly. Highlighting also works in reverse: moving your cursor in the editor highlights the corresponding element in Live Preview.
+
+  <VideoPlayer
+    src="https://docs-images.phcode.dev/videos/live-preview/highlight-mode.mp4"
+  />
+
+  - **Edit Mode**: Allows you to edit Live Preview directly. You can edit text content, delete, duplicate, drag-drop elements and much more right from the Live Preview. **Phoenix Code** will automatically update the source code.
+    [Read more about Live Preview Edit Mode](../../pro-features/live-preview-edit).
+    > The `Edit Highlights on Hover` option in the dropdown is an Edit Mode feature.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview/preview-mode-button.mp4"
+/>
+
+
+* **Preview Mode Button** — Located right after the Reload button, this provides a quick shortcut to switch to Preview Mode. Click it to switch to Preview Mode; click again to return to your previous mode.
+
+![Live Preview pin](../images/livePreview/lp-pin.png "Live Preview pin")
+
+* **Pin or Unpin Preview Page** — Pin a file in Live Preview so it remains displayed even when you switch to other files. Click again to unpin.
+
+![Live Preview filename](../images/livePreview/lp-filename.png "Live Preview filename")
+
+* **File Name** — Displays the name of the currently previewed file. Click it to open that file in the editor (if not already open).
+
+![Live Preview popout](../images/livePreview/lp-popout.png "Live Preview popout")
+
+* **Pop Out to New Window** — Opens Live Preview in your default browser. This is helpful when you want to see how your page looks in a full browser window.
+
+![Live Preview browsers](../images/livePreview/lp-browsers.png "Live Preview browsers")
+
+* **Browser Icons** — Select a specific browser icon to open the page in that browser. This helps you see how your page looks across different browsers. The icons are hidden by default. You need to hover over the toolbar to reveal them.
+  > This option is available only in Desktop apps.
+
+![Live Preview settings](../images/livePreview/lp-setting.png "Live Preview settings")
+
+* **Live Preview Settings** — Located at the right-most side of the toolbar. [Read more about Live Preview Settings](./live-preview-settings/#accessing-live-preview-settings).
+
+---
+
+## Using Live Preview with HTML Files
+
+1. Open the HTML file you want to preview.
+2. Click the **Lightning Bolt** icon to open Live Preview (if it's closed).
+3. Make changes to the HTML file and see them update in Live Preview in real-time.
+
+> If changes don't appear, reload Live Preview and wait until the bolt icon turns full yellow.
+
+---
 
 ## Live Preview Demonstrated
-<VideoPlayer 
+
+<VideoPlayer
   src="https://docs-images.phcode.dev/videos/phcode.io-site/live_preview.mp4"
 />
 
