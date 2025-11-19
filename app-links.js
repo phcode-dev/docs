@@ -111,5 +111,9 @@ export const appLinks = [
     {
 		from: '/app-links/find-in-files',
 		to: '/docs/Features/find-in-files/',
+	},
+    {
+		from: '/app-links/custom-snippets',
+		to: '/docs/Features/custom-snippets',
 	}
 ];
