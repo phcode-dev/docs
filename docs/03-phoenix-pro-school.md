@@ -1,8 +1,8 @@
 ---
-title: Phoenix Pro for Schools & Universities
+title: Phoenix Pro for Education (Free)
 ---
 
-# 📚 Phoenix Pro for Schools & Universities (Free)
+# Phoenix Pro for Schools & Universities (Free)
 
 Phoenix Code provides **Phoenix Pro free of charge** to all eligible educational institutions, teachers, and students.
 Schools can deploy Phoenix Pro in two ways:
@@ -14,7 +14,7 @@ This page explains how schools and universities can obtain free Phoenix Pro acce
 
 ---
 
-## 🎓 Who Is Eligible?
+## Who Is Eligible?
 
 Phoenix Pro is free for:
 
@@ -27,11 +27,11 @@ Volume licenses may be applied to:
 
 * School-owned lab computers
 * Shared classroom devices
-* **Student-owned laptops/home computers** (per administrator distribution)
+* **Student/teacher-owned laptops/home computers** (per administrator distribution)
 
 ---
 
-# 🚀 Option 1: Email-Based Student & Teacher Activation (Instant)
+# Option 1: Email-Based Student & Teacher Activation (Instant)
 
 Phoenix Pro is automatically activated for users who log in with:
 
@@ -48,7 +48,7 @@ Phoenix Pro is automatically activated for users who log in with:
 
 ---
 
-## 🏫 Schools Without a `.edu` or `.ac.*` Domain
+## Schools Without a `.edu` or `.ac.*` Domain
 
 Some schools, especially K-12 institutions, use custom domains.
 We support these too.
@@ -66,15 +66,14 @@ Once your domain is approved, all users with that email domain automatically rec
 
 ---
 
-# 🖥️ Option 2: Educational Volume License (For Labs + Student Devices)
+# Option 2: Educational Volume License (For Labs + Student/Tecaher Devices)
 
 Educational Volume Licenses allow schools to activate Phoenix Pro on devices **without requiring login**.
 This is suitable for:
 
 * Classrooms & computer labs
-* Exam-mode machines
 * Devices shared across many students
-* **Student-owned laptops**, when a school wants simple bulk activation
+* **Student/teacher-owned laptops**, when a school wants simple bulk activation
 * Younger students without email accounts
 
 ### ✔ Cost
@@ -83,7 +82,7 @@ This is suitable for:
 
 ---
 
-## 🎟️ Requesting a Volume License Key
+## Requesting a Volume License Key
 
 Email **[support@core.ai](mailto:support@core.ai)** with:
 
@@ -94,7 +93,7 @@ Email **[support@core.ai](mailto:support@core.ai)** with:
 * Your role/title
 * Administrator email for license management
 
-We will verify the school and assign management access to that admin account in:
+We will approve the school and assign management access to that admin account in:
 
 🔗 [https://account.phcode.dev/](https://account.phcode.dev/)
 
@@ -106,15 +105,14 @@ From there, you can obtain the license key.
 
 ---
 
-## 🔑 How Volume License Keys Work
+## How Volume License Keys Work
 
 * Each license key is **valid for 2 weeks**
 * During these 2 weeks, you may activate **unlimited devices**:
-
   * School-owned devices
   * Lab computers
   * Shared machines
-  * **Student-owned devices (allowed)**
+  * **Student/teacher-owned devices (allowed)**
 * Once activated, a device stays Phoenix Pro **permanently**
 * After the 2-week window, the key expires
 * Admins can generate a **new key at any time** for new devices
@@ -122,12 +120,11 @@ From there, you can obtain the license key.
 This model ensures:
 
 * Easy deployment
-* Secure, non-permanent keys
 * No login required on each machine
 
 ---
 
-## 💻 Activating Phoenix Pro Using a Volume License Key (Desktop App)
+## Activating Phoenix Pro Using a Volume License Key (Desktop App)
 
 On any device—lab or student-owned:
 
@@ -137,28 +134,28 @@ On any device—lab or student-owned:
 3. Enter the Education Volume License Key
 4. Click **Activate**
 
-✔ The device now has Phoenix Pro permanently
-✔ Login is optional
-✔ School admin may rotate keys as needed
+- The device now has Phoenix Pro permanently
+- Login is optional
+- School admin may rotate keys as needed
 
 *(Insert screenshot placeholder)*
 `<screenshot placeholder>`
 
 ---
 
-# 🚫 Limitations
+# Limitations
 
-### ❌ Students without school email and no school onboarding
+### Students without school email and no school onboarding
 
 If a student does not have a school-provided email **and the school is not onboarded**, we currently cannot issue individual student educational licenses.
 
-### ❌ Volume licenses must be requested by authorized school representatives
+### Volume licenses must be requested by authorized school representatives
 
-Students cannot request volume licenses directly.
+Students cannot request volume licenses directly without school/teacher approval.
 
 ---
 
-# 🧭 Summary of Support Email Subjects
+# Summary of Support Email Subjects
 
 | Purpose                        | Subject Format                                         |
 | ------------------------------ | ------------------------------------------------------ |
@@ -171,7 +168,7 @@ Use correct subjects for faster handling.
 
 ---
 
-# 📝 FAQ
+# FAQ
 
 ### **Can students use the volume license on their personal laptops?**
 
@@ -185,7 +182,7 @@ Yes. Even after the license key expires, previously activated devices remain Pho
 
 Yes. The admin can generate new 2-week activation keys anytime.
 
-### **Can teachers use Phoenix Pro for personal professional work?**
+### **Can teachers use Phoenix Pro for personal/professional work?**
 
 Yes — as long as they use their school email.
 
@@ -195,7 +192,7 @@ Yes. Students and teachers may use Phoenix Pro for any purpose.
 
 ---
 
-# 📥 Need Help?
+# Need Help?
 
 Support options:
 
