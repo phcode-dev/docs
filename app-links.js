@@ -115,5 +115,9 @@ export const appLinks = [
     {
 		from: '/app-links/custom-snippets',
 		to: '/docs/Features/custom-snippets',
+	},
+    {
+		from: '/app-links/edu-pro',
+		to: '/docs/phoenix-pro-school',
 	}
 ];
