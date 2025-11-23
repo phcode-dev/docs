@@ -99,9 +99,11 @@ We will approve the school and assign management access to that admin account in
 
 The admin will find a new section under:
 
-**Advanced Settings → Educational Volume License**
+**Advanced Settings → Phoenix Pro Edu - Volume License Key**
 
 From there, you can obtain the license key.
+
+![Alt text](images/edu/vol-license.png)
 
 ---
 
