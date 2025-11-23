@@ -3,12 +3,14 @@ title: Phoenix Pro for Education (Free)
 ---
 
 # Phoenix Pro for Schools & Universities (Free)
+A large portion of the Phoenix Code community comes from schools and universities, where students and teachers value ease of use and a low learning curve. Education has always been central to our mission, and we want every student to have access to the full Phoenix Pro feature set without barriers.
 
-Phoenix Code provides **Phoenix Pro free of charge** to all eligible educational institutions, teachers, and students.
+For this reason, we provide **Phoenix Pro for free to the entire education ecosystem**, along with deployment tools tailored to classrooms, labs, and student devices.
+
 Schools can deploy Phoenix Pro in two ways:
 
 1. **Email-based automatic activation** (recommended)
-2. **Educational Volume License Keys** (for labs, shared devices, and student-owned devices)
+2. **Educational Volume License Keys** (for labs, shared devices, and student/teacher-owned devices)
 
 This page explains how schools and universities can obtain free Phoenix Pro access and deploy it across **any devices used within the institution**.
 
@@ -44,7 +46,7 @@ Phoenix Pro is automatically activated for users who log in with:
 1. Open Phoenix Code
 2. Sign in using your school email
 3. Phoenix Pro activates instantly
-4. No approval or license file required
+4. No approval or license key required
 
 ---
 
@@ -122,7 +124,9 @@ From there, you can obtain the license key.
 This model ensures:
 
 * Easy deployment
-* No login required on each machine
+* Login is optional, no login required on each machine.
+* The device now has Phoenix Pro permanently
+- School admin may rotate(reissue) keys as needed
 
 ---
 
@@ -136,12 +140,7 @@ On any device—lab or student-owned:
 3. Enter the Education Volume License Key
 4. Click **Activate**
 
-- The device now has Phoenix Pro permanently
-- Login is optional
-- School admin may rotate keys as needed
-
-*(Insert screenshot placeholder)*
-`<screenshot placeholder>`
+![Alt text](images/edu/activate-edu-license.png)
 
 ---
 

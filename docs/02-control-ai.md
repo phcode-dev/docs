@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 🔐 Disable or manage AI features in Phoenix Code for educational and enterprise environments.
 
 :::info Important Timeline
-Phoenix Code AI will be rolled out after May 20, 2025. AI features will require both a Phoenix Code account login with a free/pro AI plan and explicit user opt-in.
+Phoenix Code AI will be rolled out after Jan 20, 2026. AI features will require both a Phoenix Code account login with a free/pro AI plan and explicit user opt-in.
 
 Educational institutions should configure AI controls campus-wide before this date to disable AI.
 :::
