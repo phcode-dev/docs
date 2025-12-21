@@ -94,7 +94,7 @@ Phoenix Code provides various options in the Live Preview toolbar.
   />
 
   - **Edit Mode**: Allows you to edit Live Preview directly. Phoenix Code will automatically update the source code. [Click here to read more about Live Preview Edit Mode and its features](../../Pro%20Features/live-preview-edit).
-    > The `Edit Highlights on Hover` and `Show Measurements` options in the dropdown are Edit Mode features.
+    > The `Edit Highlights on Hover` and `Show Measurements` option in the dropdown is an Edit Mode feature.
 
 --- 
 
