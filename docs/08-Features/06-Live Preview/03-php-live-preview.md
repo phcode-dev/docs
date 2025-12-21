@@ -7,7 +7,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Setting up a live preview for PHP projects is straightforward with Apache and XAMPP. Below are the installation and configuration steps for each operating system:
+Setting up Live Preview for PHP projects is straightforward with *Apache* and *XAMPP*. Below are the installation and configuration steps for each operating system:
 
 <Tabs
   defaultValue="windows"
@@ -60,9 +60,9 @@ Setting up a live preview for PHP projects is straightforward with Apache and XA
 </TabItem>
 
 </Tabs>
-6. Add the following settings to your custom live preview:
+6. Add the following settings to your custom Live Preview:
 ![Custom Live Preview Settings](../images/phpLivePreview/phpCustomServer.png)
-Your live preview should now automatically update to reflect changes whenever PHP files are edited.
+Your Live Preview should now automatically update to reflect changes whenever PHP files are edited.
 
 ## PHP Live Preview in Action
 
