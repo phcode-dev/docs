@@ -5,9 +5,9 @@ title: Emmet
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-**Emmet** helps you quickly expand shorthand abbreviations into full code blocks. When you type an Emmet-compatible abbreviation, **Phoenix Code Editor** displays a code hint with the abbreviation text and a small `Emmet` icon on the right, indicating that the hint comes from Emmet. Selecting the hint expands it into a complete code snippet.
+**Emmet** helps you quickly expand shorthand abbreviations into full code blocks. When you type an Emmet-compatible abbreviation, **Phoenix Code** displays a code hint with the abbreviation text and a small `Emmet` icon on the right, indicating that the hint comes from Emmet. Selecting the hint expands it into a complete code snippet.
 
-**Phoenix Code Editor** includes smart cursor positioning. After expanding an Emmet abbreviation, it automatically places the cursor at the most relevant position so you can start typing immediately. It also adjusts the indentation of the expanded code automatically.
+**Phoenix Code** includes smart cursor positioning. After expanding an Emmet abbreviation, it automatically places the cursor at the most relevant position so you can start typing immediately. It also adjusts the indentation of the expanded code automatically.
 > See the [complete Emmet abbreviations cheat sheet](https://docs.emmet.io/cheat-sheet/).
 
 ### Emmet in Markup Languages
@@ -79,10 +79,12 @@ See [Editing Preferences](../03-editing-text.md#editing-preferences) for more de
 
 #### Q. What happens if I try to expand a very large abbreviation?
 
-**Phoenix Code Editor** supports large Emmet expansions but applies limits to keep the app stable.
-
-- **Maximum word expansion:** 100,000 words
-  Example: `lorem*100000000` expands only to **100,000** words.
+**Phoenix Code** supports large Emmet expansions but applies limits to keep the app stable.
 
 - **Maximum repeat count:** 400
-  Example: `ul>li*10000` creates **400** list items at most.
+  Example: `ul>li*10000` creates at most **400** `li` elements.
+
+- **Maximum word expansion:** 100,000 words
+  Example: **Phoenix Code** sets a limit of **100,000** words. The hint will not appear if the abbreviation exceeds this limit. `lorem100000` works but `lorem100001` does not.
+
+
