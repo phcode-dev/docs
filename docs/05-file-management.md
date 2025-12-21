@@ -19,19 +19,19 @@ It lists all files and folders in a hierarchical view.
 ### File Tree Context Menu
 
 When you right-click within the File Tree, a context menu appears which allows you to perform various operations.
-> All file and folder operations, such as creating, renaming, and deleting are generally performed through this context menu.
+> All file and folder operations, such as creating, renaming, deleting and many more are generally performed through this context menu.
 
 The element you right-click in the File Tree becomes the selected context, meaning any operation performed will apply to that item. For example:
 - Right-click a **file** → the action applies to that file.
 - Right-click a **folder** → the action applies to or inside that folder (e.g., add file, create subfolder, delete contents).
 - Right-click on **empty space** → the action applies to the project’s root directory.
 
-![File Tree Context Menu](./images/fileManagement/file-tree-context-menu.png "File Tree Context Menu")
-> In this example, `index.html` is selected as the context. Any action from the context menu will apply to that file.
+> In the image shown below, `index.html` is selected as the context. Any action from the context menu will apply to that file.
 
-The File Tree updates automatically, but if files or folders appear missing, use `Refresh File Tree` option in the context menu to manually reload it. This option forces a full refresh of the tree view.
+![File Tree Keyboard Shortcuts](./images/fileManagement/file-tree-context-menu-key-shortcut.png "File Tree Keyboard Shortcuts")
 
-You can also assign or update keyboard shortcuts for any File Tree action through the context menu.
+You can also assign or update keyboard shortcuts for any File Tree action through the context menu using the keyboard button at the side.
+
 See the [Keyboard Shortcuts Guide](./Features/keyboard-shortcuts) for complete details.
 
 ### Sorting Files and Folders
@@ -131,30 +131,6 @@ Tabs can also be dragged between panes.
 When you right-click a tab, a context menu appears which has multiple options so that you can work with tabs easily.
 
 ![Tab bar context menu](./images/fileManagement/tab-bar-context-menu.png "Tab bar context menu")
-
-#### Tab Bar Context Menu Options
-
-* **Close Tab** — Closes the tab that was right-clicked.
-  *For example, in the image, the `script.js` tab will be closed.*
-
-* **Close Tabs to the Left** — Closes all tabs to the left of the selected one (excluding the right-clicked tab).
-  *In the image, the `styles.css` tab will be closed.*
-
-* **Close Tabs to the Right** — Closes all tabs to the right of the selected one (excluding the right-clicked tab).
-  *In the image, the `index.html` tab will be closed.*
-
-* **Close Saved Tabs** — Closes all tabs with saved content. *Tabs for files that have unsaved changes remain open.*
-
-* **Close All Tabs** — Closes every tab currently open in the Tab Bar.
-
-* **Rename** — Allows you to rename the file linked to the selected tab. *When you choose this option, Phoenix Code opens the File Tree (if it is closed) and highlights the file so you can rename it directly.*
-
-* **Delete** — Deletes the file from the project and removes its tab from the Tab Bar.
-
-* **Show in File Tree** – Highlights the selected file in the File Tree so you can locate it easily.
-
-* **Reopen Closed File** — Reopens the most recently closed file or tab.
-
 > These options provide quick access to common file operations directly from the Tab Bar.
 
 ### Git - Tab Bar
@@ -249,47 +225,6 @@ You can reorder files in Working Files by dragging and dropping them, just like 
 When you right-click a file in Working Files, a context menu appears with various file operations.
 
 ![Working Files context menu](./images/fileManagement/working-files-context-menu.png "Working Files context menu")
-
-#### Working Files Context Menu Options
-
-* **Save File** — Saves the selected file if it has unsaved changes.
-
-* **Show in File Tree** — Highlights the selected file in the File Tree so you can locate it easily.
-
-* **Open In** — Opens the file or its location in external applications. *This option is available only in Desktop apps.*
-  - **File Explorer** (Windows) / **File Manager** (Linux): Opens the file's location in the system file browser.
-  - **Command Prompt** (Windows) / **Terminal** (Linux): Opens a terminal window at the file's directory.
-  - **Default Application**: Opens the file in the system's default application for that file type.
-
-* **Copy** — Copies the file name to the clipboard.
-
-* **Copy Path** — Copies the file's full path to the clipboard.
-
-* **Duplicate** — Creates a duplicate of the file with the same content. The duplicate is named with `(copy 1)` appended.
-  *For example: `script.js` becomes `script(copy 1).js`.*
-
-* **Download** — Downloads the file to your local system. *This option is available only in the browser version.*
-
-* **Rename** — Allows you to rename the file. When you choose this option, **Phoenix Code** highlights the file in the File Tree so you can rename it directly.
-
-* **Delete** — Deletes the file from the project and removes it from Working Files.
-
-* **Find in...** — Opens the Find dialog to search for text within the selected file.
-
-* **Replace in...** — Opens the Find and Replace dialog to search and replace text within the selected file.
-
-* **Close** — Closes the selected file and removes it from Working Files.
-
-* **Close Files Above** — Closes all files above the selected one in the Working Files list. *This option is disabled when there are no files above the selected file.*
-
-* **Close Other Files** — Closes all files except the selected one. *This option is disabled when the selected file is the only open file.*
-
-* **Close Files Below** — Closes all files below the selected one in the Working Files list. *This option is disabled when there are no files below the selected file.*
-
-* **Add to .gitignore** — Adds the selected file to the `.gitignore` file, preventing it from being tracked by Git. *This option appears only when your project is a Git repository.*
-
-* **Remove from .gitignore** — Removes the selected file from the `.gitignore` file, allowing it to be tracked by Git again. *This option appears only when your project is a Git repository.*
-
 > These options provide quick access to common file operations directly from Working Files.
 
 ### Showing or Hiding Working Files
@@ -322,7 +257,7 @@ To customize the keyboard shortcut, refer to the [Keyboard Shortcuts Guide](./Fe
 
 ![Recent Files Dialog](./images/fileManagement/recent-files.png "Recent Files Dialog Box")
 
-The dialog shows your recently opened files. Closed files appear in gray. Hover over them to see an `x` icon-click it to remove them from the list. The `Clear` button at the bottom removes all closed files at once.
+The dialog shows your recently opened files. Closed files appear in gray. Hover over them to see an `x` icon. Click it to remove them from the list. The `Clear` button at the bottom removes all closed files at once.
 
 > Currently open files cannot be removed from this list. Close them first to remove them.
 
