@@ -102,7 +102,7 @@ Phoenix Code provides various options in the Live Preview toolbar.
   src="https://docs-images.phcode.dev/videos/live-preview/preview-mode-button.mp4"
 />
 
-* **Preview Mode Button** — Located right after the Reload button, this provides a quick shortcut to switch to Preview Mode. Click it to switch to Preview Mode; click again to return to your previous mode.
+* **Preview Mode Button** — Located right after the Reload button, this provides a quick shortcut to switch to Preview Mode. Click it to switch to Preview Mode; click again to return to your previous mode. You can also use the keyboard shortcut `F8` to toggle Preview Mode.
 
 ---
 
