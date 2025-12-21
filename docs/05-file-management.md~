@@ -103,7 +103,7 @@ Preview Tabs are only visible in the Tab Bar and are not added to the Working Se
 
 ![Preview Tab](./images/fileManagement/preview-tab.png "Preview Tab")
 
-A preview tab becomes a permanent tab and is added to your Working Set when you:
+A preview tab becomes a normal tab and is added to your Working Set when you:
 - Make any change to the file
 - Click the preview tab itself
 - Save the file
