@@ -68,7 +68,7 @@ Once your domain is approved, all users with that email domain automatically rec
 
 ---
 
-# Option 2: Educational Volume License (For Labs + Student/Tecaher Devices)
+# Option 2: Educational Volume License (For Labs + Student/Teacher Devices)
 
 Educational Volume Licenses allow schools to activate Phoenix Pro on devices **without requiring login**.
 This is suitable for:
@@ -126,7 +126,7 @@ This model ensures:
 * Easy deployment
 * Login is optional, no login required on each machine.
 * The device now has Phoenix Pro permanently
-- School admin may rotate(reissue) keys as needed
+* School admin may rotate(reissue) keys as needed
 
 ---
 
