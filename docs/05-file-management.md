@@ -141,6 +141,8 @@ The Tab Bar displays Git file status indicators, showing which files are **untra
 - A **green marker** indicates an **untracked** file.
 - An **orange marker** indicates a **modified** file.
 
+For files that are **gitignored**, **Phoenix Code** shows the tab name in *gray italics*.
+
 > These indicators appear only when your project is a Git repository.
 
 ### Limiting the Number of Tabs
@@ -199,7 +201,7 @@ Working Files displays the same UI elements as the Tab Bar:
 * `×` button to close files
 * Parent folder names when multiple files have the same filename
 * Tooltip showing full file path on hover
-* Git status indicators (green for untracked, orange for modified files)
+* Git status indicators (green for untracked, orange for modified files and gray italics for gitignored files)
 
 > See the [Tab Bar](#tab-bar) section for detailed explanations of these features.
 
