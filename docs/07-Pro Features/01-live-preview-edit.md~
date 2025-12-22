@@ -26,7 +26,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 
 The **Info Box** displays information about an element. It is normally shown at the top-left of the element, but if there is not enough space, Phoenix Code may display it on another side where sufficient space is available. Phoenix Code attempts to position the Info Box as close to the element as possible while keeping it visible.
 
-> By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the **Edit Highlights on Hover** section for more details.
+> By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the [Edit Highlights on Hover](#edit-highlights-on-hover) section for more details.
 
 <!-- TODO: add image showing Info Box -->
 
@@ -59,9 +59,8 @@ The Tool Box displays different options depending on the selected element type. 
 - **Select Parent** *(up-arrow icon)*: Selects the parent of the currently selected element.  
   *This button appears only when a valid parent exists (it is not shown when the parent is `body`, `html`, or a JavaScript-rendered element).*
 
-- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. Press `Enter` to save the edited text or `Esc` to cancel.  
+- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. See the [Editing Text](#editing-text) section for more details.  
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*
-  > You can also edit text by double-clicking the element in the Live Preview.
 
 - **Edit Hyperlink** *(link icon)*: Opens a floating input box that lets you edit the element’s `href` attribute.  
   *This button appears only for `<a>` elements.*
@@ -99,5 +98,53 @@ When **Edit Highlights on Hover** is unchecked:
 - Clicking an element shows highlights, the Info Box, and the Tool Box
 
 Alternatively, you can change this setting by updating the `livePreviewElementHighlights` preference in the preferences file. Set it to `"hover"` (default) or `"click"`. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
+
+---
+
+## Editing Text
+
+The **Editing Text** feature lets you modify text content directly in the Live Preview, with all changes automatically synced to the source code.
+
+To start editing, **double-click** an element in the Live Preview or click the **Edit Text** button *(pencil icon)* in the Tool Box.  
+Edit the text as needed, then press `Enter` to save or `Esc` to cancel.  
+To insert a line break, press `Shift + Enter`.
+
+> Text editing is available only for elements that can contain text. It is not supported for elements such as `<img>`, `<video>`, `<br>`, and similar non-text elements.  
+
+### Text Formatting
+
+You can apply formatting to selected text using standard keyboard shortcuts:
+- **Ctrl/Cmd + B** — Bold; wraps selected text in `<b>` tags
+- **Ctrl/Cmd + I** — Italic; wraps selected text in `<i>` tags
+- **Ctrl/Cmd + U** — Underline; wraps selected text in `<u>` tags
+> If the text is already formatted, the formatting will be removed.
+
+<!-- TODO: add video showing the edit text workflow -->
+
+---
+
+## Drag and Drop
+
+The **Drag and Drop** feature lets you reposition elements in the Live Preview by dragging them to a new location. The source code is automatically updated with the new structure when you drop the element.
+
+To drag an element: click and hold the element, then move your mouse to the desired location. The element becomes semi-transparent while dragging. As you hover over potential drop targets, Phoenix Code displays visual indicators showing where the element will be placed.
+
+#### Visual Indicators
+- **Arrow markers** to indicate the drop position:
+    - **Up (↑) or Down (↓) arrows** — Places the element before or after the target element
+    - **Left (←) or Right (→) arrows** — Places the element before or after the target element (appears for flex row layouts)
+    - **⊕ symbol with a dashed border** — Places the element inside the target as a child
+
+- **Target label** — A small box next to the marker displays the target element's tag name, ID, and classes
+
+> When multiple drop targets overlap *(for example, an `img` inside a `div` with aligned edges)*, you can scroll slightly to cycle through targets and drop the element when the correct label appears.
+
+Phoenix Code validates drops to prevent invalid HTML structure. *For example, list items can only be placed inside list containers, and block elements cannot be placed inside inline elements*. If a drop location is invalid, Phoenix Code shows the marker for the closest valid drop target.no marker will appear and the element cannot be dropped there. In some cases,
+
+To cancel a drag, press `Esc`.
+
+> When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
+
+<!-- TODO: add video showing drag and drop workflow with visual feedback -->
 
 ---

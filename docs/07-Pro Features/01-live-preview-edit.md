@@ -122,3 +122,29 @@ You can apply formatting to selected text using standard keyboard shortcuts:
 <!-- TODO: add video showing the edit text workflow -->
 
 ---
+
+## Drag and Drop
+
+The **Drag and Drop** feature lets you reposition elements in the Live Preview by dragging them to a new location. The source code is automatically updated with the new structure when you drop the element.
+
+To drag an element: click and hold the element, then move your mouse to the desired location. The element becomes semi-transparent while dragging. As you hover over potential drop targets, Phoenix Code displays visual indicators showing where the element will be placed.
+
+#### Visual Indicators
+- **Arrow markers** to indicate the drop position:
+    - **Up (↑) or Down (↓) arrows** — Places the element before or after the target element
+    - **Left (←) or Right (→) arrows** — Places the element before or after the target element (appears for flex row layouts)
+    - **⊕ symbol with a dashed border** — Places the element inside the target as a child
+
+- **Target label** — A small box next to the marker displays the target element's tag name, ID, and classes
+
+> When multiple drop targets overlap *(for example, an `img` inside a `div` with aligned edges)*, you can scroll slightly to cycle through targets and drop the element when the correct label appears.
+
+Phoenix Code validates drops to prevent invalid HTML structure. *For example, list items can only be placed inside list containers, and block elements cannot be placed inside inline elements*. If a drop location is invalid, Phoenix Code shows the marker for the closest valid drop target. In some cases, when no valid drop target is found, Phoenix Code won't show any indicators.
+
+To cancel a drag, press `Esc`.
+
+> When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
+
+<!-- TODO: add video showing drag and drop workflow with visual feedback -->
+
+---
