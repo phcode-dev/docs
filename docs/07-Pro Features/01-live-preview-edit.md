@@ -71,11 +71,11 @@ The Tool Box displays different options depending on the selected element type. 
 - **Duplicate** *(copy icon)*: Copies the selected element and places it below.  
   *This option is available for all elements.*
 
-- **Delete** *(trash icon)*: Deletes the selected element.  
+- **Delete** *(trash icon)*: Deletes the selected element. You can also delete elements using the `Delete` key.
   *This option is available for all elements.*
 
 - **More Options** *(three-dots icon)*: Opens a menu with additional actions such as `Cut`, `Copy`, `Paste`, and `Show Measurements`.  
-  *This option is available for all elements.* See the **Tool Box More Options** section for more details.
+  *This option is available for all elements.*
 
 > The Tool Box is never shown for non-editable elements that are dynamically created by JavaScript.
 
@@ -215,6 +215,37 @@ To enable measurements, click the **mode selector dropdown** in the Live Preview
 Alternatively, you can enable measurements from the **More Options** menu *(three-dots icon)* in the Tool Box. Select **Show Measurements** to toggle it on or off.
 
 You can also change this setting by updating the `livePreviewShowMeasurements` preference in the preferences file. Set it to `true` or `false` (default). See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
+
+---
+
+## Cut, Copy, and Paste
+
+You can cut, copy, and paste elements in Edit Mode using standard keyboard shortcuts or the Tool Box **More Options** menu *(three-dots icon)*.
+
+### Using Keyboard Shortcuts
+
+When you click an element in the Live Preview, keyboard focus moves to the Live Preview. You can then use:
+- **Ctrl/Cmd + X** — Cut the selected element
+- **Ctrl/Cmd + C** — Copy the selected element
+- **Ctrl/Cmd + V** — Paste the copied or cut element below the currently selected element
+
+### Using the More Options Menu
+<!-- TODO: add image showing the More Options menu -->
+
+Click the **More Options** button *(three-dots icon)* in the Tool Box and select **Cut**, **Copy**, or **Paste** from the dropdown menu.
+
+> Keyboard shortcuts apply to elements only when focus is in the Live Preview. When editing source code, the shortcuts affect the code instead.
+
+---
+
+## Undo and Redo
+
+You can undo and redo changes made in Edit Mode using keyboard shortcuts:
+
+- **Ctrl/Cmd + Z** — Undo the last change
+- **Ctrl/Cmd + Y** or **Ctrl/Cmd + Shift + Z** — Redo the last undone change
+
+These shortcuts work for all Edit Mode operations, including text edits, element moves, deletions, and other modifications.
 
 ---
 
