@@ -249,3 +249,13 @@ These shortcuts work for all Edit Mode operations, including text edits, element
 
 ---
 
+## Quick Preview Toggle
+
+A **Quick Preview Toggle** button is available at the top center of the Live Preview. It lets you quickly switch to Preview Mode and back to the previously selected mode (Highlight Mode or Edit Mode). This is especially useful when working with a popped-out Live Preview window. You can also use the `F8` keyboard shortcut to toggle Preview Mode.
+
+<!-- TODO: add a video showing its workflow -->
+
+The button is partially visible as a thin strip at the top edge of the Live Preview. Moving your cursor over this strip reveals the full button, which you can click to toggle Preview Mode.
+
+---
+
