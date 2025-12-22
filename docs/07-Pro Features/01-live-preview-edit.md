@@ -26,7 +26,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 
 The **Info Box** displays information about an element. It is normally shown at the top-left of the element, but if there is not enough space, Phoenix Code may display it on another side where sufficient space is available. Phoenix Code attempts to position the Info Box as close to the element as possible while keeping it visible.
 
-> By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the **Edit Highlights on Hover** section for more details.
+> By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the [Edit Highlights on Hover](#edit-highlights-on-hover) section for more details.
 
 <!-- TODO: add image showing Info Box -->
 
@@ -79,5 +79,25 @@ The Tool Box displays different options depending on the selected element type. 
   *This option is available for all elements.* See the **Tool Box More Options** section for more details.
 
 > The Tool Box is never shown for non-editable elements that are dynamically created by JavaScript.
+
+---
+
+## Edit Highlights on Hover
+
+By default, in Edit Mode, hovering over elements in the Live Preview highlights them and displays the Info Box. You can change this behavior to show highlights only when you click elements instead.
+
+To toggle this setting, click the **mode selector dropdown** in the Live Preview toolbar and unselect **Edit Highlights on Hover**. By default, this option remains checked.
+
+<!-- TODO: add image showing the Edit Highlights on Hover option in the mode dropdown -->
+
+When **Edit Highlights on Hover** is checked (default):
+- Hovering over elements shows highlights and the Info Box
+- Clicking an element selects it and displays the Tool Box along with the Info Box
+
+When **Edit Highlights on Hover** is unchecked:
+- Hovering over elements has no effect
+- Clicking an element shows highlights, the Info Box, and the Tool Box
+
+Alternatively, you can change this setting by updating the `livePreviewElementHighlights` preference in the preferences file. Set it to `"hover"` (default) or `"click"`. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
 ---

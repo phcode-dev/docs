@@ -59,7 +59,7 @@ The Tool Box displays different options depending on the selected element type. 
 - **Select Parent** *(up-arrow icon)*: Selects the parent of the currently selected element.  
   *This button appears only when a valid parent exists (it is not shown when the parent is `body`, `html`, or a JavaScript-rendered element).*
 
-- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. Press `Enter` to save the edited text or `Esc` to cancel. 
+- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. Press `Enter` to save the edited text or `Esc` to cancel.  
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*
   > You can also edit text by double-clicking the element in the Live Preview.
 
@@ -79,5 +79,25 @@ The Tool Box displays different options depending on the selected element type. 
   *This option is available for all elements.* See the **Tool Box More Options** section for more details.
 
 > The Tool Box is never shown for non-editable elements that are dynamically created by JavaScript.
+
+---
+
+## Edit Highlights on Hover
+
+By default, in Edit Mode, hovering over elements in the Live Preview highlights them and displays the Info Box. You can change this behavior to show highlights only when you click elements instead.
+
+To toggle this setting, click the **mode selector dropdown** in the Live Preview toolbar and unselect **Edit Highlights on Hover**. By default, this option remains checked.
+
+<!-- TODO: add image showing the Edit Highlights on Hover option in the mode dropdown -->
+
+When **Edit Highlights on Hover** is checked (default):
+- Hovering over elements shows highlights and the Info Box
+- Clicking an element selects it and displays the Tool Box along with the Info Box
+
+When **Edit Highlights on Hover** is unchecked:
+- Hovering over elements has no effect
+- Clicking an element shows highlights, the Info Box, and the Tool Box
+
+Alternatively, you can change this setting by updating the `livePreviewElementHighlights` preference in the preferences file. Set it to `"hover"` (default) or `"click"`. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
 ---
