@@ -24,7 +24,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 
 ## Info Box
 
-The **Info Box** displays information about an element. It is normally shown at the top-left of the element, but if there is not enough space, Phoenix Code may display it on another side where sufficient space is available. Phoenix Code attempts to position the Info Box as close to the element as possible while keeping it visible.
+The **Info Box** displays information about an element. It is normally shown at the top-left of the element, but if there is not enough space, Phoenix Code may display it on another side where sufficient space is available. Phoenix Code always tries to keep the Info Box visible near the element.
 
 > By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the **Edit Highlights on Hover** section for more details.
 
