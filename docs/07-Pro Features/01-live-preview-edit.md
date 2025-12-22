@@ -59,9 +59,8 @@ The Tool Box displays different options depending on the selected element type. 
 - **Select Parent** *(up-arrow icon)*: Selects the parent of the currently selected element.  
   *This button appears only when a valid parent exists (it is not shown when the parent is `body`, `html`, or a JavaScript-rendered element).*
 
-- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. Press `Enter` to save the edited text or `Esc` to cancel.  
+- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. See the [Editing Text](#editing-text) section for more details.  
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*
-  > You can also edit text by double-clicking the element in the Live Preview.
 
 - **Edit Hyperlink** *(link icon)*: Opens a floating input box that lets you edit the element’s `href` attribute.  
   *This button appears only for `<a>` elements.*
@@ -99,5 +98,27 @@ When **Edit Highlights on Hover** is unchecked:
 - Clicking an element shows highlights, the Info Box, and the Tool Box
 
 Alternatively, you can change this setting by updating the `livePreviewElementHighlights` preference in the preferences file. Set it to `"hover"` (default) or `"click"`. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
+
+---
+
+## Editing Text
+
+The **Editing Text** feature lets you modify text content directly in the Live Preview, with all changes automatically synced to the source code.
+
+To start editing, **double-click** an element in the Live Preview or click the **Edit Text** button *(pencil icon)* in the Tool Box.  
+Edit the text as needed, then press `Enter` to save or `Esc` to cancel.  
+To insert a line break, press `Shift + Enter`.
+
+> Text editing is available only for elements that can contain text. It is not supported for elements such as `<img>`, `<video>`, `<br>`, and similar non-text elements.  
+
+### Text Formatting
+
+You can apply formatting to selected text using standard keyboard shortcuts:
+- **Ctrl/Cmd + B** — Bold; wraps selected text in `<b>` tags
+- **Ctrl/Cmd + I** — Italic; wraps selected text in `<i>` tags
+- **Ctrl/Cmd + U** — Underline; wraps selected text in `<u>` tags
+> If the text is already formatted, the formatting will be removed.
+
+<!-- TODO: add video showing the edit text workflow -->
 
 ---
