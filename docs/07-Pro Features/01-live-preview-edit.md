@@ -58,23 +58,26 @@ The Tool Box displays different options depending on the selected element type. 
 - **Select Parent** *(up-arrow icon)*: Selects the parent of the currently selected element.  
   *This button appears only when a valid parent exists (it is not shown when the parent is `body`, `html`, or a JavaScript-rendered element).*
 
-- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. See the [Inline Text Editing](#inline-text-editing) section for more details.
+- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code.  
+  See the [Inline Text Editing](#inline-text-editing) section for more details.  
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*
 
-- **Edit Hyperlink** *(link icon)*: Opens a floating input box that lets you edit the element’s `href` attribute.  
+- **Edit Hyperlink** *(link icon)*: Opens a floating input box that lets you edit the element's `href` attribute.  
   *This button appears only for `<a>` elements.*
 
-- **Image Gallery** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the src attribute of the element.
-  *This button appears only for `<img>` elements.* See [Image Gallery](./02-image-gallery.md) for more details.
+- **Image Gallery** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the src attribute of the element.  
+  See [Image Gallery](./02-image-gallery.md) for more details.  
+  *This button appears only for `<img>` elements.*
 
-- **Duplicate** *(copy icon)*: Copies the selected element and places it below. You can also duplicate elements using `Ctrl/Cmd + D` after clicking an element.
+- **Duplicate** *(copy icon)*: Copies the selected element and places it below. You can also duplicate elements using `Ctrl/Cmd + D` after clicking an element.  
   *This option is available for all elements.*
 
-- **Delete** *(trash icon)*: Deletes the selected element. You can also delete elements using the `Delete` key after clicking an element.
+- **Delete** *(trash icon)*: Deletes the selected element. You can also delete elements using the `Delete` key after clicking an element.  
   *This option is available for all elements.*
 
-- **More Options** *(three-dots icon)*: Opens a menu with additional actions.
-  *This option is available for all elements.* See [Cut, Copy, and Paste](#cut-copy-and-paste) and [Measurements](./03-measurements.md) for more details.
+- **More Options** *(three-dots icon)*: Opens a menu with additional actions.  
+  See [Cut, Copy, and Paste](#cut-copy-and-paste) and [Measurements](./03-measurements.md) for more details.  
+  *This option is available for all elements.*
 
 > The Tool Box is never shown for non-editable elements that are dynamically created by JavaScript.
 
