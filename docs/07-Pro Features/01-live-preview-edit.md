@@ -64,8 +64,8 @@ The Tool Box displays different options depending on the selected element type. 
 - **Edit Hyperlink** *(link icon)*: Opens a floating input box that lets you edit the element’s `href` attribute.  
   *This button appears only for `<a>` elements.*
 
-- **Image Gallery** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the src attribute of the element.  
-  *This button appears only for `<img>` elements.* See the [Image Gallery](#image-gallery) section for more details.
+- **Image Gallery** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the src attribute of the element.
+  *This button appears only for `<img>` elements.* See [Image Gallery](./02-image-gallery.md) for more details.
 
 - **Duplicate** *(copy icon)*: Copies the selected element and places it below.  
   *This option is available for all elements.*
@@ -73,8 +73,8 @@ The Tool Box displays different options depending on the selected element type. 
 - **Delete** *(trash icon)*: Deletes the selected element. You can also delete elements using the `Delete` key.
   *This option is available for all elements.*
 
-- **More Options** *(three-dots icon)*: Opens a menu with additional actions such as `Cut`, `Copy`, `Paste`, and `Show Measurements`.  
-  *This option is available for all elements.*
+- **More Options** *(three-dots icon)*: Opens a menu with additional actions.
+  *This option is available for all elements.* See [Cut, Copy, and Paste](#cut-copy-and-paste) and [Show Measurements](./03-show-measurements.md) for more details.
 
 > The Tool Box is never shown for non-editable elements that are dynamically created by JavaScript.
 
@@ -145,73 +145,6 @@ To cancel a drag, press `Esc`.
 > When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
 
 <!-- TODO: add video showing drag and drop workflow with visual feedback -->
-
----
-
-## Image Gallery
-
-The **Image Gallery** is a panel that appears at the bottom of the Live Preview. It lets you browse images from Unsplash or select images from your device.
-
-> The Image Gallery is available only for `<img>` elements.
-
-By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the Image Gallery button in the Tool Box or the Close button in the gallery. To reopen it, click the Image Gallery button again.
-
-<!-- TODO: add image showing the Image Gallery ribbon -->
-
-### Browsing Images
-
-Type a search term in the search box and press `Enter` or click the search icon. The gallery displays matching images from Unsplash. Use the left and right arrows to browse through the results.
-
-> The gallery remembers your last search query and shows it when you reopen it. If there is no previous search, Phoenix Code shows results for a random query.
-
-Hover over a thumbnail to preview the image in your page. The previously selected image is restored when you move the cursor away from the gallery.
-
-To select an image, click the thumbnail or the **Use this Image** button. Phoenix Code downloads the image, saves it to the selected folder, and automatically updates the `src` attribute.
-
-> If this is your first time selecting an image, Phoenix Code prompts you to choose a folder where images should be saved. See [Folder Selection Dialog](#folder-selection-dialog) for details.
-
-Below each thumbnail, the photographer’s name and a link to their Unsplash profile are displayed.
-
-<!-- TODO: add video showing image gallery workflow -->
-
-### Selecting from Device
-
-Click the **Select from device** button at the top of the gallery to choose an image from your local files.
-
-### Folder Selection Dialog
-
-The first time you select an image, Phoenix Code prompts you to choose where images should be saved in your project.
-
-The dialog includes:
-- **Folder path input**: Enter a folder path relative to your project root. Phoenix Code suggests matching folders as you type.
-- **Remember this folder for this project**: When checked (default), Phoenix Code reuses this folder for future image downloads in the same project.
-
-> If the folder does not exist, Phoenix Code creates it.  
-> If the folder path is left empty, images are saved to an `images` folder in the project root.
-
-<!-- TODO: add image showing the folder selection dialog -->
-
-To change the saved folder later, click the **Folder Selection** button *(folder icon)* in the Image Gallery header.
-
----
-
-## Show Measurements
-
-The **Show Measurements** feature displays ruler lines extending from the edges of a selected element to the edges of the Live Preview document, with labels showing exact pixel positions. This helps you position elements more accurately.
-
-<!-- TODO: add image showing measurements feature -->
-
-> Ruler lines appear in blue for editable elements and gray for non-editable (dynamically created) elements.
-
-### Enabling Measurements
-
-To enable measurements, click the **mode selector dropdown** in the Live Preview toolbar and select **Show Measurements**. By default, this option is unchecked.
-
-<!-- TODO: add image showing how to enable measurements -->
-
-Alternatively, you can enable measurements from the **More Options** menu *(three-dots icon)* in the Tool Box. Select **Show Measurements** to toggle it on or off.
-
-You can also change this setting by updating the `livePreviewShowMeasurements` preference in the preferences file. Set it to `true` or `false` (default). See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
 ---
 
