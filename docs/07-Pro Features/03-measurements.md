@@ -1,8 +1,8 @@
 ---
-title: Show Measurements
+title: Measurements
 ---
 
-The **Show Measurements** feature displays ruler lines extending from the edges of a selected element to the edges of the Live Preview document, with labels showing exact pixel positions. This helps you position elements more accurately.
+The **Measurements** feature displays ruler lines extending from the edges of a selected element to the edges of the Live Preview document, with labels showing exact pixel positions. This helps you position elements more accurately.
 
 <!-- TODO: add image showing measurements feature -->
 
