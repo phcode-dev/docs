@@ -67,10 +67,10 @@ The Tool Box displays different options depending on the selected element type. 
 - **Image Gallery** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the src attribute of the element.
   *This button appears only for `<img>` elements.* See [Image Gallery](./02-image-gallery.md) for more details.
 
-- **Duplicate** *(copy icon)*: Copies the selected element and places it below.  
+- **Duplicate** *(copy icon)*: Copies the selected element and places it below. You can also duplicate elements using `Ctrl/Cmd + D` after clicking an element.
   *This option is available for all elements.*
 
-- **Delete** *(trash icon)*: Deletes the selected element. You can also delete elements using the `Delete` key.
+- **Delete** *(trash icon)*: Deletes the selected element. You can also delete elements using the `Delete` key after clicking an element.
   *This option is available for all elements.*
 
 - **More Options** *(three-dots icon)*: Opens a menu with additional actions.
