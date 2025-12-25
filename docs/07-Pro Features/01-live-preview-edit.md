@@ -58,7 +58,7 @@ The Tool Box displays different options depending on the selected element type. 
 - **Select Parent** *(up-arrow icon)*: Selects the parent of the currently selected element.  
   *This button appears only when a valid parent exists (it is not shown when the parent is `body`, `html`, or a JavaScript-rendered element).*
 
-- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. See the [Editing Text](#editing-text) section for more details.  
+- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code. See the [Inline Text Editing](#inline-text-editing) section for more details.
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*
 
 - **Edit Hyperlink** *(link icon)*: Opens a floating input box that lets you edit the element’s `href` attribute.  
@@ -100,9 +100,9 @@ Alternatively, you can change this setting by updating the `livePreviewElementHi
 
 ---
 
-## Editing Text
+## Inline Text Editing
 
-The **Editing Text** feature lets you modify text content directly in the Live Preview, with all changes automatically synced to the source code.
+The **Inline Text Editing** feature lets you modify text content directly in the Live Preview, with all changes automatically synced to the source code.
 
 To start editing, **double-click** an element in the Live Preview or click the **Edit Text** button *(pencil icon)* in the Tool Box.  
 Edit the text as needed, then press `Enter` to save or `Esc` to cancel.  
