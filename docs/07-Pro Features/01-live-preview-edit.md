@@ -6,7 +6,8 @@ import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
 **Edit Mode** turns the Live Preview interface into a full-fledged editing environment. It lets you modify elements directly in the preview.
-You can edit text, drag and drop elements, change images and links, inspect elements with precise measurements, and a lot more, right in the Live Preview. **Phoenix Code** automatically updates the source code.
+You can edit text, drag and drop elements, change images and links, inspect elements with precise measurements, and a lot more, right in the Live Preview.   
+**Phoenix Code** automatically updates the source code.
 
 **Edit Mode** also has all the capabilities of **Highlight Mode**, such as moving your cursor in the editor when an element is clicked, and highlighting the corresponding element in Live Preview. It also works in reverse: moving your cursor in the editor highlights the corresponding element in Live Preview.
 
@@ -24,8 +25,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 
 ## Info Box
 
-The **Info Box** displays information about an element. It is normally shown at the top-left of the element, but if there is not enough space, Phoenix Code may display it on another side where sufficient space is available. Phoenix Code attempts to position the Info Box as close to the element as possible while keeping it visible.
-
+The **Info Box** displays information about an element.
 > By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the [Edit Highlights on Hover](#edit-highlights-on-hover) section for more details.
 
 <!-- TODO: add image showing Info Box -->
@@ -46,8 +46,7 @@ The Info Box normally has a *blue* background for standard HTML elements (for ex
 
 ## Tool Box
 
-The **Tool Box** displays a set of tools you can use to modify elements in the Live Preview. It is normally shown at the top-right of the Live Preview, but Phoenix Code may adjust its position if there is not enough space, ensuring it remains visible.
-
+The **Tool Box** displays a set of tools you can use to modify elements in the Live Preview.
 > The Tool Box appears only when you click an element or select it through the source code.
 
 <!-- TODO: add image showing Tool Box -->
@@ -199,8 +198,6 @@ To change the saved folder later, click the **Folder Selection** button *(folder
 ## Show Measurements
 
 The **Show Measurements** feature displays ruler lines extending from the edges of a selected element to the edges of the Live Preview document, with labels showing exact pixel positions. This helps you position elements more accurately.
-
-By default, the labels appear at the top for the vertical axis and on the left for the horizontal axis. If there is not enough space, they are displayed at the bottom for the vertical axis and on the right for the horizontal axis.
 
 <!-- TODO: add image showing measurements feature -->
 
