@@ -13,7 +13,7 @@ You can also specify which file types each snippet should work with, so they app
 
 Additionally, you can define the cursor position within a snippet. After expansion, **Phoenix Code** automatically places your cursor exactly where you want it, allowing you to start typing right away.
 
-The snippets you define are available globally, so you don’t need to recreate them for every folder. This helps you write code faster and stay consistent across projects.
+The snippets you define are available globally, so you don’t need to recreate them for every folder.
 
 > **Note**: Custom Snippets have the highest priority and will appear above all other code hints.
 
@@ -95,12 +95,11 @@ This will immediately delete the snippet.
 
 ### Filter Snippets
 When you have a large collection of snippets, the **Filter** feature helps you quickly narrow down the list.
-You’ll find it on the right side of the snippets panel header.
+You’ll find it on the top-right side of the snippets panel.
 
 ![Filter Snippet](./images/CustomSnippets/filter-snippet.png "Filter Snippet")
 
 You can filter the list by any value, such as **Abbreviation**, **Description**, **File Extension**, or **Template Text**.
-It can filter your results quickly and accurately.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/custom-snippets/filter-snippets.mp4"
@@ -110,7 +109,7 @@ It can filter your results quickly and accurately.
 
 ### Snippet Cursor Position
 
-**Phoenix Code** snippets feature is very powerful. It also allows you to define **cursor positions** within a snippet to make editing even faster.
+**Phoenix Code** custom snippets also allows you to define **cursor positions** within a snippet to make editing even faster.
 By adding numbered cursor placeholders, you can jump between key points in the expanded snippet using the `Tab` key.
 
 #### How It Works
@@ -145,6 +144,6 @@ Yes. **Phoenix Code** sets some limits for certain fields. The **Abbreviation** 
 **Phoenix Code** does not allow adding two snippets with the same abbreviation.
 However, abbreviations are *case-sensitive*, so variations like `log` and `LOG` are treated as different snippets.
 
-#### Q. Do I need to type the full abbreviation for the code hint to appear?
-Yes. The code hint appears only when you type the *complete abbreviation*.
+#### Q. Do I need to type the full abbreviation for the snippet hint to appear?
+Yes. The snippet hint appears only when you type the *complete abbreviation*.
 This is an intentional UX decision, since custom snippets have the highest priority, showing hints for partial abbreviations could clutter suggestions and hide default hints.
