@@ -5,6 +5,10 @@ title: Image Gallery
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
+:::info Pro Feature
+[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+:::
+
 The **Image Gallery** is a panel that appears at the bottom of the Live Preview. It lets you browse images from Unsplash or select images from your device.
 
 > The Image Gallery is available only for `<img>` elements.

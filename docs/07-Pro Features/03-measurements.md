@@ -2,6 +2,10 @@
 title: Measurements
 ---
 
+:::info Pro Feature
+[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+:::
+
 The **Measurements** feature displays ruler lines extending from the edges of a selected element to the edges of the Live Preview document, with labels showing exact pixel positions. This helps you position elements more accurately.
 
 <!-- TODO: add image showing measurements feature -->

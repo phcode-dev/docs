@@ -5,6 +5,10 @@ title: Live Preview Edit Mode
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
+:::info Pro Feature
+[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+:::
+
 **Edit Mode** turns the Live Preview interface into a full-fledged editing environment. It lets you modify elements directly in the preview.
 You can edit text, drag and drop elements, change images and links, inspect elements with precise measurements, and a lot more, right in the Live Preview.   
 **Phoenix Code** automatically updates the source code.
