@@ -113,9 +113,9 @@ To insert a line break, press `Shift + Enter`.
 ### Text Formatting
 
 You can apply formatting to selected text using standard keyboard shortcuts:
-- **Ctrl/Cmd + B** — Bold; wraps selected text in `<b>` tags
-- **Ctrl/Cmd + I** — Italic; wraps selected text in `<i>` tags
-- **Ctrl/Cmd + U** — Underline; wraps selected text in `<u>` tags
+- **Ctrl/Cmd + B**: Bold; wraps selected text in `<b>` tags
+- **Ctrl/Cmd + I**: Italic; wraps selected text in `<i>` tags
+- **Ctrl/Cmd + U**: Underline; wraps selected text in `<u>` tags
 > If the text is already formatted, the formatting will be removed.
 
 <!-- TODO: add video showing the edit text workflow -->
@@ -130,11 +130,11 @@ To drag an element: click and hold the element, then move your mouse to the desi
 
 #### Visual Indicators
 - **Arrow markers** to indicate the drop position:
-    - **Up (↑) or Down (↓) arrows** — Places the element before or after the target element
-    - **Left (←) or Right (→) arrows** — Places the element before or after the target element (appears for flex row layouts)
-    - **⊕ symbol with a dashed border** — Places the element inside the target as a child
+    - **Up (↑) or Down (↓) arrows**: Places the element before or after the target element
+    - **Left (←) or Right (→) arrows**: Places the element before or after the target element (appears for flex row layouts)
+    - **⊕ symbol with a dashed border**: Places the element inside the target as a child
 
-- **Target label** — A small box next to the marker displays the target element's tag name, ID, and classes
+- **Target label**: A small box next to the marker displays the target element's tag name, ID, and classes
 
 > When multiple drop targets overlap *(for example, an `img` inside a `div` with aligned edges)*, you can scroll slightly to cycle through targets and drop the element when the correct label appears.
 
@@ -222,9 +222,9 @@ You can cut, copy, and paste elements in Edit Mode using standard keyboard short
 ### Using Keyboard Shortcuts
 
 When you click an element in the Live Preview, keyboard focus moves to the Live Preview. You can then use:
-- **Ctrl/Cmd + X** — Cut the selected element
-- **Ctrl/Cmd + C** — Copy the selected element
-- **Ctrl/Cmd + V** — Paste the copied or cut element below the currently selected element
+- **Ctrl/Cmd + X**: Cut the selected element
+- **Ctrl/Cmd + C**: Copy the selected element
+- **Ctrl/Cmd + V**: Paste the copied or cut element below the currently selected element
 
 ### Using the More Options Menu
 <!-- TODO: add image showing the More Options menu -->
@@ -239,8 +239,8 @@ Click the **More Options** button *(three-dots icon)* in the Tool Box and select
 
 You can undo and redo changes made in Edit Mode using keyboard shortcuts:
 
-- **Ctrl/Cmd + Z** — Undo the last change
-- **Ctrl/Cmd + Y** or **Ctrl/Cmd + Shift + Z** — Redo the last undone change
+- **Ctrl/Cmd + Z**: Undo the last change
+- **Ctrl/Cmd + Y** or **Ctrl/Cmd + Shift + Z**: Redo the last undone change
 
 These shortcuts work for all Edit Mode operations, including text edits, element moves, deletions, and other modifications.
 
