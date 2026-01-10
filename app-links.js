@@ -119,5 +119,9 @@ export const appLinks = [
     {
 		from: '/app-links/edu-pro',
 		to: '/docs/phoenix-pro-school',
+	},
+	{
+		from: '/app-links/live-preview-edit',
+		to: '/docs/Pro%20Features/live-preview-edit',
 	}
 ];
