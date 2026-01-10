@@ -123,5 +123,9 @@ export const appLinks = [
 	{
 		from: '/app-links/live-preview-edit',
 		to: '/docs/Pro%20Features/live-preview-edit',
+	},
+	{
+		from: '/app-links/tab-bar',
+		to: '/docs/file-management#tab-bar',
 	}
 ];
