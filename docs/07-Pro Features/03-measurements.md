@@ -8,7 +8,7 @@ title: Measurements
 
 The **Measurements** feature displays ruler lines extending from the edges of a selected element to the edges of the Live Preview document, with labels showing exact pixel positions. This helps you position elements more accurately.
 
-<!-- TODO: add image showing measurements feature -->
+![Measurements](./images/measurements.png "Measurements")
 
 > Ruler lines appear in blue for editable elements and gray for non-editable (dynamically created) elements.
 
@@ -18,7 +18,7 @@ The **Measurements** feature displays ruler lines extending from the edges of a 
 
 To enable measurements, click the **mode selector dropdown** in the Live Preview toolbar and select **Show Measurements**. By default, this option is unchecked.
 
-<!-- TODO: add image showing how to enable measurements -->
+![Enable Show Measurements](./images/enable-show-measurements.png "Enable Show Measurements")
 
 Alternatively, you can enable measurements from the **More Options** menu *(three-dots icon)* in the Tool Box. Select **Show Measurements** to toggle it on or off.
 
