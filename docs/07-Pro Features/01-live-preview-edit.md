@@ -111,7 +111,7 @@ Alternatively, you can change this setting by updating the `livePreviewElementHi
 
 The **Inline Text Editing** feature lets you modify text content directly in the Live Preview, with all changes automatically synced to the source code.
 
-To start editing, **double-click** an element in the Live Preview or click the **Edit Text** button *(pencil icon)* in the Tool Box.  
+To start editing, **double-click** an element in the Live Preview or click the **Edit Text** button *(pen icon)* in the Tool Box.  
 Edit the text as needed, then press `Enter` to save or `Esc` to cancel.  
 To insert a line break, press `Shift + Enter`.
 
@@ -126,6 +126,14 @@ You can apply formatting to selected text using standard keyboard shortcuts:
 > If the text is already formatted, the formatting will be removed.
 
 <!-- TODO: add video showing the edit text workflow -->
+
+---
+
+## Image Gallery
+
+The **Image Gallery** lets you browse and select images from online image providers or your device and use them in your project directly.
+
+[Read More](./image-gallery)
 
 ---
 
@@ -152,6 +160,14 @@ To cancel a drag, press `Esc`.
 > When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
 
 <!-- TODO: add video showing drag and drop workflow with visual feedback -->
+
+---
+
+## Measurements
+
+The **Measurements** feature displays ruler lines from the edges of a selected element to the document edges, showing exact pixel positions.
+
+[Read More](./measurements)
 
 ---
 
