@@ -30,7 +30,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 ## Info Box
 
 The **Info Box** displays information about an element.
-> By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the [Edit Highlights on Hover](#edit-highlights-on-hover) section for more details.
+> By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the [Inspect Element on Hover](#inspect-element-on-hover) section for more details.
 
 <!-- TODO: add image showing Info Box -->
 
@@ -87,19 +87,19 @@ The Tool Box displays different options depending on the selected element type. 
 
 ---
 
-## Edit Highlights on Hover
+## Inspect Element on Hover
 
 By default, in Edit Mode, hovering over elements in the Live Preview highlights them and displays the Info Box. You can change this behavior to show highlights only when you click elements instead.
 
-To toggle this setting, click the **mode selector dropdown** in the Live Preview toolbar and unselect **Edit Highlights on Hover**. By default, this option remains checked.
+To toggle this setting, click the **mode selector dropdown** in the Live Preview toolbar and unselect **Inspect Element on Hover**. By default, this option remains checked.
 
-<!-- TODO: add image showing the Edit Highlights on Hover option in the mode dropdown -->
+<!-- TODO: add image showing the Inspect Element on Hover option in the mode dropdown -->
 
-When **Edit Highlights on Hover** is checked (default):
+When **Inspect Element on Hover** is checked (default):
 - Hovering over elements shows highlights and the Info Box
 - Clicking an element selects it and displays the Tool Box along with the Info Box
 
-When **Edit Highlights on Hover** is unchecked:
+When **Inspect Element on Hover** is unchecked:
 - Hovering over elements has no effect
 - Clicking an element shows highlights, the Info Box, and the Tool Box
 
