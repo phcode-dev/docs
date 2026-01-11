@@ -80,7 +80,7 @@ The Tool Box displays different options depending on the selected element type. 
   *This option is available for all elements.*
 
 - **More Options** *(three-dots icon)*: Opens a menu with additional actions.  
-  See [Cut, Copy, and Paste](#cut-copy-and-paste) and [Measurements](./03-measurements.md) for more details.  
+  See [Cut, Copy, and Paste](#cut-copy-and-paste) for more details. You can also open this menu by right-clicking anywhere in the live preview, but only in Edit Mode.  
   *This option is available for all elements.*
 
 > The Tool Box is never shown for non-editable elements that are dynamically created by JavaScript.
