@@ -15,7 +15,7 @@ The **Image Gallery** is a panel that appears at the bottom of the Live Preview.
 
 By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the Image Gallery button in the Tool Box or the close button in the gallery. To reopen it, click the Image Gallery button again.
 
-<!-- TODO: add image showing the Image Gallery ribbon -->
+![Image Gallery](./images/image-gallery.png "Image Gallery")
 
 ---
 
@@ -38,7 +38,7 @@ To download the image to your project instead, click the **Download image** butt
 
 Below each thumbnail, the photographer's name and a link to their profile is displayed.
 
-<!-- TODO: add video showing image gallery workflow -->
+<!-- TODO: @devansh add video showing image gallery workflow -->
 
 ---
 
@@ -47,7 +47,7 @@ Below each thumbnail, the photographer's name and a link to their profile is dis
 Click the **Select from device** button at the top of the gallery to choose an image from your local files.  
 If no folder has been selected yet, Phoenix Code prompts you to choose where the image should be saved.
 
-<!-- TODO: add image showing the select from device button -->
+![Select From Device](./images/select-from-device.png "Select from Device")
 
 ---
 
@@ -62,9 +62,11 @@ The dialog includes:
 > If the folder does not exist, Phoenix Code creates it.
 > If the folder path is left empty, images are saved to an `images` folder in the project root.
 
-<!-- TODO: add image showing the folder selection dialog -->
+![Folder selection Dialog](./images/folder-selection-dialog.png "Folder Selection Dialog")
 
 To change the saved folder later, click the **Folder Selection** button *(folder icon)* in the Image Gallery header.
+
+![Folder selection button](./images/folder-selection-button.png "Folder Selection Button")
 
 --- 
 
@@ -84,4 +86,4 @@ Hovering over a thumbnail displays the estimated file size in the top-right corn
 * Banner (1600px)
 * Retina (2200px)
 
-<!-- TODO: add image showing the image size selection and the image space in the thumbnail -->
+![Image size dropdown](./images/image-size-dropdown.png "Image size dropdown")
