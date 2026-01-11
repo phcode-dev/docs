@@ -104,7 +104,8 @@ When **Inspect Element on Hover** is unchecked:
 - Hovering over elements has no effect
 - Clicking an element shows highlights, the Info Box, and the Tool Box
 
-Alternatively, you can change this setting by updating the `livePreviewElementHighlights` preference in the preferences file. Set it to `"hover"` (default) or `"click"`. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
+Alternatively, you can change this setting by updating the `livePreviewElementHighlights` preference in the preferences file. Set it to `"hover"` (default) or `"click"`.  
+See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
 ---
 
@@ -227,4 +228,21 @@ A **Quick Preview Toggle** button is available at the top center of the Live Pre
 The button is partially visible as a thin strip at the top edge of the Live Preview. Moving your cursor over this strip reveals the full button, which you can click to toggle Preview Mode.
 
 ---
+
+## Disabling Edit Mode for Specific Elements
+
+If you have interactive elements (like navigation menus, modals, or carousels) that need to respond to clicks normally, you can exclude them from Edit Mode behavior.
+
+Add the `phcode-no-lp-edit` class to any element you want to behave normally:
+
+```html
+<div class="phcode-no-lp-edit">
+    <!-- Clicks and interactions inside this element work normally -->
+</div>
+```
+
+When an element has this class, the element behaves as if you're in Preview Mode.
+> This also applies to all child elements inside the marked element.
+
+> Placing your cursor on the element in the source code will still select it in Live Preview and allow you to use edit features.
 
