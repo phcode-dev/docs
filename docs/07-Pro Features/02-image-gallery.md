@@ -27,9 +27,13 @@ Type a search term in the search box and press `Enter` or click the search icon.
 
 Hover over a thumbnail to preview the image in your page. The previously selected image is restored when you move the cursor away from the gallery.
 
-To select an image, click the thumbnail or the **Use this Image** button. Phoenix Code downloads the image, saves it to the selected folder, and automatically updates the `src` attribute.
+To select an image, click the thumbnail. This embeds the image directly in your source code.
+
+To download the image to your project instead, click the **Download image** button. Phoenix Code downloads the image, saves it to the selected folder, and automatically updates the `src` attribute.
 
 > If this is your first time selecting an image, Phoenix Code prompts you to choose a folder where images should be saved. See [Folder Selection Dialog](#folder-selection-dialog) for details.
+
+> If the image provider doesn't support embedding, clicking the thumbnail will download the image instead.
 
 Below each thumbnail, the photographer's name and a link to their profile is displayed.
 
