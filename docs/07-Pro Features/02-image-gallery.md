@@ -9,7 +9,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
-The **Image Gallery** is a panel that appears at the bottom of the Live Preview. It lets you browse images from Unsplash or select images from your device.
+The **Image Gallery** is a panel that appears at the bottom of the Live Preview. It lets you browse images from online image providers or select images from your device.
 
 > The Image Gallery is available only for `<img>` elements.
 
@@ -21,7 +21,7 @@ By default, the Image Gallery appears when you select an `<img>` element. You ca
 
 ## Browsing Images
 
-Type a search term in the search box and press `Enter` or click the search icon. The gallery displays matching images from Unsplash. Use the left and right arrows to browse through the results.
+Type a search term in the search box and press `Enter` or click the search icon. The gallery displays matching images from the image providers. Use the left and right arrows to browse through the results.
 
 > The gallery remembers your last search query and shows it when you reopen it. If there is no previous search, Phoenix Code shows results for a random query.
 
@@ -31,7 +31,7 @@ To select an image, click the thumbnail or the **Use this Image** button. Phoeni
 
 > If this is your first time selecting an image, Phoenix Code prompts you to choose a folder where images should be saved. See [Folder Selection Dialog](#folder-selection-dialog) for details.
 
-Below each thumbnail, the photographer's name and a link to their Unsplash profile are displayed.
+Below each thumbnail, the photographer's name and a link to their profile is displayed.
 
 <!-- TODO: add video showing image gallery workflow -->
 
