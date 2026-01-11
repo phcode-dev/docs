@@ -67,6 +67,7 @@ The Tool Box displays different options depending on the selected element type. 
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*
 
 - **Edit Hyperlink** *(link icon)*: Opens a floating input box that lets you edit the element's `href` attribute.  
+  See the [Edit Hyperlink](#edit-hyperlink) section for more details.
   *This button appears only for `<a>` elements.*
 
 - **Image Gallery** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the src attribute of the element.  
@@ -160,6 +161,21 @@ To cancel a drag, press `Esc`.
 > When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
 
 <!-- TODO: add video showing drag and drop workflow with visual feedback -->
+
+---
+
+## Edit Hyperlink
+
+The **Edit Hyperlink** feature lets you modify the URL and behavior of anchor (`<a>`) elements directly in the Live Preview.
+
+To edit a hyperlink, select an `<a>` element and click the **Edit Hyperlink** button *(link icon)* in the Tool Box. A floating input box appears near the element.
+
+The input box includes:
+- **URL input**: Edit the link's destination (`href` attribute). Press `Enter` to save your changes or `Esc` to cancel.
+- **Open in new tab**: Check this option to make the link open in a new tab. Checking this option will add `target="_blank"` in your source code.
+- **Open URL**: Clicking on this button opens the URL in your default browser. This option is available only in desktop apps.
+
+<!-- TODO: add image showing the Edit Hyperlink input box -->
 
 ---
 
