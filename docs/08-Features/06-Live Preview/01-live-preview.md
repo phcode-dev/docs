@@ -51,14 +51,12 @@ The Live Preview bolt icon appears in different colors, each indicating a differ
 
 When there's a syntax error, the bolt icon turns pink and Phoenix Code also displays an overlay in Live Preview stating that there is an error.
 
-<!-- TODO: replace this image as in this image the index.html file name is not completely visible -->
 ![Live Preview syntax error overlay](../images/livePreview/lp-syntax-error-overlay.png "Live Preview syntax error overlay")
 
 You can close this overlay by clicking the `×` icon and the overlay won't appear again.
 
 Phoenix Code also displays a connecting overlay while Live Preview is establishing a connection.
 
-<!-- TODO: replace this image as in this image the index.html file name is not completely visible -->
 ![Live Preview connecting overlay](../images/livePreview/lp-connecting-overlay.png "Live Preview connecting overlay")
 
 ---
@@ -79,7 +77,6 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
 --- 
 
-<!-- TODO: replace this image as the show ruler lines option is missing -->
 ![Live Preview mode](../images/livePreview/lp-mode.png "Live Preview mode")
 
 * **Live Preview Modes** — Live Preview offers 3 modes: **Preview Mode**, **Highlight Mode**, and **Edit Mode**.
@@ -98,11 +95,14 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
 --- 
 
+<!-- TODO: @devansh update this video -->
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/live-preview/preview-mode-button.mp4"
 />
 
-* **Preview Mode Button** — Located right after the Reload button, this provides a quick shortcut to switch to Preview Mode. Click it to switch to Preview Mode; click again to return to your previous mode. You can also use the keyboard shortcut `F8` to toggle Preview Mode.
+* **Preview Mode Button** — Located next to the Reload button, this provides a quick shortcut to switch modes.  
+  Clicking the button switches to **Preview Mode**. On **Phoenix Pro Edition**, a second click returns to **Edit Mode**. On **Phoenix Community Edition**, a second click switches to **Highlight Mode**.  
+  You can also use the keyboard shortcut `F8` to toggle Preview Mode.
 
 ---
 
