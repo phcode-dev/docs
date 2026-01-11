@@ -13,7 +13,7 @@ The **Image Gallery** is a panel that appears at the bottom of the Live Preview.
 
 > The Image Gallery is available only for `<img>` elements.
 
-By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the Image Gallery button in the Tool Box or the Close button in the gallery. To reopen it, click the Image Gallery button again.
+By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the Image Gallery button in the Tool Box or the close button in the gallery. To reopen it, click the Image Gallery button again.
 
 <!-- TODO: add image showing the Image Gallery ribbon -->
 
@@ -28,12 +28,13 @@ Type a search term in the search box and press `Enter` or click the search icon.
 Hover over a thumbnail to preview the image in your page. The previously selected image is restored when you move the cursor away from the gallery.
 
 To select an image, click the thumbnail. This embeds the image directly in your source code.
+> If the image provider doesn't support embedding, clicking the thumbnail will download the image instead.
 
 To download the image to your project instead, click the **Download image** button. Phoenix Code downloads the image, saves it to the selected folder, and automatically updates the `src` attribute.
 
-> If this is your first time selecting an image, Phoenix Code prompts you to choose a folder where images should be saved. See [Folder Selection Dialog](#folder-selection-dialog) for details.
-
-> If the image provider doesn't support embedding, clicking the thumbnail will download the image instead.
+> If this is your first time selecting an image, Phoenix Code prompts you to choose a folder where images should be saved. See [Folder Selection Dialog](#folder-selection-dialog) for details.  
+  
+> Images are embedded or downloaded at the currently selected size. See [Image Size Selection](#image-size-selection) for details. 
 
 Below each thumbnail, the photographer's name and a link to their profile is displayed.
 
@@ -43,7 +44,10 @@ Below each thumbnail, the photographer's name and a link to their profile is dis
 
 ## Selecting from Device
 
-Click the **Select from device** button at the top of the gallery to choose an image from your local files.
+Click the **Select from device** button at the top of the gallery to choose an image from your local files.  
+If no folder has been selected yet, Phoenix Code prompts you to choose where the image should be saved.
+
+<!-- TODO: add image showing the select from device button -->
 
 ---
 
@@ -61,3 +65,23 @@ The dialog includes:
 <!-- TODO: add image showing the folder selection dialog -->
 
 To change the saved folder later, click the **Folder Selection** button *(folder icon)* in the Image Gallery header.
+
+--- 
+
+## Image Size Selection
+
+The Image Gallery includes a **Size Selector** that lets you choose the resolution of the image before embedding or downloading it.  
+Hovering over a thumbnail displays the estimated file size in the top-right corner.
+> Higher resolutions produce larger image files. Standard (1080px) is the default size.
+
+### Available Image size options
+* Thumbnail (200px)
+* Avatar (320px)
+* Card (640px)
+* Content (960px)
+* Standard (1080px)
+* Hero (1280px)
+* Banner (1600px)
+* Retina (2200px)
+
+<!-- TODO: add image showing the image size selection and the image space in the thumbnail -->
