@@ -15,13 +15,15 @@ You can edit text, drag and drop elements, change images and links, inspect elem
 
 **Edit Mode** also has all the capabilities of **Highlight Mode**, such as moving your cursor in the editor when an element is clicked, and highlighting the corresponding element in Live Preview. It also works in reverse: moving your cursor in the editor highlights the corresponding element in Live Preview.
 
+<!-- TODO: @devansh we can have a video here showing the features... -->
+
 ---
 
 ## Enabling Edit Mode
 
 To switch to Edit Mode, click the **mode selector dropdown** in the Live Preview toolbar and select **Edit Mode**.
 
-<!-- TODO: add image showing the mode selector dropdown with Edit Mode selected -->
+![Live Preview Edit mode](./images/lp-mode.png "Live Preview edit mode")
 
 Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` setting in the preferences file. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
@@ -32,7 +34,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 The **Info Box** displays information about an element.
 > By default, the Info Box appears when you hover over an element in the Live Preview, but this behavior can be changed. See the [Inspect Element on Hover](#inspect-element-on-hover) section for more details.
 
-<!-- TODO: add image showing Info Box -->
+![Info Box](./images/info-box.png "Info Box")
 
 The Info Box displays:
 - **Tag name and dimensions**: The element type (for example, `div`, `p`, `img`) and its size in pixels (width × height)
@@ -44,7 +46,7 @@ The Info Box displays:
 
 The Info Box normally has a *blue* background for standard HTML elements (for example, `<div>`, `<p>`, `<img>`). For dynamically created (JavaScript-rendered) elements, it appears with a *gray* background, indicating that these elements cannot be edited.
 
-<!-- TODO: add image showing the gray Info Box -->
+![Info Box non-editable](./images/info-box-gray.png "Info Box non editable")
 
 ---
 
@@ -53,7 +55,7 @@ The Info Box normally has a *blue* background for standard HTML elements (for ex
 The **Tool Box** displays a set of tools you can use to modify elements in the Live Preview.
 > The Tool Box appears only when you click an element or select it through the source code.
 
-<!-- TODO: add image showing Tool Box -->
+![Tool Box](./images/tool-box.png "Tool Box")
 
 ### Tool Box Options
 
@@ -62,7 +64,7 @@ The Tool Box displays different options depending on the selected element type. 
 - **Select Parent** *(up-arrow icon)*: Selects the parent of the currently selected element.  
   *This button appears only when a valid parent exists (it is not shown when the parent is `body`, `html`, or a JavaScript-rendered element).*
 
-- **Edit Text** *(pencil icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code.  
+- **Edit Text** *(pen icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code.  
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*  
   See the [Inline Text Editing](#inline-text-editing) section for more details.  
 
@@ -94,7 +96,7 @@ By default, in Edit Mode, hovering over elements in the Live Preview highlights 
 
 To toggle this setting, click the **mode selector dropdown** in the Live Preview toolbar and unselect **Inspect Element on Hover**. By default, this option remains checked.
 
-<!-- TODO: add image showing the Inspect Element on Hover option in the mode dropdown -->
+![Inspect Element on Hover](./images/inspect-element-hover.png "Inspect Element on Hover")
 
 When **Inspect Element on Hover** is checked (default):
 - Hovering over elements shows highlights and the Info Box
@@ -127,7 +129,7 @@ You can apply formatting to selected text using standard keyboard shortcuts:
 - **Ctrl/Cmd + U**: Underline; wraps selected text in `<u>` tags
 > If the text is already formatted, the formatting will be removed.
 
-<!-- TODO: add video showing the edit text workflow -->
+<!-- TODO: @devansh add video showing the edit text workflow -->
 
 ---
 
@@ -161,7 +163,7 @@ To cancel a drag, press `Esc`.
 
 > When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
 
-<!-- TODO: add video showing drag and drop workflow with visual feedback -->
+<!-- TODO: @devansh add video showing drag and drop workflow with visual feedback -->
 
 ---
 
@@ -176,7 +178,7 @@ The input box includes:
 - **Open in new tab**: Check this option to make the link open in a new tab. Checking this option will add `target="_blank"` in your source code.
 - **Open URL**: Clicking on this button opens the URL in your default browser. This option is available only in desktop apps.
 
-<!-- TODO: add image showing the Edit Hyperlink input box -->
+![Edit Hyperlink](./images/edit-hyperlink.png "Edit Hyperlink")
 
 ---
 
@@ -200,7 +202,7 @@ When you click an element in the Live Preview, keyboard focus moves to the Live 
 - **Ctrl/Cmd + V**: Paste the copied or cut element below the currently selected element
 
 ### Using the More Options Menu
-<!-- TODO: add image showing the More Options menu -->
+![More Options dropdown](./images/more-options-dropdown.png "More Options Dropdown")
 
 Click the **More Options** button *(three-dots icon)* in the Tool Box and select **Cut**, **Copy**, or **Paste** from the dropdown menu.
 
@@ -223,7 +225,7 @@ These shortcuts work for all Edit Mode operations, including text edits, element
 
 A **Quick Preview Toggle** button is available at the top center of the Live Preview. It lets you quickly switch to Preview Mode and back to the previously selected mode (Highlight Mode or Edit Mode). This is especially useful when working with a popped-out Live Preview window. You can also use the `F8` keyboard shortcut to toggle Preview Mode.
 
-<!-- TODO: add a video showing its workflow -->
+<!-- TODO: @devansh add a video showing its workflow -->
 
 The button is partially visible as a thin strip at the top edge of the Live Preview. Moving your cursor over this strip reveals the full button, which you can click to toggle Preview Mode.
 
