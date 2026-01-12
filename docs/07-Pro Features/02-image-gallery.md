@@ -38,7 +38,9 @@ To download the image to your project instead, click the **Download image** butt
 
 Below each thumbnail, the photographer's name and a link to their profile is displayed.
 
-<!-- TODO: @devansh add video showing image gallery workflow -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/image-gallery.mp4"
+/>
 
 ---
 

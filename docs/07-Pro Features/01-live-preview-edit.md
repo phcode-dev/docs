@@ -15,7 +15,9 @@ You can edit text, drag and drop elements, change images and links, inspect elem
 
 **Edit Mode** also has all the capabilities of **Highlight Mode**, such as moving your cursor in the editor when an element is clicked, and highlighting the corresponding element in Live Preview. It also works in reverse: moving your cursor in the editor highlights the corresponding element in Live Preview.
 
-<!-- TODO: @devansh we can have a video here showing the features... -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/live-preview-edit.mp4"
+/>
 
 ---
 
@@ -129,7 +131,9 @@ You can apply formatting to selected text using standard keyboard shortcuts:
 - **Ctrl/Cmd + U**: Underline; wraps selected text in `<u>` tags
 > If the text is already formatted, the formatting will be removed.
 
-<!-- TODO: @devansh add video showing the edit text workflow -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/inline-text-editing.mp4"
+/>
 
 ---
 
@@ -163,7 +167,9 @@ To cancel a drag, press `Esc`.
 
 > When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
 
-<!-- TODO: @devansh add video showing drag and drop workflow with visual feedback -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/drag-drop.mp4"
+/>
 
 ---
 
@@ -225,7 +231,9 @@ These shortcuts work for all Edit Mode operations, including text edits, element
 
 A **Quick Preview Toggle** button is available at the top center of the Live Preview. It lets you quickly switch to Preview Mode and back to the previously selected mode (Highlight Mode or Edit Mode). This is especially useful when working with a popped-out Live Preview window. You can also use the `F8` keyboard shortcut to toggle Preview Mode.
 
-<!-- TODO: @devansh add a video showing its workflow -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/quick-preview-toggle.mp4"
+/>
 
 The button is partially visible as a thin strip at the top edge of the Live Preview. Moving your cursor over this strip reveals the full button, which you can click to toggle Preview Mode.
 
@@ -246,5 +254,8 @@ Add the `phcode-no-lp-edit` class to any element you want to behave normally:
 When an element has this class, the element behaves as if you're in Preview Mode.
 > This also applies to all child elements inside the marked element.
 
+If you want only to exclude the particular element and not its children, use the class `phcode-no-lp-edit-this`.
+
 > Placing your cursor on the element in the source code will still select it in Live Preview and allow you to use edit features.
 
+---

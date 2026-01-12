@@ -95,9 +95,8 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
 --- 
 
-<!-- TODO: @devansh update this video -->
 <VideoPlayer
-  src="https://docs-images.phcode.dev/videos/live-preview/preview-mode-button.mp4"
+  src="https://docs-images.phcode.dev/videos/live-preview/preview-mode-btn.mp4"
 />
 
 * **Preview Mode Button** — Located next to the Reload button, this provides a quick shortcut to switch modes.  
