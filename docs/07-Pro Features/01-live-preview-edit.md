@@ -9,11 +9,8 @@ import VideoPlayer from '@site/src/components/Video/player';
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
-**Edit Mode** turns the Live Preview interface into a full-fledged editing environment. It lets you modify elements directly in the preview.
-You can edit text, drag and drop elements, change images and links, inspect elements with precise measurements, and a lot more, right in the Live Preview.   
-**Phoenix Code** automatically updates the source code.
-
-**Edit Mode** also has all the capabilities of **Highlight Mode**, such as moving your cursor in the editor when an element is clicked, and highlighting the corresponding element in Live Preview. It also works in reverse: moving your cursor in the editor highlights the corresponding element in Live Preview.
+**Edit Mode** lets you modify your page directly in the Live Preview. You can edit text, rearrange elements, and update images and links. You can also duplicate, delete, and inspect elements with precise measurements.  
+**Phoenix Code** updates your source code automatically as you make changes.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/live-preview-edit/live-preview-edit.mp4"

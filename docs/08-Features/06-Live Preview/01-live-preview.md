@@ -79,19 +79,17 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
 ![Live Preview mode](../images/livePreview/lp-mode.png "Live Preview mode")
 
-* **Live Preview Modes** — Live Preview offers 3 modes: **Preview Mode**, **Highlight Mode**, and **Edit Mode**.
+* **Live Preview Modes** - Live Preview offers 3 modes:
 
-  - **Preview Mode**: Disables all editing features. The page appears as it would in a normal browser.
-    > Live Preview still updates in real-time when you edit source code in Preview Mode.
+  - **Preview Mode**: View-only. The page behaves like a normal browser, but still updates in real-time as you edit code.
 
-  - **Highlight Mode**: When you click an element in Live Preview, a highlight marker appears showing the element's position, padding, and margin. Phoenix Code also moves your cursor in the editor to that element so you can start editing directly. Highlighting also works in reverse: moving your cursor in the editor highlights the corresponding element in Live Preview.
+  - **Highlight Mode**: Click any element to see its size, padding, and margins. Phoenix Code jumps to that element in your source code so you can start editing right away.
 
   <VideoPlayer
     src="https://docs-images.phcode.dev/videos/live-preview/highlight-mode.mp4"
   />
 
-  - **Edit Mode**: Allows you to edit Live Preview directly. Phoenix Code will automatically update the source code. [Click here to read more about Live Preview Edit Mode and its features](../../Pro%20Features/live-preview-edit).
-    > The `Inspect Element on Hover` and `Show Measurements` options in the dropdown are Edit Mode features.
+  - **Edit Mode** *(Pro)*: Edit elements directly in the preview-change text, drag elements, swap images, and more. Phoenix Code updates your source code automatically. [Learn more](../../Pro%20Features/live-preview-edit).
 
 --- 
 
