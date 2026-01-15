@@ -47,7 +47,8 @@ The Live Preview bolt icon appears in different colors, each indicating a differ
 
 > You can also hover over the bolt icon to see a tooltip showing the current status.
 
-### Status Overlays
+<!-- @devansh - commenting this out for now because we are not shipping status overlays -->
+<!-- ### Status Overlays
 
 When there's a syntax error, the bolt icon turns pink and Phoenix Code also displays an overlay in Live Preview stating that there is an error.
 
@@ -58,7 +59,7 @@ You can close this overlay by clicking the `×` icon and the overlay won't appea
 Phoenix Code also displays a connecting overlay while Live Preview is establishing a connection.
 
 ![Live Preview connecting overlay](../images/livePreview/lp-connecting-overlay.png "Live Preview connecting overlay")
-
+ -->
 ---
 
 ## Live Preview Toolbar
