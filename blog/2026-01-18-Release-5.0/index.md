@@ -83,16 +83,16 @@ When typing a color property, Phoenix Code prioritizes your previously used colo
 
 ## Notable changes and fixes
 
-- We've improved the Live Preview to support internal stylesheets and SVGs better than before.
-- We now show Git markers in the scrollbar so that it's easier to locate the git changes in a file.
+- Improved Live Preview to support internal stylesheets and SVGs better than before.
+- Git markers now appear in the scrollbar, making it easier to locate changes in a file.
 - Improved Git so that it doesn't show stale project status.
-- Reduced the number of popups that we show on first time installing Phoenix.
+- Reduced the number of popups shown when first installing Phoenix.
 - Fixed an issue where macOS/iOS and browser autocorrect or smart keyboards altered filenames during renames.
-- Show a dialog when user has deprecated extensions in their extension store.
-- Quick view was coming up very quickly on hover which was interfering with user workflows, we have slowed it down a bit.
-- Safari creates ghost image when dragging from CodeMirror.
-- Truncate very long names in Working Files as it was distracting and redundant.
-- Horizontal Scroll support. Press Shift + mouse scroll
+- Added a dialog to notify users when they have deprecated extensions installed.
+- Slowed down Quick View popup on hover as it was interfering with user workflows.
+- Fixed ghost image appearing in Safari when dragging from CodeMirror.
+- Long names in Working Files are now truncated for better readability.
+- Added Horizontal Scroll support. Use Shift + mouse scroll.
 
 ## All changes
 
