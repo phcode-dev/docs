@@ -12,7 +12,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 This is the biggest release of Phoenix Code ever! This brings lots of much-awaited features into Phoenix Code and we bump to the latest 5.0 version with this.
 
-This release's core theme is `Phoenix Pro, Live Preview Edit, Emmet, Tab Bar and Custom Snippets`.
+This release's core theme is `Phoenix Pro`, `Live Preview Edit`, `Emmet`, `Tab Bar` and `Custom Snippets`.
 
 ## Phoenix Pro
 
