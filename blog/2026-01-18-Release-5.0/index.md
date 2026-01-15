@@ -65,7 +65,9 @@ Create hints that expand into full code blocks. You can also add cursor position
 
 ## Collapse Folders
 
-After working for some time, your project structure gets messy, lots of open directories with nested directories and all. But no worries now, Phoenix Code now supports Collapse All Folders feature using which in one click you can reset your view by collapsing all the expanded folders to their root level. [Read More](https://docs.phcode.dev/docs/file-management#collapse-all-folders)
+After working for some time, your project structure gets messy with lots of open and nested directories.
+
+But no worries now. Phoenix Code supports Collapse All Folders, which lets you reset your view by collapsing all expanded folders to their root level in one click. [Read More](https://docs.phcode.dev/docs/file-management#collapse-all-folders)
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/file-management/collapse-folders.mp4"
@@ -73,7 +75,9 @@ After working for some time, your project structure gets messy, lots of open dir
 
 ## Smarter Color Hints
 
-Phoenix Code code hints are now smarter than ever. When typing a color property Phoenix Code will prioritize the previously used colors which helps you in reusing frequently used colors without manually searching for them. [Read More](https://docs.phcode.dev/docs/editing-colors#color-hints)
+Color hints in Phoenix Code are now smarter than ever.
+
+When typing a color property, Phoenix Code prioritizes your previously used colors. This helps you reuse frequently used colors without manually searching for them. [Read More](https://docs.phcode.dev/docs/editing-colors#color-hints)
 
 ![Previously Used Colors](../../docs/images/editingColors/previously-used-colors.png "Previously Used Colors")
 
