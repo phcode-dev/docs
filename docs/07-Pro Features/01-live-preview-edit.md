@@ -178,8 +178,8 @@ To edit a hyperlink, select an `<a>` element and click the **Edit Hyperlink** bu
 
 The input box includes:
 - **URL input**: Edit the link's destination (`href` attribute). Press `Enter` to save your changes or `Esc` to cancel.
-- **Open in new tab**: Check this option to make the link open in a new tab. Checking this option will add `target="_blank"` in your source code.
-- **Open URL**: Clicking on this button opens the URL in your default browser. This option is available only in desktop apps.
+- **Opens in new tab**: Check this option to make the link open in a new tab. Checking this option will add `target="_blank"` in your source code.
+- **Open this link**: Clicking on this button opens the URL in your default browser. This option is available only in desktop apps.
 
 ![Edit Hyperlink](./images/edit-hyperlink.png "Edit Hyperlink")
 
