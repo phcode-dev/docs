@@ -12,6 +12,8 @@ This month's release is all about Live previews and the little things that make
 your work just a bit easier. We've also addressed numerous feature requests and
 UX bug reports, along with improving app UX and stability.
 
+<!-- truncate -->
+
 #### Live CSS Class and Style Code Hints
 
 Interactively edit CSS styles and classes using the up/down arrow keys in code

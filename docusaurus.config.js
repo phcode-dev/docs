@@ -29,7 +29,6 @@ const config = {
 	deploymentBranch: "main",
 
 	onBrokenLinks: "throw",
-	onBrokenMarkdownLinks: "warn",
 
 	// Even if you don't use internationalization, you can use this field to set
 	// useful metadata like html lang. For example, if your site is Chinese, you
@@ -40,7 +39,10 @@ const config = {
 	},
 	// Enable mermaid diagrams
 	markdown: {
-		mermaid: true
+		mermaid: true,
+		hooks: {
+			onBrokenMarkdownLinks: "warn"
+		}
 	},
 	// Style for math formulas
 	// https://docusaurus.io/docs/markdown-features/math-equations
@@ -78,7 +80,7 @@ const config = {
 				},
 				blog: {
 					showReadingTime: true,
-					blogSidebarCount: 'ALL',
+					blogSidebarCount: 5,
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl: "https://github.com/phcode-dev/docs/blob/main/"

@@ -29,4 +29,72 @@
   --docusaurus-highlighted-code-line-bg: rgba(231, 111, 0, 0.2); /* Slightly more visible Orange for code highlights */
 }
 
+/* ========================================
+   Blog Reading Experience Optimizations
+   ======================================== */
 
+/* Optimize blog typography for better reading experience
+   Line height of 1.75 provides better readability for long-form content.
+   Increased spacing between sections helps with scanability.
+   Content width is naturally constrained by the sidebar, providing optimal
+   readability without excessive whitespace. */
+.markdown > p {
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.markdown > h2,
+.markdown > h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ========================================
+   Dynamic Responsive Blog Layout
+   ======================================== */
+
+/* Increase container width for better space utilization on larger screens */
+:root {
+  --ifm-container-width: 1200px;  /* Increase from default 1140px */
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --ifm-container-width: 1320px;  /* Even wider on very large screens */
+  }
+}
+
+/* Make blog content columns responsive to screen size */
+@media (min-width: 997px) {
+  /* Sidebar: reduce from 25% to ~18% */
+  .container .row > aside.col.col--3 {
+    --ifm-col-width: 18% !important;
+    flex: 0 0 18% !important;
+    max-width: 18% !important;
+  }
+
+  /* Main content: expand to fill remaining space (~82%) */
+  .container .row > main.col.col--7 {
+    --ifm-col-width: 82% !important;
+    flex: 0 0 82% !important;
+    max-width: 82% !important;
+  }
+
+  /* Hide TOC column - give all space to content */
+  .container .row > .col.col--2 {
+    display: none !important;
+  }
+}
+
+/* Ensure sidebar properly hides on mobile/tablet */
+@media (max-width: 996px) {
+  .container .row > aside.col.col--3 {
+    display: none !important;
+  }
+
+  .container .row > main.col.col--7 {
+    --ifm-col-width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}

@@ -12,6 +12,8 @@ This month's upgrade is big! with a lot of features you asked for - PHP/Custom
 live preview servers, advanced CSS/LESS/SCSS/HTML code intelligence and tooling,
 UX and app stability improvements.
 
+<!-- truncate -->
+
 #### Custom Live Preview Servers
 
 Preview PHP, React, and other dynamically rendered files with the

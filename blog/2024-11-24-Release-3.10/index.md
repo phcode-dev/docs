@@ -12,6 +12,8 @@ performance and visual feedback.
 We've also made substantial improvements to [docs.phcode.dev](https://docs.phcode.dev) to better support extension
 developers.
 
+<!-- truncate -->
+
 ## Indent Guide Lines
 
 Phoenix Code now supports indent guidelines to help you better visualize code structure. This feature can

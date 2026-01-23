@@ -11,6 +11,8 @@ We have been working hard over the last several months to make native apps possi
 
 With this update,  Phoenix Code can now run almost anywhere! Native apps are available for Windows, Mac and most Linux distributions. For Chrome-OS and other platforms, simply use the web browser version; no install needed.
 
+<!-- truncate -->
+
 ## Looking Back
 
 The team building Phoenix Code started its history as some of the initial team members building Brackets at Adobe from 2014. Phoenix Code took over the full time development of Brackets in 2021. We had a mammoth task to bring Brackets up to date with the latest web technologies. [The result was Phoenix Code](https://www.reddit.com/r/brackets/comments/tz06tn/brackets_community_announcement_phoenix_code/)- A Platform rewrite of Brackets that allowed it to run on any Web Browser. But our users were pretty clear that a desktop app was needed.

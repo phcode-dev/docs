@@ -9,6 +9,8 @@ The March release(3.5) of Phoenix Code is now available for download
 at [phcode.io](https://phcode.io).
 This month's update improves support for large projects, Find in Files, and app stability.
 
+<!-- truncate -->
+
 ## Inline HTML Number Dials
 
 You can now use number dials in inline HTML styles, not just in CSS files.

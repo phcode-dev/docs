@@ -16,6 +16,8 @@ This month's theme is all about `HTML assistance`, `Drag and Drop` and
 `ESLint`. We've also addressed numerous feature requests and bug reports, along
 with improving app UX and stability.
 
+<!-- truncate -->
+
 #### HTML Validation
 
 We have added HTML Validator to help you find errors like duplicate IDs,

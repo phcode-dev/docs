@@ -12,7 +12,9 @@ how we build for the web. But when its creators moved on, the future of Brackets
 Yet, Brackets lived on. Too many people loved it, relied on it, and believed in its potential. From that
 passion, Phoenix Code was born—not as a replacement, but as a continuation of everything Brackets stood for.
 Join us as we trace this journey from the birth of Brackets to the rise of Phoenix Code—and discover how a
-community’s dedication kept the spirit of Brackets alive.
+community's dedication kept the spirit of Brackets alive.
+
+<!-- truncate -->
 
 ## Brackets 1.0 - The Beginning
 Brackets 1.0 was released 10 years ago at Adobe, on the 4th of November 2014. At the time, Atom from GitHub was

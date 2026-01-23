@@ -16,6 +16,8 @@ A decade-long journey of pushing web development forward: The Brackets story con
 
 This release's core theme is `Git, Color previews, UX imporovements and stability`.
 
+<!-- truncate -->
+
 ## Git for Desktop
 
 Git is finally here.  Integrated Git source control with a clean, intuitive interface.

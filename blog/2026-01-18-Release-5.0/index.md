@@ -13,6 +13,8 @@ import VideoPlayer from '@site/src/components/Video/player';
 Our biggest update yet - introducing `Phoenix Pro` and major upgrades like `Live Preview Edit`, `Emmet`,
 `Tab Bar`, and `Custom Snippets`.
 
+<!-- truncate -->
+
 ## Phoenix Pro - A Sustainable Future
 
 Phoenix Code has been free and open source from day one - and **everything you’ve used so far will remain free forever**, including **Live Preview**.

@@ -11,6 +11,8 @@ September release(3.9) of Phoenix Code is now available for download at
 This month's core theme is `App robustness` and `stability` improvements.
 We have also added several `HTML and Text Editing` workflow improvements.
 
+<!-- truncate -->
+
 ## Now Available on ChromeOS
 
 All new native ChromeOS app is now available on the Google Play Store.
