@@ -1,6 +1,7 @@
 ---
 title: "Phoenix Code vs VS Code: Which Editor Fits Your Workflow?"
-description: "VS Code dominates code editing. Phoenix Code takes a different path with live preview and visual editing. Here's how they compare — and when each one makes sense."
+description: "VS Code dominates code editing. Phoenix Code takes a different path with live preview and visual editing. A comparison of both — and when each one makes sense."
+authors: [charly]
 tags:
   - vs-code
   - comparison
@@ -9,132 +10,82 @@ tags:
   - visual-editing
 ---
 
-Let's get this out of the way: VS Code is incredible. 74% market share. 50,000+ extensions. 73 million downloads on Live Server alone. If you write code for a living, you're probably using it right now.
+You've been there. Forty minutes into a landing page, saving, switching to Chrome, scrolling back to the hero section, squinting at padding values. Which `div` is it? You save again. Check again. Still wrong. Seventeen extensions installed over two years — half of them mysteries — and you're *still* toggling between windows to see your own work.
 
-So why would anyone look at anything else?
-
-Here's the thing — not everyone writing HTML and CSS is a "developer" in the traditional sense. Designers tweaking client sites. Marketing teams updating landing pages. Students who just want to *see what their code does* without configuring a build pipeline. For that crowd, VS Code can feel like bringing a tank to a water gun fight.
+There's a different way. But first, some context.
 
 <!-- truncate -->
 
-## Quick Decision Guide
+## The gap nobody talks about
 
-| Your situation | Best choice |
-|----------------|-------------|
-| "I work in Python/Go/Rust and need deep debugging" | **VS Code** |
-| "I manage a monorepo with 15 microservices" | **VS Code** |
-| "I build static sites and want to see changes instantly" | **Phoenix Code** |
-| "I'm a designer editing HTML/CSS for client projects" | **Phoenix Code** |
-| "I want to click something in the preview and edit it right there" | **Phoenix Code Pro** |
-| "I need to code on a Chromebook or shared computer" | **Phoenix Code** (runs at [phcode.dev](https://phcode.dev)) |
+VS Code is extraordinary. 74% market share. 50,000+ extensions. A debugger that makes grown engineers weep with joy. If you write Python or Rust or Go for a living, close this tab. Seriously. You've already got the right tool.
 
----
+But something doesn't add up. The most sophisticated code editor ever built, and it *still* treats HTML like it's 1997. Write markup in one window. Check it in another. Adjust a padding value. Save. Switch. Scroll. Squint. Go back. Try `24px` instead of `20px`. Save. Switch. Scroll. Squint.
 
-## Feature Comparison
+That loop. Over and over.
 
-| Feature | VS Code | Phoenix Code |
-|---------|---------|-------------|
-| Live Preview | No (needs extension) | Built-in, edit directly in preview |
-| Visual Editing | No | Color pickers, number dials, image preview |
-| Drag and Drop | No | Rearrange elements visually |
-| Browser Version | GitHub Codespaces (paid) | [phcode.dev](https://phcode.dev) (free) |
-| Git Integration | Built-in | Built-in |
-| Extensions | 50K+ marketplace | Growing marketplace |
-| Debugging | Full debugging suite | Basic |
-| Multi-language | 100+ languages | Web-focused (HTML/CSS/JS) |
-| Price | Free | Free (Pro from $9/mo) |
+Code editors were designed for people who think in functions and data structures. And they handle that well. But if you're positioning a call-to-action button, you're not solving the same kind of problem as an engineer debugging a race condition. The tools shouldn't be identical.
 
----
+## What if you could just... click the thing?
 
-## Where VS Code Wins
+You've probably wondered: what if the preview wasn't read-only?
 
-I'm not going to pretend this is a close fight in every category. It's not.
-
-**Extensions.** Name a language, a framework, a linter, a theme — someone's built an extension for it. 50,000+ and counting. Phoenix Code's marketplace is growing, but it's not in the same ballpark yet. Not even the same sport.
-
-**Debugging.** Breakpoints, watch expressions, call stacks, inline values, remote debugging — VS Code's debugger is genuinely world-class. If you're stepping through Python or Node code daily, nothing else comes close.
-
-**Multi-language support.** Go. Rust. Java. C++. TypeScript. You name it. VS Code handles all of them with full IntelliSense, and the language server protocol means support keeps getting better. Phoenix Code is laser-focused on web languages — HTML, CSS, JavaScript. That's it.
-
-**If you're a backend dev or full-stack engineer working across multiple languages?** Stay with VS Code. Honestly, don't even think about it. It's the right tool.
-
----
-
-## Where Phoenix Code Is Different
-
-Okay, so VS Code is the better general-purpose editor. *But what if "general-purpose" isn't what you need?*
-
-### Live Preview You Can Actually Edit In
-
-Every code editor has some form of live preview at this point. Save file, browser reloads. Cool. But Phoenix Code does something I haven't seen anywhere else for free — you can click on text *in the preview* and edit it right there. Change a heading, swap an image, rearrange sections. The source code updates automatically.
+Phoenix Code's live preview isn't the "save and reload" you're used to. You click text in the preview. You edit it there. The heading changes, the source file updates, and you never leave the page you're looking at. Drag a section above another one. Done. The HTML rearranges itself.
 
 ![Live Preview mode selector](../../docs/08-Features/images/livePreview/lp-mode.png)
 
-That's not "live reload." That's a fundamentally different way to work with HTML.
+"WYSIWYG editors tried this in 2005 and the code they generated was garbage." Fair concern. Phoenix Code doesn't generate code — it edits *your existing code*. Your markup stays yours. Clean. Exactly the way you wrote it.
 
-And even in the free version, Highlight Mode lets you click any element in the preview and jump straight to its code. No more scrolling through 400 lines of markup hunting for the right `div`. Sound familiar?
+Even in the free version, there's Highlight Mode. Click any element in the preview, and it jumps you to that line in the source. Sounds small until you're staring at 400 lines of nested markup trying to find the right container. Then it feels like finding the light switch in a dark room.
 
 ![Click to navigate to code](../../docs/07-Pro%20Features/images/inspect-element-hover.png)
 
-### Visual Tools That Actually Make Sense
+## The tiny tools that save weird amounts of time
 
-Color pickers that appear inline when you hover over a hex value. Number dials for tweaking `padding` and `margin` without typing. An image gallery with stock photos you can drag in.
+You might not expect it, but the color picker — it appears inline when you hover a hex value — turns out to be one of the *most-used* features. Not the live preview. Not the drag-and-drop. The color picker.
 
 ![Color picker](../../docs/images/editingColors/colorPicker.png)
 
-These aren't gimmicks. If you've ever spent 10 minutes adjusting a shadow value by editing numbers, saving, checking, editing, saving, checking — yeah. The dial is faster.
+Makes sense, actually. You change colors constantly. In VS Code you'd type a hex code, save, check the browser, decide it's too warm, go back, type another code, save, check again. With the picker you just... pick. You see the change live. Two seconds instead of thirty.
+
+Same idea with the number dials. Hover over a `margin` or `padding` value, drag the dial, watch it change in real time. No save-switch-scroll loop. No guessing whether `16px` or `18px` looks better — you can see both before you commit.
 
 ![Tool box](../../docs/07-Pro%20Features/images/tool-box.png)
 
-### It Runs in Your Browser
+The big productivity killers aren't the hard problems. They're the tiny ones, repeated two hundred times a day.
 
-No install. Go to [phcode.dev](https://phcode.dev), open a project, start coding. That's it.
+## What you give up
 
-Got a Chromebook? Works. Shared office computer where you can't install software? Works. Want to quickly edit something from your tablet? ...it works. VS Code has GitHub Codespaces, but that's a paid service tied to your GitHub account. Phoenix Code's browser version is free.
+| Area | VS Code | Phoenix Code |
+|------|---------|--------------|
+| Extension ecosystem | 50,000+ for every language imaginable | Growing, web-focused |
+| Debugging | World-class (breakpoints, call stacks, remote) | Basic |
+| Language support | 100+ languages with full IntelliSense | HTML, CSS, JavaScript |
+| Live visual editing | Not built-in | Built-in, editable preview |
+| Browser version | Codespaces (paid) | [phcode.dev](https://phcode.dev) (free) |
+| Price | Free | Free (Pro from $9/mo) |
 
----
+If your day involves stepping through Python breakpoints or managing a monorepo with fifteen microservices — Phoenix Code isn't built for that. VS Code's debugger alone has years of dedicated engineering behind it, and its extension ecosystem is unmatched in scope.
 
-## The 7-Box Moat
+Phoenix Code solves a different problem — one that VS Code doesn't focus on.
 
-Here's something I found genuinely interesting. Try to name another tool that checks *all seven* of these boxes:
+## The browser thing
 
-| | VS Code | Webflow | Dreamweaver | Phoenix Code |
-|---|---------|---------|-------------|-------------|
-| Free | ✅ | ❌ | ❌ | ✅ |
-| Visual WYSIWYG editing | ❌ | ✅ | ✅ | ✅ |
-| Real code access | ✅ | ❌ | ✅ | ✅ |
-| Desktop app | ✅ | ❌ | ✅ | ✅ |
-| Browser app | ❌* | ✅ | ❌ | ✅ |
-| Framework-agnostic | ✅ | ❌ | ❌ | ✅ |
-| Open source | ✅ | ❌ | ❌ | ✅ |
+Quick tangent, because this matters more than it might seem. Phoenix Code runs entirely in your browser at [phcode.dev](https://phcode.dev). No install. No setup. Open the URL, open a project, work.
 
-*\*VS Code has vscode.dev but it can't run extensions or terminals. Codespaces can, but it's paid.*
+Chromebook? Works. Library computer where you can't install anything? Works. Your partner's laptop because yours died and the client needs changes by morning? ...yeah. It works.
 
-I kept trying to find a tool that fills all seven. Webflow locks you out of your own code. Dreamweaver costs $23/month and Adobe killed the standalone version. VS Code doesn't do visual editing at all.
+VS Code has vscode.dev, but it can't run extensions or a terminal. Codespaces can, but that's a paid service. Phoenix Code gives you the full editor — visual tools, live preview, everything — available to anyone with a browser. Because sometimes "you can't install software" is the whole problem.
 
-Phoenix Code is the only one that checks every box. That's not marketing — it's just... what's available right now.
+## Who actually uses this
 
----
+Sixty-nine percent of Phoenix Code's paying users are designers and agencies. Not developers.
 
-## Stay with VS Code if...
+That number makes sense once you see the pattern. A designer in Lisbon builds Shopify themes and tried four editors before finding one where she could see changes without the save-reload dance. A small agency in Toronto uses the browser version because their junior designers rotate through shared workstations. A freelancer in Nairobi works from a cybercafé on a machine he doesn't own.
 
-- You work across multiple languages (Python, Go, Rust, Java — pick your poison)
-- Debugging is a core part of your daily workflow
-- You depend on specific VS Code extensions that don't have equivalents
-- You're happy with your current live-reload setup
-- You're building complex apps with framework-specific tooling
+None of them needed a better code editor. They needed a visual tool that *happened* to give them real code access. Free. Open source. No lock-in.
 
-No shame in that. VS Code is dominant for a reason.
-
-## Try Phoenix Code if...
-
-- You build websites, landing pages, or email templates and want to see changes *as you type*
-- You're a designer who's comfortable with HTML/CSS but doesn't want a full IDE experience
-- You want to click an element in the preview and jump straight to the code — or edit it right there
-- You're working on a Chromebook, a shared machine, or just don't feel like installing anything
-- You want visual tools (color pickers, measurement overlays, image galleries) without hunting for extensions
-
-69% of Phoenix Code's paying customers are designers and agencies. Not developers. That tells you something about who this tool is built for.
+That gap — visual, browser-based editing with real code access — is where Phoenix Code fits. Not everywhere. Just there.
 
 ---
 

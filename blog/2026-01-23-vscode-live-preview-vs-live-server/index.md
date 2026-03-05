@@ -1,6 +1,7 @@
 ---
 title: VS Code Live Preview vs Live Server vs Five Server (and when to switch)
-description: Compare VS Code's Live Preview, Live Server, and Five Server extensions. Learn which is best for your HTML/CSS workflow and when Phoenix Code's Highlight Mode offers a faster alternative.
+description: Compare VS Code's Live Preview, Live Server, and Five Server extensions. See which fits your HTML/CSS workflow and when Phoenix Code's Highlight Mode offers a faster alternative.
+authors: [charly]
 tags:
   - live-preview
   - vscode
@@ -12,21 +13,21 @@ tags:
 
 import VideoPlayer from '@site/src/components/Video/player';
 
-You're editing HTML. Switch to browser. Refresh. Switch back. *Where was I?* Scroll... scroll... find your place... repeat. 50+ times a day—that's hours lost per week.
+You're editing HTML. Switch to browser. Refresh. Switch back. *Where were you?* Scroll... scroll... find your place... repeat. 50+ times a day—that's hours lost per week.
 
 <!-- truncate -->
 
-After years of using Live Server, I noticed something: the original creator is seeking maintainers. The forums were full of the same complaints. So I tested all the alternatives.
+After years of using Live Server, you've probably noticed something: the original creator is seeking maintainers. The forums are full of the same complaints. So what happens when you test all the alternatives?
 
 ## Quick Decision Guide
 
-| Your situation | Best choice |
+| Your situation | Try this |
 |----------------|-------------|
-| "I just want save → reload" | **Live Server** |
-| "I want instant updates while typing" | **Five Server** |
-| "I want a built-in preview panel" | **Live Preview (Microsoft)** |
-| "I want to click an element → jump to its code" | **Phoenix Code** |
-| "I want to edit directly in the preview" | **Phoenix Code Pro** |
+| You just want save → reload | **Live Server** |
+| You want instant updates while typing | **Five Server** |
+| You want a built-in preview panel | **Live Preview (Microsoft)** |
+| You want to click an element → jump to its code | **Phoenix Code** |
+| You want to edit directly in the preview | **Phoenix Code Pro** |
 
 ---
 
@@ -44,7 +45,7 @@ The classic. 73M+ downloads. Save your file, browser reloads.
 
 Modern fork of Live Server. Instant updates while typing, element highlighting, built-in PHP support. Actively maintained.
 
-**For most developers, this is the better choice.**
+Five Server covers everything Live Server does—plus typing-speed updates and active maintenance.
 
 [View on Marketplace](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
 
@@ -72,7 +73,7 @@ Microsoft's official extension. Embeds a browser panel directly in VS Code—no 
 
 ## The Workflow Problem They Don't Solve
 
-All three extensions give you live reload. That's useful. But here's what actually eats your time:
+All three extensions give you live reload. That's useful. But watch what happens next:
 
 1. You spot something wrong in the preview
 2. You switch to your editor
@@ -82,11 +83,11 @@ All three extensions give you live reload. That's useful. But here's what actual
 6. You save and check the preview
 7. Repeat
 
-**The reload isn't the bottleneck. Finding your code is.**
+**The reload takes milliseconds. Finding the right line of code takes minutes.**
 
-> "I click something in the preview and the editor jumps to that HTML/CSS."
+> "Click something in the preview and the editor jumps to that HTML/CSS."
 
-This request appears constantly in developer forums. VS Code extensions don't deliver it.
+That request appears constantly in developer forums. None of these extensions deliver it.
 
 ---
 
@@ -110,7 +111,7 @@ Click any element in the preview → jump directly to its code. No more hunting 
 
 ![Click to navigate to code](../../docs/07-Pro%20Features/images/inspect-element-hover.png)
 
-This is the workflow developers keep asking for.
+One click, and your cursor is on the right line.
 
 ---
 
