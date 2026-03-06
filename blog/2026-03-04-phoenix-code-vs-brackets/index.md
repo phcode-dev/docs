@@ -11,13 +11,13 @@ tags:
   - open-source
 ---
 
-If you've used Brackets, you already know us. Phoenix Code is built by the same team that created Brackets — same philosophy, same live preview DNA, same obsession with keeping front-end development fast and visual. Think of it as Brackets with five years of upgrades that we couldn't ship under the old architecture.
+If you've used Brackets, Phoenix Code will feel immediately familiar.
 
-<!-- truncate -->
+Built by the same team behind Brackets, Phoenix Code keeps Live Preview and fast visual front-end development at its core — now rebuilt on a modern foundation.
 
-This isn't a "spiritual successor" or a tribute project. We're the same people. Phoenix Code is what Brackets becomes when you rebuild it on a modern foundation and finally deliver on the features the community has been requesting for years.
+Phoenix Code isn’t a tribute or a spiritual successor. It’s the natural continuation of the ideas that started with Brackets.
 
-If you're still using Brackets, everything below is for you.
+Here’s what’s changed — and how to switch.
 
 ---
 
@@ -27,18 +27,18 @@ Here's the quick comparison. The left column is what you know. The right column 
 
 | Feature | Brackets | Phoenix Code |
 |---------|----------|-------------|
-| Live Preview | Basic (view only) | Full live preview + direct editing in preview |
+| Live Preview | Basic (view only) | Full live preview (editing in preview with [Pro](/docs/Pro%20Features/live-preview-edit)) |
 | Visual Editing | Limited | Color pickers, number dials, gradient editors, drag-and-drop |
 | Git Integration | Required third-party extension | Built-in |
 | Browser Version | No | Yes — [phcode.dev](https://phcode.dev), no install needed |
 | Chromebook / Tablet Support | No | Yes |
 | Extension Marketplace | No longer maintained | Active and growing |
-| Active Development | Last release in 2021 | Regular releases, active team |
+| Active Development | In maintenance mode since 2021 | Regular releases, active team |
 | Open Source | Yes | Yes (AGPL-3.0) |
 | Built-in Image Library | No | Yes — stock photos you can drag into projects |
-| Price | Free | Free (Pro tier from $9/mo for advanced features) |
+| Price | Free | Free ([Pro](https://phcode.dev/pricing) from $9/mo for Live Preview Edit) |
 
-The free version of Phoenix Code covers everything Brackets did, plus Git, the browser edition, and visual editing tools. The Pro tier adds measurement tools, direct preview editing, and the stock image library.
+The free version of Phoenix Code covers everything Brackets did and more — Git, the browser edition, visual editing tools, all included. [Phoenix Pro](/docs/Pro%20Features/live-preview-edit) adds Live Preview Edit, and exists to help sustain full-time development by a small indie team.
 
 ---
 
@@ -46,7 +46,7 @@ The free version of Phoenix Code covers everything Brackets did, plus Git, the b
 
 Brackets was built on CEF (Chromium Embedded Framework) — a technology choice that made sense in 2014 but became increasingly difficult to maintain. Security patches, OS compatibility, performance work — it all got harder every year. We hit a ceiling.
 
-Rather than keep patching an aging foundation, we rebuilt from the ground up using modern web standards. The result is an editor that runs natively on desktop *and* directly in the browser at [phcode.dev](https://phcode.dev) — same codebase, same features, zero install.
+Rather than keep patching an aging foundation, we modernized the platform so it can run anywhere — in browsers, on desktop with Electron or Tauri, pretty much any modern system. One codebase that works everywhere, from [phcode.dev](https://phcode.dev) in your browser to a native desktop app.
 
 The architecture changed. The team didn't. The design philosophy didn't.
 
@@ -70,27 +70,27 @@ If you're wondering whether Phoenix Code will feel familiar — it will.
 
 These are the features the Brackets community asked for — and we finally built them.
 
-### Edit Directly in the Live Preview
+### Edit Directly in the Live Preview (Pro)
 
-Brackets' live preview was view-only. You could see changes reflected in real time, but you always had to make edits in the code. Phoenix Code lets you click on any element in the live preview and edit it right there — change text, swap images by dragging, rearrange elements visually. The source code updates automatically.
+Brackets' live preview was view-only. You could see changes reflected in real time, but you always had to make edits in the code. With [Phoenix Pro](/docs/Pro%20Features/live-preview-edit), you can click on any element in the live preview and edit it right there — change text, swap images by dragging, rearrange elements visually. The source code updates automatically.
 
 ![Live Preview modes](../../docs/08-Features/images/livePreview/lp-mode.png)
 
 ### Visual CSS Editing
 
-Inline color pickers, number dials you can scrub to adjust values, gradient editors — all built in. No more typing hex codes, saving, checking, adjusting, repeat. Select a color value and pick it visually. Grab a number and drag to adjust.
+Brackets had inline color pickers — Phoenix Code keeps those and adds number dials you can scrub to adjust CSS values like margins, padding, font sizes, and more. Hover over a number, drag to adjust, and see the result update in live preview instantly.
 
-![Color picker](../../docs/images/editingColors/colorPicker.png)
+![Number dial](https://user-images.githubusercontent.com/5336369/208715497-781e8dfc-1939-4dac-82e8-c7e517be4d9c.gif)
 
 ### Built-in Git
 
-No more hunting for a third-party Git extension and hoping it stays maintained. Phoenix Code ships with Git integration — commit, push, pull, diff, branch management, all in the editor.
+Phoenix Code ships with native Git support based on the familiar Brackets Git extension, addressing many of its earlier limitations with a simpler UX and improved reliability. Commit, push, pull, diff, and branch management, all built in.
 
 ![Git integration](../../docs/08-Features/images/git-images/git-commit.png)
 
 ### Runs in Your Browser
 
-Open [phcode.dev](https://phcode.dev) and you have the full editor — no install, no admin privileges. Works on Chromebooks, tablets, shared computers, anywhere you have a browser. This is the same editor, not a stripped-down web version.
+Open [phcode.dev](https://phcode.dev) and start editing — no install or admin privileges needed. Works on Chromebooks, tablets, shared computers, anywhere you have a browser. The web app runs the same core as the desktop app, so for website editing and live preview it's just as capable. For Git, AI features, and the full experience, grab the [native app](https://phcode.dev/download).
 
 ### Measurement and Inspection Tools
 
@@ -106,7 +106,7 @@ Short version: open your project folder in Phoenix Code. That's it.
 
 **No migration needed.** Your project files work as-is. No config conversion, no import wizard. Just open the folder.
 
-**Extensions.** Some Brackets extensions have Phoenix Code equivalents in the marketplace. The ecosystem is actively growing, and extensions are maintained alongside the editor — so they don't break silently after an update.
+**Extensions.** Most heavily used Brackets extensions — Emmet, Git, Beautify/Prettier, editor tabs — are now built in and actively supported. The extension marketplace is also growing for anything else you need.
 
 **Learning curve.** Minimal. The UI layout is familiar, the shortcuts are similar, and all the new features are additive — nothing you relied on was removed. You'll be productive in minutes.
 
@@ -114,7 +114,8 @@ Short version: open your project folder in Phoenix Code. That's it.
 
 ## Try Phoenix Code
 
-We built this for the Brackets community — because we *are* the Brackets community. If you've been waiting for Brackets to get the update it deserved, this is it.
+Phoenix Code was built for the Brackets community by the team behind Brackets.
+If you've been waiting for the update Brackets deserved, this is it.
 
 - **[Open Phoenix Code in your browser](https://phcode.dev)** — no install, start immediately
 - [Download the desktop app](https://phcode.dev/download)
