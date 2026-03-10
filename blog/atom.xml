@@ -2,17 +2,101 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.phcode.dev/blog</id>
     <title>Phoenix Code Docs Blog</title>
-    <updated>2026-01-18T00:00:00.000Z</updated>
+    <updated>2026-03-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.phcode.dev/blog"/>
     <subtitle>Phoenix Code Docs Blog</subtitle>
     <icon>https://docs.phcode.dev/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Brackets Editor in 2026: Phoenix Code Picks Up Where It Left Off]]></title>
+        <id>https://docs.phcode.dev/blog/brackets-editor-phoenix-code</id>
+        <link href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code"/>
+        <updated>2026-03-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Brackets editor is in maintenance mode — Phoenix Code continues where it left off. Same team, same live preview DNA, rebuilt for 2026. Free and open source.]]></summary>
+        <content type="html"><![CDATA[<p>If you've used Brackets, Phoenix Code will feel immediately familiar.</p>
+<p>Built by the same team behind Brackets, Phoenix Code keeps Live Preview and fast visual front-end development at its core — now rebuilt on a modern foundation.</p>
+<p>Phoenix Code isn’t a tribute or a spiritual successor. It’s the natural continuation of the ideas that started with Brackets.</p>
+<p>Here’s what’s changed — and how to switch.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="brackets-vs-phoenix-code-whats-new">Brackets vs Phoenix Code: What's New<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#brackets-vs-phoenix-code-whats-new" class="hash-link" aria-label="Direct link to Brackets vs Phoenix Code: What's New" title="Direct link to Brackets vs Phoenix Code: What's New" translate="no">​</a></h2>
+<p>Phoenix Code includes everything Brackets offered — Live Preview, lightweight workflow, web-first focus — plus built-in Git, a browser edition, visual CSS editing, and an active extension marketplace. Here's the full comparison.</p>
+<table><thead><tr><th>Feature</th><th>Brackets</th><th>Phoenix Code</th></tr></thead><tbody><tr><td>Live Preview</td><td>Basic (view only)</td><td>Full live preview (editing in preview with <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Pro</a>)</td></tr><tr><td>Visual Editing</td><td>Limited</td><td>Color pickers, number dials, gradient editors, drag-and-drop</td></tr><tr><td>Git Integration</td><td>Required third-party extension</td><td>Built-in</td></tr><tr><td>Browser Version</td><td>No</td><td>Yes — <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a>, no install needed</td></tr><tr><td>Chromebook / Tablet Support</td><td>No</td><td>Yes</td></tr><tr><td>Extension Marketplace</td><td>No longer maintained</td><td>Active and growing</td></tr><tr><td>Active Development</td><td>In maintenance mode since 2021</td><td>Regular releases, active team</td></tr><tr><td>Open Source</td><td>Yes</td><td>Yes (AGPL-3.0)</td></tr><tr><td>Built-in Image Library</td><td>No</td><td>Yes — stock photos you can drag into projects</td></tr><tr><td>Price</td><td>Free</td><td>Free (<a href="https://phcode.dev/pricing" target="_blank" rel="noopener noreferrer" class="">Pro</a> from $9/mo for Live Preview Edit)</td></tr></tbody></table>
+<p>The free version of Phoenix Code covers everything Brackets did and more — Git, the browser edition, visual editing tools, all included. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Phoenix Pro</a> adds Live Preview Edit, and exists to help sustain full-time development by a small indie team.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-happened-to-the-brackets-editor">What Happened to the Brackets Editor?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#what-happened-to-the-brackets-editor" class="hash-link" aria-label="Direct link to What Happened to the Brackets Editor?" title="Direct link to What Happened to the Brackets Editor?" translate="no">​</a></h2>
+<p>Brackets was created at Adobe and built on CEF (Chromium Embedded Framework) — a technology choice that made sense in 2014 but became increasingly difficult to maintain. Security patches, OS compatibility, performance work — it all got harder every year. In 2021, we took over Brackets from Adobe, continuing its development under the community we founded and now lead.</p>
+<p>Rather than keep patching an aging foundation, we modernized the platform so it can run anywhere — in browsers, on desktop with Electron or Tauri, pretty much any modern system. One codebase that works everywhere, from <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a> in your browser to a native desktop app.</p>
+<p>The architecture changed. The team didn't. The design philosophy didn't. We named it Phoenix Code — Brackets, reborn.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-carried-over-from-brackets">What Carried Over from Brackets<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#what-carried-over-from-brackets" class="hash-link" aria-label="Direct link to What Carried Over from Brackets" title="Direct link to What Carried Over from Brackets" translate="no">​</a></h2>
+<p>If you're wondering whether Phoenix Code will feel familiar — it will.</p>
+<p><strong>Live Preview</strong> is still the core of the experience. Edit HTML or CSS and watch the browser update in real time, no manual refresh. This is the feature that defined Brackets, and it's still front and center.</p>
+<p><strong>The lightweight workflow</strong> is intact. Open a folder, start editing. Everything just works out of the box.</p>
+<p><strong>Web-first focus.</strong> HTML, CSS, JavaScript — that's the sweet spot. Phoenix Code is purpose-built for front-end work, not trying to be a general-purpose IDE.</p>
+<p><strong>Keyboard shortcuts and UI layout</strong> are familiar. If you had muscle memory in Brackets, most of it still applies.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-new-in-phoenix-code">What's New in Phoenix Code<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#whats-new-in-phoenix-code" class="hash-link" aria-label="Direct link to What's New in Phoenix Code" title="Direct link to What's New in Phoenix Code" translate="no">​</a></h2>
+<p>These are the features the Brackets community asked for — and we finally built them.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="edit-directly-in-the-live-preview-pro">Edit Directly in the Live Preview (Pro)<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#edit-directly-in-the-live-preview-pro" class="hash-link" aria-label="Direct link to Edit Directly in the Live Preview (Pro)" title="Direct link to Edit Directly in the Live Preview (Pro)" translate="no">​</a></h3>
+<p>Brackets' live preview was view-only. You could see changes reflected in real time, but you always had to make edits in the code. With <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Phoenix Pro</a>, you can click on any element in the live preview and edit it right there — change text, swap images by dragging, rearrange elements visually. The source code updates automatically.</p>
+<p><img decoding="async" loading="lazy" alt="Phoenix Code live preview modes for editing HTML and CSS visually" src="https://docs.phcode.dev/assets/images/lp-mode-06e95d4c24bd3f96740ce30506206dbd.png" width="660" height="341" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="visual-css-editing">Visual CSS Editing<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#visual-css-editing" class="hash-link" aria-label="Direct link to Visual CSS Editing" title="Direct link to Visual CSS Editing" translate="no">​</a></h3>
+<p>Brackets had inline color pickers — Phoenix Code keeps those and adds number dials you can scrub to adjust CSS values like margins, padding, font sizes, and more. Hover over a number, drag to adjust, and see the result update in live preview instantly.</p>
+<p><img decoding="async" loading="lazy" alt="Phoenix Code CSS number dial for adjusting margins and padding" src="https://docs.phcode.dev/assets/images/number-dial-a65a9e9c4dde31e902c401a5d20b3e3e.gif" width="863" height="408" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-in-git">Built-in Git<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#built-in-git" class="hash-link" aria-label="Direct link to Built-in Git" title="Direct link to Built-in Git" translate="no">​</a></h3>
+<p>Phoenix Code ships with native Git support based on the familiar Brackets Git extension, addressing many of its earlier limitations with a simpler UX and improved reliability. Commit, push, pull, diff, and branch management, all built in.</p>
+<p><img decoding="async" loading="lazy" alt="Built-in Git integration in Phoenix Code — commit and push" src="https://docs.phcode.dev/assets/images/git-commit-cadf7ef1960a86877135ff05f7ee5165.png" width="1520" height="315" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="runs-in-your-browser">Runs in Your Browser<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#runs-in-your-browser" class="hash-link" aria-label="Direct link to Runs in Your Browser" title="Direct link to Runs in Your Browser" translate="no">​</a></h3>
+<p>Open <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a> and start editing — no install or admin privileges needed. Works on Chromebooks, tablets, shared computers, anywhere you have a browser. The web app runs the same core as the desktop app, so for website editing and live preview it's just as capable. For Git, AI features, and the full experience, grab the <a href="https://phcode.dev/download" target="_blank" rel="noopener noreferrer" class="">native app</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="measurement-and-inspection-tools">Measurement and Inspection Tools<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#measurement-and-inspection-tools" class="hash-link" aria-label="Direct link to Measurement and Inspection Tools" title="Direct link to Measurement and Inspection Tools" translate="no">​</a></h3>
+<p>Inspect spacing between elements, measure distances, and check alignment directly in the live preview. If you work from design mockups, this replaces the constant back-and-forth between your editor and a separate design tool.</p>
+<p><img decoding="async" loading="lazy" alt="Phoenix Code measurement and inspection tools in live preview" src="https://docs.phcode.dev/assets/images/measurements-e6f18672c37e19dbae24def0118a8eeb.png" width="1066" height="920" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-switch-from-brackets">How to Switch from Brackets<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#how-to-switch-from-brackets" class="hash-link" aria-label="Direct link to How to Switch from Brackets" title="Direct link to How to Switch from Brackets" translate="no">​</a></h2>
+<p>Short version: open your project folder in Phoenix Code. That's it.</p>
+<p><strong>No migration needed.</strong> Your project files work as-is. No config conversion, no import wizard. Just open the folder.</p>
+<p><strong>Extensions.</strong> The most popular Brackets extensions are now built into Phoenix Code: Emmet for abbreviations, Git for version control, <a class="" href="https://docs.phcode.dev/docs/Features/beautify-code">Beautify/Prettier</a> for code formatting, and a Tab Bar for managing open files. The extension marketplace is active and growing for anything else you need.</p>
+<p><strong>Learning curve.</strong> Minimal. The UI layout is familiar, the shortcuts are similar, and all the new features are additive — nothing you relied on was removed. You'll be productive in minutes.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="frequently-asked-questions">Frequently Asked Questions<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#frequently-asked-questions" class="hash-link" aria-label="Direct link to Frequently Asked Questions" title="Direct link to Frequently Asked Questions" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-happened-to-the-brackets-code-editor">What happened to the Brackets code editor?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#what-happened-to-the-brackets-code-editor" class="hash-link" aria-label="Direct link to What happened to the Brackets code editor?" title="Direct link to What happened to the Brackets code editor?" translate="no">​</a></h3>
+<p>Brackets was created at Adobe and actively developed until 2021. The Phoenix Code project took over the development of Brackets, and rather than keep patching an aging foundation, we rebuilt it to run in browsers and as a desktop app. Brackets, reborn.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-phoenix-code-the-same-as-brackets">Is Phoenix Code the same as Brackets?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#is-phoenix-code-the-same-as-brackets" class="hash-link" aria-label="Direct link to Is Phoenix Code the same as Brackets?" title="Direct link to Is Phoenix Code the same as Brackets?" translate="no">​</a></h3>
+<p>Phoenix Code is built by the same team and carries forward the same design philosophy — Live Preview, lightweight workflow, and a focus on HTML, CSS, and JavaScript. The codebase was rewritten on modern web technologies, but the experience is familiar. If you used Brackets, you'll feel at home.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-phoenix-code-free">Is Phoenix Code free?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#is-phoenix-code-free" class="hash-link" aria-label="Direct link to Is Phoenix Code free?" title="Direct link to Is Phoenix Code free?" translate="no">​</a></h3>
+<p>Yes. The free version includes everything Brackets had and more — Git, the browser edition, visual editing tools, and the extension marketplace. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Phoenix Pro</a> adds Live Preview Edit starting at $9/month and helps sustain full-time development.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-brackets-still-safe-to-use">Is Brackets still safe to use?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#is-brackets-still-safe-to-use" class="hash-link" aria-label="Direct link to Is Brackets still safe to use?" title="Direct link to Is Brackets still safe to use?" translate="no">​</a></h3>
+<p>Brackets runs on an outdated version of Chromium that no longer receives security patches. For active web development, Phoenix Code is the maintained alternative with regular updates and security fixes.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="does-phoenix-code-work-on-chromebook">Does Phoenix Code work on Chromebook?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#does-phoenix-code-work-on-chromebook" class="hash-link" aria-label="Direct link to Does Phoenix Code work on Chromebook?" title="Direct link to Does Phoenix Code work on Chromebook?" translate="no">​</a></h3>
+<p>Yes. Open <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a> in any browser — no install or admin privileges needed. It works on Chromebooks, tablets, and shared computers.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-phoenix-code">Try Phoenix Code<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#try-phoenix-code" class="hash-link" aria-label="Direct link to Try Phoenix Code" title="Direct link to Try Phoenix Code" translate="no">​</a></h2>
+<p>Phoenix Code was built for the Brackets community by the team behind Brackets.
+If you've been waiting for the update Brackets deserved, this is it.</p>
+<ul>
+<li class=""><strong><a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">Open Phoenix Code in your browser</a></strong> — no install, start immediately</li>
+<li class=""><a href="https://phcode.dev/download" target="_blank" rel="noopener noreferrer" class="">Download the desktop app</a></li>
+<li class=""><a class="" href="https://docs.phcode.dev/docs/Features/Live%20Preview/live-preview">Live Preview documentation</a></li>
+<li class=""><a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Edit Mode (Pro)</a></li>
+<li class=""><a class="" href="https://docs.phcode.dev/blog/Blog-Legacy">Read more about the Brackets legacy</a></li>
+</ul>]]></content>
+        <author>
+            <name>Charly P Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Brackets" term="Brackets"/>
+        <category label="Comparison" term="Comparison"/>
+        <category label="Migration" term="Migration"/>
+        <category label="Code Editor" term="Code Editor"/>
+        <category label="Live Preview" term="Live Preview"/>
+        <category label="Open Source" term="Open Source"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Phoenix Pro Release (January-2026, V-5.0) is now Live]]></title>
         <id>https://docs.phcode.dev/blog/release-5.0</id>
         <link href="https://docs.phcode.dev/blog/release-5.0"/>
         <updated>2026-01-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2026 January release (5.0) of Phoenix Code is now available for download at phcode.io.]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 5.0 introduces Phoenix Pro with Live Preview Edit, Emmet support, Tab Bar, and Custom Snippets. The biggest update yet.]]></summary>
         <content type="html"><![CDATA[<p>2026 January release (5.0) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
 <p>Our biggest update yet - introducing <code>Phoenix Pro</code> and major upgrades like <code>Live Preview Edit</code>, <code>Emmet</code>,
 <code>Tab Bar</code>, and <code>Custom Snippets</code>.</p>
@@ -107,7 +191,7 @@ in GitHub.</p>
         <id>https://docs.phcode.dev/blog/release-4.0</id>
         <link href="https://docs.phcode.dev/blog/release-4.0"/>
         <updated>2025-01-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2025 January release(4.0) of Phoenix Code is now available for download at phcode.io.]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 4.0 introduces built-in Git integration, color previews, and open-in-terminal support. The largest release in the Brackets legacy.]]></summary>
         <content type="html"><![CDATA[<p>2025 January release(4.0) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
 <p>This is the largest release we had in a while, and we are happy to announce the next phase of Phoenix Code with
 a major version bump to 4.0.</p>
@@ -195,7 +279,7 @@ to keep improving Phoenix Code.</li>
         <id>https://docs.phcode.dev/blog/Blog-Legacy</id>
         <link href="https://docs.phcode.dev/blog/Blog-Legacy"/>
         <updated>2025-01-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Some stories refuse to end because of the people who believe in them. Brackets was one such story. Born at Adobe,]]></summary>
+        <summary type="html"><![CDATA[The story of Brackets — from its birth at Adobe to Phoenix Code. How a community kept the spirit of Brackets alive and built its future.]]></summary>
         <content type="html"><![CDATA[<p>Some stories refuse to end because of the people who believe in them. Brackets was one such story. Born at Adobe,
 it wasn’t just a code editor; it was a vision to bridge the gap between designers and developers on
 how we build for the web. But when its creators moved on, the future of Brackets seemed uncertain.</p>
@@ -246,7 +330,7 @@ bridge between Designer and Developer workflows for the Web. To help <em>people<
         <id>https://docs.phcode.dev/blog/release-3.10</id>
         <link href="https://docs.phcode.dev/blog/release-3.10"/>
         <updated>2024-11-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[November release(3.10) of Phoenix Code is now available for download at phcode.io.]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 3.10 improves the editor UI with indent guide lines, better performance, and visual feedback. Updated extension developer docs.]]></summary>
         <content type="html"><![CDATA[<p>November release(3.10) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
 <p>This month's core theme is <code>Editor UI improvements</code>. We have fine-tuned the editing experience for better
 performance and visual feedback.
@@ -323,7 +407,7 @@ to keep improving Phoenix Code.</li>
         <id>https://docs.phcode.dev/blog/release-3.9</id>
         <link href="https://docs.phcode.dev/blog/release-3.9"/>
         <updated>2024-09-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[September release(3.9) of Phoenix Code is now available for download at]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 3.9 improves app stability and robustness, adds HTML and text editing workflow enhancements, and ChromeOS support.]]></summary>
         <content type="html"><![CDATA[<p>September release(3.9) of Phoenix Code is now available for download at
 <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
 <p>This month's core theme is <code>App robustness</code> and <code>stability</code> improvements.
@@ -415,7 +499,7 @@ Every contribution helps us to keep improving Phoenix Code.</li>
         <id>https://docs.phcode.dev/blog/release-3.8</id>
         <link href="https://docs.phcode.dev/blog/release-3.8"/>
         <updated>2024-06-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[June release(3.8) of Phoenix Code is now available for download at]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 3.8 fixes crashes on M1 Macs and Linux, adds HTML drag-and-drop editing, and improves live preview stability.]]></summary>
         <content type="html"><![CDATA[<p>June release(3.8) of Phoenix Code is now available for download at
 <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
 <p>This update addresses a critical issue where Phoenix Code crashes in M1 Macs
@@ -487,7 +571,7 @@ Every contribution helps us to keep improving Phoenix Code.</li>
         <id>https://docs.phcode.dev/blog/release-3.7</id>
         <link href="https://docs.phcode.dev/blog/release-3.7"/>
         <updated>2024-05-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[May release(3.7) of Phoenix Code is now available for download at]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 3.7 focuses on live preview improvements, CSS class and style code hints, and small UX refinements.]]></summary>
         <content type="html"><![CDATA[<p>May release(3.7) of Phoenix Code is now available for download at
 <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
 <p>This month's release is all about Live previews and the little things that make
@@ -547,7 +631,7 @@ Every contribution helps us to keep improving Phoenix Code.</li>
         <id>https://docs.phcode.dev/blog/release-3.6</id>
         <link href="https://docs.phcode.dev/blog/release-3.6"/>
         <updated>2024-04-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[April release(3.6) of Phoenix Code is now available for download at]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 3.6 adds PHP and custom live preview servers, advanced CSS/LESS/SCSS code intelligence, and UX improvements.]]></summary>
         <content type="html"><![CDATA[<p>April release(3.6) of Phoenix Code is now available for download at
 <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
 <p>This month's upgrade is big! with a lot of features you asked for - PHP/Custom
@@ -629,7 +713,7 @@ Every contribution helps us to keep improving Phoenix Code.</li>
         <id>https://docs.phcode.dev/blog/release-3.5</id>
         <link href="https://docs.phcode.dev/blog/release-3.5"/>
         <updated>2024-03-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The March release(3.5) of Phoenix Code is now available for download]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code 3.5 improves large project support, Find in Files, inline HTML number dials, and app stability. Download for Windows, Mac, and Linux.]]></summary>
         <content type="html"><![CDATA[<p>The March release(3.5) of Phoenix Code is now available for download
 at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.
 This month's update improves support for large projects, Find in Files, and app stability.</p>
@@ -685,7 +769,7 @@ beautification feature now preserves the cursor position.</li>
         <id>https://docs.phcode.dev/blog/welcome</id>
         <link href="https://docs.phcode.dev/blog/welcome"/>
         <updated>2024-03-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We're thrilled to share a huge update with you all today - Phoenix Code native apps are officially here! 🎉 . Get your copy from phcode.io !]]></summary>
+        <summary type="html"><![CDATA[Phoenix Code native desktop apps are now available for Windows, Mac, and Linux. Web version available for ChromeOS and other platforms.]]></summary>
         <content type="html"><![CDATA[<p>We're thrilled to share a huge update with you all today - Phoenix Code native apps are officially here! 🎉 . Get your copy from <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a> !</p>
 <p>We have been working hard over the last several months to make native apps possible. It took a lot of effort and perseverance with our limited resources to reach this far. We hope to have your support in doing more :)</p>
 <p>With this update,  Phoenix Code can now run almost anywhere! Native apps are available for Windows, Mac and most Linux distributions. For Chrome-OS and other platforms, simply use the web browser version; no install needed.</p>
