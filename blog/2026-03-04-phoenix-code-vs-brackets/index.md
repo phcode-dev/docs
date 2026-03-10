@@ -4,6 +4,7 @@ title: "Brackets Editor in 2026: Phoenix Code Picks Up Where It Left Off"
 description: "The Brackets editor is in maintenance mode — Phoenix Code continues where it left off. Same team, same live preview DNA, rebuilt for 2026. Free and open source."
 authors: [charly]
 tags: [Brackets, Comparison, Migration, Code Editor, Live Preview, Open Source]
+keywords: [brackets editor, adobe brackets, brackets code editor, brackets extensions, phoenix code, live preview editor]
 ---
 
 If you've used Brackets, Phoenix Code will feel immediately familiar.
