@@ -1,14 +1,9 @@
 ---
-title: "Phoenix Code Is Brackets — Rebuilt for 2026"
+slug: brackets-editor-phoenix-code
+title: "Brackets Editor in 2026: Phoenix Code Picks Up Where It Left Off"
 description: "Phoenix Code is the next generation of Brackets, built by the same team. Same philosophy, same live preview DNA, massively upgraded. Here's everything that's new."
 authors: [charly]
-tags:
-  - brackets
-  - comparison
-  - migration
-  - code-editor
-  - live-preview
-  - open-source
+tags: [Brackets, Comparison, Migration, Code Editor, Live Preview, Open Source]
 ---
 
 If you've used Brackets, Phoenix Code will feel immediately familiar.
@@ -80,7 +75,7 @@ Brackets' live preview was view-only. You could see changes reflected in real ti
 
 Brackets had inline color pickers — Phoenix Code keeps those and adds number dials you can scrub to adjust CSS values like margins, padding, font sizes, and more. Hover over a number, drag to adjust, and see the result update in live preview instantly.
 
-![Number dial](https://user-images.githubusercontent.com/5336369/208715497-781e8dfc-1939-4dac-82e8-c7e517be4d9c.gif)
+![Number dial](../../docs/08-Features/images/number-dial.gif)
 
 ### Built-in Git
 
