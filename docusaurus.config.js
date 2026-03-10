@@ -93,8 +93,7 @@ const config = {
 					priority: 0.5,
 					ignorePatterns: ["/tags/**"],
 					filename: "sitemap.xml",
-					createSitemapItems: async (params) => {
-						const {defaultCreateSitemapItems, ...rest} = params;
+					createSitemapItems: async ({defaultCreateSitemapItems, ...rest}) => {
 						const items = await defaultCreateSitemapItems(rest);
 						return items.map((item) => {
 							if (item.url === 'https://docs.phcode.dev/') {
