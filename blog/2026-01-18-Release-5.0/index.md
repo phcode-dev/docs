@@ -1,6 +1,7 @@
 ---
 slug: release-5.0
-title:  Phoenix Pro Release (January-2026, V-5.0) is now Live
+title: Phoenix Pro Release (January-2026, V-5.0) is now Live
+description: "Phoenix Code 5.0 introduces Phoenix Pro with Live Preview Edit, Emmet support, Tab Bar, and Custom Snippets. The biggest update yet."
 authors: [arun, charly, devvaannsh, phoenixBot]
 tags: [Phoenix Pro, Live Preview Edit, Emmet, Tab Bar, Custom Snippets, Collapse Folders, Smarter hint suggestions, Stability Improvements, Windows, Linux, Mac, Release]
 ---

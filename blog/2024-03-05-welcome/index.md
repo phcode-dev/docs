@@ -1,6 +1,7 @@
 ---
 slug: welcome
 title: Introducing Phoenix Code Desktop- Now on Windows, Mac & Linux
+description: "Phoenix Code native desktop apps are now available for Windows, Mac, and Linux. Web version available for ChromeOS and other platforms."
 authors: [arun, charly, kiran, mathew, phoenixBot]
 tags: [hello world, Native Apps, Windows, Linux, Mac, Release]
 ---

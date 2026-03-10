@@ -21,6 +21,35 @@ const config = {
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: "/",
 	trailingSlash: false,
+	headTags: [
+		{
+			tagName: 'script',
+			attributes: { type: 'application/ld+json' },
+			innerHTML: JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'Organization',
+				name: 'Phoenix Code',
+				url: 'https://phcode.dev',
+				logo: 'https://docs.phcode.dev/img/logo.svg',
+				sameAs: [
+					'https://x.com/phcodedev',
+					'https://github.com/phcode-dev/',
+					'https://discord.gg/rBpTBPttca',
+					'https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg',
+				],
+			}),
+		},
+		{
+			tagName: 'script',
+			attributes: { type: 'application/ld+json' },
+			innerHTML: JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'WebSite',
+				name: 'Phoenix Code Documentation',
+				url: 'https://docs.phcode.dev',
+			}),
+		},
+	],
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
@@ -59,10 +88,27 @@ const config = {
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
 				sitemap: {
+					lastmod: 'date',
 					changefreq: "weekly",
 					priority: 0.5,
 					ignorePatterns: ["/tags/**"],
-					filename: "sitemap.xml"
+					filename: "sitemap.xml",
+					createSitemapItems: async (params) => {
+						const {defaultCreateSitemapItems, ...rest} = params;
+						const items = await defaultCreateSitemapItems(rest);
+						return items.map((item) => {
+							if (item.url === 'https://docs.phcode.dev/') {
+								return {...item, priority: 1.0, changefreq: 'weekly'};
+							}
+							if (item.url.includes('/blog/') && !item.url.includes('/blog/tags/')) {
+								return {...item, priority: 0.7, changefreq: 'monthly'};
+							}
+							if (item.url.includes('/docs/')) {
+								return {...item, priority: 0.6};
+							}
+							return item;
+						});
+					},
 				},
 
 				docs: {
@@ -89,7 +135,7 @@ const config = {
 				// Will be passed to @docusaurus/plugin-google-gtag (only enabled when explicitly specified)
 				gtag: {
 					trackingID: "G-XMWSCV9SP1",
-					anonymizeIP: false
+					anonymizeIP: true
 				}
 			})
 		]
@@ -119,6 +165,11 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
+			metadata: [
+				{name: 'twitter:card', content: 'summary_large_image'},
+				{name: 'twitter:site', content: '@phcodedev'},
+				{property: 'og:site_name', content: 'Phoenix Code'},
+			],
 			algolia: {
 				// The application ID provided by Algolia
 				appId: "8DZVLXVEPA",

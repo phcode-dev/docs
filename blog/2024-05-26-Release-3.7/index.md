@@ -1,6 +1,7 @@
 ---
 slug: release-3.7
-title: Little Things Release (May-2024, V-3.7) is now Live 
+title: Little Things Release (May-2024, V-3.7) is now Live
+description: "Phoenix Code 3.7 focuses on live preview improvements, CSS class and style code hints, and small UX refinements."
 authors: [arun, charly, phoenixBot]
 tags: [Live Preview, Live Code Hints, Windows, Linux, Mac, Release]
 ---
