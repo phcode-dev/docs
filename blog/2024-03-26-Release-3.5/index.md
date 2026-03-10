@@ -1,6 +1,7 @@
 ---
 slug: release-3.5
-title: March-2024 Release (V-3.5) is now Live 
+title: March-2024 Release (V-3.5) is now Live
+description: "Phoenix Code 3.5 improves large project support, Find in Files, inline HTML number dials, and app stability. Download for Windows, Mac, and Linux."
 authors: [arun, charly, kiran, phoenixBot]
 tags: [Native Apps, Windows, Linux, Mac, Release]
 ---

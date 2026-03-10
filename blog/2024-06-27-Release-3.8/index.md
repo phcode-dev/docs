@@ -1,6 +1,7 @@
 ---
 slug: release-3.8
-title: Critical Update + HTML Helpers Release (June-2024, V-3.8) is now Live 
+title: Critical Update + HTML Helpers Release (June-2024, V-3.8) is now Live
+description: "Phoenix Code 3.8 fixes crashes on M1 Macs and Linux, adds HTML drag-and-drop editing, and improves live preview stability."
 authors: [arun, charly, phoenixBot]
 tags: [Live Preview, Live Code Hints, Windows, Linux, Mac, Release]
 ---

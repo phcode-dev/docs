@@ -1,6 +1,7 @@
 ---
 slug: release-3.6
-title: April-2024 Release (V-3.6) is now Live 
+title: April-2024 Release (V-3.6) is now Live
+description: "Phoenix Code 3.6 adds PHP and custom live preview servers, advanced CSS/LESS/SCSS code intelligence, and UX improvements."
 authors: [arun, charly, andrew, faizan, phoenixBot]
 tags: [Native Apps, Windows, Linux, Mac, Release]
 ---

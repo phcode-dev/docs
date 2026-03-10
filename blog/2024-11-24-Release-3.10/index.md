@@ -1,6 +1,7 @@
 ---
 slug: release-3.10
-title:  Editor Experience Release (November-2024, V-3.10) is now Live
+title: Editor Experience Release (November-2024, V-3.10) is now Live
+description: "Phoenix Code 3.10 improves the editor UI with indent guide lines, better performance, and visual feedback. Updated extension developer docs."
 authors: [arun, charly, devvaannsh, phoenixBot]
 tags: [Editor Experience, UI Improvements, Windows, Linux, Mac, Release]
 ---

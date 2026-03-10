@@ -1,6 +1,7 @@
 ---
 slug: Blog-Legacy
-title:  "Phoenix Code: The Legacy of Brackets - Continued"
+title: "Phoenix Code: The Legacy of Brackets - Continued"
+description: "The story of Brackets — from its birth at Adobe to Phoenix Code. How a community kept the spirit of Brackets alive and built its future."
 authors: [arun, charly]
 tags: [Brackets, Continued, Phoenix Code, History]
 ---

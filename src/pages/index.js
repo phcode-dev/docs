@@ -29,11 +29,10 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Documentation for Phoenix Code editor <head />">
+      title="Phoenix Code Documentation"
+      description="Phoenix Code documentation — live preview editor with Git integration, visual CSS editing, and browser support. Free and open source.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

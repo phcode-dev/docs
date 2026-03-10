@@ -1,6 +1,7 @@
 ---
 slug: release-3.9
-title: HTML Workflows and stability Release (September-2024, V-3.9) is now Live 
+title: HTML Workflows and stability Release (September-2024, V-3.9) is now Live
+description: "Phoenix Code 3.9 improves app stability and robustness, adds HTML and text editing workflow enhancements, and ChromeOS support."
 authors: [arun, charly, kiran, devvaannsh, jozsefk9, acemi1, phoenixBot]
 tags: [Live Preview, Live Code Hints, Windows, Linux, Mac, Release]
 ---

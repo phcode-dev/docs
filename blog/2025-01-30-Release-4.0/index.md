@@ -1,6 +1,7 @@
 ---
 slug: release-4.0
-title:  Git It Release (January-2025, V-4.0) is now Live
+title: Git It Release (January-2025, V-4.0) is now Live
+description: "Phoenix Code 4.0 introduces built-in Git integration, color previews, and open-in-terminal support. The largest release in the Brackets legacy."
 authors: [arun, charly, devvaannsh, phoenixBot]
 tags: [Git, Color previews, Version Control, open in terminal, Stability Improvements, Windows, Linux, Mac, Release]
 ---
