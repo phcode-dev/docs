@@ -39,11 +39,11 @@ The free version of Phoenix Code covers everything Brackets did and more — Git
 
 ## What Happened to the Brackets Editor?
 
-Brackets was created at Adobe and built on CEF (Chromium Embedded Framework) — a technology choice that made sense in 2014 but became increasingly difficult to maintain. Security patches, OS compatibility, performance work — it all got harder every year. Adobe moved on in 2021, and the original Brackets entered maintenance mode with no further updates.
+Brackets was created at Adobe and built on CEF (Chromium Embedded Framework) — a technology choice that made sense in 2014 but became increasingly difficult to maintain. Security patches, OS compatibility, performance work — it all got harder every year. In 2021, we took over Brackets from Adobe, continuing its development under the community we founded and now lead.
 
 Rather than keep patching an aging foundation, we modernized the platform so it can run anywhere — in browsers, on desktop with Electron or Tauri, pretty much any modern system. One codebase that works everywhere, from [phcode.dev](https://phcode.dev) in your browser to a native desktop app.
 
-The architecture changed. The team didn't. The design philosophy didn't.
+The architecture changed. The team didn't. The design philosophy didn't. We named it Phoenix Code — Brackets, reborn.
 
 ---
 
@@ -53,7 +53,7 @@ If you're wondering whether Phoenix Code will feel familiar — it will.
 
 **Live Preview** is still the core of the experience. Edit HTML or CSS and watch the browser update in real time, no manual refresh. This is the feature that defined Brackets, and it's still front and center.
 
-**The lightweight workflow** is intact. Open a folder, start editing. No massive install, no mandatory plugins, no project configuration files to set up first.
+**The lightweight workflow** is intact. Open a folder, start editing. Everything just works out of the box.
 
 **Web-first focus.** HTML, CSS, JavaScript — that's the sweet spot. Phoenix Code is purpose-built for front-end work, not trying to be a general-purpose IDE.
 
@@ -111,7 +111,7 @@ Short version: open your project folder in Phoenix Code. That's it.
 
 ### What happened to the Brackets code editor?
 
-Brackets was created at Adobe and actively developed until 2021. Adobe stopped maintaining it and the project entered maintenance mode. The same team that built Brackets continued the work as Phoenix Code — a full platform rewrite that runs in browsers and as a desktop app.
+Brackets was created at Adobe and actively developed until 2021. The Phoenix Code project took over the development of Brackets, and rather than keep patching an aging foundation, we rebuilt it to run in browsers and as a desktop app. Brackets, reborn.
 
 ### Is Phoenix Code the same as Brackets?
 
