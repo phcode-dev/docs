@@ -90,15 +90,15 @@ export const appLinks = [
 	},
     {
 		from: '/app-links/auto-space-detection',
-		to: '/docs/editing-text/#auto-space-detection',
+		to: '/docs/editing-text#auto-space-detection',
 	},
     {
 		from: '/app-links/html-lint',
-		to: '/docs/Features/Problems Panel/html-lint/',
+		to: '/docs/Features/Problems Panel/html-lint',
 	},
     {
 		from: '/app-links/ESLint',
-		to: '/docs/Features/Problems Panel/ESLint/',
+		to: '/docs/Features/Problems Panel/ESLint',
 	},
     {
 		from: '/app-links/live-preview-settings',
@@ -106,11 +106,11 @@ export const appLinks = [
 	},
     {
 		from: '/app-links/editor-rulers',
-		to: '/docs/Features/editor-rulers/',
+		to: '/docs/Features/editor-rulers',
 	},
     {
 		from: '/app-links/find-in-files',
-		to: '/docs/Features/find-in-files/',
+		to: '/docs/Features/find-in-files',
 	},
     {
 		from: '/app-links/custom-snippets',
