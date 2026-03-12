@@ -157,7 +157,17 @@ const config = {
 		[
 			"@docusaurus/plugin-client-redirects",
 			{
-				redirects: appLinks,
+				redirects: [
+					...appLinks,
+					{ from: '/docs/Features/recent-files', to: '/docs/file-management#recent-files' },
+					{ from: '/docs/Features/live-preview-settings', to: '/docs/Features/Live Preview/live-preview-settings' },
+				],
+				createRedirects(existingPath) {
+					if (existingPath !== '/') {
+						return [existingPath + '/'];
+					}
+					return [];
+				},
 			}
 		]
 	],
