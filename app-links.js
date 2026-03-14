@@ -127,5 +127,13 @@ export const appLinks = [
 	{
 		from: '/app-links/tab-bar',
 		to: '/docs/file-management#tab-bar',
+	},
+	{
+		from: '/app-links/claude-code-integration',
+		to: '/docs/file-management',
+	},
+	{
+		from: '/app-links/claude-code-config',
+		to: '/docs/file-management',
 	}
 ];
