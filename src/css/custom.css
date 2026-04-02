@@ -29,4 +29,91 @@
   --docusaurus-highlighted-code-line-bg: rgba(231, 111, 0, 0.2); /* Slightly more visible Orange for code highlights */
 }
 
+/* AI Follow-up Suggestion Chips
+ * Evidence-backed design:
+ * - Pill shape: industry standard (ChatGPT, Google AI) per NNG research
+ * - 3-4 max: Hick's Law + Miller's Law reduce cognitive load
+ * - Outlined, low visual weight: answer content stays dominant
+ * - DocSearch CSS variables: automatic dark mode support
+ */
+.askai-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  margin-top: 8px;
+}
 
+.askai-suggestion-btn {
+  appearance: none;
+  background: var(--docsearch-hit-background, #fff);
+  border: 1px solid var(--docsearch-muted-color, #969faf);
+  border-radius: 16px;
+  color: var(--docsearch-text-color, #1c1e21);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+  min-height: 36px;
+  padding: 6px 14px;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.askai-suggestion-btn:hover {
+  background: var(--docsearch-hit-highlight-color, rgba(0, 61, 255, 0.1));
+  border-color: var(--docsearch-primary-color, #003dff);
+}
+
+.askai-suggestion-btn:focus-visible {
+  outline: 2px solid var(--docsearch-primary-color, #003dff);
+  outline-offset: 2px;
+}
+
+.askai-suggestion-btn:active {
+  background: var(--docsearch-hit-highlight-color, rgba(0, 61, 255, 0.15));
+}
+
+/* Staggered entrance animation (NNG: appear after response completes) */
+@media (prefers-reduced-motion: no-preference) {
+  .askai-suggestion-btn {
+    animation: askai-chip-enter 300ms ease forwards;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .askai-suggestion-btn:nth-child(2) { animation-delay: 75ms; }
+  .askai-suggestion-btn:nth-child(3) { animation-delay: 150ms; }
+  .askai-suggestion-btn:nth-child(4) { animation-delay: 225ms; }
+
+  @keyframes askai-chip-enter {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Mobile: stack vertically with WCAG 2.5.5 touch targets (44px min) */
+@media (max-width: 640px) {
+  .askai-suggestions {
+    flex-direction: column;
+  }
+
+  .askai-suggestion-btn {
+    width: 100%;
+    text-align: left;
+    min-height: 44px;
+  }
+}
+
+/* Screen reader only text */
+.askai-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
