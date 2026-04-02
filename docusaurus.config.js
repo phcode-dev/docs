@@ -185,7 +185,12 @@ const config = {
 				// Public API key: it is safe to commit it
 				apiKey: "e988677555350573b539eb974e2b7891",
 				indexName: "phcode",
-				contextualSearch: false
+				contextualSearch: false,
+				askAi: {
+					assistantId: "d43f2205-8075-439d-822b-b3825b74cb49",
+					apiKey: "0c73a640624ba54f777a5491ee884aa3",
+					indexName: "markdown-index",
+				}
 			},
 			// Replace with your project's social card
 			image: "img/socialcard.png",
