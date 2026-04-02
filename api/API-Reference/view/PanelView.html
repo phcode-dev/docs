@@ -22,9 +22,9 @@
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Phoenix Code","url":"https://phcode.dev","logo":"https://docs.phcode.dev/img/logo.svg","sameAs":["https://x.com/phcodedev","https://github.com/phcode-dev/","https://discord.gg/rBpTBPttca","https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Phoenix Code Documentation","url":"https://docs.phcode.dev"}</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.cd0400e4.css">
-<script src="/assets/js/runtime~main.f2447a84.js" defer="defer"></script>
-<script src="/assets/js/main.4cc95fea.js" defer="defer"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.24909a19.css">
+<script src="/assets/js/runtime~main.55d4a7e8.js" defer="defer"></script>
+<script src="/assets/js/main.eb21b694.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -70,7 +70,8 @@
 <strong>Returns</strong>: <code>boolean</code> - true if visible, false if not</p>
 <a name="Panel+registerCanBeShownHandler"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="panelregistercanbeshownhandlercanshowhandlerfn--boolean">panel.registerCanBeShownHandler(canShowHandlerFn) ⇒ <code>boolean</code><a href="#panelregistercanbeshownhandlercanshowhandlerfn--boolean" class="hash-link" aria-label="Direct link to panelregistercanbeshownhandlercanshowhandlerfn--boolean" title="Direct link to panelregistercanbeshownhandlercanshowhandlerfn--boolean" translate="no">​</a></h3>
-<p>Registers a call back function that will be called just before panel is shown. The handler should return trueif the panel can be shown, else return false and the panel will not be shown.</p>
+<p>Registers a call back function that will be called just before panel is shown. The handler should return true
+if the panel can be shown, else return false and the panel will not be shown.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Panel" class=""><code>Panel</code></a><br>
 <strong>Returns</strong>: <code>boolean</code> - true if visible, false if not</p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>canShowHandlerFn</td><td><code>function</code> | <code>null</code></td><td>function that should return true of false if the panel can be shown/not. or null to clear the handler.</td></tr></tbody></table>
@@ -80,12 +81,15 @@
 <p><strong>Kind</strong>: instance method of <a href="#Panel" class=""><code>Panel</code></a></p>
 <a name="Panel+registerOnCloseRequestedHandler"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="panelregisteroncloserequestedhandlerhandler">panel.registerOnCloseRequestedHandler(handler)<a href="#panelregisteroncloserequestedhandlerhandler" class="hash-link" aria-label="Direct link to panel.registerOnCloseRequestedHandler(handler)" title="Direct link to panel.registerOnCloseRequestedHandler(handler)" translate="no">​</a></h3>
-<p>Registers an async handler that is called before the panel is closed via user interaction (e.g. clicking thetab close button). The handler should return <code>true</code> to allow the close, or <code>false</code> to prevent it.</p>
+<p>Registers an async handler that is called before the panel is closed via user interaction (e.g. clicking the
+tab close button). The handler should return <code>true</code> to allow the close, or <code>false</code> to prevent it.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Panel" class=""><code>Panel</code></a></p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>handler</td><td><code>function</code> | <code>null</code></td><td>An async function returning a boolean, or null to clear the handler.</td></tr></tbody></table>
 <a name="Panel+requestClose"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="panelrequestclose--promiseboolean">panel.requestClose() ⇒ <code>Promise.&lt;boolean&gt;</code><a href="#panelrequestclose--promiseboolean" class="hash-link" aria-label="Direct link to panelrequestclose--promiseboolean" title="Direct link to panelrequestclose--promiseboolean" translate="no">​</a></h3>
-<p>Requests the panel to hide, invoking the registered onCloseRequested handler first (if any).If the handler returns false, the panel stays open. If it returns true or no handler isregistered, <code>hide()</code> is called.</p>
+<p>Requests the panel to hide, invoking the registered onCloseRequested handler first (if any).
+If the handler returns false, the panel stays open. If it returns true or no handler is
+registered, <code>hide()</code> is called.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Panel" class=""><code>Panel</code></a><br>
 <strong>Returns</strong>: <code>Promise.&lt;boolean&gt;</code> - Resolves to true if the panel was hidden, false if prevented.</p>
 <a name="Panel+show"></a>
@@ -98,7 +102,8 @@
 <p><strong>Kind</strong>: instance method of <a href="#Panel" class=""><code>Panel</code></a></p>
 <a name="Panel+focus"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="panelfocus--boolean">panel.focus() ⇒ <code>boolean</code><a href="#panelfocus--boolean" class="hash-link" aria-label="Direct link to panelfocus--boolean" title="Direct link to panelfocus--boolean" translate="no">​</a></h3>
-<p>Attempts to focus the panel. Override this in panels that support focus(e.g. terminal). The default implementation returns false.</p>
+<p>Attempts to focus the panel. Override this in panels that support focus
+(e.g. terminal). The default implementation returns false.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Panel" class=""><code>Panel</code></a><br>
 <strong>Returns</strong>: <code>boolean</code> - true if the panel accepted focus, false otherwise</p>
 <a name="Panel+setVisible"></a>
@@ -113,7 +118,8 @@
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>newTitle</td><td><code>string</code></td><td>The new title to display.</td></tr></tbody></table>
 <a name="Panel+destroy"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paneldestroy">panel.destroy()<a href="#paneldestroy" class="hash-link" aria-label="Direct link to panel.destroy()" title="Direct link to panel.destroy()" translate="no">​</a></h3>
-<p>Destroys the panel, removing it from the tab bar, internal maps, and the DOM.After calling this, the Panel instance should not be reused.</p>
+<p>Destroys the panel, removing it from the tab bar, internal maps, and the DOM.
+After calling this, the Panel instance should not be reused.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Panel" class=""><code>Panel</code></a></p>
 <a name="Panel+getPanelType"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="panelgetpaneltype--string">panel.getPanelType() ⇒ <code>string</code><a href="#panelgetpaneltype--string" class="hash-link" aria-label="Direct link to panelgetpaneltype--string" title="Direct link to panelgetpaneltype--string" translate="no">​</a></h3>
@@ -181,11 +187,15 @@
 <p><strong>Kind</strong>: global constant</p>
 <a name="MAXIMIZE_THRESHOLD"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="maximize_threshold--number">MAXIMIZE_THRESHOLD : <code>number</code><a href="#maximize_threshold--number" class="hash-link" aria-label="Direct link to maximize_threshold--number" title="Direct link to maximize_threshold--number" translate="no">​</a></h2>
-<p>Pixel threshold for detecting near-maximize state during resize.If the editor holder height is within this many pixels of zero, thepanel is treated as maximized. Keeps the maximize icon responsiveduring drag without being overly sensitive.</p>
+<p>Pixel threshold for detecting near-maximize state during resize.
+If the editor holder height is within this many pixels of zero, the
+panel is treated as maximized. Keeps the maximize icon responsive
+during drag without being overly sensitive.</p>
 <p><strong>Kind</strong>: global constant</p>
 <a name="MIN_PANEL_HEIGHT"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="min_panel_height--number">MIN_PANEL_HEIGHT : <code>number</code><a href="#min_panel_height--number" class="hash-link" aria-label="Direct link to min_panel_height--number" title="Direct link to min_panel_height--number" translate="no">​</a></h2>
-<p>Minimum panel height (matches Resizer minSize) used as a floorwhen computing a sensible restore height.</p>
+<p>Minimum panel height (matches Resizer minSize) used as a floor
+when computing a sensible restore height.</p>
 <p><strong>Kind</strong>: global constant</p>
 <a name="PREF_BOTTOM_PANEL_MAXIMIZED"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pref_bottom_panel_maximized">PREF_BOTTOM_PANEL_MAXIMIZED<a href="#pref_bottom_panel_maximized" class="hash-link" aria-label="Direct link to PREF_BOTTOM_PANEL_MAXIMIZED" title="Direct link to PREF_BOTTOM_PANEL_MAXIMIZED" translate="no">​</a></h2>
@@ -193,20 +203,28 @@
 <p><strong>Kind</strong>: global constant</p>
 <a name="init"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="initcontainer-tabbar-tabsoverflow-editorholder-recomputelayoutfn-defaultpanelid">init($container, $tabBar, $tabsOverflow, $editorHolder, recomputeLayoutFn, defaultPanelId)<a href="#initcontainer-tabbar-tabsoverflow-editorholder-recomputelayoutfn-defaultpanelid" class="hash-link" aria-label="Direct link to init($container, $tabBar, $tabsOverflow, $editorHolder, recomputeLayoutFn, defaultPanelId)" title="Direct link to init($container, $tabBar, $tabsOverflow, $editorHolder, recomputeLayoutFn, defaultPanelId)" translate="no">​</a></h2>
-<p>Initializes the PanelView module with references to the bottom panel container DOM elements.Called by WorkspaceManager during htmlReady.</p>
+<p>Initializes the PanelView module with references to the bottom panel container DOM elements.
+Called by WorkspaceManager during htmlReady.</p>
 <p><strong>Kind</strong>: global function</p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>$container</td><td><code>jQueryObject</code></td><td>The bottom panel container element.</td></tr><tr><td>$tabBar</td><td><code>jQueryObject</code></td><td>The tab bar element inside the container.</td></tr><tr><td>$tabsOverflow</td><td><code>jQueryObject</code></td><td>The scrollable area holding tab elements.</td></tr><tr><td>$editorHolder</td><td><code>jQueryObject</code></td><td>The editor holder element (for maximize height calculation).</td></tr><tr><td>recomputeLayoutFn</td><td><code>function</code></td><td>Callback to trigger workspace layout recomputation.</td></tr><tr><td>defaultPanelId</td><td><code>string</code></td><td>The ID of the default/quick-access panel.</td></tr></tbody></table>
 <a name="exitMaximizeOnResize"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exitmaximizeonresize">exitMaximizeOnResize()<a href="#exitmaximizeonresize" class="hash-link" aria-label="Direct link to exitMaximizeOnResize()" title="Direct link to exitMaximizeOnResize()" translate="no">​</a></h2>
-<p>Exit maximize state without resizing (for external callers like drag-resize).Clears internal maximize state and resets the button icon.</p>
+<p>Exit maximize state without resizing (for external callers like drag-resize).
+Clears internal maximize state and resets the button icon.</p>
 <p><strong>Kind</strong>: global function</p>
 <a name="enterMaximizeOnResize"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="entermaximizeonresize">enterMaximizeOnResize()<a href="#entermaximizeonresize" class="hash-link" aria-label="Direct link to enterMaximizeOnResize()" title="Direct link to enterMaximizeOnResize()" translate="no">​</a></h2>
-<p>Enter maximize state during a drag-resize that reaches the maximumheight. No pre-maximize height is stored because the user arrivedhere via continuous dragging; a sensible default will be computed ifthey later click the Restore button.</p>
+<p>Enter maximize state during a drag-resize that reaches the maximum
+height. No pre-maximize height is stored because the user arrived
+here via continuous dragging; a sensible default will be computed if
+they later click the Restore button.</p>
 <p><strong>Kind</strong>: global function</p>
 <a name="restoreIfMaximized"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="restoreifmaximized">restoreIfMaximized()<a href="#restoreifmaximized" class="hash-link" aria-label="Direct link to restoreIfMaximized()" title="Direct link to restoreIfMaximized()" translate="no">​</a></h2>
-<p>Restore the container&#x27;s CSS height to the pre-maximize value and clear maximize state.Must be called BEFORE Resizer.hide() so the Resizer reads the correct height.If not maximized, this is a no-op.When the saved height is near-max or unknown, a sensible default is used.</p>
+<p>Restore the container&#x27;s CSS height to the pre-maximize value and clear maximize state.
+Must be called BEFORE Resizer.hide() so the Resizer reads the correct height.
+If not maximized, this is a no-op.
+When the saved height is near-max or unknown, a sensible default is used.</p>
 <p><strong>Kind</strong>: global function</p>
 <a name="isMaximized"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ismaximized--boolean">isMaximized() ⇒ <code>boolean</code><a href="#ismaximized--boolean" class="hash-link" aria-label="Direct link to ismaximized--boolean" title="Direct link to ismaximized--boolean" translate="no">​</a></h2>
@@ -227,7 +245,8 @@
 <p><strong>Kind</strong>: global function</p>
 <a name="showNextPanel"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shownextpanel--boolean">showNextPanel() ⇒ <code>boolean</code><a href="#shownextpanel--boolean" class="hash-link" aria-label="Direct link to shownextpanel--boolean" title="Direct link to shownextpanel--boolean" translate="no">​</a></h2>
-<p>Cycle to the next open bottom panel tab. If the container is hiddenor no panels are open, does nothing and returns false.</p>
+<p>Cycle to the next open bottom panel tab. If the container is hidden
+or no panels are open, does nothing and returns false.</p>
 <p><strong>Kind</strong>: global function<br>
 <strong>Returns</strong>: <code>boolean</code> - true if a panel switch occurred</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api/API-Reference/view/Pane"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Pane</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api/API-Reference/view/PluginPanelView"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">PluginPanelView</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#import-" class="table-of-contents__link toc-highlight">Import :</a></li><li><a href="#panel" class="table-of-contents__link toc-highlight">Panel</a><ul><li><a href="#new-panelpanel-id-title" class="table-of-contents__link toc-highlight">new Panel($panel, id, [title])</a></li><li><a href="#panelpanel--jqueryobject" class="table-of-contents__link toc-highlight">panel.$panel : <code>jQueryObject</code></a></li><li><a href="#panelisvisible--boolean" class="table-of-contents__link toc-highlight">panel.isVisible() ⇒ <code>boolean</code></a></li><li><a href="#panelregistercanbeshownhandlercanshowhandlerfn--boolean" class="table-of-contents__link toc-highlight">panel.registerCanBeShownHandler(canShowHandlerFn) ⇒ <code>boolean</code></a></li><li><a href="#panelcanbeshown--boolean" class="table-of-contents__link toc-highlight">panel.canBeShown() ⇒ <code>boolean</code></a></li><li><a href="#panelregisteroncloserequestedhandlerhandler" class="table-of-contents__link toc-highlight">panel.registerOnCloseRequestedHandler(handler)</a></li><li><a href="#panelrequestclose--promiseboolean" class="table-of-contents__link toc-highlight">panel.requestClose() ⇒ <code>Promise.&lt;boolean&gt;</code></a></li><li><a href="#panelshow" class="table-of-contents__link toc-highlight">panel.show()</a></li><li><a href="#panelhide" class="table-of-contents__link toc-highlight">panel.hide()</a></li><li><a href="#panelfocus--boolean" class="table-of-contents__link toc-highlight">panel.focus() ⇒ <code>boolean</code></a></li><li><a href="#panelsetvisiblevisible" class="table-of-contents__link toc-highlight">panel.setVisible(visible)</a></li><li><a href="#panelsettitlenewtitle" class="table-of-contents__link toc-highlight">panel.setTitle(newTitle)</a></li><li><a href="#paneldestroy" class="table-of-contents__link toc-highlight">panel.destroy()</a></li><li><a href="#panelgetpaneltype--string" class="table-of-contents__link toc-highlight">panel.getPanelType() ⇒ <code>string</code></a></li></ul></li><li><a href="#_panelmap--objectstring-panel" class="table-of-contents__link toc-highlight">_panelMap : <code>Object.&lt;string, Panel&gt;</code></a></li><li><a href="#_container--jqueryobject" class="table-of-contents__link toc-highlight">_$container : <code>jQueryObject</code></a></li><li><a href="#_tabbar--jqueryobject" class="table-of-contents__link toc-highlight">_$tabBar : <code>jQueryObject</code></a></li><li><a href="#_tabsoverflow--jqueryobject" class="table-of-contents__link toc-highlight">_$tabsOverflow : <code>jQueryObject</code></a></li><li><a href="#_openids--arraystring" class="table-of-contents__link toc-highlight">_openIds : <code>Array.&lt;string&gt;</code></a></li><li><a href="#_activeid--string--null" class="table-of-contents__link toc-highlight">_activeId : <code>string</code> | <code>null</code></a></li><li><a href="#_ismaximized--boolean" class="table-of-contents__link toc-highlight">_isMaximized : <code>boolean</code></a></li><li><a href="#_premaximizeheight--number--null" class="table-of-contents__link toc-highlight">_preMaximizeHeight : <code>number</code> | <code>null</code></a></li><li><a href="#_editorholder--jqueryobject" class="table-of-contents__link toc-highlight">_$editorHolder : <code>jQueryObject</code></a></li><li><a href="#_recomputelayout--function" class="table-of-contents__link toc-highlight">_recomputeLayout : <code>function</code></a></li><li><a href="#_defaultpanelid--string--null" class="table-of-contents__link toc-highlight">_defaultPanelId : <code>string</code> | <code>null</code></a></li><li><a href="#_addbtn--jqueryobject" class="table-of-contents__link toc-highlight">_$addBtn : <code>jQueryObject</code></a></li><li><a href="#event_panel_hidden--string" class="table-of-contents__link toc-highlight">EVENT_PANEL_HIDDEN : <code>string</code></a></li><li><a href="#event_panel_shown--string" class="table-of-contents__link toc-highlight">EVENT_PANEL_SHOWN : <code>string</code></a></li><li><a href="#panel_type_bottom_panel--string" class="table-of-contents__link toc-highlight">PANEL_TYPE_BOTTOM_PANEL : <code>string</code></a></li><li><a href="#maximize_threshold--number" class="table-of-contents__link toc-highlight">MAXIMIZE_THRESHOLD : <code>number</code></a></li><li><a href="#min_panel_height--number" class="table-of-contents__link toc-highlight">MIN_PANEL_HEIGHT : <code>number</code></a></li><li><a href="#pref_bottom_panel_maximized" class="table-of-contents__link toc-highlight">PREF_BOTTOM_PANEL_MAXIMIZED</a></li><li><a href="#initcontainer-tabbar-tabsoverflow-editorholder-recomputelayoutfn-defaultpanelid" class="table-of-contents__link toc-highlight">init($container, $tabBar, $tabsOverflow, $editorHolder, recomputeLayoutFn, defaultPanelId)</a></li><li><a href="#exitmaximizeonresize" class="table-of-contents__link toc-highlight">exitMaximizeOnResize()</a></li><li><a href="#entermaximizeonresize" class="table-of-contents__link toc-highlight">enterMaximizeOnResize()</a></li><li><a href="#restoreifmaximized" class="table-of-contents__link toc-highlight">restoreIfMaximized()</a></li><li><a href="#ismaximized--boolean" class="table-of-contents__link toc-highlight">isMaximized() ⇒ <code>boolean</code></a></li><li><a href="#getopenbottompanelids--arraystring" class="table-of-contents__link toc-highlight">getOpenBottomPanelIDs() ⇒ <code>Array.&lt;string&gt;</code></a></li><li><a href="#hideallopenpanels--arraystring" class="table-of-contents__link toc-highlight">hideAllOpenPanels() ⇒ <code>Array.&lt;string&gt;</code></a></li><li><a href="#getactivebottompanel--panel--null" class="table-of-contents__link toc-highlight">getActiveBottomPanel() ⇒ <code>Panel</code> | <code>null</code></a></li><li><a href="#shownextpanel--boolean" class="table-of-contents__link toc-highlight">showNextPanel() ⇒ <code>boolean</code></a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Docs</a></li><li class="footer__item"><a class="footer__link-item" href="/api/getting-started">API</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/rBpTBPttca" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.reddit.com/r/brackets/" target="_blank" rel="noopener noreferrer" class="footer__link-item">reddit<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/phcodedev" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/phcode-dev/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/phcode-dev/docs/blob/main/CREDITS.md" target="_blank" rel="noopener noreferrer" class="footer__link-item">Credits<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 core.ai scientific technologies private limited</div></div></div></footer></div>
 </body>
