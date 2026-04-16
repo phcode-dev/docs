@@ -13,7 +13,7 @@ The **Image Gallery** is a panel that appears at the bottom of the Live Preview.
 
 > The Image Gallery is available only for `<img>` elements.
 
-By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the Image Gallery button in the Tool Box or the close button in the gallery. To reopen it, click the Image Gallery button again.
+By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the Change Image button in the Control Box or the close button in the gallery. To reopen it, click the Change Image button again.
 
 ![Image Gallery](./images/image-gallery.png "Image Gallery")
 
