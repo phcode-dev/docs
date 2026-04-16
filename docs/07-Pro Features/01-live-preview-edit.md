@@ -129,15 +129,30 @@ To start editing, **double-click** an element in the Live Preview or click the *
 Edit the text as needed, then press `Enter` to save or `Esc` to cancel.  
 To insert a line break, press `Shift + Enter`.
 
-> Text editing is available only for elements that can contain text. It is not supported for elements such as `<img>`, `<video>`, `<br>`, and similar non-text elements.  
+> Text editing is available only for elements that can contain text. It is not supported for elements such as `<img>`, `<video>`, `<br>`, and similar non-text elements.
 
-### Text Formatting
+### Formatting Toolbar
 
-You can apply formatting to selected text using standard keyboard shortcuts:
-- **Ctrl/Cmd + B**: Bold; wraps selected text in `<b>` tags
-- **Ctrl/Cmd + I**: Italic; wraps selected text in `<i>` tags
-- **Ctrl/Cmd + U**: Underline; wraps selected text in `<u>` tags
-> If the text is already formatted, the formatting will be removed.
+When you start editing text, a **Formatting Toolbar** appears near the element. It gives you quick access to common text formatting options.
+
+<!-- Add an image here showing the Formatting Toolbar with the B, I, U buttons and the more button -->
+
+Select the text you want to format and click a formatting button, or use the keyboard shortcut. If no text is selected, the formatting is applied to the entire element. Clicking a format that is already applied removes it.
+
+The toolbar shows three primary formatting buttons:
+- **Bold** (`Ctrl/Cmd + B`): `<b>` tag
+- **Italic** (`Ctrl/Cmd + I`): `<i>` tag
+- **Underline** (`Ctrl/Cmd + U`): `<u>` tag
+
+#### More Formatting Options
+
+Click the **More** button *(three-dots icon)* on the right side of the toolbar to see additional formatting options:
+- **Strikethrough**: `<s>` tag
+- **Subscript**: `<sub>` tag
+- **Superscript**: `<sup>` tag
+- **Code**: `<code>` tag
+
+<!-- Add an image here showing the More formatting dropdown with Strikethrough, Subscript, Superscript, and Code options -->
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/live-preview-edit/inline-text-editing.mp4"
