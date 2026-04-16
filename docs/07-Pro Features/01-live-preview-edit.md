@@ -46,7 +46,7 @@ The left side of the Control Box displays information about the selected element
 
 <!-- Add an image here showing the info section of the Control Box with tag name, ID, dimensions, and classes -->
 
-Clicking on the info section opens the [Element Properties](#element-properties) editor, where you can edit the element’s tag name, classes, and ID.
+Clicking on the info section opens the [Element Properties](#edit-element-properties) editor, where you can edit the element’s tag name, classes, and ID.
 
 ### Select Parent
 
@@ -118,6 +118,27 @@ When **Inspect Element on Hover** is unchecked:
 
 Alternatively, you can change this setting by updating the `livePreviewInspectElement` preference in the preferences file. Set it to `”hover”` (default) or `”click”`.  
 See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
+
+---
+
+## Edit Element Properties
+
+The **Element Properties** panel lets you edit an element's tag name, ID, classes, and other HTML attributes directly from the Live Preview. All changes are synced to your source code in real-time, and code hints appear as you type to help you pick the right values.
+
+To open the panel, click on the **info section** (the left side showing the tag name, ID, and dimensions) of the [Control Box](#control-box).
+
+<!-- Add an image here showing the Element Properties panel with the tag, ID, classes, and attributes sections -->
+
+The panel has four sections:
+
+- **Tag**: Change the element type (for example, turn a `div` into a `section`). You can type directly or click the **dropdown arrow** to browse a list of common HTML tags.
+- **ID**: Change or remove the element's ID.
+- **Classes**: Existing classes are shown as chips with a **×** button to remove them. Click **+** to add new classes. You can type multiple class names separated by spaces.
+- **Attributes**: All other HTML attributes are shown as editable name-value pairs. Click **+** to add a new attribute, or **×** to remove one.
+
+<!-- Add an image here showing the classes section with a few class chips and the add class input -->
+
+To undo all changes made in the panel, click the **Reset** button in the panel header. This reverts the element to the state it was in when you first opened the panel.
 
 ---
 
