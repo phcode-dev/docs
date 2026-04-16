@@ -30,7 +30,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 
 ## Control Box
 
-When you click an element in the Live Preview (or select it through the source code), a **Control Box** appears near it. This floating panel shows you what the element is and gives you tools to edit it.
+When you click an element in the Live Preview, a **Control Box** appears near it. This floating panel shows you what the element is and gives you tools to edit it.
 
 <!-- Add an image here showing the Control Box with the info section and tools section visible -->
 
@@ -52,7 +52,7 @@ Clicking on the info section opens the [Element Properties](#element-properties)
 
 The **Select Parent** button *(up-arrow icon)* appears next to the info section. Clicking it selects the parent of the currently selected element.
 
-*This button appears only when a valid parent exists (it is not shown when the parent is `body`, `html`, or a JavaScript-rendered element).*
+> This button appears only when a valid parent exists. It is not shown when the parent is `body`, `html`, or a JavaScript-rendered element.
 
 ### Tools
 
@@ -264,6 +264,6 @@ When an element has this class, the element behaves as if you're in Preview Mode
 
 If you want only to exclude the particular element and not its children, use the class `phcode-no-lp-edit-this`.
 
-> Placing your cursor on the element in the source code will still select it in Live Preview and allow you to use edit features.
+> Placing your cursor on the element in the source code will still highlight it in the Live Preview. To use edit features, click the element directly in the Live Preview.
 
 ---
