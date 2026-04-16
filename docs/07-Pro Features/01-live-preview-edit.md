@@ -252,14 +252,13 @@ To cancel a drag, press `Esc`.
 
 The **Edit Hyperlink** feature lets you modify the URL and behavior of anchor (`<a>`) elements directly in the Live Preview.
 
-To edit a hyperlink, select an `<a>` element and click the **Edit Hyperlink** button *(chain icon)* in the Control Box. An editing panel appears near the element.
+To edit a hyperlink, select an `<a>` element and click the **Edit Hyperlink** button *(chain icon)* in the [Control Box](#control-box). A panel appears near the element with the following options:
 
-The input box includes:
 - **URL input**: Edit the link's destination (`href` attribute). Press `Enter` to save your changes or `Esc` to cancel.
-- **Opens in new tab**: Check this option to make the link open in a new tab. Checking this option will add `target="_blank"` in your source code.
-- **Open this link**: Clicking on this button opens the URL in your default browser. This option is available only in desktop apps.
+- **Opens in new tab**: Toggle this option to make the link open in a new tab. This adds `target="_blank"` in your source code.
+- **Open this link**: Opens the URL in your default browser. This option is available only in desktop apps.
 
-![Edit Hyperlink](./images/edit-hyperlink.png "Edit Hyperlink")
+<!-- Add an image here showing the Edit Hyperlink panel with URL input, new tab toggle, and open link button -->
 
 ---
 
