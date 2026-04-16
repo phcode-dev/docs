@@ -142,6 +142,37 @@ To undo all changes made in the panel, click the **Reset** button in the panel h
 
 ---
 
+## Insert Element
+
+The **Insert Element** panel lets you add new HTML elements to your page directly from the Live Preview.
+
+To open the panel, click the **Insert Element** button *(plus icon)* in the [Control Box](#control-box).
+
+<!-- Add an image here showing the Insert Element panel with the position bar, search, and element grid -->
+
+### Choosing a Position
+
+At the top of the panel, four position buttons control where the new element will be placed relative to the selected element:
+
+- **Before**: Inserts the new element immediately before the selected element
+- **After** (selected by default): Inserts the new element immediately after the selected element
+- **Inside**: Inserts the new element as the last child of the selected element
+- **Wrap**: Wraps the selected element inside the new element
+
+> The **Inside** option is disabled for void elements (like `<img>` or `<br>`) since they cannot have children. The **Wrap** option only shows container elements (like `<div>`, `<section>`, `<form>`, etc.).
+
+### Picking an Element
+
+The panel shows a grid of commonly used HTML elements like Paragraph, Heading, Link, Image, Button, Div, List, Form, and many more. Each item shows the element name and its HTML tag. Click an item to insert it.
+
+Use the **search bar** at the top to filter elements by name or tag. If no matching element exists, you can type any valid HTML tag name and click **Create &lt;tag&gt;** to insert a custom element.
+
+<!-- Add an image here showing the search bar with results and the "Create" custom element option -->
+
+After inserting an element, Phoenix Code automatically selects it in the Live Preview so you can continue editing it.
+
+---
+
 ## Inline Text Editing
 
 The **Inline Text Editing** feature lets you modify text content directly in the Live Preview, with all changes automatically synced to the source code.
