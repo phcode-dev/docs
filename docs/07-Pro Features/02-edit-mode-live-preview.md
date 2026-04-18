@@ -1,5 +1,5 @@
 ---
-title: Live Preview Edit Mode
+title: Edit Mode - Live Preview
 ---
 
 import React from 'react';
@@ -70,7 +70,7 @@ The right side of the Control Box displays a set of tools you can use to modify 
 
 - **Change Image** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the `src` attribute of the element.  
   *This button appears only for `<img>` elements.*  
-  See [Image Gallery](./02-image-gallery.md) for more details.
+  See [Image Gallery](./03-image-gallery.md) for more details.
 
 - **Edit Text** *(pen icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code.  
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*  

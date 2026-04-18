@@ -90,7 +90,7 @@ Phoenix Code provides various options in the Live Preview toolbar.
     src="https://docs-images.phcode.dev/videos/live-preview/highlight-mode.mp4"
   />
 
-  - **Edit Mode** *(Pro)*: Edit elements directly in the preview-change text, drag elements, swap images, and more. Phoenix Code updates your source code automatically. [Learn more](../../Pro%20Features/live-preview-edit).
+  - **Edit Mode** *(Pro)*: Edit elements directly in the preview-change text, drag elements, swap images, and more. Phoenix Code updates your source code automatically. [Learn more](../../Pro%20Features/edit-mode-live-preview).
 
 --- 
 
