@@ -6,7 +6,7 @@ title: Markdown Editor
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
-The **Markdown Editor** lets you edit Markdown files directly in the Live Preview using a rich text editor. You can format text, add images, create tables, insert links, and more, all without writing Markdown syntax by hand. Your changes are automatically synced back to the source code.
+The **Markdown Editor** brings a full rich text editing experience to Markdown files, right inside the Live Preview. Format text, build tables, drop in images, add links, use slash commands - and watch every change sync back to your source code instantly.
 
 <!-- Add an image here showing the Markdown Editor in edit mode with the toolbar visible -->
 
@@ -19,14 +19,6 @@ To go back to the read-only view, click **Reader** (or **Done**) in the toolbar.
 <!-- Add an image here showing the Edit button in the toolbar -->
 
 > Pro users start in Edit Mode by default when opening Markdown files.
-
-## Toolbar
-
-The toolbar appears at the top of the preview when you enter Edit Mode. It gives you quick access to all the formatting and editing tools described below.
-
-On smaller screens, some toolbar buttons collapse into dropdown menus to save space.
-
-<!-- Add an image here showing the full toolbar with all formatting options visible -->
 
 ## Text Formatting
 
@@ -42,33 +34,17 @@ You can also select text and use the **floating format bar** that appears near y
 
 <!-- Add an image here showing the floating format bar appearing above selected text -->
 
-## Block Types
+## Blocks and Lists
 
-Use the **block type dropdown** in the toolbar to change the type of the current block. Options include:
+The toolbar lets you change the current block type using a **block type dropdown** (Paragraph, Heading 1 through Heading 5) and insert different types of content:
 
-- Paragraph
-- Heading 1 through Heading 5
+- **Bullet list**, **Numbered list**, **Task list** (checklist with checkboxes)
+- **Blockquote**, **Divider** (horizontal line)
+- **Code block** with an optional language picker
+- **Table** (see [Table Editing](#table-editing))
+- **Mermaid diagram** with a syntax editor and live rendered preview
 
 <!-- Add an image here showing the block type dropdown with heading options -->
-
-## Lists
-
-The toolbar has buttons for three types of lists:
-
-- **Bullet list** - unordered list
-- **Numbered list** - ordered list
-- **Task list** - checklist with checkboxes
-
-Click a list button to turn the current line into a list item, or to convert an existing list to a different type.
-
-## Block Elements
-
-You can insert these block-level elements from the toolbar:
-
-- **Blockquote** - a quoted block of text
-- **Divider** - a horizontal line
-- **Code block** - a fenced code block with an optional language picker
-- **Table** - inserts a new table (see [Table Editing](#table-editing))
 
 ## Slash Menu
 
@@ -76,7 +52,7 @@ Type `/` at the start of an empty line to open the **Slash Menu**. This gives yo
 
 <!-- Add an image here showing the Slash Menu with the list of available items -->
 
-The menu shows all available block types: paragraphs, headings, lists, blockquotes, code blocks, tables, dividers, mermaid diagrams, and images. Start typing to filter the list. Use the arrow keys to navigate and press `Enter` to insert.
+Start typing to filter the list. Use the arrow keys to navigate and press `Enter` to insert.
 
 > The Slash Menu learns from your usage and shows your most-used items first.
 
@@ -127,12 +103,6 @@ To add a link, select some text and click the **Link** button in the toolbar (or
 Click an existing link to see a popover showing the URL, with options to **Edit** or **Remove** the link.
 
 <!-- Add an image here showing the link popover with the URL, Edit button, and Remove button -->
-
-## Mermaid Diagrams
-
-You can insert Mermaid diagram blocks through the toolbar or the [Slash Menu](#slash-menu). In Edit Mode, Mermaid blocks show a syntax editor where you write the diagram code, with a live preview of the rendered diagram. Click **Edit** or **Done** to toggle between the code and the preview.
-
-<!-- Add an image here showing a Mermaid diagram block in edit mode with the syntax editor and rendered preview -->
 
 ## Keyboard Shortcuts
 
