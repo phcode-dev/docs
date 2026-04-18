@@ -9,7 +9,7 @@ In Phoenix Code, Panels are of two types :- `Plugin Panel` and `Bottom Panel`.
 ![Plugin Panel Example](./images/plugin-panel-example.png) 
 
 
-**Bottom Panel** appears on the bottom of the screen. For Example :- *Problems* feature uses the `Bottom Panel`.
+**Bottom Panel** appears on the bottom of the screen as a tab. Multiple bottom panels share a tabbed interface where each panel gets its own tab with an icon and title. For Example :- *Git*, *Terminal*, *Problems* panel and many more use the `Bottom Panel`.
 
 ![Bottom Panel Example](./images/bottom-panel-example.png) 
 
@@ -150,7 +150,7 @@ You can control the visibility and state of your plugin panel:
 ## Creating a Bottom Panel
 
 Bottom panels are created similarly to plugin panels but use different methods:
-> For `Bottom Panels` creating a toolbar icon is not required.
+> For `Bottom Panels` creating a toolbar icon is not required. Each bottom panel appears as a tab in the shared tab bar.
 
 1. **Import required modules**
     ```jsx
@@ -160,11 +160,21 @@ Bottom panels are created similarly to plugin panels but use different methods:
 2. **Create the bottom panel**
     ```jsx
     const bottomPanel = WorkspaceManager.createBottomPanel(
-        "myextension.panel",
-        $panel,
-        200,
+        "myextension.panel", // Unique ID using package-style naming
+        $panel,              // jQuery object for panel content
+        undefined,           // minSize (deprecated, pass undefined)
+        "My Panel",          // Title shown on the tab
+        {
+            iconSvg: "path/to/icon.svg" // SVG icon for the tab
+        }
     );
     ```
+
+    - **`title`**: The text shown on the panel's tab. If not provided, Phoenix Code uses the text from a `.toolbar .title` element inside your panel, or derives it from the panel ID.
+    - **`iconSvg`**: Path to an SVG file used as the tab icon. The icon automatically adapts to light and dark themes. If not provided, a default icon is used.
+
+> The `minSize` parameter (third argument) is deprecated and no longer used. Pass `undefined` for this parameter.
+
 > For a detailed description, refer to [this link](https://docs.phcode.dev/api/API-Reference/view/WorkspaceManager#createBottomPanel).
 
 Full Code Example for Bottom Panel:
@@ -189,11 +199,13 @@ Full Code Example for Bottom Panel:
                     .attr("id", "my-extension-panel")
                     .html("<h3>My Bottom Panel</h3><p>Hello from the panel!</p>");
                 
-                // Create the plugin panel
+                // Create the bottom panel
                 bottomPanel = WorkspaceManager.createBottomPanel(
                     "myextension.panel",
                     $panel,
-                    200,
+                    undefined,
+                    "My Panel",
+                    { iconSvg: "styles/images/panel-icon-default.svg" }
                 );
                 bottomPanel.show();
             }
@@ -246,33 +258,33 @@ Bottom panels support similar state management to plugin panels:
     }
     ```
 
+4. **Update Tab Title**
+    ```jsx
+    bottomPanel.setTitle("New Title");
+    ```
+
+5. **Handle Close Confirmation**
+
+    If your panel has unsaved state or running processes, you can register a handler that runs before the panel closes. Return `false` to prevent closing.
+    ```jsx
+    bottomPanel.registerOnCloseRequestedHandler(async function () {
+        if (hasUnsavedChanges) {
+            const confirmed = await showConfirmDialog("Discard changes?");
+            return confirmed; // true to close, false to cancel
+        }
+        return true;
+    });
+    ```
+
+    To programmatically close a panel while respecting its close handler, use `requestClose()`:
+    ```jsx
+    const wasClosed = await bottomPanel.requestClose();
+    ```
+
 ## Best Practices
 
 1. Always use unique, package-style IDs (e.g., "yourextension.panel-name") to avoid conflicts with other extensions.
 
 2. Save panel state (e.g., visibility, size) in preferences if needed, to restore state when the extension is reloaded.
-
-Example CSS for Bottom Panel:
-
-```css
-.bottom-panel {
-    background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
-}
-
-.bottom-panel .toolbar {
-    padding: 4px 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e9ecef;
-    border-bottom: 1px solid #ddd;
-}
-
-.bottom-panel .panel-content {
-    padding: 8px;
-    overflow-y: auto;
-}
-```
 
 > For more information about the WorkSpace Manager API, refer to the [Phoenix Code API documentation](https://docs.phcode.dev/api/API-Reference/view/WorkspaceManager).
