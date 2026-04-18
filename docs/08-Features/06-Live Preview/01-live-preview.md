@@ -135,6 +135,13 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
 ---
 
+<!-- Add an image here showing the Device Size Presets button in the toolbar -->
+
+* **Device Size Presets** — A device icon button at the right side of the toolbar. Click it to see a list of common device widths (phones, tablets, and desktops). Pick a device to resize the Live Preview panel to that width. The button icon changes to match the current width category.  
+  On **Phoenix Pro Edition**, the dropdown also shows CSS breakpoints picked up from your page's stylesheets. See [Resize Ruler](../../Pro%20Features/resize-ruler) for details.
+
+---
+
 ## Using Live Preview with HTML Files
 
 1. Open the HTML file you want to preview.
