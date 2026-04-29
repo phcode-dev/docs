@@ -20,7 +20,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 ## Enabling Edit Mode
 
-To switch to Edit Mode, click the **mode selector dropdown** in the Live Preview toolbar and select **Edit Mode**.
+To switch to Edit Mode, click the **chevron icon** next to the **Preview Mode** button *(pen icon)* in the Live Preview toolbar, then select **Edit Mode**.
 
 ![Live Preview Edit mode](./images/lp-mode.png "Live Preview edit mode")
 
@@ -104,7 +104,7 @@ The Hover Box helps you quickly identify elements as you move your cursor over t
 
 By default, in Edit Mode, hovering over elements in the Live Preview highlights them and displays the [Hover Box](#hover-box). You can change this behavior to show highlights only when you click elements instead.
 
-To toggle this setting, click the **mode selector dropdown** in the Live Preview toolbar and unselect **Inspect Element on Hover**. By default, this option remains checked.
+To toggle this setting, click the **chevron icon** next to the **Preview Mode** button *(pen icon)* in the Live Preview toolbar and unselect **Inspect Element on Hover**. By default, this option remains checked.
 
 <!-- Add an image here showing the Inspect Element on Hover option in the mode selector dropdown -->
 
@@ -303,7 +303,11 @@ These shortcuts work for all Edit Mode operations, including text edits, element
 
 ## Quick Preview Toggle
 
-A **Quick Preview Toggle** button is available at the top center of the Live Preview. It lets you quickly switch to Preview Mode and back to the previously selected mode (Highlight Mode or Edit Mode). This is especially useful when working with a popped-out Live Preview window. You can also use the `F8` keyboard shortcut to toggle Preview Mode.
+:::note
+The Quick Preview Toggle button is available only in the popped-out Live Preview window.
+:::
+
+A **Quick Preview Toggle** button is available at the top center of the popped-out Live Preview window. It lets you quickly switch to Preview Mode and back to the previously selected mode (Highlight Mode or Edit Mode). You can also use the `F8` keyboard shortcut to toggle Preview Mode.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/live-preview-edit/quick-preview-toggle.mp4"
