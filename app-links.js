@@ -135,5 +135,25 @@ export const appLinks = [
 	{
 		from: '/app-links/claude-code-config',
 		to: '/docs/file-management',
+	},
+	{
+		from: '/app-links/design-mode',
+		to: '/docs/file-management',
+	},
+	{
+		from: '/app-links/ai-chat',
+		to: '/docs/file-management',
+	},
+	{
+		from: '/app-links/markdown-editor',
+		to: '/docs/file-management',
+	},
+	{
+		from: '/app-links/resize-ruler',
+		to: '/docs/file-management',
+	},
+	{
+		from: '/app-links//terminal',
+		to: '/docs/file-management',
 	}
 ];
