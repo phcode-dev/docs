@@ -106,7 +106,7 @@ export const appLinks = [
 	},
     {
 		from: '/app-links/editor-rulers',
-		to: '/docs/Features/editor-rulers',
+		to: '/docs/customizing-editor#editor-rulers',
 	},
     {
 		from: '/app-links/find-in-files',

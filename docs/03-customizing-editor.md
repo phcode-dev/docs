@@ -3,14 +3,17 @@ title: Customizing the Editor
 draft: true
 ---
 
-> **DRAFT — outline only.** Bullet points below capture what each subsection will cover. Convert to prose + screenshots/videos in a later pass. Remove this banner and the `draft: true` frontmatter when ready to publish.
+import React from 'react';
+import VideoPlayer from '@site/src/components/Video/player';
+
+> **DRAFT — partial.** Themes, Sidebar Collapse Toggle, and Tabbed Sidebar are still outlined as bullet points and need to be written. Moved sections (Zoom, Line Height, Indent Guides, Editor Rulers, No-Distractions) still need a style cleanup pass per the no-weasel-words rule. Remove this banner and the `draft: true` frontmatter when ready to publish.
 
 This section covers everything that lets you make **Phoenix Code** look and feel the way you want — from full themes down to individual visual toggles.
 
 ---
 
 ## Themes
-*(Move existing content from `08-Features/13-themes.md`. Update with new themes shipped this release.)*
+*(To be written. Move existing content from `08-Features/13-themes.md`. Update with new themes shipped this release.)*
 
 - What themes are and how they affect the editor
 - Built-in themes — list with screenshots
@@ -19,8 +22,6 @@ This section covers everything that lets you make **Phoenix Code** look and feel
   - **Dark Phoenix** (NEW this release)
   - All other built-in themes — list and short description
 - Switching themes
-  - Via Extension Manager → Themes tab → Apply
-  - Via `View` menu (if applicable)
 - Installing a new theme from the marketplace
 - Removing an installed theme
 - Creating your own theme — link to Theme Template repo
@@ -28,51 +29,129 @@ This section covers everything that lets you make **Phoenix Code** look and feel
 
 ---
 
-## Zoom UI and Font Size
-*(Move existing content from `03-editing-text.md` → "Zoom and Font Size Adjustments".)*
+## Zoom and Font Size Adjustments
+The **Zoom UI and Fonts** options allow you to adjust the overall interface scale and font size.
 
-- What zoom does vs. font size adjustment (UI scale vs. editor text only)
-- Zoom UI: In / Out / current level shown in menu
-- Font Size: Increase / Decrease / Restore
-- **HUD zoom percentage overlay** (NEW) — appears briefly on zoom in/out
-- Using the menu (`View > Zoom UI and Fonts`)
-- Keyboard shortcuts table
+### Zoom UI
+**Zoom In** :- Enlarges the overall UI, making all elements larger.
+
+**Zoom Out** :- Reduces the overall UI, making all elements smaller.
+
+### Font Size Adjustment
+**Increase Font Size** :- Enlarges the text in the editor without affecting other UI elements.
+
+**Decrease Font Size** :- Reduces the text size in the editor without affecting other UI elements.
+
+**Restore Font Size** :- Resets the editor text to its default size.
+
+
+### Using Zoom UI and Fonts Options
+####  Using Menu
+![Zoom Image](images/editingText/zoom.png "Click on View & hover over Zoom UI and Fonts")
+
+1. Click on "View" in the menu bar.
+2. Hover over "Zoom UI and Fonts".
+3. Select the desired option from the submenu.
+
+#### Using Keyboard Shortcuts
+* **Zoom In**: `Ctrl + +`   (`Cmd + +` on MacOs)
+* **Zoom Out**: `Ctrl + -`   (`Cmd + -` on MacOs)
+* **Increase Font Size**: `Ctrl + Shift + +`   (`Cmd + Shift + +` on MacOs)
+* **Decrease Font Size**: `Ctrl + Shift + -`   (`Cmd + Shift + -` on MacOs)
+* **Restore Font Size**: `Ctrl + Shift + (`   (`Cmd + Shift + (` on MacOs)
+
+*Note :- The current zoom level is displayed next to the **Zoom In** option.*
 
 ---
 
 ## Line Height
-*(Move existing content from `03-editing-text.md`.)*
 
-- What it does — vertical spacing between lines
-- Adjusting via `View > Themes...` → Line Height slider (1 to 3, default 1.5)
-- Modifying via preferences — `themes.editorLineHeight`
-- Cross-link to new Preferences page
+The **Line Height** feature lets you customize the vertical spacing between lines of text in the editor.
+
+### Adjusting Line Height
+
+To adjust line height:
+1. Click on `View` in the menu bar.
+2. Navigate to the `Themes...` option.
+3. Use the Line Height slider to set a value between 1 and 3. The default is 1.5.
+![Line Height](./images/editingText/line-height.png "Go to View > Themes... to adjust line height")
+
+Adjustments apply instantly, updating the editor dynamically.
+
+### Modifying Line Height via Preferences
+
+You can also modify the line height by updating the `themes.editorLineHeight` property in the preferences file. [Click Here](./editing-text#editing-preferences) to read on how to edit the preferences.
 
 ---
 
 ## Indent Guide Lines
-*(Move existing content from `03-editing-text.md`.)*
 
-- What they are — vertical lines showing indentation levels
-- Enabling / disabling via `View > Indent Guide Lines`
-- Preference keys
-  - `editor.indentGuides` — on/off
-  - `editor.indentHideFirst` — hide the first guide line
-- Cross-link to new Preferences page
+![Indent Guide Lines Image](images/editingText/indent-display.png "The vertical lines are Indent Guide Lines")
+**Indent Guide Lines** are vertical lines that help visually align code blocks and indicate indentation levels. They assist in understanding code hierarchy and nested structures, improving overall readability.
+
+### Enabling/Disabling Indent Guide Lines
+![Indent Guide Lines Enable Image](images/editingText/indent-lines.png "Click on View menu and toggle Indent Guide Lines option")
+
+To enable or disable Indent Guide Lines, go to `View > Indent Guide Lines`.
+
+### Editor Preferences for Indent Guides
+You can customize indent guide behavior in the editor preferences with the following options:
+
+[Click here](./editing-text#editing-preferences) to read on how to edit the preferences.
+
+**editor.indentGuides**: Set to `true` to display indent guide lines; set to `false` to hide them.
+**editor.indentHideFirst**: Set to `true` to hide the first indent guide line; set to `false` to display it.
 
 ---
 
 ## Editor Rulers
-*(Move existing content from `08-Features/03-editor-rulers.md`.)*
 
-- What rulers are — vertical guides at column positions
-- How to configure (preferences / settings)
-- Common use cases (80-col / 120-col line length guidance)
+Add vertical column rulers to the editor to keep track of line lengths. By
+default, a single ruler is set at the 120-character position.
+
+### Enabling and Disabling Rulers
+
+Toggle the visibility of rulers through the `View > Rulers` menu option.
+
+![Screenshot from 2024-04-27 12-42-50](https://github.com/phcode-dev/phoenix/assets/5336369/bb68fafa-395c-4da6-8aa2-a617918286ce)
+
+### Adding Multiple Rulers
+
+To add multiple rulers, edit the preferences file:
+
+1. Navigate to `File > Open Preferences File`.
+1. Add the following entries to the JSON configuration:
+
+```js
+{
+    // existing json items
+    "editor.rulers": [40, 80],
+    "editor.rulerColors": ["green", "#f34d5a"],
+}
+```
+
+These settings introduce two rulers at the 40th and 80th character positions,
+colored green and red respectively.
+
+![image](https://github.com/phcode-dev/phoenix/assets/5336369/71b8b04c-d2ca-47b8-84bb-53cd0fb4593c)
+
+#### Configuration Options
+
+1. `editor.rulers` : Specifies an array of column numbers where vertical rulers
+   will appear.
+1. `editor.rulerColors` : An optional array to set colors for each ruler,
+   corresponding to the positions listed in `editor.rulers`.
+
+#### Q: How do I add different rulers for each project?
+
+To set up different rulers for individual projects, create a `.phcode.json` file
+in the root directory of each project. Include the same ruler configurations as
+shown in the example above.
 
 ---
 
 ## Sidebar Collapse Toggle (NEW)
-*(NEW feature — titlebar control shipped this release.)*
+*(To be written. NEW feature — titlebar control shipped this release.)*
 
 - What it does — collapses/expands the main sidebar from the titlebar
 - Where the toggle button lives (titlebar, near app menu)
@@ -82,7 +161,7 @@ This section covers everything that lets you make **Phoenix Code** look and feel
 ---
 
 ## Tabbed Sidebar (NEW)
-*(NEW feature shipped this release — main sidebar now supports tabs.)*
+*(To be written. NEW feature shipped this release — main sidebar now supports tabs.)*
 
 - What it is — multiple panels accessible as tabs in the main sidebar
 - What tabs ship by default (Files, Git, Extensions, etc.)
@@ -92,13 +171,16 @@ This section covers everything that lets you make **Phoenix Code** look and feel
 ---
 
 ## No-Distractions Mode
-*(Move existing content from `03-editing-text.md`.)*
+**No-Distractions Mode** helps you focus by minimizing visual clutter and hiding non-essential interface elements, creating a clean, minimalist editing environment.
 
-- What it does — hides non-essential UI for focused editing
-- Toggle via `View > No-Distractions Mode`
-- Keyboard: `Shift + F11`
-- What gets hidden vs. what stays
-- (Note: Design Mode also affects UI visibility — link out to Design Mode docs once they exist)
+### Activating No-Distractions Mode
+#### **Using Editor Interface** :
+Toggle between `No-Distractions` Mode and `Normal` Mode through `View > Menu` option.
+
+![No Distractions Mode Image](images/editingText/no-distractions.png "Click on View tab in menu bar and select No Distractions")
+
+#### **Using Keyboard** :
+Press `Shift + F11` to toggle between `No-Distractions` Mode and `Normal` Mode.
 
 ---
 

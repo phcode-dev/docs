@@ -100,81 +100,6 @@ With **Emmet**, you can write HTML and CSS faster using shorthand abbreviations.
 
 ---
 
-## Zoom and Font Size Adjustments
-The **Zoom UI and Fonts** options allow you to adjust the overall interface scale and font size.
-
-### Zoom UI 
-**Zoom In** :- Enlarges the overall UI, making all elements larger.
-
-**Zoom Out** :- Reduces the overall UI, making all elements smaller.
-
-### Font Size Adjustment 
-**Increase Font Size** :- Enlarges the text in the editor without affecting other UI elements.
-
-**Decrease Font Size** :- Reduces the text size in the editor without affecting other UI elements.
-
-**Restore Font Size** :- Resets the editor text to its default size.
-
-
-### Using Zoom UI and Fonts Options
-####  Using Menu
-![Zoom Image](images/editingText/zoom.png "Click on View & hover over Zoom UI and Fonts")
-
-1. Click on "View" in the menu bar.
-2. Hover over "Zoom UI and Fonts".
-3. Select the desired option from the submenu.
-
-#### Using Keyboard Shortcuts
-* **Zoom In**: `Ctrl + +`   (`Cmd + +` on MacOs)
-* **Zoom Out**: `Ctrl + -`   (`Cmd + -` on MacOs)
-* **Increase Font Size**: `Ctrl + Shift + +`   (`Cmd + Shift + +` on MacOs)
-* **Decrease Font Size**: `Ctrl + Shift + -`   (`Cmd + Shift + -` on MacOs)
-* **Restore Font Size**: `Ctrl + Shift + (`   (`Cmd + Shift + (` on MacOs)
-
-*Note :- The current zoom level is displayed next to the **Zoom In** option.*
-
----
-
-## Line Height
-
-The **Line Height** feature lets you customize the vertical spacing between lines of text in the editor.
-
-### Adjusting Line Height
-
-To adjust line height:
-1. Click on `View` in the menu bar.
-2. Navigate to the `Themes...` option.
-3. Use the Line Height slider to set a value between 1 and 3. The default is 1.5.
-![Line Height](./images/editingText/line-height.png "Go to View > Themes... to adjust line height")
-
-Adjustments apply instantly, updating the editor dynamically.
-
-### Modifying Line Height via Preferences
-
-You can also modify the line height by updating the `themes.editorLineHeight` property in the preferences file. [Click Here](#editing-preferences) to read on how to edit the preferences.
-
----
-
-## Indent Guide Lines
-
-![Indent Guide Lines Image](images/editingText/indent-display.png "The vertical lines are Indent Guide Lines")
-**Indent Guide Lines** are vertical lines that help visually align code blocks and indicate indentation levels. They assist in understanding code hierarchy and nested structures, improving overall readability.
-
-### Enabling/Disabling Indent Guide Lines
-![Indent Guide Lines Enable Image](images/editingText/indent-lines.png "Click on View menu and toggle Indent Guide Lines option")
-
-To enable or disable Indent Guide Lines, go to `View > Indent Guide Lines`.
-
-### Editor Preferences for Indent Guides
-You can customize indent guide behavior in the editor preferences with the following options:
-
-[Click here](#editing-preferences) to read on how to edit the preferences.
-
-**editor.indentGuides**: Set to `true` to display indent guide lines; set to `false` to hide them.
-**editor.indentHideFirst**: Set to `true` to hide the first indent guide line; set to `false` to display it.
-
----
-
 ## File Encoding
 **File encoding** is the method used to represent text in a file by converting characters into bytes. We need it to ensure that text is displayed correctly across different platforms and to handle special characters or symbols. Phoenix Code Editor supports multiple file encoding formats.
 
@@ -279,20 +204,6 @@ You can adjust the tab size width or number of spaces by clicking the value in t
   winLinuxTitle="Beautify Code: Ctrl + B"
   macTitle="Beautify Code: Cmd + B"
 />
-
----
-
-## No-Distractions Mode
-**No-Distractions Mode** helps you focus by minimizing visual clutter and hiding non-essential interface elements, creating a clean, minimalist editing environment.
-
-### Activating No-Distractions Mode
-#### **Using Editor Interface** : 
-Toggle between `No-Distractions` Mode and `Normal` Mode through `View > Menu` option.
-
-![No Distractions Mode Image](images/editingText/no-distractions.png "Click on View tab in menu bar and select No Distractions")
-
-#### **Using Keyboard** :
-Press `Shift + F11` to toggle between `No-Distractions` Mode and `Normal` Mode.
 
 ---
 
