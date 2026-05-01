@@ -26,3 +26,6 @@ phoenix
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Working notes for in-progress docs overhaul (local scratchpad)
+DOCS_NOTES.md
