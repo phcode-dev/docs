@@ -13,19 +13,28 @@ This section covers everything that lets you make **Phoenix Code** look and feel
 ---
 
 ## Themes
-*(To be written. Move existing content from `08-Features/13-themes.md`. Update with new themes shipped this release.)*
 
-- What themes are and how they affect the editor
-- Built-in themes — list with screenshots
-  - **Phoenix Dark Neo** (renamed from previous "Phoenix Dark")
-  - **Phoenix Light Neo** (renamed from previous "Phoenix Light")
-  - **Dark Phoenix** (NEW this release)
-  - All other built-in themes — list and short description
-- Switching themes
-- Installing a new theme from the marketplace
-- Removing an installed theme
-- Creating your own theme — link to Theme Template repo
-- Preference key reference (where applicable)
+Phoenix Code ships with two built-in themes:
+
+- **Phoenix Dark Neo** — default dark theme
+- **Phoenix Light Neo** — default light theme
+
+You can install more themes, create your own, or remove themes you have installed, see [Extensions](./popular-extensions).
+
+### Switching the Theme
+
+Open `View > Themes...` and pick a theme from the **Current Theme** dropdown. The change applies immediately.
+
+![Current Theme and Use Theme Scrollbars in the Themes Settings dialog](./images/editingText/themes-settings-theme.png "View > Themes... — pick a theme and toggle theme scrollbars")
+
+Click **Get More...** to browse community themes — see [Extensions](./popular-extensions) for installation steps.
+
+### Use Theme Scrollbars
+
+The **Use Theme Scrollbars** checkbox controls scrollbar styling.
+
+- **On** (default) — scrollbars use colors from the active theme.
+- **Off** — scrollbars use your operating system's default style.
 
 ---
 
