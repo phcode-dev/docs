@@ -74,13 +74,33 @@ To adjust line height:
 1. Click on `View` in the menu bar.
 2. Navigate to the `Themes...` option.
 3. Use the Line Height slider to set a value between 1 and 3. The default is 1.5.
-![Line Height](./images/editingText/line-height.png "Go to View > Themes... to adjust line height")
+![Line Height slider in Themes Settings](./images/editingText/themes-settings-line-height.png "Go to View > Themes... to adjust line height")
 
 Adjustments apply instantly, updating the editor dynamically.
 
 ### Modifying Line Height via Preferences
 
 You can also modify the line height by updating the `themes.editorLineHeight` property in the preferences file. [Click Here](./editing-text#editing-preferences) to read on how to edit the preferences.
+
+---
+
+## Scroll Sensitivity
+
+**Scroll Sensitivity** sets a multiplier for mouse-wheel scroll speed in the editor. Increase it if scrolling feels too slow, decrease it if scrolling feels too fast.
+
+### Adjusting Scroll Sensitivity
+
+1. Click `View` in the menu bar.
+2. Select `Themes...`.
+3. Use the **Scroll Sensitivity** slider to set a value between `0.1` and `10`. The default is `1` (normal speed).
+
+![Scroll Sensitivity slider in Themes Settings](./images/editingText/themes-settings-scroll-sensitivity.png "Go to View > Themes... to adjust scroll sensitivity")
+
+The new value applies immediately.
+
+### Modifying Scroll Sensitivity via Preferences
+
+Set the `mouseWheelScrollSensitivity` property in the preferences file. Accepts any number from `0.1` to `10`. [Click Here](./editing-text#editing-preferences) to read on how to edit the preferences.
 
 ---
 
@@ -117,10 +137,9 @@ Toggle the visibility of rulers through the `View > Rulers` menu option.
 
 ### Adding Multiple Rulers
 
-To add multiple rulers, edit the preferences file:
+To add multiple rulers, edit the preferences file. [Click Here](./editing-text#editing-preferences) to read on how to edit the preferences.
 
-1. Navigate to `File > Open Preferences File`.
-1. Add the following entries to the JSON configuration:
+Add the following entries to the JSON configuration:
 
 ```js
 {
