@@ -8,7 +8,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 > **DRAFT — partial.** Themes, Sidebar Collapse Toggle, and Tabbed Sidebar are still outlined as bullet points and need to be written. Moved sections (Zoom, Line Height, Indent Guides, Editor Rulers, No-Distractions) still need a style cleanup pass per the no-weasel-words rule. Remove this banner and the `draft: true` frontmatter when ready to publish.
 
-This section covers everything that lets you make **Phoenix Code** look and feel the way you want — from full themes down to individual visual toggles.
+This section covers everything that lets you make **Phoenix Code** look and feel the way you want, from full themes down to individual visual toggles.
 
 ---
 
@@ -16,8 +16,8 @@ This section covers everything that lets you make **Phoenix Code** look and feel
 
 Phoenix Code ships with two built-in themes:
 
-- **Phoenix Dark Neo** — default dark theme
-- **Phoenix Light Neo** — default light theme
+- **Phoenix Dark Neo**: default dark theme
+- **Phoenix Light Neo**: default light theme
 
 You can install more themes, create your own, or remove themes you have installed, see [Extensions](./popular-extensions).
 
@@ -25,51 +25,58 @@ You can install more themes, create your own, or remove themes you have installe
 
 Open `View > Themes...` and pick a theme from the **Current Theme** dropdown. The change applies immediately.
 
-![Current Theme and Use Theme Scrollbars in the Themes Settings dialog](./images/editingText/themes-settings-theme.png "View > Themes... — pick a theme and toggle theme scrollbars")
+![Current Theme and Use Theme Scrollbars in the Themes Settings dialog](./images/editingText/themes-settings-theme.png "View > Themes...: pick a theme and toggle theme scrollbars")
 
-Click **Get More...** to browse community themes — see [Extensions](./popular-extensions) for installation steps.
+Click **Get More...** to browse community themes. See [Extensions](./popular-extensions) for installation steps.
 
 ### Use Theme Scrollbars
 
 The **Use Theme Scrollbars** checkbox controls scrollbar styling.
 
-- **On** (default) — scrollbars use colors from the active theme.
-- **Off** — scrollbars use your operating system's default style.
+- **On** (default): scrollbars use colors from the active theme.
+- **Off**: scrollbars use your operating system's default style.
 
 ---
 
-## Zoom and Font Size Adjustments
-The **Zoom UI and Fonts** options allow you to adjust the overall interface scale and font size.
+## Font
 
-### Zoom UI
-**Zoom In** :- Enlarges the overall UI, making all elements larger.
+Phoenix Code uses **SourceCodePro** as the default editor font. Change the size and family from `View > Themes...`.
 
-**Zoom Out** :- Reduces the overall UI, making all elements smaller.
+![Font Size and Font Family in the Themes Settings dialog](./images/editingText/themes-settings-font.png "Font Size and Font Family fields in View > Themes...")
 
-### Font Size Adjustment
-**Increase Font Size** :- Enlarges the text in the editor without affecting other UI elements.
+### Font Size
 
-**Decrease Font Size** :- Reduces the text size in the editor without affecting other UI elements.
+Type a value into the **Font Size** field. Accepted units: `px` (1 to 72) or `em` (0.1 to 7.2). Decimals work, e.g. `12.5px`. The default is `12px`.
 
-**Restore Font Size** :- Resets the editor text to its default size.
+Keyboard shortcuts to resize the editor text:
 
+| Action | Windows / Linux | macOS |
+| --- | --- | --- |
+| Increase font size | `Ctrl + Shift + +` | `Cmd + Shift + +` |
+| Decrease font size | `Ctrl + Shift + -` | `Cmd + Shift + -` |
+| Restore default | `Ctrl + Shift + (` | `Cmd + Shift + (` |
 
-### Using Zoom UI and Fonts Options
-####  Using Menu
-![Zoom Image](images/editingText/zoom.png "Click on View & hover over Zoom UI and Fonts")
+:::note
+The shortcuts above change only the editor text size. To zoom the entire interface at once, use these:
 
-1. Click on "View" in the menu bar.
-2. Hover over "Zoom UI and Fonts".
-3. Select the desired option from the submenu.
+| Action | Windows / Linux | macOS |
+| --- | --- | --- |
+| Zoom in | `Ctrl + +` | `Cmd + +` |
+| Zoom out | `Ctrl + -` | `Cmd + -` |
 
-#### Using Keyboard Shortcuts
-* **Zoom In**: `Ctrl + +`   (`Cmd + +` on MacOs)
-* **Zoom Out**: `Ctrl + -`   (`Cmd + -` on MacOs)
-* **Increase Font Size**: `Ctrl + Shift + +`   (`Cmd + Shift + +` on MacOs)
-* **Decrease Font Size**: `Ctrl + Shift + -`   (`Cmd + Shift + -` on MacOs)
-* **Restore Font Size**: `Ctrl + Shift + (`   (`Cmd + Shift + (` on MacOs)
+The current zoom level is shown next to **Zoom In** under `View > Zoom UI and Fonts`.
+:::
 
-*Note :- The current zoom level is displayed next to the **Zoom In** option.*
+### Font Family
+
+Type a CSS `font-family` string into the **Font Family** field. The first available font in the list is used:
+
+```
+'Fira Code', 'JetBrains Mono', monospace
+```
+
+Wrap names containing spaces in single quotes. 
+> The font must be installed on your system. Phoenix Code only bundles `SourceCodePro` (the default).
 
 ---
 
@@ -82,7 +89,8 @@ The **Line Height** feature lets you customize the vertical spacing between line
 To adjust line height:
 1. Click on `View` in the menu bar.
 2. Navigate to the `Themes...` option.
-3. Use the Line Height slider to set a value between 1 and 3. The default is 1.5.
+3. Use the Line Height slider to set a value between 1 and 3. The default is 1.5.  
+
 ![Line Height slider in Themes Settings](./images/editingText/themes-settings-line-height.png "Go to View > Themes... to adjust line height")
 
 Adjustments apply instantly, updating the editor dynamically.
