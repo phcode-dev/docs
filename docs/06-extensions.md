@@ -1,115 +1,48 @@
 ---
 title: Extensions
-draft: true
 ---
 
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-> **DRAFT — pending media.** Prose is complete. The workflow video and one updated UI screenshot are pending; placeholders inline. Remove this banner and the `draft: true` frontmatter once captured. Popular extensions descriptions were moved verbatim from the old `popular-extensions.md` and still need a style cleanup pass.
-
-Phoenix Code supports extensions for adding features, themes, and language support. All extensions are managed through the built-in **Extension Manager**.
-
----
+Phoenix Code supports extensions for adding features, themes, and language support. Everything is managed through the built-in **Extension Manager**.
 
 ## Opening the Extension Manager
 
-> **IMAGE TO TAKE**: Screenshot of the current Phoenix Code interface with a callout / arrow pointing to the Extension Manager button. We need this because the sidebar UI changed in this release and the old screenshot is stale.
+Click the Extension Manager icon on the right-hand toolbar, or run **Extension Manager…** from the command palette.
 
-Click the **Extension Manager** button in the sidebar to open the dialog.
+![Extension Manager icon location on the right toolbar](./images/extensions/extension-manager-button.png "Click the Extension Manager icon on the right toolbar")
 
----
+## The dialog
 
-## The Extension Manager dialog
+Four tabs:
 
-The dialog has four tabs along the top:
-
-| Tab | What it shows |
+| Tab | Contents |
 | --- | --- |
-| **Available** | Extensions you can install from the marketplace. |
-| **Themes** | Themes you can install from the marketplace. |
-| **Installed** | Extensions and themes already installed. |
-| **Updates** | Extensions with newer versions available. |
+| **Available** | Marketplace extensions. A search box at the top filters the list. |
+| **Themes** | Marketplace themes. |
+| **Installed** | Everything you've installed. Apply, update, or remove from here. |
+| **Default** | Built-in extensions that ship with Phoenix Code. |
 
-> **VIDEO TO RECORD**: 30 to 60 seconds. Walk through the basic workflow with one clean run, no narration needed:
-> 1. Open the Extension Manager.
-> 2. Browse the **Available** tab and install one extension.
-> 3. Switch to the **Installed** tab to show it listed.
-> 4. Remove that same extension and confirm the reload.
->
-> Suggested host path: `https://docs-images.phcode.dev/videos/extensions/extension-manager-workflow.mp4`
+<VideoPlayer src="https://docs-images.phcode.dev/videos/extensions/extension-manager.mp4" />
 
-{/* <VideoPlayer src="https://docs-images.phcode.dev/videos/extensions/extension-manager-workflow.mp4" /> */}
+## Installing, updating, removing
 
----
-
-## Installing an extension
-
-1. Open the Extension Manager.
-2. Switch to the **Available** tab.
-3. Find the extension by scrolling or using the search box.
-4. Click **Install** on the extension card.
-5. Click **Close** when the install confirmation appears.
-
-Some extensions require a reload, which the dialog prompts for.
-
----
-
-## Updating extensions
-
-1. Open the Extension Manager.
-2. Switch to the **Updates** tab. Available updates are listed here.
-3. Click **Update** on any extension to upgrade it.
-
-If the Updates tab is empty, all your extensions are current.
-
----
-
-## Removing an extension
-
-1. Open the Extension Manager.
-2. Switch to the **Installed** tab.
-3. Find the extension and click **Remove**.
-4. In the confirmation popup, click **Remove Extensions and Reload**.
-
-Phoenix Code reloads to finalize the removal.
-
----
+- **Install**: pick an item from **Available** or **Themes** and click **Install**.
+- **Update**: when a newer version is available, an **Update** button appears on the extension's card in **Installed**.
+- **Remove**: click **Remove** on the card in **Installed**, then confirm with **Remove Extensions and Reload**.
 
 ## Themes
 
-Themes use the same Extension Manager as other extensions, with a separate **Themes** tab for browsing.
+Themes use the same flow under the **Themes** tab.
 
-### Installing a theme
+![Themes tab in the Extension Manager](./images/extensions/themes-tab.png "Themes tab in the Extension Manager")
 
-1. Open the Extension Manager.
-2. Switch to the **Themes** tab.
-3. Find the theme and click **Install**.
-
-Once installed, switch to it from `View > Themes...`. See [Customizing the Editor → Themes](./customizing-editor#themes).
-
-### Applying a theme from the Extension Manager
-
-You can also apply an installed theme without leaving the dialog:
-
-1. Open the Extension Manager.
-2. Switch to the **Installed** tab.
-3. Find the theme and click **Apply**.
-
-### Removing a theme
-
-A theme is removed the same way as any other extension:
-
-1. Open the Extension Manager.
-2. Switch to the **Installed** tab.
-3. Find the theme and click **Remove**.
-4. Confirm with **Remove Extensions and Reload**.
-
----
+To switch to an installed theme, either pick it from `View > Themes...` (see [Customizing the Editor → Themes](./customizing-editor#themes)) or click **Apply** next to the theme in **Installed**.
 
 ## Creating your own
 
-To create your own theme or extension, see the API section:
+For authoring extensions and themes, see the API section:
 
 - [Creating Themes](/api/creating-themes)
 - [Creating Extensions](/api/creating-extensions)
