@@ -7,15 +7,11 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 Phoenix Code supports extensions for adding features, themes, and language support. Everything is managed through the built-in **Extension Manager**.
 
-## Opening the Extension Manager
-
-Click the Extension Manager icon on the right-hand toolbar, or run **Extension Manager…** from the command palette.
+To open the Extension Manager, click the extension icon on the right-hand toolbar, as shown below.
 
 ![Extension Manager icon location on the right toolbar](./images/extensions/extension-manager-button.png "Click the Extension Manager icon on the right toolbar")
 
-## The dialog
-
-Four tabs:
+The dialog has four tabs:
 
 | Tab | Contents |
 | --- | --- |
@@ -24,9 +20,9 @@ Four tabs:
 | **Installed** | Everything you've installed. Apply, update, or remove from here. |
 | **Default** | Built-in extensions that ship with Phoenix Code. |
 
-<VideoPlayer src="https://docs-images.phcode.dev/videos/extensions/extension-manager.mp4" />
+A **Sort** dropdown at the top of the dialog orders the list by **Last Updated** (most recently published first), **Downloads** (most-installed first), **Star Rating** (highest GitHub stars), or **Verified** (Phoenix-verified extensions first).
 
-## Installing, updating, removing
+<VideoPlayer src="https://docs-images.phcode.dev/videos/extensions/extension-manager.mp4" />
 
 - **Install**: pick an item from **Available** or **Themes** and click **Install**.
 - **Update**: when a newer version is available, an **Update** button appears on the extension's card in **Installed**.
@@ -40,7 +36,7 @@ Themes use the same flow under the **Themes** tab.
 
 To switch to an installed theme, either pick it from `View > Themes...` (see [Customizing the Editor → Themes](./customizing-editor#themes)) or click **Apply** next to the theme in **Installed**.
 
-## Creating your own
+## Create your own
 
 For authoring extensions and themes, see the API section:
 
@@ -64,6 +60,7 @@ This extension adds a minimap preview of your code on the side of your editor, m
 For more details, visit the [GitHub repository](https://github.com/zorgzerg/brackets-minimap) of the extension.
 
 `Minimap` in action :-
+
 ![Minimap](./images/popular-extensions/minimap.png)
 
 ---
@@ -76,6 +73,7 @@ This extension allows users to visualize spaces and tabs, making code more reada
 For more details, visit the [GitHub repository](https://github.com/DennisKehrig/brackets-show-whitespace) of the extension.
 
 `Show Whitespace` in action :-
+
 ![Show Whitespace](./images/popular-extensions/Show-Whitespace.png)
 
 ---
@@ -88,6 +86,7 @@ This extension generates number sequences directly in your editor, making it eas
 For more details, visit the [GitHub repository](https://github.com/michaljerabek/1-2-3) of the extension.
 
 `1-2-3` in action :-
+
 ![1-2-3](./images/popular-extensions/1-2-3.gif)
 
 ---
@@ -100,6 +99,7 @@ This extension generates JS/PHPDocs for your functions, keeping your code docume
 For more details, visit the [GitHub repository](https://github.com/wikunia/brackets-funcdocr) of the extension.
 
 `FuncDocr` in action :-
+
 ![FuncDocr](./images/popular-extensions/Func-Docr.gif)
 
 ---
@@ -112,6 +112,7 @@ This extension allows you to remove unwanted comments from your code. You can de
 For more details, visit the [GitHub repository](https://github.com/devvaannsh/Remove-Comments) of the extension.
 
 `Remove Comments` in action :-
+
 <VideoPlayer src="https://docs-images.phcode.dev/videos/popular-extensions/Remove-Comments.mp4" />
 
 ---
@@ -124,4 +125,5 @@ This extension automatically saves all unsaved files whenever Phoenix Code loses
 For more details, visit the [GitHub repository](https://github.com/martypenner/brackets-autosave-files-on-window-blur) of the extension.
 
 `Autosave Files on Window Blur` in action :-
+
 <VideoPlayer src="https://docs-images.phcode.dev/videos/popular-extensions/autosave.mp4" />
