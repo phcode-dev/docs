@@ -19,7 +19,7 @@ Phoenix Code ships with two built-in themes:
 - **Phoenix Dark Neo**: default dark theme
 - **Phoenix Light Neo**: default light theme
 
-You can install more themes, create your own, or remove themes you have installed, see [Extensions](./popular-extensions).
+You can install more themes, create your own, or remove themes you have installed, see [Extensions](./extensions).
 
 ### Switching the Theme
 
@@ -27,7 +27,7 @@ Open `View > Themes...` and pick a theme from the **Current Theme** dropdown. Th
 
 ![Current Theme and Use Theme Scrollbars in the Themes Settings dialog](./images/editingText/themes-settings-theme.png "View > Themes...: pick a theme and toggle theme scrollbars")
 
-Click **Get More...** to browse community themes. See [Extensions](./popular-extensions) for installation steps.
+Click **Get More...** to browse community themes. See [Extensions](./extensions) for installation steps.
 
 ### Use Theme Scrollbars
 
