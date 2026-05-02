@@ -1,14 +1,11 @@
 ---
 title: Customizing the Editor
-draft: true
 ---
 
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-> **DRAFT — partial.** Themes, Sidebar Collapse Toggle, and Tabbed Sidebar are still outlined as bullet points and need to be written. Moved sections (Zoom, Line Height, Indent Guides, Editor Rulers, No-Distractions) still need a style cleanup pass per the no-weasel-words rule. Remove this banner and the `draft: true` frontmatter when ready to publish.
-
-This section covers everything that lets you make **Phoenix Code** look and feel the way you want, from full themes down to individual visual toggles.
+This section provides an overview of the editor appearance and display settings in **Phoenix Code**.
 
 ---
 
@@ -186,26 +183,6 @@ shown in the example above.
 
 ---
 
-## Sidebar Collapse Toggle (NEW)
-*(To be written. NEW feature — titlebar control shipped this release.)*
-
-- What it does — collapses/expands the main sidebar from the titlebar
-- Where the toggle button lives (titlebar, near app menu)
-- Keyboard shortcut (if any)
-- Difference from drag-to-collapse the sidebar resizer
-
----
-
-## Tabbed Sidebar (NEW)
-*(To be written. NEW feature shipped this release — main sidebar now supports tabs.)*
-
-- What it is — multiple panels accessible as tabs in the main sidebar
-- What tabs ship by default (Files, Git, Extensions, etc.)
-- Switching between tabs
-- Adding / removing / reordering tabs (if user-controllable)
-
----
-
 ## No-Distractions Mode
 **No-Distractions Mode** helps you focus by minimizing visual clutter and hiding non-essential interface elements, creating a clean, minimalist editing environment.
 
@@ -217,10 +194,3 @@ Toggle between `No-Distractions` Mode and `Normal` Mode through `View > Menu` op
 
 #### **Using Keyboard** :
 Press `Shift + F11` to toggle between `No-Distractions` Mode and `Normal` Mode.
-
----
-
-## Where to next
-- For changing what your code *says*, see [Editing Text](./editing-text)
-- For syntax colors, see [Editing Colors](./editing-colors)
-- For low-level configuration of all settings, see Preferences *(link once page exists)*
