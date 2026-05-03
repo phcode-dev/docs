@@ -22,6 +22,12 @@ Open the terminal in any of these ways:
 
 ![Integrated Terminal item in the project tree right-click menu](../images/terminal/integrated-terminal-context-menu.png "Right-click a file or folder, then Open In > Integrated Terminal")
 
+:::note
+**Terminal** opens your system's terminal app (macOS Terminal, Windows Command Prompt, etc.) at that location. 
+
+**Integrated Terminal** opens inside Phoenix Code's built-in panel.
+:::
+
 ## Tabs
 
 You can have multiple terminals open at the same time, each in its own tab. The tab sidebar shows the running process name for each terminal.
