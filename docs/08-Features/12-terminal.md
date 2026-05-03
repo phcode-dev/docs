@@ -9,7 +9,7 @@ Phoenix Code has a built-in terminal so you can run commands without leaving the
 
 > The terminal is available only in desktop apps.
 
-<!-- Add a workflow video here showing: opening the panel, running a command, multiple tabs, switching shells, closing -->
+<VideoPlayer src="https://docs-images.phcode.dev/videos/terminal/terminal-workflow.mp4" />
 
 ## Opening the Terminal
 
@@ -20,7 +20,7 @@ Open the terminal in any of these ways:
 - Press `F4`
 - Right-click a file or folder in the project tree and choose **Integrated Terminal**. The terminal opens at that folder (or the file's containing folder)
 
-<!-- Add an image of the project tree right-click menu showing the Integrated Terminal item -->
+![Integrated Terminal item in the project tree right-click menu](../images/terminal/integrated-terminal-context-menu.png "Right-click a file or folder, then Open In > Integrated Terminal")
 
 ## Tabs
 
@@ -32,7 +32,7 @@ To close a single tab, hover over it and click the **X** button. To close every 
 
 When the terminal is focused and more than one tab is open, pressing `F4` cycles to the next tab.
 
-<!-- Add an image of the tab sidebar with multiple terminal tabs -->
+![Terminal panel with multiple tabs in the sidebar](../images/terminal/terminal-tabs.png "Terminal panel showing the tab sidebar, new-tab button, and shell dropdown")
 
 ## Shell Selection
 
