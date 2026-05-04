@@ -139,6 +139,6 @@ If you've been waiting for the update Brackets deserved, this is it.
 
 - **[Open Phoenix Code in your browser](https://phcode.dev)** — no install, start immediately
 - [Download the desktop app](https://phcode.dev/download)
-- [Live Preview documentation](/docs/Features/Live%20Preview/live-preview)
+- [Live Preview documentation](/docs/Features/Live%20Preview/)
 - [Edit Mode (Pro)](/docs/Pro%20Features/live-preview-edit)
 - [Read more about the Brackets legacy](/blog/Blog-Legacy)

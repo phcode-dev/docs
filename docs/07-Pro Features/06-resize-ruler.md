@@ -23,7 +23,7 @@ Drag the edge of the Live Preview panel to resize it. A ruler appears on the too
 
 The ruler disappears on its own once you stop resizing.
 
-> The Resize Ruler also appears briefly when you select a device from the Device Size Presets dropdown in the [Live Preview Toolbar](../Features/Live%20Preview/live-preview#live-preview-toolbar).
+> The Resize Ruler also appears briefly when you select a device from the Device Size Presets dropdown in the [Live Preview Toolbar](../Features/Live%20Preview#live-preview-toolbar).
 
 ---
 
