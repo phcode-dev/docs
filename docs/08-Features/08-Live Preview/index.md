@@ -119,10 +119,17 @@ The center section of the toolbar groups three controls for the currently previe
 
 The right end of the toolbar has two controls:
 
-* **Live Preview Settings**: The gear icon on the left. [Read more about Live Preview Settings](./live-preview-settings/#accessing-live-preview-settings).
+* **Live Preview Settings**: The gear icon on the left. Clicking it opens the Live Preview settings dialog. This icon is hidden by default and only appears when you hover over the toolbar. [Read more about Live Preview Settings](./live-preview-settings/#accessing-live-preview-settings).
 
-* **Device Size Presets**: The device icon on the right with a chevron. Click the icon to cycle through common width categories (mobile, tablet, desktop). Click the chevron to open a dropdown of common device widths (phones, tablets, and desktops); pick a device to resize the Live Preview panel to that width. The icon updates to match the current width category.  
-  On **Phoenix Pro Edition**, the dropdown also shows CSS breakpoints picked up from your page's stylesheets. See [Resize Ruler](../../Pro%20Features/resize-ruler) for details.
+* **Device Size Presets** *(Pro)*: Resize the Live Preview to common phone, tablet, and desktop widths. Click the icon to cycle through sizes, or click the chevron for the full list. See [Resize Ruler](../../Pro%20Features/resize-ruler) for more.
+
+  <VideoPlayer
+    src="https://docs-images.phcode.dev/website/videos/device-size-pro-dialog.mp4"
+  />
+
+  :::note
+  Device Size Presets is a Phoenix Pro feature.
+  :::
 
 
 ## Using Live Preview with HTML Files
