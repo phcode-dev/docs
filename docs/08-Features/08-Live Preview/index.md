@@ -8,7 +8,6 @@ The **Live Preview** feature in **Phoenix Code** provides instant feedback on ch
 
 > For HTML files, Live Preview is enabled by default. For other file types, you might need to do some manual setup.
 
----
 
 ## Showing or Hiding Live Preview
 
@@ -23,7 +22,6 @@ To customize the keyboard shortcut, see the [Keyboard Shortcuts Guide](../keyboa
 
 ![Live Preview toggle menu option](../images/livePreview/lp-menu.png "Live Preview toggle menu option")
 
----
 
 ## Understanding the Bolt Icon
 
@@ -60,7 +58,6 @@ Phoenix Code also displays a connecting overlay while Live Preview is establishi
 
 ![Live Preview connecting overlay](../images/livePreview/lp-connecting-overlay.png "Live Preview connecting overlay")
  -->
----
 
 ## Live Preview Toolbar
 
@@ -76,7 +73,6 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
 * **Reload Live Preview** — Refreshes the Live Preview page. Use this when Live Preview lags behind or doesn't update with your code changes.
 
---- 
 
 ![Live Preview mode](../images/livePreview/lp-mode.png "Live Preview mode")
 
@@ -92,7 +88,6 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
   - **Edit Mode** *(Pro)*: Edit elements directly in the preview-change text, drag elements, swap images, and more. Phoenix Code updates your source code automatically. [Learn more](../../Pro%20Features/edit-mode-live-preview).
 
---- 
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/live-preview/preview-mode-btn.mp4"
@@ -102,45 +97,38 @@ Phoenix Code provides various options in the Live Preview toolbar.
   Clicking the button switches to **Preview Mode**. On **Phoenix Pro Edition**, a second click returns to **Edit Mode**. On **Phoenix Community Edition**, a second click switches to **Highlight Mode**.  
   You can also use the keyboard shortcut `F8` to toggle Preview Mode.
 
----
 
 ![Live Preview pin](../images/livePreview/lp-pin.png "Live Preview pin")
 
 * **Pin or Unpin Preview Page** — Pin a file in Live Preview so it remains displayed even when you switch to other files. Click again to unpin.
 
----
 
 ![Live Preview filename](../images/livePreview/lp-filename.png "Live Preview filename")
 
 * **File Name** — Displays the name of the currently previewed file. Click it to open that file in the editor (if not already open).
 
----
 
 ![Live Preview popout](../images/livePreview/lp-popout.png "Live Preview popout")
 
 * **Pop Out to New Window** — Opens Live Preview in your default browser. This is helpful when you want to see how your page looks in a full browser window.
 
----
 
 ![Live Preview browsers](../images/livePreview/lp-browsers.png "Live Preview browsers")
 
 * **Browser Icons** — Select a specific browser icon to open the page in that browser. This helps you see how your page looks across different browsers. The icons are hidden by default. You need to hover over the toolbar to reveal them.
   > This option is available only in Desktop apps.
 
----
 
 ![Live Preview settings](../images/livePreview/lp-setting.png "Live Preview settings")
 
 * **Live Preview Settings** — Located at the right-most side of the toolbar. [Read more about Live Preview Settings](./live-preview-settings/#accessing-live-preview-settings).
 
----
 
 <!-- Add an image here showing the Device Size Presets button in the toolbar -->
 
 * **Device Size Presets** — A device icon button at the right side of the toolbar. Click it to see a list of common device widths (phones, tablets, and desktops). Pick a device to resize the Live Preview panel to that width. The button icon changes to match the current width category.  
   On **Phoenix Pro Edition**, the dropdown also shows CSS breakpoints picked up from your page's stylesheets. See [Resize Ruler](../../Pro%20Features/resize-ruler) for details.
 
----
 
 ## Using Live Preview with HTML Files
 
@@ -150,7 +138,6 @@ Phoenix Code provides various options in the Live Preview toolbar.
 
 > If changes don't appear, reload Live Preview and wait until the bolt icon turns full yellow.
 
----
 
 ## Live Preview Demonstrated
 
