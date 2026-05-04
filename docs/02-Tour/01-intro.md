@@ -10,7 +10,7 @@ The editor is made up of the regions described below. Each one has a dedicated p
 
 ## Menu Bar
 
-The strip at the top of the window — **File**, **Edit**, **Find**, **View**, **Navigate**, **Debug**, **Help**. Every command in the editor is reachable from here.
+The strip at the top of the window with **File**, **Edit**, **Find**, **View**, **Navigate**, **Debug**, and **Help**. Every command in the editor is reachable from here.
 
 ## Sidebar
 
@@ -26,15 +26,15 @@ The row of file tabs at the top of the editor area. Use it to switch between ope
 
 ## Bottom Panel
 
-The panel below the editor. It shows the **Quick Access** panel — a launcher for **Problems**, **Git**, **Custom Snippets**, **Keyboard Shortcuts**, and **Terminal** — and is also where the **Terminal** and **Problems** panels open.
+The panel below the editor. It shows the **Quick Access** panel, a launcher for **Problems**, **Git**, **Custom Snippets**, **Keyboard Shortcuts**, and **Terminal**, and is also where the **Terminal** and **Problems** panels open.
 
 ## Plugin Panel
 
-The panel on the right side of the editor. It shows the active plugin — for example, **Live Preview**, **Extension Manager**, or **AI Chat** — and is switched between plugins using the icons in the bottom-right.
+The panel on the right side of the editor that displays whichever tool you have opened from the Toolbar, such as **Live Preview** or the **Extension Manager**. You can resize it by dragging its left edge.
 
-## Right-Side Toolbar
+## Toolbar
 
-The toolbar at the top-right of the editor. It holds the controls for whichever plugin is currently active in the Plugin Panel — for instance, the reload, fullscreen, edit, and pin buttons for **Live Preview**.
+The vertical strip of icons running down the right edge of the editor. It holds entry points for **Live Preview**, the **Extension Manager**, **Publish**, the **Quick Access** panel, your **Phoenix Pro** account, and any tools added by extensions like **Git**. Click an icon to open its panel.
 
 ## Status Bar
 
