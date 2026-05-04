@@ -92,8 +92,12 @@ The left side of the toolbar groups three controls:
   - **Inspect Element on Hover**: Highlights elements as you hover, instead of only on click. This option is enabled by default. [Learn more](../../Pro%20Features/edit-mode-live-preview#inspect-element-on-hover).
   - **Show Measurements**: Displays ruler lines from the edges of the selected element to the edges of the Live Preview, with labels showing the exact pixel positions. This option is disabled by default. [Learn more](../../Pro%20Features/measurements).
 
+  <VideoPlayer
+    src="https://docs-images.phcode.dev/website/videos/lp-edit-pro-dialog.mp4"
+  />
+
   :::note
-  Edit Mode and the two extra options above are Phoenix Pro features.
+  Edit Mode is a Phoenix Pro feature.
   :::
 
 
