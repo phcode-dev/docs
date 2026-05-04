@@ -98,19 +98,15 @@ Phoenix Code provides various options in the Live Preview toolbar.
   You can also use the keyboard shortcut `F8` to toggle Preview Mode.
 
 
-![Live Preview pin](../images/livePreview/lp-pin.png "Live Preview pin")
+![Live Preview center toolbar](../images/livePreview/lp-central.png "Live Preview pin, file name, and pop out")
 
-* **Pin or Unpin Preview Page** — Pin a file in Live Preview so it remains displayed even when you switch to other files. Click again to unpin.
+The center section of the toolbar groups three controls for the currently previewed page:
 
+* **Pin or Unpin Preview Page**: The pin icon on the left. Pin a file in Live Preview so it remains displayed even when you switch to other files. Click again to unpin.
 
-![Live Preview filename](../images/livePreview/lp-filename.png "Live Preview filename")
+* **File Name**: The label in the middle shows the name of the currently previewed file. Click it to open that file in the editor (if not already open).
 
-* **File Name** — Displays the name of the currently previewed file. Click it to open that file in the editor (if not already open).
-
-
-![Live Preview popout](../images/livePreview/lp-popout.png "Live Preview popout")
-
-* **Pop Out to New Window** — Opens Live Preview in your default browser. This is helpful when you want to see how your page looks in a full browser window.
+* **Pop Out to New Window**: The arrow icon on the right. Opens Live Preview in your default browser. Use this when you want to see how your page looks in a full browser window.
 
 
 ![Live Preview browsers](../images/livePreview/lp-browsers.png "Live Preview browsers")
