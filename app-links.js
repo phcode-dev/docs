@@ -150,7 +150,7 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/resize-ruler',
-		to: '/docs/file-management',
+		to: '/docs/Pro Features/device-preview',
 	},
 	{
 		from: '/app-links//terminal',
