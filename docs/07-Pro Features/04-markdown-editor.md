@@ -2,13 +2,18 @@
 title: Markdown Editor
 ---
 
+import React from 'react';
+import VideoPlayer from '@site/src/components/Video/player';
+
 :::info Pro Feature
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
 Phoenix Code supports a full rich text editing experience for Markdown files, right inside the Live Preview. Format text, build tables, drop in images, add links, use slash commands, and watch every change sync back to your source code instantly.
 
-<!-- Add an image here showing the Markdown Editor in edit mode with the toolbar visible -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/website/videos/markdown-pro-dialog.mp4"
+/>
 
 ## Enabling Edit Mode
 
@@ -16,7 +21,7 @@ To start editing, click the **Edit** button on the right side of the markdown to
 
 To go back to the read-only view, click **Reader** in the same place.
 
-<!-- Add an image here showing the Edit button in the toolbar -->
+![Edit button in the markdown toolbar](./images/markdown-edit-button.png "The Edit button in the markdown toolbar")
 
 > By default, markdown files open in Edit mode for **Phoenix Code Pro** users.
 
@@ -28,7 +33,9 @@ Scrolling in either view does the same: the other view follows along to keep you
 
 Use the **cursor sync** button in the toolbar to toggle this behavior on or off.
 
-<!-- Add an image here showing the cursor sync button in the toolbar -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/markdown/toggle-cursor-sync.mp4"
+/>
 
 ## Text Formatting
 
@@ -42,7 +49,7 @@ Select the text you want to format and click a formatting button, or use the key
 
 You can also select text and use the **floating format bar** that appears near your selection.
 
-<!-- Add an image here showing the floating format bar appearing above selected text -->
+![Floating format bar above selected text](./images/markdown-format-bar.png "The floating format bar appears near your selection")
 
 ## Blocks and Lists
 
@@ -54,13 +61,13 @@ The toolbar lets you change the current block type using a **block type dropdown
 - **Table** (see [Table Editing](#table-editing))
 - **Mermaid diagram** with a syntax editor and live rendered preview
 
-<!-- Add an image here showing the block type dropdown with heading options -->
+![Markdown toolbar with block type dropdown and block insertion buttons](./images/markdown-blocks-lists.png "The markdown toolbar in Edit mode")
 
 ## Slash Menu
 
 Type `/` at the start of an empty line to open the **Slash Menu**. This gives you a quick way to insert any block type without reaching for the toolbar.
 
-<!-- Add an image here showing the Slash Menu with the list of available items -->
+![Slash menu showing block type options](./images/markdown-slash-menu.png "The Slash Menu with block type options")
 
 Start typing to filter the list. Use the arrow keys to navigate and press `Enter` to insert.
 
@@ -91,7 +98,9 @@ Right-click a cell to open a context menu with options to:
 
 You can also click the **+ New row** button below the table to add a row.
 
-<!-- Add an image here showing the table context menu with row and column options -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/markdown/markdown-editor-table.mp4"
+/>
 
 ## Images
 
@@ -102,9 +111,9 @@ You can add images in two ways:
 
 Both options are available from the **Image** button in the toolbar or through the [Slash Menu](#slash-menu).
 
-Click an image in the editor to see a popover with **Edit** and **Delete** buttons.
+![Image button dropdown with Image URL and Upload from Computer options](./images/markdown-image-options.png "The Image button dropdown")
 
-<!-- Add an image here showing the image popover with Edit and Delete buttons -->
+Click an image in the editor to see a popover with **Edit** and **Delete** buttons.
 
 ## Links
 
@@ -112,7 +121,9 @@ To add a link, select some text and click the **Link** button in the toolbar (or
 
 Click an existing link to see a popover showing the URL, with options to **Edit** or **Remove** the link.
 
-<!-- Add an image here showing the link popover with the URL, Edit button, and Remove button -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/markdown/markdown-editor-links.mp4"
+/>
 
 ## Keyboard Shortcuts
 
