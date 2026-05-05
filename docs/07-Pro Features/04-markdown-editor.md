@@ -6,19 +6,29 @@ title: Markdown Editor
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
-The **Markdown Editor** brings a full rich text editing experience to Markdown files, right inside the Live Preview. Format text, build tables, drop in images, add links, use slash commands - and watch every change sync back to your source code instantly.
+Phoenix Code supports a full rich text editing experience for Markdown files, right inside the Live Preview. Format text, build tables, drop in images, add links, use slash commands, and watch every change sync back to your source code instantly.
 
 <!-- Add an image here showing the Markdown Editor in edit mode with the toolbar visible -->
 
 ## Enabling Edit Mode
 
-To start editing, click the **Edit** button in the preview toolbar. The toolbar expands to show formatting options, and you can start making changes right away.
+To start editing, click the **Edit** button on the right side of the markdown toolbar. The toolbar expands to show formatting options, and you can start making changes right away.
 
-To go back to the read-only view, click **Reader** (or **Done**) in the toolbar.
+To go back to the read-only view, click **Reader** in the same place.
 
 <!-- Add an image here showing the Edit button in the toolbar -->
 
-> Pro users start in Edit Mode by default when opening Markdown files.
+> By default, markdown files open in Edit mode for **Phoenix Code Pro** users.
+
+## Cursor Sync
+
+Click anywhere in the preview to jump the editor cursor to the matching line. The line briefly highlights so you can see where you landed. Cursor sync works in the other direction too. Clicking a line in the editor scrolls the preview to that line.
+
+Scrolling in either view does the same: the other view follows along to keep you in sync.
+
+Use the **cursor sync** button in the toolbar to toggle this behavior on or off.
+
+<!-- Add an image here showing the cursor sync button in the toolbar -->
 
 ## Text Formatting
 
@@ -54,7 +64,7 @@ Type `/` at the start of an empty line to open the **Slash Menu**. This gives yo
 
 Start typing to filter the list. Use the arrow keys to navigate and press `Enter` to insert.
 
-> The Slash Menu learns from your usage and shows your most-used items first.
+> The Slash Menu shows your most-used items first.
 
 ### Markdown Shortcuts
 
