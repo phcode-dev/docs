@@ -30,20 +30,6 @@ To revert back to a single cursor, just press the `Esc` key.
 
 ---
 
-## Custom Snippets
-With **Custom Snippets**, you can define your own custom code hints. You can write short abbreviations that, when typed in the editor, expand into complete code blocks upon selection.
-
-[Read More](./Features/custom-snippets)
-
----
-
-## Quick Edit
-With **Quick Edit**, you can edit your CSS file directly within HTML files. 
-
-[Read More](./Features/quick-edit)
-
----
-
 ## Quick Docs
 **Quick Docs** provides immediate access to documentation for code elements directly within the editor.
 
@@ -52,13 +38,6 @@ With **Quick Edit**, you can edit your CSS file directly within HTML files.
 2. A context menu will appear, click on **Quick Docs** or simply press `F1` to bring up Quick Docs directly.
 
 ![Quick Docs Image](images/editingText/quick-docs.png "Right click on the element and select Quick Docs option")
-
----
-
-## Find in Files
-With **Find in Files**, you can search for specific text across multiple files within a project.
-
-[Read More](./Features/find-in-files)
 
 ---
 
@@ -90,13 +69,6 @@ Move your cursor out of the tag and then back into the tag.
 <VideoPlayer 
   src="https://docs-images.phcode.dev/videos/editing-text/auto-rename-temp-disable.mp4"
 />
-
----
-
-## Emmet
-With **Emmet**, you can write HTML and CSS faster using shorthand abbreviations. If an abbreviation is Emmet-compatible, Phoenix Code Editor shows code hints and expands it into complete code structures when selected.
-
-[Read More](./Features/emmet)
 
 ---
 
@@ -133,13 +105,6 @@ Now, files with `.myjs` extension will be treated as JavaScript files.
 <VideoPlayer 
   src="https://docs-images.phcode.dev/videos/editing-text/file_association.mp4"
 />
-
----
-
-## Beautify Code
-With **Beautify Code**, you can format your code to follow consistent styling rules, improving readability and making it easier to maintain.
-
-[Read More](./Features/beautify-code)
 
 ---
 
