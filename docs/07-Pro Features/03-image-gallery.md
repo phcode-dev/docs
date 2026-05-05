@@ -67,7 +67,7 @@ To change the saved folder later, click the **Folder Selection** button *(folder
 ## Image Size Selection
 
 The Image Gallery includes a **Size Selector** that lets you choose the resolution of the image before embedding or downloading it.  
-Hovering over a thumbnail displays the estimated file size in the top-right corner.
+Hovering over a thumbnail displays the estimated file size in the top-left corner.
 > Higher resolutions produce larger image files. Standard (1080px) is the default size.
 
 ### Available Image size options
