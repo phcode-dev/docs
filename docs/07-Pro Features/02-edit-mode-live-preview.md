@@ -16,8 +16,6 @@ import VideoPlayer from '@site/src/components/Video/player';
   src="https://docs-images.phcode.dev/videos/live-preview-edit/live-preview-edit.mp4"
 />
 
----
-
 ## Enabling Edit Mode
 
 To switch to Edit Mode, click the **chevron icon** next to the **Preview Mode** button *(pen icon)* in the Live Preview toolbar, then select **Edit Mode**.
@@ -25,8 +23,6 @@ To switch to Edit Mode, click the **chevron icon** next to the **Preview Mode** 
 ![Live Preview Edit mode](./images/lp-mode.png "Live Preview edit mode")
 
 Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` setting in the preferences file. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
-
----
 
 ## Control Box
 
@@ -86,8 +82,6 @@ The right side of the Control Box displays a set of tools you can use to modify 
   *This option is available for all elements.*  
   See [Cut, Copy, and Paste](#cut-copy-and-paste) for more details.
 
----
-
 ## Hover Box
 
 The **Hover Box** is a small tooltip that appears when you hover over an element in Edit Mode. It shows an icon and a label that describe the element type (for example, “Image”, “Button”, “Container”, “Paragraph”).
@@ -97,8 +91,6 @@ The **Hover Box** is a small tooltip that appears when you hover over an element
 The Hover Box helps you quickly identify elements as you move your cursor over the page, without needing to click on them.
 
 > The Hover Box uses a different color for editable and non-editable elements. Standard HTML elements appear in blue, while dynamically created (JavaScript-rendered) elements appear in gray.
-
----
 
 ## Inspect Element on Hover
 
@@ -119,8 +111,6 @@ When **Inspect Element on Hover** is unchecked:
 Alternatively, you can change this setting by updating the `livePreviewInspectElement` preference in the preferences file. Set it to `”hover”` (default) or `”click”`.  
 See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
----
-
 ## Edit Element Properties
 
 The **Element Properties** panel lets you edit an element's tag name, ID, classes, and other HTML attributes directly from the Live Preview. All changes are synced to your source code in real-time, and code hints appear as you type to help you pick the right values.
@@ -139,8 +129,6 @@ The panel has four sections:
 <!-- Add an image here showing the classes section with a few class chips and the add class input -->
 
 To undo all changes made in the panel, click the **Reset** button in the panel header. This reverts the element to the state it was in when you first opened the panel.
-
----
 
 ## Insert Element
 
@@ -170,8 +158,6 @@ Use the **search bar** at the top to filter elements by name or tag. If no match
 <!-- Add an image here showing the search bar with results and the "Create" custom element option -->
 
 After inserting an element, Phoenix Code automatically selects it in the Live Preview so you can continue editing it.
-
----
 
 ## Inline Text Editing
 
@@ -210,15 +196,11 @@ Click the **More** button *(three-dots icon)* on the right side of the toolbar t
   src="https://docs-images.phcode.dev/videos/live-preview-edit/inline-text-editing.mp4"
 />
 
----
-
 ## Image Gallery
 
 The **Image Gallery** lets you browse and select images from online image providers or your device and use them in your project directly.
 
 [Read More](./image-gallery)
-
----
 
 ## Drag and Drop
 
@@ -246,8 +228,6 @@ To cancel a drag, press `Esc`.
   src="https://docs-images.phcode.dev/videos/live-preview-edit/drag-drop.mp4"
 />
 
----
-
 ## Edit Hyperlink
 
 The **Edit Hyperlink** feature lets you modify the URL and behavior of anchor (`<a>`) elements directly in the Live Preview.
@@ -260,15 +240,11 @@ To edit a hyperlink, select an `<a>` element and click the **Edit Hyperlink** bu
 
 <!-- Add an image here showing the Edit Hyperlink panel with URL input, new tab toggle, and open link button -->
 
----
-
 ## Measurements
 
 The **Measurements** feature displays ruler lines from the edges of a selected element to the document edges, showing exact pixel positions.
 
 [Read More](./measurements)
-
----
 
 ## Cut, Copy, and Paste
 
@@ -288,8 +264,6 @@ Click the **More Options** button *(three-dots icon)* in the Control Box and sel
 
 > Keyboard shortcuts apply to elements only when focus is in the Live Preview. When editing source code, the shortcuts affect the code instead.
 
----
-
 ## Undo and Redo
 
 You can undo and redo changes made in Edit Mode using keyboard shortcuts:
@@ -298,8 +272,6 @@ You can undo and redo changes made in Edit Mode using keyboard shortcuts:
 - **Ctrl/Cmd + Y** or **Ctrl/Cmd + Shift + Z**: Redo the last undone change
 
 These shortcuts work for all Edit Mode operations, including text edits, element moves, deletions, and other modifications.
-
----
 
 ## Quick Preview Toggle
 
@@ -314,8 +286,6 @@ A **Quick Preview Toggle** button is available at the top center of the popped-o
 />
 
 The button is partially visible as a thin strip at the top edge of the Live Preview. Moving your cursor over this strip reveals the full button, which you can click to toggle Preview Mode.
-
----
 
 ## Disabling Edit Mode for Specific Elements
 
@@ -335,5 +305,3 @@ When an element has this class, the element behaves as if you're in Preview Mode
 If you want only to exclude the particular element and not its children, use the class `phcode-no-lp-edit-this`.
 
 > Placing your cursor on the element in the source code will still highlight it in the Live Preview. To use edit features, click the element directly in the Live Preview.
-
----

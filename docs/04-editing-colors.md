@@ -7,8 +7,6 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 This section provides an overview of the core color editing features in **Phoenix Code**.
 
----
-
 ## Inline Color Editor
 **Inline Color Editor** lets you edit colors directly inside **Phoenix Code** using a color picker.
 
@@ -69,8 +67,6 @@ Clicking a color in the gutter moves the cursor to its position in the editor an
 ### Enabling/Disabling Color Preview
 
 You can enable/disable the feature by updating the `colorPreview` property in the preferences file. [Click Here](./03-editing-text.md#editing-preferences) to read on how to edit the preferences.
-
----
 
 ## Color Hints
 After typing a color related property, **Phoenix Code** displays a list of color suggestions.  

@@ -14,8 +14,6 @@ Schools can deploy Phoenix Pro in two ways:
 
 This page explains how schools and universities can obtain free Phoenix Pro access and deploy it across **any devices used within the institution**.
 
----
-
 ## Who Is Eligible?
 
 Phoenix Pro is free for:
@@ -31,8 +29,6 @@ Volume licenses may be applied to:
 * Shared classroom devices
 * **Student/teacher-owned laptops/home computers** (per administrator distribution)
 
----
-
 # Option 1: Email-Based Student & Teacher Activation (Instant)
 
 Phoenix Pro is automatically activated for users who log in with:
@@ -47,8 +43,6 @@ Phoenix Pro is automatically activated for users who log in with:
 2. Sign in using your school email
 3. Phoenix Pro activates instantly
 4. No approval or license key required
-
----
 
 ## Schools Without a `.edu` or `.ac.*` Domain
 
@@ -66,8 +60,6 @@ Email **[support@core.ai](mailto:support@core.ai)** with:
 
 Once your domain is approved, all users with that email domain automatically receive Phoenix Pro upon login.
 
----
-
 # Option 2: Educational Volume License (For Labs + Student/Teacher Devices)
 
 Educational Volume Licenses allow schools to activate Phoenix Pro on devices **without requiring login**.
@@ -81,8 +73,6 @@ This is suitable for:
 ### ✔ Cost
 
 **Free** for all educational usage.
-
----
 
 ## Requesting a Volume License Key
 
@@ -107,8 +97,6 @@ From there, you can obtain the license key.
 
 ![Alt text](images/edu/vol-license.png)
 
----
-
 ## How Volume License Keys Work
 
 * Each license key is **valid for 2 weeks**
@@ -128,8 +116,6 @@ This model ensures:
 * The device now has Phoenix Pro permanently
 * School admin may rotate(reissue) keys as needed
 
----
-
 ## Activating Phoenix Pro Using a Volume License Key (Desktop App)
 
 On any device—lab or student-owned:
@@ -142,8 +128,6 @@ On any device—lab or student-owned:
 
 ![Alt text](images/edu/activate-edu-license.png)
 
----
-
 # Limitations
 
 ### Students without school email and no school onboarding
@@ -153,8 +137,6 @@ If a student does not have a school-provided email **and the school is not onboa
 ### Volume licenses must be requested by authorized school representatives
 
 Students cannot request volume licenses directly without school/teacher approval.
-
----
 
 # Summary of Support Email Subjects
 
@@ -166,8 +148,6 @@ Students cannot request volume licenses directly without school/teacher approval
 | Other educational support      | `[education support] <subject>`                        |
 
 Use correct subjects for faster handling.
-
----
 
 # FAQ
 
@@ -190,8 +170,6 @@ Yes — as long as they use their school email.
 ### **Is Phoenix Pro free for commercial educational projects?**
 
 Yes. Students and teachers may use Phoenix Pro for any purpose.
-
----
 
 # Need Help?
 

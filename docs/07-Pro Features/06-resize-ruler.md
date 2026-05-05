@@ -10,8 +10,6 @@ The **Resize Ruler** is a ruler that appears on the Live Preview toolbar when yo
 
 <!-- Add an image here showing the Resize Ruler on the Live Preview toolbar with tick marks, colored segments, and the width info badge -->
 
----
-
 ## How It Works
 
 Drag the edge of the Live Preview panel to resize it. A ruler appears on the toolbar showing:
@@ -24,8 +22,6 @@ Drag the edge of the Live Preview panel to resize it. A ruler appears on the too
 The ruler disappears on its own once you stop resizing.
 
 > The Resize Ruler also appears briefly when you select a device from the Device Size Presets dropdown in the [Live Preview Toolbar](../Features/Live%20Preview#live-preview-toolbar).
-
----
 
 ## CSS Breakpoint Detection
 

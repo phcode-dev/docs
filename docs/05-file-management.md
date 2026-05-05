@@ -7,8 +7,6 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 This section covers how **Phoenix Code** lets you manage, organize, and navigate files and folders within your projects.
 
----
-
 ## File Tree
 
 The **File Tree** appears in the sidebar and shows the complete folder structure of the open project.
@@ -62,8 +60,6 @@ To collapse all folders:
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/file-management/collapse-folders.mp4"
 />
-
----
 
 ## Tab Bar
 
@@ -205,8 +201,6 @@ You can also toggle the Tab Bar by updating the `showTabBar` option in the prefe
 Set the value to `true` to enable it.
 See [Editing Preferences](./editing-text#editing-preferences) if you need help in editing the preferences.
 
----
-
 ## Working Files
 **Working Files** (also called **Working Tree**) provides another way to view and manage open files. It appears in the sidebar, above the **File Tree**.
 
@@ -263,8 +257,6 @@ You can also toggle Working Files by updating the `showWorkingSet` property in t
 Set the value to `false` to hide Working Files.
 See [Editing Preferences](./editing-text#editing-preferences) if you need help editing the preferences.
 
----
-
 ## Recent Files
 
 The **Recent Files** dialog provides quick access to files you've recently worked on.
@@ -283,8 +275,6 @@ The dialog shows your recently opened files. Closed files appear in gray. Hover 
 
 To view a file's full path, hover over it or check the bottom-left corner of the dialog when a file is selected.
 
----
-
 ## File Recovery
 
 **Phoenix Code** has a built-in **File Recovery** feature to help you retrieve unsaved changes after unexpected events like crashes or accidental closures.
@@ -297,8 +287,6 @@ When you reopen the editor, if there are any unsaved changes from the previous s
 * **Restore**: Recovers your unsaved files by reinstating all changes made before the last save.
 
 * **Discard**: Removes the unsaved changes. *This will permanently delete the data.*
-
----
 
 ## Language and Encoding
 

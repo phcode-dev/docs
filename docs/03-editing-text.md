@@ -7,8 +7,6 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 This section provides an overview of the core text and code editing features in **Phoenix Code**.
 
----
-
 ## Multi Cursor
 Using **Multi-Cursor**, you can place multiple cursors in different locations, allowing you to edit text simultaneously. This feature is especially useful for making quick, consistent changes across multiple lines or sections of a file.
 
@@ -28,8 +26,6 @@ If you want the cursor to be placed in the line below, use `Alt + Shift + Down A
 ### Switching back to single cursor
 To revert back to a single cursor, just press the `Esc` key.
 
----
-
 ## Quick Docs
 **Quick Docs** provides immediate access to documentation for code elements directly within the editor.
 
@@ -38,8 +34,6 @@ To revert back to a single cursor, just press the `Esc` key.
 2. A context menu will appear, click on **Quick Docs** or simply press `F1` to bring up Quick Docs directly.
 
 ![Quick Docs Image](images/editingText/quick-docs.png "Right click on the element and select Quick Docs option")
-
----
 
 ## Auto Rename Tag
 The **Auto Rename Tag** feature updates matching tags automatically when you rename one. It works with HTML, XHTML, HTM, XML, SVG, PHP, and JSP files.
@@ -69,8 +63,6 @@ Move your cursor out of the tag and then back into the tag.
 <VideoPlayer 
   src="https://docs-images.phcode.dev/videos/editing-text/auto-rename-temp-disable.mp4"
 />
-
----
 
 ## Insert and Overwrite Mode
 Users can toggle between **Insert Mode** and **Overwrite Mode** for different text input behaviors.
@@ -102,8 +94,6 @@ Click on the `INS(OVR)` button on the status bar to toggle between Insert Mode a
 #### **Using Keyboard**
 Press the `Ins` or the Insert key to toggle between Insert Mode and Overwrite Mode.
 
---- 
-
 ## Auto Space Detection
 The **Auto Space Detection** feature in Phoenix Code Editor is designed to automatically detect and adapt to the indentation style used in your files, whether it’s tabs or spaces.
 
@@ -134,8 +124,6 @@ You can adjust the tab size width or number of spaces by clicking the value in t
   macTitle="Beautify Code: Cmd + B"
 />
 
----
-
 ## Editing Preferences
 You can personalize Phoenix to suit your workflow by adjusting the preferences.
 
@@ -152,4 +140,3 @@ Once selected, two files will appear side by side:
 ![Modify Preferences Image](images/editingText/modify-preferences.png "Modify phcode.json file to update the preferences settings")
 To change a preference, simply write the desired configuration and values in the **phcode.json** and save the file. These custom settings will automatically override the corresponding values in the default preferences.
 
----

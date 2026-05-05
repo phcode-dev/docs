@@ -12,8 +12,6 @@ The **Measurements** feature displays ruler lines extending from the edges of a 
 
 > Ruler lines appear in blue for editable elements and gray for non-editable (dynamically created) elements.
 
----
-
 ## Enabling Measurements
 
 To enable measurements, click the **mode selector dropdown** in the Live Preview toolbar and select **Show Measurements**. By default, this option is unchecked.

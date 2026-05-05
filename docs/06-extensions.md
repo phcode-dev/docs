@@ -46,8 +46,6 @@ For authoring extensions and themes, see the API section:
 - [Debugging Extensions](/api/debugging-extensions)
 - [Publishing Extensions](/api/publishing-extensions)
 
----
-
 ## Popular extensions
 
 A curated list of community extensions worth checking out.
@@ -63,8 +61,6 @@ For more details, visit the [GitHub repository](https://github.com/zorgzerg/brac
 
 ![Minimap](./images/popular-extensions/minimap.png)
 
----
-
 ### Show Whitespace
 Created by: [Dennis Kehrig](https://github.com/DennisKehrig)
 
@@ -75,8 +71,6 @@ For more details, visit the [GitHub repository](https://github.com/DennisKehrig/
 `Show Whitespace` in action :-
 
 ![Show Whitespace](./images/popular-extensions/Show-Whitespace.png)
-
----
 
 ### 1-2-3
 Created by: [Michal Jeřábek](https://github.com/michaljerabek)
@@ -89,8 +83,6 @@ For more details, visit the [GitHub repository](https://github.com/michaljerabek
 
 ![1-2-3](./images/popular-extensions/1-2-3.gif)
 
----
-
 ### FuncDocr
 Created by: [Ole Kröger](https://github.com/Wikunia)
 
@@ -102,8 +94,6 @@ For more details, visit the [GitHub repository](https://github.com/wikunia/brack
 
 ![FuncDocr](./images/popular-extensions/Func-Docr.gif)
 
----
-
 ### Remove Comments
 Created by: [Pluto](https://github.com/devvaannsh)
 
@@ -114,8 +104,6 @@ For more details, visit the [GitHub repository](https://github.com/devvaannsh/Re
 `Remove Comments` in action :-
 
 <VideoPlayer src="https://docs-images.phcode.dev/videos/popular-extensions/Remove-Comments.mp4" />
-
----
 
 ### Autosave Files on Window Blur
 Created by: [Marty Penner](https://github.com/martypenner)
