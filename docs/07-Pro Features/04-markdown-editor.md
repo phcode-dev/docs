@@ -37,6 +37,14 @@ Use the **cursor sync** button in the toolbar to toggle this behavior on or off.
   src="https://docs-images.phcode.dev/videos/markdown/toggle-cursor-sync.mp4"
 />
 
+## Theme and Print
+
+You can also switch the markdown preview between light and dark themes using the **theme toggle** in the toolbar, or print the rendered document with the **print** button.
+
+![Theme toggle button in the markdown toolbar with tooltip](./images/markdown-theme-toggle.png "The theme toggle in the markdown toolbar")
+
+> Print is not available on macOS desktop apps.
+
 ## Text Formatting
 
 Select the text you want to format and click a formatting button, or use the keyboard shortcut. If no text is selected, the formatting applies to the word at your cursor.
