@@ -46,7 +46,7 @@ If you create a new file and the file type is not recognized, it will be treated
 
 The file will now be treated as the selected language type, and syntax highlighting will be applied accordingly.
 
-To learn more about **File Type Associations**. [Click Here](../04-language-and-encoding.md#file-type-associations)
+To learn more about **File Type Associations**. [Click Here](../05-file-management.md#file-type-associations)
 
 
 ### Change Syntax Highlighting for a Particular File Type
