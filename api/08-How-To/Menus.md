@@ -10,8 +10,6 @@ This document outlines the basic features of working with Menus, including:
 * [How to position a Menu item](#position-the-menu-item)
 * [How to add a keyboard shortcut to a Menu item](#attach-a-keyboard-shortcut-to-a-menu-item)
 
----
-
 
 ## Adding a Menu
 

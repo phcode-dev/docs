@@ -21,8 +21,6 @@ The snippets you define are available globally, so you don’t need to recreate 
   src="https://docs-images.phcode.dev/videos/custom-snippets/custom-snippets-main.mp4"
 />
 
----
-
 ### Custom Snippets Panel
 You can manage all your snippets from the **Custom Snippets** panel.
 To access it, navigate to `File` → `Custom Snippets...`.
@@ -33,8 +31,6 @@ The panel appears at the bottom of the editor.
 
 ![Custom Snippets Panel](./images/CustomSnippets/custom-snippets-empty-panel.png "Custom Snippets panel")
 If you haven’t added any snippets yet, the panel will be empty.
-
----
 
 ### Add Snippet
 To add a snippet, click on the `'+'` button that appears on the panel header.
@@ -66,8 +62,6 @@ After entering the values, click `Save`.
 ![Snippets Count](./images/CustomSnippets/custom-snippets-count.png "Snippets Count")
 In the panel header, you can see the total number of snippets you’ve added. You can create as many snippets as you like.
 
----
-
 ### Edit Snippet
 You can edit an existing snippet whenever you need to make changes. To edit a snippet, click the snippet you want to edit from the snippets list. This will open the **Edit Snippet** panel.
 
@@ -81,8 +75,6 @@ After making your changes, click `Save`.
 
 You can see that the snippet is now updated with the new **Abbreviation**.
 
----
-
 ### Delete Snippet
 Deleting a snippet is simple. From the snippets list, click the *Trash Bin* icon on the right side of the snippet you want to remove.
 This will immediately delete the snippet.
@@ -90,8 +82,6 @@ This will immediately delete the snippet.
 ![Delete Snippet](./images/CustomSnippets/delete-snippet.png "Delete Snippet")
 
 > ⚠️ Caution: Deleting a snippet is permanent and cannot be undone.
-
----
 
 ### Filter Snippets
 When you have a large collection of snippets, the **Filter** feature helps you quickly narrow down the list.
@@ -104,8 +94,6 @@ You can filter the list by any value, such as **Abbreviation**, **Description**,
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/custom-snippets/filter-snippets.mp4"
 />
-
----
 
 ### Snippet Cursor Position
 
@@ -132,8 +120,6 @@ Once you reach the final cursor position, pressing `Tab` again will **remove any
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/custom-snippets/cursor-snippets.mp4"
 />
-
----
 
 ## FAQ
 

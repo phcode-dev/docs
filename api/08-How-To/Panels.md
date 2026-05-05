@@ -22,8 +22,6 @@ This document outlines the basic features of working with Panels.
 * [How to manage Bottom Panel state](#managing-bottom-panel-state)
 * [Best Practices for Panels](#best-practices)
 
----
-
 ## Creating a Plugin Panel
 
 To create a plugin panel, follow these steps:

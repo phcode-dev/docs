@@ -8,8 +8,6 @@ This document outlines the basic features of working with Dialogs, including:
 * [How to create custom Dialog Box](#creating-custom-dialog-boxes)
 * [How to handle the button clicks](#handle-button-clicks)
 
----
-
 ## Adding a Dialog Box and Buttons
 
 To add a dialog box, follow these steps:

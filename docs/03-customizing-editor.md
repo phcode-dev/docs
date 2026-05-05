@@ -7,8 +7,6 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 This section provides an overview of the editor appearance and display settings in **Phoenix Code**.
 
----
-
 ## Themes
 
 Phoenix Code ships with two built-in themes:
@@ -32,8 +30,6 @@ The **Use Theme Scrollbars** checkbox controls scrollbar styling.
 
 - **On** (default): scrollbars use colors from the active theme.
 - **Off**: scrollbars use your operating system's default style.
-
----
 
 ## Font
 
@@ -75,8 +71,6 @@ Type a CSS `font-family` string into the **Font Family** field. The first availa
 Wrap names containing spaces in single quotes. 
 > The font must be installed on your system. Phoenix Code only bundles `SourceCodePro` (the default).
 
----
-
 ## Line Height
 
 The **Line Height** feature lets you customize the vertical spacing between lines of text in the editor.
@@ -96,8 +90,6 @@ Adjustments apply instantly, updating the editor dynamically.
 
 You can also modify the line height by updating the `themes.editorLineHeight` property in the preferences file. [Click Here](./editing-text#editing-preferences) to read on how to edit the preferences.
 
----
-
 ## Scroll Sensitivity
 
 **Scroll Sensitivity** sets a multiplier for mouse-wheel scroll speed in the editor. Increase it if scrolling feels too slow, decrease it if scrolling feels too fast.
@@ -116,8 +108,6 @@ The new value applies immediately.
 
 Set the `mouseWheelScrollSensitivity` property in the preferences file. Accepts any number from `0.1` to `10`. [Click Here](./editing-text#editing-preferences) to read on how to edit the preferences.
 
----
-
 ## Indent Guide Lines
 
 ![Indent Guide Lines Image](images/editingText/indent-display.png "The vertical lines are Indent Guide Lines")
@@ -135,8 +125,6 @@ You can customize indent guide behavior in the editor preferences with the follo
 
 **editor.indentGuides**: Set to `true` to display indent guide lines; set to `false` to hide them.
 **editor.indentHideFirst**: Set to `true` to hide the first indent guide line; set to `false` to display it.
-
----
 
 ## Editor Rulers
 
@@ -180,8 +168,6 @@ colored green and red respectively.
 To set up different rulers for individual projects, create a `.phcode.json` file
 in the root directory of each project. Include the same ruler configurations as
 shown in the example above.
-
----
 
 ## No-Distractions Mode
 **No-Distractions Mode** helps you focus by minimizing visual clutter and hiding non-essential interface elements, creating a clean, minimalist editing environment.

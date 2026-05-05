@@ -6,8 +6,6 @@ This document outlines the basic features of working with Status Bar, including:
 
 * [How to add a button on Status Bar](#adding-a-button-on-status-bar)
 
----
-
 ## Adding a button on Status Bar
 
 1. Import the `StatusBar` module.

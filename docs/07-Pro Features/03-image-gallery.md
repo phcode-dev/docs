@@ -17,8 +17,6 @@ By default, the Image Gallery appears when you select an `<img>` element. You ca
 
 ![Image Gallery](./images/image-gallery.png "Image Gallery")
 
----
-
 ## Browsing Images
 
 Type a search term in the search box and press `Enter` or click the search icon. The gallery displays matching images from the image providers. Use the left and right arrows to browse through the results.
@@ -42,16 +40,12 @@ Below each thumbnail, the photographer's name and a link to their profile is dis
   src="https://docs-images.phcode.dev/videos/live-preview-edit/image-gallery.mp4"
 />
 
----
-
 ## Selecting from Device
 
 Click the **Select from device** button at the top of the gallery to choose an image from your local files.  
 If no folder has been selected yet, Phoenix Code prompts you to choose where the image should be saved.
 
 ![Select From Device](./images/select-from-device.png "Select from Device")
-
----
 
 ## Folder Selection Dialog
 
@@ -69,8 +63,6 @@ The dialog includes:
 To change the saved folder later, click the **Folder Selection** button *(folder icon)* in the Image Gallery header.
 
 ![Folder selection button](./images/folder-selection-button.png "Folder Selection Button")
-
---- 
 
 ## Image Size Selection
 
