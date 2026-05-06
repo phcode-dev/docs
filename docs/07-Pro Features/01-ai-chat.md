@@ -2,11 +2,24 @@
 title: AI Chat
 ---
 
-Phoenix Code comes with a built-in AI assistant powered by Claude Code. You can ask it to write code, fix bugs, explain files, and more. The AI can read and edit your project files, run terminal commands, take screenshots of your Live Preview, and work alongside you as you code.
+import React from 'react';
+import VideoPlayer from '@site/src/components/Video/player';
 
-> AI Chat is available only in desktop apps. Free users get a daily and monthly chat limit. [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) for unlimited access.
+:::info Pro Feature
+[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+:::
 
-<!-- Add an image here showing the AI Chat panel in the sidebar with a conversation -->
+Phoenix Code comes with a built-in AI assistant powered by Claude Code. You can ask it to write code, fix bugs, explain files, and more. The AI can read and edit your project files, run terminal commands, take screenshots, and work alongside you as you code.
+
+> AI Chat is available only in desktop apps. 
+
+:::note
+Free users get a daily and monthly chat limit. [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) for unlimited access.
+:::
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/website/videos/ai-pro-dialog.mp4"
+/>
 
 ## Getting Started
 
@@ -28,6 +41,8 @@ Type your message in the input box at the bottom and press `Enter` to send. Pres
 
 While the AI is working, you can type your next message. It shows up as a queued message and gets sent automatically once the AI finishes its current response.
 
+To stop the AI mid-response, click the **stop button** *(square icon)* that appears next to the send button while the AI is working, or press `Escape`.
+
 ### Context
 
 Phoenix Code automatically provides context about what you're working on. Small chips appear above the input box showing:
@@ -40,7 +55,12 @@ You can dismiss any of these by clicking the **x** button on the chip.
 
 ## Attachments and Screenshots
 
-Click the **paperclip button** to attach files from your project. You can attach images (PNG, JPG, GIF, WebP, SVG) and other files like code or documents.
+Click the **paperclip button** to attach a file or folder. The dropdown lets you choose:
+
+- **Attach a file** - attach a single file. Supported image formats include PNG, JPG, GIF, WebP, and SVG. You can also attach code or document files.
+- **Add folder as context** - attach an entire folder so the AI can read its contents.
+
+You can also paste an image directly from your clipboard into the input box.
 
 Click the **camera button** to take a screenshot and attach it. The dropdown lets you choose what to capture:
 
@@ -48,12 +68,13 @@ Click the **camera button** to take a screenshot and attach it. The dropdown let
 - **Selected Element** - the currently selected element in Live Preview
 - **Full Editor** - the entire editor window
 - **Area** - a custom region you select with a crop tool
+- **Upload from Device** - choose an existing image from your computer instead of taking a new screenshot
 
 ## Permission Modes
 
 The AI has three permission levels that control how much it can do on its own. Click the **permission label** at the bottom of the panel to cycle between them.
 
-- **Plan** - the AI proposes a plan first. You review it and click **Approve** to proceed or **Revise** to give feedback. Good for complex tasks where you want to stay in control.
+- **Plan** - the AI proposes a plan first as a card in the chat (titled **Proposed Plan**). Click the **expand icon** in the card header to view the plan in full screen. Then click **Approve** to proceed, or **Revise** to open an inline feedback box where you describe what should change before the AI tries again. Good for complex tasks where you want to stay in control.
 - **Edit** (default) - the AI can read and edit files on its own, but asks for your approval before running terminal commands.
 - **Full Auto** - the AI works through everything without pausing. Terminal commands still ask for confirmation.
 
@@ -67,9 +88,11 @@ Sessions are saved per project, so each project has its own chat history.
 
 ## Undo and Restore
 
-Before the AI makes any edits, Phoenix Code creates a **restore point**. If you don't like the changes, click **Undo** on the edit summary card to revert all the files back to how they were.
+Before each AI response that edits files, Phoenix Code creates a **restore point**. Each edit summary card has a button to revert to that point: it reads **Undo** on the most recent response and **Restore to this point** on earlier ones. Both do the same thing: they roll your files back to the saved state.
 
-If the AI made changes across multiple responses, you can click **Restore to this point** on any earlier edit summary to go back to that state.
+The first time you undo or restore in a session, Phoenix Code shows a confirmation dialog before reverting.
+
+> Restore only reverts changes made by the AI. Edits you made outside the AI Chat are not tracked and may be lost if they overlap with files the AI also edited. For full version history, use version control like Git.
 
 <!-- Add an image here showing an edit summary card with the Undo button and file change stats -->
 
@@ -90,4 +113,5 @@ Click the **gear icon** in the chat panel to open AI settings. Here you can:
 | Send message | `Enter` |
 | New line | `Shift + Enter` |
 | Cycle permission mode | `Shift + Tab` |
-| Cancel or clear input | `Escape` |
+| Stop the AI mid-response | `Escape` (while AI is generating) |
+| Clear input and focus the editor | `Escape` (when idle) |
