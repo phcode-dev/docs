@@ -27,13 +27,11 @@ AI Chat requires the Claude Code CLI to be installed on your machine. If it's no
 
 Once installed, click **Set up Claude Code** to log in. Phoenix Code detects when the login is complete and opens the chat panel automatically.
 
-<!-- Add an image here showing the setup/install screen -->
-
 ## Opening the AI Panel
 
 Click the **AI tab** *(sparkle icon)* in the sidebar to open the chat panel.
 
-<!-- Add an image here showing the AI tab in the sidebar -->
+![AI tab in the sidebar](./images/ai-panel.png "AI tab in the sidebar")
 
 ## Sending Messages
 
@@ -42,6 +40,8 @@ Type your message in the input box at the bottom and press `Enter` to send. Pres
 While the AI is working, you can type your next message. It shows up as a queued message and gets sent automatically once the AI finishes its current response.
 
 To stop the AI mid-response, click the **stop button** *(square icon)* that appears next to the send button while the AI is working, or press `Escape`.
+
+![Stop button](./images/ai-stop-button.png "Stop button")
 
 ### Context
 
@@ -60,15 +60,19 @@ Click the **paperclip button** to attach a file or folder. The dropdown lets you
 - **Attach a file** - attach a single file. Supported image formats include PNG, JPG, GIF, WebP, and SVG. You can also attach code or document files.
 - **Add folder as context** - attach an entire folder so the AI can read its contents.
 
+![Paperclip attach dropdown](./images/ai-attach-dropdown.png "Paperclip attach dropdown")
+
 You can also paste an image directly from your clipboard into the input box.
 
 Click the **camera button** to take a screenshot and attach it. The dropdown lets you choose what to capture:
 
 - **Live Preview** - your Live Preview panel (if open)
-- **Selected Element** - the currently selected element in Live Preview
+- **Live Preview Selection** - the currently selected element in Live Preview
 - **Full Editor** - the entire editor window
-- **Area** - a custom region you select with a crop tool
+- **Select Area** - a custom region you select with a crop tool
 - **Upload from Device** - choose an existing image from your computer instead of taking a new screenshot
+
+![Camera screenshot dropdown](./images/ai-screenshot-dropdown.png "Camera screenshot dropdown")
 
 ## Permission Modes
 
@@ -78,13 +82,15 @@ The AI has three permission levels that control how much it can do on its own. C
 - **Edit** (default) - the AI can read and edit files on its own, but asks for your approval before running terminal commands.
 - **Full Auto** - the AI works through everything without pausing. Terminal commands still ask for confirmation.
 
-<!-- Add an image here showing the permission mode selector -->
+![Permission mode selector](./images/ai-permissions.png "Permission mode selector")
 
 ## Session History
 
 Every conversation is saved automatically. Click the **history dropdown** at the top of the panel to see your recent sessions and switch between them.
 
-Sessions are saved per project, so each project has its own chat history.
+![Session history dropdown](./images/ai-history.png "Session history dropdown")
+
+> Sessions are saved per project, so each project has its own chat history.
 
 ## Undo and Restore
 
@@ -94,17 +100,19 @@ The first time you undo or restore in a session, Phoenix Code shows a confirmati
 
 > Restore only reverts changes made by the AI. Edits you made outside the AI Chat are not tracked and may be lost if they overlap with files the AI also edited. For full version history, use version control like Git.
 
-<!-- Add an image here showing an edit summary card with the Undo button and file change stats -->
+![Undo and Restore](./images/ai-undo.png "Undo and Restore")
 
 ## Settings
 
-Click the **gear icon** in the chat panel to open AI settings. Here you can:
+Click the **gear icon** in the chat panel to open AI settings.
+![AI settings button](./images/ai-settings.png "AI settings button")
 
+This will open a dialog where you can:
 - Switch between AI providers
 - Add a custom API provider with your own API key and endpoint
 - Set a custom API timeout
 
-<!-- Add an image here showing the AI settings dialog with provider configuration -->
+![Claude Code Settings dialog](./images/ai-settings-dialog.png "Claude Code Settings dialog")
 
 ## Keyboard Shortcuts
 
