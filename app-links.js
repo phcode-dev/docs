@@ -130,11 +130,11 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/claude-code-integration',
-		to: '/docs/file-management',
+		to: '/docs/Pro Features/ai-chat',
 	},
 	{
 		from: '/app-links/claude-code-config',
-		to: '/docs/file-management',
+		to: '/docs/Pro Features/ai-chat',
 	},
 	{
 		from: '/app-links/design-mode',
@@ -142,7 +142,7 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/ai-chat',
-		to: '/docs/file-management',
+		to: '/docs/Pro Features/ai-chat',
 	},
 	{
 		from: '/app-links/markdown-editor',
