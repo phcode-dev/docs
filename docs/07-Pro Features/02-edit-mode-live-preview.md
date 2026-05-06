@@ -160,6 +160,10 @@ To start editing, **double-click** an element in the Live Preview or click the *
 Edit the text as needed, then press `Enter` to save or `Esc` to cancel.  
 To insert a line break, press `Shift + Enter`.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/inline-text-editing.mp4"
+/>
+
 > Text editing is available only for elements that can contain text. It is not supported for elements such as `<img>`, `<video>`, `<br>`, and similar non-text elements.
 
 ### Formatting Toolbar
@@ -185,15 +189,15 @@ Click the **More** button *(three-dots icon)* on the right side of the toolbar t
 
 ![More formatting options](./images/formatting-more.png "More formatting options")
 
-<VideoPlayer
-  src="https://docs-images.phcode.dev/videos/live-preview-edit/inline-text-editing.mp4"
-/>
-
 ## Drag and Drop
 
 The **Drag and Drop** feature lets you reposition elements in the Live Preview by dragging them to a new location. The source code is automatically updated with the new structure when you drop the element.
 
 To drag an element: click and hold the element, then move your mouse to the desired location. The element becomes semi-transparent while dragging. As you hover over potential drop targets, Phoenix Code displays visual indicators showing where the element will be placed.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/drag-drop.mp4"
+/>
 
 #### Visual Indicators
 - **Arrow markers** to indicate the drop position:
@@ -211,21 +215,19 @@ To cancel a drag, press `Esc`.
 
 > When you drag an element near the top or bottom edge of the viewport, the Live Preview automatically scrolls in that direction.
 
-<VideoPlayer
-  src="https://docs-images.phcode.dev/videos/live-preview-edit/drag-drop.mp4"
-/>
-
 ## Edit Hyperlink
 
 The **Edit Hyperlink** feature lets you modify the URL and behavior of anchor (`<a>`) elements directly in the Live Preview.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/edit-hyperlink.mp4"
+/>
 
 To edit a hyperlink, select an `<a>` element and click the **Edit Hyperlink** button *(chain icon)* in the [Control Box](#control-box). A panel appears near the element with the following options:
 
 - **URL input**: Edit the link's destination (`href` attribute). Press `Enter` to save your changes or `Esc` to cancel.
 - **Opens in new tab**: Toggle this option to make the link open in a new tab. This adds `target="_blank"` in your source code.
 - **Open this link**: Opens the URL in your default browser. This option is available only in desktop apps.
-
-<!-- Add an image here showing the Edit Hyperlink panel with URL input, new tab toggle, and open link button -->
 
 ## Cut, Copy, and Paste
 
