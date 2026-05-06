@@ -9,16 +9,17 @@ import VideoPlayer from '@site/src/components/Video/player';
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
-**Edit Mode** lets you modify your page directly in the Live Preview. You can edit text, change element tags, update classes and IDs, insert new elements, rearrange them with drag and drop, swap images, edit links, and much more.  
+**Edit Mode** lets you modify your page directly in the Live Preview. You can edit text, insert new elements, rearrange them with drag and drop, swap images, edit links, and much more.  
 **Phoenix Code** updates your source code automatically as you make changes.
 
 <VideoPlayer
-  src="https://docs-images.phcode.dev/videos/live-preview-edit/live-preview-edit.mp4"
+  src="https://docs-images.phcode.dev/website/videos/lp-edit-pro-dialog.mp4"
 />
 
 ## Enabling Edit Mode
 
-To switch to Edit Mode, click the **chevron icon** next to the **pen icon** in the Live Preview toolbar, then select **Edit Mode**.
+To switch to Edit Mode, click the **pen icon** in the Live Preview toolbar. This enables full interactivity in the Live Preview.
+> When enabled, the **pen icon** is highlighted in orange color.
 
 ![Live Preview Edit mode](./images/lp-mode.png "Live Preview edit mode")
 
@@ -28,7 +29,7 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 
 When you click an element in the Live Preview, a **Control Box** appears near it. This floating panel shows you what the element is and gives you tools to edit it.
 
-<!-- Add an image here showing the Control Box with the info section and tools section visible -->
+![Control Box](./images/control-box.png "Control Box")
 
 > The Control Box is shown only for editable elements. It is not shown for non-editable elements that are dynamically created by JavaScript.
 
@@ -40,7 +41,7 @@ The left side of the Control Box displays information about the selected element
 - **Dimensions**: The element’s size in pixels (width × height)
 - **CSS classes**: The element’s classes, shown with a `.` prefix. If the element has more than three classes, only the first three are shown, followed by a “+N more” indicator
 
-<!-- Add an image here showing the info section of the Control Box with tag name, ID, dimensions, and classes -->
+![Element Properties panel](./images/element-properties.png "Element Properties panel")
 
 Clicking on the info section opens the [Element Properties](#edit-element-properties) editor, where you can edit the element’s tag name, classes, and ID.
 
@@ -48,13 +49,15 @@ Clicking on the info section opens the [Element Properties](#edit-element-proper
 
 The **Select Parent** button *(up-arrow icon)* appears next to the info section. Clicking it selects the parent of the currently selected element.
 
+![Select Parent button](./images/select-parent.png "Select Parent button")
+
 > This button appears only when a valid parent exists. It is not shown when the parent is `body`, `html`, or a JavaScript-rendered element.
 
 ### Tools
 
 The right side of the Control Box displays a set of tools you can use to modify the selected element. The available tools depend on the element type. Some buttons are shown for all elements, while others appear only for specific element types.
 
-<!-- Add an image here showing the tools section of the Control Box -->
+![Tools section](./images/tools.png "Tools section")
 
 - **Insert Element** *(plus icon)*: Opens a panel where you can insert a new HTML element before, after, or inside the selected element.  
   *This option is available for all elements.*  
@@ -86,7 +89,7 @@ The right side of the Control Box displays a set of tools you can use to modify 
 
 The **Hover Box** is a small tooltip that appears when you hover over an element in Edit Mode. It shows an icon and a label that describe the element type (for example, “Image”, “Button”, “Container”, “Paragraph”).
 
-<!-- Add an image here showing the Hover Box tooltip on an element -->
+![Hover Box](./images/hover-box.png "Hover Box")
 
 The Hover Box helps you quickly identify elements as you move your cursor over the page, without needing to click on them.
 
@@ -98,15 +101,7 @@ By default, in Edit Mode, hovering over elements in the Live Preview highlights 
 
 To toggle this setting, click the **chevron icon** next to the **pen icon** in the Live Preview toolbar and unselect **Inspect Element on Hover**. By default, this option remains checked.
 
-<!-- Add an image here showing the Inspect Element on Hover option in the mode selector dropdown -->
-
-When **Inspect Element on Hover** is checked (default):
-- Hovering over elements shows highlights and the Hover Box
-- Clicking an element selects it and displays the Control Box
-
-When **Inspect Element on Hover** is unchecked:
-- Hovering over elements has no effect
-- Clicking an element shows highlights and the Control Box
+![Inspect Element on Hover](./images/inspect-element-hover.png "Inspect Element on Hover option")
 
 Alternatively, you can change this setting by updating the `livePreviewInspectElement` preference in the preferences file. Set it to `"hover"` (default) or `"click"`.  
 See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
@@ -117,7 +112,7 @@ The **Element Properties** panel lets you edit an element's tag name, ID, classe
 
 To open the panel, click on the **info section** (the left side showing the tag name, ID, and dimensions) of the [Control Box](#control-box).
 
-<!-- Add an image here showing the Element Properties panel with the tag, ID, classes, and attributes sections -->
+![Element Properties panel](./images/element-properties.png "Element Properties panel")
 
 The panel has four sections:
 
@@ -125,8 +120,6 @@ The panel has four sections:
 - **ID**: Change or remove the element's ID.
 - **Classes**: Existing classes are shown as chips with a **×** button to remove them. Click **+** to add new classes. You can type multiple class names separated by spaces.
 - **Attributes**: All other HTML attributes are shown as editable name-value pairs. Click **+** to add a new attribute, or **×** to remove one.
-
-<!-- Add an image here showing the classes section with a few class chips and the add class input -->
 
 To undo all changes made in the panel, click the **Reset** button in the panel header. This reverts the element to the state it was in when you first opened the panel.
 
@@ -136,7 +129,7 @@ The **Insert Element** panel lets you add new HTML elements to your page directl
 
 To open the panel, click the **Insert Element** button *(plus icon)* in the [Control Box](#control-box).
 
-<!-- Add an image here showing the Insert Element panel with the position bar, search, and element grid -->
+![Insert Element panel](./images/insert-element.png "Insert Element panel")
 
 ### Choosing a Position
 
@@ -155,7 +148,7 @@ The panel shows a grid of commonly used HTML elements like Paragraph, Heading, L
 
 Use the **search bar** at the top to filter elements by name or tag. If no matching element exists, you can type any valid HTML tag name and click **Create &lt;tag&gt;** to insert a custom element.
 
-<!-- Add an image here showing the search bar with results and the "Create" custom element option -->
+![Create custom element](./images/insert-element-custom.png "Create custom element")
 
 After inserting an element, Phoenix Code automatically selects it in the Live Preview so you can continue editing it.
 
@@ -173,7 +166,7 @@ To insert a line break, press `Shift + Enter`.
 
 When you start editing text, a **Formatting Toolbar** appears near the element. It gives you quick access to common text formatting options.
 
-<!-- Add an image here showing the Formatting Toolbar with the B, I, U buttons and the more button -->
+![Formatting Toolbar](./images/formatting-toolbar.png "Formatting Toolbar")
 
 Select the text you want to format and click a formatting button, or use the keyboard shortcut. If no text is selected, the formatting is applied to the entire element. Clicking a format that is already applied removes it.
 
@@ -190,7 +183,7 @@ Click the **More** button *(three-dots icon)* on the right side of the toolbar t
 - **Superscript**: `<sup>` tag
 - **Code**: `<code>` tag
 
-<!-- Add an image here showing the More formatting dropdown with Strikethrough, Subscript, Superscript, and Code options -->
+![More formatting options](./images/formatting-more.png "More formatting options")
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/live-preview-edit/inline-text-editing.mp4"
