@@ -1,5 +1,5 @@
 ---
-title: Edit Mode - Live Preview
+title: Live Preview Edit
 ---
 
 import React from 'react';
@@ -18,7 +18,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 ## Enabling Edit Mode
 
-To switch to Edit Mode, click the **chevron icon** next to the **Preview Mode** button *(pen icon)* in the Live Preview toolbar, then select **Edit Mode**.
+To switch to Edit Mode, click the **chevron icon** next to the **pen icon** in the Live Preview toolbar, then select **Edit Mode**.
 
 ![Live Preview Edit mode](./images/lp-mode.png "Live Preview edit mode")
 
@@ -96,7 +96,7 @@ The Hover Box helps you quickly identify elements as you move your cursor over t
 
 By default, in Edit Mode, hovering over elements in the Live Preview highlights them and displays the [Hover Box](#hover-box). You can change this behavior to show highlights only when you click elements instead.
 
-To toggle this setting, click the **chevron icon** next to the **Preview Mode** button *(pen icon)* in the Live Preview toolbar and unselect **Inspect Element on Hover**. By default, this option remains checked.
+To toggle this setting, click the **chevron icon** next to the **pen icon** in the Live Preview toolbar and unselect **Inspect Element on Hover**. By default, this option remains checked.
 
 <!-- Add an image here showing the Inspect Element on Hover option in the mode selector dropdown -->
 
@@ -108,7 +108,7 @@ When **Inspect Element on Hover** is unchecked:
 - Hovering over elements has no effect
 - Clicking an element shows highlights and the Control Box
 
-Alternatively, you can change this setting by updating the `livePreviewInspectElement` preference in the preferences file. Set it to `”hover”` (default) or `”click”`.  
+Alternatively, you can change this setting by updating the `livePreviewInspectElement` preference in the preferences file. Set it to `"hover"` (default) or `"click"`.  
 See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
 ## Edit Element Properties
@@ -196,12 +196,6 @@ Click the **More** button *(three-dots icon)* on the right side of the toolbar t
   src="https://docs-images.phcode.dev/videos/live-preview-edit/inline-text-editing.mp4"
 />
 
-## Image Gallery
-
-The **Image Gallery** lets you browse and select images from online image providers or your device and use them in your project directly.
-
-[Read More](./image-gallery)
-
 ## Drag and Drop
 
 The **Drag and Drop** feature lets you reposition elements in the Live Preview by dragging them to a new location. The source code is automatically updated with the new structure when you drop the element.
@@ -239,12 +233,6 @@ To edit a hyperlink, select an `<a>` element and click the **Edit Hyperlink** bu
 - **Open this link**: Opens the URL in your default browser. This option is available only in desktop apps.
 
 <!-- Add an image here showing the Edit Hyperlink panel with URL input, new tab toggle, and open link button -->
-
-## Measurements
-
-The **Measurements** feature displays ruler lines from the edges of a selected element to the document edges, showing exact pixel positions.
-
-[Read More](./measurements)
 
 ## Cut, Copy, and Paste
 
