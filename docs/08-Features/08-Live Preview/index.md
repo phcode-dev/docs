@@ -116,9 +116,7 @@ The center section of the toolbar groups three controls for the currently previe
 
 * **Browser Icons**: Select a specific browser icon to open the page in that browser. This helps you see how your page looks across different browsers. The icons are hidden by default and only appear when you hover over the toolbar.
 
-  :::note
-  This option is available only in Desktop apps.
-  :::
+  > This option is available only in Desktop apps.
 
 
 ![Live Preview right toolbar](../images/livePreview/lp-right.png "Live Preview settings and device size")
