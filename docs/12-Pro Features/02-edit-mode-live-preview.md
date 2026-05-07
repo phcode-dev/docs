@@ -1,5 +1,6 @@
 ---
 title: Live Preview Edit
+slug: live-preview-edit
 ---
 
 import React from 'react';

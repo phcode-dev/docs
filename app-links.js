@@ -74,11 +74,11 @@ export const appLinks = [
 	},
     {
 		from: '/app-links/indent-guide-lines',
-		to: '/docs/editing-text#indent-guide-lines',
+		to: '/docs/customizing-editor#indent-guide-lines',
 	},
     {
 		from: '/app-links/emmet',
-		to: '/docs/editing-text#emmet',
+		to: '/docs/Features/emmet',
 	},
     {
 		from: '/app-links/git',
@@ -138,7 +138,7 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/design-mode',
-		to: '/docs/file-management',
+		to: '/docs/design-mode',
 	},
 	{
 		from: '/app-links/ai-chat',
@@ -146,14 +146,14 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/markdown-editor',
-		to: '/docs/file-management',
+		to: '/docs/Pro Features/markdown-editor',
 	},
 	{
 		from: '/app-links/resize-ruler',
 		to: '/docs/Pro Features/device-preview',
 	},
 	{
-		from: '/app-links//terminal',
-		to: '/docs/file-management',
+		from: '/app-links/terminal',
+		to: '/docs/Features/terminal',
 	}
 ];

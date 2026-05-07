@@ -14,7 +14,7 @@ The **Measurements** feature displays ruler lines extending from the edges of a 
 
 ## Enabling Measurements
 
-While in [Edit Mode](./edit-mode-live-preview), click the dropdown arrow next to the pen icon in the Live Preview toolbar. This opens a menu where you can toggle **Show Measurements** on or off.
+While in [Edit Mode](./live-preview-edit), click the dropdown arrow next to the pen icon in the Live Preview toolbar. This opens a menu where you can toggle **Show Measurements** on or off.
 > By default, measurements are disabled.
 
 ![Enable Show Measurements](./images/enable-show-measurements.png "Enable Show Measurements")
