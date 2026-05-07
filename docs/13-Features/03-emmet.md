@@ -73,7 +73,7 @@ To enable or disable the **Emmet** feature, go to `Edit` > `Emmet`.
 ![Toggle Emmet feature](./images/Emmet/toggle-emmet.png "Toggle Emmet")
 
 You can also toggle Emmet by updating the `emmet` property in the preferences file.
-See [Editing Preferences](../03-editing-text.md#editing-preferences) for more details.
+See [Editing Preferences](../editing-text#editing-preferences) for more details.
 
 ## FAQ
 

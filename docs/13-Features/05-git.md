@@ -21,7 +21,7 @@ To clone an existing repository in **Phoenix Code**, follow these steps:
 1. Click on the `Start Project` button. 
 
 ![Start Project](./images/git-images/start-project.png "Start Project")
-> This will open the Quick Start project dialog box, which offers various options. [Read more](../05-quick-start-project.md) about Quick Start project here.
+> This will open the Quick Start project dialog box, which offers various options. [Read more](../quick-start-project) about Quick Start project here.
 
 2. Select `Get from Git`.
 
