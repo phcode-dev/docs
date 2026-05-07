@@ -41,7 +41,7 @@ While you drag the edge of the Live Preview panel, a ruler appears across the to
 
 ### In Design Mode
 
-In [Design Mode](./edit-mode-live-preview), the Live Preview takes over the full window. In that case, you'll see resize handles directly on the page: drag the left or right handle to change the **width**, or drag the bottom handle to change the **height**. The same ruler appears, and the label now shows both dimensions, like `iPad Mini — 768px × 1024px`.  
+In [Design Mode](./live-preview-edit), the Live Preview takes over the full window. In that case, you'll see resize handles directly on the page: drag the left or right handle to change the **width**, or drag the bottom handle to change the **height**. The same ruler appears, and the label now shows both dimensions, like `iPad Mini — 768px × 1024px`.  
 In Design Mode, a **Fit to screen** option is also available in the device dropdown. This resizes the page to fit the available space in the Live Preview.
 
 

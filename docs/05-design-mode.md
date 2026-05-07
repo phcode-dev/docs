@@ -14,7 +14,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 ## Why use Design Mode
 
 - **Pair with the AI Chat panel.** Ask the AI to make a change and see it applied instantly in the preview as the code updates without the need to open the editor. [Read More about AI Chat](./Pro%20Features/ai-chat).
-- **Edit visually with Live Preview Edit Mode.** Click elements, drag them, change text, swap images, and much more, directly in the preview. [Read More about Live Preview Edit Mode](./Pro%20Features/edit-mode-live-preview).
+- **Edit visually with Live Preview Edit Mode.** Click elements, drag them, change text, swap images, and much more, directly in the preview. [Read More about Live Preview Edit Mode](./Pro%20Features/live-preview-edit).
 - **Test responsive designs.** With Device Preview, check how your page looks on phone, tablet, and desktop sizes with just a click. [Read More about Device Preview](./Pro%20Features/device-preview).
 
 ## Switching to Design Mode

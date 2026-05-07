@@ -75,9 +75,9 @@ The left side of the toolbar groups three controls:
 
 * **Reload Live Preview**: The leftmost icon is the reload icon. Clicking on it refreshes the Live Preview. It is useful when Live Preview gets out of sync with your code.
 
-* **Design Mode**: The maximize icon after the reload button is for Design Mode. This mode hides the editor and expands the Live Preview to take over the full window, giving you more room to work on the page with [Edit Mode](../../Pro%20Features/edit-mode-live-preview) or [Phoenix Code AI](../../Pro%20Features/ai-chat). Click the icon again to exit Design Mode.
+* **Design Mode**: The maximize icon after the reload button is for Design Mode. This mode hides the editor and expands the Live Preview to take over the full window, giving you more room to work on the page with [Edit Mode](../../Pro%20Features/live-preview-edit) or [Phoenix Code AI](../../Pro%20Features/ai-chat). Click the icon again to exit Design Mode.
 
-* **Live Preview Modes**: The pen icon lets you quickly switch between [Edit Mode](../../Pro%20Features/edit-mode-live-preview) and Preview Mode. The pen lights up when Edit Mode is active. You can also press `F8` to toggle between these two modes.
+* **Live Preview Modes**: The pen icon lets you quickly switch between [Edit Mode](../../Pro%20Features/live-preview-edit) and Preview Mode. The pen lights up when Edit Mode is active. You can also press `F8` to toggle between these two modes.
 
   For more mode options, click the chevron next to the pen icon. This opens a dropdown where you can select from all available Live Preview modes:
 
@@ -85,11 +85,11 @@ The left side of the toolbar groups three controls:
 
   - **Preview Mode**: View-only. The page behaves like a normal browser but still updates as you edit code. All interactions with the page (clicks, hovers, etc.) are disabled.
   - **Highlight Mode**: Click any element to see its paddings and margins. Phoenix Code also jumps to that element in your source code so you can start editing right away.
-  - **Edit Mode**: Edit elements directly in the preview. Insert elements, change text, drag elements, swap images, and more. Phoenix Code updates your source code automatically. [Learn more](../../Pro%20Features/edit-mode-live-preview).
+  - **Edit Mode**: Edit elements directly in the preview. Insert elements, change text, drag elements, swap images, and more. Phoenix Code updates your source code automatically. [Learn more](../../Pro%20Features/live-preview-edit).
 
   When Edit Mode is active, two extra options appear in the same dropdown:
 
-  - **Inspect Element on Hover**: Highlights elements as you hover, instead of only on click. This option is enabled by default. [Learn more](../../Pro%20Features/edit-mode-live-preview#inspect-element-on-hover).
+  - **Inspect Element on Hover**: Highlights elements as you hover, instead of only on click. This option is enabled by default. [Learn more](../../Pro%20Features/live-preview-edit#inspect-element-on-hover).
   - **Show Measurements**: Displays ruler lines from the edges of the selected element to the edges of the Live Preview, with labels showing the exact pixel positions. This option is disabled by default. [Learn more](../../Pro%20Features/measurements).
 
   <VideoPlayer
