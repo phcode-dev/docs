@@ -2,7 +2,7 @@
 slug: release-6.0
 title: Phoenix AI Release (May 2026, V-6.0) is now Live
 description: "Phoenix Code 6.0 introduces an AI assistant powered by Claude Code, a brand new Design Mode, a rich Markdown editor, an integrated terminal, and Phoenix Neo themes."
-authors: [arun, charly, devvaannsh, electrofist, phoenixBot]
+authors: [arun, charly, devvaannsh, electrofist, ansu, phoenixBot]
 tags: [AI, Claude Code, Design Mode, Markdown Editor, Terminal, Live Preview Edit, Phoenix Pro, Phoenix Neo, Windows, Linux, Mac, Release]
 ---
 
