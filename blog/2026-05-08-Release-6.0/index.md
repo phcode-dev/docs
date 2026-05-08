@@ -51,9 +51,7 @@ An easier way to create Markdown files that you can share with others. [Read Mor
 
 *Included with Phoenix Pro.*
 
-Live Preview Edit just got a major upgrade. Format text with bold, italic, and more. Add elements and update tags, classes, and attributes - all directly in Live Preview.
-
-Drag spacing and resize handles to fine-tune margins, padding, width, and height with a real-time ruler. The new Styles panel reads styles straight from your source code, shows code hints with vendor prefixes and color swatches, and writes changes back to the matching selectors. [Read More...](https://docs.phcode.dev/app-links/live-preview-edit)
+Live Preview Edit just got a major upgrade. Format text with bold, italic, and many more. Add new elements and update tags, classes, and attributes - all directly in Live Preview. [Read More...](https://docs.phcode.dev/app-links/live-preview-edit)
 
 ![Live Preview Edit](https://docs-images.phcode.dev/in-app/pro-controlBox.png)
 
@@ -61,19 +59,17 @@ Drag spacing and resize handles to fine-tune margins, padding, width, and height
 
 *Included with Phoenix Pro.*
 
-Switch between popular phones, tablets, and desktops with a single click to see how your page looks at that size.
+Now you can quickly see how your page looks at different device sizes right inside Phoenix Code with a single click.
 
 Phoenix Code also picks up your CSS `@media` breakpoints so you can jump straight to where your layout switches. [Read More...](https://docs.phcode.dev/app-links/resize-ruler)
 
-![Resize Ruler](https://docs-images.phcode.dev/in-app/pro-resizeRuler.png)
+<VideoPlayer
+  src="https://docs-images.phcode.dev/website/videos/device-size-pro-dialog.mp4"
+/>
 
 ## Built-in Terminal
 
-*Available in desktop apps.*
-
-Run commands right next to your code in the new built-in terminal.
-
-Phoenix Code allows you to open multiple terminal tabs with your preferred shell. Press `F4` to focus the terminal, `Shift+Escape` to toggle focus between editor and terminal, and right-click for Copy / Paste / Clear. You can also open any folder directly from the project tree in a new terminal tab. [Read More...](https://docs.phcode.dev/app-links/terminal)
+Phoenix Code now has a built-in terminal, so you can run commands right away without switching windows. It supports your preferred shell and works across all platforms. [Read More...](https://docs.phcode.dev/app-links/terminal)
 
 ![Built-in Terminal](https://docs-images.phcode.dev/in-app/terminal.png)
 
