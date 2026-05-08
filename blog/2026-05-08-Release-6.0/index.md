@@ -17,15 +17,17 @@ Phoenix also got a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) th
 
 ## Try ideas, build pages, and fix issues with AI
 
-*Included with Phoenix Pro. Available in desktop apps.*
+*Included with Phoenix Pro.*
 
-Phoenix Code now includes an AI assistant powered by Claude Code - one that sees what you see, not just your code. Try ideas, make changes, and refine your work just by chatting.
+Phoenix Code now includes an AI assistant powered by Claude Code. Ask it to write code, fix bugs, build features, or explain a file.
 
-Attach files or capture a screenshot to show the AI exactly what you mean. It stays out of your way until you need it, so you can stay focused on the creative work.
+Attach files, paste screenshots, or use the built-in screenshot tool to show the AI exactly what you mean.
 
-Three permission modes put you in control. **Plan Mode** sketches changes before touching anything. **Edit Mode** confirms shell commands as they come. **Full Auto** lets the AI run free in projects you trust. Every response is its own snapshot, so you can undo a single turn or roll your project back without leaving the chat. [Read More...](https://docs.phcode.dev/app-links/ai-chat)
+Three permission modes: **Plan** drafts changes for you to approve, **Edit** edits files but asks before running terminal commands, and **Full Auto** runs uninterrupted. Every AI response creates a restore point, so you can undo or roll back at any time. [Read More...](https://docs.phcode.dev/app-links/ai-chat)
 
-![AI Chat](https://docs-images.phcode.dev/in-app/pro-aiChat.png)
+<VideoPlayer
+  src="https://docs-images.phcode.dev/website/videos/ai-pro-dialog.mp4"
+/>
 
 ## Design Mode
 
