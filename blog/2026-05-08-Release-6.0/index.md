@@ -11,7 +11,9 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 2026 May release (6.0) of Phoenix Code is now available for download at [phcode.io](https://phcode.io).
 
-Our biggest update of 2026 - bringing AI into Phoenix Code, a brand new `Design Mode`, a rich `Markdown Editor`, an integrated `Terminal`, and a refreshed look with `Phoenix Neo` themes.
+This release is all about making Phoenix Code a true all-in-one web development environment. [AI](#try-ideas-build-pages-and-fix-issues-with-ai) right inside the editor, an upgraded [Live Preview Edit](#live-preview-edit-upgrades), a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), [Device previews](#view-your-page-at-any-device-size).
+
+Phoenix also got a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes, and a new [Design Mode](#design-mode) that lets you edit content visually while keeping your code out of the way.
 
 ## Try ideas, build pages, and fix issues with AI
 
