@@ -75,9 +75,7 @@ Phoenix Code now has a built-in terminal, so you can run commands right away wit
 
 ## All Your Tools, One Place
 
-A new tools drawer brings Git, Terminal, Problems, and more into one place. Switch between them instantly without panels getting in your way.
-
-Drag tabs to reorder, use the overflow dropdown when space is tight, and maximize the panel when you need a full canvas. [Read More...](https://docs.phcode.dev/app-links/git)
+We've changed how the Bottom Panel works to make it easier to access all your tools with a new tools drawer. Git, Terminal, Problems, and more are now all in one place. You can switch between them instantly and open multiple tools at once. [Read More...](https://docs.phcode.dev/app-links/git)
 
 ![Bottom Panel](https://docs-images.phcode.dev/in-app/bottom-panel.png)
 
