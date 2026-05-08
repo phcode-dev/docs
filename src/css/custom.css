@@ -117,3 +117,11 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+nav[class*="sidebar_"].thin-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+nav[class*="sidebar_"].thin-scrollbar::-webkit-scrollbar {
+  display: none;
+}
