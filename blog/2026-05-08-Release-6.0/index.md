@@ -92,31 +92,22 @@ Switch between them anytime from `View > Themes...`. [Read More...](https://docs
 - Prevented an out-of-memory crash that could happen while indexing very large projects, with binary file detection and a 1 GB cache cap.
 - Phoenix now recovers gracefully from a corrupted local database instead of crashing on startup.
 - Fixed a reflected XSS issue on the browser-not-supported page.
-- Fixed an AI chat crash that could occur when sending clipboard-pasted images.
 - Education licenses can now be activated on the Linux and macOS desktop apps.
 - Fixed `File > Quit` not closing multi-window sessions on the desktop app.
-- Hardened the Markdown viewer with a content security policy and a sandboxed iframe.
-- New 3-step onboarding tour walks new users through Design Mode, the AI tab, and creating a new project.
-- A small zoom HUD now shows the current percentage when you zoom in or out.
-- Fixed pinned Markdown previews being bypassed when switching files.
-- Markdown viewer scroll position is preserved across panel reopen, file switch, and image-edit dialog close.
-- Fixed hyperlink editor multi-click bugs and the "open in new tab" selection in Design Mode.
-- Color picker race conditions resolved, and the Computed tab now shows consistent rgb-to-hex values.
+- Fixed a thin white line at the edges of Live Preview, and the divider disappearing at very narrow widths.
+- Fixed a modal wrapper that could remain on screen when dialogs overlapped.
+- Fixed Find in Files button placement when input boxes were empty.
 
 ## Performance & Stability
 
-- AI chat lazily renders large diffs and frees them on collapse, keeping long sessions responsive.
-- AI session storage moved to a 30 MB virtual store with oldest-hunks-first pruning, replacing the older 16 MB FileSystem-based store.
 - Sidebar layout is preserved across hide and show, making expand near-instant.
-- Lazy hashing for read-tracked files saves CPU and memory.
 - Fixed a race condition in Live Preview load that could cause stale iframe overwrites.
-- Resize ruler, spacing handles, and color picker draw paths optimized; control surfaces are created once and reused instead of recreated.
+- Tightened Live Preview document handling and editor event leak thresholds.
 
 ## Platform Notes
 
-- **macOS**: avoided the Xcode git install dialog at startup, fixed terminal canvas rendering and the xterm-screen gap, enabled text selection in the AI panel.
-- **Windows**: Claude Code detection now works, the terminal can no longer be closed with a running command, and `Ctrl+C` / `Cmd+C` copy works correctly in the terminal.
-- **Linux**: full Electron desktop support, including file drag-and-drop, single-window handling, and auto-update.
+- **macOS**: avoided the Xcode git install dialog at startup, fixed a missing scrollbar in Live Preview on Tauri, and corrected new-window dimensions.
+- **Windows**: fixed window size jumps when opening a new window from `File > New Window`.
 
 ## All changes
 
