@@ -31,11 +31,7 @@ Three permission modes: **Plan** drafts changes for you to approve, **Edit** edi
 
 ## Design Mode
 
-*Included with Phoenix Pro.*
-
-Focus fully on your content while your code stays out of the way. Work side by side with AI and Live Preview. Edit content visually - whether you're building web pages or Markdown documents.
-
-A new vertical control bar between the sidebar and the editor gives you one-click access to undo/redo, file actions, and the editor toggle. A Spotlight-style Quick Open lets you jump to any previewable file without breaking your flow. [Read More...](https://docs.phcode.dev/app-links/design-mode)
+Focus fully on your content while your code stays out of the way. Work side by side with AI and Live Preview. Edit content visually - whether you're building web pages or Markdown documents. [Read More...](https://docs.phcode.dev/app-links/design-mode)
 
 ![Design Mode](https://docs-images.phcode.dev/in-app/pro-designMode.png)
 
@@ -43,11 +39,13 @@ A new vertical control bar between the sidebar and the editor gives you one-clic
 
 *Included with Phoenix Pro.*
 
-Edit Markdown like a document in Live Preview. Now it's easy to add images - just paste or pick one from your device, like in Google Docs or Word.
+Edit Markdown like a document in Live Preview. Format text, edit tables, add images and diagrams and the code gets synced automatically in real-time. 
 
-Format text, edit tables, and add diagrams with real-time sync between code and live preview. Use the slash menu to insert headings, lists, code blocks, and checkboxes without leaving the keyboard. An easier way to create Markdown files that you can share anywhere. [Read More...](https://docs.phcode.dev/app-links/markdown-editor)
+An easier way to create Markdown files that you can share with others. [Read More...](https://docs.phcode.dev/app-links/markdown-editor)
 
-![Rich Markdown Editor](https://docs-images.phcode.dev/in-app/pro-markdownEditor.png)
+<VideoPlayer
+  src="https://docs-images.phcode.dev/website/videos/markdown-pro-dialog.mp4"
+/>
 
 ## Live Preview Edit Upgrades
 
