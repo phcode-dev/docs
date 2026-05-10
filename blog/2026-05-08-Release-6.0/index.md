@@ -102,6 +102,7 @@ Switch between them anytime from `View > Themes...`. [Read More...](https://docs
 
 ## Platform Notes
 
+- **Linux**: The desktop app is now built on Electron, replacing the previous Tauri/webkit2gtk build. It ships as a single AppImage that runs across most major distributions, and now supports auto-update, bringing it to parity with macOS and Windows.
 - **macOS**: Avoided the Xcode git install dialog at startup, fixed a missing scrollbar in Live Preview on Tauri, and corrected new-window dimensions.
 - **Windows**: Fixed window size jumps when opening a new window from `File > New Window`.
 
