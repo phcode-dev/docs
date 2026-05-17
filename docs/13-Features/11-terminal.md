@@ -15,7 +15,7 @@ Phoenix Code has a built-in terminal so you can run commands without leaving the
 
 Open the terminal in any of these ways:
 
-- Click the **Tools** button *(grid icon)* in the bottom-right toolbar and select **Terminal**
+- Click the **Terminal** button in the bottom-right toolbar
 - Go to **View > Terminal** from the menu bar
 - Press `F4`
 - Right-click a file or folder in the project tree and choose **Integrated Terminal**. The terminal opens at that folder (or the file's containing folder)
