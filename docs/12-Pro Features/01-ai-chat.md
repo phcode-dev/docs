@@ -14,7 +14,7 @@ Phoenix Code comes with a built-in AI assistant powered by Claude Code. You can 
 > AI Chat is available only in desktop apps. 
 
 :::note
-Free users get a daily and monthly chat limit. [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) for unlimited access.
+Free users get a daily and monthly chat limit. Once you're past halfway on either limit, a usage bar appears at the top of the chat. [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) for unlimited access.
 :::
 
 <VideoPlayer
@@ -83,6 +83,22 @@ The AI has three permission levels that control how much it can do on its own. C
 - **Full Auto** - the AI runs everything without pausing — file edits, terminal commands, and tool calls all execute without confirmation. The first time you turn this on in a project, Phoenix Code shows a one-time warning so you understand the risk.
 
 ![Permission mode selector](./images/ai-permissions.png "Permission mode selector")
+
+## Approving Terminal Commands
+
+In Edit mode (the default), the AI shows an **Allow / Deny** card before running any terminal command. The card displays the full command so you can verify it before approving. Choosing **Deny** lets the AI continue with the rest of its response without running it.
+
+> Bash confirmations are skipped in Full Auto mode.
+
+## Reviewing Diffs
+
+Every edit card shows the number of lines added and removed, along with a **Show diff** button that toggles a unified diff of the change inline. Click the **three-dot menu** on the card to:
+
+- **Expand all** - open every diff section on the card at once
+- **Collapse all** - hide every diff section on the card
+- **Always show** - keep diffs open by default on future edits without clicking Show diff each time
+
+![Edit card with the diff menu open](./images/ai-diff.png "The three-dot menu on an edit card shows Expand all, Collapse all, and Always show")
 
 ## Session History
 
