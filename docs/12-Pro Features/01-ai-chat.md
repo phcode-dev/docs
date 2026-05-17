@@ -78,9 +78,9 @@ Click the **camera button** to take a screenshot and attach it. The dropdown let
 
 The AI has three permission levels that control how much it can do on its own. Click the **permission label** at the bottom of the panel to cycle between them.
 
-- **Plan** - the AI proposes a plan first as a card in the chat (titled **Proposed Plan**). Click the **expand icon** in the card header to view the plan in full screen. Then click **Approve** to proceed, or **Revise** to open an inline feedback box where you describe what should change before the AI tries again. Good for complex tasks where you want to stay in control.
+- **Plan** - the AI proposes a plan first as a card in the chat (titled **Proposed Plan**). Click the **expand icon** in the card header to view the plan in full screen. Then click **Approve** to proceed, or **Revise** to open an inline feedback box where you describe what should change before the AI tries again. If the AI tries to edit a file while in Plan mode, you'll see an **Allow / Stay in Plan** prompt; choosing **Allow** switches the session to Edit mode for the rest of the turn. Good for complex tasks where you want to stay in control.
 - **Edit** (default) - the AI can read and edit files on its own, but asks for your approval before running terminal commands.
-- **Full Auto** - the AI works through everything without pausing. Terminal commands still ask for confirmation.
+- **Full Auto** - the AI runs everything without pausing — file edits, terminal commands, and tool calls all execute without confirmation. The first time you turn this on in a project, Phoenix Code shows a one-time warning so you understand the risk.
 
 ![Permission mode selector](./images/ai-permissions.png "Permission mode selector")
 
@@ -108,9 +108,12 @@ Click the **gear icon** in the chat panel to open AI settings.
 ![AI settings button](./images/ai-settings.png "AI settings button")
 
 This will open a dialog where you can:
-- Switch between AI providers
-- Add a custom API provider with your own API key and endpoint
+- Pick the **active provider** from a dropdown at the top
+- Add a custom API provider with a name, API key (masked), and base URL
+- Edit or delete any custom provider you've added
 - Set a custom API timeout
+
+When a custom provider with a base URL is active, the chat shows a one-time **Using custom endpoint: \<hostname\>** notice on your next message.
 
 ![Claude Code Settings dialog](./images/ai-settings-dialog.png "Claude Code Settings dialog")
 
