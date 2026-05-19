@@ -31,7 +31,7 @@ Once installed, click **Set up Claude Code** to log in. Phoenix Code detects whe
 
 Click the **AI tab** *(sparkle icon)* in the sidebar to open the chat panel.
 
-![AI tab in the sidebar](./images/ai-panel.png "AI tab in the sidebar")
+![AI tab in the sidebar](./images/ai-chat-panel.png "AI tab in the sidebar")
 
 ## Sending Messages
 
@@ -41,7 +41,7 @@ While the AI is working, you can type your next message. It shows up as a queued
 
 To stop the AI mid-response, click the **stop button** *(square icon)* that appears next to the send button while the AI is working, or press `Escape`.
 
-![Stop button](./images/ai-stop-button.png "Stop button")
+![Stop button](./images/ai-stop.png "Stop button")
 
 ### Context
 
@@ -52,6 +52,8 @@ Phoenix Code automatically provides context about what you're working on. Small 
 - **Live Preview** - if the Live Preview panel is open
 
 You can dismiss any of these by clicking the **x** button on the chip.
+
+![Context chips above the input box](./images/ai-chips.png "Context chips above the input box")
 
 ## Attachments and Screenshots
 
