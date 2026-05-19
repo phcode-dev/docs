@@ -27,6 +27,10 @@ AI Chat requires the Claude Code CLI to be installed on your machine. If it's no
 
 Once installed, click **Set up Claude Code** to log in. Phoenix Code detects when the login is complete and opens the chat panel automatically.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/website/videos/claude-code-config.mp4"
+/>
+
 ## Opening the AI Panel
 
 Click the **AI tab** *(sparkle icon)* in the sidebar to open the chat panel.
