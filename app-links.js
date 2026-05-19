@@ -58,11 +58,11 @@
 export const appLinks = [
 	{
 		from: '/app-links/extn-line-height', // https://docs.phcode.dev/app-links/extn-line-height
-		to: '/docs/editing-text#line-height', // https://docs.phcode.dev/docs/editing-text#line-height
+		to: '/docs/customizing-editor#line-height', // https://docs.phcode.dev/docs/customizing-editor#line-height
 	},
     {
 		from: '/app-links/live-preview',
-		to: '/docs/Features/Live Preview/live-preview',
+		to: '/docs/Features/Live Preview',
 	},
     {
 		from: '/app-links/keyboard-shortcuts',
@@ -155,5 +155,9 @@ export const appLinks = [
 	{
 		from: '/app-links/terminal',
 		to: '/docs/Features/terminal',
+	},
+	{
+		from: '/app-links/themes',
+		to: '/docs/customizing-editor#themes',
 	}
 ];
