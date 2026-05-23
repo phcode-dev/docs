@@ -15,6 +15,18 @@ Phoenix Code supports a full rich text editing experience for Markdown files, ri
   src="https://docs-images.phcode.dev/website/videos/markdown-pro-dialog.mp4"
 />
 
+## What you can do
+
+Open any `.md` file and you get a beautiful WYSIWYG editor that stays perfectly in sync with the source.
+
+- **[Type the way you read](#text-formatting)** — bold, headings, lists, blockquotes, and tables work like in any modern document editor.
+- **[Slash menu](#slash-menu)** (`/`) inserts blocks, images, tables, and more without remembering syntax.
+- **[Tables](#table-editing)** with right-click row/column controls and easy copy/paste.
+- **[Drop or paste images](#images)** straight into your document.
+- **Find in document** with `Ctrl+F`, **[print](#theme-and-print)** with a clean light theme.
+- **[Dark and light themes](#theme-and-print)** match the rest of the app.
+- **[Side-by-side sync](#cursor-sync)** — your source view and rich view scroll, select, and edit together.
+
 ## Enabling Edit Mode
 
 To start editing, click the **Edit** button on the right side of the markdown toolbar. The toolbar expands to show formatting options, and you can start making changes right away.
