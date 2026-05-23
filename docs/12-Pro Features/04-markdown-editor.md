@@ -112,14 +112,23 @@ You can also click the **+ New row** button below the table to add a row.
 
 ## Images
 
-You can add images in two ways:
+Paste images into Markdown like you would in a document editor.
 
-- **From a URL** - enter the image URL and alt text in a dialog
-- **Upload from your computer** - pick an image file from your device
+Normally, adding images to Markdown means saving the image, uploading it somewhere, copying the URL, and then pasting that URL into your file. Phoenix Code removes that extra work.
 
-Both options are available from the **Image** button in the toolbar or through the [Slash Menu](#slash-menu).
+You can add images by pasting from your clipboard, uploading from your computer, or using an existing image URL.
+
+- **Paste from clipboard** — copy an image or screenshot and paste it directly into the editor
+- **Upload from your computer** — pick an image file from your device
+- **From a URL** — enter the image URL and alt text in a dialog
+
+When you paste an image or upload one from your computer, Phoenix Code can upload it to the Phoenix CDN and insert the Markdown image link automatically. The first time you do this, Phoenix Code will ask for confirmation before using the CDN.
+
+The **Upload from Computer** and **Image URL** options are available from the **Image** button in the toolbar or through the [Slash Menu](#slash-menu). Clipboard images can be pasted directly into the editor using **Ctrl+V** or **Cmd+V**.
 
 ![Image button dropdown with Image URL and Upload from Computer options](./images/markdown-image-options.png "The Image button dropdown")
+
+![Paste images](https://user-cdn.phcode.site/images/15f0c966-ed26-4c5c-a26e-886bacb305e7.png)
 
 Click an image in the editor to see a popover with **Edit** and **Delete** buttons.
 
