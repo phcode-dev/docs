@@ -11,6 +11,16 @@ Phoenix Code has a built-in terminal so you can run commands without leaving the
 
 <VideoPlayer src="https://docs-images.phcode.dev/videos/terminal/terminal-workflow.mp4" />
 
+## What you can do
+
+A real terminal lives inside Phoenix Code now.
+
+- **[Tabbed terminal](#tabs)** — open multiple shells at once, each with running-process info and friendly close prompts.
+- **Right-click** for Copy, Paste, and Clear.
+- **[Open in Integrated Terminal](#opening-the-terminal)** from any folder in the file tree.
+- **[Shift+Escape](#keyboard-shortcuts)** flips focus between editor and terminal; **F4** opens the panel and cycles between terminal tabs when multiple are open.
+- **[All keyboard shortcuts](#keyboard-shortcuts)** route to the terminal when it's focused — `Ctrl+L`, `Ctrl+K`, the works.
+
 ## Opening the Terminal
 
 Open the terminal in any of these ways:
@@ -56,6 +66,6 @@ Selecting a shell sets it as the default and opens a new terminal with it right 
 
 | Action | Shortcut |
 |--------|----------|
-| Toggle terminal / cycle to next instance (when more than one is open) | `F4` |
+| Open terminal / cycle to next tab (when more than one is open) | `F4` |
 | Switch focus between editor and terminal | `Shift + Escape` |
 | Clear terminal buffer | `Ctrl/Cmd + K` |
