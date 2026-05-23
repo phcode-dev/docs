@@ -21,6 +21,17 @@ Free users get a daily and monthly chat limit. Once you're past halfway on eithe
   src="https://docs-images.phcode.dev/website/videos/ai-pro-dialog.mp4"
 />
 
+## What you can do
+
+- **[Plan, Auto-Edit, and Edit modes](#permission-modes)** let you decide how much freedom the AI has. Plan mode confirms before any change, Auto-Edit applies safe edits automatically, and Edit lets you approve each action.
+- **[Restore points and a visual undo timeline](#undo-and-restore)** mean every AI change is reversible. If you don't like what it did, roll back with one click.
+- **Live preview integration** — the AI can see your running app, take screenshots, click around, and verify its own work.
+- **[Bring your own provider](#settings)** — Claude from Anthropic (the default) gives the best results, or bring your own API key from any Claude Code CLI-compatible provider.
+- **Privacy-first onboarding** with a clear consent dialog and a video walkthrough.
+- **[Type while the AI is still working](#sending-messages)** — your next message gets queued.
+- **[Session history](#session-history)** keeps your conversations alive across restarts.
+- **Free-tier quotas** let everyone try AI; pro users get unlimited use.
+
 ## Getting Started
 
 AI Chat requires the Claude Code CLI to be installed on your machine. If it's not installed, Phoenix Code shows a setup screen with the install command for your platform.
@@ -138,6 +149,14 @@ This will open a dialog where you can:
 When a custom provider with a base URL is active, the chat shows a one-time **Using custom endpoint: \<hostname\>** notice on your next message.
 
 ![Claude Code Settings dialog](./images/ai-settings-dialog.png "Claude Code Settings dialog")
+
+### Compatible providers
+
+Phoenix Code uses the Claude Code CLI under the hood, so it works with any provider that exposes an Anthropic-compatible API.
+
+- **Anthropic Claude** (default) — recommended; gives the best results.
+- **z.ai GLM** — tested working as a drop-in alternative. Use z.ai's Anthropic-compatible endpoint as the base URL.
+- **Other Anthropic-API-compatible providers** — add the provider's base URL and API key in the dialog above.
 
 ## Keyboard Shortcuts
 
