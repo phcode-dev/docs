@@ -1,6 +1,6 @@
 ---
 slug: release-6.0
-title: Phoenix Design + AI Release (May 2026, V-5.1) is now Live
+title: "Phoenix Code 5.1: AI, Design Mode & More"
 description: "Phoenix Code 5.1 introduces an AI assistant powered by Claude Code, a brand new Design Mode, a rich Markdown editor, an integrated terminal, and Phoenix Neo themes."
 authors: [arun, charly, devvaannsh, electrofist, ansu, phoenixBot]
 tags: [AI, Claude Code, Design Mode, Markdown Editor, Terminal, Live Preview Edit, Phoenix Pro, Phoenix Neo, Windows, Linux, Mac, Release]
@@ -9,11 +9,7 @@ tags: [AI, Claude Code, Design Mode, Markdown Editor, Terminal, Live Preview Edi
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-The May 2026 release (5.1) of Phoenix Code is now available for download at [phcode.io](https://phcode.io).
-
-This release focuses on making Phoenix Code a true all-in-one web development environment, bringing AI directly into the editor along with an upgraded [Live Preview Edit](#live-preview-edit-upgrades), a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), [device previews](#view-your-page-at-any-device-size), and a lot more.
-
-Phoenix Code also gets a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes, and a new [Design Mode](#design-mode) that lets you edit content visually while keeping your code out of the way.
+Phoenix Code 5.1 is now available at [phcode.io](https://phcode.io). This release brings AI into the editor with [Claude Code](#try-ideas-build-pages-and-fix-issues-with-ai), a new [Design Mode](#design-mode) for visual editing, a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), responsive [device previews](#view-your-page-at-any-device-size), a [rebuilt Linux app](#linux), and a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes.
 
 ## Try ideas, build pages, and fix issues with AI
 
