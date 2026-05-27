@@ -9,11 +9,11 @@ tags: [AI, Claude Code, Design Mode, Markdown Editor, Terminal, Live Preview Edi
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-Phoenix Code 5.1 is now available at [phcode.io](https://phcode.io). This release brings AI into the editor with [Claude Code](#try-ideas-build-pages-and-fix-issues-with-ai), a new [Design Mode](#design-mode) for visual editing, a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), responsive [device previews](#view-your-page-at-any-device-size), a [rebuilt Linux app](#linux), and a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes.
+Phoenix Code 5.1 is now available at [phcode.io](https://phcode.io). 
+
+This release brings AI into the editor with [Claude Code](#try-ideas-build-pages-and-fix-issues-with-ai), a new [Design Mode](#design-mode) for visual editing, a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), responsive [device previews](#view-your-page-at-any-device-size), a [rebuilt Linux app](#linux), and a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes.
 
 ## Try ideas, build pages, and fix issues with AI
-
-*Included with Phoenix Pro.*
 
 Phoenix Code now includes an AI assistant powered by Claude Code. It can write code, fix bugs, design your page, and a lot more. You can also attach images, files, and folders to your prompt. Switch between different modes: Plan, Edit, and Full Auto, based on your needs. [Read More...](https://docs.phcode.dev/app-links/ai-chat)
 
@@ -29,8 +29,6 @@ Focus fully on your content while your code stays out of the way. Work side by s
 
 ## Rich Markdown Editor
 
-*Included with Phoenix Pro.*
-
 Edit Markdown like a document in Live Preview. Format text, edit tables, and it’s easy to add images - just paste or pick one from your device, like in Google Docs or Word.
 
 An easier way to create Markdown files that you can share with others. [Read More...](https://docs.phcode.dev/app-links/markdown-editor)
@@ -41,15 +39,11 @@ An easier way to create Markdown files that you can share with others. [Read Mor
 
 ## Live Preview Edit Upgrades
 
-*Included with Phoenix Pro.*
-
 Live Preview Edit just got a major upgrade. You can format text with bold, italics, and more. Add new elements and update tags, classes, and attributes, all directly in Live Preview. [Read More...](https://docs.phcode.dev/app-links/live-preview-edit)
 
 ![Live Preview Edit](https://docs-images.phcode.dev/in-app/pro-controlBox.png)
 
 ## View your page at any device size
-
-*Included with Phoenix Pro.*
 
 Now you can quickly see how your page looks at different device sizes right inside Phoenix Code with a single click.
 
