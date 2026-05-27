@@ -59,6 +59,13 @@ Phoenix Code now has a built-in tabbed terminal, so you can run commands right n
 
 ![Built-in Terminal](https://docs-images.phcode.dev/in-app/terminal.png)
 
+## New Linux Platform
+
+Phoenix Code for Linux has been rebuilt from the ground up.
+
+The previous Linux app was harder to install and didn’t match the experience we wanted to deliver. We heard that feedback loud and clear. This release is powered by a brand-new Linux platform, bringing faster performance, easier installation, and a desktop experience that now stands alongside Windows and macOS.
+
+
 ## All Your Tools, One Place
 
 We've changed how the Bottom Panel works to make it easier to access all your tools with a new tools drawer interface. Git, Terminal, Problems, and more are now all in one place. You can switch between them instantly or open multiple tools at once. [Read More...](https://docs.phcode.dev/app-links/git)
