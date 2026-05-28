@@ -22,9 +22,9 @@
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Phoenix Code","url":"https://phcode.dev","logo":"https://docs.phcode.dev/img/logo.svg","sameAs":["https://x.com/phcodedev","https://github.com/phcode-dev/","https://discord.gg/rBpTBPttca","https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Phoenix Code Documentation","url":"https://docs.phcode.dev"}</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.c65f96b3.css">
-<script src="/assets/js/runtime~main.55d4a7e8.js" defer="defer"></script>
-<script src="/assets/js/main.f632f81c.js" defer="defer"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3c4d133b.css">
+<script src="/assets/js/runtime~main.c5b5117a.js" defer="defer"></script>
+<script src="/assets/js/main.3e05d49b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -34,7 +34,8 @@
 <div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token maybe-class-name">HTMLDOMDiff</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> brackets</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">getModule</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;language/HTMLDOMDiff&quot;</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
 <a name="domdiff"></a>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="domdiffoldnode-newnode--arrayobject">domdiff(oldNode, newNode) ⇒ <code>Array.&lt;Object&gt;</code><a href="#domdiffoldnode-newnode--arrayobject" class="hash-link" aria-label="Direct link to domdiffoldnode-newnode--arrayobject" title="Direct link to domdiffoldnode-newnode--arrayobject" translate="no">​</a></h2>
-<p>Generate a list of edits that will mutate oldNode to look like newNode.Currently, there are the following possible edit operations:</p>
+<p>Generate a list of edits that will mutate oldNode to look like newNode.
+Currently, there are the following possible edit operations:</p>
 <ul>
 <li class="">elementInsert</li>
 <li class="">elementDelete</li>
@@ -60,7 +61,10 @@
 </ul>
 <a name="domdiff..queuePush"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="domdiffqueuepush">domdiff.queuePush()<a href="#domdiffqueuepush" class="hash-link" aria-label="Direct link to domdiff.queuePush()" title="Direct link to domdiff.queuePush()" translate="no">​</a></h3>
-<p>Adds elements to the queue for generateChildEdits.Only elements (and not text nodes) are added. New nodes (ones that aren&#x27;t in theold nodeMap), are not added here because they will be added when generateChildEditscreates the elementInsert edit.</p>
+<p>Adds elements to the queue for generateChildEdits.
+Only elements (and not text nodes) are added. New nodes (ones that aren&#x27;t in the
+old nodeMap), are not added here because they will be added when generateChildEdits
+creates the elementInsert edit.</p>
 <p><strong>Kind</strong>: inner method of <a href="#domdiff" class=""><code>domdiff</code></a></p>
 <a name="domdiff..addEdits"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="domdiffaddeditsdelta">domdiff.addEdits(delta)<a href="#domdiffaddeditsdelta" class="hash-link" aria-label="Direct link to domdiff.addEdits(delta)" title="Direct link to domdiff.addEdits(delta)" translate="no">​</a></h3>
