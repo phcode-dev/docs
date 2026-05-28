@@ -1,5 +1,5 @@
 ---
-slug: release-6.0
+slug: release-5.1
 title: "Phoenix Code 5.1: AI, Design Mode & More"
 description: "Phoenix Code 5.1 introduces an AI assistant powered by Claude Code, a brand new Design Mode, a rich Markdown editor, an integrated terminal, and Phoenix Neo themes."
 authors: [arun, charly, devvaannsh, electrofist, ansu, phoenixBot]
