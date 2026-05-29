@@ -13,9 +13,13 @@ Phoenix Code 5.1 is now available at [phcode.io](https://phcode.io).
 
 This release brings AI into the editor with [Claude Code](#try-ideas-build-pages-and-fix-issues-with-ai), a new [Design Mode](#design-mode) for visual editing, a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), responsive [device previews](#view-your-page-at-any-device-size), a [rebuilt Linux app](#linux), and a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes.
 
-## Try ideas, build pages, and fix issues with AI
+## AI with visual and runtime context
 
-Phoenix Code now includes an AI assistant powered by Claude Code. It can write code, fix bugs, design your page, and a lot more. You can also attach images, files, and folders to your prompt. Switch between different modes: Plan, Edit, and Full Auto, based on your needs. [Read More...](https://docs.phcode.dev/app-links/ai-chat)
+Phoenix Code now includes an AI assistant powered by Claude Code, designed to support your creative workflow - not replace it.
+
+Most AI coding agents only read source code. AI in Phoenix Code looks at the rendered page too. It sees what the browser shows you, not just what the stylesheet or code implies.
+
+Ask why a layout feels off, fix tricky CSS issues, improve spacing or typography, or attach files and screenshots to show exactly what you mean. Bring AI in when you need it, and keep creating without leaving your flow.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/website/videos/ai-pro-dialog.mp4"
