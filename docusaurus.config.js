@@ -236,7 +236,7 @@ const config = {
 						items: [
 							{
 								label: "Docs",
-								to: "/docs/intro"
+								to: "/docs/what-is-phoenix-code"
 							},
 
 							{
