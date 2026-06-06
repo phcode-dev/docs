@@ -10,7 +10,7 @@ Phoenix Code supports extensions for adding features, themes, and language suppo
 
 To open the Extension Manager, click the extension icon on the right-hand toolbar, as shown below.
 
-![Extension Manager icon location on the right toolbar](./images/extensions/extension-manager-button.png "Click the Extension Manager icon on the right toolbar")
+![Extension Manager icon location on the right toolbar](../images/extensions/extension-manager-button.png "Click the Extension Manager icon on the right toolbar")
 
 The dialog has four tabs:
 
@@ -33,7 +33,7 @@ A **Sort** dropdown at the top of the dialog orders the list by **Last Updated**
 
 Themes use the same flow under the **Themes** tab.
 
-![Themes tab in the Extension Manager](./images/extensions/themes-tab.png "Themes tab in the Extension Manager")
+![Themes tab in the Extension Manager](../images/extensions/themes-tab.png "Themes tab in the Extension Manager")
 
 To switch to an installed theme, either pick it from `View > Themes...` (see [Customizing the Editor → Themes](./customizing-editor#themes)) or click **Apply** next to the theme in **Installed**.
 
@@ -60,7 +60,7 @@ For more details, visit the [GitHub repository](https://github.com/zorgzerg/brac
 
 `Minimap` in action :-
 
-![Minimap](./images/popular-extensions/minimap.png)
+![Minimap](../images/popular-extensions/minimap.png)
 
 ### Show Whitespace
 Created by: [Dennis Kehrig](https://github.com/DennisKehrig)
@@ -71,7 +71,7 @@ For more details, visit the [GitHub repository](https://github.com/DennisKehrig/
 
 `Show Whitespace` in action :-
 
-![Show Whitespace](./images/popular-extensions/Show-Whitespace.png)
+![Show Whitespace](../images/popular-extensions/Show-Whitespace.png)
 
 ### 1-2-3
 Created by: [Michal Jeřábek](https://github.com/michaljerabek)
@@ -82,7 +82,7 @@ For more details, visit the [GitHub repository](https://github.com/michaljerabek
 
 `1-2-3` in action :-
 
-![1-2-3](./images/popular-extensions/1-2-3.gif)
+![1-2-3](../images/popular-extensions/1-2-3.gif)
 
 ### FuncDocr
 Created by: [Ole Kröger](https://github.com/Wikunia)
@@ -93,7 +93,7 @@ For more details, visit the [GitHub repository](https://github.com/wikunia/brack
 
 `FuncDocr` in action :-
 
-![FuncDocr](./images/popular-extensions/Func-Docr.gif)
+![FuncDocr](../images/popular-extensions/Func-Docr.gif)
 
 ### Remove Comments
 Created by: [Pluto](https://github.com/devvaannsh)
