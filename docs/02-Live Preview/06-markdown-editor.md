@@ -2,21 +2,44 @@
 title: Markdown Editor
 slug: "/Pro Features/markdown-editor"
 ---
-
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
+
+When you open a Markdown file (`.md`), **Live Preview** shows a nicely formatted version of your document — with syntax-highlighted code blocks, rendered Mermaid diagrams, and more. As you type in the editor, the preview updates in real time. With **Phoenix Pro**, you can go a step further and edit your Markdown directly in the preview with a full rich text editor.
+
+![Markdown Live Preview](../images/livePreview/markdown-preview.png "A Markdown file open in the editor with its rendered Live Preview alongside")
+
+## Scroll and Cursor Sync
+
+The editor and preview stay in sync as you work. When you scroll or move your cursor in the editor, the preview follows along to show the same section. Clicking a line in the preview scrolls the editor to the matching line and briefly highlights it, so you can see where you landed. Scrolling in either view keeps the other in step.
+
+You can turn sync on or off using the **cursor sync toggle** *(link icon)* in the preview toolbar.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/markdown/toggle-cursor-sync.mp4"
+/>
+
+## Theme, Search, and Print
+
+The preview toolbar also has a **theme toggle** *(sun/moon icon)* to switch between light and dark themes, a **search** bar (`Ctrl/Cmd + F`) to find text in the document, and a **print** button.
+
+![Theme toggle button in the markdown toolbar with tooltip](../images/pro/markdown-theme-toggle.png "The theme toggle in the markdown toolbar")
+
+> Print is not available on macOS desktop apps.
+
+## Editing Markdown (Pro)
 
 :::info Pro Feature
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
-Phoenix Code supports a full rich text editing experience for Markdown files, right inside the Live Preview. Format text, build tables, drop in images, add links, use slash commands, and watch every change sync back to your source code instantly.
+With **Phoenix Pro**, you can go beyond just viewing. Edit your Markdown directly in the Live Preview with a full rich text editor — format text, build tables, drop in images, add links, use slash commands to insert blocks, and much more. Every change syncs back to your source code instantly.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/website/videos/markdown-pro-dialog.mp4"
 />
 
-## What you can do
+### What you can do
 
 Open any `.md` file and you get a beautiful WYSIWYG editor that stays perfectly in sync with the source.
 
@@ -24,11 +47,11 @@ Open any `.md` file and you get a beautiful WYSIWYG editor that stays perfectly 
 - **[Slash menu](#slash-menu)** (`/`) inserts blocks, images, tables, and more without remembering syntax.
 - **[Tables](#table-editing)** with right-click row/column controls and easy copy/paste.
 - **[Drop or paste images](#images)** straight into your document.
-- **Find in document** with `Ctrl+F`, **[print](#theme-and-print)** with a clean light theme.
-- **[Dark and light themes](#theme-and-print)** match the rest of the app.
-- **[Side-by-side sync](#cursor-sync)** — your source view and rich view scroll, select, and edit together.
+- **Find in document** with `Ctrl+F` and **[print](#theme-search-and-print)** with a clean light theme.
+- **[Dark and light themes](#theme-search-and-print)** match the rest of the app.
+- **[Side-by-side sync](#scroll-and-cursor-sync)** — your source view and rich view scroll, select, and edit together.
 
-## Enabling Edit Mode
+### Enabling Edit Mode
 
 To start editing, click the **Edit** button on the right side of the markdown toolbar. The toolbar expands to show formatting options, and you can start making changes right away.
 
@@ -38,27 +61,7 @@ To go back to the read-only view, click **Reader** in the same place.
 
 > By default, markdown files open in Edit mode for **Phoenix Code Pro** users.
 
-## Cursor Sync
-
-Click anywhere in the preview to jump the editor cursor to the matching line. The line briefly highlights so you can see where you landed. Cursor sync works in the other direction too. Clicking a line in the editor scrolls the preview to that line.
-
-Scrolling in either view does the same: the other view follows along to keep you in sync.
-
-Use the **cursor sync** button in the toolbar to toggle this behavior on or off.
-
-<VideoPlayer
-  src="https://docs-images.phcode.dev/videos/markdown/toggle-cursor-sync.mp4"
-/>
-
-## Theme and Print
-
-You can also switch the markdown preview between light and dark themes using the **theme toggle** in the toolbar, or print the rendered document with the **print** button.
-
-![Theme toggle button in the markdown toolbar with tooltip](../images/pro/markdown-theme-toggle.png "The theme toggle in the markdown toolbar")
-
-> Print is not available on macOS desktop apps.
-
-## Text Formatting
+### Text Formatting
 
 Select the text you want to format and click a formatting button, or use the keyboard shortcut. If no text is selected, the formatting applies to the word at your cursor.
 
@@ -72,7 +75,7 @@ You can also select text and use the **floating format bar** that appears near y
 
 ![Floating format bar above selected text](../images/pro/markdown-format-bar.png "The floating format bar appears near your selection")
 
-## Blocks and Lists
+### Blocks and Lists
 
 The toolbar lets you change the current block type using a **block type dropdown** (Paragraph, Heading 1 through Heading 5) and insert different types of content:
 
@@ -84,7 +87,7 @@ The toolbar lets you change the current block type using a **block type dropdown
 
 ![Markdown toolbar with block type dropdown and block insertion buttons](../images/pro/markdown-blocks-lists.png "The markdown toolbar in Edit mode")
 
-## Slash Menu
+### Slash Menu
 
 Type `/` at the start of an empty line to open the **Slash Menu**. This gives you a quick way to insert any block type without reaching for the toolbar.
 
@@ -94,7 +97,7 @@ Start typing to filter the list. Use the arrow keys to navigate and press `Enter
 
 > The Slash Menu shows your most-used items first.
 
-### Markdown Shortcuts
+#### Markdown Shortcuts
 
 You can also use standard Markdown shortcuts as you type:
 
@@ -106,7 +109,7 @@ You can also use standard Markdown shortcuts as you type:
 - ` ``` ` for code blocks
 - `---` for dividers
 
-## Table Editing
+### Table Editing
 
 When you insert a table, you can edit it directly in the preview. Click any cell to start typing in it. Use `Tab` to move to the next cell.
 
@@ -123,7 +126,7 @@ You can also click the **+ New row** button below the table to add a row.
   src="https://docs-images.phcode.dev/videos/markdown/markdown-editor-table.mp4"
 />
 
-## Images
+### Images
 
 Paste images into Markdown like you would in a document editor.
 
@@ -145,7 +148,7 @@ The **Upload from Computer** and **Image URL** options are available from the **
 
 Click an image in the editor to see a popover with **Edit** and **Delete** buttons.
 
-## Links
+### Links
 
 To add a link, select some text and click the **Link** button in the toolbar (or press `Ctrl/Cmd + K`). Enter the URL in the floating input that appears and press `Enter`.
 
@@ -155,7 +158,7 @@ Click an existing link to see a popover showing the URL, with options to **Edit*
   src="https://docs-images.phcode.dev/videos/markdown/markdown-editor-links.mp4"
 />
 
-## Keyboard Shortcuts
+### Keyboard Shortcuts
 
 | Action | Shortcut |
 |--------|----------|
