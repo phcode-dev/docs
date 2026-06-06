@@ -162,6 +162,7 @@ const config = {
 					{ from: '/docs/Features/recent-files', to: '/docs/file-management#recent-files' },
 					{ from: '/docs/Features/live-preview-settings', to: '/docs/Features/Live Preview/live-preview-settings' },
 					{ from: '/docs/Linux', to: '/docs/intro#linux' },
+					{ from: '/docs/Features/Live Preview/markdown-live-preview', to: '/docs/Pro Features/markdown-editor' },
 				],
 				createRedirects(existingPath) {
 					if (existingPath !== '/') {
