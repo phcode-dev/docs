@@ -161,6 +161,7 @@ const config = {
 					...appLinks,
 					{ from: '/docs/Features/recent-files', to: '/docs/file-management#recent-files' },
 					{ from: '/docs/Features/live-preview-settings', to: '/docs/Features/Live Preview/live-preview-settings' },
+					{ from: '/docs/Linux', to: '/docs/intro#linux' },
 				],
 				createRedirects(existingPath) {
 					if (existingPath !== '/') {
