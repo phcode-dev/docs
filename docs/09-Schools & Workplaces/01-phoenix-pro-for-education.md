@@ -96,7 +96,7 @@ The admin will find a new section under:
 
 From there, you can obtain the license key.
 
-![Alt text](images/edu/vol-license.png)
+![Volume License Key section under Advanced Settings in the account dashboard](../images/edu/vol-license.png)
 
 ## How Volume License Keys Work
 
@@ -127,7 +127,7 @@ On any device—lab or student-owned:
 3. Enter the Education Volume License Key
 4. Click **Activate**
 
-![Alt text](images/edu/activate-edu-license.png)
+![Activating Phoenix Pro via Help → Manage Licenses in the desktop app](../images/edu/activate-edu-license.png)
 
 # Limitations
 
