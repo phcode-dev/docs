@@ -10,7 +10,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 **Phoenix Code** includes built-in Git support, allowing you to manage version control directly within the editor. Git can be accessed from the toolbar icon or the File menu in the menu bar.
 
-![Git Overview](./images/git-images/git-overview.png "Git Overview")
+![Git Overview](../images/git-images/git-overview.png "Git Overview")
 
 > To use Git features inside Phoenix Code, ensure Git is installed on your computer. [Download Git](https://git-scm.com/downloads)
 
@@ -19,18 +19,18 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 To clone an existing repository in **Phoenix Code**, follow these steps:
 
-1. Click on the `Start Project` button. 
+1. Click on the `Start Project` button.
 
-![Start Project](./images/git-images/start-project.png "Start Project")
+![Start Project](../images/git-images/start-project.png "Start Project")
 > This will open the Quick Start project dialog box, which offers various options. [Read more](../quick-start-project) about Quick Start project here.
 
 2. Select `Get from Git`.
 
-![Get from Git](./images/git-images/get-from-git.png "Get from Git")
+![Get from Git](../images/git-images/get-from-git.png "Get from Git")
 
 3. Enter the *Git Clone URL* and choose a *location* to save the project.
 
-![Get from Git dialog](./images/git-images/get-from-git-dialog.png "Get from Git dialog")
+![Get from Git dialog](../images/git-images/get-from-git-dialog.png "Get from Git dialog")
 
 4. Click `Create Project`. The repository will be cloned to the specified location.
 
@@ -42,13 +42,13 @@ You can also clone a repository through the menu:
 1. Go to `File > Git > Clone`.
 2. Enter the repository URL in the dialog that appears.
 
-![Git Clone](./images/git-images/git-clone-dialog.png "Git Clone")
+![Git Clone](../images/git-images/git-clone-dialog.png "Git Clone")
 
 #### More Options
 
 In the Clone Repository dialog, clicking on `More Options` expands additional settings for authentication.
 
-![Git Clone More options](./images/git-images/git-clone-more-options.png "Git Clone more options")
+![Git Clone More options](../images/git-images/git-clone-more-options.png "Git Clone more options")
 
 **Credentials**: This section allows you to enter your *username* and *password* for repositories that require authentication. Typically, if your credentials are already stored in a credential manager (like SSH keys or a Git credential manager), you don't need to fill in these fields.
 
@@ -61,13 +61,13 @@ In the Clone Repository dialog, clicking on `More Options` expands additional se
 
 To initialize a Git repository in a project that doesn’t already have one, click on `File > Git > Init`. This will set up Git for your current project. After initialization, the Git icon will appear in the toolbar, indicating that version control is active.
 
-![Git Init](./images/git-images/git-init.png "Git Init")
+![Git Init](../images/git-images/git-init.png "Git Init")
 
 > Note: *For projects without an existing Git repository, the Git icon won’t appear by default. To initialize or connect a Git repository, use the File menu to set up Git for your project.*
 
 Once Git is set up, the Git Panel provides a user-friendly interface to manage version control. You can track changes, commit updates, interact with remote repositories, and more—all within the editor.
 
-![Git Panel](./images/git-images/git-panel.png "Git Panel")
+![Git Panel](../images/git-images/git-panel.png "Git Panel")
 
 
 
@@ -75,12 +75,12 @@ Once Git is set up, the Git Panel provides a user-friendly interface to manage v
 
 All files with changes are displayed in the Git panel along with their status, such as *Modified*, *Untracked*, and *Deleted*. For modified files, a Git diff button is available.
 
-![Git diff Icon](./images/git-images/git-diff-icon.png "Git diff icon")
+![Git diff Icon](../images/git-images/git-diff-icon.png "Git diff icon")
 
 *Git diff is used to display the changes made to a file — Green lines indicate added content, while red lines show removed content.*
 Clicking on the Git diff icon opens up the Git diff dialog page.
 
-![Git diff Dialog](./images/git-images/git-diff-dialog.png "Git diff dialog")
+![Git diff Dialog](../images/git-images/git-diff-dialog.png "Git diff dialog")
 
 ### Discard changes
 
@@ -88,11 +88,11 @@ For *Modified* and *Deleted* file statuses, a `Discard Changes...` button is sho
 
 For *Untracked* files, a `Delete File...` button is available. Clicking it will delete the file.
 
-![Discard changes or Delete file](./images/git-images/discard-changes.png "Discard changes or Delete file")
+![Discard changes or Delete file](../images/git-images/discard-changes.png "Discard changes or Delete file")
 
 You can also discard all changes made to all files at once by clicking the three dots at the top-right and selecting the `Discard all changes since the last commit...` option. This will remove all modifications made since your last commit.
 
-![Discard all changes](./images/git-images/discard-all-changes.png "Discard all the changes made since last commit")
+![Discard all changes](../images/git-images/discard-all-changes.png "Discard all the changes made since last commit")
 
 
 
@@ -101,14 +101,14 @@ You can also discard all changes made to all files at once by clicking the three
 When viewing a file with multiple Git changes, you can use the Next Change and Previous Change buttons to quickly move between modifications.
 
 * **Next Change**: Moves the cursor to the next change in the file.
-![Move to next change](./images/git-images/move-to-next-change.png "Move to next git change")
+![Move to next change](../images/git-images/move-to-next-change.png "Move to next git change")
 
 * **Previous Change**: Moves the cursor to the previous change in the file.
-![Move to previous change](./images/git-images/move-to-previous-change.png "Move to previous git change")
+![Move to previous change](../images/git-images/move-to-previous-change.png "Move to previous git change")
 
 **Visual Reference**
 
-<VideoPlayer 
+<VideoPlayer
   src="https://docs-images.phcode.dev/videos/git-videos/navigation-git-changes.mp4"
 />
 
@@ -118,28 +118,28 @@ When viewing a file with multiple Git changes, you can use the Next Change and P
 
 The **Refresh Panel** button ensures that the displayed repository information is up to date. While changes are usually updated automatically, this button helps in cases where the interface lags behind, ensuring all modifications are reflected correctly.
 
-![Refresh Panel](./images/git-images/refresh-panel.png "Refresh panel")
+![Refresh Panel](../images/git-images/refresh-panel.png "Refresh panel")
 
 
 
 ## Commit
 
-To stage/unstage the files, click the checkbox icon at the top-left of the Git panel. This will affect all the files in the working tree. 
+To stage/unstage the files, click the checkbox icon at the top-left of the Git panel. This will affect all the files in the working tree.
 
-![Stage all files](./images/git-images/stage-files.png "Stage all files")
+![Stage all files](../images/git-images/stage-files.png "Stage all files")
 
 You can also stage/unstage individual files by selecting or deselecting the checkbox next to each file.
 
 Once you get all your required files to the staging area, click on the `Commit` button.
 
-![Commit the files](./images/git-images/git-commit.png "Commit the files")
- 
+![Commit the files](../images/git-images/git-commit.png "Commit the files")
+
 This will open up Git commit dialog box, which will display all the changes made to the files that are to be committed.
-You can enter your commit message in the input box provided. 
+You can enter your commit message in the input box provided.
 
-![Git Commit dialog](./images/git-images/commit-dialog.png "Git commit dialog box")
+![Git Commit dialog](../images/git-images/commit-dialog.png "Git commit dialog box")
 
-> The Commit input box also displays the number of characters in the commit message. 
+> The Commit input box also displays the number of characters in the commit message.
 
 *If your commit message is longer, you can use the `Extended` button at the top-right of the dialog. This expands the input area, making it easier to write detailed commit messages.*
 
@@ -149,7 +149,7 @@ The commit dialog box also provides options to :-
 
 > The Git commit dialog box also displays code inspection problems, if there are any:
 
-![Commit Code inspection errors](./images/git-images/git-commit-errors.png "Commit code inspection errors")
+![Commit Code inspection errors](../images/git-images/git-commit-errors.png "Commit code inspection errors")
 
 
 
@@ -157,11 +157,11 @@ The commit dialog box also provides options to :-
 
 To upload your local commits to the remote repository, use the `Push` option in the Git panel. This ensures your changes are synchronized with the remote repository.
 
-![Git Push](./images/git-images/git-push.png "Git Push")
+![Git Push](../images/git-images/git-push.png "Git Push")
 
 When you initiate a push, the **Push to Remote** dialog appears, allowing you to configure push settings.
 
-![Git Push dialog](./images/git-images/push-dialog.png "Git push dialog")
+![Git Push dialog](../images/git-images/push-dialog.png "Git push dialog")
 
 ### Target Branch
 
@@ -178,7 +178,7 @@ When you initiate a push, the **Push to Remote** dialog appears, allowing you to
 
 Clicking More Options expands additional push settings, allowing for more control over the push operation.
 
-![Git push more options](./images/git-images/git-push-more-options.png "Git push more options")
+![Git push more options](../images/git-images/git-push-more-options.png "Git push more options")
 
 * **Send tags**: If enabled, this option ensures that Git tags are pushed along with commits. If you have created tags locally and want them reflected in the remote repository, enable this option.
 
@@ -194,7 +194,7 @@ Clicking More Options expands additional push settings, allowing for more contro
 
 To download the latest changes from the remote repository without modifying your local repository, use the `Fetch` option in the Git panel. This will pull the latest changes from the remote repository but does not update your working directory or merge the changes into your local branches.
 
-![Git fetch](./images/git-images/git-fetch.png "Git fetch")
+![Git fetch](../images/git-images/git-fetch.png "Git fetch")
 
 
 
@@ -202,11 +202,11 @@ To download the latest changes from the remote repository without modifying your
 
 To download the latest changes from the remote repository to your local machine, use the `Pull` option in the Git panel. This ensures your local repository is up to date with the latest changes from the remote repository.
 
-![Git pull](./images/git-images/git-pull.png "Git pull")
+![Git pull](../images/git-images/git-pull.png "Git pull")
 
 When you initiate a pull, the **Pull from Remote** dialog appears, allowing you to configure pull settings.
 
-![Git pull dialog](./images/git-images/git-pull-dialog.png "Git pull dialog")
+![Git pull dialog](../images/git-images/git-pull-dialog.png "Git pull dialog")
 
 
 ### Target Branch
@@ -231,24 +231,24 @@ When you initiate a pull, the **Pull from Remote** dialog appears, allowing you 
 
 ### Show History
 
-![Show History](./images/git-images/show-history.png "Show History")
+![Show History](../images/git-images/show-history.png "Show History")
 Clicking the **Show History** button displays a complete list of commits made to the entire repository to help you track the changes made to the project over time.
 
 ### Show File History
 
-![Show File History](./images/git-images/show-file-history.png "Show File History")
-Clicking the **Show File History** button displays the commit history of a specific file, showing all modifications since it was added to the repository. 
+![Show File History](../images/git-images/show-file-history.png "Show File History")
+Clicking the **Show File History** button displays the commit history of a specific file, showing all modifications since it was added to the repository.
 
 ### History Viewer
 
 When selecting a specific commit from the history panel, the **History Viewer** appears, displaying all changes made in that commit.
 
-![History Viewer](./images/git-images/history-viewer.png "History viewer")
+![History Viewer](../images/git-images/history-viewer.png "History viewer")
 
 * Each modified file is collapsed by default.
 * Clicking on a file expands it to show the exact changes.
 
-![History Viewer expanded](./images/git-images/history-viewer-expanded.png "History viewer expanded")
+![History Viewer expanded](../images/git-images/history-viewer-expanded.png "History viewer expanded")
 
 * You can expand or collapse all files at once using the Expand All/Collapse All button.
 
@@ -262,11 +262,11 @@ This lets you inspect changes directly within the editor.
 
 To create a new branch in Git, click on the `main > Create new branch...` button in the sidebar. The name shown (e.g., main) represents your current branch, so if you're on a different branch, it may display another name.
 
-![Git branch](./images/git-images/git-branch.png "Git branch")
+![Git branch](../images/git-images/git-branch.png "Git branch")
 
 This will open a dialog box where you can:
 
-![Git new branch dialog](./images/git-images/git-new-branch-dialog.png "Git new branch dialog box")
+![Git new branch dialog](../images/git-images/git-new-branch-dialog.png "Git new branch dialog box")
 * Select the branch from which the new branch will originate.
 * Enter a name for your new branch.
 
@@ -276,15 +276,15 @@ Once created, it automatically switches to the new branch and you can start work
 ### Merging a branch
 
 To merge a branch into the current branch, click on the current branch name (e.g., main) in the sidebar. This will open a popup displaying all available branches.
-To the right of each branch name, you'll see a merge icon. 
+To the right of each branch name, you'll see a merge icon.
 
-![Merge branch](./images/git-images/merge-branch.png "Merge branch")
+![Merge branch](../images/git-images/merge-branch.png "Merge branch")
 
 Click on this icon for the branch you want to merge.
 
 This will open a merge dialog box with the following options:
 
-![Merge branch dialog](./images/git-images/merge-branch-dialog.png "Merge branch dialog")
+![Merge branch dialog](../images/git-images/merge-branch-dialog.png "Merge branch dialog")
 
 * **Target branch**: Displays the branch where the selected branch will be merged.
 * **Merge message**: Provides a default message for the merge, which you can edit.
@@ -297,7 +297,7 @@ This will open a merge dialog box with the following options:
 
 To delete a local branch in Git, click on the current branch name (e.g., main) in the sidebar. This will open a dropdown menu displaying the list of all available branches.
 
-![Delete branch](./images/git-images/delete-branch.png "Delete branch")
+![Delete branch](../images/git-images/delete-branch.png "Delete branch")
 
 Next, hover over the branch you want to delete and click the cross 'x' icon next to it. This will delete the selected branch.
 
@@ -307,15 +307,15 @@ Next, hover over the branch you want to delete and click the cross 'x' icon next
 
 ### Adding a New Remote
 
-To add a new remote to your Git repository, open the Git panel and click on `origin > Create new remote...`. 
+To add a new remote to your Git repository, open the Git panel and click on `origin > Create new remote...`.
 
-![Git remote](./images/git-images/git-remote.png "Git remote")
+![Git remote](../images/git-images/git-remote.png "Git remote")
 
 The name shown (e.g., origin) represents your current remote, so if you're on a different remote, it may display another name.
 
 This will open a dialog box, prompting you to enter the name of the new remote.
 
-![Git remote name](./images/git-images/git-remote-name.png "Git remote name")
+![Git remote name](../images/git-images/git-remote-name.png "Git remote name")
 After that a new dialog box will appear, prompting you to enter the URL of the new remote.
 Enter the URL and click `OK`.
 
@@ -327,7 +327,7 @@ To delete a remote from your Git repository, click on the current remote name in
 
 Next, hover over the remote you want to delete and click the cross 'x' icon next to it. This will remove the selected remote from your repository.
 
-![Git delete remote](./images/git-images/git-delete-remote.png "Git delete remote")
+![Git delete remote](../images/git-images/git-delete-remote.png "Git delete remote")
 
 > Note: Deleting the 'origin' remote is not possible.
 
@@ -343,28 +343,28 @@ Select the remote you want to switch to, and Git will use that remote for operat
 
 The Git Menu provides various Git-related actions to manage version control within the application. To access this menu, navigate to `File > Git`.
 
-![Git Menu](./images/git-images/git-menu.png "Git menu")
+![Git Menu](../images/git-images/git-menu.png "Git menu")
 
 Alternatively, you can also access the Git menu by clicking the three dots in the top right corner of the Git panel.
 
-![Git Menu from panel](./images/git-images/git-menu-from-panel.png "Git menu from panel")
+![Git Menu from panel](../images/git-images/git-menu-from-panel.png "Git menu from panel")
 
-Here are the available options in Git panel: 
+Here are the available options in Git panel:
 
 ### General options
 * **Show Git Panel**: Toggles the visibility of the Git panel in the interface.
-* **Refresh Git**: Updates the Git panel to reflect the latest changes in the repository. 
+* **Refresh Git**: Updates the Git panel to reflect the latest changes in the repository.
 [Read more](#refresh-panel) about refresh git.
 
 ### Navigation options
 * **Go to Next Git Change**: Moves the cursor to the next Git-tracked change in the file.
-* **Go to Previous Git Change**: Moves the cursor to the previous Git-tracked change in the file. 
+* **Go to Previous Git Change**: Moves the cursor to the previous Git-tracked change in the file.
 [Read more](#navigate-git-changes) about navigation options.
 * **Close Unmodified Files**: Closes all open files that have no uncommitted changes.
 
 ### Version history
 * **View Authors of Selection...**: Displays the Git history of a selected portion of code, showing who made changes and when.
-![View Authors](./images/git-images/view-authors.png "View authors")
+![View Authors](../images/git-images/view-authors.png "View authors")
 * **View Authors of File...**: Shows the commit history and contributors for the entire file.
 
 ### Committing Changes
@@ -390,17 +390,17 @@ Here are the available options in Git panel:
 
 ## Git Settings
 
-The Git Settings dialog provides options to configure Git behavior within the application. To open the Git Settings dialog, go to `File > Git > Git Settings...`. 
+The Git Settings dialog provides options to configure Git behavior within the application. To open the Git Settings dialog, go to `File > Git > Git Settings...`.
 
-![Git Settings from File menu](./images/git-images/git-settings-from-file-menu.png "Git settings from file menu")
+![Git Settings from File menu](../images/git-images/git-settings-from-file-menu.png "Git settings from file menu")
 
 Alternatively, you can access it from the Git panel by clicking the three dots in the top right corner and selecting `Git Settings...`.
 
-![Git Settings from Panel](./images/git-images/git-settings-from-panel.png "Git settings from panel")
+![Git Settings from Panel](../images/git-images/git-settings-from-panel.png "Git settings from panel")
 
 ### General Settings
 
-![Git Settings Dialog](./images/git-images/git-settings-dialog.png "Git Settings Dialog")
+![Git Settings Dialog](../images/git-images/git-settings-dialog.png "Git Settings Dialog")
 
 > Settings with an info icon require an application restart to take effect.
 
@@ -432,7 +432,7 @@ The Git icon does not appear in the toolbar if the project you opened is not a G
 
 If you see a "Pushing to remote failed" error, it means there are new changes in the remote repository that you haven't pulled yet.
 
-![Git push error](./images/git-images/git-push-error.png "Git push error")
+![Git push error](../images/git-images/git-push-error.png "Git push error")
 
 **How to Fix:**
 Before pushing your changes, pull the latest updates from the remote repository. [Learn how to pull changes](#pull).
