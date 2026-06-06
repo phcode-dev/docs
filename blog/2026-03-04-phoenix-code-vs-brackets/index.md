@@ -70,19 +70,19 @@ These are the features the Brackets community asked for — and we finally built
 
 Brackets' live preview was view-only. You could see changes reflected in real time, but you always had to make edits in the code. With [Phoenix Pro](/docs/Pro%20Features/live-preview-edit), you can click on any element in the live preview and edit it right there — change text, swap images by dragging, rearrange elements visually. The source code updates automatically.
 
-![Phoenix Code live preview modes for editing HTML and CSS visually](../../docs/13-Features/images/livePreview/lp-mode.png)
+![Phoenix Code live preview modes for editing HTML and CSS visually](../../docs/images/livePreview/lp-mode.png)
 
 ### Visual CSS Editing
 
 Brackets had inline color pickers — Phoenix Code keeps those and adds number dials you can scrub to adjust CSS values like margins, padding, font sizes, and more. Hover over a number, drag to adjust, and see the result update in live preview instantly.
 
-![Phoenix Code CSS number dial for adjusting margins and padding](../../docs/13-Features/images/number-dial.gif)
+![Phoenix Code CSS number dial for adjusting margins and padding](../../docs/images/number-dial.gif)
 
 ### Built-in Git
 
 Phoenix Code ships with native Git support based on the familiar Brackets Git extension, addressing many of its earlier limitations with a simpler UX and improved reliability. Commit, push, pull, diff, and branch management, all built in.
 
-![Built-in Git integration in Phoenix Code — commit and push](../../docs/13-Features/images/git-images/git-commit.png)
+![Built-in Git integration in Phoenix Code — commit and push](../../docs/images/git-images/git-commit.png)
 
 ### Runs in Your Browser
 
@@ -92,7 +92,7 @@ Open [phcode.dev](https://phcode.dev) and start editing — no install or admin 
 
 Inspect spacing between elements, measure distances, and check alignment directly in the live preview. If you work from design mockups, this replaces the constant back-and-forth between your editor and a separate design tool.
 
-![Phoenix Code measurement and inspection tools in live preview](../../docs/12-Pro%20Features/images/measurements.png)
+![Phoenix Code measurement and inspection tools in live preview](../../docs/images/pro/measurements.png)
 
 ---
 
