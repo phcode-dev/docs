@@ -38,8 +38,8 @@
     "remark-math": "6.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.9.2",
-    "@docusaurus/types": "3.9.2",
+    "@docusaurus/module-type-aliases": "3.10.1",
+    "@docusaurus/types": "3.10.1",
     "baseline-browser-mapping": "^2.10.10",
     "http-server": "14.1.1",
     "shx": "0.4.0"
