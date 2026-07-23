@@ -26,6 +26,27 @@ To switch to Edit Mode, click the **pen icon** in the Live Preview toolbar. This
 
 Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` setting in the preferences file. See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
 
+## Starter Bar
+
+Edit Mode needs an element to work on, so on a blank page there is nothing to click yet. When your page has no content, a **Starter Bar** appears at the bottom center of the Live Preview to add your first element.
+
+<!-- TODO: PLUTO - add video here showing the starter bar working -->
+
+The bar shows the most common elements: Heading, Paragraph, Image, Link, Button, and Div. Click one to add it to the page.
+
+To pick from the full element list, click the **three-dots icon** at the end of the bar. This opens a searchable list with the same elements as the [Insert Element](#insert-element) panel.
+
+<!-- TODO: PLUTO - add image here showing the starter bar searchable list -->
+
+When you pick an element:
+
+- If the file is empty, Phoenix Code creates the standard HTML page structure and places the element inside `<body>`.
+- If the file already has some markup, it is preserved and the element is added to it.
+
+The new element is automatically selected so you can continue editing. Press `Ctrl/Cmd + Z` to undo the insert.
+
+> The Starter Bar disappears once your page has content, and comes back if the page becomes empty again, for example after you delete every element.
+
 ## Control Box
 
 When you click an element in the Live Preview, a **Control Box** appears near it. This floating panel shows you what the element is and gives you tools to edit it.
