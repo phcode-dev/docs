@@ -10,7 +10,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
 :::
 
-**Edit Mode** lets you modify your page directly in the Live Preview. You can edit text, insert new elements, rearrange them with drag and drop, swap images, edit links, and much more.  
+**Edit Mode** lets you modify your page directly in the Live Preview. You can edit text, insert new elements, rearrange them with drag and drop, swap images, edit links, style elements, and much more.  
 **Phoenix Code** updates your source code automatically as you make changes.
 
 <VideoPlayer
