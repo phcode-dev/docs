@@ -10,13 +10,15 @@ Phoenix Code provides a comprehensive interface for identifying and resolving
 `ESLint` is only available in desktop apps. In Browsers, `JSHint` is the default
 linter for javascript files.
 
+> On desktop, JavaScript is also checked by the [TypeScript language server](/docs/Features/js-ts-code-intelligence), and JSHint turns off automatically.
+
 ![image](https://github.com/phcode-dev/phoenix/assets/5336369/eb00691a-a0b4-4c1a-9209-d78fc7db764d)
 
 ### Basic Usage
 
 To activate `ESLint`, the project must have a node `package.json` file with
-ESLint as a dependency. Opening or editing+saving a `js` or `jsx` file will lint
-the file with ESLint and .
+ESLint as a dependency. Opening a `js` or `jsx` file, or editing and saving it,
+lints the file and shows the results in the Problems panel.
 
 #### Features
 
@@ -42,7 +44,7 @@ Phoenix Code supports **ESLint versions 7 and above** only.
 
 #### Q: Why is ESLint not working in my project.
 
-Most problems are usually reported in the problesm panel itself. These are the
+Most problems are usually reported in the Problems panel itself. These are the
 most common errors:
 
 1. Ensure that ESLint is listed in `dependencies` or `devDependencies` section
