@@ -32,12 +32,13 @@ You can build complete websites for free. The core editor, Live Preview, Design 
 
 **Phoenix Pro** adds:
 
-- **Live Preview Edit** — edit the rendered page directly and sync changes back to your source automatically.
-- **AI** — unlimited AI use (free users get a daily and monthly chat limit).
-- **Device Preview** — check how your page looks at phone, tablet, and desktop sizes.
-- **Measurements** — ruler lines from a selected element to the edges of the page, labeled with exact pixel positions, for precise alignment.
-- **Image Gallery** — browse stock images from providers like Unsplash and Pexels and embed or download them into your project without leaving Phoenix Code.
-- **Markdown Editor** — edit Markdown directly in the preview with a full rich-text editor that keeps your source in sync.
+- **Live Preview Edit**: edit the rendered page directly and sync changes back to your source automatically.
+- **Styles Bar**: style any element visually from the Live Preview, with fonts, colors, spacing, and layout controls that save straight to your CSS.
+- **AI**: unlimited AI use (free users get a daily and monthly chat limit).
+- **Device Preview**: check how your page looks at phone, tablet, and desktop sizes.
+- **Measurements**: ruler lines from a selected element to the edges of the page, labeled with exact pixel positions, for precise alignment.
+- **Image Gallery**: browse stock images from providers like Unsplash and Pexels and embed or download them into your project without leaving Phoenix Code.
+- **Markdown Editor**: edit Markdown directly in the preview with a full rich-text editor that keeps your source in sync.
 
 See plans on the [pricing page](https://phcode.io/pricing).
 
