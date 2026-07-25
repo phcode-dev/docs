@@ -28,17 +28,17 @@ Here's what sets Phoenix Code apart.
 
 ## Free vs Pro
 
-You can build complete websites for free. The core editor, Live Preview, Design Mode, Git, Terminal, and code tools are all included at no cost.
+You can build complete websites for free. The core editor, [Live Preview](/docs/Features/Live%20Preview), [Design Mode](/docs/design-mode), [Git](/docs/Features/git), [Terminal](/docs/Features/terminal), and code tools are all included at no cost.
 
 **Phoenix Pro** adds:
 
-- **Live Preview Edit**: edit the rendered page directly and sync changes back to your source automatically.
-- **Styles Bar**: style any element visually from the Live Preview, with fonts, colors, spacing, and layout controls that save straight to your CSS.
-- **AI**: unlimited AI use (free users get a daily and monthly chat limit).
-- **Device Preview**: check how your page looks at phone, tablet, and desktop sizes.
-- **Measurements**: ruler lines from a selected element to the edges of the page, labeled with exact pixel positions, for precise alignment.
-- **Image Gallery**: browse stock images from providers like Unsplash and Pexels and embed or download them into your project without leaving Phoenix Code.
-- **Markdown Editor**: edit Markdown directly in the preview with a full rich-text editor that keeps your source in sync.
+- **[Live Preview Edit](/docs/Pro%20Features/live-preview-edit)**: edit the rendered page directly and sync changes back to your source automatically.
+- **[Styles Bar](/docs/Pro%20Features/styles-bar)**: style any element visually from the Live Preview, with fonts, colors, spacing, and layout controls that save straight to your CSS.
+- **[AI](/docs/Pro%20Features/ai-chat)**: unlimited AI use (free users get a daily and monthly chat limit).
+- **[Device Preview](/docs/Pro%20Features/device-preview)**: check how your page looks at phone, tablet, and desktop sizes.
+- **[Measurements](/docs/Pro%20Features/measurements)**: ruler lines from a selected element to the edges of the page, labeled with exact pixel positions, for precise alignment.
+- **[Image Gallery](/docs/Pro%20Features/image-gallery)**: browse stock images from providers like Unsplash and Pexels and embed or download them into your project without leaving Phoenix Code.
+- **[Markdown Editor](/docs/Pro%20Features/markdown-editor)**: edit Markdown directly in the preview with a full rich-text editor that keeps your source in sync.
 
 See plans on the [pricing page](https://phcode.io/pricing).
 
