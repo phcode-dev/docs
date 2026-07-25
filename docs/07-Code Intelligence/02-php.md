@@ -11,15 +11,15 @@ Everything works the same way as in [JavaScript & TypeScript](./js-ts-code-intel
 PHP code intelligence runs in the desktop app.
 :::
 
-## Installing the Language Server
+## Automatic Setup
 
-PHP code intelligence is powered by [Intelephense](https://intelephense.com). Its license does not allow Phoenix Code to ship it, so it is downloaded once, with your permission. The first time you open a PHP file, an install prompt appears:
+PHP code intelligence is powered by [Intelephense](https://intelephense.com). Phoenix Code downloads it the first time you open a PHP file. The progress shows in the status bar, with a stop button to cancel.
 
-<!-- TODO: PLUTO - add image here showing the PHP install prompt -->
+<!-- TODO: PLUTO - add image here showing the PHP setup task in the status bar -->
 
-Click **Install**. Phoenix Code downloads the server and shows the progress in the status bar. From then on everything works automatically, including updates.
+> Updates are automatic, and if you are offline, the download waits for a connection.
 
-If you decline, you can turn it on any time by setting the `php.codeIntelligence` [preference](/docs/editing-text#editing-preferences) to `true`. This offers the install again.
+To turn PHP code intelligence off, set the `php.codeIntelligence` [preference](/docs/editing-text#editing-preferences) to `false`. Setting it back to `true` downloads the server again.
 
 > HTML, CSS, and JavaScript inside your PHP files keep their existing code hints. Intelephense handles only the PHP parts.
 
