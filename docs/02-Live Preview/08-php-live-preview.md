@@ -8,6 +8,8 @@ import VideoPlayer from '@site/src/components/Video/player';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+This page covers running PHP pages in the Live Preview. For PHP editing features like completions and error checking, see [PHP Code Intelligence](/docs/Features/php-code-intelligence).
+
 Setting up Live Preview for PHP projects is straightforward with *Apache* and *XAMPP*. Below are the installation and configuration steps for each operating system:
 
 <Tabs
