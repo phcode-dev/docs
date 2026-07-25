@@ -41,17 +41,6 @@ For more details, visit the [GitHub repository](https://github.com/michaljerabek
 
 ![1-2-3](../images/popular-extensions/1-2-3.gif)
 
-### FuncDocr
-Created by: [Ole Kröger](https://github.com/Wikunia)
-
-This extension generates JS/PHPDocs for your functions, keeping your code documented and organized.
-
-For more details, visit the [GitHub repository](https://github.com/wikunia/brackets-funcdocr) of the extension.
-
-`FuncDocr` in action :-
-
-![FuncDocr](../images/popular-extensions/Func-Docr.gif)
-
 ### Remove Comments
 Created by: [Pluto](https://github.com/devvaannsh)
 
