@@ -5,7 +5,7 @@ slug: "/Features/php-code-intelligence"
 
 **Phoenix Code** supports full code intelligence for PHP: completions with documentation, parameter hints, hover info, Go to Definition, Find Usages, and error checking in the Problems panel.
 
-Everything works the same way as in [JavaScript & TypeScript](./js-ts-code-intelligence).
+Everything works the same way as described in [Code Intelligence](./Code%20Intelligence).
 
 :::info Desktop Only
 PHP code intelligence runs in the desktop app.
