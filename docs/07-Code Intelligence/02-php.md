@@ -19,7 +19,7 @@ PHP code intelligence is powered by [Intelephense](https://intelephense.com). Ph
 
 > Updates are automatic, and if you are offline, the download waits for a connection.
 
-To turn PHP code intelligence off, set the `php.codeIntelligence` [preference](/docs/editing-text#editing-preferences) to `false`. Setting it back to `true` downloads the server again.
+To turn PHP code intelligence off, set the `codeIntelligence.php` [preference](/docs/editing-text#editing-preferences) to `false`. Setting it back to `true` downloads the server again.
 
 > HTML, CSS, and JavaScript inside your PHP files keep their existing code hints. Intelephense handles only the PHP parts.
 

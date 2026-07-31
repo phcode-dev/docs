@@ -19,7 +19,7 @@ Python support is powered by [Pyrefly](https://pyrefly.org), a language server b
 
 > Updates are automatic, and if you are offline, the download waits for a connection.
 
-To turn Python code intelligence off, set the `python.codeIntelligence` [preference](/docs/editing-text#editing-preferences) to `false`. Setting it back to `true` downloads the server again.
+To turn Python code intelligence off, set the `codeIntelligence.python` [preference](/docs/editing-text#editing-preferences) to `false`. Setting it back to `true` downloads the server again.
 
 ## Formatting with Ruff
 
