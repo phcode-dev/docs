@@ -11,32 +11,18 @@ slug: "/Features/js-ts-code-intelligence"
 Browser version runs on classic JavaScript hints. For smarter Code intelligence, switch to the desktop app.
 :::
 
-## Code Completions
+Code hints, parameter hints, hover info, jump to definition, and error checking all work as described in [Code Intelligence](./Code%20Intelligence). This page covers what is specific to JavaScript and TypeScript.
 
-Suggestions appear as you type, drawn from your project and the libraries you use. Press `Ctrl + Space` to open them manually.
+## Auto Imports
 
-- A documentation popup appears beside the list, showing the selected item's signature and docs.
+Suggestions are drawn from your project and the libraries you use.
+
 - Picking a symbol from another file or module automatically adds the import at the top of your file.
 - If the same name exists in several modules, the hint shows how many and lets you choose which one to import.
 
-## Parameter Hints
+## Type Checking
 
-When you type a function call, a popup shows the function's parameters and highlights the one you are on. You can also open it from `Edit` → `Show Parameter Hint`.
-
-## Hover Info
-
-Hold your cursor over any symbol to see its type signature and documentation. The popup also has two quick action buttons:
-
-- **Go to Definition**: Jumps to where the symbol is defined, even in another file.
-- **Find Usages**: Lists every place the symbol is used across the project.
-
-<!-- TODO: PLUTO - add image here showing the hover popup with quick actions -->
-
-Both are also available in the right-click menu, and as keyboard shortcuts: `Ctrl/Cmd + J` for Go to Definition and `Shift + F12` for Find Usages.
-
-## Errors and Quick Fixes
-
-Errors and warnings from the language server appear in the [Problems panel](/docs/Features/Problems%20Panel/ESLint) as you type. When a fix is available, use the **Fix** button next to the problem, or **Fix All** to apply every fix in the file.
+Errors and warnings from the language server appear in the [Problems panel](/docs/Features/Problems%20Panel/ESLint) as you type, with a **Fix** button when a fix is available.
 
 > In plain JavaScript files, type warnings are off by default. Turn on **Type-check JavaScript** in the [config panel](#the-config-panel) to get them.
 
