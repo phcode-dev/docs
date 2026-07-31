@@ -12,7 +12,7 @@ Above the player you see the file's path, and below it the details: dimensions (
 ## Supported Formats
 
 - **Video**: `mp4`, `m4v`, `webm`, `mkv`, `ogv`, `mov`
-- **Audio**: `mp3`, `wav`, `ogg`, `m4a`, `flac`, `aac`, `aiff`
+- **Audio**: `mp3`, `wav`, `ogg`, `m4a`, `flac`, `aac`, `aif`, `aiff`
 
 > Whether a format plays can also depend on the codecs your operating system provides. If a file cannot be played, Phoenix Code shows a message stating that it cannot be played.
 
