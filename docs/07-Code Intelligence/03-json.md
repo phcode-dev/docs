@@ -3,7 +3,7 @@ title: JSON
 slug: "/Features/json-code-intelligence"
 ---
 
-**Phoenix Code** has code intelligence for JSON files, with extra features for `package.json`.
+**Phoenix Code** has code intelligence for JSON files, with extra features for `package.json`. Hints, hover info, and error checking work as described in [Code Intelligence](./Code%20Intelligence).
 
 ## package.json
 

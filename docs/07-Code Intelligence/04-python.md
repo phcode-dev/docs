@@ -5,7 +5,7 @@ slug: "/Features/python-code-intelligence"
 
 **Phoenix Code** supports full code intelligence for Python: completions with documentation, parameter hints, hover info, Go to Definition, Find Usages, and type error checking with quick fixes in the Problems panel.
 
-Everything works the same way as in [JavaScript & TypeScript](./js-ts-code-intelligence).
+Everything works the same way as described in [Code Intelligence](./Code%20Intelligence).
 
 :::info Desktop Only
 Python code intelligence runs in the desktop app.
