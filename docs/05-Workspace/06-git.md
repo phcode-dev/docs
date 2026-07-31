@@ -96,6 +96,14 @@ You can also discard all changes made to all files at once by clicking the three
 
 
 
+## Open All Changed Files
+
+To open every changed file at once, click the three dots at the top-right of the Git panel and select `Open All Changed Files`.
+
+Every modified and untracked file opens in the editor. Deleted files are skipped, since they no longer exist on disk. Untracked files are also skipped if you turned on `Hide untracked files in panel`.
+
+Files that are already open stay as they are. If the file you are viewing is one of the changed files, Phoenix Code keeps you on it. Otherwise it takes you to the first changed file.
+
 ## Navigate Git Changes
 
 When viewing a file with multiple Git changes, you can use the Next Change and Previous Change buttons to quickly move between modifications.
@@ -258,6 +266,12 @@ This lets you inspect changes directly within the editor.
 
 ## Branch
 
+The Git branch is shown in two places: in the sidebar, and on the Git panel toolbar. Clicking either one opens the same branch dropdown, next to the button you clicked.
+
+<!-- TODO: PLUTO - add image here showing the branch button in the git panel toolbar -->
+
+> The branch button is hidden when the Git panel is too narrow to fit it. The sidebar always shows the branch name.
+
 ### Creating a new branch
 
 To create a new branch in Git, click on the `main > Create new branch...` button in the sidebar. The name shown (e.g., main) represents your current branch, so if you're on a different branch, it may display another name.
@@ -355,6 +369,7 @@ Here are the available options in Git panel:
 * **Show Git Panel**: Toggles the visibility of the Git panel in the interface.
 * **Refresh Git**: Updates the Git panel to reflect the latest changes in the repository.
 [Read more](#refresh-panel) about refresh git.
+* **Open All Changed Files**: Opens every modified and untracked file in the editor. [Read more](#open-all-changed-files) about opening all changed files.
 
 ### Navigation options
 * **Go to Next Git Change**: Moves the cursor to the next Git-tracked change in the file.
