@@ -19,10 +19,14 @@ Your dependencies are also checked against npm's security advisories, the same d
 
 <!-- TODO: PLUTO - add image here showing a vulnerability warning -->
 
+:::info Desktop Only
+The security check runs in the desktop app. The package name, version, and hover hints work everywhere.
+:::
+
 ## Config File Intelligence
 
 Phoenix Code knows the valid fields of well-known config files like `package.json`, `tsconfig.json`, `.eslintrc`, `.babelrc`, and `.prettierrc`. It suggests fields as you type, shows what each field means on hover, and flags mistakes in the Problems panel.
 
-:::info
-Config file intelligence runs in the desktop app. The `package.json` features work everywhere.
+:::info Desktop Only
+Config file intelligence runs in the desktop app.
 :::
