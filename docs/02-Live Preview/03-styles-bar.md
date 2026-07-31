@@ -125,9 +125,16 @@ The **Outline** tab has the same style, width, and color options, plus:
 
 <!-- TODO: PLUTO - add image here showing the border and outline popover -->
 
-## Margin & Padding
+## Box Model
 
-The popover has two tabs, **Padding** and **Margin**. Each tab shows four fields for the top, right, bottom, and left sides, arranged around a frame just like they sit on the page.
+The popover has three tabs, **Size**, **Padding**, and **Margin**. They sit together because they measure one element from the inside out.
+
+The **Size** tab:
+
+- **Width and Height**: The element's size. Empty fields show the current size of the element as placeholders.
+- **Min / max**: Click the chip to set minimum and maximum size limits. This is very useful for creating responsive web pages.
+
+The **Padding** and **Margin** tabs each show four fields for the top, right, bottom, and left sides, arranged around a frame just like they sit on the page.
 
 > Padding is the space inside the element, between its content and its border. Margin is the space outside it.
 
@@ -139,16 +146,11 @@ The button in the center of the frame controls how the sides are linked:
 
 Linked fields are color coded so you can see which sides move together.
 
-<!-- TODO: PLUTO - add image here showing the margin and padding popover -->
+<!-- TODO: PLUTO - add image here showing the box model popover -->
 
 ## Layout
 
-The popover has three tabs, **Size**, **Display**, and **Position**.
-
-The **Size** tab:
-
-- **Width and Height**: The element's size. Empty fields show the current size of the element as placeholders.
-- **Min / max**: Click the chip to set minimum and maximum size limits. This is very useful for creating responsive web pages.
+The popover has two tabs, **Display** and **Position**.
 
 The **Display** tab:
 
