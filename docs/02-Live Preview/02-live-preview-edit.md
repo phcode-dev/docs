@@ -47,6 +47,9 @@ The new element is automatically selected so you can continue editing. Press `Ct
 
 > The Starter Bar disappears once your page has content, and comes back if the page becomes empty again, for example after you delete every element.
 
+To turn the Starter Bar off, set the `livePreviewShowStarterBar` preference to `false`. It is `true` by default.  
+See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.
+
 ## Control Box
 
 When you click an element in the Live Preview, a **Control Box** appears near it. This floating panel shows you what the element is and gives you tools to edit it.
