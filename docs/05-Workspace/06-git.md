@@ -93,6 +93,8 @@ You can also discard all changes made to all files at once by clicking the three
 
 To open every changed file at once, click the three dots at the top-right of the Git panel and select `Open All Changed Files`.
 
+![Open All Changed Files](../images/git-images/open-all-changed-files.png "Open All Changed Files in the Git panel menu")
+
 Every modified and untracked file opens in the editor. Deleted files are skipped, since they no longer exist on disk. Untracked files are also skipped if you turned on `Hide untracked files in panel`.
 
 Files that are already open stay as they are. If the file you are viewing is one of the changed files, Phoenix Code keeps you on it. Otherwise it takes you to the first changed file.
@@ -246,7 +248,7 @@ This lets you inspect changes directly within the editor.
 
 The Git branch is shown in two places: in the sidebar, and on the Git panel toolbar. Clicking either one opens the same branch dropdown, next to the button you clicked.
 
-<!-- TODO: PLUTO - add image here showing the branch button in the git panel toolbar -->
+![Branch dropdown](../images/git-images/git-branch-dropdown.png "Branch dropdown from the Git panel toolbar")
 
 > The branch button is hidden when the Git panel is too narrow to fit it. The sidebar always shows the branch name.
 
