@@ -43,6 +43,10 @@ The **State** dropdown in the popover lets you style the element's `hover`, `foc
 
 For any other state, type it in the **Create new rule** field, for example `.button:disabled`.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/element-states.mp4"
+/>
+
 > States need a CSS rule to live in, so they are not available when saving to inline styles.
 
 ## Font Family
@@ -55,11 +59,19 @@ Opens a font picker with three tabs:
 
 Fonts already used on the page appear in an **On this page** group, so you can reuse them quickly.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/font-family.mp4"
+/>
+
 ## Font Size
 
 Sets the font size. Type a value or use the **+/-** buttons. Click the unit button to switch between `px`, `em`, `rem`, and `%`, and the value is converted to the new unit automatically.
 
 > These shortcuts work in every number field of the Styles Bar: scroll over a field to change its value, hold `Shift` while clicking **+/-** for bigger steps `(x10)`, or hold `Alt` for smaller ones `(x0.1)`.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/font-size.mp4"
+/>
 
 ## Text Style
 
