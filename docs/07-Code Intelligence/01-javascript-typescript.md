@@ -3,9 +3,13 @@ title: JavaScript & TypeScript
 slug: "/Features/js-ts-code-intelligence"
 ---
 
+import VideoPlayer from '@site/src/components/Video/player';
+
 **Phoenix Code** ships full code intelligence for JavaScript, TypeScript, JSX, and TSX, powered by the TypeScript language server. It understands your whole project, so completions, navigation, and error checking work across files. It is on by default, so you don't need to setup anything!
 
-<!-- TODO: PLUTO - add video here showing code intelligence in action -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/code-intelligence/code-intelligence.mp4"
+/>
 
 :::info Desktop Only
 Browser version runs on classic JavaScript hints. For smarter Code intelligence, switch to the desktop app.
