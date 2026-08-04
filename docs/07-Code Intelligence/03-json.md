@@ -13,11 +13,9 @@ When you edit the dependencies in `package.json`:
 - Typing a version shows the package's real versions, newest first, with `^` and `~` shortcuts at the top.
 - Hovering over a dependency shows the package's description, latest version, license, and links to its homepage and docs.
 
-<!-- TODO: PLUTO - add image here showing npm package hints in package.json -->
-
 Your dependencies are also checked against npm's security advisories, the same data `npm audit` uses. If a dependency has a known vulnerability, it is underlined in the editor and listed in the [Problems panel](/docs/Features/Problems%20Panel/ESLint) with its severity.
 
-<!-- TODO: PLUTO - add image here showing a vulnerability warning -->
+![Vulnerability warning in package.json](../images/codeIntelligence/json-vulnerability.png "A vulnerable dependency, underlined, with its advisories shown on hover")
 
 :::info Desktop Only
 The security check runs in the desktop app. The package name, version, and hover hints work everywhere.
