@@ -5,9 +5,9 @@ slug: "/Features/video-audio-preview"
 
 **Phoenix Code** plays video and audio files right in the editor. Click a media file in the file tree and it opens with playback controls, no setup needed.
 
-<!-- TODO: PLUTO - add image here showing a video playing in the editor -->
+![Video preview in the editor](../images/videoAudioPreview/video-preview.jpg "A video playing in the editor")
 
-Above the player you see the file's path, and below it the details: dimensions (for videos), duration, and file size.
+Above the player you see the file's details: dimensions (for videos), duration, and file size, followed by the file's path.
 
 ## Supported Formats
 
