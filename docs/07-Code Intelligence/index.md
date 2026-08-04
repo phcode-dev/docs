@@ -22,9 +22,13 @@ As you type, a popup suggests what could come next: HTML tags, CSS properties an
 - Use the arrow keys to pick one, then press `Enter` or `Tab` to insert it.
 - Press `Esc` to close the popup.
 
+![Code hints popup](../images/codeIntelligence/code-hints.png "Code hints appear as you type")
+
 ### Documentation Beside Hints
 
 For languages with full code intelligence, the selected hint shows a documentation popup next to the list, with a short description of the function, property, or symbol. This lets you confirm it is the right one before you insert it.
+
+![Documentation beside hints](../images/codeIntelligence/hint-docs.png "Documentation popup beside the hint list")
 
 ## Parameter Hints
 
@@ -32,15 +36,21 @@ When you type inside a function call, right after `(` or `,`, a popup shows the 
 
 Press `Ctrl + Shift + Space` to show it any time, or use `Edit > Show Parameter Hint`.
 
+![Parameter hints](../images/codeIntelligence/parameter-hints.png "Parameter hints highlight the argument you are on")
+
 ## Hover Info
 
 Hold your cursor over any symbol to see its type signature and documentation. The popup also has two buttons, **Go to Definition** and **Find Usages**.
+
+![Hover info](../images/codeIntelligence/hover-info.png "Hover info with Go to Definition and Find Usages")
 
 ## Jump to Definition and Find Usages
 
 Place your cursor on a symbol and press `Ctrl/Cmd + J` to go to where it is defined, even in another file. This is also in `Navigate > Jump to Definition`.
 
 Press `Shift + F12` to list every place the symbol is used across the project. This is also in `Find > Find All References`.
+
+![Find usages](../images/codeIntelligence/find-usages.png "The References panel lists every usage across the project")
 
 Both are in the right-click menu too.
 
@@ -59,6 +69,8 @@ Two kinds of problems also change how the code looks, so you can spot them at a 
 - **Deprecated code**, like calling a function marked `@deprecated`, is drawn with a strikethrough.
 
 These still get their underline and their row in the Problems panel. The styling is an extra hint on top.
+
+![Error checking](../images/codeIntelligence/error-checking.png "Squiggly underlines in the editor and the Problems panel with Fix buttons")
 
 ### Quick Fixes
 
