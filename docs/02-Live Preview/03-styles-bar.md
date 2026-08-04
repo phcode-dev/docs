@@ -24,12 +24,18 @@ You can move the bar to the top of the Live Preview using the **dock button** at
 
 Phoenix Code gives you control to choose where you want to save your edits. By default, all the changes are saved directly on the element as an inline style. If you want to save the changes in one of the CSS rules, you can click on the **Save changes to** button:
 
+![Save changes to](../images/pro/styles-bar-save-changes.png "The Save changes to popover, with the number of elements each selector affects")
+
 It shows all the available selectors for that element. Select the one you want, and all the changes made to that element will automatically get saved in that selector.
 > Each selector also shows the number of elements it affects on the page.
 
 ### Creating a New Rule
 
 Click **Create new rule…** to save your edits in a new CSS rule. Type a class like `.card` or an id like `#hero` and click **Create**. Phoenix Code creates the rule and also adds the class or id to the element, so the rule applies right away.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/create-new-rule.mp4"
+/>
 
 ### Editing Element States
 
