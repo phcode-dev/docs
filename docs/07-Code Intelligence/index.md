@@ -65,7 +65,7 @@ When a problem can be fixed automatically, a **Fix** button appears next to it i
 These hints work in the desktop app and in the browser:
 
 | Language or context | What you get |
-|---|---|
+| --- | --- |
 | HTML | Tag names, attribute names and values |
 | HTML entities | Special characters like `&amp;` and `&nbsp;` |
 | CSS, LESS, SCSS | Property names and property values |
@@ -79,7 +79,7 @@ These hints work in the desktop app and in the browser:
 The desktop app also runs **language servers**. A language server understands your whole project, not just the open file, so you get context-aware completion, documentation popups, parameter hints, jump to definition, and project-wide error checking.
 
 | Language server | Languages | What you get |
-|---|---|---|
+| --- | --- | --- |
 | TypeScript | JavaScript, TypeScript, JSX, TSX | Type-aware completion, parameter hints, docs on hover, jump to definition, type errors, unused and deprecated detection. Respects your `jsconfig.json` or `tsconfig.json`. See [JavaScript & TypeScript](./js-ts-code-intelligence). |
 | JSON | JSON | Schema-based key and value completion and validation for well-known config files. In `package.json`, dependencies with known security problems are flagged. See [JSON](./json-code-intelligence). |
 | Intelephense | PHP | Completion, docs on hover, parameter hints, jump to definition, error checking. See [PHP](./php-code-intelligence). |
@@ -102,7 +102,7 @@ You can turn every part of this on or off from your preferences file. See [Editi
 ### General
 
 | Setting | Default | What it does |
-|---|---|---|
+| --- | --- | --- |
 | `showCodeHints` | `true` | The master switch. Set it to `false` to turn off all code hint popups. |
 | `showCodeHintDocs` | `true` | Set to `false` to hide the documentation popup shown beside code hints. |
 | `showParameterHints` | `true` | Set to `false` to turn off the parameter hint popup, including `Ctrl + Shift + Space`. |
@@ -114,7 +114,7 @@ You can turn every part of this on or off from your preferences file. See [Editi
 Turn hints off for one language and keep the rest:
 
 | Setting | Default | What it controls |
-|---|---|---|
+| --- | --- | --- |
 | `codehint.TagHints` | `true` | HTML tag hints |
 | `codehint.AttrHints` | `true` | HTML attribute hints |
 | `codehint.SpecialCharHints` | `true` | HTML entity hints |
@@ -129,7 +129,7 @@ Turn hints off for one language and keep the rest:
 Each language server has its own switch. Turning one off stops it right away, so completion, docs, parameter hints, jump to definition, and error checking for that language all stop, and any simpler built-in checker takes over. Turning it back on restarts the server. You don't need to restart the app.
 
 | Setting | Default | What it controls |
-|---|---|---|
+| --- | --- | --- |
 | `codeIntelligence.typescript` | `true` | JavaScript and TypeScript code intelligence |
 | `codeIntelligence.json` | `true` | JSON code intelligence |
 | `codeIntelligence.php` | `true` | PHP code intelligence. Set to `false` before you open a PHP file and the server is never downloaded. |
@@ -170,22 +170,22 @@ For example, to turn off JavaScript and TypeScript code intelligence in one proj
 
 ## Troubleshooting
 
-#### Q. Why don't I see any code hints?
+### Q. Why don't I see any code hints?
 
 Check that `showCodeHints` is not set to `false`, both in your preferences file and in the project's `.phcode.json`.
 
-#### Q. Why do HTML and CSS hints work, but JavaScript feels basic or JSON validation is missing?
+### Q. Why do HTML and CSS hints work, but JavaScript feels basic or JSON validation is missing?
 
 Those come from language servers, so they need the desktop app. If you are already on the desktop app, check that `codeIntelligence.typescript` and `codeIntelligence.json` are not set to `false`.
 
-#### Q. Why don't I see parameter hints inside a function call?
+### Q. Why don't I see parameter hints inside a function call?
 
 Check `showParameterHints`. Parameter hints come from a language server, so they also need the desktop app and that language's `codeIntelligence.*` setting turned on.
 
-#### Q. Why are unused variables in my `.js` file not flagged?
+### Q. Why are unused variables in my `.js` file not flagged?
 
 Plain JavaScript is not type-checked by default. Add `"checkJs": true` to `jsconfig.json`, or put a `// @ts-check` comment at the top of the file.
 
-#### Q. How do I stop `Tab` from inserting a hint?
+### Q. How do I stop `Tab` from inserting a hint?
 
 Set `insertHintOnTab` to `false`. `Enter` still inserts the selected hint.

@@ -101,11 +101,11 @@ Start typing to filter the list. Use the arrow keys to navigate and press `Enter
 
 You can also use standard Markdown shortcuts as you type:
 
-- `# ` through `##### ` for headings
-- `- ` or `* ` for bullet lists
-- `1. ` for numbered lists
-- `- [ ] ` for task lists
-- `> ` for blockquotes
+- `#` through `#####` for headings
+- `-` or `*` for bullet lists
+- `1.` for numbered lists
+- `- [ ]` for task lists
+- `>` for blockquotes
 - ` ``` ` for code blocks
 - `---` for dividers
 
@@ -161,7 +161,7 @@ Click an existing link to see a popover showing the URL, with options to **Edit*
 ### Keyboard Shortcuts
 
 | Action | Shortcut |
-|--------|----------|
+| -------- | ---------- |
 | Bold | `Ctrl/Cmd + B` |
 | Italic | `Ctrl/Cmd + I` |
 | Underline | `Ctrl/Cmd + U` |

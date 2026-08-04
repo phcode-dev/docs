@@ -69,6 +69,6 @@ Your Live Preview should now automatically update to reflect changes whenever PH
 
 ## PHP Live Preview in Action
 
-<VideoPlayer 
+<VideoPlayer
   src="https://docs-images.phcode.dev/videos/phplp/phplivepreview.mp4"
 />

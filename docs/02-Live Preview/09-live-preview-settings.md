@@ -16,11 +16,12 @@ There are two ways to access the Live Preview Settings dialog:
 
 ![live-preview-settings](../images/livePreview/settings-menu.png)
 
-2. **From the Live Preview Panel**:
+1. **From the Live Preview Panel**:
     - Locate the live preview panel, typically found at the right side of the editor.
     - Hover over the live preview panel title bar and click the gear icon (⚙️) located at the top right of the panel title bar.
 
 ![live-preview-settings](../images/livePreview/settings-gear.png)
+
 ## Configuring Your Server
 
 ![settings-dialog](../images/livePreview/settings-dialog.png)
@@ -31,11 +32,11 @@ Within the Live Preview Settings dialog, you can configure the following options
 
 - **Use Custom Development Server for This Project**: Enable this option to use your custom server for the live preview.
 
-    - **Server URL**: Enter the full URL where your server is running, including the port number (e.g., `http://localhost:8000`).
+  - **Server URL**: Enter the full URL where your server is running, including the port number (e.g., `http://localhost:8000`).
 
-    - **Serving Folder in Project**: Specify the path to the folder in your project that your server serves (e.g., `www/`, default is `/`, ie the full project is assumed to be served by the given server).
+  - **Serving Folder in Project**: Specify the path to the folder in your project that your server serves (e.g., `www/`, default is `/`, ie the full project is assumed to be served by the given server).
 
-    - **Server Framework**: Choose the framework or environment your server uses from the dropdown menu. If your server supports hot reloading, check the corresponding box to enable this feature. Currently 2 options are supported- [Docusaurus](https://docusaurus.io/) and `Custom`. Select `Custom` for all frameworks that are not `Docusaurus`.
+  - **Server Framework**: Choose the framework or environment your server uses from the dropdown menu. If your server supports hot reloading, check the corresponding box to enable this feature. Currently 2 options are supported- [Docusaurus](https://docusaurus.io/) and `Custom`. Select `Custom` for all frameworks that are not `Docusaurus`.
 
 After configuring these settings, click 'Done' to save and apply your settings. The live preview will now use your custom server.
 

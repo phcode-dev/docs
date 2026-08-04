@@ -22,5 +22,5 @@ While in [Edit Mode](./live-preview-edit), click the dropdown arrow next to the 
 
 Alternatively, you can enable measurements from the **More Options** menu *(three-dots icon)* in the Control Box. Select **Show Measurements** to toggle it on or off.
 
-You can also change this setting by updating the `livePreviewShowMeasurements` preference in the preferences file. Set it to `true` or `false` (default).   
+You can also change this setting by updating the `livePreviewShowMeasurements` preference in the preferences file. Set it to `true` or `false` (default).
 See [Editing Preferences](../editing-text#editing-preferences) to learn how to edit the preferences file.

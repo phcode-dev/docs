@@ -33,7 +33,7 @@ To download the image to your project instead, click the **Download image** butt
 
 > If this is your first time selecting an image, Phoenix Code prompts you to choose a folder where images should be saved. See [Folder Selection Dialog](#folder-selection-dialog) for details.  
   
-> Images are embedded or downloaded at the currently selected size. See [Image Size Selection](#image-size-selection) for details. 
+> Images are embedded or downloaded at the currently selected size. See [Image Size Selection](#image-size-selection) for details.
 
 Below each thumbnail, the photographer's name and a link to their profile is displayed.
 
@@ -53,6 +53,7 @@ If no folder has been selected yet, Phoenix Code prompts you to choose where the
 The first time you select an image, Phoenix Code prompts you to choose where images should be saved in your project.
 
 The dialog includes:
+
 - **Folder path input**: Enter a folder path relative to your project root. Phoenix Code suggests matching folders as you type.
 - **Remember this folder for this project**: When checked (default), Phoenix Code reuses this folder for future image downloads in the same project.
 
@@ -72,13 +73,14 @@ Hovering over a thumbnail displays the estimated file size in the top-left corne
 > Higher resolutions produce larger image files. Standard (1080px) is the default size.
 
 ### Available Image size options
-* Thumbnail (200px)
-* Avatar (320px)
-* Card (640px)
-* Content (960px)
-* Standard (1080px)
-* Hero (1280px)
-* Banner (1600px)
-* Retina (2200px)
+
+- Thumbnail (200px)
+- Avatar (320px)
+- Card (640px)
+- Content (960px)
+- Standard (1080px)
+- Hero (1280px)
+- Banner (1600px)
+- Retina (2200px)
 
 ![Image size dropdown](../images/pro/image-size-dropdown.png "Image size dropdown")
