@@ -30,13 +30,15 @@ Alternatively, you can switch to Edit Mode by updating the `livePreviewMode` set
 
 Edit Mode needs an element to work on, so on a blank page there is nothing to click yet. When your page has no content, a **Starter Bar** appears at the bottom center of the Live Preview to add your first element.
 
-<!-- TODO: PLUTO - add video here showing the starter bar working -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/live-preview-edit/starter-bar.mp4"
+/>
 
 The bar shows the most common elements: Heading, Paragraph, Image, Link, Button, and Div. Click one to add it to the page.
 
 To pick from the full element list, click the **three-dots icon** at the end of the bar. This opens a searchable list with the same elements as the [Insert Element](#insert-element) panel.
 
-<!-- TODO: PLUTO - add image here showing the starter bar searchable list -->
+![Starter Bar element list](../images/pro/starter-bar-element-list.png "Starter Bar searchable element list")
 
 When you pick an element:
 
