@@ -15,7 +15,7 @@ Python code intelligence runs in the desktop app.
 
 Python support is powered by [Pyrefly](https://pyrefly.org), a language server built by Meta. Phoenix Code downloads it (~25 MB) the first time you open a Python file. The progress shows in the status bar, with a stop button to cancel.
 
-<!-- TODO: PLUTO - add image here showing the python setup task in the status bar -->
+![Python setup task](../images/codeIntelligence/python-setup.png "The Python setup task in the status bar")
 
 > Updates are automatic, and if you are offline, the download waits for a connection.
 

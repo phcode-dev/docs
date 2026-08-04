@@ -15,7 +15,7 @@ PHP code intelligence runs in the desktop app.
 
 PHP code intelligence is powered by [Intelephense](https://intelephense.com). Phoenix Code downloads it the first time you open a PHP file. The progress shows in the status bar, with a stop button to cancel.
 
-<!-- TODO: PLUTO - add image here showing the PHP setup task in the status bar -->
+![PHP setup task](../images/codeIntelligence/php-setup.png "The PHP setup task in the status bar")
 
 > Updates are automatic, and if you are offline, the download waits for a connection.
 
