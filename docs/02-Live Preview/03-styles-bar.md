@@ -28,17 +28,17 @@ It shows all the available selectors for that element. Select the one you want, 
 
 <!-- TODO: PLUTO - add image here showing the affects x elements -->
 
-### Creating a New Style
+### Creating a New Rule
 
-Click **New style…** to save your edits in a new CSS rule. Type a class like `.card` or an id like `#hero` and click **Create**. Phoenix Code creates the rule and also adds the class or id to the element, so the rule applies right away.
+Click **Create new rule…** to save your edits in a new CSS rule. Type a class like `.card` or an id like `#hero` and click **Create**. Phoenix Code creates the rule and also adds the class or id to the element, so the rule applies right away.
 
-<!-- TODO: PLUTO - add video here showing the new style creation -->
+<!-- TODO: PLUTO - add video here showing the new rule creation -->
 
 ### Editing Element States
 
 The **State** dropdown in the popover lets you style the element's `hover`, `focus`, and `active` states. Pick a state and the Live Preview turns it on while you edit, with a banner showing which state you are editing.
 
-For any other state, type it in the **New style** field, for example `.button:disabled`.
+For any other state, type it in the **Create new rule** field, for example `.button:disabled`.
 
 <!-- TODO: PLUTO - add video of editing the hover state in the element -->
 
