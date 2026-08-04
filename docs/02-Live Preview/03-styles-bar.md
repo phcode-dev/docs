@@ -203,8 +203,12 @@ Read more about [CSS specificity](https://developer.mozilla.org/en-US/docs/Web/C
 
 Every popover has a **Reset** button in its header. It reverts all the changes you made since opening that popover. If you have not changed anything, the button stays disabled.
 
+![Reset button](../images/pro/styles-bar-reset.png "The Reset button in a popover header")
+
 You can also undo any Styles Bar edit with `Ctrl/Cmd + Z`, like every other Edit Mode operation. See [Undo and Redo](./live-preview-edit#undo-and-redo).
 
 ## Hiding the Styles Bar
 
 To hide the bar, open the **More Options** menu *(three-dots icon)* in the Control Box and unselect **Show Styles Bar**. While hidden, a **palette icon** appears in the Control Box tools to bring it back.
+
+![Show Styles Bar in the More Options menu](../images/pro/styles-bar-disable.png "Show Styles Bar in the Control Box More Options menu")
