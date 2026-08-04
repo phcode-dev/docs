@@ -24,6 +24,8 @@ Suggestions are drawn from your project and the libraries you use.
 - Picking a symbol from another file or module automatically adds the import at the top of your file.
 - If the same name exists in several modules, the hint shows how many and lets you choose which one to import.
 
+![Auto import suggestions](../images/codeIntelligence/hint-docs.png "Suggestions come from your project files and the libraries you use")
+
 ## Type Checking
 
 Errors and warnings from the language server appear in the [Problems panel](/docs/Features/Problems%20Panel/ESLint) as you type, with a **Fix** button when a fix is available.
@@ -49,6 +51,6 @@ When you open `jsconfig.json` or `tsconfig.json`, Phoenix Code shows a **Code In
 - **Managed by Phoenix Code**: Whether Phoenix Code keeps the file updated automatically.
 - **Target**, **Module**, and **JSX**: The JavaScript version, module system, and JSX handling your project uses.
 
-<!-- TODO: PLUTO - add image here showing the config panel -->
+![The Code Intelligence config panel](../images/codeIntelligence/config-panel.png "The Code Intelligence panel shown when jsconfig.json is open")
 
 Click **All options…** to read about every available setting in the [TypeScript config reference](https://www.typescriptlang.org/tsconfig/).
