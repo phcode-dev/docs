@@ -20,6 +20,10 @@ When you select an element in [Edit Mode](./live-preview-edit), a bar appears at
 
 You can move the bar to the top of the Live Preview using the **dock button** at the right end of the bar.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/docking.mp4"
+/>
+
 ## Save Changes To
 
 Phoenix Code gives you control to choose where you want to save your edits. By default, all the changes are saved directly on the element as an inline style. If you want to save the changes in one of the CSS rules, you can click on the **Save changes to** button:
@@ -163,6 +167,10 @@ The button in the center of the frame controls how the sides are linked:
 
 Linked fields are color coded so you can see which sides move together.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/box-model.mp4"
+/>
+
 ## Layout
 
 The popover has two tabs, **Display** and **Position**.
@@ -178,6 +186,10 @@ The **Position** tab:
 - **Z-index**: Which element appears on top when elements overlap.
 
 To learn more about these properties, see MDN's guides on [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) and [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position).
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/layout.mp4"
+/>
 
 ## When a Change Is Overridden
 
