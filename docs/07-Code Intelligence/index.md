@@ -3,7 +3,13 @@ title: Code Intelligence
 slug: "/Features/Code Intelligence"
 ---
 
+import VideoPlayer from '@site/src/components/Video/player';
+
 **Phoenix Code** helps you write code faster with code hints, parameter hints, documentation popups, jump to definition, and live error checking. Most of it works out of the box with no setup.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/code-intelligence/code-intelligence.mp4"
+/>
 
 This page explains what each feature does and how to tune it. For what you get in a specific language, see [JavaScript & TypeScript](./js-ts-code-intelligence), [PHP](./php-code-intelligence), [JSON](./json-code-intelligence), and [Python](./python-code-intelligence).
 
