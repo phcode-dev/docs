@@ -61,6 +61,7 @@ When you click an element in the Live Preview, a **Control Box** appears near it
 ### Element Info
 
 The left side of the Control Box displays information about the selected element:
+
 - **Tag name**: The element type (for example, `div`, `p`, `img`)
 - **ID**: The element’s ID attribute (if present), shown with a `#` prefix
 - **Dimensions**: The element’s size in pixels (width × height)
@@ -200,6 +201,7 @@ When you start editing text, a **Formatting Toolbar** appears near the element. 
 Select the text you want to format and click a formatting button, or use the keyboard shortcut. If no text is selected, the formatting is applied to the entire element. Clicking a format that is already applied removes it.
 
 The toolbar shows three primary formatting buttons:
+
 - **Bold** (`Ctrl/Cmd + B`): `<b>` tag
 - **Italic** (`Ctrl/Cmd + I`): `<i>` tag
 - **Underline** (`Ctrl/Cmd + U`): `<u>` tag
@@ -207,6 +209,7 @@ The toolbar shows three primary formatting buttons:
 #### More Formatting Options
 
 Click the **More** button *(three-dots icon)* on the right side of the toolbar to see additional formatting options:
+
 - **Strikethrough**: `<s>` tag
 - **Subscript**: `<sub>` tag
 - **Superscript**: `<sup>` tag
@@ -224,11 +227,12 @@ To drag an element: click and hold the element, then move your mouse to the desi
   src="https://docs-images.phcode.dev/videos/live-preview-edit/drag-drop.mp4"
 />
 
-#### Visual Indicators
+### Visual Indicators
+
 - **Arrow markers** to indicate the drop position:
-    - **Up (↑) or Down (↓) arrows**: Places the element before or after the target element
-    - **Left (←) or Right (→) arrows**: Places the element before or after the target element (appears for flex row layouts)
-    - **⊕ symbol with a dashed border**: Places the element inside the target as a child
+  - **Up (↑) or Down (↓) arrows**: Places the element before or after the target element
+  - **Left (←) or Right (→) arrows**: Places the element before or after the target element (appears for flex row layouts)
+  - **⊕ symbol with a dashed border**: Places the element inside the target as a child
 
 - **Target label**: A small box next to the marker displays the target element's tag name, ID, and classes
 
@@ -261,11 +265,13 @@ You can cut, copy, and paste elements in Edit Mode using standard keyboard short
 ### Using Keyboard Shortcuts
 
 When you click an element in the Live Preview, keyboard focus moves to the Live Preview. You can then use:
+
 - **Ctrl/Cmd + X**: Cut the selected element
 - **Ctrl/Cmd + C**: Copy the selected element
 - **Ctrl/Cmd + V**: Paste the copied or cut element below the currently selected element
 
 ### Using the More Options Menu
+
 ![More Options dropdown](../images/pro/more-options-dropdown.png "More Options Dropdown")
 
 Click the **More Options** button *(three-dots icon)* in the Control Box and select **Cut**, **Copy**, or **Paste** from the dropdown menu.

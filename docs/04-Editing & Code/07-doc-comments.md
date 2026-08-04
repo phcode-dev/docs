@@ -22,7 +22,7 @@ The description is selected first, so you can start typing right away. Press `Ta
 Each language gets a comment in its own convention:
 
 | Language | Comment style |
-|----------|---------------|
+| ---------- | --------------- |
 | JavaScript, JSX | JSDoc, with `@param {type} name` tags |
 | TypeScript, TSX | JSDoc without `{type}` braces, since the types already live in the code |
 | PHP | PHPDoc, with `@param type $name` tags |

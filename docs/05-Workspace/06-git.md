@@ -14,7 +14,6 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 > To use Git features inside Phoenix Code, ensure Git is installed on your computer. [Download Git](https://git-scm.com/downloads)
 
-
 ### Cloning a Repository
 
 To clone an existing repository in **Phoenix Code**, follow these steps:
@@ -24,16 +23,15 @@ To clone an existing repository in **Phoenix Code**, follow these steps:
 ![Start Project](../images/git-images/start-project.png "Start Project")
 > This will open the Quick Start project dialog box, which offers various options. [Read more](../quick-start-project) about Quick Start project here.
 
-2. Select `Get from Git`.
+1. Select `Get from Git`.
 
 ![Get from Git](../images/git-images/get-from-git.png "Get from Git")
 
-3. Enter the *Git Clone URL* and choose a *location* to save the project.
+1. Enter the *Git Clone URL* and choose a *location* to save the project.
 
 ![Get from Git dialog](../images/git-images/get-from-git-dialog.png "Get from Git dialog")
 
-4. Click `Create Project`. The repository will be cloned to the specified location.
-
+1. Click `Create Project`. The repository will be cloned to the specified location.
 
 ### Alternative Cloning Method
 
@@ -56,7 +54,6 @@ In the Clone Repository dialog, clicking on `More Options` expands additional se
 
 *If cloning fails due to authentication issues (e.g., timeout errors), you might need to manually provide your credentials.*
 
-
 ### Initializing a Git repository
 
 To initialize a Git repository in a project that doesn’t already have one, click on `File > Git > Init`. This will set up Git for your current project. After initialization, the Git icon will appear in the toolbar, indicating that version control is active.
@@ -68,8 +65,6 @@ To initialize a Git repository in a project that doesn’t already have one, cli
 Once Git is set up, the Git Panel provides a user-friendly interface to manage version control. You can track changes, commit updates, interact with remote repositories, and more—all within the editor.
 
 ![Git Panel](../images/git-images/git-panel.png "Git Panel")
-
-
 
 ## File status
 
@@ -93,8 +88,6 @@ For *Untracked* files, a `Delete File...` button is available. Clicking it will 
 You can also discard all changes made to all files at once by clicking the three dots at the top-right and selecting the `Discard all changes since the last commit...` option. This will remove all modifications made since your last commit.
 
 ![Discard all changes](../images/git-images/discard-all-changes.png "Discard all the changes made since last commit")
-
-
 
 ## Open All Changed Files
 
@@ -120,15 +113,11 @@ When viewing a file with multiple Git changes, you can use the Next Change and P
   src="https://docs-images.phcode.dev/videos/git-videos/navigation-git-changes.mp4"
 />
 
-
-
 ## Refresh Panel
 
 The **Refresh Panel** button ensures that the displayed repository information is up to date. While changes are usually updated automatically, this button helps in cases where the interface lags behind, ensuring all modifications are reflected correctly.
 
 ![Refresh Panel](../images/git-images/refresh-panel.png "Refresh panel")
-
-
 
 ## Commit
 
@@ -152,14 +141,13 @@ You can enter your commit message in the input box provided.
 *If your commit message is longer, you can use the `Extended` button at the top-right of the dialog. This expands the input area, making it easier to write detailed commit messages.*
 
 The commit dialog box also provides options to :-
+
 * **Amend Last Commit**: Selecting this option allows you to modify the most recent commit instead of creating a new one.
 * **Skip Pre-Commit Checks**: Enabling this option bypasses any pre-commit hooks or validation steps.
 
 > The Git commit dialog box also displays code inspection problems, if there are any:
 
 ![Commit Code inspection errors](../images/git-images/git-commit-errors.png "Commit code inspection errors")
-
-
 
 ## Push
 
@@ -196,15 +184,11 @@ Clicking More Options expands additional push settings, allowing for more contro
 
 * **Save Credentials to Remote URL**: If enabled, the provided credentials (username and password) will be stored in plain text within the remote URL.
 
-
-
 ## Fetch
 
 To download the latest changes from the remote repository without modifying your local repository, use the `Fetch` option in the Git panel. This will pull the latest changes from the remote repository but does not update your working directory or merge the changes into your local branches.
 
 ![Git fetch](../images/git-images/git-fetch.png "Git fetch")
-
-
 
 ## Pull
 
@@ -216,12 +200,10 @@ When you initiate a pull, the **Pull from Remote** dialog appears, allowing you 
 
 ![Git pull dialog](../images/git-images/git-pull-dialog.png "Git pull dialog")
 
-
 ### Target Branch
 
 * **Pull from current tracking branch**: Pulls the latest changes from the currently tracked remote branch.
 * **Pull from another branch**: Allows you to pull changes from a different remote branch.
-
 
 ### Pull Behavior
 
@@ -230,8 +212,6 @@ When you initiate a pull, the **Pull from Remote** dialog appears, allowing you 
 * **Merge without commit**: Merges changes but does not create an automatic commit.
 * **Use rebase**: Applies incoming changes on top of your local commits for a cleaner history.
 * **Use soft reset**: Resets to the latest remote commit without discarding local changes.
-
-
 
 ## Log (History)
 
@@ -262,8 +242,6 @@ When selecting a specific commit from the history panel, the **History Viewer** 
 
 This lets you inspect changes directly within the editor.
 
-
-
 ## Branch
 
 The Git branch is shown in two places: in the sidebar, and on the Git panel toolbar. Clicking either one opens the same branch dropdown, next to the button you clicked.
@@ -281,11 +259,11 @@ To create a new branch in Git, click on the `main > Create new branch...` button
 This will open a dialog box where you can:
 
 ![Git new branch dialog](../images/git-images/git-new-branch-dialog.png "Git new branch dialog box")
+
 * Select the branch from which the new branch will originate.
 * Enter a name for your new branch.
 
 Once created, it automatically switches to the new branch and you can start working independently.
-
 
 ### Merging a branch
 
@@ -305,8 +283,6 @@ This will open a merge dialog box with the following options:
 * **Use REBASE**: If checked, it rebases the commits instead of merging them.
 * **Create a merge commit even when the merge resolves as a fast-forward**: If checked, it forces a merge commit even if a fast-forward merge is possible.
 
-
-
 ### Deleting a branch
 
 To delete a local branch in Git, click on the current branch name (e.g., main) in the sidebar. This will open a dropdown menu displaying the list of all available branches.
@@ -314,8 +290,6 @@ To delete a local branch in Git, click on the current branch name (e.g., main) i
 ![Delete branch](../images/git-images/delete-branch.png "Delete branch")
 
 Next, hover over the branch you want to delete and click the cross 'x' icon next to it. This will delete the selected branch.
-
-
 
 ## Remote
 
@@ -351,8 +325,6 @@ To switch between remotes in your Git repository, click on the current remote na
 
 Select the remote you want to switch to, and Git will use that remote for operations like fetch, pull, or push.
 
-
-
 ## Git Menu
 
 The Git Menu provides various Git-related actions to manage version control within the application. To access this menu, navigate to `File > Git`.
@@ -366,42 +338,47 @@ Alternatively, you can also access the Git menu by clicking the three dots in th
 Here are the available options in Git panel:
 
 ### General options
+
 * **Show Git Panel**: Toggles the visibility of the Git panel in the interface.
 * **Refresh Git**: Updates the Git panel to reflect the latest changes in the repository.
 [Read more](#refresh-panel) about refresh git.
 * **Open All Changed Files**: Opens every modified and untracked file in the editor. [Read more](#open-all-changed-files) about opening all changed files.
 
 ### Navigation options
+
 * **Go to Next Git Change**: Moves the cursor to the next Git-tracked change in the file.
 * **Go to Previous Git Change**: Moves the cursor to the previous Git-tracked change in the file.
 [Read more](#navigate-git-changes) about navigation options.
 * **Close Unmodified Files**: Closes all open files that have no uncommitted changes.
 
 ### Version history
+
 * **View Authors of Selection...**: Displays the Git history of a selected portion of code, showing who made changes and when.
 ![View Authors](../images/git-images/view-authors.png "View authors")
 * **View Authors of File...**: Shows the commit history and contributors for the entire file.
 
 ### Committing Changes
+
 * **Commit Current File...**: Opens a dialog to commit changes in the currently active file.
 * **Commit All Files...**: Opens a dialog to commit all staged changes in the repository.
 
 [Read more](#commit) about committing changes.
 
 ### Remote Operations
+
 * **Fetch from Remote**: Retrieves the latest changes from the remote repository without merging them into the local branch. [Read more](#fetch) about fetching changes from remote.
 * **Pull from Remote...**: Fetches and integrates changes from the remote repository into the current branch. [Read more](#pull) about pulling changes from remote.
 * **Push to Remote...**: Pushes local commits to the remote repository (shows the number of commits ahead of the remote branch). [Read more](#push) about pushing changes to remote.
 
 ### Configuration
+
 * **Use Gerrit-compatible Push Ref**: Enables push references compatible with Gerrit, a web-based code review system. [Read more](https://www.gerritcodereview.com/) about Gerrit.
 * **Change Git Username...**: Allows updating the Git username for commits.
 * **Change Git Email...**: Allows updating the Git email address for commits.
 
 ### Settings
+
 * **Git Settings...**: Opens the Git Settings dialog to configure Git behavior within the application. [Read more](#git-settings) about Git settings.
-
-
 
 ## Git Settings
 
@@ -435,15 +412,13 @@ Alternatively, you can access it from the Git panel by clicking the three dots i
 * **Path to Git executable**: Allows specifying a custom path to the Git installation if needed.
 * **Default Git operation timeout (in seconds)**: Sets the maximum duration for Git operations before they time out (default: 30 seconds).
 
-
-
 ## FAQ
 
-#### Q. Why is the Git icon not displayed in the Phoenix toolbar?
+### Q. Why is the Git icon not displayed in the Phoenix toolbar?
 
 The Git icon does not appear in the toolbar if the project you opened is not a Git repository. It may also be missing if Git is not installed on your machine.
 
-#### Q. Why do I get an error when trying to push changes to remote?
+### Q. Why do I get an error when trying to push changes to remote?
 
 If you see a "Pushing to remote failed" error, it means there are new changes in the remote repository that you haven't pulled yet.
 
@@ -451,4 +426,3 @@ If you see a "Pushing to remote failed" error, it means there are new changes in
 
 **How to Fix:**
 Before pushing your changes, pull the latest updates from the remote repository. [Learn how to pull changes](#pull).
-

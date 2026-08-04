@@ -23,7 +23,7 @@ You can move the bar to the top of the Live Preview using the **dock button** at
 Phoenix Code gives you control to choose where you want to save your edits. By default, all the changes are saved directly on the element as an inline style. If you want to save the changes in one of the CSS rules, you can click on the **Save changes to** button:
 <!-- TODO: PLUTO - add image here showing the save changes to button -->
 
-It shows all the available selectors for that element. Select the one you want, and all the changes made to that element will automatically get saved in that selector. 
+It shows all the available selectors for that element. Select the one you want, and all the changes made to that element will automatically get saved in that selector.
 > Each selector also shows the number of elements it affects on the page.
 
 <!-- TODO: PLUTO - add image here showing the affects x elements -->
@@ -183,4 +183,3 @@ You can also undo any Styles Bar edit with `Ctrl/Cmd + Z`, like every other Edit
 ## Hiding the Styles Bar
 
 To hide the bar, open the **More Options** menu *(three-dots icon)* in the Control Box and unselect **Show Styles Bar**. While hidden, a **palette icon** appears in the Control Box tools to bring it back.
-
