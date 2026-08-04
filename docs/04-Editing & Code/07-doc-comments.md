@@ -3,15 +3,21 @@ title: Doc Comments
 slug: "/Features/doc-comments"
 ---
 
+import VideoPlayer from '@site/src/components/Video/player';
+
 **Phoenix Code** can write documentation comments for your functions and classes. Type `/**` on the line above a function and accept the hint that appears. Phoenix Code reads the function's signature and generates a comment with all its parameters filled in.
 
-<!-- TODO: PLUTO - add video here showing a JSDoc comment being generated -->
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/doc-comments/jsdoc-generation.mp4"
+/>
 
 ## Generating a Doc Comment
 
 1. Place your cursor on an empty line right above a function or class.
 2. Type `/**`. A code hint appears, for example **Add JSDoc comment**.
 3. Press `Enter` or `Tab` to accept it.
+
+![Add JSDoc comment hint](../images/docComments/jsdoc-hint.png "The Add JSDoc comment hint")
 
 The comment expands with a description placeholder, one `@param` tag for each parameter, and an `@returns` tag if the function returns something.
 
@@ -31,6 +37,10 @@ Each language gets a comment in its own convention:
 | Python | Docstring with `Args:` and `Returns:` sections |
 
 > In Python, type `"""` on the first line inside a `def` or `class` instead, since docstrings sit below the definition.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/doc-comments/python-docstring.mp4"
+/>
 
 ## What Gets Filled In
 
