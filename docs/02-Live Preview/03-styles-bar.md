@@ -94,6 +94,10 @@ The **Spacing** tab:
 
 To learn more about these properties, see [MDN's text styling guide](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals).
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/text-style.mp4"
+/>
+
 > Looking for bold? Use the font weight slider.
 
 ## Background Color
@@ -104,6 +108,10 @@ The **Background color** button shows the element's current background color. Cl
 - The **opacity** field controls how see-through the color is.
 - The **eyedropper** lets you pick a color from anywhere on the page.
 - **Swatches** shown on the left side displays all the colors already used in the page, plus a set of common colors.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/background-color.mp4"
+/>
 
 > The eyedropper is not available in Firefox, Safari and in the Linux desktop app.
 
@@ -129,6 +137,10 @@ The **Outline** tab has the same style, width, and color options, plus:
 - **Offset**: The gap between the outline and the element's edge.
 
 > An outline is drawn outside the element's border and takes up no space on the page.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/border-outline.mp4"
+/>
 
 ## Box Model
 
