@@ -11,7 +11,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 Phoenix Code 5.1 is now available at [phcode.io](https://phcode.io). 
 
-This release brings AI into the editor with [Claude Code](#try-ideas-build-pages-and-fix-issues-with-ai), a new [Design Mode](#design-mode) for visual editing, a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), responsive [device previews](#view-your-page-at-any-device-size), a [rebuilt Linux app](#linux), and a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes.
+This release brings AI into the editor with [Claude Code](#ai-with-visual-and-runtime-context), a new [Design Mode](#design-mode) for visual editing, a rich [Markdown editor](#rich-markdown-editor), a built-in [terminal](#built-in-terminal), responsive [device previews](#view-your-page-at-any-device-size), a [rebuilt Linux app](#linux), and a fresh new look with the [Phoenix Neo](#phoenix-neo-themes) themes.
 
 ## AI with visual and runtime context
 
