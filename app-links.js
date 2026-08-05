@@ -175,5 +175,9 @@ export const appLinks = [
 	{
 		from: '/app-links/video-audio-preview',
 		to: '/docs/Features/video-audio-preview',
+	},
+	{
+		from: '/app-links/doc-comments',
+		to: '/docs/Features/doc-comments',
 	}
 ];
