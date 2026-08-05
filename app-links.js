@@ -159,5 +159,21 @@ export const appLinks = [
 	{
 		from: '/app-links/themes',
 		to: '/docs/customizing-editor#themes',
+	},
+	{
+		from: '/app-links/styles-bar',
+		to: '/docs/Pro Features/styles-bar',
+	},
+	{
+		from: '/app-links/code-intelligence',
+		to: '/docs/Features/Code Intelligence',
+	},
+	{
+		from: '/app-links/ai-models',
+		to: '/docs/Pro Features/ai-chat#choosing-a-model',
+	},
+	{
+		from: '/app-links/video-audio-preview',
+		to: '/docs/Features/video-audio-preview',
 	}
 ];
