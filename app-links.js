@@ -179,5 +179,9 @@ export const appLinks = [
 	{
 		from: '/app-links/doc-comments',
 		to: '/docs/Features/doc-comments',
+	},
+	{
+		from: '/app-links/edit-hyperlink',
+		to: '/docs/Pro Features/live-preview-edit#edit-hyperlink',
 	}
 ];
