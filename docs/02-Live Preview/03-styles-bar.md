@@ -199,6 +199,10 @@ Right-click any control inside a popover, like a number field, a color swatch, o
 
 **Learn more…** opens this documentation page in your browser, so you can read it whenever you need help.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/styles-bar/remove-reset.mp4"
+/>
+
 ### Remove
 
 **Remove `<property>`** deletes the style from wherever it is actually written in your code. The line under it tells you where that is, either the CSS rule and its file, like `.card (style.css)`, or **this element's inline style**.
