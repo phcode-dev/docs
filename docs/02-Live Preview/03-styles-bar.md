@@ -237,11 +237,15 @@ Phoenix Code shows a notice telling you where the value really lives, for exampl
 - **Remove**: deletes the style at that place, the same as the menu action above. This button only shows up when the style can be deleted on its own.
 - **Reset**: adds `revert` on this element only.
 
+![Notice shown when a field will not clear](../images/pro/styles-bar-field-not-clearing.png "The notice below the Styles Bar, with Remove and Reset buttons")
+
 ## When a Change Is Overridden
 
 Sometimes a more specific CSS rule wins over the rule you are editing, so your change has no visible effect. In that case, Phoenix Code automatically adds `!important` to your change to make it take effect.
 
 If the change is still overridden even after the `!important` property, Phoenix Code shows a notification with an **Apply anyway** button, which applies the style directly on the element so it always takes effect.
+
+![Notice shown when a change is overridden](../images/pro/styles-bar-overridden.png "The overridden notice below the Styles Bar, with the Apply anyway button")
 
 Read more about [CSS specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity) on MDN.
 
