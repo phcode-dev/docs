@@ -191,6 +191,42 @@ To learn more about these properties, see MDN's guides on [display](https://deve
   src="https://docs-images.phcode.dev/videos/styles-bar/layout.mp4"
 />
 
+## Removing a Style
+
+Right-click any control inside a popover, like a number field, a color swatch, or a dropdown, to open a menu with three actions: [Remove](#remove), [Reset to browser default](#reset-to-browser-default), and **Learn more…**.
+
+**Learn more…** opens this documentation page in your browser, so you can read it whenever you need help.
+
+### Remove
+
+**Remove `<property>`** deletes the style from wherever it is actually written in your code. The line under it tells you where that is, either the CSS rule and its file, like `.card (style.css)`, or **this element's inline style**.
+
+> For number fields, you can also just empty the field to remove the style, without opening the menu.
+
+For a CSS rule, it also shows how many elements that rule affects, so you know what else on the page changes when you delete it.
+
+This action is disabled in two cases:
+
+- **Not set on this element**: there is nothing to remove.
+- **Set by a shorthand, use Reset instead**: the value comes from a shorthand like `font` or `border`. Deleting that line would take the other values in it along too, so use **Reset to browser default** instead.
+
+### Reset to Browser Default
+
+**Reset to browser default** puts the property back to what the browser uses when no CSS sets it. The line under it shows exactly what gets added, for example `font-size: revert`.
+
+This action is always available. It writes on the element itself, so only that one element changes even when the value comes from a shared rule. It also works for values coming from a rule you cannot edit, like one in a library stylesheet.
+
+> This is not the same as the **Reset** button in the popover header. That one only undoes the changes you made since opening the popover. See [Reset and Undo](#reset-and-undo).
+
+## When a Field Will Not Clear
+
+Sometimes you empty a field and the old value comes straight back. That happens when the value is written somewhere your current [Save changes to](#save-changes-to) target cannot reach.
+
+Phoenix Code shows a notice telling you where the value really lives, for example *Font Size is set by `.card (style.css)`*, with buttons to fix it:
+
+- **Remove**: deletes the style at that place, the same as the menu action above. This button only shows up when the style can be deleted on its own.
+- **Reset**: adds `revert` on this element only.
+
 ## When a Change Is Overridden
 
 Sometimes a more specific CSS rule wins over the rule you are editing, so your change has no visible effect. In that case, Phoenix Code automatically adds `!important` to your change to make it take effect.
