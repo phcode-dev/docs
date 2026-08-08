@@ -203,6 +203,8 @@ Right-click any control inside a popover, like a number field, a color swatch, o
 
 **Remove `<property>`** deletes the style from wherever it is actually written in your code. The line under it tells you where that is, either the CSS rule and its file, like `.card (style.css)`, or **this element's inline style**.
 
+![Remove in the right-click menu](../images/pro/styles-bar-remove-menu.png "Remove Font size, showing the CSS rule the value comes from")
+
 > For number fields, you can also just empty the field to remove the style, without opening the menu.
 
 For a CSS rule, it also shows how many elements that rule affects, so you know what else on the page changes when you delete it.
@@ -215,6 +217,8 @@ This action is disabled in two cases:
 ### Reset to Browser Default
 
 **Reset to browser default** puts the property back to what the browser uses when no CSS sets it. The line under it shows exactly what gets added, for example `font-size: revert`.
+
+![Reset to browser default in the right-click menu](../images/pro/styles-bar-reset-default.png "Reset to browser default, showing the declaration it adds to the element")
 
 This action is always available. It writes on the element itself, so only that one element changes even when the value comes from a shared rule. It also works for values coming from a rule you cannot edit, like one in a library stylesheet.
 
