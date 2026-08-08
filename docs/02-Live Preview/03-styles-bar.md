@@ -47,6 +47,8 @@ The **State** dropdown in the popover lets you style the element's `hover`, `foc
 
 For any other state, type it in the **Create new rule** field, for example `.button:disabled`.
 
+If your CSS already has state rules for the element, like `.button:hover`, they also show up in the **Save changes to** list, grouped at the bottom after all the regular selectors. Picking one switches to that rule and turns its state on for editing.
+
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/styles-bar/element-states.mp4"
 />
