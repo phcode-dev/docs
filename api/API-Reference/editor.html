@@ -23,8 +23,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Phoenix Code","url":"https://phcode.dev","logo":"https://docs.phcode.dev/img/logo.svg","sameAs":["https://x.com/phcodedev","https://github.com/phcode-dev/","https://discord.gg/rBpTBPttca","https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Phoenix Code Documentation","url":"https://docs.phcode.dev"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3c4d133b.css">
-<script src="/assets/js/runtime~main.023479ef.js" defer="defer"></script>
-<script src="/assets/js/main.f49808ed.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.32121dbe.js" defer="defer"></script>
+<script src="/assets/js/main.6a03c3f9.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -532,7 +532,7 @@ if the restore point is found, it reverts all changes made after that point.</p>
 end of the selection range. Optionally centers around the cursor after
 making the selection</p>
 <p><strong>Kind</strong>: instance method of <a href="#Editor" class=""><code>Editor</code></a></p>
-<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>start</td><td><code>Object</code></td><td></td></tr><tr><td>[end]</td><td><code>Object</code></td><td>If not specified, defaults to start.</td></tr><tr><td>[center]</td><td><code>boolean</code></td><td>true to center the viewport</td></tr><tr><td>[centerOptions]</td><td><code>number</code></td><td>Option value, or 0 for no options; one of the BOUNDARY_* constants above.</td></tr><tr><td>[origin]</td><td><code>string</code></td><td>An optional string that describes what other selection or edit operations this      should be merged with for the purposes of undo. See <a href="Document::Document#replaceRange" target="_blank" rel="noopener noreferrer" class="">Document::Document#replaceRange</a> for more details.</td></tr></tbody></table>
+<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>start</td><td><code>Object</code></td><td></td></tr><tr><td>[end]</td><td><code>Object</code></td><td>If not specified, defaults to start.</td></tr><tr><td>[center]</td><td><code>boolean</code></td><td>true to center the viewport</td></tr><tr><td>[centerOptions]</td><td><code>number</code></td><td>Option value, or 0 for no options; one of the BOUNDARY_* constants above.</td></tr><tr><td>[origin]</td><td><code>string</code></td><td>An optional string that describes what other selection or edit operations this      should be merged with for the purposes of undo. See <code>Document#replaceRange</code> for more details.</td></tr></tbody></table>
 <a name="Editor+replaceSelection"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editorreplaceselectionreplacement-select">editor.replaceSelection(replacement, [select])<a href="#editorreplaceselectionreplacement-select" class="hash-link" aria-label="Direct link to editor.replaceSelection(replacement, [select])" title="Direct link to editor.replaceSelection(replacement, [select])" translate="no">​</a></h3>
 <p>Replace the selection with the given string.</p>
@@ -567,7 +567,7 @@ getSelection() and getCursorPos()) defaulting to the last if not specified.
 Overlapping ranges will be automatically merged, and the selection will be sorted.
 Optionally centers around the primary selection after making the selection.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Editor" class=""><code>Editor</code></a></p>
-<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>selections</td><td><code>Object</code></td><td>The selection ranges to set. If the start and end of a range are the same, treated as a cursor.      If reversed is true, set the anchor of the range to the end instead of the start.      If primary is true, this is the primary selection. Behavior is undefined if more than      one selection has primary set to true. If none has primary set to true, the last one is primary.</td></tr><tr><td>center</td><td><code>boolean</code></td><td>true to center the viewport around the primary selection.</td></tr><tr><td>centerOptions</td><td><code>number</code></td><td>Option value, or 0 for no options; one of the BOUNDARY_* constants above.</td></tr><tr><td>origin</td><td><code>string</code></td><td>An optional string that describes what other selection or edit operations this      should be merged with for the purposes of undo. See <a href="Document::Document#replaceRange" target="_blank" rel="noopener noreferrer" class="">Document::Document#replaceRange</a> for more details.</td></tr></tbody></table>
+<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>selections</td><td><code>Object</code></td><td>The selection ranges to set. If the start and end of a range are the same, treated as a cursor.      If reversed is true, set the anchor of the range to the end instead of the start.      If primary is true, this is the primary selection. Behavior is undefined if more than      one selection has primary set to true. If none has primary set to true, the last one is primary.</td></tr><tr><td>center</td><td><code>boolean</code></td><td>true to center the viewport around the primary selection.</td></tr><tr><td>centerOptions</td><td><code>number</code></td><td>Option value, or 0 for no options; one of the BOUNDARY_* constants above.</td></tr><tr><td>origin</td><td><code>string</code></td><td>An optional string that describes what other selection or edit operations this      should be merged with for the purposes of undo. See <code>Document#replaceRange</code> for more details.</td></tr></tbody></table>
 <a name="Editor+toggleOverwrite"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editortoggleoverwritestart">editor.toggleOverwrite(start)<a href="#editortoggleoverwritestart" class="hash-link" aria-label="Direct link to editor.toggleOverwrite(start)" title="Direct link to editor.toggleOverwrite(start)" translate="no">​</a></h3>
 <p>Sets the editors overwrite mode state. If null is passed, the state is toggled.</p>
@@ -727,7 +727,7 @@ A-B-A would return A as the mode, not null).</p>
 <p><strong>Kind</strong>: instance method of <a href="#Editor" class=""><code>Editor</code></a><br>
 <strong>Returns</strong>: <code>Object</code> | <code>string</code> - Name of syntax-highlighting mode, or object containing a &quot;name&quot; property
 naming the mode along with configuration options required by the mode.<br>
-<strong>See</strong>: <a href="LanguageManager::#getLanguageForPath" target="_blank" rel="noopener noreferrer" class="">LanguageManager::#getLanguageForPath</a> and <a href="LanguageManager::Language#getMode" target="_blank" rel="noopener noreferrer" class="">LanguageManager::Language#getMode</a>.</p>
+<strong>See</strong>: <a href="LanguageManager::#getLanguageForPath" target="_blank" rel="noopener noreferrer" class="">LanguageManager::#getLanguageForPath</a> and <code>Language#getMode</code>.</p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>start</td><td><code>Object</code></td><td>The start of the range to check.</td></tr><tr><td>end</td><td><code>Object</code></td><td>The end of the range to check.</td></tr><tr><td>[knownMixed]</td><td><code>boolean</code></td><td>Whether we already know we&#x27;re in a mixed mode and need to check both     the start and end.</td></tr></tbody></table>
 <a name="Editor+getModeForSelection"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editorgetmodeforselectionselection--object--string">editor.getModeForSelection(selection) ⇒ <code>Object</code> | <code>string</code><a href="#editorgetmodeforselectionselection--object--string" class="hash-link" aria-label="Direct link to editorgetmodeforselectionselection--object--string" title="Direct link to editorgetmodeforselectionselection--object--string" translate="no">​</a></h3>
@@ -739,7 +739,7 @@ consistent and resolve to the same mode.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Editor" class=""><code>Editor</code></a><br>
 <strong>Returns</strong>: <code>Object</code> | <code>string</code> - Name of syntax-highlighting mode, or object containing a &quot;name&quot; property
 naming the mode along with configuration options required by the mode.<br>
-<strong>See</strong>: <a href="LanguageManager::#getLanguageForPath" target="_blank" rel="noopener noreferrer" class="">LanguageManager::#getLanguageForPath</a> and <a href="LanguageManager::Language#getMode" target="_blank" rel="noopener noreferrer" class="">LanguageManager::Language#getMode</a>.</p>
+<strong>See</strong>: <a href="LanguageManager::#getLanguageForPath" target="_blank" rel="noopener noreferrer" class="">LanguageManager::#getLanguageForPath</a> and <code>Language#getMode</code>.</p>
 <table><thead><tr><th>Param</th><th>Type</th></tr></thead><tbody><tr><td>selection</td><td><code>Object</code></td></tr></tbody></table>
 <a name="Editor+getLanguageForSelection"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editorgetlanguageforselection--language">editor.getLanguageForSelection() ⇒ <code>Language</code><a href="#editorgetlanguageforselection--language" class="hash-link" aria-label="Direct link to editorgetlanguageforselection--language" title="Direct link to editorgetlanguageforselection--language" translate="no">​</a></h3>
@@ -756,7 +756,7 @@ document, etc...)</p>
 <p>Gets the syntax-highlighting mode for the document.</p>
 <p><strong>Kind</strong>: instance method of <a href="#Editor" class=""><code>Editor</code></a><br>
 <strong>Returns</strong>: <code>Object</code> | <code>String</code> - Object or Name of syntax-highlighting mode<br>
-<strong>See</strong>: <a href="LanguageManager::#getLanguageForPath" target="_blank" rel="noopener noreferrer" class="">LanguageManager.getLanguageForPath</a> and <a href="LanguageManager::Language#getMode" target="_blank" rel="noopener noreferrer" class="">Language.getMode</a>.</p>
+<strong>See</strong>: <a href="LanguageManager::#getLanguageForPath" target="_blank" rel="noopener noreferrer" class="">LanguageManager.getLanguageForPath</a> and <code>Language.getMode</code>.</p>
 <a name="Editor+updateLayout"></a>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editorupdatelayoutforcerefresh">editor.updateLayout([forceRefresh])<a href="#editorupdatelayoutforcerefresh" class="hash-link" aria-label="Direct link to editor.updateLayout([forceRefresh])" title="Direct link to editor.updateLayout([forceRefresh])" translate="no">​</a></h3>
 <p>resizes the editor to fill its parent container
@@ -864,7 +864,7 @@ Affects any editors that share the same preference location.</p>
 <p><strong>Kind</strong>: static method of <a href="#Editor" class=""><code>Editor</code></a></p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>[fullPath]</td><td><code>string</code></td><td>Path to file to get preference for</td></tr></tbody></table>
 <a name="Editor.getAutoTabUnits"></a>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editorgetautotabunitsfullpath--number--">Editor.getAutoTabUnits(fullPath) ⇒ <code>number</code> | <code>*</code><a href="#editorgetautotabunitsfullpath--number--" class="hash-link" aria-label="Direct link to editorgetautotabunitsfullpath--number--" title="Direct link to editorgetautotabunitsfullpath--number--" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editorgetautotabunitsfullpath--number--">Editor.getAutoTabUnits(fullPath)   ⇒ <code>number</code> | <code>*</code><a href="#editorgetautotabunitsfullpath--number--" class="hash-link" aria-label="Direct link to editorgetautotabunitsfullpath--number--" title="Direct link to editorgetautotabunitsfullpath--number--" translate="no">​</a></h3>
 <p>Gets the number of tabs for the file. Will</p>
 <p><strong>Kind</strong>: static method of <a href="#Editor" class=""><code>Editor</code></a></p>
 <table><thead><tr><th>Param</th></tr></thead><tbody><tr><td>fullPath</td></tr></tbody></table>

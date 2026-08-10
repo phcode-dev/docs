@@ -2,11 +2,117 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.phcode.dev/blog</id>
     <title>Phoenix Code Docs Blog</title>
-    <updated>2026-05-08T00:00:00.000Z</updated>
+    <updated>2026-08-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.phcode.dev/blog"/>
     <subtitle>Phoenix Code Docs Blog</subtitle>
     <icon>https://docs.phcode.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Phoenix Code 5.2: Styles Bar, Code Intelligence & More]]></title>
+        <id>https://docs.phcode.dev/blog/release-5.2</id>
+        <link href="https://docs.phcode.dev/blog/release-5.2"/>
+        <updated>2026-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Phoenix Code 5.2 introduces the Styles Bar for visual styling in Live Preview, IDE-grade code intelligence for JavaScript, TypeScript, JSON, Python, and PHP, AI model selection, an improved Git panel, and video and audio preview.]]></summary>
+        <content type="html"><![CDATA[<p>Phoenix Code 5.2 is now available at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
+<p>This release brings the <a href="https://docs.phcode.dev/blog/release-5.2#style-your-page-visually-with-the-styles-bar" class="">Styles Bar</a> for styling your page visually, <a href="https://docs.phcode.dev/blog/release-5.2#code-intelligence-for-javascript-typescript-json-python-and-php" class="">Code Intelligence</a> for JavaScript, TypeScript, JSON, Python, and PHP, a <a href="https://docs.phcode.dev/blog/release-5.2#start-from-a-blank-page" class="">Starter Bar</a> for blank pages, <a href="https://docs.phcode.dev/blog/release-5.2#generate-doc-comments" class="">Doc Comment Generation</a>, <a href="https://docs.phcode.dev/blog/release-5.2#choose-your-ai-model" class="">AI Model Selection</a>, an <a href="https://docs.phcode.dev/blog/release-5.2#git-improvements" class="">Improved Git Panel</a>, and <a href="https://docs.phcode.dev/blog/release-5.2#video-and-audio-preview" class="">Video and Audio Preview</a> right in the editor.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="style-your-page-visually-with-the-styles-bar">Style your page visually with the Styles Bar<a href="https://docs.phcode.dev/blog/release-5.2#style-your-page-visually-with-the-styles-bar" class="hash-link" aria-label="Direct link to Style your page visually with the Styles Bar" title="Direct link to Style your page visually with the Styles Bar" translate="no">​</a></h2>
+<p>Select an element in Live Preview and the new Styles Bar appears with controls for fonts, colors, backgrounds, borders, spacing, and layout. Every change syncs to your code in real time.</p>
+<p>Pick where your edits are saved - inline on the element, in an existing CSS rule, or in a new rule the bar creates for you. You can also style <code>hover</code>, <code>focus</code>, and other element states, and the Live Preview turns the state on while you edit.</p>
+<p>The font picker covers system fonts and the full Google Fonts collection, with each font previewed in its own style. <a href="https://docs.phcode.dev/app-links/styles-bar" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
+<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/styles-bar/styles-bar-hero.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="code-intelligence-for-javascript-typescript-json-python-and-php">Code Intelligence for JavaScript, TypeScript, JSON, Python, and PHP<a href="https://docs.phcode.dev/blog/release-5.2#code-intelligence-for-javascript-typescript-json-python-and-php" class="hash-link" aria-label="Direct link to Code Intelligence for JavaScript, TypeScript, JSON, Python, and PHP" title="Direct link to Code Intelligence for JavaScript, TypeScript, JSON, Python, and PHP" translate="no">​</a></h2>
+<p>Phoenix Code now ships IDE-grade code intelligence: context-aware completions with documentation beside them, parameter hints, hover info, jump to definition, find usages, and live error checking with quick fixes.</p>
+<ul>
+<li class=""><strong>JavaScript &amp; TypeScript</strong> - full project intelligence with auto imports and automatically managed configuration.</li>
+<li class=""><strong>JSON</strong> - schema-based completion and validation for well-known config files. In <code>package.json</code>, get npm package name and version suggestions as you type, and dependencies with known vulnerabilities are flagged.</li>
+<li class=""><strong>Python</strong> - type-aware intelligence via Pyrefly, with Ruff powering code formatting.</li>
+<li class=""><strong>PHP</strong> - full intelligence via Intelephense, installed on demand when you open a PHP file.</li>
+</ul>
+<p>Language servers set themselves up automatically in the background and run locally on your machine, so your code is not sent anywhere. <a href="https://docs.phcode.dev/app-links/code-intelligence" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
+<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/code-intelligence/code-intelligence.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
+<blockquote>
+<p>Code intelligence powered by language servers is available only in desktop apps.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="choose-your-ai-model">Choose your AI model<a href="https://docs.phcode.dev/blog/release-5.2#choose-your-ai-model" class="hash-link" aria-label="Direct link to Choose your AI model" title="Direct link to Choose your AI model" translate="no">​</a></h2>
+<p>Pick which Claude model powers your AI chat, right from the chat header, and switch models even in the middle of a conversation.</p>
+<p>Prefer an editor without AI? It can now be switched off completely from <code>View &gt; Enable AI</code> or the AI settings dialog. <a href="https://docs.phcode.dev/app-links/ai-models" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
+<p><img decoding="async" loading="lazy" src="https://docs-images.phcode.dev/in-app/pro-aiModels.png" alt="AI model selection" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="start-from-a-blank-page">Start from a blank page<a href="https://docs.phcode.dev/blog/release-5.2#start-from-a-blank-page" class="hash-link" aria-label="Direct link to Start from a blank page" title="Direct link to Start from a blank page" translate="no">​</a></h2>
+<p>Edit Mode needs an element to work on, and a blank page has none. Now a Starter Bar appears on empty pages so you can add your first element right from the preview, and Phoenix Code creates the page structure for you. <a href="https://docs.phcode.dev/app-links/live-preview-edit" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
+<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/live-preview-edit/starter-bar.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="generate-doc-comments">Generate Doc Comments<a href="https://docs.phcode.dev/blog/release-5.2#generate-doc-comments" class="hash-link" aria-label="Direct link to Generate Doc Comments" title="Direct link to Generate Doc Comments" translate="no">​</a></h2>
+<p>Type <code>/**</code> on the line above a function or class and accept the hint that appears. Phoenix Code reads the signature and generates a documentation comment with every parameter filled in, in each language's own convention: JSDoc for JavaScript and TypeScript, PHPDoc for PHP, docstrings for Python, and more. <a href="https://docs.phcode.dev/app-links/doc-comments" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
+<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/doc-comments/jsdoc-generation.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="git-improvements">Git improvements<a href="https://docs.phcode.dev/blog/release-5.2#git-improvements" class="hash-link" aria-label="Direct link to Git improvements" title="Direct link to Git improvements" translate="no">​</a></h2>
+<p>Your current branch is now shown in the sidebar and on the Git panel toolbar. Click either one to switch branches or create a new one.</p>
+<p>The panel's menu also gets a new <code>Open All Changed Files</code> action that opens every modified file at once. <a href="https://docs.phcode.dev/app-links/git" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
+<p><img decoding="async" loading="lazy" alt="Git branch dropdown" src="https://docs.phcode.dev/assets/images/branch-dropdown-104b70650f59faf5356ecd51d6ec54df.png" width="1247" height="533" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="video-and-audio-preview">Video and Audio Preview<a href="https://docs.phcode.dev/blog/release-5.2#video-and-audio-preview" class="hash-link" aria-label="Direct link to Video and Audio Preview" title="Direct link to Video and Audio Preview" translate="no">​</a></h2>
+<p>Click a video or audio file in your project to play it right inside the editor, with the file's dimensions, duration, and size shown alongside. <a href="https://docs.phcode.dev/app-links/video-audio-preview" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
+<p><img decoding="async" loading="lazy" src="https://docs-images.phcode.dev/in-app/videoAudioPreview.jpg" alt="Video preview" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="notable-changes-and-fixes">Notable changes and fixes<a href="https://docs.phcode.dev/blog/release-5.2#notable-changes-and-fixes" class="hash-link" aria-label="Direct link to Notable changes and fixes" title="Direct link to Notable changes and fixes" translate="no">​</a></h2>
+<ul>
+<li class="">Pasting from Excel and other spreadsheets now inserts text instead of an image. (<a href="https://github.com/phcode-dev/phoenix/pull/3033" target="_blank" rel="noopener noreferrer" class="">#3033</a>)</li>
+<li class="">Editing an element's attributes in source code now updates the Control Box immediately. (<a href="https://github.com/phcode-dev/phoenix/pull/3020" target="_blank" rel="noopener noreferrer" class="">#3020</a>)</li>
+<li class="">Element selection in Live Preview no longer lands on the wrong element after property edits. (<a href="https://github.com/phcode-dev/phoenix/pull/3055" target="_blank" rel="noopener noreferrer" class="">#3055</a>)</li>
+<li class="">Media and image previews now show the file's real path instead of an internal path. (<a href="https://github.com/phcode-dev/phoenix/pull/3032" target="_blank" rel="noopener noreferrer" class="">#3032</a>)</li>
+<li class="">The Markdown editor's slash menu now opens at the cursor instead of the right edge. (<a href="https://github.com/phcode-dev/phoenix/pull/2940" target="_blank" rel="noopener noreferrer" class="">#2940</a>)</li>
+<li class="">The Markdown editor no longer indents image-only links on save. (<a href="https://github.com/phcode-dev/phoenix/pull/2937" target="_blank" rel="noopener noreferrer" class="">#2937</a>)</li>
+<li class="">Live Preview toolbar buttons are no longer hidden by long file names. (<a href="https://github.com/phcode-dev/phoenix/pull/2942" target="_blank" rel="noopener noreferrer" class="">#2942</a>)</li>
+<li class="">Quick access panel buttons no longer overflow when the bottom panel is small. (<a href="https://github.com/phcode-dev/phoenix/pull/2945" target="_blank" rel="noopener noreferrer" class="">#2945</a>)</li>
+<li class="">Opening the terminal now exits Design Mode correctly. (<a href="https://github.com/phcode-dev/phoenix/pull/2915" target="_blank" rel="noopener noreferrer" class="">#2915</a>)</li>
+<li class="">Fixed the Git toolbar icon causing exceptions at startup. (<a href="https://github.com/phcode-dev/phoenix/pull/2904" target="_blank" rel="noopener noreferrer" class="">#2904</a>)</li>
+<li class="">An expired Claude Code login is now detected, with a prompt to log in again from the chat panel. (<a href="https://github.com/phcode-dev/phoenix/pull/3065" target="_blank" rel="noopener noreferrer" class="">#3065</a>)</li>
+<li class="">The Claude CLI is now detected when installed via Homebrew or Linuxbrew. (<a href="https://github.com/phcode-dev/phoenix/pull/2897" target="_blank" rel="noopener noreferrer" class="">#2897</a>)</li>
+<li class="">The guided tour now appears for users who updated from older versions. (<a href="https://github.com/phcode-dev/phoenix/pull/2892" target="_blank" rel="noopener noreferrer" class="">#2892</a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance--stability">Performance &amp; Stability<a href="https://docs.phcode.dev/blog/release-5.2#performance--stability" class="hash-link" aria-label="Direct link to Performance &amp; Stability" title="Direct link to Performance &amp; Stability" translate="no">​</a></h2>
+<ul>
+<li class="">Fixed sidebar resize issues and removed unused title bar space in desktop apps. (<a href="https://github.com/phcode-dev/phoenix/pull/3021" target="_blank" rel="noopener noreferrer" class="">#3021</a>)</li>
+<li class="">Working set selection bugs fixed and rendering performance improved. (<a href="https://github.com/phcode-dev/phoenix/pull/3039" target="_blank" rel="noopener noreferrer" class="">#3039</a>)</li>
+<li class="">Screenshots are sharper on high-DPI displays and no longer fail from rounding errors. (<a href="https://github.com/phcode-dev/phoenix/pull/2947" target="_blank" rel="noopener noreferrer" class="">#2947</a>, <a href="https://github.com/phcode-dev/phoenix/pull/2953" target="_blank" rel="noopener noreferrer" class="">#2953</a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-notes">Platform Notes<a href="https://docs.phcode.dev/blog/release-5.2#platform-notes" class="hash-link" aria-label="Direct link to Platform Notes" title="Direct link to Platform Notes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="linux">Linux<a href="https://docs.phcode.dev/blog/release-5.2#linux" class="hash-link" aria-label="Direct link to Linux" title="Direct link to Linux" translate="no">​</a></h3>
+<ul>
+<li class="">Fixed auto-update failing to detect the installed AppImage path. (<a href="https://github.com/phcode-dev/phoenix/pull/2926" target="_blank" rel="noopener noreferrer" class="">#2926</a>, <a href="https://github.com/phcode-dev/phoenix/pull/2927" target="_blank" rel="noopener noreferrer" class="">#2927</a>)</li>
+</ul>]]></content>
+        <author>
+            <name>Arun Bose</name>
+            <uri>https://github.com/abose</uri>
+        </author>
+        <author>
+            <name>Charly P Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <author>
+            <name>Devansh Agarwal</name>
+            <uri>https://github.com/devvaannsh</uri>
+        </author>
+        <author>
+            <name>Krrish Parmar</name>
+            <uri>https://github.com/Electrofist</uri>
+        </author>
+        <author>
+            <name>Ansu Ann Koshy</name>
+            <uri>https://github.com/AnsuKoshy</uri>
+        </author>
+        <author>
+            <name>Phoenix Code Bot</name>
+            <uri>https://github.com/phoenixide</uri>
+        </author>
+        <category label="Styles Bar" term="Styles Bar"/>
+        <category label="Code Intelligence" term="Code Intelligence"/>
+        <category label="Live Preview Edit" term="Live Preview Edit"/>
+        <category label="AI" term="AI"/>
+        <category label="Claude Code" term="Claude Code"/>
+        <category label="Git" term="Git"/>
+        <category label="Phoenix Pro" term="Phoenix Pro"/>
+        <category label="Windows" term="Windows"/>
+        <category label="Linux" term="Linux"/>
+        <category label="Mac" term="Mac"/>
+        <category label="Release" term="Release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Phoenix Code 5.1: AI, Design Mode & More]]></title>
         <id>https://docs.phcode.dev/blog/release-5.1</id>
@@ -14,7 +120,7 @@
         <updated>2026-05-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Phoenix Code 5.1 introduces an AI assistant powered by Claude Code, a brand new Design Mode, a rich Markdown editor, an integrated terminal, and Phoenix Neo themes.]]></summary>
         <content type="html"><![CDATA[<p>Phoenix Code 5.1 is now available at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>This release brings AI into the editor with <a href="https://docs.phcode.dev/blog/release-5.1#try-ideas-build-pages-and-fix-issues-with-ai" class="">Claude Code</a>, a new <a href="https://docs.phcode.dev/blog/release-5.1#design-mode" class="">Design Mode</a> for visual editing, a rich <a href="https://docs.phcode.dev/blog/release-5.1#rich-markdown-editor" class="">Markdown editor</a>, a built-in <a href="https://docs.phcode.dev/blog/release-5.1#built-in-terminal" class="">terminal</a>, responsive <a href="https://docs.phcode.dev/blog/release-5.1#view-your-page-at-any-device-size" class="">device previews</a>, a <a href="https://docs.phcode.dev/blog/release-5.1#linux" class="">rebuilt Linux app</a>, and a fresh new look with the <a href="https://docs.phcode.dev/blog/release-5.1#phoenix-neo-themes" class="">Phoenix Neo</a> themes.</p>
+<p>This release brings AI into the editor with <a href="https://docs.phcode.dev/blog/release-5.1#ai-with-visual-and-runtime-context" class="">Claude Code</a>, a new <a href="https://docs.phcode.dev/blog/release-5.1#design-mode" class="">Design Mode</a> for visual editing, a rich <a href="https://docs.phcode.dev/blog/release-5.1#rich-markdown-editor" class="">Markdown editor</a>, a built-in <a href="https://docs.phcode.dev/blog/release-5.1#built-in-terminal" class="">terminal</a>, responsive <a href="https://docs.phcode.dev/blog/release-5.1#view-your-page-at-any-device-size" class="">device previews</a>, a <a href="https://docs.phcode.dev/blog/release-5.1#linux" class="">rebuilt Linux app</a>, and a fresh new look with the <a href="https://docs.phcode.dev/blog/release-5.1#phoenix-neo-themes" class="">Phoenix Neo</a> themes.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-with-visual-and-runtime-context">AI with visual and runtime context<a href="https://docs.phcode.dev/blog/release-5.1#ai-with-visual-and-runtime-context" class="hash-link" aria-label="Direct link to AI with visual and runtime context" title="Direct link to AI with visual and runtime context" translate="no">​</a></h2>
 <p>Phoenix Code now includes an AI assistant powered by Claude Code, designed to support your creative workflow - not replace it.</p>
 <p>Most AI coding agents only read source code. AI in Phoenix Code looks at the rendered page too. It sees what the browser shows you, not just what the stylesheet or code implies.</p>
