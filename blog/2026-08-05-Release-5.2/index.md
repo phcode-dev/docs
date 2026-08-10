@@ -25,14 +25,6 @@ The font picker covers system fonts and the full Google Fonts collection, with e
   src="https://docs-images.phcode.dev/videos/styles-bar/styles-bar-hero.mp4"
 />
 
-## Start from a blank page
-
-Edit Mode needs an element to work on, and a blank page has none. Now a Starter Bar appears on empty pages so you can add your first element right from the preview, and Phoenix Code creates the page structure for you. [Read More...](https://docs.phcode.dev/app-links/live-preview-edit)
-
-<VideoPlayer
-  src="https://docs-images.phcode.dev/videos/live-preview-edit/starter-bar.mp4"
-/>
-
 ## Code Intelligence for JavaScript, TypeScript, JSON, Python, and PHP
 
 Phoenix Code now ships IDE-grade code intelligence: context-aware completions with documentation beside them, parameter hints, hover info, jump to definition, find usages, and live error checking with quick fixes.
@@ -50,6 +42,22 @@ Language servers set themselves up automatically in the background and run local
 
 > Code intelligence powered by language servers is available only in desktop apps.
 
+## Choose your AI model
+
+Pick which Claude model powers your AI chat, right from the chat header, and switch models even in the middle of a conversation.
+
+Prefer an editor without AI? It can now be switched off completely from `View > Enable AI` or the AI settings dialog. [Read More...](https://docs.phcode.dev/app-links/ai-models)
+
+![AI model selection](https://docs-images.phcode.dev/in-app/pro-aiModels.png)
+
+## Start from a blank page
+
+Edit Mode needs an element to work on, and a blank page has none. Now a Starter Bar appears on empty pages so you can add your first element right from the preview, and Phoenix Code creates the page structure for you. [Read More...](https://docs.phcode.dev/app-links/live-preview-edit)
+
+<VideoPlayer
+src="https://docs-images.phcode.dev/videos/live-preview-edit/starter-bar.mp4"
+/>
+
 ## Generate Doc Comments
 
 Type `/**` on the line above a function or class and accept the hint that appears. Phoenix Code reads the signature and generates a documentation comment with every parameter filled in, in each language's own convention: JSDoc for JavaScript and TypeScript, PHPDoc for PHP, docstrings for Python, and more. [Read More...](https://docs.phcode.dev/app-links/doc-comments)
@@ -57,14 +65,6 @@ Type `/**` on the line above a function or class and accept the hint that appear
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/doc-comments/jsdoc-generation.mp4"
 />
-
-## Choose your AI model
-
-Pick which Claude model powers your AI chat, right from the chat header, and switch models even in the middle of a conversation. Each model shows a short description so you can pick the right one for the task.
-
-Prefer an editor without AI? It can now be switched off completely from `View > Enable AI` or the AI settings dialog. [Read More...](https://docs.phcode.dev/app-links/ai-models)
-
-![AI model selection](https://docs-images.phcode.dev/in-app/pro-aiModels.png)
 
 ## Git improvements
 
