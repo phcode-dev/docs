@@ -27,6 +27,38 @@ To turn PHP code intelligence off, set the `codeIntelligence.php` [preference](/
 
 The free version of Intelephense covers everything described above. If you own an [Intelephense premium license](https://intelephense.com), set the `php.licenseKey` [preference](/docs/editing-text#editing-preferences) to your license key, or to the path of your license file.
 
+## Working With Frameworks (WordPress, Laravel, etc.)
+
+PHP code intelligence only knows about the PHP files it can see. If your project is a WordPress theme or plugin (or any codebase that leans on functions/constants defined by a framework you don't have locally, like `get_header()`), those calls show up as **"Undefined function"** errors in the [Problems panel](/docs/Features/Problems%20Panel/ESLint) even though the code is correct.
+
+Fix this by dropping an `intelephense.config.json` file in your project root, then restart Phoenix Code so PHP code intelligence picks it up.
+
+**Recommended: point it at the framework's stub files** so the functions are actually recognized (you get real hover info and completions, not just silence):
+
+```json
+{
+    "environment": {
+        "includePaths": ["vendor/php-stubs/wordpress-stubs"]
+    }
+}
+```
+
+Install the stubs with Composer first, e.g. `composer require --dev php-stubs/wordpress-stubs` for WordPress. Similar stub packages exist for WooCommerce, Laravel, and other frameworks.
+
+> Composer puts the stubs inside your project (`vendor/…`), so the path above works as-is on Windows, macOS, and Linux. Pointing `includePaths` at your actual local WordPress install instead would work too, but the path is different for every setup (XAMPP, MAMP, Local, Docker, …) and you'd have to track it down yourself — the stub package sidesteps that entirely.
+
+**Quicker: just turn the check off**, if you don't want to set up stubs:
+
+```json
+{
+    "diagnostics": {
+        "undefinedFunctions": false
+    }
+}
+```
+
+> Commit `intelephense.config.json` to your repo so the whole team gets the same settings. See the [configuration reference](https://intelephense.com/docs) for the full list of `diagnostics` and `environment` options.
+
 ## Running PHP Pages
 
 This page is about editing PHP. To preview PHP pages in the Live Preview, see [PHP Live Preview Setup](/docs/Features/Live%20Preview/php-live-preview).
