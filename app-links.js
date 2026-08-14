@@ -130,11 +130,11 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/claude-code-integration',
-		to: '/docs/Pro Features/ai-chat',
+		to: '/docs/Pro Features/ai-setup#step-2-install-claude-code',
 	},
 	{
 		from: '/app-links/claude-code-config',
-		to: '/docs/Pro Features/ai-chat',
+		to: '/docs/Pro Features/ai-setup#step-3-connect-your-claude-account',
 	},
 	{
 		from: '/app-links/design-mode',
@@ -170,7 +170,7 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/ai-models',
-		to: '/docs/Pro Features/ai-chat#choosing-a-model',
+		to: '/docs/Pro Features/ai-models#choosing-a-model',
 	},
 	{
 		from: '/app-links/video-audio-preview',
