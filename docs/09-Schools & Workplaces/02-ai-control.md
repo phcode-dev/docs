@@ -333,7 +333,7 @@ The browser version of Phoenix Code will automatically detect if the domain is u
 
 **Q: When will AI be enabled in Phoenix Code?**
 
-Phoenix Code AI will be rolled out after **`May 20, 2025`**. Educational institutions should configure AI controls campus-wide before this date.
+AI is available in Phoenix Code 5.1 and later. Educational institutions should configure AI controls campus-wide before deploying Phoenix Code.
 
 **Q: How do I know if AI control is working?**
 
