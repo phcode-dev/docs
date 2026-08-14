@@ -322,7 +322,9 @@ Only administrative users can modify this configuration.
 
 ### Network Blocking (For Browser Version)
 
-For schools using the browser version of Phoenix Code at https://phcode.dev, network-level blocking is the recommended approach:
+AI is currently available only in the Phoenix Code desktop apps. The browser version at https://phcode.dev has no AI features today. When AI comes to the browser version, it will be served through `ai.phcode.dev`.
+
+For schools using the browser version, block the domain now so AI stays off when it becomes available:
 
 1. Block access to: `ai.phcode.dev`
 2. Add this domain to your firewall or content filtering system
