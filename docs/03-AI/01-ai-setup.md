@@ -20,11 +20,15 @@ Phoenix Code walks you through each step in the AI panel. Chats are billed to th
 
 ## Step 1: Sign in to Phoenix Code
 
-Click the **AI tab** *(sparkle icon)* in the sidebar. If you are not signed in, the panel shows **Sign in to get started with AI**. Click **Sign In** and log in to your Phoenix Code account.
+Click the **AI tab** *(sparkle icon)* in the sidebar. If you are not signed in, the panel asks you to sign in to your Phoenix Code account. Click **Sign In**.
+
+![AI sign in screen](../images/pro/ai-signin.png "Sign in to your Phoenix Code account")
 
 ## Step 2: Install Claude Code
 
-If the Claude Code CLI is not installed on your machine, the panel shows **Claude Code Not Installed**. Click **Install Claude Code**. Phoenix Code opens its built-in terminal and runs the official installer from Anthropic. The install can take a while; Phoenix Code detects when it finishes.
+If the Claude Code CLI is not installed on your machine, the panel tells you it must be installed. Click **Install Claude Code**. Phoenix Code opens its built-in terminal and runs the official installer from Anthropic. The install can take a while; Phoenix Code detects when it finishes.
+
+![Install Claude Code screen](../images/pro/ai-install-claude.png "The Install Claude Code screen")
 
 Restart Phoenix Code after the installation completes.
 
@@ -32,7 +36,9 @@ If you prefer to install the CLI yourself, follow [Anthropic's setup guide](http
 
 ## Step 3: Connect your Claude account
 
-Once the CLI is installed, the panel shows **Setup Claude Code**. Clicking it opens Claude Code in the built-in terminal, where you log in with your Claude account. Restart Phoenix Code after the configuration completes.
+Once the CLI is installed, the panel shows **Claude Code is installed but needs to be configured**. Click **Setup Claude Code** to open Claude Code in the built-in terminal, where you log in with your Claude account. Restart Phoenix Code after the configuration completes.
+
+![Setup Claude Code screen](../images/pro/ai-setup-claude.png "The Setup Claude Code screen")
 
 You have two ways to log in:
 
@@ -58,3 +64,5 @@ You can also use any other provider with an Anthropic-compatible API. See [Model
 ## If your login expires
 
 If your Claude login expires later, the chat shows a **Claude Code is signed out or your login has expired** notice with a **Log in to Claude in Terminal** button. Click it, type `/login` in the terminal that opens, then send your message again.
+
+![Expired login notice](../images/pro/ai-login-expired.png "The expired login notice in the chat")
