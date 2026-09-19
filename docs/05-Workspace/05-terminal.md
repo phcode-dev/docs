@@ -63,6 +63,27 @@ Selecting a shell sets it as the default and opens a new terminal with it right 
 
 > Only shells installed on your system are shown. Any other compatible shell on your system (for example, PowerShell Core on Windows) also appears in the list.
 
+## Switching Projects
+
+When you switch projects, open terminals stay in their current folders.
+Running commands keep going.
+
+The banner gives you two choices:
+
+- **Keep Terminals** hides the banner and keeps your sessions.
+- **Restart All in This Project** restarts all tabs in the new project
+  folder. This stops running commands and clears the output.
+
+![Terminal project banner](../images/terminal/project-switch-banner.png)
+
+If a command is still running, Phoenix Code asks for confirmation before restarting.
+
+To keep your sessions and open a terminal in the new project, click **+ Terminal** shown on the bottom of the right sidebar.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/terminal/project-switching.mp4"
+/>
+
 ## Keyboard Shortcuts
 
 | Action | Shortcut |
