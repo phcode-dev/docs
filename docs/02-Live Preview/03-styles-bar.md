@@ -6,7 +6,7 @@ slug: "/Pro Features/styles-bar"
 import VideoPlayer from '@site/src/components/Video/player';
 
 :::info Pro Feature
-[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+[Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
 :::
 
 The **Styles Bar** lets you style elements visually right inside the Live Preview, and it automatically syncs your code in real time.  

@@ -18,7 +18,7 @@ Follow the steps below to run and debug your extension:
 
 * Clone your extension repository onto the machine.
 
-* Go to [https://create.phcode.dev](https://create.phcode.dev). This is a development-focused version of phcode.dev which shows non minified JS/CSS files in the browser developer tools.
+* Go to [https://create.phcode.dev](https://create.phcode.dev). This is a development-focused version of the browser editor which shows non minified JS/CSS files in the browser developer tools.
 
 * Now, open the cloned folder in `create.phcode.dev`. 
 > Refer to [this guide](https://docs.phcode.dev/docs/quick-start-project#open-folder) to see how to open a folder in Phoenix Code.

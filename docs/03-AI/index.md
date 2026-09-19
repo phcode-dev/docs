@@ -7,7 +7,7 @@ import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
 :::info Pro Feature
-[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+[Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
 :::
 
 Phoenix Code comes with a built-in AI assistant powered by Claude Code. You can ask it to write code, fix bugs, explain files, and more. The AI can read and edit your project files, run terminal commands, take screenshots, and work alongside you as you code.
@@ -15,7 +15,7 @@ Phoenix Code comes with a built-in AI assistant powered by Claude Code. You can 
 > AI is available only in desktop apps.
 
 :::note
-Free users get a daily and monthly chat limit. Once you're past halfway on either limit, a usage bar appears at the top of the chat. [Upgrade to Phoenix Code Pro](https://phcode.io/pricing) for unlimited access.
+Free users get a daily and monthly chat limit. Once you're past halfway on either limit, a usage bar appears at the top of the chat. [Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) for unlimited access.
 :::
 
 <VideoPlayer

@@ -219,7 +219,7 @@ const config = {
 
 					{ to: "/blog", label: "Blog", position: "left" },
 					{
-						href: "https://phcode.io/",
+						href: "https://phcode.dev/",
 						label: "Download",
 						position: "left"
 					},

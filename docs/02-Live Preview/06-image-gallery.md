@@ -7,7 +7,7 @@ import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
 :::info Pro Feature
-[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+[Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
 :::
 
 The **Image Gallery** is a panel that appears at the bottom of the Live Preview. It lets you browse images from online image providers or select images from your device.

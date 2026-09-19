@@ -294,7 +294,7 @@ The Phoenix Code AI Control extension provides a visual interface to verify the 
 
 #### Browser Version Status Check
 
-1. Open https://phcode.dev in your web browser
+1. Open https://web.phcode.dev in your web browser
 2. Install the extension (File → Extension Manager → "Phoenix Code AI Control")
    - ![Image](https://github.com/user-attachments/assets/ff282d9d-19dc-4fa2-9d39-a81eb2c59a62)
 3. Navigate to View → AI Control Status
@@ -322,7 +322,7 @@ Only administrative users can modify this configuration.
 
 ### Network Blocking (For Browser Version)
 
-AI is currently available only in the Phoenix Code desktop apps. The browser version at https://phcode.dev has no AI features today. When AI comes to the browser version, it will be served through `ai.phcode.dev`.
+AI is currently available only in the Phoenix Code desktop apps. The browser version at https://web.phcode.dev has no AI features today. When AI comes to the browser version, it will be served through `ai.phcode.dev`.
 
 For schools using the browser version, block the domain now so AI stays off when it becomes available:
 
@@ -413,7 +413,7 @@ sudo ./setup_phoenix_ai_control_linux.sh --managedByEmail school.admin@example.e
 
 **Q: How can I verify that the firewall is properly blocking AI access?**
 
-In the browser app at https://phcode.dev, install the `Phoenix Code AI Control`extension. Use the `View → AI Control Status` option. It will report whether AI is accessible or blocked.
+In the browser app at https://web.phcode.dev, install the `Phoenix Code AI Control`extension. Use the `View → AI Control Status` option. It will report whether AI is accessible or blocked.
 
 **Q: Is there a way to monitor AI usage in my organization?**
 

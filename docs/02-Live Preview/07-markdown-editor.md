@@ -30,7 +30,7 @@ The preview toolbar also has a **theme toggle** *(sun/moon icon)* to switch betw
 ## Editing Markdown (Pro)
 
 :::info Pro Feature
-[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+[Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
 :::
 
 With **Phoenix Pro**, you can go beyond just viewing. Edit your Markdown directly in the Live Preview with a full rich text editor — format text, build tables, drop in images, add links, use slash commands to insert blocks, and much more. Every change syncs back to your source code instantly.

@@ -42,7 +42,7 @@ Follow these steps:
 
     ![Publish Failed Image](./images/publishing-extensions/publish-failed.png "Publish Failed")
 
-6. Once published, your extension will appear in the Phoenix Code Extension Store at [https://phcode.dev](https://phcode.dev).
+6. Once published, your extension will appear in the Phoenix Code Extension Store at [web.phcode.dev](https://web.phcode.dev).
 
     ![Extension Store Image](./images/publishing-extensions/extension-store.png "Phoenix Code Extension Store")
 
