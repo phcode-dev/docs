@@ -12,7 +12,7 @@ Phoenix Code is a text editor designed to make coding as intuitive and fun as pl
 
 ## Download
 
-Visit the official website — [phcode.io](https://phcode.io) — and click the **Download** button to grab the installer for your operating system.
+Visit the official website — [phcode.dev](https://phcode.dev) — and click the **Download** button to grab the installer for your operating system.
 
 ![Download Phoenix Code from the website](../images/Website/download.png)
 
@@ -55,7 +55,7 @@ Need to install by hand, check dependencies, or uninstall? See [Advanced Linux i
 
 ## Use it in the browser
 
-Prefer not to install anything? Run the full editor right in your browser at [phcode.dev](https://phcode.dev) — perfect for Chromebooks, tablets, or just trying things out. Everything runs locally in the browser, with nothing to download.
+Prefer not to install anything? Run the full editor right in your browser at [web.phcode.dev](https://web.phcode.dev) — perfect for Chromebooks, tablets, or just trying things out. Everything runs locally in the browser, with nothing to download.
 
 ---
 

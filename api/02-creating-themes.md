@@ -27,7 +27,7 @@ Use the template to create your repository.
 ### Step 3:
 Clone the repository you created in Step 2 to your local machine.
 
-Go to [https://create.phcode.dev](https://create.phcode.dev). This is a development-focused version of phcode.dev which shows non minified JS/CSS files in the browser developer tools.
+Go to [https://create.phcode.dev](https://create.phcode.dev). This is a development-focused version of the browser editor which shows non minified JS/CSS files in the browser developer tools.
 
 Now, open the cloned folder in `create.phcode.dev`. Refer to [this guide](https://docs.phcode.dev/docs/quick-start-project#open-folder) to see how to open a folder in Phoenix Code.
 
@@ -77,6 +77,6 @@ This file contains all the UI elements as variables. You can modify the colors a
 
 When you are done developing the theme, select `Debug > Unload Project As Extension` to unload the theme.
 
-Once the theme is complete, you can publish it to [phcode.dev](https://phcode.dev) extension repository. 
+Once the theme is complete, you can publish it to the extension store in [web.phcode.dev](https://web.phcode.dev).
 
 Refer to [this link](./publishing-extensions) to see how to publish the theme.

@@ -7,7 +7,7 @@ import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
 :::info Pro Feature
-[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+[Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
 :::
 
 **Edit Mode** lets you modify your page directly in the Live Preview. You can edit text, insert new elements, rearrange them with drag and drop, swap images, edit links, style elements, and much more.  

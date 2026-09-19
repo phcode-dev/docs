@@ -7,7 +7,7 @@ import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
 :::info Pro Feature
-[Upgrade to Phoenix Code Pro](https://phcode.io/pricing) to access this feature.
+[Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
 :::
 
 **Device Preview** lets you check how your page looks at different screen widths without leaving Phoenix Code. This is useful for testing responsive designs and debugging CSS media queries.

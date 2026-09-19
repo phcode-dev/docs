@@ -20,7 +20,7 @@ Here's what sets Phoenix Code apart.
 
 - **Live Preview** — Edit your HTML and CSS and watch the page update in real time. Phoenix Code goes a step further: edit the preview directly to change text, add and rearrange elements, or swap images, and your source code updates automatically.
 - **AI assistant** — A built-in AI agent (powered by Claude Code) works alongside you. It reads and edits your files, runs terminal commands, and because it's wired into Live Preview, it can see your running page, take screenshots, and verify its own work. Plan, Edit, and Full Auto modes keep you in control, and every change it makes is reversible.
-- **Runs everywhere** — Native desktop apps for macOS, Windows, and Linux from [phcode.io](https://phcode.io), or the full editor in your browser at [phcode.dev](https://phcode.dev) with nothing to install.
+- **Runs everywhere** — Native desktop apps for macOS, Windows, and Linux from [phcode.dev](https://phcode.dev), or the full editor in your browser at [web.phcode.dev](https://web.phcode.dev) with nothing to install.
 - **Built-in tools** — Git, Terminal, Emmet, Beautify, and code hints all ship in the editor, so you can start working right away.
 - **Visual editing** — Color pickers, gradient editors, and draggable number scrubbing let you adjust CSS values directly and see the result immediately.
 - **Extensions** — Add features, themes, and language support from the built-in Extension Manager, with a marketplace of community extensions and themes.
@@ -40,7 +40,7 @@ You can build complete websites for free. The core editor, [Live Preview](/docs/
 - **[Image Gallery](/docs/Pro%20Features/image-gallery)**: browse stock images from providers like Unsplash and Pexels and embed or download them into your project without leaving Phoenix Code.
 - **[Markdown Editor](/docs/Pro%20Features/markdown-editor)**: edit Markdown directly in the preview with a full rich-text editor that keeps your source in sync.
 
-See plans on the [pricing page](https://phcode.io/pricing).
+See plans on the [pricing page](https://phcode.dev/pricing).
 
 **Phoenix Pro is free for students and educators.** If you have a `.edu` or `.ac.*` email, or your school requests an educational volume license, you get the full Pro feature set at no cost. See [Phoenix Pro for Education](/docs/phoenix-pro-school).
 
@@ -59,4 +59,4 @@ Phoenix Code is for anyone building for the web, and especially:
 - **Our flagship feature:** [Live Preview](/docs/Features/Live%20Preview)
 - **Try the AI assistant:** [AI](/docs/Pro%20Features/ai-chat)
 
-Want to skip installing? Open [phcode.dev](https://phcode.dev) and start coding in your browser. Prefer the desktop app? Download it from [phcode.io](https://phcode.io).
+Want to skip installing? Open [web.phcode.dev](https://web.phcode.dev) and start coding in your browser. Prefer the desktop app? Download it from [phcode.dev](https://phcode.dev).
