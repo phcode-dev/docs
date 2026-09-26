@@ -183,5 +183,9 @@ export const appLinks = [
 	{
 		from: '/app-links/edit-hyperlink',
 		to: '/docs/Pro Features/live-preview-edit#edit-hyperlink',
+	},
+	{
+		from: '/app-links/layers-panel',
+		to: '/docs/Pro Features/layers-panel',
 	}
 ];
