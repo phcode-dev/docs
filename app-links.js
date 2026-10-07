@@ -130,11 +130,11 @@ export const appLinks = [
 	},
 	{
 		from: '/app-links/claude-code-integration',
-		to: '/docs/Pro Features/ai-setup#step-2-install-claude-code',
+		to: '/docs/Pro Features/ai-setup',
 	},
 	{
 		from: '/app-links/claude-code-config',
-		to: '/docs/Pro Features/ai-setup#step-3-connect-your-claude-account',
+		to: '/docs/Pro Features/ai-setup#step-2-set-up-claude-code',
 	},
 	{
 		from: '/app-links/design-mode',
@@ -187,5 +187,21 @@ export const appLinks = [
 	{
 		from: '/app-links/layers-panel',
 		to: '/docs/Pro Features/layers-panel',
+	},
+	{
+		from: '/app-links/ai-cli',
+		to: '/docs/Pro Features/ai-cli',
+	},
+	{
+		from: '/app-links/ai-ask',
+		to: '/docs/Pro Features/ai-ask',
+	},
+	{
+		from: '/app-links/ai-images',
+		to: '/docs/Pro Features/ai-images',
+	},
+	{
+		from: '/app-links/ai-usage',
+		to: '/docs/Pro Features/ai-usage',
 	}
 ];
