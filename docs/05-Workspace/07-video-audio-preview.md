@@ -16,4 +16,4 @@ Above the player you see the file's details: dimensions (for videos), duration, 
 
 > Whether a format plays can also depend on the codecs your operating system provides. If a file cannot be played, Phoenix Code shows a message stating that it cannot be played.
 
-Files up to 16 MB can be previewed. If you edit a media file outside Phoenix Code, the preview refreshes automatically.
+In the desktop app there is no file size limit. In the browser, files up to 16 MB can be previewed. If you edit a media file outside Phoenix Code, the preview refreshes automatically.
