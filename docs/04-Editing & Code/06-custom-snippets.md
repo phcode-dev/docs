@@ -110,17 +110,33 @@ When the snippet expands:
 3. Continue pressing `Tab` to cycle through the numbered positions.
 4. The cursor finally lands at `${0}`. *If `${0}` isn’t defined, it lands at the **last numbered placeholder***.
 
+A placeholder can carry default text, like `${1:name}`. The text is inserted selected, so you can type over it. `@@INDENT@@` inserts one level of indentation, matching the file's indent settings.
+
 Here’s an example of a snippet with numbered cursor placeholders:
 
 ![Snippet Cursor Positions](../images/CustomSnippets/snippet-cursor.png "Snippet Cursor Positions")
 
 > To move backward through the placeholders, press `Shift + Tab`.
 
-Once you reach the final cursor position, pressing `Tab` again will **remove any remaining unfilled placeholders** from the expanded snippet.
+While you fill in a snippet, placeholders with default text are outlined and the current one is highlighted.
+
+![Snippet tab stops](../images/CustomSnippets/snippet-tabstops.png "Tab stops outlined while filling a snippet")
+
+Once you reach the final cursor position, the snippet is finished and `Tab` works as usual again. Press `Esc` to finish early.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/custom-snippets/cursor-snippets.mp4"
 />
+
+### Built-in Snippets
+
+**Phoenix Code** comes with a few snippets for defining functions. Type the first two or more letters of the abbreviation and pick the hint:
+
+- `function` and `arrow` in JavaScript and TypeScript files
+- `function` in PHP files
+- `def` in Python files
+
+Each one has placeholders for the name, the parameters, and the body. These snippets are not listed in the Custom Snippets panel and cannot be edited or deleted.
 
 ## FAQ
 
@@ -132,5 +148,6 @@ Yes. **Phoenix Code** sets some limits for certain fields. The **Abbreviation** 
 However, abbreviations are *case-sensitive*, so variations like `log` and `LOG` are treated as different snippets.
 
 #### Q. Do I need to type the full abbreviation for the snippet hint to appear?
-Yes. The snippet hint appears only when you type the *complete abbreviation*.
+For your own snippets, yes. The snippet hint appears only when you type the *complete abbreviation*.
 This is an intentional UX decision, since custom snippets have the highest priority, showing hints for partial abbreviations could clutter suggestions and hide default hints.
+The [built-in snippets](#built-in-snippets) appear after two or more characters.
