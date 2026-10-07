@@ -46,9 +46,13 @@ Hold your cursor over any symbol to see its type signature and documentation. Th
 
 ## Jump to Definition and Find Usages
 
-Place your cursor on a symbol and press `Ctrl/Cmd + J` to go to where it is defined, even in another file. This is also in `Navigate > Jump to Definition`.
+Place your cursor on a symbol and press `Ctrl/Cmd + J` to go to where it is defined, even in another file. This is also in **Navigate > Go to Definition**.
 
-Press `Shift + F12` to list every place the symbol is used across the project. This is also in `Find > Find All References`.
+When a symbol has more than one definition, a **Select a definition** list opens at the cursor. Each row shows the file, line, and folder, and implementations are marked with a badge. Use the arrow keys and `Enter`, or click a row, to jump to it. Hover a row to see the code around it. Press `Esc` to close the list.
+
+![Definition picker](../images/codeIntelligence/definition-picker.png "Choosing between several definitions")
+
+Press `Shift + F12` to list every place the symbol is used across the project. This is also in **Find > Find Usages**.
 
 ![Find usages](../images/codeIntelligence/find-usages.png "The References panel lists every usage across the project")
 
