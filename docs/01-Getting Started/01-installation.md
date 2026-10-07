@@ -57,6 +57,8 @@ Need to install by hand, check dependencies, or uninstall? See [Advanced Linux i
 
 Prefer not to install anything? Run the full editor right in your browser at [web.phcode.dev](https://web.phcode.dev) — perfect for Chromebooks, tablets, or just trying things out. Everything runs locally in the browser, with nothing to download.
 
+If you used the browser app at phcode.dev before, your projects, settings, and extensions are copied over the first time you open web.phcode.dev. To run the copy again, choose **Help > Migrate My Data From phcode.dev…**. This transfer is not available in Safari or on iOS.
+
 ---
 
 ## Advanced Linux installation {#linux-advanced}
