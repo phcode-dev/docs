@@ -14,11 +14,11 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 ## Asking About an Element
 
-Select an element in the Live Preview in [Edit Mode](../02-Live%20Preview/02-live-preview-edit.md). The element toolbar ends with an **Ask AI** button *(sparkle icon)*:
+Select an element in the Live Preview in [Edit Mode](../02-Live%20Preview/02-live-preview-edit.md). The element toolbar ends with an **Ask AI** button *(sparkle icon, with an Ask AI label when the preview is wide enough)*:
 
 ![Ask AI on the element toolbar](../images/pro/ai-ask-button.png "The Ask AI button at the end of the element toolbar")
 
-Click it. The **Ask AI** dialog opens with a screenshot of the element already attached, labelled with its selector, like `h1` or `div.card`. Hover the label to see the file and line it comes from.
+Click it. The **Ask AI** dialog opens with a screenshot of the element already attached, labelled with its selector, like `h1` or `div.card`. Hover the label to see the full selector and the file and line it comes from.
 
 ![The Ask AI dialog](../images/pro/ai-ask-dialog.png "The Ask AI dialog with an element attached")
 
@@ -36,7 +36,7 @@ Up to 10 images can go with one question. Click the **x** on a card to remove it
 
 > Drag the dialog by its header to move it. Double-click the header to put it back.
 
-The **Ask AI** button *(sparkle icon)* in the Live Preview toolbar opens the same dialog without attaching anything. To hide the Ask AI buttons in the preview, turn off **Show Ask AI** in the Live Preview mode dropdown.
+The **Ask AI** button *(sparkle icon)* in the Live Preview toolbar opens the same dialog without attaching anything. To hide the Ask AI buttons in the preview, turn off **Show Ask AI** in the Live Preview mode dropdown or in the element's **more** menu *(three dots)*. This also hides the button in the Markdown preview.
 
 ## Asking About Markdown
 
@@ -48,7 +48,7 @@ Click it to attach the selection to the dialog as a card showing the file name, 
 
 ## Asking About Code
 
-Select some code in the editor. A small toolbar appears above the selection with an **Ask AI** button:
+Select some code in the editor with the mouse, or move the pointer over a selection. A small toolbar appears above it with an **Ask AI** button:
 
 ![Ask AI on a code selection](../images/pro/ai-ask-code.png "The Ask AI button on a code selection")
 
@@ -58,22 +58,24 @@ Click it to attach the exact range to the dialog. The AI reads those lines from 
 
 The dialog sends to whichever assistant the AI panel is showing. When the panel is on **Claude Code CLI** or **Codex CLI**, the send button reads **Transfer to Claude Code CLI** or **Transfer to Codex CLI**. The question is pasted into the CLI's prompt, with a note about what is attached, and the CLI fetches the screenshots and code when it reads the question. Review the prompt and press `Enter` in the terminal to send it.
 
-> The CLI must be connected to Phoenix and waiting at its prompt. See [Claude Code CLI and Codex CLI](./06-ai-cli.md#connected-to-phoenix).
+> The CLI must be connected to Phoenix and waiting at an empty prompt. If it is busy with a question or an approval, the dialog keeps your draft and tells you to finish that first. See [Claude Code CLI and Codex CLI](./06-ai-cli.md#connected-to-phoenix).
 
 ## Questions in the Live Preview
 
-Sometimes the AI asks you something that is easier to answer by looking at the page: which of two layouts, which color, which element. It then shows a **Phoenix AI asks** card inside the Live Preview, with options it built for the question.
+Sometimes the AI asks you something that is easier to answer by looking at the page: which of two layouts, which color, which element. It then shows a **Phoenix AI asks** card inside the Live Preview, with options it built for the question. If the preview is closed, it opens for the question. This works on HTML pages in the Live Preview panel, not in a page opened in an external browser.
 
 ![A question in the Live Preview](../images/pro/ai-preview-question.png "A Phoenix AI asks card over the page, with an option previewed on the button")
 
-Hover an option to preview it on the page, and click it to answer. You can also type an answer in the box at the bottom of the card. The card can be dragged and resized, and the **minimize** button tucks it into a pill at the corner of the page until you need it.
+Hover an option to preview it on the page, and click it to answer. You can also type an answer in the box at the bottom of the card. The AI can also ask you to pick an element: hover the page to outline one, click it to answer, or press `Esc` to cancel. The card can be dragged and resized, and the **minimize** button tucks it into a pill at the corner of the page until you need it.
 
 When the question is about one element, the page is dimmed around it. Click the **focus** button in the card header to see the page as it is.
 
-Your answer appears in the chat as **You, in the live preview**, and the AI carries on with it. To skip the question, click **Cancel** on its card in the chat, or close the card in the preview.
+Your answer appears in the chat as **You, in the live preview**, and the AI carries on with it. To skip the question, click **Cancel** on its card in the chat, or close the card in the preview. Closing the Live Preview skips it too, and so does leaving it unanswered for five minutes.
+
+When a [CLI](./06-ai-cli.md) asks the question, your answer goes to the CLI, and nothing appears in the chat. To skip it, close the card in the preview.
 
 ![The answer in the chat](../images/pro/ai-preview-answered.png "The answer echoed in the chat, and the change that followed")
 
 ## Notifications
 
-When the AI finishes something while you are not looking at the chat, it can show a notification in the editor window. Click **View chat** on it to open the panel.
+When the AI finishes something while you are not looking at the chat, it can show a notification in the editor window. Click it to open the panel. Notifications close on their own after a few seconds, except errors, which stay until you close them.
