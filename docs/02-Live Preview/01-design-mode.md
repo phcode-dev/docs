@@ -37,3 +37,5 @@ When Design Mode is on, the sidebar stays visible alongside the maximized Live P
 ![Design Mode layout](../images/designMode/design-mode-layout.png "Design Mode layout")
 
 To hide the sidebar too, click the **toggle sidebar** button *(double left-arrow icon)* just below the Design Mode toggle in the Control Bar. Click it again to bring the sidebar back.
+
+In Design Mode, the chevron next to the pen icon in the Live Preview toolbar is hidden, so the mode dropdown is not available. The pen still switches Edit Mode on and off.

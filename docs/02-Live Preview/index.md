@@ -93,6 +93,8 @@ The left side of the toolbar groups three controls:
   - **Inspect Element on Hover**: Highlights elements as you hover, instead of only on click. This option is enabled by default. [Learn more](../Pro%20Features/live-preview-edit#inspect-element-on-hover).
   - **Show Measurements**: Displays ruler lines from the edges of the selected element to the edges of the Live Preview, with labels showing the exact pixel positions. This option is disabled by default. [Learn more](../Pro%20Features/measurements).
 
+  In the desktop app, the dropdown also has **Show Ask AI**, which shows or hides the Ask AI buttons in the preview. [Learn more](../Pro%20Features/ai-ask).
+
   <VideoPlayer
     src="https://docs-images.phcode.dev/website/videos/lp-edit-pro-dialog.mp4"
   />
