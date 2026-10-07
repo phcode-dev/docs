@@ -320,6 +320,20 @@ For desktop installations of Phoenix Code, we strongly recommend using the insta
 
 Only administrative users can modify this configuration.
 
+The scripts write a `config.json` file that you can also deploy with your device management tool:
+
+- Windows: `C:\Program Files\Phoenix AI Control\config.json`
+- macOS: `/Library/Application Support/Phoenix AI Control/config.json`
+- Linux: `/etc/phoenix-ai-control/config.json`
+
+```json
+{
+  "disableAI": true,
+  "allowedUsers": ["teacher1", "admin2"],
+  "managedByEmail": "school.admin@example.edu"
+}
+```
+
 ### Network Blocking (For Browser Version)
 
 AI is currently available only in the Phoenix Code desktop apps. The browser version at https://web.phcode.dev has no AI features today. When AI comes to the browser version, it will be served through `ai.phcode.dev`.
@@ -329,7 +343,7 @@ For schools using the browser version, block the domain now so AI stays off when
 1. Block access to: `ai.phcode.dev`
 2. Add this domain to your firewall or content filtering system
 
-The browser version of Phoenix Code will automatically detect if the domain is unreachable and display appropriate status messages.
+The Phoenix Code AI Control extension reports whether the domain is reachable. See [Verifying AI Control Status](#verifying-ai-control-status).
 
 ## FAQ
 
@@ -356,7 +370,7 @@ No, AI control is optional and meant for educational institutions or enterprises
 
 **Q: Will blocking AI affect other Phoenix Code features?**
 
-No, all other features of Phoenix Code will continue to work normally. Only the AI-powered features like code generation and explanations will be affected.
+No, all other features of Phoenix Code will continue to work normally. With AI disabled, the AI tab shows an *AI Disabled* message instead of the chat, and the Claude Code CLI and Codex CLI cannot be started from the AI panel.
 
 **Q: How can I update the AI control configuration?**
 
@@ -408,7 +422,7 @@ sudo ./setup_phoenix_ai_control_linux.sh --managedByEmail school.admin@example.e
 - **Desktop Version**: Provides comprehensive control with user-specific permissions
 
 **Q: Does this completely prevent AI usage?**
-- **Desktop Version**: Yes, the control is comprehensive when properly configured using the installation scripts
+- **Desktop Version**: It turns off the AI panel, which is where all of Phoenix Code's AI features live. It does not stop a user from running a separately installed AI tool, such as Claude Code, in the built-in Terminal or elsewhere on the computer
 - **Browser Version**: Only if you implement network-level blocking of the `ai.phcode.dev` domain
 
 **Q: How can I verify that the firewall is properly blocking AI access?**
