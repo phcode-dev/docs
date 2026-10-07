@@ -6,8 +6,8 @@ slug: "/Pro Features/ai-chat"
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-:::info Pro Feature
-[Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
+:::info
+Free accounts get a limited number of Visual AI chats each day and month. [Phoenix Code Pro](https://phcode.dev/pricing) removes the limits and adds the Claude Code CLI and Codex CLI inside the panel. See [Free Account Limits](./08-ai-usage.md#free-account-limits).
 :::
 
 The **AI panel** puts a coding assistant inside the editor. Ask it to build a page, fix a bug, or restyle a section. It reads your files, edits them, and checks its own work in the Live Preview. Every change it makes can be undone with one click.
@@ -34,10 +34,6 @@ The panel gives you three assistants to choose from. Pick one on the start scree
 - **[Find photos](./07-ai-images.md)**: Ask for pictures and the AI searches Unsplash, shows the results in the chat, and adds the one you pick to the page.
 - **[Watch usage and cost](./08-ai-usage.md)**: Tokens and cost for the current chat, plus a usage calendar on the start screen.
 - **[Pick a model or provider](./09-ai-models-providers.md)**: Switch models mid-chat, or bring your own API key and endpoint.
-
-:::note
-Free accounts get a daily and a monthly limit on Visual AI chats. Once you pass half of either limit, a bar above the message box shows how many chats are left. [Phoenix Code Pro](https://phcode.dev/pricing) has no limit.
-:::
 
 ## In This Section
 
