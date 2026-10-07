@@ -298,6 +298,8 @@ Each file has two settings that control how **Phoenix Code** interprets its cont
 
 *`UTF-8`* is the default encoding format in Phoenix.
 
+Some files open in another encoding on their own. A file that starts with a UTF-16 byte order mark opens as UTF-16. An HTML, PHP, or XML file that declares a charset and is not valid UTF-8 opens in the declared charset. The status bar shows the encoding in use. An encoding you pick yourself is always kept.
+
 #### Set Encoding of a file
 1. Click on the `utf8` button on the status bar. (UTF-8 represents the default encoding format).
 2. A list of available encoding formats will appear. Select your desired format, or start typing to filter and find matching options in the drop-down menu.
