@@ -10,35 +10,44 @@ import VideoPlayer from '@site/src/components/Video/player';
 [Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) to access this feature.
 :::
 
-Phoenix Code comes with a built-in AI assistant powered by Claude Code. You can ask it to write code, fix bugs, explain files, and more. The AI can read and edit your project files, run terminal commands, take screenshots, and work alongside you as you code.
+The **AI panel** puts a coding assistant inside the editor. Ask it to build a page, fix a bug, or restyle a section. It reads your files, edits them, and checks its own work in the Live Preview. Every change it makes can be undone with one click.
 
-> AI is available only in desktop apps.
-
-:::note
-Free users get a daily and monthly chat limit. Once you're past halfway on either limit, a usage bar appears at the top of the chat. [Upgrade to Phoenix Code Pro](https://phcode.dev/pricing) for unlimited access.
-:::
+> AI is available only in the desktop app.
 
 <VideoPlayer
-  src="https://docs-images.phcode.dev/website/videos/ai-pro-dialog.mp4"
+  src="https://docs-images.phcode.dev/videos/ai/ai-hero.mp4"
 />
 
-## What you can do
+## Three Ways to Work
 
-- **[Plan, Edit, and Full Auto modes](./03-ai-permission-modes.md)** let you decide how much freedom the AI has. Plan mode proposes a plan for your approval first, Edit lets the AI edit files but asks before running terminal commands, and Full Auto runs everything without pausing.
-- **[Restore points and a visual undo timeline](./04-ai-reviewing-changes.md)** mean every AI change is reversible. If you don't like what it did, roll back with one click.
-- **Live preview integration**: the AI can see your running app, take screenshots, click around, and verify its own work.
-- **[Choose the model](./05-ai-models-providers.md)** you want, and switch it even in the middle of a chat.
-- **[Bring your own provider](./05-ai-models-providers.md#settings)**: Claude from Anthropic (the default) gives the best results, or bring your own API key from any Claude Code CLI-compatible provider.
-- **Privacy-first onboarding** with a clear consent dialog and a video walkthrough.
-- **[Type while the AI is still working](./02-ai-chatting.md#sending-messages)**: your next message gets queued.
-- **[Session history](./02-ai-chatting.md#session-history)** keeps your conversations alive across restarts.
-- **Free-tier quotas** let everyone try AI; pro users get unlimited use.
+The panel gives you three assistants to choose from. Pick one on the start screen, or switch with the dropdown in the panel header.
 
-## In this section
+- **Visual AI**: The built-in chat, powered by Claude Code. It shows every step as a card, keeps a restore point for each change, and works hand in hand with the Live Preview. This is what most of this section describes.
+- **Claude Code CLI** and **Codex CLI**: The real command-line tools from Anthropic and OpenAI, running in a terminal inside the panel. They are connected to the editor, so they can see your open files and use the Live Preview too. See [Claude Code CLI and Codex CLI](./06-ai-cli.md).
 
-- [Setup](./01-ai-setup.md): install Claude Code and connect your Claude account, with or without a Claude subscription.
-- [Chatting](./02-ai-chatting.md): send messages, attach files and screenshots, and manage session history.
-- [Permission Modes](./03-ai-permission-modes.md): control how much the AI can do on its own.
-- [Reviewing and Undoing Changes](./04-ai-reviewing-changes.md): inspect diffs and roll back AI edits.
-- [Models and Providers](./05-ai-models-providers.md): pick a model or use a custom API provider.
-- [Turning AI Off](./06-ai-disable.md): remove AI from the editor completely.
+## What You Can Do
+
+- **[Chat about your project](./02-ai-chatting.md)**: The AI knows which file you are in, what you have selected, and what the Live Preview shows. Attach files, folders, and screenshots for more context.
+- **[Ask about an element](./05-ai-ask.md)**: Click **Ask AI** on a selected element, a Markdown selection, or a code selection. A screenshot and the source location go along with your question.
+- **[Decide how much it can do](./03-ai-permission-modes.md)**: Four permission modes, from a plan you approve first to full autonomy.
+- **[Review and undo changes](./04-ai-reviewing-changes.md)**: Every edit shows a diff. Roll back any response with **Undo** or **Restore to this point**.
+- **[Find photos](./07-ai-images.md)**: Ask for pictures and the AI searches Unsplash, shows the results in the chat, and adds the one you pick to the page.
+- **[Watch usage and cost](./08-ai-usage.md)**: Tokens and cost for the current chat, plus a usage calendar on the start screen.
+- **[Pick a model or provider](./09-ai-models-providers.md)**: Switch models mid-chat, or bring your own API key and endpoint.
+
+:::note
+Free accounts get a daily and a monthly limit on Visual AI chats. Once you pass half of either limit, a bar above the message box shows how many chats are left. [Phoenix Code Pro](https://phcode.dev/pricing) has no limit.
+:::
+
+## In This Section
+
+- [Setup](./01-ai-setup.md): Sign in and connect your Claude account.
+- [Chatting](./02-ai-chatting.md): The start screen, sending messages, context, attachments, and session history.
+- [Permission Modes](./03-ai-permission-modes.md): Plan Mode, AI Edit Mode, Auto, and Allow Everything.
+- [Reviewing and Undoing Changes](./04-ai-reviewing-changes.md): Diffs, restore points, and undo.
+- [Live Preview and Editor](./05-ai-ask.md): Ask about elements, Markdown, and code, and answer questions the AI asks in the preview.
+- [Claude Code CLI and Codex CLI](./06-ai-cli.md): Run the command-line tools inside the panel.
+- [Image Search](./07-ai-images.md): Find and use photos from Unsplash.
+- [Usage and Cost](./08-ai-usage.md): Tokens, cost, and the usage calendar.
+- [Models and Providers](./09-ai-models-providers.md): Choose a model or add a custom provider.
+- [Turning AI Off](./10-ai-disable.md): Remove AI from the editor completely.
