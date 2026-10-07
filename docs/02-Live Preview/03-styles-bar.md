@@ -55,6 +55,10 @@ If your CSS already has state rules for the element, like `.button:hover`, they 
 
 > States need a CSS rule to live in, so they are not available when saving to inline styles.
 
+### Script-Generated Elements
+
+The bar also opens for elements added by JavaScript, as long as they have an id, a class, or a CSS rule that matches them. They have no inline style to save to, so edits go to the matching rule by default, and a notice tells you so. **Create new rule** only accepts a class or id the element already has.
+
 ## Font Family
 
 Opens a font picker with three tabs:
@@ -86,7 +90,7 @@ The text style popover has two tabs.
 The **Format** tab:
 
 - **Font weight**: Controls how thick the text is, with a slider from Thin (100) to Black (900).
-- **Format**: Italic, underline, strikethrough, and overline.
+- **Style**: Italic, underline, strikethrough, and overline.
 - **Alignment**: Aligns text left, center, right, or justified.
 - **Case**: Shows text as uppercase, lowercase, or capitalized, without changing the text in your HTML.
 - **Cursor**: The mouse cursor shown when hovering over the element, like pointer or grab.
@@ -110,10 +114,12 @@ To learn more about these properties, see [MDN's text styling guide](https://dev
 
 The **Background color** button shows the element's current background color. Click it to open a full color picker:
 
-- Pick a color visually, or type one as Hex, RGB, or HSL.
+- Pick a color visually, or type one as Hex, RGB, or HSL. Switching the format rewrites the value in that notation.
 - The **opacity** field controls how see-through the color is.
 - The **eyedropper** lets you pick a color from anywhere on the page.
 - **Swatches** shown on the left side displays all the colors already used in the page, plus a set of common colors.
+
+Colors written as `oklch()`, `lab()`, or `color()` open in the picker too.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/styles-bar/background-color.mp4"
@@ -255,10 +261,12 @@ Every popover has a **Reset** button in its header. It reverts all the changes y
 
 ![Reset button](../images/pro/styles-bar-reset.png "The Reset button in a popover header")
 
+Press `Esc` in a popover to close it and discard any edit that has not been saved yet.
+
 You can also undo any Styles Bar edit with `Ctrl/Cmd + Z`, like every other Edit Mode operation. See [Undo and Redo](./live-preview-edit#undo-and-redo).
 
 ## Hiding the Styles Bar
 
-To hide the bar, open the **More Options** menu *(three-dots icon)* in the Control Box and unselect **Show Styles Bar**. While hidden, a **palette icon** appears in the Control Box tools to bring it back.
+Click the **Show Styles Bar** tool *(palette icon)* in the Control Box to hide the bar, and click it again to bring it back. The icon stays lit while the bar is on. Phoenix Code remembers this choice, and the side the bar is docked on.
 
-![Show Styles Bar in the More Options menu](../images/pro/styles-bar-disable.png "Show Styles Bar in the Control Box More Options menu")
+![Show Styles Bar tool](../images/pro/styles-bar-toggle.png "The Styles Bar toggle in the Control Box tools")
