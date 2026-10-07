@@ -54,6 +54,10 @@ Select some code in the editor with the mouse, or move the pointer over a select
 
 Click it to attach the exact range to the dialog. The AI reads those lines from the editor, so it sees unsaved changes too. To hide this button, right-click in the editor and turn off **Show Ask AI**.
 
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/ai/ai-ask-code.mp4"
+/>
+
 ## Sending to a CLI
 
 The dialog sends to whichever assistant the AI panel is showing. When the panel is on **Claude Code CLI** or **Codex CLI**, the send button reads **Transfer to Claude Code CLI** or **Transfer to Codex CLI**. The question is pasted into the CLI's prompt, with a note about what is attached, and the CLI fetches the screenshots and code when it reads the question. Review the prompt and press `Enter` in the terminal to send it.
