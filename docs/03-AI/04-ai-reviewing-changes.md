@@ -3,22 +3,50 @@ title: Reviewing and Undoing Changes
 slug: "/Pro Features/ai-review"
 ---
 
+import React from 'react';
+import VideoPlayer from '@site/src/components/Video/player';
+
 ## Reviewing Diffs
 
-Every edit card shows the number of lines added and removed, along with a **Show diff** button that toggles a unified diff of the change inline. Click the **three-dot menu** on the card to:
+Every file the AI edits or creates gets a card in the chat, like **Edit styles.css**. Click the file name to open it in the editor. Click **Show diff** to see the change inline, with the removed lines in red and the added lines in green.
 
-- **Expand all** - open every diff section on the card at once
-- **Collapse all** - hide every diff section on the card
-- **Always show** - keep diffs open by default on future edits without clicking Show diff each time
+![Edit card with its diff](../images/pro/ai-diff.png "An edit card with Show diff open")
 
-![Edit card with the diff menu open](../images/pro/ai-diff.png "The three-dot menu on an edit card shows Expand all, Collapse all, and Always show")
+The **three-dot** button on the card opens the diff options:
+
+![Diff options](../images/pro/ai-diff-menu.png "Expand all, Collapse all, and Always show")
+
+- **Expand all**: Opens the diff on every edit card in the chat.
+- **Collapse all**: Closes them all.
+- **Always show**: Opens the diff on every new edit card as it arrives. Click it again to turn it off.
+
+> Edits go through the editor. Open files update in place, the Live Preview refreshes, and your own undo history in the editor is kept.
 
 ## Undo and Restore
 
-Before each AI response that edits files, Phoenix Code creates a **restore point**. Each edit summary card has a button to revert to that point: it reads **Undo** on the most recent response and **Restore to this point** on earlier ones. Both do the same thing: they roll your files back to the saved state.
+When a response changes files, a summary card closes it: **2 files changed**, with the lines added and removed in each file. Click a file to open it.
 
-The first time you undo or restore in a session, Phoenix Code shows a confirmation dialog before reverting.
+![Files changed card](../images/pro/ai-undo.png "The summary card with the Undo button")
 
-> Restore only reverts changes made by the AI. Edits you made outside the AI panel are not tracked and may be lost if they overlap with files the AI also edited. For full version history, use version control like Git.
+Phoenix Code keeps a restore point for every response that changes files:
 
-![Undo and Restore](../images/pro/ai-undo.png "Undo and Restore")
+- **Undo** on the latest summary card rolls the files back to how they were before that response.
+- **Restore to this point** on an earlier card, or on the card above the first edit of the session, rolls back everything after that point. Files the AI created after it are deleted.
+
+The first time you undo or restore in a session, Phoenix Code asks you to confirm:
+
+![Undo confirmation](../images/pro/ai-undo-dialog.png "The AI Undo & Restore dialog")
+
+After a restore, the card you used reads **Restored**, and the Live Preview shows the restored page.
+
+<VideoPlayer
+  src="https://docs-images.phcode.dev/videos/ai/ai-undo.mp4"
+/>
+
+> Restore only reverts changes made by the AI. Edits you made yourself to the same files may be lost. For full version history, use version control like Git.
+
+Restore points live with the conversation. They are gone when you start a new chat, resume an older session, or switch projects.
+
+## Preview
+
+When the AI edits the HTML page that is open in the editor, the summary card also offers a **Preview** button. It opens the Live Preview in Preview Mode and gives it the whole editor area, so you can look at the result. The button reads **Previewing** while that view is on.
