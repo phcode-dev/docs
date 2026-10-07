@@ -71,13 +71,11 @@ Once completed, a basic project structure will be generated in the selected fold
 
 ## Create a project from Github
 
-> This feature is only available in the browser app currently. Coming soon to desktop apps.
-
 You can create a project from GitHub and easily import it to your local machine. Follow these steps:
 
 1. Open the `Start Project Dialog` box.
-2. Click on the **`GitHub Project`** button.
-3. Enter the URL of the GitHub repository you want to work on.
+2. Click on the **`Get from Git`** button.
+3. Enter the URL of the Git repository you want to work on.
 4. Specify the folder location where you want to copy the repository files.
 5. Click **`Create Project`**.
 
