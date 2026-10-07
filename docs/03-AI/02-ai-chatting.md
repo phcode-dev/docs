@@ -13,8 +13,8 @@ Click the **AI** tab *(sparkle icon)* in the sidebar. The panel opens on the sta
 ![The start screen](../images/pro/ai-start-screen.png "The start screen with the Surprise Me card and the Work with rows")
 
 - **Surprise Me**: Plays a demo of what the AI can do. See [Surprise Me](#surprise-me).
-- **Visual AI with Claude Code**: The built-in chat. Click the row to put the cursor in the message box, or just start typing.
-- **Claude Code CLI** and **Codex CLI**: The command-line tools, running inside the panel. See [Claude Code CLI and Codex CLI](./06-ai-cli.md).
+- **Visual AI with Claude Code**: The built-in chat. Click the row, or the message box, and start typing.
+- **Claude Code CLI** and **Codex CLI**: The command-line tools, running inside the panel. If you have not installed either CLI yourself, the two rows are folded into a *Use a CLI instead* line. Click it to open them. See [Claude Code CLI and Codex CLI](./06-ai-cli.md).
 - **AI Settings**: The link at the bottom opens the settings dialog, where you can add a custom provider. See [Models and Providers](./09-ai-models-providers.md).
 
 Once you have used the panel, the Surprise Me card shrinks to a *Want a demo? Surprise me.* line at the bottom, so the rows come first.
@@ -25,7 +25,7 @@ Once you have used the panel, the Surprise Me card shrinks to a *Want a demo? Su
 
 ### Surprise Me
 
-The first time you click **Surprise Me**, the panel plays a recorded build: a real conversation, replayed in the chat while the files land in your project and the Live Preview shows the result. This uses no AI credits and works before you sign in to Claude.
+The first time you click **Surprise Me**, the panel plays a recorded build: a real conversation, replayed in the chat while the files land in your project and the Live Preview shows the result. The editor switches to [Design Mode](../02-Live%20Preview/01-design-mode.md) so the preview fills the window. This uses no AI credits and works before you sign in to Claude.
 
 A bar at the bottom of the panel controls the demo. Click the **speed** button to cycle through 1x to 32x, or click **Back** to leave. When the demo ends, a card shows which model built it, with **Reveal the prompt** to see the prompt that was used, **See another demo** to play the next one, and **+ New** to start your own chat.
 
@@ -33,7 +33,7 @@ From then on, **Surprise me** opens a choice:
 
 ![Surprise Me choice](../images/pro/ai-surprise-choice.png "Make something new or Show another demo")
 
-- **Make something new**: The AI builds a small project of its own choosing, live. This uses your Claude credits.
+- **Make something new**: The AI builds a small project of its own choosing, live. This uses your Claude credits, and the permission mode switches to **Auto** for it. When you are offline, a recorded demo plays instead.
 - **Show another demo**: Plays the next recorded demo for free.
 
 > Demos and live builds create files in the project you have open. Try them in a scratch project.
@@ -42,13 +42,15 @@ From then on, **Surprise me** opens a choice:
 
 Type in the message box at the bottom and press `Enter` to send. Press `Shift + Enter` for a new line. Your message appears under **You**, and the reply under **Claude**.
 
-While the AI is working, a status line under the chat shows what it is doing, like *Thinking...*, *Read...*, or *Edit...*, with a timer once it takes more than a few seconds. The **send** button turns into a **stop** button *(square icon)*. Click it, or press `Esc` while the message box has focus, to stop the AI. Anything it already did stays in the chat.
+While the AI is working, a status line under the chat shows what it is doing, like *Thinking...*, *Waiting for the model...*, *Read...*, or *Edit...*, with a timer once it takes more than a few seconds. The **send** button turns into a **stop** button *(square icon)*. Click it, or press `Esc` while the message box has focus, to stop the AI. Anything it already did stays in the chat.
 
 ![Stop button](../images/pro/ai-stop.png "The stop button while the AI works")
 
 You can keep typing while the AI works. Press `Enter` and the message is held in a **Queued** bubble above the message box. The AI reads it as soon as it finishes its current step and folds it into what it is doing. If the AI finishes first, the queued message is sent as the next turn. Click **Edit** on the bubble to take the text back into the message box.
 
 ![Queued message](../images/pro/ai-queued.png "A queued follow-up, waiting for the AI")
+
+If the chat hits an error it cannot recover from, the message box is disabled and a **New** button appears under the error. Start a new chat and send your message again.
 
 > The first time you send a message, Phoenix Code asks you to confirm that prompts and context are sent to Claude Code.
 
@@ -59,7 +61,7 @@ Phoenix Code tells the AI what you are looking at. Chips above the message box s
 ![Context chips](../images/pro/ai-chips.png "The Live Preview and Selection chips")
 
 - **Live Preview**: Shown while the Live Preview is open. The AI is told which page it shows.
-- **Selection L12-L40 in index.html**: Shown when you have text selected in the editor. The selected text goes with your message.
+- **Selection L12-L40 in index.html**: Shown when you have text selected in the editor. A short selection goes with your message in full. For a longer one, the AI gets the line range and reads the lines itself.
 - **Line 26 in index.html**: Shown when nothing is selected. The AI is told which file you are in and where the cursor is.
 - **Folder chips**: One for each folder you added with **Add folder as context**. See [Attachments](#attachments).
 
@@ -74,9 +76,9 @@ Click the **paperclip** button to attach more context:
 ![Attach menu](../images/pro/ai-attach-dropdown.png "Attach a file, or add a folder as context")
 
 - **Attach a file**: Pick one or more files. Images are attached as pictures the AI can look at. Other files are attached as references, and the AI reads them when it needs to.
-- **Add folder as context**: Pick a folder outside your project. It appears as a chip, and the AI can read and edit files inside it without asking. The folder stays attached for this project until you remove the chip.
+- **Add folder as context**: Pick any folder, for example one outside your project. It appears as a chip, and the AI treats the files inside it like files in your project. The folder stays attached for this project until you remove the chip.
 
-You can also paste an image from the clipboard into the message box. Attachments appear in a tray above the message box. Click one to preview it, or click its **x** to remove it. A message can carry up to 10 images.
+You can also paste an image, or files copied from your file manager, into the message box. Attachments appear in a tray above the message box. Click an image to see it full size, click a file to open it in the editor, or click the **x** to remove an attachment. A message can carry up to 10 images, in PNG, JPEG, GIF, WebP, or SVG. Large images are shrunk before they are sent.
 
 ## Screenshots
 
@@ -84,21 +86,23 @@ Click the **camera** button to attach a screenshot:
 
 ![Screenshot menu](../images/pro/ai-screenshot-dropdown.png "The screenshot options")
 
-- **Select Area**: Draw a rectangle over any part of the window. Drag the handles to adjust it, then click **Capture** or press `Enter`.
+- **Select Area**: Draw a rectangle over any part of the window. Drag the handles to adjust it, or drag inside it to move it, then click **Capture** or press `Enter`. Press `Esc` to cancel.
 - **Live Preview**: The page in the Live Preview. The preview is opened if it is closed.
 - **Live Preview Selection**: Just the element selected in the Live Preview.
 - **Full Editor**: The whole Phoenix Code window.
 - **Upload from Device**: Pick an image from your computer.
 
-> The AI can take its own screenshots of the Live Preview and the editor while it works. They show up as cards in the chat.
+> The AI can take its own screenshots of the Live Preview and the editor while it works. They show up as cards in the chat, and a banner at the top of the preview reads *AI is inspecting the live preview* while it looks.
 
 ## Following the AI's Work
 
 ![A conversation](../images/pro/ai-chat-panel.png "A conversation: the prompt, the steps the AI took, and its reply")
 
-Everything the AI does appears as a card in the chat, in the order it happens: *Read index.html*, *Edit styles.css*, *Ran command*, *Screenshot of live preview*, and so on. Click a card to see the details, like the command it ran or the code it inspected. A card that did not work is marked **failed**.
+Everything the AI does appears as a card in the chat, in the order it happens: *Read index.html*, *Edit styles.css*, *Ran command*, *Screenshot of live preview*, and so on. Click a card to see the details, like the command it ran or the code it inspected. Click a file name on a card to open the file. A card that did not work is marked **failed**, and an edit that could not be applied reads **Edit rejected**.
 
-When several steps finish in a row, they are folded into one card that reads, for example, **3 steps**, with the files it read and edited listed underneath. Click the card to open the steps.
+For a bigger task the AI keeps a task list card, like **2 of 5 tasks done**, and ticks off the steps as it goes.
+
+When two or more steps finish in a row, they are folded into one card that reads, for example, **3 steps**, with the files it read and edited listed underneath. Click the card to open the steps.
 
 ![Tool pile](../images/pro/ai-tool-pile.png "Three finished steps folded into one card")
 
@@ -118,14 +122,14 @@ The AI can also ask inside the Live Preview, with options you can preview on the
 
 ### Code in Replies
 
-Code blocks in a reply have a **Copy** button in their header. Blocks longer than five lines are collapsed. Click the footer to expand them. Color codes outside code blocks get a swatch so you can see the color.
+Code blocks in a reply have a **Copy** button in their header. Blocks longer than five lines can be collapsed with the chevron in the header or the bar at the bottom. Color codes outside code blocks get a swatch so you can see the color.
 
 ## New, Back, and Home
 
 The buttons in the panel header appear when you move the pointer over the panel:
 
 - **New** *(plus icon)*: Starts a new conversation. The old one stays in [session history](#session-history). If the AI is working, you are asked before it is stopped.
-- **Back** *(left arrow)*: Returns to the start screen without stopping the chat. The **Visual AI** row then reads *In progress*. Click it, or pick **Visual AI** from the dropdown in the header, to get back to the chat.
+- **Back** *(left arrow)*: Returns to the start screen without stopping the chat. The **Visual AI** row then shows a dot to mark the running chat. Click it, or pick **Visual AI** from the dropdown in the header, to get back to the chat.
 - **Visual AI dropdown**: Switches between the built-in chat and the CLI tools. Each keeps running while you look at another.
 
 ![The mode dropdown](../images/pro/ai-mode-dropdown.png "Visual AI, Claude Code CLI, and Codex CLI in the header dropdown")
