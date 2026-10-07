@@ -3,42 +3,28 @@ title: Setup
 slug: "/Pro Features/ai-setup"
 ---
 
-import React from 'react';
-import VideoPlayer from '@site/src/components/Video/player';
-
-AI in Phoenix Code is powered by [Claude Code](https://code.claude.com/docs/en/overview), the coding agent from Anthropic. To use it you need three things:
+AI in Phoenix Code is powered by [Claude Code](https://code.claude.com/docs/en/overview), the coding agent from Anthropic. Claude Code ships inside the desktop app, so there is nothing to install. To start chatting you need two things:
 
 1. A **Phoenix Code account**, signed in to the editor.
-2. The **Claude Code CLI**, installed on your machine.
-3. A **Claude account** that pays for the AI: either a Claude subscription or an API key.
+2. A **Claude account** that pays for the AI: either a Claude subscription or an API key.
 
-Phoenix Code walks you through each step in the AI panel. Chats are billed to the Claude account you connect, not to Phoenix Code.
-
-<VideoPlayer
-  src="https://docs-images.phcode.dev/website/videos/claude-code-config.mp4"
-/>
+Chats are billed to the Claude account you connect, not to Phoenix Code.
 
 ## Step 1: Sign in to Phoenix Code
 
-Click the **AI tab** *(sparkle icon)* in the sidebar. If you are not signed in, the panel asks you to sign in to your Phoenix Code account. Click **Sign In**.
+Click the **AI** tab *(sparkle icon)* in the sidebar. If you are not signed in, the panel asks you to sign in to your Phoenix Code account. Click **Sign In** and finish in the browser window that opens. The panel updates on its own once you are signed in.
 
-![AI sign in screen](../images/pro/ai-signin.png "Sign in to your Phoenix Code account")
+![AI sign in screen](../images/pro/ai-signin.png "The sign in screen, with a Surprise Me demo you can watch before signing in")
 
-## Step 2: Install Claude Code
+> You can watch a demo before signing in. Click **Surprise Me** to see a recorded build play in the panel.
 
-If the Claude Code CLI is not installed on your machine, the panel tells you it must be installed. Click **Install Claude Code**. Phoenix Code opens its built-in terminal and runs the official installer from Anthropic. The install can take a while; Phoenix Code detects when it finishes.
+## Step 2: Set up Claude Code
 
-![Install Claude Code screen](../images/pro/ai-install-claude.png "The Install Claude Code screen")
+Once you are signed in, the panel shows the start screen. If Claude Code is not signed in to a Claude account yet, the **Visual AI with Claude Code** row shows a **Set up** button, and the message box reads *Set up Claude Code to start chatting*.
 
-Restart Phoenix Code after the installation completes.
+![Set up button](../images/pro/ai-setup-button.png "The Set up button on the Visual AI row")
 
-If you prefer to install the CLI yourself, follow [Anthropic's setup guide](https://code.claude.com/docs/en/setup#install-claude-code) and restart Phoenix Code when done.
-
-## Step 3: Connect your Claude account
-
-Once the CLI is installed, the panel shows **Claude Code is installed but needs to be configured**. Click **Setup Claude Code** to open Claude Code in the built-in terminal, where you log in with your Claude account. Restart Phoenix Code after the configuration completes.
-
-![Setup Claude Code screen](../images/pro/ai-setup-claude.png "The Setup Claude Code screen")
+Click **Set up**. Phoenix Code opens its built-in terminal and starts the Claude Code login. Pick the way you want to log in, finish the steps in the terminal, and the panel notices within a few seconds. No restart is needed.
 
 You have two ways to log in:
 
@@ -48,20 +34,30 @@ Claude Code is included in Claude's paid plans (Pro and above). The free claude.
 
 1. Create a Claude account at [claude.ai](https://claude.ai) if you don't have one.
 2. Get a plan that includes Claude Code at [claude.com/pricing](https://claude.com/pricing).
-3. Click **Setup Claude Code** and pick the subscription login option in the terminal.
+3. Click **Set up** and pick the subscription login in the terminal. It opens your browser to confirm.
 
 ### With an API key
 
 If you don't want a subscription, you can pay per use with an API key instead:
 
 1. Create an API key at [platform.claude.com](https://platform.claude.com).
-2. Click **Setup Claude Code** and pick the API key option in the terminal, or add the key as a custom provider in [AI settings](./05-ai-models-providers.md#settings).
+2. Either click **Set up** and pick the API key option in the terminal, or add the key as a provider in [AI Settings](./09-ai-models-providers.md#settings). With a provider active, the Claude login step is skipped.
 
-You can also use any other provider with an Anthropic-compatible API. See [Models and Providers](./05-ai-models-providers.md#compatible-providers).
+You can also use any other provider with an Anthropic-compatible API. See [Models and Providers](./09-ai-models-providers.md#compatible-providers).
 
-> The Claude Code CLI must be installed even when you bring your own API key or use a third-party provider.
+## Using Your Own Claude Code
 
-## If your login expires
+If you already have Claude Code installed, Phoenix Code uses it whenever it is newer than the bundled copy. To use a specific copy, enter its path in [AI Settings](./09-ai-models-providers.md#settings) under **Path to the Claude Code executable**. Leave the field blank to let Phoenix Code pick.
+
+The **Codex CLI** is not bundled. Phoenix Code offers to install it the first time you pick it. See [Claude Code CLI and Codex CLI](./06-ai-cli.md#setting-up-a-cli).
+
+## If Claude Code Is Not Found
+
+In rare cases the bundled Claude Code cannot run on your machine, or the path saved in AI Settings no longer works. The panel then shows **Getting started with Claude Code** with an **Install Claude Code** button. Click it: Phoenix Code opens the built-in terminal and runs the official installer from Anthropic, then continues on its own when the install finishes. If the panel does not pick it up, restart Phoenix Code.
+
+If you prefer to install the CLI yourself, follow [Anthropic's setup guide](https://code.claude.com/docs/en/setup#install-claude-code), then open the AI tab again.
+
+## If Your Login Expires
 
 If your Claude login expires later, the chat shows a **Claude Code is signed out or your login has expired** notice with a **Log in to Claude in Terminal** button. Click it, type `/login` in the terminal that opens, then send your message again.
 
