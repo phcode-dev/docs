@@ -19,7 +19,7 @@ This page covers what Phoenix Code is, why you might use it, and where to go nex
 Here's what sets Phoenix Code apart.
 
 - **Live Preview** — Edit your HTML and CSS and watch the page update in real time. Phoenix Code goes a step further: edit the preview directly to change text, add and rearrange elements, or swap images, and your source code updates automatically.
-- **AI assistant** — A built-in AI agent (powered by Claude Code) works alongside you. It reads and edits your files, runs terminal commands, and because it's wired into Live Preview, it can see your running page, take screenshots, and verify its own work. Plan, Edit, and Full Auto modes keep you in control, and every change it makes is reversible.
+- **AI assistant** — A built-in AI agent (powered by Claude Code) works alongside you. It reads and edits your files, runs terminal commands, and because it's wired into Live Preview, it can see your running page, take screenshots, and verify its own work. Permission modes from Plan Mode to Allow Everything keep you in control, and every change it makes is reversible.
 - **Runs everywhere** — Native desktop apps for macOS, Windows, and Linux from [phcode.dev](https://phcode.dev), or the full editor in your browser at [web.phcode.dev](https://web.phcode.dev) with nothing to install.
 - **Built-in tools** — Git, Terminal, Emmet, Beautify, and code hints all ship in the editor, so you can start working right away.
 - **Visual editing** — Color pickers, gradient editors, and draggable number scrubbing let you adjust CSS values directly and see the result immediately.

@@ -14,7 +14,7 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 ## Why use Design Mode
 
-- **Pair with the AI Chat panel.** Ask the AI to make a change and see it applied instantly in the preview as the code updates without the need to open the editor. [Read More about AI Chat](./Pro%20Features/ai-chat).
+- **Pair with the AI panel.** Ask the AI to make a change and see it applied instantly in the preview as the code updates without the need to open the editor. [Read More about AI](./Pro%20Features/ai-chat).
 - **Edit visually with Live Preview Edit Mode.** Click elements, drag them, change text, swap images, and much more, directly in the preview. [Read More about Live Preview Edit Mode](./Pro%20Features/live-preview-edit).
 - **Test responsive designs.** With Device Preview, check how your page looks on phone, tablet, and desktop sizes with just a click. [Read More about Device Preview](./Pro%20Features/device-preview).
 
@@ -32,7 +32,7 @@ All three toggle the same mode. Use any of them again to switch back to the code
 
 ## The Design Mode layout
 
-When Design Mode is on, the sidebar stays visible alongside the maximized Live Preview. The recommended setup is to keep **AI Chat** open in the sidebar so you can ask for changes and watch them appear in the preview as the AI works. If the Live Preview is not already open, Phoenix Code opens it for you.
+When Design Mode is on, the sidebar stays visible alongside the maximized Live Preview. The recommended setup is to keep the **AI** tab open in the sidebar so you can ask for changes and watch them appear in the preview as the AI works. If the Live Preview is not already open, Phoenix Code opens it for you.
 
 ![Design Mode layout](../images/designMode/design-mode-layout.png "Design Mode layout")
 
