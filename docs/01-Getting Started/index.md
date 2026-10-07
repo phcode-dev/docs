@@ -34,11 +34,14 @@ You can build complete websites for free. The core editor, [Live Preview](/docs/
 
 - **[Live Preview Edit](/docs/Pro%20Features/live-preview-edit)**: edit the rendered page directly and sync changes back to your source automatically.
 - **[Styles Bar](/docs/Pro%20Features/styles-bar)**: style any element visually from the Live Preview, with fonts, colors, spacing, and layout controls that save straight to your CSS.
+- **[Layers Panel](/docs/Pro%20Features/layers-panel)**: see the page structure as a tree, select any element from it, edit its tag, classes, attributes, and styles, and drag rows to rearrange elements.
 - **[AI](/docs/Pro%20Features/ai-chat)**: unlimited AI use (free users get a daily and monthly chat limit).
 - **[Device Preview](/docs/Pro%20Features/device-preview)**: check how your page looks at phone, tablet, and desktop sizes.
 - **[Measurements](/docs/Pro%20Features/measurements)**: ruler lines from a selected element to the edges of the page, labeled with exact pixel positions, for precise alignment.
 - **[Image Gallery](/docs/Pro%20Features/image-gallery)**: browse stock images from providers like Unsplash and Pexels and embed or download them into your project without leaving Phoenix Code.
 - **[Markdown Editor](/docs/Pro%20Features/markdown-editor)**: edit Markdown directly in the preview with a full rich-text editor that keeps your source in sync.
+
+Every new install starts with an 8-day Phoenix Pro trial. To end it early, choose **Help > Cancel Phoenix Pro Trial**. On the free plan, a **Get Phoenix Pro** button in the top bar opens the pricing page.
 
 See plans on the [pricing page](https://phcode.dev/pricing).
 
