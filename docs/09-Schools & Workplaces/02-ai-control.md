@@ -438,3 +438,5 @@ However, this is currently not implemented.
 
 For any special requests or technical issues, please reach out through our discussions forum at https://github.com/orgs/phcode-dev/discussions/new/choose.
 We're committed to supporting a smooth rollout of AI controls for educational or organizational needs.
+
+To control where the desktop app gets its updates, see [Managing App Updates](./03-managed-updates.md).
