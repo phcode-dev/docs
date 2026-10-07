@@ -54,7 +54,7 @@ This feature is accessible in two ways: via the menu items or through the Keyboa
 ## Resetting Shortcuts
 
 ![reset](../images/keyboard/reset.png)
-Users can reset all shortcuts to factory defaults using the 'Reset' button in the Keyboard Shortcuts panel.
+Users can reset all shortcuts to factory defaults using the **Reset…** button in the Keyboard Shortcuts panel. A dialog asks you to confirm before the shortcuts are reset.
 
 ## Additional Notes
 
