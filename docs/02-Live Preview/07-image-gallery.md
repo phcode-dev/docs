@@ -55,7 +55,7 @@ The first time you select an image, Phoenix Code prompts you to choose where ima
 The dialog includes:
 
 - **Folder path input**: Enter a folder path relative to your project root. Phoenix Code suggests matching folders as you type.
-- **Remember this folder for this project**: When checked (default), Phoenix Code reuses this folder for future image downloads in the same project.
+- **Don't ask again for this project**: Checked by default. Phoenix Code then saves future images to this folder without asking.
 
 > If the folder does not exist, Phoenix Code creates it.
 > If the folder path is left empty, images are saved to an `images` folder in the project root.
@@ -65,6 +65,8 @@ The dialog includes:
 To change the saved folder later, click the **Folder Selection** button *(folder icon)* in the Image Gallery header.
 
 ![Folder selection button](../images/pro/folder-selection-button.png "Folder Selection Button")
+
+When an image is saved to the remembered folder, an **Image downloaded** notification shows where it went. Click **Show in File Tree** to reveal the file, or the **gear** button to pick a different folder.
 
 ## Image Size Selection
 
