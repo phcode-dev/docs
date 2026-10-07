@@ -224,6 +224,10 @@ When you initiate a pull, the **Pull from Remote** dialog appears, allowing you 
 ![Show History](../images/git-images/show-history.png "Show History")
 Clicking the **Show History** button displays a complete list of commits made to the entire repository to help you track the changes made to the project over time.
 
+The history also shows how far the branch is from its remote. A line with a **cloud** icon and the remote branch name, like `origin/main`, marks the last pushed commit and reads **up to date** or the number of commits ahead, like **3 ahead**. Commits above it are marked as not pushed. A branch with no remote branch shows a **not pushed** line instead. File history does not show this.
+
+![History push state](../images/git-images/history-push-state.png "The last pushed commit and unpushed commits in the history")
+
 ### Show File History
 
 ![Show File History](../images/git-images/show-file-history.png "Show File History")
