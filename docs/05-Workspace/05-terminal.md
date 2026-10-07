@@ -91,7 +91,7 @@ If a command is still running, Phoenix Code asks for confirmation before restart
 To keep your sessions and open a terminal in the new project, click **+ Terminal** shown on the bottom of the right sidebar.
 
 <VideoPlayer
-  src="/videos/terminal/project-switching.mp4"
+  src="https://docs-images.phcode.dev/videos/terminal/project-switching.mp4"
 />
 
 ## Keyboard Shortcuts
