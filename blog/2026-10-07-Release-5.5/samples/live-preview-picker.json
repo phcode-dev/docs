@@ -1,0 +1,95 @@
+{
+  "html": "<style>\n    .cs { background: #faf8f1; color: #26302a; font-family: Arial, Helvetica, sans-serif; padding: 20px 20px 18px; }\n    .cs-kicker { margin: 0; font-size: 9px; letter-spacing: 1.8px; font-weight: 700; color: #6d756c; display: flex; align-items: center; gap: 7px; }\n    .cs-kicker i { width: 6px; height: 6px; border-radius: 50%; background: #26302a; display: inline-block; }\n    .cs h2 { margin: 9px 0 5px; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-style: italic; font-size: 29px; letter-spacing: -.8px; line-height: 1.05; color: #26302a; }\n    .cs-sub { margin: 0 0 16px; font-size: 12px; line-height: 1.5; color: #6d756c; }\n    .cs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }\n\n    .cs-card { all: unset; box-sizing: border-box; display: block; cursor: pointer; position: relative; padding: 8px 8px 11px; background: #fff; color: #26302a; border: 1px solid #26302a1f; border-radius: 16px; transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease, border-color .25s ease; }\n    .cs-card:hover { transform: translateY(-4px); box-shadow: 0 14px 26px -14px var(--ink); border-color: var(--ink); }\n    .cs-card:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }\n    .cs-card.ph-selected { border-color: var(--ink); box-shadow: 0 0 0 2px var(--ink), 0 14px 26px -14px var(--ink); transform: translateY(-4px); }\n    .cs-check { position: absolute; top: -8px; right: -8px; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: var(--paper); font-size: 12px; line-height: 22px; text-align: center; opacity: 0; transform: scale(.5); transition: opacity .2s ease, transform .25s cubic-bezier(.2,1.4,.4,1); z-index: 2; }\n    .cs-card.ph-selected .cs-check { opacity: 1; transform: scale(1); }\n\n    /* miniature page */\n    .mini { display: block; position: relative; height: 150px; overflow: hidden; border-radius: 10px; background: var(--paper); }\n    .mini-head { display: flex; align-items: center; justify-content: space-between; padding: 7px 8px 6px; border-bottom: 1px solid var(--line); }\n    .mini-brand { font-size: 10px; font-weight: 800; letter-spacing: -.7px; color: var(--ink); }\n    .mini-pill { width: 22px; height: 8px; border: 1px solid var(--ink); border-radius: 6px; opacity: .55; }\n    .mini-copy { position: absolute; left: 8px; top: 36px; width: 46%; }\n    .mini-copy b { display: block; height: 6px; border-radius: 3px; background: var(--ink); margin-bottom: 4px; }\n    .mini-copy b:nth-child(2) { width: 70%; }\n    .mini-copy b:nth-child(3) { width: 86%; height: 5px; background: none; border-bottom: 2px solid var(--ink); border-radius: 0; margin-bottom: 8px; }\n    .mini-copy u { display: block; height: 2px; border-radius: 2px; background: var(--muted); opacity: .6; margin-bottom: 3px; }\n    .mini-copy u:last-of-type { width: 60%; }\n    .mini-cta { display: block; margin-top: 8px; width: 34px; height: 10px; border-radius: 6px; background: var(--ink); }\n    .mini-art { position: absolute; right: 8px; top: 31px; width: 42%; height: 78px; overflow: hidden; background: var(--canvas); border-radius: 30px 30px 2px 2px; }\n    .mini-arch { position: absolute; left: 19%; bottom: -4px; width: 62%; height: 66%; background: var(--ink); border-radius: 48% 48% 0 0; }\n    .mini-sphere { position: absolute; left: 12%; top: 24%; width: 52%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, var(--glow), var(--accent) 45%); box-shadow: 4px 5px 6px var(--line); transition: transform .5s cubic-bezier(.2,.8,.2,1); }\n    .cs-card:hover .mini-sphere, .cs-card.ph-selected .mini-sphere { transform: translate(3px, -4px) scale(1.06); }\n    .mini-rows { position: absolute; left: 8px; right: 8px; bottom: 7px; }\n    .mini-rows i { display: block; border-top: 1px solid var(--line); height: 8px; }\n    .mini-rows i::before { content: \"\"; display: block; margin-top: 3px; width: 44%; height: 2px; border-radius: 2px; background: var(--ink); opacity: .75; }\n    .mini-rows i:last-child::before { width: 58%; }\n\n    .strip { display: flex; height: 16px; margin: 8px 0 10px; border-radius: 8px; overflow: hidden; box-shadow: inset 0 0 0 1px #26302a1a; }\n    .strip i { flex: 1; transition: flex .3s cubic-bezier(.2,.8,.2,1); }\n    .strip i:nth-child(3) { flex: 1.6; }\n    .cs-card:hover .strip i:nth-child(3), .cs-card.ph-selected .strip i:nth-child(3) { flex: 2.6; }\n\n    .cs-name { display: flex; align-items: baseline; justify-content: space-between; padding: 0 3px; font-size: 14px; font-weight: 700; letter-spacing: -.3px; color: #26302a; }\n    .cs-name small { font-size: 9px; font-weight: 400; letter-spacing: .6px; color: #6d756c; }\n    .cs-mood { display: block; padding: 3px 3px 0; font-family: Georgia, serif; font-style: italic; font-size: 12px; line-height: 1.35; color: #6d756c; }\n    .cs-foot { margin: 14px 0 0; font-size: 11px; color: #6d756c; }\n    @media (max-width: 420px) { .cs-grid { grid-template-columns: 1fr; } }\n</style>\n<div class=\"cs\">\n    <p class=\"cs-kicker\"><i></i> COLOR DIRECTION</p>\n    <h2>Find your color story</h2>\n    <p class=\"cs-sub\">Hover a palette to try it on the page. Click to keep it on while you decide.</p>\n    <div class=\"cs-grid\">\n        <button type=\"button\" class=\"cs-card ph-choice\" data-id=\"forest\" style=\"--paper:#f2f1e3;--ink:#163b2a;--accent:#b9e04e;--canvas:#d3e0cc;--muted:#5a6f60;--glow:#f1ffc4;--line:#163b2a30;\">\n            <span class=\"cs-check\">\u2713</span>\n            <span class=\"mini\"><span class=\"mini-head\"><span class=\"mini-brand\">field</span><span class=\"mini-pill\"></span></span><span class=\"mini-copy\"><b></b><b></b><b></b><u></u><u></u><span class=\"mini-cta\"></span></span><span class=\"mini-art\"><span class=\"mini-arch\"></span><span class=\"mini-sphere\"></span></span><span class=\"mini-rows\"><i></i><i></i></span></span>\n            <span class=\"strip\"><i style=\"background:#f2f1e3\"></i><i style=\"background:#d3e0cc\"></i><i style=\"background:#b9e04e\"></i><i style=\"background:#5a6f60\"></i><i style=\"background:#163b2a\"></i></span>\n            <span class=\"cs-name\">Forest <small>01</small></span>\n            <span class=\"cs-mood\">Grounded, quiet, quietly confident</span>\n        </button>\n        <button type=\"button\" class=\"cs-card ph-choice\" data-id=\"apricot\" style=\"--paper:#fff4e8;--ink:#4a2414;--accent:#ff9d5c;--canvas:#ffdcc0;--muted:#8a6350;--glow:#ffe3c9;--line:#4a241430;\">\n            <span class=\"cs-check\">\u2713</span>\n            <span class=\"mini\"><span class=\"mini-head\"><span class=\"mini-brand\">field</span><span class=\"mini-pill\"></span></span><span class=\"mini-copy\"><b></b><b></b><b></b><u></u><u></u><span class=\"mini-cta\"></span></span><span class=\"mini-art\"><span class=\"mini-arch\"></span><span class=\"mini-sphere\"></span></span><span class=\"mini-rows\"><i></i><i></i></span></span>\n            <span class=\"strip\"><i style=\"background:#fff4e8\"></i><i style=\"background:#ffdcc0\"></i><i style=\"background:#ff9d5c\"></i><i style=\"background:#8a6350\"></i><i style=\"background:#4a2414\"></i></span>\n            <span class=\"cs-name\">Apricot <small>02</small></span>\n            <span class=\"cs-mood\">Warm, sunlit, generous</span>\n        </button>\n        <button type=\"button\" class=\"cs-card ph-choice\" data-id=\"lilac\" style=\"--paper:#f6f1fb;--ink:#2f2350;--accent:#b99cf5;--canvas:#e2d7f5;--muted:#6f6590;--glow:#efe6ff;--line:#2f235030;\">\n            <span class=\"cs-check\">\u2713</span>\n            <span class=\"mini\"><span class=\"mini-head\"><span class=\"mini-brand\">field</span><span class=\"mini-pill\"></span></span><span class=\"mini-copy\"><b></b><b></b><b></b><u></u><u></u><span class=\"mini-cta\"></span></span><span class=\"mini-art\"><span class=\"mini-arch\"></span><span class=\"mini-sphere\"></span></span><span class=\"mini-rows\"><i></i><i></i></span></span>\n            <span class=\"strip\"><i style=\"background:#f6f1fb\"></i><i style=\"background:#e2d7f5\"></i><i style=\"background:#b99cf5\"></i><i style=\"background:#6f6590\"></i><i style=\"background:#2f2350\"></i></span>\n            <span class=\"cs-name\">Lilac <small>03</small></span>\n            <span class=\"cs-mood\">Dreamy, soft, a little unexpected</span>\n        </button>\n    </div>\n    <p class=\"cs-foot\">Nothing is saved to your files until you confirm.</p>\n</div>\n",
+  "script": "",
+  "params": {},
+  "placement": "bottom-right",
+  "anchor": null,
+  "highlight": false,
+  "width": 540,
+  "height": null,
+  "theme": {
+    "background": "#faf8f1",
+    "titleBackground": "#26302a",
+    "titleColor": "#faf8f1",
+    "textColor": "#26302a",
+    "accent": "#26302a"
+  },
+  "summary": "Find your color story \u2014 try Forest, Apricot or Lilac on the page",
+  "choices": [
+    {
+      "id": "forest",
+      "label": "Forest",
+      "description": "Grounded, quiet, quietly confident",
+      "color": "#163b2a",
+      "preview": {
+        "css": ":root {\n    --paper: {{paper}};\n    --ink: {{ink}};\n    --accent: {{accent}};\n    --canvas: {{canvas}};\n    --muted: {{muted}};\n}\nbody { background: {{paper}}; color: {{ink}}; }\n.site-header, .section-heading, .project-row { border-color: {{ink}}40; }\n.site-header { border-bottom-color: {{ink}}25; }\n.project-row { border-bottom-color: {{ink}}25; }\n.contact { border-color: {{ink}}50; }\n.arch { box-shadow: 18px 18px 30px {{ink}}35; }\n.sphere { background: radial-gradient(circle at 32% 28%, {{highlight}}, {{accent}} 35%, {{accentDeep}}55 100%); box-shadow: 25px 28px 26px {{ink}}40; }\n.disc { box-shadow: 3px 10px 0 {{disc}}, 5px 20px 16px {{ink}}30; }\n",
+        "script": "",
+        "params": {
+          "paper": "#f2f1e3",
+          "ink": "#163b2a",
+          "accent": "#b9e04e",
+          "canvas": "#d3e0cc",
+          "muted": "#5a6f60",
+          "glow": "#f1ffc4",
+          "shade": "#7f9a2c",
+          "edge": "#c5c7b3",
+          "highlight": "#f1ffc4",
+          "accentDeep": "#7f9a2c",
+          "disc": "#c5c7b3"
+        },
+        "reloadOnCleanup": false,
+        "selector": null
+      }
+    },
+    {
+      "id": "apricot",
+      "label": "Apricot",
+      "description": "Warm, sunlit, generous",
+      "color": "#ff9d5c",
+      "preview": {
+        "css": ":root {\n    --paper: {{paper}};\n    --ink: {{ink}};\n    --accent: {{accent}};\n    --canvas: {{canvas}};\n    --muted: {{muted}};\n}\nbody { background: {{paper}}; color: {{ink}}; }\n.site-header, .section-heading, .project-row { border-color: {{ink}}40; }\n.site-header { border-bottom-color: {{ink}}25; }\n.project-row { border-bottom-color: {{ink}}25; }\n.contact { border-color: {{ink}}50; }\n.arch { box-shadow: 18px 18px 30px {{ink}}35; }\n.sphere { background: radial-gradient(circle at 32% 28%, {{highlight}}, {{accent}} 35%, {{accentDeep}}55 100%); box-shadow: 25px 28px 26px {{ink}}40; }\n.disc { box-shadow: 3px 10px 0 {{disc}}, 5px 20px 16px {{ink}}30; }\n",
+        "script": "",
+        "params": {
+          "paper": "#fff4e8",
+          "ink": "#4a2414",
+          "accent": "#ff9d5c",
+          "canvas": "#ffdcc0",
+          "muted": "#8a6350",
+          "glow": "#ffe3c9",
+          "shade": "#c9622a",
+          "edge": "#e6cdb6",
+          "highlight": "#ffe3c9",
+          "accentDeep": "#c9622a",
+          "disc": "#e6cdb6"
+        },
+        "reloadOnCleanup": false,
+        "selector": null
+      }
+    },
+    {
+      "id": "lilac",
+      "label": "Lilac",
+      "description": "Dreamy, soft, a little unexpected",
+      "color": "#b99cf5",
+      "preview": {
+        "css": ":root {\n    --paper: {{paper}};\n    --ink: {{ink}};\n    --accent: {{accent}};\n    --canvas: {{canvas}};\n    --muted: {{muted}};\n}\nbody { background: {{paper}}; color: {{ink}}; }\n.site-header, .section-heading, .project-row { border-color: {{ink}}40; }\n.site-header { border-bottom-color: {{ink}}25; }\n.project-row { border-bottom-color: {{ink}}25; }\n.contact { border-color: {{ink}}50; }\n.arch { box-shadow: 18px 18px 30px {{ink}}35; }\n.sphere { background: radial-gradient(circle at 32% 28%, {{highlight}}, {{accent}} 35%, {{accentDeep}}55 100%); box-shadow: 25px 28px 26px {{ink}}40; }\n.disc { box-shadow: 3px 10px 0 {{disc}}, 5px 20px 16px {{ink}}30; }\n",
+        "script": "",
+        "params": {
+          "paper": "#f6f1fb",
+          "ink": "#2f2350",
+          "accent": "#b99cf5",
+          "canvas": "#e2d7f5",
+          "muted": "#6f6590",
+          "glow": "#efe6ff",
+          "shade": "#7a5fc0",
+          "edge": "#d3c8e6",
+          "highlight": "#efe6ff",
+          "accentDeep": "#7a5fc0",
+          "disc": "#d3c8e6"
+        },
+        "reloadOnCleanup": false,
+        "selector": null
+      }
+    }
+  ]
+}
