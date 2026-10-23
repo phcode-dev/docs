@@ -12,8 +12,6 @@ See and edit your HTML with the new [Layers panel](#explore-your-page-with-layer
 
 ## [Explore and Edit Your Page with Layers](https://docs.phcode.dev/app-links/layers-panel)
 
-`Added in October 2026`
-
 **Edit your web pages visually, without touching code!** The new Layers sidebar lets you explore your page’s HTML structure, add, move, duplicate, or delete elements, and edit their properties.
 
 Change colors, fonts, sizes, and spacing with simple visual controls. Every change is instantly reflected in your code and Live Preview.
@@ -23,8 +21,6 @@ Change colors, fonts, sizes, and spacing with simple visual controls. Every chan
 ![Image](https://docs-images.phcode.dev/in-app/pro-layersPanel.jpg)
 
 ## [Ask AI in Live Preview](https://docs.phcode.dev/app-links/ai-ask)
-
-`Added in October 2026`
 
 **Just point and ask AI, instead of explaining what you want to change!** Select any part of your page in Live Preview and ask AI to make changes. No need to describe where or what you're referring to.
 
@@ -38,8 +34,6 @@ Ask AI to suggest alternative designs, explore color schemes, or try different f
 
 ## [Intelligent UI in AI Chat](https://docs.phcode.dev/app-links/ai-chat)
 
-`Added in October 2026`
-
 **See what AI means, instead of just reading about it!** Phoenix AI can now show interactive designs, buttons, cards, layouts, and more directly in chat.
 
 Explore different styles, click through options, and adjust controls right in the conversation. Instead of just describing an idea, AI can show you how it looks and works—all without opening Live Preview or writing code.
@@ -49,8 +43,6 @@ Explore different styles, click through options, and adjust controls right in th
 ![](https://user-cdn.phcode.site/images/6d84fa6b-0a0c-47a7-b0b6-499cc20ec5fb.png)
 
 ## [Bring Your Claude Code & Codex CLI to Phoenix Code](https://docs.phcode.dev/app-links/ai-cli)
-
-`Added in October 2026`
 
 **Supercharge your existing CLI agents with rich, interactive visual workflows!** Use your existing Claude Code or Codex subscriptions in Phoenix Code to explore designs in Live Preview, try interactive options, and make changes visually instead of relying on text descriptions.
 
@@ -62,8 +54,6 @@ Run multiple CLI sessions, switch between them easily, and send **Ask AI** reque
 
 ## [Track Your AI Usage](https://docs.phcode.dev/app-links/ai-chat)
 
-`Added in October 2026`
-
 **See how much AI you're using, all in one place!** Track token usage and estimated costs across Phoenix AI, Claude Code, and Codex CLI sessions.
 
 Explore daily usage graphs, monthly trends, and breakdowns by AI model. You can also clear your usage history without deleting your chats.
@@ -74,8 +64,6 @@ Explore daily usage graphs, monthly trends, and breakdowns by AI model. You can 
 
 ## [Easier AI Setup & Quick Access](https://docs.phcode.dev/app-links/ai-chat)
 
-`Added in October 2026`
-
 **Get started with your favorite AI tools more easily!** The new AI start screen brings Phoenix AI, ChatGPT Codex, and Claude Code CLI together in one place.
 
 Quickly set up your AI tools, switch running sessions, and pick up right where you left off.
@@ -84,15 +72,11 @@ Quickly set up your AI tools, switch running sessions, and pick up right where y
 
 ## [AI Demos](https://docs.phcode.dev/app-links/ai-chat)
 
-`Added in October 2026`
-
 See what you can create with Phoenix AI before signing in or using any AI credits. Watch a page take shape, explore the result, and reveal the prompt behind it. Click **Surprise Me** to try it.
 
 > This feature is available only in desktop apps.
 
 ## [Adjust AI Thinking Effort](https://docs.phcode.dev/app-links/ai-chat)
-
-`Added in October 2026`
 
 **Choose how much effort AI puts into solving your problems!** Use lower thinking effort for quick, simple tasks or higher effort for complex problems that need deeper reasoning.
 
@@ -104,8 +88,6 @@ Select your preferred **Thinking Effort** for supported AI models, or leave it a
 
 ## [Discover Stock Photos with AI](https://docs.phcode.dev/app-links/ai-images)
 
-`Added in October 2026`
-
 **Find the perfect photos for your website with the help of AI!** Explore real stock photos, discover new ideas, and let AI help you narrow down your choices to find images that fit your design.
 
 Ask AI to add your favorite photos directly to your page or download them into your project.
@@ -115,8 +97,6 @@ Ask AI to add your favorite photos directly to your page or download them into y
 ![Image](https://docs-images.phcode.dev/in-app/pro-aiImages.jpg)
 
 ## [Larger Image Previews in Markdown](https://docs.phcode.dev/app-links/markdown-editor)
-
-`Added in October 2026`
 
 **Take a closer look at images without leaving your Markdown document!** Open images in a larger view to see details more clearly, whether you're reading or editing.
 
