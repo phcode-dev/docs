@@ -25,13 +25,13 @@ Click the **Layers** tab at the top of the sidebar, next to **Files** and **AI**
 
 The panel reads the page shown in the Live Preview, so it needs three things:
 
-- **A Live Preview**: If the Live Preview is closed, the panel shows an **Open Live Preview** button. You can also click **Open in Browser** to open the page in a browser window instead. The panel reads a popped-out preview too.
+- **A Live Preview**: If the Live Preview is closed, the panel shows an **Open Live Preview** button. The panel reads a popped-out preview too.
 - **An HTML page**: The panel works with `.html`, `.htm`, and `.xhtml` files. If the preview is showing something else, like a Markdown or PHP file, the panel lists the HTML pages in your project instead. Click one to open it.
 - **Edit Mode**: Opening the tab switches the Live Preview to [Edit Mode](./live-preview-edit) for you. When you switch to another tab, the previous mode is restored.
 
 ![Page picker](../images/pro/layers-file-picker.png "The panel lists the HTML pages in the project when the preview is not showing one")
 
-> The page picker groups pages by folder. Type in the search box to find a page by name.
+> The page picker groups pages by folder, and remembers which folders you opened while the project is open. Type in the search box to find a page by name. Double-click a page to add it to the Working Files, as in the file tree.
 
 ## Panel Layout
 
