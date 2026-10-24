@@ -27,6 +27,12 @@ The preview toolbar also has a **theme toggle** *(sun/moon icon)* to switch betw
 
 > Print is not available on macOS desktop apps.
 
+## Viewing Images
+
+Click an image in the preview to see it full size. Press `Esc`, or click anywhere, to go back to the document. While [editing](#editing-markdown-pro), double-click the image instead, or click the **expand** button at its top-right corner.
+
+![An image opened full size](../images/pro/markdown-image-lightbox.png "An image from the document, opened full size over the preview")
+
 ## Editing Markdown (Pro)
 
 :::info Pro Feature
