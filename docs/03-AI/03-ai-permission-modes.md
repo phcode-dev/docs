@@ -40,11 +40,11 @@ In Plan Mode the AI explores your project and then proposes a plan, which opens 
 
 ![Proposed plan](../images/pro/ai-plan-fullscreen.png "A proposed plan, opened full screen")
 
-- **Approve**: The AI carries out the plan in the same turn. The mode switches to **Auto** so it can edit files.
-- **Revise**: Type what should change in the box at the bottom and send it. The AI stays in Plan Mode and proposes a new plan.
-- **Stop**: Interrupts the AI and discards the plan. The panel stays in Plan Mode.
+- **Approve**: The AI carries out the plan in the same turn. The mode switches to **Auto** so it can edit files, even if you started from AI Edit Mode.
+- **Reject**: Interrupts the AI and discards the plan. The panel stays in Plan Mode.
+- **What would you like changed?**: Type what should change in the box at the bottom and send it. The AI stays in Plan Mode and proposes a new plan.
 
-Press `Esc`, click outside the plan, or click the **minimize** button to shrink it back into the chat. The card in the chat has the same **Approve** and **Revise** buttons, and an **expand** button *(diagonal arrows icon)* to open it full screen again.
+Press `Esc`, click outside the plan, or click the **minimize** button to shrink it back into the chat. The card in the chat has the same buttons and box, and an **expand** button *(diagonal arrows icon)* to open it full screen again.
 
 ![Plan card in the chat](../images/pro/ai-plan-card.png "The plan card in the chat after approval")
 
