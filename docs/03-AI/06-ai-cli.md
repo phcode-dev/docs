@@ -28,7 +28,7 @@ The terminal appears in the panel once the CLI is up, and the header changes to 
 
 ![Claude Code CLI running in the panel](../images/pro/ai-cli-terminal.png "Claude Code CLI in the AI panel")
 
-Both CLIs can run at the same time, and they keep running while you look at the other one, at Visual AI, or at another sidebar tab. A green dot on the row marks a running CLI. When a CLI finishes a turn while you are looking at something else, a notification says it is done. Click it to go to the session.
+Both CLIs can run at the same time, and they keep running while you look at the other one, at Visual AI, or at another sidebar tab. A green dot on the row marks a running CLI. When a CLI finishes a turn while you are looking at something else, a notification says it is done. Click **View chat** to go to the session.
 
 > Free users can still run the CLIs from the bottom Terminal panel. Pick a CLI row and click **Open in Terminal**. The CLI then runs on its own, without the Phoenix Code connection.
 
@@ -47,6 +47,16 @@ Click it to open the setup dialog:
 
 The saved path is shown in [AI Settings](./09-ai-models-providers.md#settings). Clear it to go back to automatic detection. If the saved path stops working, the dialog opens again with a **Detect automatically instead** link.
 
+### Running Several Sessions
+
+You can run more than one session of the same CLI, for example one per task. Click **+ Add CLI session** above the rows and pick a CLI. The new session gets its own row, named like **Claude Code CLI 2**. Click the row to start it.
+
+![Several CLI sessions](../images/pro/ai-cli-sessions.png "An added Claude Code CLI session, with its row menu open")
+
+Click the **three-dot** button on a row to rename the session, stop it, or remove its row. Removing a running session stops it too. The sessions are also listed by name in the dropdown in the panel header, and the [Ask AI](./05-ai-ask.md#sending-to-a-cli) dialog sends to the one you are looking at.
+
+> Added sessions and their names last until you close Phoenix Code.
+
 ## Connected to Phoenix
 
 The **plug** icon in the header shows the connection. Green means the CLI is connected. Click it to see what the connection gives the CLI, and to turn it off or on for this session:
@@ -56,8 +66,8 @@ The **plug** icon in the header shows the connection. Green means the CLI is con
 While connected, the CLI:
 
 - Receives a line with every prompt that names the file you are editing, which open files have unsaved changes, and what the Live Preview shows while it is open.
-- Can take screenshots of the editor and the Live Preview, run JavaScript in the page, resize the preview, read lint problems, search your unsaved text, open files and move the cursor, change editor settings, search Unsplash and save photos into the project, show notifications, and ask you questions inside the Live Preview. These appear in the terminal as `phoenix-editor` tools.
-- Works on what you see. Before the CLI reads or edits a file with its own file tools, Phoenix Code saves your unsaved changes to it. Edits made with shell commands skip this. After the CLI edits a file, the open document updates. If you typed in that file in the meantime, Phoenix Code asks which version to keep, and the CLI stays out of that file until you save or close it.
+- Can take screenshots of the editor and the Live Preview, run JavaScript in the page, resize the preview, read lint problems, search your unsaved text, open files and move the cursor, change editor settings, search Unsplash and save photos into the project, show notifications, and ask you questions inside the Live Preview or with an interactive card in the panel. These appear in the terminal as `phoenix-editor` tools.
+- Works on what you see. Before the CLI reads or edits a file with its own file tools, Phoenix Code saves your unsaved changes to it. Edits made with shell commands skip this. After the CLI edits a file, the open document updates. If you typed in that file in the meantime, Phoenix Code asks which version to keep.
 
 Nothing is written into your project or into the CLI's own configuration. The connection is set up for the session and removed when it ends.
 

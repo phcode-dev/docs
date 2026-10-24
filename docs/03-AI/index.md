@@ -29,11 +29,12 @@ The panel gives you three assistants to choose from. Pick one on the start scree
 
 - **[Chat about your project](./02-ai-chatting.md)**: The AI knows which file you are in, what you have selected, and what the Live Preview shows. Attach files, folders, and screenshots for more context.
 - **[Ask about an element](./05-ai-ask.md)**: Click **Ask AI** on a selected element, a Markdown selection, or a code selection. A screenshot and the source location go along with your question.
+- **[See options, not just text](./02-ai-chatting.md#interactive-replies)**: The AI can reply with mockups, buttons, and controls you can try right in the chat.
 - **[Decide how much it can do](./03-ai-permission-modes.md)**: Four permission modes, from a plan you approve first to full autonomy.
 - **[Review and undo changes](./04-ai-reviewing-changes.md)**: Every edit shows a diff. Roll back any response with **Undo** or **Restore to this point**.
 - **[Find photos](./07-ai-images.md)**: Ask for pictures and the AI searches Unsplash, shows the results in the chat, and adds the one you pick to the page.
 - **[Watch usage and cost](./08-ai-usage.md)**: Tokens and cost for the current chat, plus a usage calendar on the start screen.
-- **[Pick a model or provider](./09-ai-models-providers.md)**: Switch models mid-chat, or bring your own API key and endpoint.
+- **[Pick a model or provider](./09-ai-models-providers.md)**: Switch models mid-chat, set how hard the model thinks, or bring your own API key and endpoint.
 
 ## In This Section
 
