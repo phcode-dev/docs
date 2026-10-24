@@ -2,7 +2,7 @@
 slug: release-5.5
 title: "Phoenix Code 5.5.6: Layers, Visual AI & ChatGPT Codex"
 description: "See and edit your page’s HTML structure, try design ideas with Phoenix AI, and bring ChatGPT Codex and Claude Code CLI into a visual workflow. Plus simpler AI setup, demos, usage graphs, and photo search."
-authors: [arun, devvaannsh]
+authors: [arun, devvaannsh, charly, electrofist, ansu, phoenixBot]
 tags: [Live Preview Edit, AI, Claude Code, Git, Phoenix Pro, Windows, Linux, Mac, Release]
 ---
 
