@@ -6,7 +6,7 @@ slug: /what-is-phoenix-code
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-**Phoenix Code** is a lightweight, web-first code editor built by the same team behind [Brackets](https://brackets.io). It's a front-end editor centered on **Live Preview**: edit your HTML and CSS and watch the page render as you type, or edit the rendered page directly and let Phoenix Code update your source code automatically.
+**Phoenix Code** is a lightweight editor built for the web. See your HTML and CSS changes instantly in **Live Preview**, or edit the page visually and let Phoenix update your code.
 
 <VideoPlayer
   src="https://docs-images.phcode.dev/videos/phcode.io-site/landing-page-final.mp4"
@@ -63,3 +63,5 @@ Phoenix Code is for anyone building for the web, and especially:
 - **Try the AI assistant:** [AI](/docs/Pro%20Features/ai-chat)
 
 Want to skip installing? Open [web.phcode.dev](https://web.phcode.dev) and start coding in your browser. Prefer the desktop app? Download it from [phcode.dev](https://phcode.dev).
+
+Phoenix Code is built by the same team behind [Brackets](https://brackets.io).
