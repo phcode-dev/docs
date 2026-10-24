@@ -32,7 +32,7 @@ The dialog can carry more than one thing:
 
 ![Picking an element](../images/pro/ai-ask-picker.png "Picking another element to add as context")
 
-Up to 10 images can go with one question. Click the **x** on a card to remove it. The dialog keeps your draft when you close it, switch files, or close the Live Preview, so you can come back to it.
+Up to 10 images can go with one question, including images pasted from the clipboard. Click the **x** on a card to remove it. The dialog keeps your draft when you close it, switch files, or close the Live Preview, so you can come back to it.
 
 > Drag the dialog by its header to move it. Double-click the header to put it back.
 
@@ -60,9 +60,9 @@ Click it to attach the exact range to the dialog. The AI reads those lines from 
 
 ## Sending to a CLI
 
-The dialog sends to whichever assistant the AI panel is showing. When the panel is on **Claude Code CLI** or **Codex CLI**, the send button reads **Transfer to Claude Code CLI** or **Transfer to Codex CLI**. The question is pasted into the CLI's prompt, with a note about what is attached, and the CLI fetches the screenshots and code when it reads the question. Review the prompt and press `Enter` in the terminal to send it.
+The dialog sends to whichever assistant the AI panel is showing. When the panel is on **Claude Code CLI** or **Codex CLI**, the send button reads **Transfer to Claude Code CLI** or **Transfer to Codex CLI**. The question is pasted into the CLI's prompt, with a note about what is attached, and the CLI fetches the screenshots and code when it reads the question. Review the prompt and press `Enter` in the terminal to send it. When several CLI sessions are running, the question goes to the one the panel is showing.
 
-> The CLI must be connected to Phoenix and waiting at an empty prompt. If it is busy with a question or an approval, the dialog keeps your draft and tells you to finish that first. See [Claude Code CLI and Codex CLI](./06-ai-cli.md#connected-to-phoenix).
+> The CLI must be running and connected to Phoenix. If it is not, the dialog keeps your draft and tells you what to do. See [Connected to Phoenix](./06-ai-cli.md#connected-to-phoenix).
 
 ## Questions in the Live Preview
 
@@ -70,7 +70,7 @@ Sometimes the AI asks you something that is easier to answer by looking at the p
 
 ![A question in the Live Preview](../images/pro/ai-preview-question.png "A Phoenix AI asks card over the page, with an option previewed on the button")
 
-Hover an option to preview it on the page, and click it to answer. You can also type an answer in the box at the bottom of the card. The AI can also ask you to pick an element: hover the page to outline one, click it to answer, or press `Esc` to cancel. The card can be dragged and resized, and the **minimize** button tucks it into a pill at the corner of the page until you need it.
+Hover an option to preview it on the page. Click it to keep that preview and put the choice in the reply box, then click **Send** or press `Enter` to answer. You can keep comparing options before you send, or type your own answer in the box instead. The AI can also ask you to pick an element: hover the page to outline one, click it to answer, or press `Esc` to cancel. The card can be dragged and resized, and the **minimize** button tucks it into a pill at the corner of the page until you need it.
 
 When the question is about one element, the page is dimmed around it. Click the **focus** button in the card header to see the page as it is.
 

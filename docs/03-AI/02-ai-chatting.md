@@ -14,10 +14,10 @@ Click the **AI** tab *(sparkle icon)* in the sidebar. The panel opens on the sta
 
 - **Surprise Me**: Plays a demo of what the AI can do. See [Surprise Me](#surprise-me).
 - **Visual AI with Claude Code**: The built-in chat. Click the row, or the message box, and start typing.
-- **Claude Code CLI** and **Codex CLI**: The command-line tools, running inside the panel. If you have not installed either CLI yourself, the two rows are folded into a *Use a CLI instead* line. Click it to open them. See [Claude Code CLI and Codex CLI](./06-ai-cli.md).
+- **Claude Code CLI** and **Codex CLI**: The command-line tools, running inside the panel. If you have not installed either CLI yourself, the two rows are folded into a *Use a CLI instead* line. Click it to open them. You can run several sessions at once. See [Claude Code CLI and Codex CLI](./06-ai-cli.md).
 - **AI Settings**: The link at the bottom opens the settings dialog, where you can add a custom provider. See [Models and Providers](./09-ai-models-providers.md).
 
-Once you have used the panel, the Surprise Me card shrinks to a *Want a demo? Surprise me.* line at the bottom, so the rows come first.
+Once you have used the panel, or when you click the **x** on the card, the Surprise Me card shrinks to a *Want a demo? Surprise me.* line at the bottom, so the rows come first.
 
 ![The compact start screen](../images/pro/ai-start-compact.png "The start screen after the first chat")
 
@@ -63,34 +63,25 @@ Phoenix Code tells the AI what you are looking at. Chips above the message box s
 - **Live Preview**: Shown while the Live Preview is open. The AI is told which page it shows.
 - **Selection L12-L40 in index.html**: Shown when you have text selected in the editor. A short selection goes with your message in full. For a longer one, the AI gets the line range and reads the lines itself.
 - **Line 26 in index.html**: Shown when nothing is selected. The AI is told which file you are in and where the cursor is.
-- **Folder chips**: One for each folder you added with **Add folder as context**. See [Attachments](#attachments).
+- **Folder chips**: One for each folder you added with **Add folder as context**. See [Attachments and Screenshots](#attachments-and-screenshots).
 
 The AI is also told which open files have unsaved changes, so it reads what you see in the editor instead of the file on disk.
 
 Click the **x** on a chip to leave that part out. The chip comes back when the selection, the cursor line, or the Live Preview changes.
 
-## Attachments
+## Attachments and Screenshots
 
-Click the **paperclip** button to attach more context:
+Click the **+** button next to the message box to attach more context:
 
-![Attach menu](../images/pro/ai-attach-dropdown.png "Attach a file, or add a folder as context")
+![Attach menu](../images/pro/ai-attach-menu.png "Files, folders, and screenshots in one menu")
 
 - **Attach a file**: Pick one or more files. Images are attached as pictures the AI can look at. Other files are attached as references, and the AI reads them when it needs to.
 - **Add folder as context**: Pick any folder, for example one outside your project. It appears as a chip, and the AI treats the files inside it like files in your project. The folder stays attached for this project until you remove the chip.
+- **Area screenshot**: Draw a rectangle over any part of the window. Drag the handles to adjust it, or drag inside it to move it, then click **Capture** or press `Enter`. Click **Select the whole window** to capture all of it. Press `Esc` to cancel.
+- **Live Preview screenshot**: Whatever the Live Preview shows, including a Markdown preview.
+- **Live Preview selection screenshot**: Just the element selected in the Live Preview. It is greyed out until an element is selected on an HTML page.
 
 You can also paste an image, or files copied from your file manager, into the message box. Attachments appear in a tray above the message box. Click an image to see it full size, click a file to open it in the editor, or click the **x** to remove an attachment. A message can carry up to 10 images, in PNG, JPEG, GIF, WebP, or SVG. Large images are shrunk before they are sent.
-
-## Screenshots
-
-Click the **camera** button to attach a screenshot:
-
-![Screenshot menu](../images/pro/ai-screenshot-dropdown.png "The screenshot options")
-
-- **Select Area**: Draw a rectangle over any part of the window. Drag the handles to adjust it, or drag inside it to move it, then click **Capture** or press `Enter`. Press `Esc` to cancel.
-- **Live Preview**: The page in the Live Preview. The preview is opened if it is closed.
-- **Live Preview Selection**: Just the element selected in the Live Preview.
-- **Full Editor**: The whole Phoenix Code window.
-- **Upload from Device**: Pick an image from your computer.
 
 > The AI can take its own screenshots of the Live Preview and the editor while it works. They show up as cards in the chat, and a banner at the top of the preview reads *AI is inspecting the live preview* while it looks.
 
@@ -116,9 +107,19 @@ When the AI needs a decision, it asks with a card. Click an option, or type your
 
 ![Question card](../images/pro/ai-question-card.png "A question with options and a custom answer box")
 
-> Typing in the message box does not answer the question. It is queued until the question is answered.
+> Typing in the message box does not answer the question. If you send a message while a question is waiting, the panel points you back to the question and keeps your draft.
 
 The AI can also ask inside the Live Preview, with options you can preview on the page. See [Questions in the Live Preview](./05-ai-ask.md#questions-in-the-live-preview).
+
+### Interactive Replies
+
+The AI can answer with something you can try, not just read: a mockup of a layout, a few button styles to click through, a slider to find the right spacing, or a small working demo. It renders right in the chat, so you can explore an idea before anything touches your code.
+
+![An interactive reply](../images/pro/ai-interactive-reply.png "Button styles to compare, rendered in the chat")
+
+Click **See code** under the content to read the code behind it, with a **Copy code** button. Some interactive replies are questions with a reply box. Make your choice, add a note if you like, and send it from there.
+
+> To try options on your own page instead, see [Questions in the Live Preview](./05-ai-ask.md#questions-in-the-live-preview).
 
 ### Code in Replies
 
