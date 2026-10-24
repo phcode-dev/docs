@@ -29,7 +29,7 @@ Click the card, or **Details**, to open the breakdown:
 
 ![Usage details](../images/pro/ai-usage-details.png "The usage details for the last 30 days")
 
-- The headline figures show spend, tokens, and active days for the period. Hover a figure to see the split by kind of token.
+- The headline figures show spend, tokens, and active days for the period. Hover a figure, or a model row, to see the split by kind of token.
 - The bars show each day, split by model. Hover a bar or a heat map cell for that day's numbers.
 - **Top models** lists the top five models by spend, or by tokens when **Show $ cost** is off. Click **See more** for the rest.
 - **Activity** shows your longest streak, active days, and the average per active day.
@@ -37,7 +37,13 @@ Click the card, or **Details**, to open the breakdown:
 
 The **reload** button *(circular arrow)* fetches the latest figures, for example after a chat in another Phoenix Code window or on another computer.
 
-The card counts every Visual AI turn, and the API calls of [CLI sessions](./06-ai-cli.md) started from the panel with the Phoenix connection on, listed as `cli-` models. Usage belongs to your Phoenix Code account, so chats from every computer you sign in on are counted.
+The card counts every Visual AI turn, and the API calls of [CLI sessions](./06-ai-cli.md) started from the panel with the Phoenix connection on, listed as `cli-` models. Codex usage on its Fast and Ultrafast tiers is listed on its own, since it is priced differently. Usage belongs to your Phoenix Code account, so chats from every computer you sign in on are counted.
+
+### Deleting Usage History
+
+Click **Delete history** at the bottom of the details to remove your usage and cost records for the past 24 hours, week, month, or all time. Your chats are kept. This cannot be undone.
+
+![Delete usage history](../images/pro/ai-usage-delete.png "The Delete usage history dialog")
 
 ## Free Account Limits
 

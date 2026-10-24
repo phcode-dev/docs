@@ -16,6 +16,14 @@ You can switch models in the middle of a chat. The new model takes over from you
 
 > The model dropdown belongs to Visual AI. In a CLI session, pick the model inside the CLI.
 
+## Thinking Effort
+
+Some models can think more or less before they answer. For these, a **bulb** chip sits next to the permission mode at the bottom of the panel. Click it to pick a level, from **Low** for quick, simple tasks to **Max** for hard problems that need deep reasoning. Higher levels take longer and use more tokens. **Default** leaves the choice to the model.
+
+![Thinking effort](../images/pro/ai-effort.png "The thinking effort chip and its slider")
+
+The levels offered depend on the selected model, and your choice is remembered per model. The chip is not shown for models without this setting, or when a provider with a custom endpoint is active.
+
 ## Settings
 
 Click the **gear** button in the panel header, or the **AI Settings** link on the start screen, to open the settings dialog.
