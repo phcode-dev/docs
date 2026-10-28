@@ -1,12 +1,12 @@
 ---
 slug: release-5.5
-title: "Phoenix Code 5.5.6: Layers, Visual AI & ChatGPT Codex"
+title: "Phoenix Code 5.5.11: Layers, Visual AI & ChatGPT Codex"
 description: "See and edit your page’s HTML structure, try design ideas with Phoenix AI, and bring ChatGPT Codex and Claude Code CLI into a visual workflow. Plus simpler AI setup, demos, usage graphs, and photo search."
 authors: [arun, devvaannsh, charly, electrofist, ansu, phoenixBot]
 tags: [Live Preview Edit, AI, Claude Code, Git, Phoenix Pro, Windows, Linux, Mac, Release]
 ---
 
-Phoenix Code 5.5.6 is now available at [phcode.dev](https://phcode.dev).
+Phoenix Code 5.5.11 is now available at [phcode.dev](https://phcode.dev).
 
 See and edit your HTML with the new [Layers panel](#explore-your-page-with-layers), [try AI design ideas on your page](#try-the-options-on-your-page), [explore interactive replies in chat](#interactive-replies-in-chat), and [bring your existing CLI agents into Phoenix Code](#bring-your-existing-cli-agents-into-phoenix-code). There’s also [simpler AI setup](#simpler-ai-setup), [AI demos](#ai-demos), [usage graphs](#ai-usage-graphs), [thinking effort](#choose-how-much-ai-thinks), and [photo search](#find-the-right-photo-with-ai).
 
