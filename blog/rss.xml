@@ -4,10 +4,120 @@
         <title>Phoenix Code Docs Blog</title>
         <link>https://docs.phcode.dev/blog</link>
         <description>Phoenix Code Docs Blog</description>
-        <lastBuildDate>Wed, 05 Aug 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Oct 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Phoenix Code 5.5.6: Layers, Visual AI & ChatGPT Codex]]></title>
+            <link>https://docs.phcode.dev/blog/release-5.5</link>
+            <guid>https://docs.phcode.dev/blog/release-5.5</guid>
+            <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[See and edit your page’s HTML structure, try design ideas with Phoenix AI, and bring ChatGPT Codex and Claude Code CLI into a visual workflow. Plus simpler AI setup, demos, usage graphs, and photo search.]]></description>
+            <content:encoded><![CDATA[<p>Phoenix Code 5.5.6 is now available at <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a>.</p>
+<p>See and edit your HTML with the new <a href="https://docs.phcode.dev/blog/release-5.5#explore-your-page-with-layers" class="">Layers panel</a>, <a href="https://docs.phcode.dev/blog/release-5.5#try-the-options-on-your-page" class="">try AI design ideas on your page</a>, <a href="https://docs.phcode.dev/blog/release-5.5#interactive-replies-in-chat" class="">explore interactive replies in chat</a>, and <a href="https://docs.phcode.dev/blog/release-5.5#bring-your-existing-cli-agents-into-phoenix-code" class="">bring your existing CLI agents into Phoenix Code</a>. There’s also <a href="https://docs.phcode.dev/blog/release-5.5#simpler-ai-setup" class="">simpler AI setup</a>, <a href="https://docs.phcode.dev/blog/release-5.5#ai-demos" class="">AI demos</a>, <a href="https://docs.phcode.dev/blog/release-5.5#ai-usage-graphs" class="">usage graphs</a>, <a href="https://docs.phcode.dev/blog/release-5.5#choose-how-much-ai-thinks" class="">thinking effort</a>, and <a href="https://docs.phcode.dev/blog/release-5.5#find-the-right-photo-with-ai" class="">photo search</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="explore-and-edit-your-page-with-layers"><a href="https://docs.phcode.dev/app-links/layers-panel" target="_blank" rel="noopener noreferrer" class="">Explore and Edit Your Page with Layers</a><a href="https://docs.phcode.dev/blog/release-5.5#explore-and-edit-your-page-with-layers" class="hash-link" aria-label="Direct link to explore-and-edit-your-page-with-layers" title="Direct link to explore-and-edit-your-page-with-layers" translate="no">​</a></h2>
+<p><strong>Edit your web pages visually, without touching code!</strong> The new Layers sidebar lets you explore your page’s HTML structure, add, move, duplicate, or delete elements, and edit their properties.</p>
+<p>Change colors, fonts, sizes, and spacing with simple visual controls. Every change is instantly reflected in your code and Live Preview.</p>
+<blockquote>
+<p>The Layers panel is a Phoenix Pro feature.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://docs-images.phcode.dev/in-app/pro-layersPanel.jpg" alt="Image" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ask-ai-in-live-preview"><a href="https://docs.phcode.dev/app-links/ai-ask" target="_blank" rel="noopener noreferrer" class="">Ask AI in Live Preview</a><a href="https://docs.phcode.dev/blog/release-5.5#ask-ai-in-live-preview" class="hash-link" aria-label="Direct link to ask-ai-in-live-preview" title="Direct link to ask-ai-in-live-preview" translate="no">​</a></h2>
+<p><strong>Just point and ask AI, instead of explaining what you want to change!</strong> Select any part of your page in Live Preview and ask AI to make changes. No need to describe where or what you're referring to.</p>
+<p>Ask AI to suggest alternative designs, explore color schemes, or try different fonts.</p>
+<p><strong>Ask AI also works with <a href="https://docs.phcode.dev/docs/Features/Live%20Preview/live-preview-settings" target="_blank" rel="noopener noreferrer" class="">custom server previews</a></strong>, including PHP and other server-rendered pages, as well as selected code or Markdown text.</p>
+<blockquote>
+<p>Available only in desktop apps.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://user-cdn.phcode.site/images/50f6bd8b-6d22-436f-ad53-8674891c457e.jpeg" alt="" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="intelligent-ui-in-ai-chat"><a href="https://docs.phcode.dev/app-links/ai-chat" target="_blank" rel="noopener noreferrer" class="">Intelligent UI in AI Chat</a><a href="https://docs.phcode.dev/blog/release-5.5#intelligent-ui-in-ai-chat" class="hash-link" aria-label="Direct link to intelligent-ui-in-ai-chat" title="Direct link to intelligent-ui-in-ai-chat" translate="no">​</a></h2>
+<p><strong>See what AI means, instead of just reading about it!</strong> Phoenix AI can now show interactive designs, buttons, cards, layouts, and more directly in chat.</p>
+<p>Explore different styles, click through options, and adjust controls right in the conversation. Instead of just describing an idea, AI can show you how it looks and works—all without opening Live Preview or writing code.</p>
+<blockquote>
+<p>This feature is available only in desktop apps.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://user-cdn.phcode.site/images/6d84fa6b-0a0c-47a7-b0b6-499cc20ec5fb.png" alt="" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bring-your-claude-code--codex-cli-to-phoenix-code"><a href="https://docs.phcode.dev/app-links/ai-cli" target="_blank" rel="noopener noreferrer" class="">Bring Your Claude Code &amp; Codex CLI to Phoenix Code</a><a href="https://docs.phcode.dev/blog/release-5.5#bring-your-claude-code--codex-cli-to-phoenix-code" class="hash-link" aria-label="Direct link to bring-your-claude-code--codex-cli-to-phoenix-code" title="Direct link to bring-your-claude-code--codex-cli-to-phoenix-code" translate="no">​</a></h2>
+<p><strong>Supercharge your existing CLI agents with rich, interactive visual workflows!</strong> Use your existing Claude Code or Codex subscriptions in Phoenix Code to explore designs in Live Preview, try interactive options, and make changes visually instead of relying on text descriptions.</p>
+<p>Run multiple CLI sessions, switch between them easily, and send <strong>Ask AI</strong> requests directly to your agents. Track your AI consumption with the built-in <strong>AI Usage Meter</strong> (see below).</p>
+<blockquote>
+<p>Running CLI agents inside Phoenix Code is a Phoenix Pro feature, available only in desktop apps.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://user-cdn.phcode.site/images/117a072b-efd1-4623-87d7-5c20746a9b6b.gif" alt="" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="track-your-ai-usage"><a href="https://docs.phcode.dev/app-links/ai-chat" target="_blank" rel="noopener noreferrer" class="">Track Your AI Usage</a><a href="https://docs.phcode.dev/blog/release-5.5#track-your-ai-usage" class="hash-link" aria-label="Direct link to track-your-ai-usage" title="Direct link to track-your-ai-usage" translate="no">​</a></h2>
+<p><strong>See how much AI you're using, all in one place!</strong> Track token usage and estimated costs across Phoenix AI, Claude Code, and Codex CLI sessions.</p>
+<p>Explore daily usage graphs, monthly trends, and breakdowns by AI model. You can also clear your usage history without deleting your chats.</p>
+<blockquote>
+<p>Costs are estimated using API list prices and may differ from your actual provider charges. Available only in desktop apps.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://user-cdn.phcode.site/images/84bdfaf0-31c1-45eb-8a59-3107179f7c04.png" alt="" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="easier-ai-setup--quick-access"><a href="https://docs.phcode.dev/app-links/ai-chat" target="_blank" rel="noopener noreferrer" class="">Easier AI Setup &amp; Quick Access</a><a href="https://docs.phcode.dev/blog/release-5.5#easier-ai-setup--quick-access" class="hash-link" aria-label="Direct link to easier-ai-setup--quick-access" title="Direct link to easier-ai-setup--quick-access" translate="no">​</a></h2>
+<p><strong>Get started with your favorite AI tools more easily!</strong> The new AI start screen brings Phoenix AI, ChatGPT Codex, and Claude Code CLI together in one place.</p>
+<p>Quickly set up your AI tools, switch running sessions, and pick up right where you left off.</p>
+<p><img decoding="async" loading="lazy" src="https://docs-images.phcode.dev/in-app/pro-aiPanel.jpg" alt="Image" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-demos"><a href="https://docs.phcode.dev/app-links/ai-chat" target="_blank" rel="noopener noreferrer" class="">AI Demos</a><a href="https://docs.phcode.dev/blog/release-5.5#ai-demos" class="hash-link" aria-label="Direct link to ai-demos" title="Direct link to ai-demos" translate="no">​</a></h2>
+<p>See what you can create with Phoenix AI before signing in or using any AI credits. Watch a page take shape, explore the result, and reveal the prompt behind it. Click <strong>Surprise Me</strong> to try it.</p>
+<blockquote>
+<p>This feature is available only in desktop apps.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="adjust-ai-thinking-effort"><a href="https://docs.phcode.dev/app-links/ai-chat" target="_blank" rel="noopener noreferrer" class="">Adjust AI Thinking Effort</a><a href="https://docs.phcode.dev/blog/release-5.5#adjust-ai-thinking-effort" class="hash-link" aria-label="Direct link to adjust-ai-thinking-effort" title="Direct link to adjust-ai-thinking-effort" translate="no">​</a></h2>
+<p><strong>Choose how much effort AI puts into solving your problems!</strong> Use lower thinking effort for quick, simple tasks or higher effort for complex problems that need deeper reasoning.</p>
+<p>Select your preferred <strong>Thinking Effort</strong> for supported AI models, or leave it at <strong>Default</strong> to use the model's standard setting.</p>
+<blockquote>
+<p>This feature is available only in desktop apps.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://user-cdn.phcode.site/images/3428ceb1-402d-4410-86ca-552bc02805b9.png" alt="" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="discover-stock-photos-with-ai"><a href="https://docs.phcode.dev/app-links/ai-images" target="_blank" rel="noopener noreferrer" class="">Discover Stock Photos with AI</a><a href="https://docs.phcode.dev/blog/release-5.5#discover-stock-photos-with-ai" class="hash-link" aria-label="Direct link to discover-stock-photos-with-ai" title="Direct link to discover-stock-photos-with-ai" translate="no">​</a></h2>
+<p><strong>Find the perfect photos for your website with the help of AI!</strong> Explore real stock photos, discover new ideas, and let AI help you narrow down your choices to find images that fit your design.</p>
+<p>Ask AI to add your favorite photos directly to your page or download them into your project.</p>
+<blockquote>
+<p>This feature is available only in desktop apps.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://docs-images.phcode.dev/in-app/pro-aiImages.jpg" alt="Image" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="larger-image-previews-in-markdown"><a href="https://docs.phcode.dev/app-links/markdown-editor" target="_blank" rel="noopener noreferrer" class="">Larger Image Previews in Markdown</a><a href="https://docs.phcode.dev/blog/release-5.5#larger-image-previews-in-markdown" class="hash-link" aria-label="Direct link to larger-image-previews-in-markdown" title="Direct link to larger-image-previews-in-markdown" translate="no">​</a></h2>
+<p><strong>Take a closer look at images without leaving your Markdown document!</strong> Open images in a larger view to see details more clearly, whether you're reading or editing.</p>
+<p>Simply click an image in reader mode, or double-click it while editing. Press <strong>Escape</strong> to return to your document.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="terminal-and-git-improvements">Terminal and Git improvements<a href="https://docs.phcode.dev/blog/release-5.5#terminal-and-git-improvements" class="hash-link" aria-label="Direct link to Terminal and Git improvements" title="Direct link to Terminal and Git improvements" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Name your terminals.</strong> Rename terminal tabs so you can tell your development server, build, and shell apart.</li>
+<li class=""><strong>Keep your bearings after a project switch.</strong> A notice lets you keep existing terminals running or restart them in the new project's folder, with confirmation when active processes would be stopped.</li>
+<li class=""><strong>Open terminal links.</strong> Applications that print clickable terminal hyperlinks can now open them in your default browser.</li>
+<li class=""><strong>See what has been pushed.</strong> Git history marks the last pushed commit and identifies the local commits above it. Branches that have not been pushed get a clear indication too.</li>
+<li class=""><strong>Open projects without Git interruptions.</strong> Projects without a repository no longer trigger a “getting remotes” error dialog.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="notable-fixes-and-performance-improvements">Notable fixes and performance improvements<a href="https://docs.phcode.dev/blog/release-5.5#notable-fixes-and-performance-improvements" class="hash-link" aria-label="Direct link to Notable fixes and performance improvements" title="Direct link to Notable fixes and performance improvements" translate="no">​</a></h2>
+<ul>
+<li class="">Fixed a race where a delayed file reload could overwrite text typed or saved while the reload was in progress. (<a href="https://github.com/phcode-dev/phoenix/commit/e00a5a588" target="_blank" rel="noopener noreferrer" class="">Change</a>)</li>
+<li class="">Fixed stale Markdown preview updates reverting newer edits made in the code editor. (<a href="https://github.com/phcode-dev/phoenix/commit/f2f2382fb" target="_blank" rel="noopener noreferrer" class="">Change</a>)</li>
+<li class="">Live Preview reconnects after a dropped connection, and incomplete HTML is handled more reliably while you type. (<a href="https://github.com/phcode-dev/phoenix/commit/44e914f2c" target="_blank" rel="noopener noreferrer" class="">Reconnect</a>, <a href="https://github.com/phcode-dev/phoenix/commit/9b57186ae" target="_blank" rel="noopener noreferrer" class="">HTML editing</a>)</li>
+<li class="">Reduced repeated CSS parsing, page measurements, and tree rebuilding during selection and editing in Live Preview and Layers.</li>
+<li class="">Fixed JavaScript hints getting stuck while indexing HTML or PHP, and older project preferences arriving after a project switch. (<a href="https://github.com/phcode-dev/phoenix/commit/1198f7f3a" target="_blank" rel="noopener noreferrer" class="">Hints</a>, <a href="https://github.com/phcode-dev/phoenix/commit/b24ad37a0" target="_blank" rel="noopener noreferrer" class="">Preferences</a>)</li>
+<li class="">Python and PHP language-server setup now limits automatic retries and keeps error details and a manual retry available in the task list. Python tooling also updates to Pyrefly 1.2.0 and Ruff 0.16.5. (<a href="https://github.com/phcode-dev/phoenix/commit/9325978d4" target="_blank" rel="noopener noreferrer" class="">Setup</a>, <a href="https://github.com/phcode-dev/phoenix/commit/391fd391b" target="_blank" rel="noopener noreferrer" class="">Tooling</a>)</li>
+<li class="">Fixed the sidebar resize handle being left over the editor after the sidebar was collapsed. (<a href="https://github.com/phcode-dev/phoenix/commit/e0107ea35" target="_blank" rel="noopener noreferrer" class="">Change</a>)</li>
+<li class="">Dropping several files now leaves the last file in the drop order active, regardless of which one loads fastest. (<a href="https://github.com/phcode-dev/phoenix/commit/9d896d2c7" target="_blank" rel="noopener noreferrer" class="">Change</a>)</li>
+<li class="">Notifications stay open while you hover over them, giving you time to read or use their actions. (<a href="https://github.com/phcode-dev/phoenix/commit/a40ab64e9" target="_blank" rel="noopener noreferrer" class="">Change</a>)</li>
+<li class="">AI plan review now handles approval, revision, cancellation, and stopping more consistently. Chat also resumes following new messages after you have scrolled back to read older replies.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-and-account-notes">Platform and account notes<a href="https://docs.phcode.dev/blog/release-5.5#platform-and-account-notes" class="hash-link" aria-label="Direct link to Platform and account notes" title="Direct link to Platform and account notes" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Windows:</strong> Fixed AI multiline edits being rejected when the file and the AI used different line endings. Language-server quick fixes also handle drive-letter capitalization correctly.</li>
+<li class=""><strong>macOS:</strong> Improved semibold and bold text rendering in the interface.</li>
+<li class=""><strong>Managed desktop installations:</strong> Administrators can point the updater at a custom update manifest, including a custom Linux installer URL.</li>
+<li class=""><strong>Phoenix Pro trials:</strong> The introductory trial for new installations is now 8 days, down from 15 days.</li>
+<li class=""><strong>Accounts:</strong> Desktop sign-in refreshes Pro access immediately, and existing subscribers no longer receive prompts to buy Pro again.</li>
+</ul>
+<p>Get the update at <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a>, and let us know what you build in <a href="https://github.com/phcode-dev/phoenix/discussions" target="_blank" rel="noopener noreferrer" class="">GitHub Discussions</a>.</p>]]></content:encoded>
+            <category>Live Preview Edit</category>
+            <category>AI</category>
+            <category>Claude Code</category>
+            <category>Git</category>
+            <category>Phoenix Pro</category>
+            <category>Windows</category>
+            <category>Linux</category>
+            <category>Mac</category>
+            <category>Release</category>
+        </item>
         <item>
             <title><![CDATA[Phoenix Code 5.2: Styles Bar, Code Intelligence & More]]></title>
             <link>https://docs.phcode.dev/blog/release-5.2</link>
