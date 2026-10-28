@@ -128,7 +128,6 @@ Simply click an image in reader mode, or double-click it while editing. Press **
 - **Windows:** Fixed AI multiline edits being rejected when the file and the AI used different line endings. Language-server quick fixes also handle drive-letter capitalization correctly.
 - **macOS:** Improved semibold and bold text rendering in the interface.
 - **Managed desktop installations:** Administrators can point the updater at a custom update manifest, including a custom Linux installer URL.
-- **Phoenix Pro trials:** The introductory trial for new installations is now 8 days, down from 15 days.
 - **Accounts:** Desktop sign-in refreshes Pro access immediately, and existing subscribers no longer receive prompts to buy Pro again.
 
 Get the update at [phcode.dev](https://phcode.dev), and let us know what you build in [GitHub Discussions](https://github.com/phcode-dev/phoenix/discussions).
