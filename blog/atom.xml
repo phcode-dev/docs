@@ -8,12 +8,12 @@
     <subtitle>Phoenix Code Docs Blog</subtitle>
     <icon>https://docs.phcode.dev/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Phoenix Code 5.5.6: Layers, Visual AI & ChatGPT Codex]]></title>
+        <title type="html"><![CDATA[Phoenix Code 5.5.11: Layers, Visual AI & ChatGPT Codex]]></title>
         <id>https://docs.phcode.dev/blog/release-5.5</id>
         <link href="https://docs.phcode.dev/blog/release-5.5"/>
         <updated>2026-10-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[See and edit your page’s HTML structure, try design ideas with Phoenix AI, and bring ChatGPT Codex and Claude Code CLI into a visual workflow. Plus simpler AI setup, demos, usage graphs, and photo search.]]></summary>
-        <content type="html"><![CDATA[<p>Phoenix Code 5.5.6 is now available at <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a>.</p>
+        <content type="html"><![CDATA[<p>Phoenix Code 5.5.11 is now available at <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a>.</p>
 <p>See and edit your HTML with the new <a href="https://docs.phcode.dev/blog/release-5.5#explore-your-page-with-layers" class="">Layers panel</a>, <a href="https://docs.phcode.dev/blog/release-5.5#try-the-options-on-your-page" class="">try AI design ideas on your page</a>, <a href="https://docs.phcode.dev/blog/release-5.5#interactive-replies-in-chat" class="">explore interactive replies in chat</a>, and <a href="https://docs.phcode.dev/blog/release-5.5#bring-your-existing-cli-agents-into-phoenix-code" class="">bring your existing CLI agents into Phoenix Code</a>. There’s also <a href="https://docs.phcode.dev/blog/release-5.5#simpler-ai-setup" class="">simpler AI setup</a>, <a href="https://docs.phcode.dev/blog/release-5.5#ai-demos" class="">AI demos</a>, <a href="https://docs.phcode.dev/blog/release-5.5#ai-usage-graphs" class="">usage graphs</a>, <a href="https://docs.phcode.dev/blog/release-5.5#choose-how-much-ai-thinks" class="">thinking effort</a>, and <a href="https://docs.phcode.dev/blog/release-5.5#find-the-right-photo-with-ai" class="">photo search</a>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="explore-and-edit-your-page-with-layers"><a href="https://docs.phcode.dev/app-links/layers-panel" target="_blank" rel="noopener noreferrer" class="">Explore and Edit Your Page with Layers</a><a href="https://docs.phcode.dev/blog/release-5.5#explore-and-edit-your-page-with-layers" class="hash-link" aria-label="Direct link to explore-and-edit-your-page-with-layers" title="Direct link to explore-and-edit-your-page-with-layers" translate="no">​</a></h2>
 <p><strong>Edit your web pages visually, without touching code!</strong> The new Layers sidebar lets you explore your page’s HTML structure, add, move, duplicate, or delete elements, and edit their properties.</p>
