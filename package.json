@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@docsearch/css": "^4.6.0",
-    "@docsearch/react": "^4.6.0",
+    "@docsearch/react": "^5.0.0",
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/plugin-client-redirects": "^3.7.0",
     "@docusaurus/plugin-google-gtag": "^3.7.0",
