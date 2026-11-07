@@ -1,0 +1,34 @@
+/* Keep these articles readable at narrow widths and enlarged text sizes. */
+article:has(.png-pdf-guide-marker) .avatar {
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+article:has(.png-pdf-guide-marker) .avatar__intro {
+  min-width: 0;
+  flex-basis: 10rem;
+  overflow-wrap: anywhere;
+}
+
+article:has(.png-pdf-guide-marker) .avatar__intro small {
+  white-space: normal;
+}
+
+article:has(.png-pdf-guide-marker) + .pagination-nav {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+article:has(.png-pdf-guide-marker) + .pagination-nav .pagination-nav__link {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  article:has(.png-pdf-guide-marker) + .pagination-nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  article:has(.png-pdf-guide-marker) + .pagination-nav .pagination-nav__link {
+    grid-column: 1;
+  }
+}
