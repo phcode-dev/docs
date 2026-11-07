@@ -22,9 +22,9 @@
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Phoenix Code","url":"https://phcode.dev","logo":"https://docs.phcode.dev/img/logo.svg","sameAs":["https://x.com/phcodedev","https://github.com/phcode-dev/","https://discord.gg/rBpTBPttca","https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Phoenix Code Documentation","url":"https://docs.phcode.dev"}</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3c4d133b.css">
-<script src="/assets/js/runtime~main.a6e711c1.js" defer="defer"></script>
-<script src="/assets/js/main.308aac43.js" defer="defer"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3e4b79b4.css">
+<script src="/assets/js/runtime~main.7ea793fc.js" defer="defer"></script>
+<script src="/assets/js/main.df520fdc.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -137,6 +137,7 @@ state update it needs to do when its visiblity state changes.</p>
 <li class=""><a href="#module_view/Pane..Pane+ITEM_NOT_FOUND" class="">.ITEM_NOT_FOUND</a></li>
 <li class=""><a href="#module_view/Pane..Pane+ITEM_FOUND_NO_SORT" class="">.ITEM_FOUND_NO_SORT</a></li>
 <li class=""><a href="#module_view/Pane..Pane+ITEM_FOUND_NEEDS_SORT" class="">.ITEM_FOUND_NEEDS_SORT</a></li>
+<li class=""><a href="#module_view/Pane..Pane+getTemporaryViewFile" class="">.getTemporaryViewFile()</a> ⇒ <code>File</code></li>
 <li class=""><a href="#module_view/Pane..Pane+mergeFrom" class="">.mergeFrom(other)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+destroy" class="">.destroy()</a></li>
 <li class=""><a href="#module_view/Pane..Pane+getViewList" class="">.getViewList()</a> ⇒ <code>Array.&lt;File&gt;</code></li>
@@ -150,6 +151,9 @@ state update it needs to do when its visiblity state changes.</p>
 <li class=""><a href="#module_view/Pane..Pane+makeViewMostRecent" class="">.makeViewMostRecent(file)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+sortViewList" class="">.sortViewList(compareFn)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+swapViewListIndexes" class="">.swapViewListIndexes(index1, index2)</a> ⇒ <code>boolean</code></li>
+<li class=""><a href="#module_view/Pane..Pane+isPathPinned" class="">.isPathPinned(fullPath)</a> ⇒ <code>boolean</code></li>
+<li class=""><a href="#module_view/Pane..Pane+getPinnedCount" class="">.getPinnedCount()</a> ⇒ <code>number</code></li>
+<li class=""><a href="#module_view/Pane..Pane+setPathPinned" class="">.setPathPinned(fullPath, pinned)</a> ⇒ <code>boolean</code></li>
 <li class=""><a href="#module_view/Pane..Pane+traverseViewListByMRU" class="">.traverseViewListByMRU(direction, [current])</a> ⇒ <code>File</code></li>
 <li class=""><a href="#module_view/Pane..Pane+showInterstitial" class="">.showInterstitial(show)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+getViewForPath" class="">.getViewForPath(path)</a> ⇒ <code>boolean</code></li>
@@ -191,6 +195,7 @@ state update it needs to do when its visiblity state changes.</p>
 <li class=""><a href="#module_view/Pane..Pane+ITEM_NOT_FOUND" class="">.ITEM_NOT_FOUND</a></li>
 <li class=""><a href="#module_view/Pane..Pane+ITEM_FOUND_NO_SORT" class="">.ITEM_FOUND_NO_SORT</a></li>
 <li class=""><a href="#module_view/Pane..Pane+ITEM_FOUND_NEEDS_SORT" class="">.ITEM_FOUND_NEEDS_SORT</a></li>
+<li class=""><a href="#module_view/Pane..Pane+getTemporaryViewFile" class="">.getTemporaryViewFile()</a> ⇒ <code>File</code></li>
 <li class=""><a href="#module_view/Pane..Pane+mergeFrom" class="">.mergeFrom(other)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+destroy" class="">.destroy()</a></li>
 <li class=""><a href="#module_view/Pane..Pane+getViewList" class="">.getViewList()</a> ⇒ <code>Array.&lt;File&gt;</code></li>
@@ -204,6 +209,9 @@ state update it needs to do when its visiblity state changes.</p>
 <li class=""><a href="#module_view/Pane..Pane+makeViewMostRecent" class="">.makeViewMostRecent(file)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+sortViewList" class="">.sortViewList(compareFn)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+swapViewListIndexes" class="">.swapViewListIndexes(index1, index2)</a> ⇒ <code>boolean</code></li>
+<li class=""><a href="#module_view/Pane..Pane+isPathPinned" class="">.isPathPinned(fullPath)</a> ⇒ <code>boolean</code></li>
+<li class=""><a href="#module_view/Pane..Pane+getPinnedCount" class="">.getPinnedCount()</a> ⇒ <code>number</code></li>
+<li class=""><a href="#module_view/Pane..Pane+setPathPinned" class="">.setPathPinned(fullPath, pinned)</a> ⇒ <code>boolean</code></li>
 <li class=""><a href="#module_view/Pane..Pane+traverseViewListByMRU" class="">.traverseViewListByMRU(direction, [current])</a> ⇒ <code>File</code></li>
 <li class=""><a href="#module_view/Pane..Pane+showInterstitial" class="">.showInterstitial(show)</a></li>
 <li class=""><a href="#module_view/Pane..Pane+getViewForPath" class="">.getViewForPath(path)</a> ⇒ <code>boolean</code></li>
@@ -285,6 +293,12 @@ and the workingset does not need to be resorted</p>
 and the workingset needs to be resorted</p>
 <p><strong>Kind</strong>: instance constant of <a href="#module_view/Pane..Pane" class=""><code>Pane</code></a><br>
 <strong>See</strong>: <a class="" href="/api/API-Reference/view/Pane#reorderItem">Pane#reorderItem</a></p>
+<a name="module_view/Pane..Pane+getTemporaryViewFile"></a>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="panegettemporaryviewfile--file">pane.getTemporaryViewFile() ⇒ <code>File</code><a href="#panegettemporaryviewfile--file" class="hash-link" aria-label="Direct link to panegettemporaryviewfile--file" title="Direct link to panegettemporaryviewfile--file" translate="no">​</a></h4>
+<p>Gets the file of the current view when it isn&#x27;t in the working set, a file opened from the file
+tree with a single click just to have a look at it. A file that was just closed stays up until
+the next one is ready but is on its way out, so it doesn&#x27;t count</p>
+<p><strong>Kind</strong>: instance method of <a href="#module_view/Pane..Pane" class=""><code>Pane</code></a></p>
 <a name="module_view/Pane..Pane+mergeFrom"></a>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="panemergefromother">pane.mergeFrom(other)<a href="#panemergefromother" class="hash-link" aria-label="Direct link to pane.mergeFrom(other)" title="Direct link to pane.mergeFrom(other)" translate="no">​</a></h4>
 <p>Merges the another Pane object&#x27;s contents into this Pane</p>
@@ -351,7 +365,7 @@ Does not change which document is currently open in the editor. Completes synchr
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>file</td><td><code>File</code></td><td>The file to move to the front of the MRU list.</td></tr></tbody></table>
 <a name="module_view/Pane..Pane+sortViewList"></a>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="panesortviewlistcomparefn">pane.sortViewList(compareFn)<a href="#panesortviewlistcomparefn" class="hash-link" aria-label="Direct link to pane.sortViewList(compareFn)" title="Direct link to pane.sortViewList(compareFn)" translate="no">​</a></h4>
-<p>Sorts items in the pane&#x27;s view list.</p>
+<p>Sorts items in the pane&#x27;s view list. Pinned files are sorted amongst themselves and stay in front.</p>
 <p><strong>Kind</strong>: instance method of <a href="#module_view/Pane..Pane" class=""><code>Pane</code></a></p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>compareFn</td><td><code>function</code></td><td>The function used to compare items in the view list.</td></tr></tbody></table>
 <a name="module_view/Pane..Pane+swapViewListIndexes"></a>
@@ -360,6 +374,23 @@ Does not change which document is currently open in the editor. Completes synchr
 <p><strong>Kind</strong>: instance method of <a href="#module_view/Pane..Pane" class=""><code>Pane</code></a><br>
 <strong>Returns</strong>: <code>boolean</code> - } true</p>
 <table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>index1</td><td><code>number</code></td><td>the index of the first item to swap</td></tr><tr><td>index2</td><td><code>number</code></td><td>the index of the second item to swap</td></tr></tbody></table>
+<a name="module_view/Pane..Pane+isPathPinned"></a>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="paneispathpinnedfullpath--boolean">pane.isPathPinned(fullPath) ⇒ <code>boolean</code><a href="#paneispathpinnedfullpath--boolean" class="hash-link" aria-label="Direct link to paneispathpinnedfullpath--boolean" title="Direct link to paneispathpinnedfullpath--boolean" translate="no">​</a></h4>
+<p>Whether the file is pinned in this pane</p>
+<p><strong>Kind</strong>: instance method of <a href="#module_view/Pane..Pane" class=""><code>Pane</code></a></p>
+<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>fullPath</td><td><code>string</code></td><td>the full path of the file</td></tr></tbody></table>
+<a name="module_view/Pane..Pane+getPinnedCount"></a>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="panegetpinnedcount--number">pane.getPinnedCount() ⇒ <code>number</code><a href="#panegetpinnedcount--number" class="hash-link" aria-label="Direct link to panegetpinnedcount--number" title="Direct link to panegetpinnedcount--number" translate="no">​</a></h4>
+<p>Returns the number of pinned files. As pinned files are always kept at the front of the view list,
+this is also the index of the first unpinned file.</p>
+<p><strong>Kind</strong>: instance method of <a href="#module_view/Pane..Pane" class=""><code>Pane</code></a></p>
+<a name="module_view/Pane..Pane+setPathPinned"></a>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="panesetpathpinnedfullpath-pinned--boolean">pane.setPathPinned(fullPath, pinned) ⇒ <code>boolean</code><a href="#panesetpathpinnedfullpath-pinned--boolean" class="hash-link" aria-label="Direct link to panesetpathpinnedfullpath-pinned--boolean" title="Direct link to panesetpathpinnedfullpath-pinned--boolean" translate="no">​</a></h4>
+<p>Pins or unpins a file in the view list. Pinning moves the file to the end of the pinned block and
+unpinning moves it to the start of the unpinned block, so nothing else changes position.</p>
+<p><strong>Kind</strong>: instance method of <a href="#module_view/Pane..Pane" class=""><code>Pane</code></a><br>
+<strong>Returns</strong>: <code>boolean</code> - true if the pinned state changed</p>
+<table><thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>fullPath</td><td><code>string</code></td><td>the full path of the file, it must be in the view list</td></tr><tr><td>pinned</td><td><code>boolean</code></td><td>true to pin, false to unpin</td></tr></tbody></table>
 <a name="module_view/Pane..Pane+traverseViewListByMRU"></a>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="panetraverseviewlistbymrudirection-current--file">pane.traverseViewListByMRU(direction, [current]) ⇒ <code>File</code><a href="#panetraverseviewlistbymrudirection-current--file" class="hash-link" aria-label="Direct link to panetraverseviewlistbymrudirection-current--file" title="Direct link to panetraverseviewlistbymrudirection-current--file" translate="no">​</a></h4>
 <p>Traverses the list and returns the File object of the next item in the MRU order</p>
