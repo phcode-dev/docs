@@ -25,6 +25,8 @@ On a phone, use the file picker to choose your images. If your phone saved a pho
 
 The tool checks each image before it can be included. If a file has an error, read its message and remove or replace it. Every remaining image must be ready before **Create PDF** becomes available.
 
+Damaged or unsupported color information, including unsupported HDR data, produces a specific error. Export a copy as a standard sRGB PNG and try again, keeping your original file.
+
 ## 2. Put the pages in order
 
 Each image becomes one PDF page. The order of the cards is the order of the pages in the finished file.
@@ -42,12 +44,14 @@ The settings affect every page, with automatic orientation determined separately
 
 | Setting | What to choose |
 | --- | --- |
-| Page size | **Fit to image** for a page based on each image's dimensions; **A4** or **US Letter** for standard paper. |
+| Page size | **Fit to image** for a page based on each image's dimensions and stored print resolution; **A4** or **US Letter** for standard paper. |
 | Orientation | With A4 or US Letter, choose **Automatic**, **Portrait** or **Landscape**. Fit to image determines the page shape from the image. |
 | Margins | Choose none, 5 mm, 10 mm or 20 mm. Images fit inside the available area without cropping or stretching. |
 | Transparent areas | Choose **White** to give transparent image areas a white background, or **Transparent** to retain transparency. |
 
-Fit to image uses 96 pixels per inch, plus the selected margins. It does not carry over a PNG's original print-resolution setting. Choosing a paper size changes the image's printed dimensions, not its embedded pixel dimensions.
+Fit to image uses the PNG's stored print resolution and adds the selected margins. If no resolution is stored, it uses 96 pixels per inch. For example, a 2400-pixel-wide PNG stored at 300 pixels per inch occupies 8 inches before margins. A4 and US Letter fit the image to the chosen paper, changing its printed size while keeping the original pixel dimensions.
+
+Stored image orientation and pixel aspect ratios are respected. If the stored resolution would make an image-sized PDF page too large or too small, choose A4 or US Letter and create the PDF again.
 
 ## 4. Check the layout, create the PDF and save it
 
