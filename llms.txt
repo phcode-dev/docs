@@ -14,6 +14,8 @@ Links below open the complete documentation pages, including screenshots, videos
 - [Share your website](https://docs.phcode.dev/docs/tutorials/share-website): Send someone a link to your website or a ZIP of its files. Step-by-step instructions for Community and Phoenix Pro.
 - [Build a page with Bootstrap](https://docs.phcode.dev/docs/tutorials/bootstrap): Open a Bootstrap starter page, make its button green, and test its layout. A guided exercise for Community and Phoenix Pro users.
 - [Run your first Python program](https://docs.phcode.dev/docs/tutorials/run-python): Install Python 3, create hello.py, and run your first program in Phoenix Code's desktop terminal. Includes Windows, macOS, and Linux steps.
+- [Replace text in one file](https://docs.phcode.dev/docs/tutorials/find-and-replace): Find and replace a word or phrase in the file you have open in Phoenix Code. Review each match, replace the text, and save your changes.
+- [Replace text across files](https://docs.phcode.dev/docs/tutorials/replace-in-files): Find text across your project with the magnifying glass, then use Replace in Files in Phoenix Code to review, replace, and save your changes.
 
 ## Getting Started
 
@@ -63,7 +65,7 @@ Links below open the complete documentation pages, including screenshots, videos
 ## Workspace
 
 - [File Management](https://docs.phcode.dev/docs/file-management): This section covers how Phoenix Code lets you manage, organize, and navigate files and folders within your projects.
-- [Find In Files](https://docs.phcode.dev/docs/Features/find-in-files): The Find in Files feature in Phoenix Code is a powerful tool to quickly search for specific text across multiple files within a project. This feature is useful for developers working on large codebases to find references, variable…
+- [Find In Files](https://docs.phcode.dev/docs/Features/find-in-files): Use the magnifying glass in Phoenix Code to find words across your project, preview matching lines, and open the file you need. Includes folder and file-type filters.
 - [Customizing the Editor](https://docs.phcode.dev/docs/customizing-editor): This section provides an overview of the editor appearance and display settings in Phoenix Code.
 - [Keyboard Shortcuts](https://docs.phcode.dev/docs/Features/keyboard-shortcuts): Now you can make your own shortcuts for any menu, so you don't have to memorize a bunch of different ones for every app. It's like customizing your game controls to play your way!
 - [Terminal](https://docs.phcode.dev/docs/Features/terminal): Phoenix Code has a built-in terminal so you can run commands without leaving the editor.
