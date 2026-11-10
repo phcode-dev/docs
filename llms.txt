@@ -13,7 +13,7 @@ Links below open the complete documentation pages, including screenshots, videos
 - [Link to another page](https://docs.phcode.dev/docs/tutorials/link-pages): Make a Contact me link open another page of your website. Follow the Community or Phoenix Pro steps using a small practice project.
 - [Share your website](https://docs.phcode.dev/docs/tutorials/share-website): Send someone a link to your website or a ZIP of its files. Step-by-step instructions for Community and Phoenix Pro.
 - [Build a page with Bootstrap](https://docs.phcode.dev/docs/tutorials/bootstrap): Open a Bootstrap starter page, make its button green, and test its layout. A guided exercise for Community and Phoenix Pro users.
-- [Run your first Python program](https://docs.phcode.dev/docs/tutorials/run-python): Create hello.py, run it in Phoenix Code's desktop terminal, and see your first message. Includes Windows, macOS, and Linux steps.
+- [Run your first Python program](https://docs.phcode.dev/docs/tutorials/run-python): Install Python 3, create hello.py, and run your first program in Phoenix Code's desktop terminal. Includes Windows, macOS, and Linux steps.
 
 ## Getting Started
 
