@@ -5,8 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "test:tutorials": "node --test --test-reporter=tap scripts/tutorial-release.test.cjs",
-    "package:tutorials": "python3 scripts/package-tutorials.py",
-    "verify:tutorials": "python3 scripts/verify-tutorials.py",
+    "package:tutorials": "node scripts/package-tutorials.cjs",
+    "verify:tutorials": "node scripts/verify-tutorials.cjs",
     "start": "docusaurus start",
     "build": "npm run buildAPIDocsDev && docusaurus build",
     "buildLocal": "npm run buildAPIDocsLocal && docusaurus build",
@@ -44,7 +44,10 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "baseline-browser-mapping": "^2.10.10",
+    "cheerio": "1.0.0-rc.12",
+    "fflate": "0.8.2",
     "http-server": "14.1.1",
+    "robots-parser": "3.0.1",
     "shx": "0.4.0"
   },
   "browserslist": {
