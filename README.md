@@ -38,8 +38,8 @@ served using any static contents hosting service.
 
 ### Tutorial release checks
 
-Run these checks before releasing tutorial changes. They require Node.js, Git,
-and Python 3. No extra Python packages are needed.
+Run these checks before releasing tutorial changes. They use JavaScript and
+require Node.js, Git, and the dependencies installed by `npm ci`.
 
 ```sh
 npm run test:tutorials
