@@ -21,12 +21,16 @@ The guides open with **Phoenix Pro**, using Design Mode for visual editing. Choo
 
 ## Try something else
 
-- **[Find and replace text](/docs/tutorials/find-and-replace):** update text in your own file or project, reviewing matches before applying changes across files.
 - **[Build a page with Bootstrap](/docs/tutorials/bootstrap):** open a ready-made page, change its button color, and try it at a phone-sized width.
 - **[Run your first Python program](/docs/tutorials/run-python):** create a file and make it print a message in the desktop app.
 
+## Work with text
+
+- **[Find in Files](/docs/Features/find-in-files):** search across your project and open a matching line.
+- **[Replace text in one file](/docs/tutorials/find-and-replace):** change a word or phrase in the file you have open.
+- **[Replace text across files](/docs/tutorials/replace-in-files):** review matches and apply selected changes across your project.
+
 ## Get help with the editor
 
-- [Find text across your project](/docs/Features/find-in-files)
 - [Open or create a project](/docs/quick-start-project)
 - [Install extensions and themes](/docs/extensions)
