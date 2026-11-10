@@ -56,7 +56,7 @@
     {
       "file": "static/tutorials/media/replace-in-files.mp4",
       "project": "first-website",
-      "workflow": "Project already open: choose Find > Replace in Files, enter Trail Notes and Weekend Notes, review and select matches, apply replacements, choose Save All, and search the old name to confirm no results",
+      "workflow": "Project already open: click the magnifying glass to open Find in Files, search Trail Notes, switch through Find > Replace in Files while keeping that query, enter Weekend Notes, review and select matches, apply replacements, choose Save All, then click the magnifying glass again and search the old name to confirm no results",
       "on_screen_instructions": true,
       "highlighted_controls": true,
       "system_file_picker_recorded": false,
@@ -92,7 +92,8 @@
     "Pro recording closes the gallery and scrolls Element Properties until src, alt, width, and height are all fully visible",
     "Single-file replacement recording saves the changed heading in first-website/index.html",
     "Project replacement recording saves eight names across three HTML files and verifies that the old name returns no results",
-    "Replacement videos are 26 and 28 seconds, each with eight timed instruction captions and highlighted controls"
+    "Replacement videos are 26 and 28 seconds, with timed instruction captions and highlighted controls",
+    "Project replacement video starts with the magnifying glass opening Find in Files, preserves the query when switching to Replace in Files, and uses the magnifying glass again for the final check"
   ],
   "attributes_screenshot": {
     "file": "static/tutorials/media/pro-image-description-complete.png",

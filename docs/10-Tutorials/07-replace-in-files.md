@@ -1,7 +1,7 @@
 ---
 title: Replace text across files
 slug: /tutorials/replace-in-files
-description: Use Replace in Files in Phoenix Code to update text across a project. Review the matching lines, choose which changes to apply, and save all changed files.
+description: Find text across your project with the magnifying glass, then use Replace in Files in Phoenix Code to review, replace, and save your changes.
 image: /tutorials/media/find-replace-review.png
 toc_max_heading_level: 2
 ---
@@ -38,11 +38,11 @@ The recording starts with the project already open. It plays silently when it co
 <TutorialVideo
   metadata={{
     name: 'Find and replace text across files in Phoenix Code',
-    description: 'Use Replace in Files to update a website name across the first-website project. Review the checked matches, apply the changes, use Save All, and search for the old name to confirm the result in 28 seconds.',
+    description: 'Click the magnifying glass to find a website name across the first-website project, switch to Replace in Files, review the matches, and save the changes. Click the magnifying glass again to check the old name in this 28-second walkthrough.',
     duration: 'PT28S',
     dateCreated: '2026-11-10',
   }}
-  poster="/tutorials/media/replace-in-files-poster.png" width="1120" height="800" style={{width: '100%', height: 'auto'}} aria-label="28-second walkthrough: review, replace, and save text across files">
+  poster="/tutorials/media/replace-in-files-poster.png" width="1120" height="800" style={{width: '100%', height: 'auto'}} aria-label="28-second walkthrough: use the magnifying glass to find text, then replace and save it across files">
   <source src="/tutorials/media/replace-in-files.mp4" type="video/mp4" />
   <track kind="captions" src="/tutorials/media/replace-in-files.vtt" srcLang="en" label="English" />
   <a href="/tutorials/media/replace-in-files.mp4">Watch the project replacement walkthrough</a>.
@@ -50,12 +50,13 @@ The recording starts with the project already open. It plays silently when it co
 
 ## 2. Enter the old and new text
 
-1. Open the **Find** menu at the top of the code editor and click **Replace in Files**.
-2. In **Find…**, enter the text you want to change.
-3. In **Replace with…**, enter the new text.
-4. Leave **Regular Expression** (`.*`) off for an ordinary text search.
-5. Check the file filter in the search bar. Leave it on **No Files Excluded** to search across the project.
-6. Click **Replace…** to open the review list.
+1. Click the <TutorialIcon name="search" label="magnifying glass" /> above the file list to open **Find in Files**.
+2. In **Find…**, enter the text you want to change. Matching lines appear in **Search Results** below the editor.
+3. Open the **Find** menu at the top of the code editor and click **Replace in Files**. Your search text stays in **Find…**, and a **Replace with…** box appears.
+4. In **Replace with…**, enter the new text.
+5. Leave **Regular Expression** (`.*`) off for an ordinary text search.
+6. Check the file filter in the search bar. Leave it on **No Files Excluded** to search across the project.
+7. Click **Replace…** to open the review list.
 
 [![Replace in project with Trail Notes in Find, Weekend Notes in Replace with, No Files Excluded selected, and the Replace button that opens the review](/tutorials/media/find-replace-project-fields.png)](/tutorials/media/find-replace-project-fields.png)
 
@@ -80,7 +81,7 @@ Your review will show the words and files you chose. Click either wide screensho
 
 1. Choose **File → Save All** to save every changed file.
 2. Double-click a changed file in the sidebar and check that the new text appears where you expected.
-3. Click the <TutorialIcon name="search" label="magnifying glass" /> above the file list to open **Find in Files**, or choose **Find → Find in Files**.
+3. Click the <TutorialIcon name="search" label="magnifying glass" /> above the file list again to open **Find in Files**.
 4. Search for the original text again, keeping the same project and file filters.
 
 If you replaced every match in that search, you should get **No results**. If you skipped some matches, check that the remaining results are the ones you meant to keep.

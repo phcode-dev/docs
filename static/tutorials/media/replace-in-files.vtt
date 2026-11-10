@@ -1,26 +1,29 @@
 WEBVTT
 
 00:00:00.000 --> 00:00:03.000
-1. Open Find, then choose Replace in Files.
+1. Click the magnifying glass to open Find in Files.
 
-00:00:03.000 --> 00:00:06.500
-2. Find the old name: Trail Notes.
+00:00:03.000 --> 00:00:06.000
+2. Type Trail Notes to find the matching lines.
 
-00:00:06.500 --> 00:00:10.000
-3. Enter the new name: Weekend Notes.
+00:00:06.000 --> 00:00:09.000
+3. To change the text, choose Find > Replace in Files.
 
-00:00:10.000 --> 00:00:13.000
-4. Click Replace... to review the changes.
+00:00:09.000 --> 00:00:12.000
+4. Enter the new name: Weekend Notes.
 
-00:00:13.000 --> 00:00:17.000
-5. Keep checked only the changes you want.
+00:00:12.000 --> 00:00:14.500
+5. Click Replace... to review the changes.
 
-00:00:17.000 --> 00:00:20.000
-6. Click Replace in the review to apply them.
+00:00:14.500 --> 00:00:17.500
+6. Keep checked only the changes you want.
 
-00:00:20.000 --> 00:00:23.500
-7. Choose File > Save All.
+00:00:17.500 --> 00:00:20.000
+7. Click Replace in the review to apply them.
 
-00:00:23.500 --> 00:00:28.000
-8. Search the old name again. No results means it is gone.
+00:00:20.000 --> 00:00:23.000
+8. Choose File > Save All.
+
+00:00:23.000 --> 00:00:28.000
+9. Click the magnifying glass. Search again: No results.
 
