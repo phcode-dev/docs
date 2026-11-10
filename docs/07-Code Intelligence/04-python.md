@@ -5,6 +5,8 @@ slug: "/Features/python-code-intelligence"
 
 **Phoenix Code** supports full code intelligence for Python: completions with documentation, parameter hints, hover info, Go to Definition, Find Usages, and type error checking with quick fixes in the Problems panel.
 
+To execute a program and see its output, follow [Run Python in Phoenix Code](/docs/tutorials/run-python). Code intelligence helps you write the program; running it also requires a Python interpreter on your computer.
+
 Everything works the same way as described in [Code Intelligence](./Code%20Intelligence).
 
 :::info Desktop Only

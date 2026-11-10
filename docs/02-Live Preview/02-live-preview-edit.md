@@ -95,9 +95,9 @@ The right side of the Control Box displays a set of tools you can use to modify 
   *This button appears only for `<a>` elements.*  
   See the [Edit Hyperlink](#edit-hyperlink) section for more details.
 
-- **Change Image** *(image icon)*: Opens an image gallery at the bottom of the Live Preview, where you can browse and select an image. You can also choose an image from your computer. Phoenix Code automatically saves the image to your project folder and updates the `src` attribute of the element.  
+- **Image Gallery** *(image icon)*: Opens an image gallery at the bottom of the Live Preview. **Select from device** or the gallery's download icon saves a picture to your project and updates its `src`. Clicking an online thumbnail can use the provider's image URL instead.<br />
   *This button appears only for `<img>` elements.*  
-  See [Image Gallery](./image-gallery) for more details.
+  See [Image Gallery](./image-gallery) for more details, or follow the [step-by-step image guide](/docs/tutorials/add-images).
 
 - **Edit Text** *(pen icon)*: Opens inline text editing for the selected element. You can edit text directly in the Live Preview, and Phoenix Code automatically updates the source code.  
   *This button appears only for elements that can contain text (it is not available for `<img>`, `<video>`, `<br>`, etc.).*  

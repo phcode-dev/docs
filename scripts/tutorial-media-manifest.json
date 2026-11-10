@@ -1,0 +1,82 @@
+{
+  "captured_at": "2026-11-10",
+  "product": "Phoenix Code for the web",
+  "product_url": "https://web.phcode.dev/",
+  "projects": {
+    "first-website": {
+      "about.html": "6e6abe240c0297cb54ee4197b4bad2e29975a506243a24044d77a740063af8e4",
+      "contact.html": "495c71414580d14aecc4c0050851078e0b07f0c8ac6c47159ed8f807d4c20a5d",
+      "images/trail.svg": "68e7984553eaeb4b1a1d963a60f4b28eaa90fe4f646b8b11b9768e081db3cedd",
+      "index.html": "1c41652873ad27c4acb82f8bb587ce2027c4b83b8141e0ebeb50b710b3c1ea47",
+      "styles.css": "9acf78f97d08da0327dac891b7ba60b07e482b23aa08ad8cf3514b827bcb61d8"
+    },
+    "bootstrap-starter": {
+      "index.html": "71e816a1452cbd3ecb090b4268397aff8fcb6d585cd599c8551ae9f4bcea5461"
+    }
+  },
+  "recordings": [
+    {
+      "file": "static/tutorials/media/community-add-image.mp4",
+      "project": "first-website",
+      "workflow": "Highlight Mode, select and replace img tag, save",
+      "on_screen_instructions": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 31.16,
+      "frame_size": [
+        1360,
+        980
+      ],
+      "caption_placement": "Above the screen recording, clear of player controls"
+    },
+    {
+      "file": "static/tutorials/media/pro-add-image-complete.mp4",
+      "project": "first-website",
+      "workflow": "Design Mode throughout: pen enables Edit Mode, Select from device, choose images folder, close gallery, open Element Properties and scroll to show all Attributes, set alt description, Save File, pen disables editing to check result",
+      "on_screen_instructions": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 38.28,
+      "frame_size": [
+        1360,
+        980
+      ],
+      "caption_placement": "Above the screen recording, clear of player controls"
+    }
+  ],
+  "sample_photo": {
+    "file": "static/tutorials/photo.jpg",
+    "author": "Johannes Plenio",
+    "source": "https://unsplash.com/photos/pathway-of-trees-during-daytime-P1Iz3unD6Po",
+    "license": "https://unsplash.com/license"
+  },
+  "verification": [
+    "Project and active file checked before captures",
+    "Highlight Mode moves the cursor without selecting the tag",
+    "New image inserted after a paragraph without replacing existing image",
+    "Pro imports an image into images/photo.jpg and updates its relative src",
+    "Pro alt text applied with Enter",
+    "Bootstrap class edit checked in code and Element Properties",
+    "Production documentation build passed",
+    "All six Community/Pro paths on the image, link, and Bootstrap guides fit desktop and mobile widths",
+    "Both videos played and sought to the end in Chrome",
+    "Tutorial downloads and caption files returned HTTP 200",
+    "Pro image walkthrough saved its photo and alt description with Save File while remaining in Design Mode",
+    "Design Mode hides the mode dropdown; Pro instructions use the pen button and its orange editing state",
+    "Bootstrap class edit and Save File verified in Design Mode",
+    "Pro link text and contact.html destination edited and saved in Design Mode",
+    "Phoenix Pro is first and selected for fresh readers; explicit Community choices remain remembered across guides",
+    "Complete Attributes screenshot renders all four rows without cropping on mobile",
+    "Pro recording closes the gallery and scrolls Element Properties until src, alt, width, and height are all fully visible"
+  ],
+  "attributes_screenshot": {
+    "file": "static/tutorials/media/pro-image-description-complete.png",
+    "capture": "Entire Attributes section scrolled fully into view in first-website, without changing the application styling",
+    "visible_fields": [
+      "src",
+      "alt",
+      "width",
+      "height"
+    ]
+  },
+  "presentation": "One complete walkthrough per edition, with screenshots and native video controls",
+  "playback": "Muted inline autoplay when visible; pauses offscreen and in hidden tabs, preserves the reader's pause, and starts manually for reduced-motion preferences"
+}

@@ -13,6 +13,7 @@ resources
 # Generated files
 .docusaurus
 .cache-loader
+/.tutorial-video-publications.json
 api/API-Reference
 phoenix
 
