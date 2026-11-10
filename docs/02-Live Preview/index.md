@@ -85,7 +85,7 @@ The left side of the toolbar groups three controls:
   ![Live Preview mode dropdown](../images/livePreview/lp-mode.png "Live Preview mode dropdown")
 
   - **Preview Mode**: View-only. The page behaves like a normal browser but still updates as you edit code. All interactions with the page (clicks, hovers, etc.) are disabled.
-  - **Highlight Mode**: Available in Community and Pro. Keep your HTML file open, then click an element in the preview to move the editor's cursor to its HTML and see its padding and margins. Select the code you want to replace before pasting. Follow the [image walkthrough](/docs/tutorials/add-images?edition=community) to try it.
+  - **Highlight Mode**: Click any element to see its paddings and margins. Phoenix Code also jumps to that element in your source code so you can start editing right away.
   - **Edit Mode**: Edit elements directly in the preview. Insert elements, change text, drag elements, swap images, and more. Phoenix Code updates your source code automatically. [Learn more](../Pro%20Features/live-preview-edit).
 
   When Edit Mode is active, two extra options appear in the same dropdown:

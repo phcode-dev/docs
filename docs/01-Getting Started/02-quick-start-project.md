@@ -1,7 +1,6 @@
 ---
 title: Quick Start Project
 slug: "/quick-start-project"
-description: Create or open a Phoenix Code project, resume recent work, and reopen your website when the editor starts.
 ---
 
 import React from 'react';
@@ -31,28 +30,8 @@ Additionally, if you prefer that the Start Project Dialog doesn't appear every t
 
 
 
-## Reopen your project on startup
-
-Phoenix Code remembers the last project folder you opened and tries to reopen it the next time you start the editor. To resume your own website:
-
-1. Choose **Open Folder** in the Start Project dialog and select the folder containing your website.
-2. Open `index.html` or the file you want to work on, then save your changes.
-3. If you prefer to go straight to your work, turn off **Show This Dialog on Startup** in the Start Project dialog's settings.
-4. Close Phoenix Code normally and open it again.
-
-The startup dialog setting controls the dialog's visibility. It does not choose a permanent favorite project: if you later open a different project, that becomes the project to resume.
-
-### Desktop and browser differences
-
-- **Desktop:** opening a particular file or folder from your operating system can take precedence over the previous project. The remembered folder also needs to remain available at the same location.
-- **Browser:** use the same browser profile and the same editor address. Local-folder access depends on browser permissions, so you may need to grant access again or use **Open Folder**. Projects stored in browser storage also depend on that browser's saved site data.
-
-If your previous folder is missing or cannot be restored, open it again from **Recent Projects** or **Open Folder**. Phoenix Code can also fall back to the welcome project after an unsuccessful startup.
-
 ## Default Project
 The Start Project Dialog includes an option for creating a Default Project. When selected, a project will be generated with some files to provide a simple starting point for testing and using the Phoenix Code editor.
-
-**Default Project** is a starter project. To reopen your own website at launch, use [Reopen your project on startup](#reopen-your-project-on-startup).
 
 <VideoPlayer 
   src="https://docs-images.phcode.dev/videos/quick-start-project/default-project.mp4"
@@ -83,8 +62,6 @@ You can create a new HTML project that includes essential files by following the
 3. Provide a name to the project and choose your desired folder and click **`Create Project`**.
 
 Once completed, a basic project structure will be generated in the selected folder.
-
-Continue with [Add images to an HTML page](/docs/tutorials/add-images) or [Connect pages with links](/docs/tutorials/link-pages). Both tutorials include an example project you can download.
 
 <VideoPlayer 
   src="https://docs-images.phcode.dev/videos/quick-start-project/html-project.mp4"

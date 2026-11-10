@@ -8,8 +8,6 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 This section covers how **Phoenix Code** lets you manage, organize, and navigate files and folders within your projects.
 
-To download several HTML files together or send your website to someone else, see [Share your website](/docs/tutorials/share-website), including [sending a ZIP](/docs/tutorials/share-website?share=zip).
-
 ## File Tree
 
 The **File Tree** appears in the sidebar and shows the complete folder structure of the open project.
