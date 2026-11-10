@@ -5,8 +5,15 @@
     "license": "CC BY 4.0",
     "url": "https://fontawesome.com/license/free"
   },
+  "bootstrap_icons": {
+    "copyright": "2019-2024 The Bootstrap Authors",
+    "license": "MIT",
+    "url": "https://github.com/twbs/icons/blob/main/LICENSE"
+  },
   "adaptation": "Original shapes; colors inherit the documentation theme. SVG sprite symbols are isolated from their source sheets.",
   "icons": {
+    "search": "phoenix/src/styles/images/sprites.svg#search",
+    "showInTree": "phoenix/src/styles/images/sprites.svg#binoculars",
     "expand": "svgs/solid/expand.svg",
     "restore": "svgs/solid/compress.svg",
     "pen": "svgs/solid/pencil.svg",

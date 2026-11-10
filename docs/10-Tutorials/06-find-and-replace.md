@@ -9,9 +9,18 @@ toc_max_heading_level: 2
 
 import TutorialIcon from '@site/src/components/TutorialIcon';
 
-Use **Find → Replace** to change text in the open file, or **Find → Replace in Files** to review and change matches across your project.
+**Find in Files** searches for text across your project without changing it. **Find and replace** means finding that text and changing it to something else. Choose the command you need from the **Find** menu:
 
-Start with a file or project you're already working on. Follow steps 1–2 to change text in one file, or continue with steps 3–5 to update several files.
+| Command | Where it looks | What it does |
+| --- | --- | --- |
+| **Find** | Open file | Finds and highlights text. |
+| **Find in Files** | Project files | Lists matching files and lines. |
+| **Replace** | Open file | Replaces one match or all matches in that file. |
+| **Replace in Files** | Project files | Lets you review and apply selected replacements. |
+
+In the toolbar, the <TutorialIcon name="search" label="magnifying glass" /> opens **Find in Files**. The <TutorialIcon name="showInTree" label="binoculars" /> is **Show in File Tree**: it locates the open file in the sidebar. Use **Find → Replace** or **Find → Replace in Files** when you want to change text.
+
+For search instructions, see [Find in Files](/docs/Features/find-in-files). This tutorial walks through **replacing text** in your own files. For one file, follow steps 1–2. For several files, open your project in step 1, then go to step 3.
 
 **Phoenix Pro and Community (free) use the same steps.** You can follow along in the desktop app or in Chrome or Edge at [web.phcode.dev](https://web.phcode.dev/).
 
@@ -41,7 +50,7 @@ The screenshot shows an example: changing `A little time outside.` to `My weeken
 
 **Check that the new text appears in your file.** Only the open file has changed. If that's all you needed, you're done.
 
-## 3. Find text across your project
+## 3. Prepare replacements across your project
 
 Use **Replace in Files** when the same change belongs in several files, such as updating a project name or correcting a repeated phrase.
 
@@ -96,9 +105,10 @@ Use the **Find** menu if your browser or operating system handles a shortcut ins
 
 | Action | Windows / Linux | macOS |
 | --- | --- | --- |
+| Find in the open file | **Ctrl+F** | **Cmd+F** |
+| Find in Files | **Ctrl+Shift+F** | **Cmd+Shift+F** |
 | Replace in the open file | **Ctrl+H** | **Cmd+Option+F** |
 | Replace in Files | **Ctrl+Shift+H** | **Cmd+Option+Shift+F** |
-| Find in Files | **Ctrl+Shift+F** | **Cmd+Shift+F** |
 
 ## Need help?
 
