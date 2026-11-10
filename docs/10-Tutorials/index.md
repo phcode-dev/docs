@@ -26,7 +26,6 @@ The guides open with **Phoenix Pro**, using Design Mode for visual editing. Choo
 
 ## Get help with the editor
 
-- [Replace text in a file or folder](/docs/Features/find-in-files#replace-text-in-one-file)
-- [Turn commas into separate lines](/docs/Features/find-in-files#replace-text-with-a-new-line)
-- [Open the same project next time](/docs/quick-start-project#reopen-your-project-on-startup)
-- [Fix an extension that won't install](/docs/extensions#troubleshoot-an-extension-installation)
+- [Find text across your project](/docs/Features/find-in-files)
+- [Open or create a project](/docs/quick-start-project)
+- [Install extensions and themes](/docs/extensions)
