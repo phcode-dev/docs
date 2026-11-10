@@ -10,10 +10,16 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: docs-production
+  cancel-in-progress: false
+
 jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    env:
+      PHCODE_VIDEO_PUBLICATIONS_FILE: .tutorial-video-publications.json
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -23,8 +29,18 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      - name: Test tutorial release tooling
+        run: npm run test:tutorials
+      - name: Package tutorial projects
+        run: npm run package:tutorials
+      - name: Restore original video publication dates
+        run: node scripts/prepare-tutorial-publications.cjs
       - name: Build website
         run: npm run build
+        env:
+          PHCODE_PUBLISH_TUTORIAL_VIDEOS: '1'
+      - name: Verify tutorial release files and metadata
+        run: npm run verify:tutorials -- --release
       - name: copy cname to build folder
         run: cp CNAME ./build
 

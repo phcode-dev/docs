@@ -59,6 +59,7 @@ Phoenix Code is for anyone building for the web, and especially:
 
 - **Install it:** [Installation](/docs/intro)
 - **Create your first project:** [Your First Project](/docs/quick-start-project)
+- **Build something step by step:** [Tutorials](/docs/tutorials) — images, linked pages, sharing, Bootstrap, and Python.
 - **Our flagship feature:** [Live Preview](/docs/Features/Live%20Preview)
 - **Try the AI assistant:** [AI](/docs/Pro%20Features/ai-chat)
 

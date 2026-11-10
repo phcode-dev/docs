@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.050
+Community: choose Highlight Mode from the arrow beside the pen.
+
+00:00:04.050 --> 00:00:09.465
+Click the hills in Live Preview. The editor finds the image tag.
+
+00:00:09.465 --> 00:00:18.417
+In the editor, select the whole image tag before replacing it.
+
+00:00:18.417 --> 00:00:23.127
+Paste the new tag. Use your picture filename and a short description.
+
+00:00:23.127 --> 00:00:30.765
+Save with Ctrl+S (Windows/Linux) or Cmd+S (Mac). Your photo is in the page.

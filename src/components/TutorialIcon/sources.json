@@ -1,0 +1,26 @@
+{
+  "font_awesome": {
+    "version": "6.1.2",
+    "copyright": "2022 Fonticons, Inc.",
+    "license": "CC BY 4.0",
+    "url": "https://fontawesome.com/license/free"
+  },
+  "adaptation": "Original shapes; colors inherit the documentation theme. SVG sprite symbols are isolated from their source sheets.",
+  "icons": {
+    "expand": "svgs/solid/expand.svg",
+    "restore": "svgs/solid/compress.svg",
+    "pen": "svgs/solid/pencil.svg",
+    "modes": "svgs/solid/caret-down.svg",
+    "save": "svgs/solid/floppy-disk.svg",
+    "laptop": "svgs/solid/laptop.svg",
+    "gallery": "phoenix-pro/images/imageGallery.svg",
+    "link": "phoenix-pro/images/link.svg",
+    "insert": "phoenix-pro/images/insertElement.svg",
+    "add": "phoenix-pro/images/plusSmall.svg",
+    "chooseImage": "phoenix-pro/images/selectImageFromComputer.svg",
+    "close": "phoenix-pro/images/close.svg",
+    "share": "phoenix/src/styles/images/share-fill.svg",
+    "popout": "phoenix/src/extensionsIntegrated/Phoenix-live-preview/images/sprites.svg#open-icon",
+    "preview": "phoenix/src/styles/images/live_development_sprites.svg#bolt"
+  }
+}

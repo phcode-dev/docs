@@ -140,6 +140,11 @@ const config = {
 		]
 	],
 	plugins: [
+		["./plugins/tutorial-media", {
+			publish: process.env.PHCODE_PUBLISH_TUTORIAL_VIDEOS === "1",
+			publicationsFile: process.env.PHCODE_VIDEO_PUBLICATIONS_FILE,
+		}],
+		"./plugins/llms-txt",
 		[
 			"@docusaurus/plugin-content-docs",
 			{

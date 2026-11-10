@@ -12,9 +12,11 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 The **Image Gallery** is a panel that appears at the bottom of the Live Preview. It lets you browse images from online image providers or select images from your device.
 
+To put your first photo on a page, follow [Add an image to your website](/docs/tutorials/add-images). Choose Community or Pro and work through the steps with the practice website.
+
 > The Image Gallery is available only for `<img>` elements.
 
-By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the Change Image button in the Control Box or the close button in the gallery. To reopen it, click the Change Image button again.
+By default, the Image Gallery appears when you select an `<img>` element. You can close it by clicking the **Image Gallery** picture icon in the Control Box or the close button in the gallery. To reopen it, click the picture icon again.
 
 ![Image Gallery](../images/pro/image-gallery.png "Image Gallery")
 

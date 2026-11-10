@@ -1,0 +1,20 @@
+.firstWord {
+  white-space: nowrap;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin-inline: 0.08em;
+  vertical-align: -0.25em;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.active {
+  color: #a85b00;
+}
+
+:global([data-theme='dark']) .active {
+  color: #f8a949;
+}

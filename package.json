@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "test:tutorials": "node --test --test-reporter=tap scripts/tutorial-release.test.cjs",
+    "package:tutorials": "python3 scripts/package-tutorials.py",
+    "verify:tutorials": "python3 scripts/verify-tutorials.py",
     "start": "docusaurus start",
     "build": "npm run buildAPIDocsDev && docusaurus build",
     "buildLocal": "npm run buildAPIDocsLocal && docusaurus build",
