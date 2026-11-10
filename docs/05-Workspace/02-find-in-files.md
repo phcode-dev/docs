@@ -5,6 +5,7 @@ toc_max_heading_level: 2
 ---
 
 import TutorialIcon from '@site/src/components/TutorialIcon';
+import TutorialVideo from '@site/src/components/Video/TutorialVideo';
 
 # Find In Files
 
@@ -29,6 +30,23 @@ You can also open a project through **File → Open Folder…**.
 Check the folder name and files in the **sidebar**, the panel on the left. The screenshots below use a project named `first-website`; yours can have a different name.
 
 If Live Preview fills the app, click its <TutorialIcon name="restore" label="restore icon" /> to show the editor and sidebar.
+
+### Watch the walkthrough
+
+The video starts with the project already open.
+
+<TutorialVideo
+  metadata={{
+    name: 'Find text across project files in Phoenix Code',
+    description: 'Click the magnifying glass, search for Trail Notes in the first-website project, preview a matching line, and double-click it to open about.html at line 21 in this 24-second walkthrough.',
+    duration: 'PT24S',
+    dateCreated: '2026-11-11',
+  }}
+  poster="/tutorials/media/find-in-files-poster.png" width="1120" height="800" style={{width: '100%', height: 'auto'}} aria-label="24-second walkthrough: find text with the magnifying glass, preview a match, and open its file">
+  <source src="/tutorials/media/find-in-files.mp4" type="video/mp4" />
+  <track kind="captions" src="/tutorials/media/find-in-files.vtt" srcLang="en" label="English" />
+  <a href="/tutorials/media/find-in-files.mp4">Watch the Find in Files walkthrough</a>.
+</TutorialVideo>
 
 ## 2. Click the magnifying glass {#use-the-magnifying-glass}
 
