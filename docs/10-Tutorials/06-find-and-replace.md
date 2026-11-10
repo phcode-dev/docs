@@ -7,6 +7,7 @@ toc_max_heading_level: 2
 ---
 
 import TutorialIcon from '@site/src/components/TutorialIcon';
+import TutorialVideo from '@site/src/components/Video/TutorialVideo';
 
 Use **Find → Replace** to change a heading or correct a word in the file you have open. Enter the old text and the words you want to use in its place.
 
@@ -28,6 +29,23 @@ If the file you want to edit is already open, go to step 2. If its project is op
 
 This example uses `index.html` in the `first-website` project. You can follow the steps with your own file.
 
+### Watch the steps in 26 seconds
+
+The recording starts with the project already open. It plays silently when it comes into view, with on-screen instructions and highlighted controls. Use the controls to pause, replay, or watch fullscreen. With reduced motion enabled, press Play to start.
+
+<TutorialVideo
+  metadata={{
+    name: 'Find and replace text in one file in Phoenix Code',
+    description: 'Open index.html in the first-website project, use Find > Replace to change a heading, review the highlighted match, and save the file. A 26-second walkthrough using features available in Community and Pro.',
+    duration: 'PT26S',
+    dateCreated: '2026-11-10',
+  }}
+  poster="/tutorials/media/find-replace-one-file-poster.png" width="1120" height="800" style={{width: '100%', height: 'auto'}} aria-label="26-second walkthrough: find and replace a heading in one file">
+  <source src="/tutorials/media/find-replace-one-file.mp4" type="video/mp4" />
+  <track kind="captions" src="/tutorials/media/find-replace-one-file.vtt" srcLang="en" label="English" />
+  <a href="/tutorials/media/find-replace-one-file.mp4">Watch the single-file replacement walkthrough</a>.
+</TutorialVideo>
+
 ## 2. Enter the old and new text
 
 1. Open the **Find** menu at the top of the code editor and click **Replace**. Two text boxes appear above the code.
@@ -46,7 +64,7 @@ A **match** is one place where the old text appears. Phoenix Code highlights a m
 1. Check the highlighted match in the editor. Use the **◀** and **▶** buttons to move between matches.
 2. Click **Replace** to change the highlighted match, or **Replace All** to change every match in this file.
 3. Press **Esc** to close the search bar.
-4. Save with **Ctrl+S** on Windows/Linux or **Cmd+S** on macOS.
+4. Choose **File → Save File**, or press **Ctrl+S** on Windows/Linux or **Cmd+S** on macOS.
 
 **Check that the new text appears where you expected.** In the example, the heading in `index.html` should now read `My weekend walks.`
 

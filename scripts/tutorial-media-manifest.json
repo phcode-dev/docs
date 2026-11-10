@@ -40,6 +40,30 @@
         980
       ],
       "caption_placement": "Above the screen recording, clear of player controls"
+    },
+    {
+      "file": "static/tutorials/media/find-replace-one-file.mp4",
+      "project": "first-website",
+      "workflow": "Project already open: double-click index.html, choose Find > Replace, enter the old heading and new text, check the highlighted match, replace it, and choose File > Save File",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 26,
+      "duration_limit_seconds": 30,
+      "frame_size": [1120, 800],
+      "caption_placement": "Above the screen recording, clear of player controls"
+    },
+    {
+      "file": "static/tutorials/media/replace-in-files.mp4",
+      "project": "first-website",
+      "workflow": "Project already open: choose Find > Replace in Files, enter Trail Notes and Weekend Notes, review and select matches, apply replacements, choose Save All, and search the old name to confirm no results",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 28,
+      "duration_limit_seconds": 30,
+      "frame_size": [1120, 800],
+      "caption_placement": "Above the screen recording, clear of player controls"
     }
   ],
   "sample_photo": {
@@ -65,7 +89,10 @@
     "Pro link text and contact.html destination edited and saved in Design Mode",
     "Phoenix Pro is first and selected for fresh readers; explicit Community choices remain remembered across guides",
     "Complete Attributes screenshot renders all four rows without cropping on mobile",
-    "Pro recording closes the gallery and scrolls Element Properties until src, alt, width, and height are all fully visible"
+    "Pro recording closes the gallery and scrolls Element Properties until src, alt, width, and height are all fully visible",
+    "Single-file replacement recording saves the changed heading in first-website/index.html",
+    "Project replacement recording saves eight names across three HTML files and verifies that the old name returns no results",
+    "Replacement videos are 26 and 28 seconds, each with eight timed instruction captions and highlighted controls"
   ],
   "attributes_screenshot": {
     "file": "static/tutorials/media/pro-image-description-complete.png",
@@ -77,6 +104,6 @@
       "height"
     ]
   },
-  "presentation": "One complete walkthrough per edition, with screenshots and native video controls",
+  "presentation": "Separate walkthroughs for each tutorial task or edition, with screenshots and native video controls",
   "playback": "Muted inline autoplay when visible; pauses offscreen and in hidden tabs, preserves the reader's pause, and starts manually for reduced-motion preferences"
 }

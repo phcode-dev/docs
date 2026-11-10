@@ -1,0 +1,26 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+1. Double-click index.html in the file list.
+
+00:00:03.000 --> 00:00:06.000
+2. Open Find, then choose Replace.
+
+00:00:06.000 --> 00:00:09.500
+3. Type the words you want to change.
+
+00:00:09.500 --> 00:00:13.000
+4. Enter the new text in Replace with.
+
+00:00:13.000 --> 00:00:16.000
+5. Check the highlighted match. Here there is one.
+
+00:00:16.000 --> 00:00:19.000
+6. Click Replace to change this match.
+
+00:00:19.000 --> 00:00:22.500
+7. Press Esc, then choose File > Save File.
+
+00:00:22.500 --> 00:00:26.000
+Saved. The heading now reads: My weekend walks.
+
