@@ -31,6 +31,8 @@ jobs:
         run: npm ci
       - name: Test tutorial release tooling
         run: npm run test:tutorials
+      - name: Test link verification
+        run: npm run test:links
       - name: Package tutorial projects
         run: npm run package:tutorials
       - name: Restore original video publication dates
