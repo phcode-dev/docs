@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-11-10",
+  "captured_at": "2026-11-11",
   "product": "Phoenix Code for the web",
   "product_url": "https://web.phcode.dev/",
   "projects": {
@@ -64,6 +64,18 @@
       "duration_limit_seconds": 30,
       "frame_size": [1120, 800],
       "caption_placement": "Above the screen recording, clear of player controls"
+    },
+    {
+      "file": "static/tutorials/media/find-in-files.mp4",
+      "project": "first-website",
+      "workflow": "Project already open: click the magnifying glass to open Find in Files, search Trail Notes, read the results grouped by filename, click a matching line once to preview its code, double-click it to open about.html at line 21, and close Search Results to see the selected text in the editor",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 24,
+      "duration_limit_seconds": 30,
+      "frame_size": [1120, 800],
+      "caption_placement": "Above the screen recording, clear of player controls"
     }
   ],
   "sample_photo": {
@@ -93,7 +105,8 @@
     "Single-file replacement recording saves the changed heading in first-website/index.html",
     "Project replacement recording saves eight names across three HTML files and verifies that the old name returns no results",
     "Replacement videos are 26 and 28 seconds, with timed instruction captions and highlighted controls",
-    "Project replacement video starts with the magnifying glass opening Find in Files, preserves the query when switching to Replace in Files, and uses the magnifying glass again for the final check"
+    "Project replacement video starts with the magnifying glass opening Find in Files, preserves the query when switching to Replace in Files, and uses the magnifying glass again for the final check",
+    "Workspace Find in Files recording finds eight matches across three files, previews a match with one click, and opens about.html at line 21 with a double-click while leaving the practice files unchanged"
   ],
   "attributes_screenshot": {
     "file": "static/tutorials/media/pro-image-description-complete.png",

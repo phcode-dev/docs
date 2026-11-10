@@ -12,7 +12,7 @@ const SITE = path.join(__dirname, '..');
 const ORIGIN = 'https://docs.phcode.dev';
 const GUIDES = ['tutorials', 'tutorials/add-images', 'tutorials/link-pages',
   'tutorials/share-website', 'tutorials/bootstrap', 'tutorials/run-python',
-  'tutorials/find-and-replace', 'tutorials/replace-in-files'];
+  'tutorials/find-and-replace', 'tutorials/replace-in-files', 'Features/find-in-files'];
 
 function videoDuration(file) {
   const data = fs.readFileSync(file);
