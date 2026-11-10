@@ -7,6 +7,7 @@ toc_max_heading_level: 2
 ---
 
 import TutorialIcon from '@site/src/components/TutorialIcon';
+import TutorialVideo from '@site/src/components/Video/TutorialVideo';
 
 Use **Find → Replace in Files** to change the same text on several pages, such as your website's name. Review the matching lines before applying your changes.
 
@@ -29,6 +30,23 @@ To open a project:
 ![The first-website project in the sidebar, showing its three HTML files and the folder-with-plus button at the top left](../images/find/magnifier-toolbar.png)
 
 The example uses a project named `first-website`. Your project can have a different name.
+
+### Watch the steps in 28 seconds
+
+The recording starts with the project already open. It plays silently when it comes into view, with on-screen instructions and highlighted controls. Use the controls to pause, replay, or watch fullscreen. With reduced motion enabled, press Play to start.
+
+<TutorialVideo
+  metadata={{
+    name: 'Find and replace text across files in Phoenix Code',
+    description: 'Use Replace in Files to update a website name across the first-website project. Review the checked matches, apply the changes, use Save All, and search for the old name to confirm the result in 28 seconds.',
+    duration: 'PT28S',
+    dateCreated: '2026-11-10',
+  }}
+  poster="/tutorials/media/replace-in-files-poster.png" width="1120" height="800" style={{width: '100%', height: 'auto'}} aria-label="28-second walkthrough: review, replace, and save text across files">
+  <source src="/tutorials/media/replace-in-files.mp4" type="video/mp4" />
+  <track kind="captions" src="/tutorials/media/replace-in-files.vtt" srcLang="en" label="English" />
+  <a href="/tutorials/media/replace-in-files.mp4">Watch the project replacement walkthrough</a>.
+</TutorialVideo>
 
 ## 2. Enter the old and new text
 

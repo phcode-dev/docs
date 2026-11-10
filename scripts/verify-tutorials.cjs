@@ -110,26 +110,32 @@ function verify(build, release = false) {
   assert.equal(imagePage('article details').length, 5, 'Expected five image FAQs');
   const captures = JSON.parse(fs.readFileSync(path.join(SITE, 'scripts/tutorial-media-manifest.json'), 'utf8'));
   const publications = validatePublications(JSON.parse(fs.readFileSync(path.join(build, PUBLICATIONS_PATH), 'utf8'))).videos;
-  const schemas = imagePage('script[type="application/ld+json"]').toArray()
-    .map(element => JSON.parse(imagePage(element).text())).filter(schema => schema['@type'] === 'VideoObject');
-  assert.equal(schemas.length, 2, 'Expected two video metadata entries');
-  assert.equal(captures.recordings.length, 2, 'Expected two recorded videos');
-  assert.equal(new Set(schemas.map(schema => schema.name)).size, 2, 'Video names must be distinct');
-  const attributes = (selector, name) => new Set(imagePage(selector).map((_, element) => imagePage(element).attr(name)).get());
-  const sources = attributes('article source', 'src');
-  const posters = attributes('article video', 'poster');
-  const tracks = attributes('article track', 'src');
-  for (const schema of schemas) {
+  const videos = GUIDES.flatMap(guide => {
+    const document = page(target('/docs/' + guide));
+    const schemas = document('script[type="application/ld+json"]').toArray()
+      .map(element => JSON.parse(document(element).text())).filter(schema => schema['@type'] === 'VideoObject');
+    assert.equal(schemas.length, document('article video').length, `Video metadata missing: ${guide}`);
+    return schemas.map(schema => ({schema, document}));
+  });
+  assert.equal(videos.length, captures.recordings.length, 'Every recorded video must have a player and metadata');
+  assert.equal(new Set(videos.map(({schema}) => schema.contentUrl)).size, videos.length, 'Video sources must be distinct');
+  assert.equal(new Set(videos.map(({schema}) => schema.name)).size, videos.length, 'Video names must be distinct');
+  for (const {schema, document} of videos) {
     const source = new URL(schema.contentUrl).pathname;
-    assert(sources.has(source) && schema.description && schema.name, `Incomplete video metadata: ${source}`);
-    assert(posters.has(new URL(schema.thumbnailUrl[0]).pathname), `Video poster mismatch: ${source}`);
-    assert(tracks.has(new URL(schema.caption.contentUrl).pathname), `Video captions mismatch: ${source}`);
+    const player = document('article video').toArray().find(element => document(element).find('source').attr('src') === source);
+    assert(player && schema.description && schema.name, `Incomplete video metadata: ${source}`);
+    assert.equal(document(player).attr('poster'), new URL(schema.thumbnailUrl[0]).pathname, `Video poster mismatch: ${source}`);
+    assert.equal(document(player).find('track[kind="captions"]').attr('src'), new URL(schema.caption.contentUrl).pathname, `Video captions mismatch: ${source}`);
     for (const url of [schema.contentUrl, schema.thumbnailUrl[0], schema.caption.contentUrl]) target(url);
     const duration = videoDuration(target(source));
     const durationMatch = /^PT(\d+(?:\.\d+)?)S$/.exec(schema.duration);
     assert(durationMatch && Math.abs(Number(durationMatch[1]) - duration) < 0.02, `Incorrect duration: ${source}`);
     const captured = captures.recordings.find(record => '/' + record.file.replace(/^static\//, '') === source);
     assert(captured && Math.abs(captured.duration_seconds - duration) < 0.02, `Capture duration mismatch: ${source}`);
+    if (captured.duration_limit_seconds !== undefined) {
+      assert(Number.isFinite(captured.duration_limit_seconds) && captured.duration_limit_seconds > 0, `Invalid duration limit: ${source}`);
+      assert(duration < captured.duration_limit_seconds, `Video exceeds its duration limit: ${source}`);
+    }
     assert.equal(schema.uploadDate, publications[source], `Publication date mismatch: ${source}`);
     if (release) assert(schema.uploadDate, `Release video has no first-publication date: ${source}`);
     const captions = fs.readFileSync(target(schema.caption.contentUrl), 'utf8').replace(/\r\n/g, '\n');
@@ -166,7 +172,7 @@ function verify(build, release = false) {
       assert(Buffer.from(archive[`${project}/${name}`]).equals(content), `Stale practice file: ${project}/${name}`);
     }
   }
-  return `PASS: ${GUIDES.length} guides, local links and anchors, screenshots, 5 FAQs, 2 videos with captions, ${indexLinks} AI-index links, and both practice ZIPs.` +
+  return `PASS: ${GUIDES.length} guides, local links and anchors, screenshots, 5 image FAQs, ${videos.length} videos with captions, ${indexLinks} AI-index links, and both practice ZIPs.` +
     (release ? ' Release publication dates are complete.' : ' Preview metadata verified.');
 }
 
