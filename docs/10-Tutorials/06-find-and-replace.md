@@ -29,9 +29,9 @@ If the file you want to edit is already open, go to step 2. If its project is op
 
 This example uses `index.html` in the `first-website` project. You can follow the steps with your own file.
 
-### Watch the steps in 26 seconds
+### Watch the walkthrough {#watch-the-steps-in-26-seconds}
 
-The recording starts with the project already open. It plays silently when it comes into view, with on-screen instructions and highlighted controls. Use the controls to pause, replay, or watch fullscreen. With reduced motion enabled, press Play to start.
+The video starts with the project already open.
 
 <TutorialVideo
   metadata={{
