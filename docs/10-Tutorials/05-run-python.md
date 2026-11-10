@@ -1,7 +1,7 @@
 ---
 title: Run your first Python program
 slug: /tutorials/run-python
-description: Create hello.py, run it in Phoenix Code's desktop terminal, and see your first message. Includes Windows, macOS, and Linux steps.
+description: Install Python 3, create hello.py, and run your first program in Phoenix Code's desktop terminal. Includes Windows, macOS, and Linux steps.
 toc_max_heading_level: 2
 ---
 
@@ -10,7 +10,63 @@ import TabItem from '@theme/TabItem';
 
 Make a small program print **Hello from Phoenix Code!** You'll write it in the editor and run it in the terminal at the bottom of the window.
 
-**Before you start:** use the Phoenix Code **desktop app** and install **Python 3** from [python.org](https://www.python.org/downloads/) or your Linux package manager. Community (free) and Pro use the same steps.
+**Before you start:** use the [Phoenix Code desktop app](/docs/intro). Community (free) and Pro use the same steps. You'll also need **Python 3**, which you can install below.
+
+## Install Python
+
+Choose your operating system. If you already have Python 3, skip the installation steps and run the version check for your system.
+
+<Tabs groupId="python-system" queryString="system" defaultValue="windows">
+<TabItem value="windows" label="Windows">
+
+1. Open [Python's Windows downloads page](https://www.python.org/downloads/windows/) and choose **Latest Python install manager**.
+2. On its release page, click **Download Installer (MSIX)**.
+3. Open the downloaded file, click **Install**, and finish the setup.
+4. Open the Windows **Start** menu, search for **PowerShell**, and open it.
+5. Type this command and press **Enter** to install Python 3:
+
+```shell
+py install 3
+```
+
+6. Wait for the installation to finish. Then check the version:
+
+```shell
+py --version
+```
+
+For setup problems, see [Python's Windows installation guide](https://docs.python.org/3/using/windows.html#installation).
+
+</TabItem>
+<TabItem value="macos" label="macOS">
+
+1. Open [Python's macOS downloads page](https://www.python.org/downloads/macos/). Choose **Latest Python 3 Release**, then **Download macOS installer** on its release page.
+2. Open the downloaded `.pkg` file. Click **Continue**, accept the license, and click **Install** with the default options. Enter your Mac administrator credentials if asked.
+3. In Finder, open **Applications**, then the **Python 3.x** folder for the version you installed. Double-click **Install Certificates.command** and wait for it to finish. This completes the setup for secure downloads.
+4. Open a new Terminal window: press **Cmd+Space**, type `Terminal`, and press **Enter**.
+5. Type this command and press **Enter** to check the version:
+
+```shell
+python3 --version
+```
+
+For the installer screens and more help, see [Python's macOS installation guide](https://docs.python.org/3/using/mac.html#installation-steps).
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+Open your distribution's Terminal app and check whether Python 3 is installed:
+
+```shell
+python3 --version
+```
+
+If the command is missing, install `python3` using your distribution's package manager, then run the check again.
+
+</TabItem>
+</Tabs>
+
+**You should see a version beginning with Python 3.** After installing Python, close and reopen Phoenix Code so its terminal can find the new installation. You're ready to create your program.
 
 ## 1. Open a folder for your program
 
@@ -61,7 +117,22 @@ py hello.py
 ```
 
 </TabItem>
-<TabItem value="mac-linux" label="macOS / Linux">
+<TabItem value="macos" label="macOS">
+
+First, check that Python is available:
+
+```shell
+python3 --version
+```
+
+You should see a version beginning with **Python 3**. Then run your file:
+
+```shell
+python3 hello.py
+```
+
+</TabItem>
+<TabItem value="linux" label="Linux">
 
 First, check that Python is available:
 
@@ -104,7 +175,7 @@ print("I ran my first Python program!")
 <details>
 <summary>My computer says py or python3 was not found</summary>
 
-Check that Python 3 is installed, then close and reopen Phoenix Code so it can pick up the installation.
+Follow [Install Python](#install-python) for your operating system, then close and reopen Phoenix Code so it can pick up the installation. Open a new integrated terminal and try the version command again.
 
 Some installations use the command `python`. Try `python --version`. If it reports Python 3, use `python hello.py` to run your file.
 
