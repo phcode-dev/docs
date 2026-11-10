@@ -928,7 +928,7 @@ source CSS file editor.</p>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/dcb9a111-60fa-479b-8766-dd3109b2134f" alt="Reverse CSS Highlighting gif" class="img_ev3q"></p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="editor-rulers">Editor Rulers<a href="https://docs.phcode.dev/blog/release-3.6#editor-rulers" class="hash-link" aria-label="Direct link to Editor Rulers" title="Direct link to Editor Rulers" translate="no">​</a></h4>
 <p>Add multiple, color-customizable rulers in the editor to better visualize line
-lengths. <a href="https://docs.phcode.dev/docs/Features/editor-rulers/" target="_blank" rel="noopener noreferrer" class="">Read more...</a></p>
+lengths. <a class="" href="https://docs.phcode.dev/docs/customizing-editor#editor-rulers">Read more...</a></p>
 <p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/71b8b04c-d2ca-47b8-84bb-53cd0fb4593c" alt="image" class="img_ev3q"></p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-live-preview-in-any-browser">Open Live Preview in any Browser<a href="https://docs.phcode.dev/blog/release-3.6#open-live-preview-in-any-browser" class="hash-link" aria-label="Direct link to Open Live Preview in any Browser" title="Direct link to Open Live Preview in any Browser" translate="no">​</a></h4>
 <p>Direct buttons to open live previews in Chrome, Edge, Safari, and Firefox.</p>
