@@ -36,6 +36,19 @@ $ npm run build
 This command generates static content into the `build` directory and can be
 served using any static contents hosting service.
 
+Both `npm run build` and `npm run buildLocal` finish with `npm run verify:links`.
+This JavaScript check scans the generated HTML for links to missing pages,
+downloads, images, scripts, video files, captions, canonical pages, and redirect
+destinations. It includes full `https://docs.phcode.dev/...` URLs and prints the
+source HTML file and broken link before failing the build. Both CI workflows
+run it through the build command, so a failure stops deployment.
+
+The check uses the build files without contacting the live site. It checks
+destination paths; Docusaurus and the tutorial checks handle section anchors.
+External site availability and temporary server errors still need live monitoring.
+Run `npm run test:links` to test the checker. After a direct
+`npm run docusaurus -- build`, run `npm run verify:links` separately.
+
 ### Tutorial release checks
 
 Run these checks before releasing tutorial changes. They use JavaScript and

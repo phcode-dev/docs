@@ -44,7 +44,7 @@ source CSS file editor.
 #### Editor Rulers
 
 Add multiple, color-customizable rulers in the editor to better visualize line
-lengths. [Read more...](https://docs.phcode.dev/docs/Features/editor-rulers/)
+lengths. [Read more...](/docs/customizing-editor#editor-rulers)
 
 ![image](https://github.com/phcode-dev/phoenix/assets/5336369/71b8b04c-d2ca-47b8-84bb-53cd0fb4593c)
 
