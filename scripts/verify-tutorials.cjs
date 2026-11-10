@@ -11,7 +11,8 @@ const {PUBLICATIONS_PATH, validatePublications} = require('../plugins/tutorial-m
 const SITE = path.join(__dirname, '..');
 const ORIGIN = 'https://docs.phcode.dev';
 const GUIDES = ['tutorials', 'tutorials/add-images', 'tutorials/link-pages',
-  'tutorials/share-website', 'tutorials/bootstrap', 'tutorials/run-python'];
+  'tutorials/share-website', 'tutorials/bootstrap', 'tutorials/run-python',
+  'tutorials/find-and-replace'];
 
 function videoDuration(file) {
   const data = fs.readFileSync(file);
