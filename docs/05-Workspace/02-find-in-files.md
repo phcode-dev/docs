@@ -1,62 +1,140 @@
 ---
 slug: "/Features/find-in-files"
+description: Use the magnifying glass in Phoenix Code to find words across your project, preview matching lines, and open the file you need. Includes folder and file-type filters.
+toc_max_heading_level: 2
 ---
+
+import TutorialIcon from '@site/src/components/TutorialIcon';
 
 # Find In Files
 
-The Find in Files feature in Phoenix Code is a powerful tool to quickly search for specific text across multiple files within a project. This feature is useful for developers working on large codebases to find references, variable names, or specific lines of code.
+Looking for a word on your website but unsure which file contains it? **Find in Files** searches the text in your project and takes you to the matching lines.
 
-To search across your project files, use `Ctrl-Shift-F` on Windows/Linux or `Cmd-Shift-F` on Mac, or select `Find > Find in Files` from the menu. This feature searches for your term throughout the project's files and displays each occurrence with its file name, line number, and a snippet of the code for context.
+You'll open a project, search for some words, and open a file from the results. These steps work in **Community (free)** and **Phoenix Pro**.
 
-![Alt text](../images/find/fif.png)
+## 1. Open your project
+
+A **project** is the folder containing the files you are working on, such as your website's pages, pictures, and stylesheet.
+
+**Need files to try this with?** [Download the optional practice website](/tutorials/first-website.zip) and extract the ZIP. Use its `first-website` folder in the next step.
+
+Choose **File → Open Folder…** and select that folder. You can also choose **Open Folder** on Phoenix Code's start screen. If your project is already open, keep using it.
+
+Check the folder name and files in the **sidebar**, the panel on the left. The screenshots below use a project named `first-website`; yours can have a different name.
+
+If Live Preview fills the app, click its <TutorialIcon name="restore" label="restore icon" /> to show the editor and sidebar.
+
+## 2. Click the magnifying glass {#use-the-magnifying-glass}
+
+Look at the small toolbar **above the file list**. Click the <TutorialIcon name="search" label="magnifying glass" /> just to the right of the <TutorialIcon name="showInTree" label="binoculars" />. Hovering over the magnifying glass shows **Find in Files**.
+
+![The first-website folder in the sidebar, with the magnifying glass at the top beside the binoculars](../images/find/magnifier-toolbar.png)
+
+A search bar labeled **Find in project** opens above the code editor.
+
+You can also choose **Find → Find in Files**, or press **Ctrl+Shift+F** on Windows/Linux or **Cmd+Shift+F** on macOS. Use the menu if your browser or operating system handles the shortcut instead.
+
+## 3. Type the words you want to find
+
+1. Click the search box under **Find in project**.
+2. Type a word or phrase that appears in your files. This example searches for `Trail Notes`; use words from your own project.
+3. For a search across the project, leave the filter on **No Files Excluded**. Leave **Regular Expression** (`.*`) off when searching for ordinary words.
+
+[![The Find in project search bar with Trail Notes entered, the Aa and regular-expression buttons off, and No Files Excluded selected](../images/find/magnifier-search.png)](../images/find/magnifier-search.png)
+
+**Search Results** appears at the bottom of the editor as you type. Drag the panel's top edge upward if you need more room.
+
+## 4. Preview a match and open its file
+
+A **match** is one place where your search text appears. The results group matches by filename and show the line number beside each matching line.
+
+[![Search Results showing eight matches for Trail Notes across three files, with about.html line 21 selected and its code preview on the right](../images/find/magnifier-results.png)](../images/find/magnifier-results.png)
+
+1. Find a filename in the results. Click its small **▸ triangle** if the matching lines are hidden.
+2. **Click a matching line once** to preview its code on the right side of Search Results.
+3. **Double-click the matching line** to open that file in the main code editor, with the matching words selected.
+
+In this example, opening the paragraph match under `about.html` takes you to **line 21**. You have now found the file and the exact place containing your text. Searching and opening results leave the file contents unchanged.
+
+Click either wide screenshot to view it full size.
+
+## Need help?
+
+<details>
+<summary>Where is the magnifying glass if I can't see it?</summary>
+
+If the sidebar is hidden, choose **View → Show Sidebar**. If Live Preview fills the app, click its <TutorialIcon name="restore" label="restore icon" /> first.
+
+You can also open the search directly with **Find → Find in Files**.
+
+</details>
+
+<details>
+<summary>What does the binoculars button do?</summary>
+
+The <TutorialIcon name="showInTree" label="binoculars" /> is **Show in File Tree**: it locates the file you currently have open in the sidebar. Use the <TutorialIcon name="search" label="magnifying glass" /> to search for words inside your project files.
+
+</details>
+
+<details>
+<summary>Why are there no results?</summary>
+
+Check the project name on the left and try a word you can see in one of its files. Check spelling, spaces, and punctuation.
+
+Turn off **Match Case** (`Aa`) to find both capital and lowercase letters. Leave **Regular Expression** (`.*`) off for ordinary text. These buttons appear highlighted when on.
+
+To remove a file filter, open its dropdown and choose **Don't Exclude Files**. The button will read **No Files Excluded**. If you started a search in a subfolder, click the magnifying glass again to search the whole project.
+
+</details>
+
+<details>
+<summary>How do I change the text I found?</summary>
+
+Follow [Replace text in one file](/docs/tutorials/find-and-replace) to edit the open file, or [Replace text across files](/docs/tutorials/replace-in-files) to review and apply changes throughout a project.
+
+</details>
 
 ## Searching Within a Folder
 
-To search within a specific folder in Phoenix:
+Once you're comfortable searching the whole project, you can narrow the search to one folder:
 
-1. Right-click on the folder in the Files panel where you want to perform the search.
-1. From the context menu that appears, select "Find in...".
-  
-  ![Alt text](../images/find/folder.png)
+1. Right-click the folder in the sidebar's file list.
+2. Choose **Find in…**.
+3. Enter your search text. The search bar shows the selected folder, and results come from that folder and its subfolders.
 
-3. The find bar will now appear with search restricted to that folder (See `in y/` in the below image).
- 
-  ![Alt text](../images/find/inFolder.png)
+Click the <TutorialIcon name="search" label="magnifying glass" /> to return to a search across the whole project.
 
 ## Using File Filters
 
-By default, Find in Files searches all files in your project folder. You can exclude or include files, file types, whole folders, or other patterns:
+A **file filter** limits which files Phoenix Code searches. For example, you can search just your HTML pages or skip a folder.
 
-* Click the "No Files Excluded" dropdown from the search bar.
+Open the **No Files Excluded** dropdown beside the search box:
 
-  ![Alt text](../images/find/new-exclusion.png)
+- Choose **Search in files** to search only files whose names or paths match your filter. Enter `*.html` to search HTML files, or `*.html,*.css` to search HTML and CSS files.
+- Choose **Exclude files** to skip matching files. Enter `*.json` to skip JSON files.
+- Choose **Don't Exclude Files** to clear the restriction.
 
-Phoenix Code allows you to specify which files and folders should be excluded or included during project searches.
+Enter the filter in the extra field that appears. Keep the words you want to find in the original search box.
 
-### For searching only within files matching pattern
+### Search only matching files {#for-searching-only-within-files-matching-pattern}
 
-When you select `Search in files` option from the above dropdown, the filter will search only within files and folders that match the entered patterns. Entering `*.json,*.css` will include only JSON and css files in your search results, or just enter `json` to select any files having charecters `json` in its path. See more patterns below.
+With **Search in files** selected, `*.html` includes files such as `index.html` and `pages/about.html`. Plain text also works: `css` includes any file with `css` in its path, such as `styles.css` or `css/theme.txt`.
 
-![Alt text](../images/find/search_in_files.png)
+### Exclude matching files {#for-excluding-files}
 
-### For Excluding files
-
-When you select `Exclude files` option from the above dropdown, the filter will ignore files and folders that match the patterns you enter. For instance, typing `*.json` in the text area will exclude all JSON files from your search results. See more patterns below.
+With **Exclude files** selected, the same patterns skip files instead. For example, `**/node_modules/**` skips files inside any folder named `node_modules`.
 
 ## The filter pattern
 
-This section describes the format of the exclusion/search within files glob pattern.
+Patterns describe filenames or paths. Use them in either **Search in files** or **Exclude files**. Separate multiple patterns with commas, such as `*.js,*.json`.
 
-1. Each pattern should be entered as a comma seperated text. You can specify multiple patterns:
-   ```txt
-   *.js,*.json
-   ```
-1. To fuzzy search, just enter text. Eg. entering `css` will match all filenames that has the letters `css` in its path name like `x/st.css` and `cssFile.md`.
-1. To match all JavaScript files in any directory, use `*.js`. This matches files like `a/b/x.js` and `xyz.js`.
-1. To match JavaScript files only in the project root, use `./*.js`. This matches `x.js` in the root but not `y/x.js` in a subdirectory.
-1. To match css files only in a folder `search/folder`, use `search/folder/*.css`. This matches `search/folder/x.css` but not `y/x.css`.
-1. `?.js` will match only `a/b/x.js` and not `xyx.js`
-1. `**/some_folder/**` will match `some_folder` anywhere.
-1. `[]` to declare a range of characters to match (`example.[0-9]` to match on `example.0`, `example.1`, …)
-1. To search for files names with `,` in it, use escape char `\`. Eg. To match a file with name `hello,world.js`, the filter string to use is `hello\,world.js`.
-1. More complex glob patterns can be provided. See: https://www.malikbrowne.com/blog/a-beginners-guide-glob-patterns/
+| Pattern | Files it matches |
+| --- | --- |
+| `css` | Any path containing `css`, such as `styles.css` or `css/theme.txt`. |
+| `*.js` | JavaScript files anywhere in the project. |
+| `./*.js` | JavaScript files directly inside the project folder, excluding subfolders. |
+| `search/folder/*.css` | CSS files directly inside a folder at a path ending in `search/folder`. |
+| `?.js` | JavaScript files with a one-character name, such as `x.js`. |
+| `**/some_folder/**` | Files inside a folder named `some_folder`, wherever it appears. |
+| `example.[0-9]` | Files named `example.0` through `example.9`. |
+| `hello\,world.js` | A filename containing a comma, `hello,world.js`. The backslash keeps the comma inside one pattern. |
