@@ -21,7 +21,7 @@ The guides open with **Phoenix Pro**, using Design Mode for visual editing. Choo
 
 ## Try something else
 
-- **[Find and replace text](/docs/tutorials/find-and-replace):** change one heading, then rename your website across all three pages after reviewing the matches.
+- **[Find and replace text](/docs/tutorials/find-and-replace):** update text in your own file or project, reviewing matches before applying changes across files.
 - **[Build a page with Bootstrap](/docs/tutorials/bootstrap):** open a ready-made page, change its button color, and try it at a phone-sized width.
 - **[Run your first Python program](/docs/tutorials/run-python):** create a file and make it print a message in the desktop app.
 
