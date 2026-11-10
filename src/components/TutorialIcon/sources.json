@@ -12,6 +12,7 @@
   },
   "adaptation": "Original shapes; colors inherit the documentation theme. SVG sprite symbols are isolated from their source sheets.",
   "icons": {
+    "startProject": "phoenix/src/styles/images/sprites.svg#newFolder",
     "search": "phoenix/src/styles/images/sprites.svg#search",
     "showInTree": "phoenix/src/styles/images/sprites.svg#binoculars",
     "expand": "svgs/solid/expand.svg",

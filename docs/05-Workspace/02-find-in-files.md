@@ -18,7 +18,13 @@ A **project** is the folder containing the files you are working on, such as you
 
 **Need files to try this with?** [Download the optional practice website](/tutorials/first-website.zip) and extract the ZIP. Use its `first-website` folder in the next step.
 
-Choose **File → Open Folder…** and select that folder. You can also choose **Open Folder** on Phoenix Code's start screen. If your project is already open, keep using it.
+If your project is already open, keep using it. Otherwise:
+
+1. Click the <TutorialIcon name="startProject" label="folder with a plus sign" /> in the **top-left corner** of Phoenix Code. This opens the **Start Project** window.
+2. Click **Open Folder**.
+3. Select the folder containing your files and confirm the selection. For the practice website, select the extracted `first-website` folder.
+
+You can also open a project through **File → Open Folder…**.
 
 Check the folder name and files in the **sidebar**, the panel on the left. The screenshots below use a project named `first-website`; yours can have a different name.
 
