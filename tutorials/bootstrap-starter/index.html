@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Bootstrap page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <main class="container py-5">
+    <h1 class="mb-3">Hello from Phoenix Code</h1>
+    <p class="lead">This page uses Bootstrap for its layout, spacing, and button.</p>
+    <div class="row g-4 my-4">
+      <section class="col-md-6">
+        <h2 class="h4">Build</h2>
+        <p>Edit this HTML in Phoenix Code and save your changes.</p>
+      </section>
+      <section class="col-md-6">
+        <h2 class="h4">Preview</h2>
+        <p>Make the browser narrow to see these columns stack.</p>
+      </section>
+    </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#more-info" aria-expanded="false" aria-controls="more-info">Show a tip</button>
+    <div class="collapse mt-3" id="more-info">
+      <p class="border rounded p-3">The button works because the Bootstrap JavaScript bundle is loaded.</p>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+# Phoenix Code extension developer documentation
+
+> Official guides and API reference for developing Phoenix Code extensions and themes.
+
+These pages cover extending the editor. For using Phoenix Code to build a website, start with the user documentation index.
+
+## Getting started
+
+- [Getting Started](https://docs.phcode.dev/api/getting-started): This guide provides an overview on the documentation structure and how to get started with the Phoenix Code API documentation!
+- [Creating Themes](https://docs.phcode.dev/api/creating-themes): This document outlines how to create your own themes for Phoenix Code.
+- [Creating Extensions](https://docs.phcode.dev/api/creating-extensions): This document outlines how to write your own extensions for Phoenix Code.
+- [Use node.js from your extension](https://docs.phcode.dev/api/creating-node-extensions): This document outlines how to create node extensions for Phoenix Code.
+- [Debugging Extensions](https://docs.phcode.dev/api/debugging-extensions): The Debug menu provides several options for extension development.
+- [Publishing Themes & Extensions](https://docs.phcode.dev/api/publishing-extensions): This document outlines how to publish your Extensions/Themes to Phoenix Code Extension store.
+- [Available Standard Libraries](https://docs.phcode.dev/api/available-standard-libs): The following standard libraries are available inside Phoenix Code:
+
+## How To
+
+- [Show Dialogs](https://docs.phcode.dev/api/How-To/Dialogs): This document outlines the basic features of working with Dialogs, including:
+- [Add Menus, Menu items and Keyboard Shortcuts](https://docs.phcode.dev/api/How-To/Menus): This document outlines the basic features of working with Menus, including:
+- [How to create Panels](https://docs.phcode.dev/api/How-To/Panels): In Phoenix Code, Panels are of two types :- Plugin Panel and Bottom Panel.
+- [Add an indicator icon on the status bar](https://docs.phcode.dev/api/How-To/StatusBar): This document outlines the basic features of working with Status Bar, including:
+
+## API Reference
+
+- [CommandManager](https://docs.phcode.dev/api/API-Reference/command/CommandManager): Import :
+- [Commands](https://docs.phcode.dev/api/API-Reference/command/Commands): Import :
+- [KeyBindingManager](https://docs.phcode.dev/api/API-Reference/command/KeyBindingManager): Import :
+- [KeyboardOverlayMode](https://docs.phcode.dev/api/API-Reference/command/KeyboardOverlayMode): Import :
+- [Keys](https://docs.phcode.dev/api/API-Reference/command/Keys): Import :
+- [Menus](https://docs.phcode.dev/api/API-Reference/command/Menus): Import :
+- [DocumentManager](https://docs.phcode.dev/api/API-Reference/document/DocumentManager): Import :
+- [TextRange](https://docs.phcode.dev/api/API-Reference/document/TextRange): Import :
+- [CodeHintManager](https://docs.phcode.dev/api/API-Reference/editor/CodeHintManager): Import :
+- [EditorManager](https://docs.phcode.dev/api/API-Reference/editor/EditorManager): Import :
+- [BeautificationManager](https://docs.phcode.dev/api/API-Reference/features/BeautificationManager): Import :
+- [NewFileContentManager](https://docs.phcode.dev/api/API-Reference/features/NewFileContentManager): Import :
+- [PriorityBasedRegistration](https://docs.phcode.dev/api/API-Reference/features/PriorityBasedRegistration): Import :
+- [QuickViewManager](https://docs.phcode.dev/api/API-Reference/features/QuickViewManager): Import :
+- [SelectionViewManager](https://docs.phcode.dev/api/API-Reference/features/SelectionViewManager): Import :
+- [TaskManager](https://docs.phcode.dev/api/API-Reference/features/TaskManager): Import :
+- [FileUtils](https://docs.phcode.dev/api/API-Reference/file/FileUtils): Import :
+- [Directory](https://docs.phcode.dev/api/API-Reference/filesystem/Directory): Import :
+- [File](https://docs.phcode.dev/api/API-Reference/filesystem/File): Import :
+- [FileIndex](https://docs.phcode.dev/api/API-Reference/filesystem/FileIndex): Import :
+- [FileSystemEntry](https://docs.phcode.dev/api/API-Reference/filesystem/FileSystemEntry): Import :
+- [FileSystemError](https://docs.phcode.dev/api/API-Reference/filesystem/FileSystemError): Import :
+- [FileSystemStats](https://docs.phcode.dev/api/API-Reference/filesystem/FileSystemStats): Import :
+- [RemoteFile](https://docs.phcode.dev/api/API-Reference/filesystem/RemoteFile): Import :
+- [WatchedRoot](https://docs.phcode.dev/api/API-Reference/filesystem/WatchedRoot): Import :
+- [Preferences](https://docs.phcode.dev/api/API-Reference/JSUtils/Preferences): Import :
+- [ScopeManager](https://docs.phcode.dev/api/API-Reference/JSUtils/ScopeManager): Import :
+- [Session](https://docs.phcode.dev/api/API-Reference/JSUtils/Session): Import :
+- [CodeInspection](https://docs.phcode.dev/api/API-Reference/language/CodeInspection): Import :
+- [CSSUtils](https://docs.phcode.dev/api/API-Reference/language/CSSUtils): Import :
+- [HTMLDOMDiff](https://docs.phcode.dev/api/API-Reference/language/HTMLDOMDiff): Import :
+- [HTMLSimpleDOM](https://docs.phcode.dev/api/API-Reference/language/HTMLSimpleDOM): Import :
+- [HTMLUtils](https://docs.phcode.dev/api/API-Reference/language/HTMLUtils): Import :
+- [JSONUtils](https://docs.phcode.dev/api/API-Reference/language/JSONUtils): Import :
+- [JSUtils](https://docs.phcode.dev/api/API-Reference/language/JSUtils): Import :
+- [LanguageManager](https://docs.phcode.dev/api/API-Reference/language/LanguageManager): Import :
+- [XMLUtils](https://docs.phcode.dev/api/API-Reference/language/XMLUtils): Import :
+- [NodeConnector](https://docs.phcode.dev/api/API-Reference/NodeConnector): Import :
+- [PreferencesManager](https://docs.phcode.dev/api/API-Reference/preferences/PreferencesManager): Import :
+- [StateManager](https://docs.phcode.dev/api/API-Reference/preferences/StateManager): Import :
+- [FileSyncManager](https://docs.phcode.dev/api/API-Reference/project/FileSyncManager): Import :
+- [FileTreeView](https://docs.phcode.dev/api/API-Reference/project/FileTreeView): Import :
+- [FileTreeViewModel](https://docs.phcode.dev/api/API-Reference/project/FileTreeViewModel): Import :
+- [FileViewController](https://docs.phcode.dev/api/API-Reference/project/FileViewController): Import :
+- [ProjectManager](https://docs.phcode.dev/api/API-Reference/project/ProjectManager): Import :
+- [ProjectModel](https://docs.phcode.dev/api/API-Reference/project/ProjectModel): Import :
+- [SidebarView](https://docs.phcode.dev/api/API-Reference/project/SidebarView): Import :
+- [WorkingSetSort](https://docs.phcode.dev/api/API-Reference/project/WorkingSetSort): Import :
+- [WorkingSetView](https://docs.phcode.dev/api/API-Reference/project/WorkingSetView): Import :
+- [FileFilters](https://docs.phcode.dev/api/API-Reference/search/FileFilters): Import :
+- [FindBar](https://docs.phcode.dev/api/API-Reference/search/FindBar): Import :
+- [FindInFiles](https://docs.phcode.dev/api/API-Reference/search/FindInFiles): Import :
+- [FindUtils](https://docs.phcode.dev/api/API-Reference/search/FindUtils): Import :
+- [QuickOpen](https://docs.phcode.dev/api/API-Reference/search/QuickOpen): Import :
+- [QuickOpenHelper](https://docs.phcode.dev/api/API-Reference/search/QuickOpenHelper): Import :
+- [QuickSearchField](https://docs.phcode.dev/api/API-Reference/search/QuickSearchField): Import :
+- [SearchModel](https://docs.phcode.dev/api/API-Reference/search/SearchModel): Import :
+- [SearchResultsView](https://docs.phcode.dev/api/API-Reference/search/SearchResultsView): Import :
+- [AppInit](https://docs.phcode.dev/api/API-Reference/utils/AppInit): Import :
+- [Async](https://docs.phcode.dev/api/API-Reference/utils/Async): Import :
+- [ColorUtils](https://docs.phcode.dev/api/API-Reference/utils/ColorUtils): Import :
+- [DeprecationWarning](https://docs.phcode.dev/api/API-Reference/utils/DeprecationWarning): Import :
+- [DragAndDrop](https://docs.phcode.dev/api/API-Reference/utils/DragAndDrop): Import :
+- [DropdownEventHandler](https://docs.phcode.dev/api/API-Reference/utils/DropdownEventHandler): Import :
+- [EventDispatcher](https://docs.phcode.dev/api/API-Reference/utils/EventDispatcher): Import :
+- [EventManager](https://docs.phcode.dev/api/API-Reference/utils/EventManager): Import :
+- [ExtensionInterface](https://docs.phcode.dev/api/API-Reference/utils/ExtensionInterface): Import :
+- [ExtensionLoader](https://docs.phcode.dev/api/API-Reference/utils/ExtensionLoader): Import :
+- [ExtensionUtils](https://docs.phcode.dev/api/API-Reference/utils/ExtensionUtils): Import :
+- [FeatureGate](https://docs.phcode.dev/api/API-Reference/utils/FeatureGate): Import :
+- [KeyEvent](https://docs.phcode.dev/api/API-Reference/utils/KeyEvent): Import :
+- [LocalizationUtils](https://docs.phcode.dev/api/API-Reference/utils/LocalizationUtils): Import :
+- [NativeApp](https://docs.phcode.dev/api/API-Reference/utils/NativeApp): Import :
+- [NodeUtils](https://docs.phcode.dev/api/API-Reference/utils/NodeUtils): Import :
+- [PerfUtils](https://docs.phcode.dev/api/API-Reference/utils/PerfUtils): Import :
+- [Resizer](https://docs.phcode.dev/api/API-Reference/utils/Resizer): Import :
+- [StringMatch](https://docs.phcode.dev/api/API-Reference/utils/StringMatch): Import :
+- [StringUtils](https://docs.phcode.dev/api/API-Reference/utils/StringUtils): Import :
+- [TokenUtils](https://docs.phcode.dev/api/API-Reference/utils/TokenUtils): Import :
+- [ValidationUtils](https://docs.phcode.dev/api/API-Reference/utils/ValidationUtils): Import :
+- [ViewUtils](https://docs.phcode.dev/api/API-Reference/utils/ViewUtils): Import :
+- [ZipUtils](https://docs.phcode.dev/api/API-Reference/utils/ZipUtils): Import :
+- [MainViewFactory](https://docs.phcode.dev/api/API-Reference/view/MainViewFactory): Import :
+- [MainViewManager](https://docs.phcode.dev/api/API-Reference/view/MainViewManager): Import :
+- [Pane](https://docs.phcode.dev/api/API-Reference/view/Pane): Import :
+- [PanelView](https://docs.phcode.dev/api/API-Reference/view/PanelView): Import :
+- [PluginPanelView](https://docs.phcode.dev/api/API-Reference/view/PluginPanelView): Import :
+- [SidebarTabs](https://docs.phcode.dev/api/API-Reference/view/SidebarTabs): Import :
+- [ThemeManager](https://docs.phcode.dev/api/API-Reference/view/ThemeManager): Import :
+- [VideoPlayer](https://docs.phcode.dev/api/API-Reference/view/VideoPlayer): Import :
+- [ViewCommandHandlers](https://docs.phcode.dev/api/API-Reference/view/ViewCommandHandlers): Import :
+- [ViewStateManager](https://docs.phcode.dev/api/API-Reference/view/ViewStateManager): Import :
+- [WorkspaceManager](https://docs.phcode.dev/api/API-Reference/view/WorkspaceManager): Import :
+- [DefaultDialogs](https://docs.phcode.dev/api/API-Reference/widgets/DefaultDialogs): Import :
+- [Dialogs](https://docs.phcode.dev/api/API-Reference/widgets/Dialogs): Import :
+- [DropdownButton](https://docs.phcode.dev/api/API-Reference/widgets/DropdownButton): Import :
+- [ModalBar](https://docs.phcode.dev/api/API-Reference/widgets/ModalBar): Import :
+- [NotificationUI](https://docs.phcode.dev/api/API-Reference/widgets/NotificationUI): Import :
+- [PopUpManager](https://docs.phcode.dev/api/API-Reference/widgets/PopUpManager): Import :
+- [StatusBar](https://docs.phcode.dev/api/API-Reference/widgets/StatusBar): Import :
+- [IndexingWorker](https://docs.phcode.dev/api/API-Reference/worker/IndexingWorker): Import :
+- [WorkerComm](https://docs.phcode.dev/api/API-Reference/worker/WorkerComm): Import :

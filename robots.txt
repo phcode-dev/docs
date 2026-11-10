@@ -6,29 +6,32 @@
 # use of robots or failure to obey the robots exclusion standards set
 # forth at http://www.robotstxt.org/ is strictly prohibited.
 
+# Docusaurus serves public styles, scripts, and screenshots under /assets/.
+# Crawlers need these resources to render and understand the documentation.
+
 # Details about Googlebot available at: http://www.google.com/bot.html
 # The Google search engine can see everything
 User-agent: gsa-crawler-www
-Disallow: /assets/
+Allow: /assets/
 
 # The Omniture search engine can see everything
 User-agent: Atomz/1.0
-Disallow: /assets/
+Allow: /assets/
 
 User-agent: *
-Disallow: /assets/
+Allow: /assets/
 
 User-agent: AdsBot-Google
-Disallow: /assets/
+Allow: /assets/
 
 User-agent: AdsBot-Google-Mobile
-Disallow: /assets/
+Allow: /assets/
 
 User-agent: SearchmetricsBot
-Disallow: /assets/
+Allow: /assets/
 
 User-agent: Googlebot
-Disallow: /assets/
+Allow: /assets/
 
 # XML sitemaps
 Sitemap: https://docs.phcode.dev/sitemap.xml
