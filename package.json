@@ -24,15 +24,16 @@
     "serveStatic": "http-server build -p 8001 -c-1"
   },
   "dependencies": {
-    "@docsearch/css": "^4.6.0",
-    "@docsearch/react": "^4.6.0",
-    "@docusaurus/core": "^3.7.0",
-    "@docusaurus/plugin-client-redirects": "^3.7.0",
-    "@docusaurus/plugin-google-gtag": "^3.7.0",
-    "@docusaurus/plugin-sitemap": "^3.7.0",
-    "@docusaurus/preset-classic": "^3.7.0",
-    "@docusaurus/theme-live-codeblock": "^3.7.0",
-    "@docusaurus/theme-mermaid": "^3.7.0",
+    "@docsearch/css": "5.2.0",
+    "@docsearch/docusaurus-adapter": "5.2.0",
+    "@docsearch/react": "5.2.0",
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/plugin-client-redirects": "3.10.2",
+    "@docusaurus/plugin-google-gtag": "3.10.2",
+    "@docusaurus/plugin-sitemap": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@docusaurus/theme-live-codeblock": "3.10.2",
+    "@docusaurus/theme-mermaid": "3.10.2",
     "@gracefullight/docusaurus-plugin-microsoft-clarity": "1.0.0",
     "@mdx-js/react": "3.1.1",
     "clsx": "2.1.1",
@@ -43,8 +44,8 @@
     "remark-math": "6.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.9.2",
-    "@docusaurus/types": "3.9.2",
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/types": "3.10.2",
     "baseline-browser-mapping": "^2.10.10",
     "cheerio": "1.0.0-rc.12",
     "fflate": "0.8.2",
@@ -65,6 +66,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   }
 }

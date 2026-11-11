@@ -1,0 +1,45 @@
+.action {
+  margin-block: -0.5rem 1.5rem;
+}
+
+.action button {
+  min-height: 44px;
+  white-space: normal;
+}
+
+.action button:focus-visible {
+  outline: 2px solid var(--ifm-color-primary-darkest);
+  outline-offset: 3px;
+}
+
+.panel {
+  --docsearch-font-family: var(--ifm-font-family-base);
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-primary-color: var(--ifm-color-primary-darkest);
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-muted-color: var(--ifm-color-content-secondary);
+  /* Infima's page background can be transparent; the mobile overlay must be solid. */
+  --docsearch-sidepanel-background: var(--ifm-background-surface-color);
+  --docsearch-sidepanel-background-dark: var(--ifm-background-surface-color);
+  --docsearch-sidepanel-text-base: var(--ifm-font-color-base);
+  --docsearch-sidepanel-text-muted: var(--ifm-color-content-secondary);
+  --docsearch-sidepanel-primary: var(--ifm-color-primary-darkest);
+  --docsearch-sidepanel-primary-dark: var(--ifm-color-primary-darker);
+  --docsearch-sidepanel-white: var(--ifm-background-surface-color);
+  --docsearch-sidepanel-border: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .panel {
+  --docsearch-primary-color: var(--ifm-color-primary);
+  --docsearch-sidepanel-primary: var(--ifm-color-primary);
+}
+
+.panel :global(.DocSearch-Markdown-Content) {
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.panel :global(.DocSearch-AskAiScreen-Query) {
+  overflow-wrap: anywhere;
+}

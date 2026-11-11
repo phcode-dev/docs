@@ -58,7 +58,6 @@ const config = {
 	deploymentBranch: "main",
 
 	onBrokenLinks: "throw",
-	onBrokenMarkdownLinks: "warn",
 
 	// Even if you don't use internationalization, you can use this field to set
 	// useful metadata like html lang. For example, if your site is Chinese, you
@@ -69,7 +68,8 @@ const config = {
 	},
 	// Enable mermaid diagrams
 	markdown: {
-		mermaid: true
+		mermaid: true,
+		hooks: {onBrokenMarkdownLinks: "warn"}
 	},
 	// Style for math formulas
 	// https://docusaurus.io/docs/markdown-features/math-equations
@@ -140,6 +140,7 @@ const config = {
 		]
 	],
 	plugins: [
+		"@docsearch/docusaurus-adapter",
 		["./plugins/tutorial-media", {
 			publish: process.env.PHCODE_PUBLISH_TUTORIAL_VIDEOS === "1",
 			publicationsFile: process.env.PHCODE_VIDEO_PUBLICATIONS_FILE,
@@ -187,17 +188,25 @@ const config = {
 				{name: 'twitter:site', content: '@phcodedev'},
 				{property: 'og:site_name', content: 'Phoenix Code'},
 			],
-			algolia: {
+			docsearch: {
 				// The application ID provided by Algolia
 				appId: "8DZVLXVEPA",
 				// Public API key: it is safe to commit it
-				apiKey: "e988677555350573b539eb974e2b7891",
-				indexName: "phcode",
+				apiKey: "0c73a640624ba54f777a5491ee884aa3",
+				indices: [{
+					name: "phcode",
+					searchParameters: {
+						// Match the task in questions such as "How do I run Python?".
+						removeStopWords: ["en"],
+						// Keep "Find in Files" competitive with joined API names.
+						minProximity: 2,
+					},
+				}],
+				// The crawler does not emit Docusaurus language/version facets.
 				contextualSearch: false,
 				askAi: {
-					assistantId: "d43f2205-8075-439d-822b-b3825b74cb49",
-					apiKey: "0c73a640624ba54f777a5491ee884aa3",
-					indexName: "markdown-index",
+					agentId: "d43f2205-8075-439d-822b-b3825b74cb49",
+					// The agent's static search tool selects markdown-index.
 				}
 			},
 			// Replace with your project's social card
