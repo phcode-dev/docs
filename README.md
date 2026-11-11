@@ -51,6 +51,10 @@ Run `npm run test:links` to test the checker. After a direct
 
 ### Tutorial release checks
 
+Before adding or changing a video, read the
+[video contributor notes](CONTRIBUTING.md#adding-or-updating-tutorial-videos)
+for the recording, article, watch-page, and metadata workflow.
+
 Run these checks before releasing tutorial changes. They use JavaScript and
 require Node.js, Git, and the dependencies installed by `npm ci`.
 
