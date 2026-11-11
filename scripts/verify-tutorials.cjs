@@ -7,6 +7,7 @@ const {unzipSync} = require('fflate');
 const robotsParser = require('robots-parser');
 const {TUTORIALS, PROJECTS, projectFiles} = require('./package-tutorials.cjs');
 const {PUBLICATIONS_PATH, validatePublications} = require('../plugins/tutorial-media/publications');
+const imageVideos = require('../src/data/image-tutorial-videos.json');
 
 const SITE = path.join(__dirname, '..');
 const ORIGIN = 'https://docs.phcode.dev';
@@ -120,6 +121,7 @@ function verify(build, release = false) {
   assert.equal(videos.length, captures.recordings.length, 'Every recorded video must have a player and metadata');
   assert.equal(new Set(videos.map(({schema}) => schema.contentUrl)).size, videos.length, 'Video sources must be distinct');
   assert.equal(new Set(videos.map(({schema}) => schema.name)).size, videos.length, 'Video names must be distinct');
+  const captionTextBySource = new Map();
   for (const {schema, document} of videos) {
     const source = new URL(schema.contentUrl).pathname;
     const player = document('article video').toArray().find(element => document(element).find('source').attr('src') === source);
@@ -142,6 +144,7 @@ function verify(build, release = false) {
     assert(captions.startsWith('WEBVTT'), `Invalid caption format: ${source}`);
     const cues = [...captions.matchAll(/(\d{2}:\d{2}:\d{2}\.\d{3}) --> (\d{2}:\d{2}:\d{2}\.\d{3})\n([^\n]+)/g)];
     assert(cues.length, `Missing video captions: ${source}`);
+    captionTextBySource.set(source, cues.map(cue => cue[3]));
     const seconds = stamp => {
       const [hours, minutes, value] = stamp.split(':').map(Number);
       return hours * 3600 + minutes * 60 + value;
@@ -152,6 +155,41 @@ function verify(build, release = false) {
         `Invalid caption timing: ${source} (${start} --> ${end})`);
       previousEnd = seconds(end);
     }
+  }
+
+  for (const video of Object.values(imageVideos)) {
+    const route = video.watchPath;
+    const document = page(target(route));
+    assert(indexed.has(ORIGIN + route), `Watch page missing from sitemap: ${route}`);
+    assert.equal(document('main h1').length, 1, `Expected one watch-page title: ${route}`);
+    assert.deepEqual(document('link[rel="canonical"]').map((_, el) => document(el).attr('href')).get(),
+      [ORIGIN + route], `Watch page must have its own canonical URL: ${route}`);
+    document('meta[name="robots"], meta[name="googlebot"]').each((_, el) => {
+      assert(!/noindex/i.test(document(el).attr('content') || ''), `Watch page marked noindex: ${route}`);
+    });
+    // A watch page must serve one player in the initial HTML, outside tabs or
+    // expandable sections. Google still decides whether to index the video.
+    assert.equal(document('video').length, 1, `Expected one video per watch page: ${route}`);
+    const player = document('main video');
+    assert.equal(player.length, 1, `Watch-page player missing from main content: ${route}`);
+    assert.equal(player.closest('[hidden], [role="tabpanel"], details').length, 0,
+      `Watch-page player requires an interaction to appear: ${route}`);
+    assert.equal(player.find('source').attr('src'), video.source, `Wrong watch-page recording: ${route}`);
+    const schemas = document('script[type="application/ld+json"]').toArray()
+      .map(el => JSON.parse(document(el).text())).filter(schema => schema['@type'] === 'VideoObject');
+    assert.equal(schemas.length, 1, `Expected one watch-page VideoObject: ${route}`);
+    const original = videos.find(({schema}) => new URL(schema.contentUrl).pathname === video.source);
+    assert(original, `Watch page has no corresponding tutorial recording: ${route}`);
+    assert.deepEqual(schemas[0], original.schema, `Watch-page metadata differs from its tutorial: ${route}`);
+    assert.equal(player.attr('poster'), new URL(schemas[0].thumbnailUrl[0]).pathname, `Watch-page poster mismatch: ${route}`);
+    assert.equal(player.find('track[kind="captions"]').attr('src'), video.captions, `Watch-page captions missing: ${route}`);
+    assert(imagePage('article a').toArray().some(el => imagePage(el).attr('href') === route),
+      `Tutorial does not link to watch page: ${route}`);
+    assert(document('main a').toArray().some(el => document(el).attr('href') === video.guidePath),
+      `Watch page does not link to its edition's tutorial: ${route}`);
+    target(video.guidePath);
+    assert.deepEqual(document('main details li').map((_, el) => document(el).text()).get(),
+      captionTextBySource.get(video.source), `Watch-page instructions differ from the video captions: ${route}`);
   }
 
   let indexLinks = 0;
@@ -172,7 +210,7 @@ function verify(build, release = false) {
       assert(Buffer.from(archive[`${project}/${name}`]).equals(content), `Stale practice file: ${project}/${name}`);
     }
   }
-  return `PASS: ${GUIDES.length} guides, local links and anchors, screenshots, 5 image FAQs, ${videos.length} videos with captions, ${indexLinks} AI-index links, and both practice ZIPs.` +
+  return `PASS: ${GUIDES.length} guides, local links and anchors, screenshots, 5 image FAQs, ${videos.length} videos with captions, ${Object.keys(imageVideos).length} video watch pages, ${indexLinks} AI-index links, and both practice ZIPs.` +
     (release ? ' Release publication dates are complete.' : ' Preview metadata verified.');
 }
 

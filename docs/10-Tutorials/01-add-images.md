@@ -10,7 +10,7 @@ toc_max_heading_level: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import TutorialIcon from '@site/src/components/TutorialIcon';
-import TutorialVideo from '@site/src/components/Video/TutorialVideo';
+import ImageTutorialVideo from '@site/src/components/Video/ImageTutorialVideo';
 
 You can add your own photo to an HTML page in either edition of **Phoenix Code**:
 
@@ -56,18 +56,7 @@ Choose your edition below. In **Phoenix Pro**, choose a replacement picture dire
 
 This recording uses `first-website` in **Design Mode** from start to finish. Your computer's file picker opens outside the recorded browser view.
 
-<TutorialVideo
-  metadata={{
-    name: 'Add an image in Phoenix Pro using Design Mode',
-    description: 'Replace the picture in the first-website practice project using Phoenix Pro. Open Image Gallery in Design Mode, select a photo from your device, set its alt description in Element Properties, and save.',
-    duration: 'PT38.28S',
-    dateCreated: '2026-11-10',
-  }}
-  poster="/tutorials/media/pro-image-gallery.png" width="1360" height="980" style={{width: '100%', height: 'auto'}} aria-label="Phoenix Pro walkthrough: choose a photo from your device and set its description in first-website">
-  <source src="/tutorials/media/pro-add-image-complete.mp4" type="video/mp4" />
-  <track kind="captions" src="/tutorials/media/pro-add-image-complete.vtt" srcLang="en" label="English" />
-  <a href="/tutorials/media/pro-add-image-complete.mp4">Watch the Phoenix Pro walkthrough</a>.
-</TutorialVideo>
+<ImageTutorialVideo edition="pro" showWatchLink />
 
 ### Turn on visual editing
 
@@ -125,18 +114,7 @@ For the steps below, we'll use the name `photo.jpg`. If your file is named `holi
 
 This 31-second recording starts with `photo.jpg` already copied into the project's `images` folder.
 
-<TutorialVideo
-  metadata={{
-    name: 'Add an image in Phoenix Code Community using Highlight Mode',
-    description: 'Replace the picture in the first-website practice project using free Community features. Use Highlight Mode to locate the image in HTML, select the whole img tag, replace its filename and alt description, and save.',
-    duration: 'PT31.16S',
-    dateCreated: '2026-11-10',
-  }}
-  poster="/tutorials/media/community-select-image-tag.png" width="1360" height="980" style={{width: '100%', height: 'auto'}} aria-label="Community walkthrough: replace an image using Highlight Mode in first-website">
-  <source src="/tutorials/media/community-add-image.mp4" type="video/mp4" />
-  <track kind="captions" src="/tutorials/media/community-add-image.vtt" srcLang="en" label="English" />
-  <a href="/tutorials/media/community-add-image.mp4">Watch the Community walkthrough</a>.
-</TutorialVideo>
+<ImageTutorialVideo edition="community" showWatchLink />
 
 ### Find the picture's HTML
 
