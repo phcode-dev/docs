@@ -1,0 +1,81 @@
+/* Scope syntax colors to AI answers; ordinary documentation uses its own theme. */
+.DocSearch-CodeSnippet {
+  --ai-code-background: #f6f8fa;
+  --ai-code-text: #24292f;
+  --ai-code-comment: #57606a;
+  --ai-code-tag: #0550ae;
+  --ai-code-attribute: #953800;
+  --ai-code-string: #116329;
+  --ai-code-keyword: #cf222e;
+  --ai-code-number: #0550ae;
+  --ai-code-function: #8250df;
+}
+
+[data-theme='dark'] .DocSearch-CodeSnippet {
+  --ai-code-background: #282a36;
+  --ai-code-text: #f8f8f2;
+  --ai-code-comment: #b1b9d0;
+  --ai-code-tag: #ff79c6;
+  --ai-code-attribute: #f1fa8c;
+  --ai-code-string: #50fa7b;
+  --ai-code-keyword: #bd93f9;
+  --ai-code-number: #8be9fd;
+  --ai-code-function: #50fa7b;
+}
+
+.DocSearch-Markdown-Content .DocSearch-CodeSnippet pre {
+  background: var(--ai-code-background);
+  color: var(--ai-code-text);
+}
+
+.DocSearch-Markdown-Content .DocSearch-CodeSnippet code {
+  color: var(--ai-code-text);
+}
+
+.DocSearch-CodeSnippet .token.comment,
+.DocSearch-CodeSnippet .token.prolog,
+.DocSearch-CodeSnippet .token.doctype,
+.DocSearch-CodeSnippet .token.cdata {
+  color: var(--ai-code-comment);
+}
+
+.DocSearch-CodeSnippet .token.tag,
+.DocSearch-CodeSnippet .token.selector {
+  color: var(--ai-code-tag);
+}
+
+.DocSearch-CodeSnippet .token.attr-name {
+  color: var(--ai-code-attribute);
+}
+
+.DocSearch-CodeSnippet .token.string,
+.DocSearch-CodeSnippet .token.char,
+.DocSearch-CodeSnippet .token.attr-value,
+.DocSearch-CodeSnippet .token.inserted {
+  color: var(--ai-code-string);
+}
+
+.DocSearch-CodeSnippet .token.keyword,
+.DocSearch-CodeSnippet .token.atrule,
+.DocSearch-CodeSnippet .token.deleted {
+  color: var(--ai-code-keyword);
+}
+
+.DocSearch-CodeSnippet .token.number,
+.DocSearch-CodeSnippet .token.boolean,
+.DocSearch-CodeSnippet .token.constant,
+.DocSearch-CodeSnippet .token.property,
+.DocSearch-CodeSnippet .token.regex {
+  color: var(--ai-code-number);
+}
+
+.DocSearch-CodeSnippet .token.function,
+.DocSearch-CodeSnippet .token.class-name,
+.DocSearch-CodeSnippet .token.builtin {
+  color: var(--ai-code-function);
+}
+
+.DocSearch-CodeSnippet .token.punctuation,
+.DocSearch-CodeSnippet .token.operator {
+  color: var(--ai-code-text);
+}

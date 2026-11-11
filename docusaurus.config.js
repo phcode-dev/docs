@@ -15,6 +15,7 @@ const config = {
 	tagline: "Build the web",
 	favicon: "img/favicon.ico",
 	themes: ["@docusaurus/theme-live-codeblock", "@docusaurus/theme-mermaid"],
+	clientModules: ["./src/clientModules/docsearch-code-highlighting.js"],
 	// Set the production url of your site here
 	url: "https://docs.phcode.dev",
 	// Set the /<baseUrl>/ pathname under which your site is served
