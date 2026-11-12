@@ -62,23 +62,67 @@ indexing. See [Google's video indexing report documentation](https://support.goo
   context, a link back to the relevant article edition, and expandable on-screen
   instructions. Keep the article and watch page at their own canonical URLs.
 
+## Plan and pace the recording
+
+Write a short sequence before recording: the task, each input, the visible
+response, and the finished result. Rehearse the real interface first. A duration
+limit is a ceiling, not time to fill with a stationary screen.
+
+- Keep the action and its result together. For drag and drop, show the press,
+  movement, drop target, release, and changed order. Do not substitute a button
+  click or edit away the middle of the gesture.
+- Show how a setting is chosen and leave its selected value visible briefly.
+  Do not make values change while the cursor points somewhere else.
+- Use one short instruction and one relevant visual cue at a time. Position
+  guidance near the action without covering labels, menus, or the drop target.
+  In silent clips, long text competes with watching the interface.
+- Remove setup, hesitation, and waiting that teaches nothing. Keep enough time
+  to read the instruction and recognize the response; do not speed through a
+  gesture or chain several unexplained changes to meet a duration target.
+- Use a tighter crop when a control would otherwise be unreadable, retaining
+  enough context to locate it. Avoid decorative zooms and constant cursor motion.
+- Finish on the actual result. For a conversion, inspect and show the downloaded
+  file, with an explicit label when cutting from the app to a result preview.
+  Record the file in a real viewer and preserve its page layout. Identify the
+  viewer when its appearance matters, and state the settings that affect the
+  result. A custom side-by-side arrangement of separate PDF pages can mislead
+  readers about what they will see when opening the download.
+- Review the final cut at normal speed and at the article's display size. Check
+  that a newcomer can identify the input and expected result at every step.
+  Re-time captions after editing, and keep pause, replay, and seeking available.
+
+These are our production choices informed by the following research; none of
+these studies establishes an optimal duration for a sub-30-second silent clip:
+
+| Research | Finding and scope | Application here |
+| --- | --- | --- |
+| [Mayer & Moreno (2003), *Educational Psychologist*](https://doi.org/10.1207/S15326985EP3801_6) | Their multimedia-learning research describes limited processing capacity and benefits from removing irrelevant material and aligning explanations with visuals. | Short instructions, a focused capture, and guidance aligned with the current action. |
+| [Rodemer et al. (2022), *Applied Cognitive Psychology*](https://doi.org/10.1002/acp.3973) | Timed signals improved attention and retention in an eye-tracking experiment with 28 chemistry students; this was not a software-tutorial trial. | Use selective, synchronized highlights as a design hypothesis, not a promise of improved learning. |
+| [Gold, Zacks & Flores (2017), *Cognitive Research*](https://doi.org/10.1186/s41235-016-0043-2) | Cues at meaningful event boundaries supported memory for everyday activities. | Place cuts and instruction changes between completed actions, preserving each gesture. |
+| [Garrett (2021), *British Journal of Educational Technology*](https://doi.org/10.1111/bjet.13000) | Imposed segmentation did not improve transfer or reduce cognitive load in the tested Excel tutorial; viewers used pause and rewind. | Preserve viewer control and purposeful short holds; avoid automatic long pauses at every step. |
+| [Guo, Kim & Rubin (2014), ACM Learning at Scale](https://doi.org/10.1145/2556325.2566239) | This observational study of 6.9 million MOOC viewing sessions measured engagement proxies, not mastery; tutorial and lecture viewing differed. | Do not treat watch time, speed, or a specific clip length as proof that readers can perform the task. |
+
 ## Files to use as the reference
 
-The image tutorial is the existing example:
+The image tutorial and PNG-to-PDF blog guides share the same player and watch-page layout:
 
 | File | Responsibility |
 | --- | --- |
 | [TutorialVideo.js](src/components/Video/TutorialVideo.js) | Shared playback behavior and `VideoObject` generated from the actual media URLs. |
+| [RecordedVideo.js](src/components/Video/RecordedVideo.js) | Shared recording player and small **Open video →** action for any guide. |
 | [image-tutorial-videos.json](src/data/image-tutorial-videos.json) | Shared recording details, metadata, watch and guide paths, and on-screen instructions for both image editions. |
-| [ImageTutorialVideo.js](src/components/Video/ImageTutorialVideo.js) | Reuses the same recording in the article and watch page; `showWatchLink` adds **Open video →** in the article. |
-| [ImageWatchPage.js](src/components/Video/ImageWatchPage.js) and [its styles](src/components/Video/ImageWatchPage.module.css) | Watch-page layout, metadata, return link, transcript, and responsive presentation. |
+| [png-pdf-videos.json](src/data/png-pdf-videos.json) | Recording details for the conversion and page-settings blog walkthroughs. |
+| [ImageTutorialVideo.js](src/components/Video/ImageTutorialVideo.js) and [PngPdfVideo.js](src/components/Video/PngPdfVideo.js) | Thin article components that choose a recording; `showWatchLink` adds **Open video →**. |
+| [VideoWatchPage.js](src/components/Video/VideoWatchPage.js) and [its styles](src/components/Video/VideoWatchPage.module.css) | Shared watch-page layout, metadata, return link, transcript, and responsive presentation. |
 | [Pro route](src/pages/videos/add-image-phoenix-pro.js) and [Community route](src/pages/videos/add-image-phoenix-community.js) | Separate `/videos/...` pages, one recording per page. |
+| [PNG conversion route](src/pages/videos/convert-png-to-pdf.js) and [page-settings route](src/pages/videos/png-to-pdf-page-settings.js) | The same watch-page pattern linked to blog guides. |
 | [tutorial-media-manifest.json](scripts/tutorial-media-manifest.json) | Capture provenance, project, measured duration, and any requested duration limit. |
 | [verify-tutorials.cjs](scripts/verify-tutorials.cjs) | Checks the built tutorial pages, media, watch pages, and publication metadata. |
 
-These `Image...` components and data are specific to the image tutorial. For a
-different topic, adapt or generalize the pattern with appropriate names and
-verification coverage. Do not put unrelated recordings into the image registry.
+Keep each topic's recordings in its own data file. Reuse `RecordedVideo` and
+`VideoWatchPage` with that data and add verification coverage. The `Image...`
+wrappers remain specific to the image tutorial; do not put unrelated recordings
+into its registry.
 
 ## Adding a recording and watch page
 
@@ -108,7 +152,7 @@ verification coverage. Do not put unrelated recordings into the image registry.
    guide or edition. Confirm that the watch page has its own canonical URL and
    appears in the generated sitemap, with no indexing or crawl block.
 6. Extend `scripts/verify-tutorials.cjs` for the new article and watch route. Its
-   `GUIDES` list and image-watch-page checks are explicit; it does not
+   `GUIDES`, `BLOGS`, and `WATCH_VIDEOS` lists are explicit; it does not
    automatically discover every new video page. Keep verification code in
    JavaScript and preserve the checks for shared metadata, links, captions,
    publication dates, and a single visible watch-page player.

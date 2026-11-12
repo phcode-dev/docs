@@ -8,12 +8,16 @@ const robotsParser = require('robots-parser');
 const {TUTORIALS, PROJECTS, projectFiles} = require('./package-tutorials.cjs');
 const {PUBLICATIONS_PATH, validatePublications} = require('../plugins/tutorial-media/publications');
 const imageVideos = require('../src/data/image-tutorial-videos.json');
+const pngPdfVideos = require('../src/data/png-pdf-videos.json');
 
 const SITE = path.join(__dirname, '..');
 const ORIGIN = 'https://docs.phcode.dev';
 const GUIDES = ['tutorials', 'tutorials/add-images', 'tutorials/link-pages',
   'tutorials/share-website', 'tutorials/bootstrap', 'tutorials/run-python',
   'tutorials/find-and-replace', 'tutorials/replace-in-files', 'Features/find-in-files'];
+const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-pdf-without-losing-quality'];
+const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
+const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos)];
 
 function videoDuration(file) {
   const data = fs.readFileSync(file);
@@ -87,8 +91,7 @@ function verify(build, release = false) {
 
   const sitemap = load(fs.readFileSync(path.join(build, 'sitemap.xml'), 'utf8'), {xmlMode: true});
   const indexed = new Set(sitemap('loc').map((_, element) => sitemap(element).text()).get());
-  for (const guide of GUIDES) {
-    const route = '/docs/' + guide;
+  for (const route of ARTICLE_ROUTES) {
     const document = page(target(route));
     assert(indexed.has(ORIGIN + route), `Tutorial missing from sitemap: ${route}`);
     assert.equal(document('article h1').length, 1, `Expected one tutorial title: ${route}`);
@@ -101,7 +104,9 @@ function verify(build, release = false) {
       const url = document(element).attr(element.tagName === 'a' ? 'href' : 'src');
       if (url) target(url, route);
     });
-    document('article img').each((_, element) => {
+    // Blog author avatars sit outside the Markdown article body.
+    const articleImages = route.startsWith('/blog/') ? 'article .markdown img' : 'article img';
+    document(articleImages).each((_, element) => {
       const image = document(element);
       assert(image.attr('alt') && image.attr('width') && image.attr('height'), `Incomplete image attributes: ${route}`);
     });
@@ -111,11 +116,11 @@ function verify(build, release = false) {
   assert.equal(imagePage('article details').length, 5, 'Expected five image FAQs');
   const captures = JSON.parse(fs.readFileSync(path.join(SITE, 'scripts/tutorial-media-manifest.json'), 'utf8'));
   const publications = validatePublications(JSON.parse(fs.readFileSync(path.join(build, PUBLICATIONS_PATH), 'utf8'))).videos;
-  const videos = GUIDES.flatMap(guide => {
-    const document = page(target('/docs/' + guide));
+  const videos = ARTICLE_ROUTES.flatMap(route => {
+    const document = page(target(route));
     const schemas = document('script[type="application/ld+json"]').toArray()
       .map(element => JSON.parse(document(element).text())).filter(schema => schema['@type'] === 'VideoObject');
-    assert.equal(schemas.length, document('article video').length, `Video metadata missing: ${guide}`);
+    assert.equal(schemas.length, document('article video').length, `Video metadata missing: ${route}`);
     return schemas.map(schema => ({schema, document}));
   });
   assert.equal(videos.length, captures.recordings.length, 'Every recorded video must have a player and metadata');
@@ -157,7 +162,7 @@ function verify(build, release = false) {
     }
   }
 
-  for (const video of Object.values(imageVideos)) {
+  for (const video of WATCH_VIDEOS) {
     const route = video.watchPath;
     const document = page(target(route));
     assert(indexed.has(ORIGIN + route), `Watch page missing from sitemap: ${route}`);
@@ -183,7 +188,7 @@ function verify(build, release = false) {
     assert.deepEqual(schemas[0], original.schema, `Watch-page metadata differs from its tutorial: ${route}`);
     assert.equal(player.attr('poster'), new URL(schemas[0].thumbnailUrl[0]).pathname, `Watch-page poster mismatch: ${route}`);
     assert.equal(player.find('track[kind="captions"]').attr('src'), video.captions, `Watch-page captions missing: ${route}`);
-    assert(imagePage('article a').toArray().some(el => imagePage(el).attr('href') === route),
+    assert(original.document('article a').toArray().some(el => original.document(el).attr('href') === route),
       `Tutorial does not link to watch page: ${route}`);
     assert(document('main a').toArray().some(el => document(el).attr('href') === video.guidePath),
       `Watch page does not link to its edition's tutorial: ${route}`);
@@ -210,7 +215,7 @@ function verify(build, release = false) {
       assert(Buffer.from(archive[`${project}/${name}`]).equals(content), `Stale practice file: ${project}/${name}`);
     }
   }
-  return `PASS: ${GUIDES.length} guides, local links and anchors, screenshots, 5 image FAQs, ${videos.length} videos with captions, ${Object.keys(imageVideos).length} video watch pages, ${indexLinks} AI-index links, and both practice ZIPs.` +
+  return `PASS: ${GUIDES.length} guides, ${BLOGS.length} blog posts, local links and anchors, screenshots, 5 image FAQs, ${videos.length} videos with captions, ${WATCH_VIDEOS.length} video watch pages, ${indexLinks} AI-index links, and both practice ZIPs.` +
     (release ? ' Release publication dates are complete.' : ' Preview metadata verified.');
 }
 

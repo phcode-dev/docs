@@ -1,4 +1,21 @@
 /* Keep these articles readable at narrow widths and enlarged text sizes. */
+.png-pdf-figure {
+  margin: 1.5rem 0 2rem;
+}
+
+.png-pdf-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.png-pdf-figure figcaption {
+  margin-top: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
 article:has(.png-pdf-guide-marker) .avatar {
   flex-wrap: wrap;
   row-gap: 0.5rem;

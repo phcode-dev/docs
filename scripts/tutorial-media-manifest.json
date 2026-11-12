@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-11-11",
+  "captured_at": "2026-11-12",
   "product": "Phoenix Code for the web",
   "product_url": "https://web.phcode.dev/",
   "projects": {
@@ -50,7 +50,10 @@
       "system_file_picker_recorded": false,
       "duration_seconds": 26,
       "duration_limit_seconds": 30,
-      "frame_size": [1120, 800],
+      "frame_size": [
+        1120,
+        800
+      ],
       "caption_placement": "Above the screen recording, clear of player controls"
     },
     {
@@ -62,7 +65,10 @@
       "system_file_picker_recorded": false,
       "duration_seconds": 28,
       "duration_limit_seconds": 30,
-      "frame_size": [1120, 800],
+      "frame_size": [
+        1120,
+        800
+      ],
       "caption_placement": "Above the screen recording, clear of player controls"
     },
     {
@@ -74,8 +80,71 @@
       "system_file_picker_recorded": false,
       "duration_seconds": 24,
       "duration_limit_seconds": 30,
-      "frame_size": [1120, 800],
+      "frame_size": [
+        1120,
+        800
+      ],
       "caption_placement": "Above the screen recording, clear of player controls"
+    },
+    {
+      "file": "static/tutorials/media/png-to-pdf-convert.mp4",
+      "product": "Phoenix Code PNG to PDF Converter",
+      "product_url": "https://phcode.dev/tools/png-to-pdf.html",
+      "project": "Built-in PNG-to-PDF examples",
+      "workflow": "Drag and drop two sample PNGs into page order, choose A4 with automatic orientation and 10 mm margins, then create and download the PDF. Check both saved pages in Chrome's PDF viewer.",
+      "captured_at": "2026-11-12T03:21:35.247Z",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 19.966667,
+      "duration_limit_seconds": 30,
+      "frame_size": [
+        1000,
+        860
+      ],
+      "caption_placement": "Instruction strip above the converter or PDF viewer, clear of the controls",
+      "verification": [
+        "Downloaded PDF contains 2 pages",
+        "Landscape source remains 480 by 320 pixels in the PDF",
+        "Native dropdown choices captured from the actual browser",
+        "Captions aligned to visible instruction changes in the final encoded video",
+        "No browser page errors during recording",
+        "Pointer press, drag and release reorder the actual cards from 1,2 to 2,1 without Move up buttons",
+        "Downloaded PDF order is landscape parrot, then portrait coastal picture",
+        "Downloaded PDF opened in the Chromium PDF viewer; recorded file matches the download byte for byte",
+        "Actual continuous scroll changes the PDF viewer page indicator from 1 of 2 to 2 of 2"
+      ],
+      "presentation": "Real converter interface and native menus, followed by the actual downloaded file opened in the Chromium PDF viewer; original page layout preserved",
+      "result_captured_at": "2026-11-12T05:43:48.021Z"
+    },
+    {
+      "file": "static/tutorials/media/png-to-pdf-settings.mp4",
+      "product": "Phoenix Code PNG to PDF Converter",
+      "product_url": "https://phcode.dev/tools/png-to-pdf.html",
+      "project": "Built-in PNG-to-PDF examples",
+      "workflow": "Choose A4, 10 mm margins and transparent image areas using the converter menus. Create and download the PDF, then check the saved landscape page in Chrome's PDF viewer.",
+      "captured_at": "2026-11-12T03:22:50.609Z",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 11.433333,
+      "duration_limit_seconds": 30,
+      "frame_size": [
+        1000,
+        640
+      ],
+      "caption_placement": "Instruction strip above the converter or PDF viewer, clear of the controls",
+      "verification": [
+        "Downloaded PDF contains 1 page",
+        "Landscape source remains 480 by 320 pixels in the PDF",
+        "Native dropdown choices captured from the actual browser",
+        "Captions aligned to visible instruction changes in the final encoded video",
+        "No browser page errors during recording",
+        "Transparent source retains an alpha mask in the downloaded PDF",
+        "Downloaded PDF opened in the Chromium PDF viewer; recorded file matches the download byte for byte"
+      ],
+      "presentation": "Real converter interface and native menus, followed by the actual downloaded file opened in the Chromium PDF viewer; original page layout preserved",
+      "result_captured_at": "2026-11-12T05:45:27.346Z"
     }
   ],
   "sample_photo": {

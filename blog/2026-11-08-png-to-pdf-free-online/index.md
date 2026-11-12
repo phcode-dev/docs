@@ -2,12 +2,14 @@
 slug: how-to-convert-png-to-pdf-free-online
 title: "How to Convert PNG to PDF for Free Online"
 description: "Combine PNG images into one PDF in your browser. Arrange pages, choose paper settings and download without uploading your images or creating an account."
+image: /tutorials/media/png-to-pdf-convert-poster.png
 date: 2026-11-08T06:00:00+05:30
 authors: [charly]
 tags: [Tools, PDF]
 ---
 
 import '@site/src/css/png-pdf-guides.css';
+import PngPdfVideo from '@site/src/components/Video/PngPdfVideo';
 
 <span className="png-pdf-guide-marker" hidden />
 
@@ -16,6 +18,12 @@ You can turn a PNG screenshot, scanned page or diagram into a PDF without instal
 This guide walks through choosing images, arranging pages and saving the result. For color, resolution and printing details, see [what PNG-to-PDF conversion preserves](./../2026-11-08-png-to-pdf-quality/index.md).
 
 <!-- truncate -->
+
+## Watch a complete conversion
+
+Follow along with **Try an example** in the converter. This walkthrough drags the parrot above the coastal picture, chooses **A4** with **10 mm** margins, and opens the downloaded PDF in Chrome's PDF viewer. Select **Choose PNG files** when you are ready to use your own images.
+
+<PngPdfVideo topic="convert" showWatchLink />
 
 ## 1. Choose your PNG images
 
@@ -38,6 +46,13 @@ Each image becomes one PDF page. The order of the cards is the order of the page
 
 The card's action buttons retain their own actions. You can remove an unwanted image without restarting the whole batch.
 
+<figure className="png-pdf-figure">
+  <a href="/tutorials/media/png-to-pdf-page-order.png" aria-label="Open full-size screenshot of the page order controls">
+    <img src="/tutorials/media/png-to-pdf-page-order.png" width="1088" height="691" loading="lazy" decoding="async" alt="Two sample PNGs appear as Page 1 and Page 2, each with Move up, Move down and Remove buttons." />
+  </a>
+  <figcaption>Drag the second card above the first to change the page order. Start from its preview, filename, or empty space; the buttons are separate actions.</figcaption>
+</figure>
+
 ## 3. Choose paper and background settings
 
 The settings affect every page, with automatic orientation determined separately for each image when a paper size is selected.
@@ -59,7 +74,16 @@ The page previews show orientation, margins and image placement. They use smalle
 
 Select **Create PDF** and keep the browser tab open while it works. When the PDF is ready, select **Download PDF** to save it to your device. Open that downloaded file to check page order, readability and appearance before printing or sharing it.
 
+Each picture is a separate page; your PDF viewer may show the pages one below another. If you keep **Fit to image**, the pages follow your images' dimensions instead of the A4 paper shown in the video.
+
 Changing the page order or settings after creation requires creating the PDF again. Your original PNG files stay on your device.
+
+<figure className="png-pdf-figure">
+  <a href="/tutorials/media/png-to-pdf-download-ready.png" aria-label="Open full-size screenshot of the finished conversion">
+    <img src="/tutorials/media/png-to-pdf-download-ready.png" width="1088" height="691" loading="lazy" decoding="async" alt="The parrot is now Page 1 and the coastal picture is Page 2. A4 and 10 mm margins are selected, and Download PDF is available." />
+  </a>
+  <figcaption>After Create PDF finishes, Download PDF saves the result. Open the saved file to check both pages.</figcaption>
+</figure>
 
 ## How many images can you combine?
 
