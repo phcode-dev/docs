@@ -2,12 +2,14 @@
 slug: how-to-convert-png-to-pdf-without-losing-quality
 title: "PNG to PDF Quality: Pixels, Color and Print Size"
 description: "Understand PNG-to-PDF image quality: original pixels, bit depth, color profiles, transparency, stored print resolution and paper-size settings."
+image: /tutorials/media/png-to-pdf-settings-poster.png
 date: 2026-11-08T06:00:00+05:30
 authors: [charly]
 tags: [Tools, PDF]
 ---
 
 import '@site/src/css/png-pdf-guides.css';
+import PngPdfVideo from '@site/src/components/Video/PngPdfVideo';
 
 <span className="png-pdf-guide-marker" hidden />
 
@@ -53,7 +55,16 @@ These are arithmetic examples, not a guarantee that a particular image meets a p
 
 Changing paper size does not create more detail. A larger placement spreads the same pixels over a larger area; a smaller placement brings them closer together.
 
+<figure className="png-pdf-figure">
+  <img src="/tutorials/media/png-to-pdf-print-size.svg" width="880" height="408" loading="lazy" decoding="async" alt="The same 2400-pixel image provides 300 pixels per inch at 8 inches wide, or 200 pixels per inch at 12 inches wide." />
+  <figcaption>The longer line represents a wider print of the same image. Its pixel count has not increased.</figcaption>
+</figure>
+
 ## Choose a page size for the intended use
+
+The walkthrough starts with the converter's landscape sample already added. It shows the paper, margin and transparency choices, then shows the downloaded PDF in Chrome's PDF viewer. To follow along, choose **Try an example** in the [converter](https://phcode.dev/tools/png-to-pdf.html) and remove the coastal picture, leaving the parrot.
+
+<PngPdfVideo topic="settings" showWatchLink />
 
 ### Fit to image
 
@@ -74,6 +85,13 @@ The image fits inside the selected margins without cropping or stretching. This 
 Choose **Transparent** to retain transparent image areas, or **White** to place them on white. The checkerboard in the converter is only a preview aid; it is not added to the PDF.
 
 PDF readers usually display transparent pages on white. A white-looking page in a reader therefore does not, by itself, tell you whether image transparency was flattened. Check the downloaded PDF in the application where you intend to use it.
+
+<figure className="png-pdf-figure">
+  <a href="/tutorials/media/png-to-pdf-a4-transparent.png" aria-label="Open full-size screenshot of the paper and transparency settings">
+    <img src="/tutorials/media/png-to-pdf-a4-transparent.png" width="1088" height="506" loading="lazy" decoding="async" alt="The converter shows A4, Automatic orientation, 10 mm margins and Transparent selected, alongside the landscape parrot preview." />
+  </a>
+  <figcaption>Use the preview to check placement and margins. Check the downloaded PDF for fine detail and its appearance in your intended viewer.</figcaption>
+</figure>
 
 ## Check the downloaded PDF, not just the preview
 

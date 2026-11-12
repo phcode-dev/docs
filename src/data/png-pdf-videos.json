@@ -1,0 +1,56 @@
+{
+  "convert": {
+    "watchPath": "/videos/convert-png-to-pdf",
+    "guidePath": "/blog/how-to-convert-png-to-pdf-free-online",
+    "title": "Convert PNG images to one PDF",
+    "context": "This walkthrough uses Try an example in the Phoenix Code PNG to PDF converter. Drag the parrot above the coastal picture, choose A4 with 10 mm margins, and download the two-page PDF. The ending shows that file in Chrome's PDF viewer and scrolls to page 2. Use Choose PNG files for your own images.",
+    "source": "/tutorials/media/png-to-pdf-convert.mp4",
+    "poster": "/tutorials/media/png-to-pdf-convert-poster.png",
+    "captions": "/tutorials/media/png-to-pdf-convert.vtt",
+    "label": "PNG to PDF walkthrough: load sample images, drag to reorder pages, choose A4 and download the PDF",
+    "metadata": {
+      "name": "Convert PNG images to one PDF with Phoenix Code",
+      "description": "Drag and drop two sample PNGs into page order, choose A4 with automatic orientation and 10 mm margins, then create and download the PDF. Check both saved pages in Chrome's PDF viewer.",
+      "duration": "PT19.966667S",
+      "dateCreated": "2026-11-12"
+    },
+    "width": 1000,
+    "height": 860,
+    "instructions": [
+      "Load two sample PNGs.",
+      "Drag the parrot above the coast.",
+      "Choose A4; keep Automatic orientation.",
+      "Add 10 mm margins.",
+      "Create the PDF.",
+      "Download the finished file.",
+      "Downloaded PDF in Chrome: page 1 of 2.",
+      "Scroll down to see page 2."
+    ]
+  },
+  "settings": {
+    "watchPath": "/videos/png-to-pdf-page-settings",
+    "guidePath": "/blog/how-to-convert-png-to-pdf-without-losing-quality",
+    "title": "Choose PNG-to-PDF page settings",
+    "context": "This walkthrough starts with the landscape parrot sample already added. To follow along, choose Try an example in the converter and remove the coastal picture. Choose the paper, margins and transparent-area setting from the menus, then download the PDF. The ending shows that file in Chrome's PDF viewer.",
+    "source": "/tutorials/media/png-to-pdf-settings.mp4",
+    "poster": "/tutorials/media/png-to-pdf-settings-poster.png",
+    "captions": "/tutorials/media/png-to-pdf-settings.vtt",
+    "label": "PNG to PDF settings walkthrough: change from Fit to image to A4, set margins and transparency, then create and download",
+    "metadata": {
+      "name": "Choose PNG-to-PDF paper, margins and transparency",
+      "description": "Choose A4, 10 mm margins and transparent image areas using the converter menus. Create and download the PDF, then check the saved landscape page in Chrome's PDF viewer.",
+      "duration": "PT11.433333S",
+      "dateCreated": "2026-11-12"
+    },
+    "width": 1000,
+    "height": 640,
+    "instructions": [
+      "Choose A4; keep Automatic orientation.",
+      "Add 10 mm margins.",
+      "Keep transparent image areas.",
+      "Create the PDF.",
+      "Download the finished file.",
+      "Downloaded PDF in Chrome: A4 landscape."
+    ]
+  }
+}
