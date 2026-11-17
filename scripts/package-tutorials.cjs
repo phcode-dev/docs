@@ -3,7 +3,7 @@ const path = require('node:path');
 const {zipSync} = require('fflate');
 
 const TUTORIALS = path.join(__dirname, '../static/tutorials');
-const PROJECTS = ['first-website', 'bootstrap-starter'];
+const PROJECTS = ['first-website', 'bootstrap-starter', 'image-text-layout'];
 
 function projectFiles(folder, relative = '') {
   const files = {};

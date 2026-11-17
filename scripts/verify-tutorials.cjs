@@ -9,15 +9,17 @@ const {TUTORIALS, PROJECTS, projectFiles} = require('./package-tutorials.cjs');
 const {PUBLICATIONS_PATH, validatePublications} = require('../plugins/tutorial-media/publications');
 const imageVideos = require('../src/data/image-tutorial-videos.json');
 const pngPdfVideos = require('../src/data/png-pdf-videos.json');
+const layoutVideos = require('../src/data/layout-tutorial-videos.json');
 
 const SITE = path.join(__dirname, '..');
 const ORIGIN = 'https://docs.phcode.dev';
 const GUIDES = ['tutorials', 'tutorials/add-images', 'tutorials/link-pages',
   'tutorials/share-website', 'tutorials/bootstrap', 'tutorials/run-python',
-  'tutorials/find-and-replace', 'tutorials/replace-in-files', 'Features/find-in-files'];
+  'tutorials/find-and-replace', 'tutorials/replace-in-files', 'Features/find-in-files',
+  'tutorials/image-text-layout'];
 const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-pdf-without-losing-quality'];
 const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
-const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos)];
+const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos), ...Object.values(layoutVideos)];
 
 function videoDuration(file) {
   const data = fs.readFileSync(file);
@@ -215,7 +217,7 @@ function verify(build, release = false) {
       assert(Buffer.from(archive[`${project}/${name}`]).equals(content), `Stale practice file: ${project}/${name}`);
     }
   }
-  return `PASS: ${GUIDES.length} guides, ${BLOGS.length} blog posts, local links and anchors, screenshots, 5 image FAQs, ${videos.length} videos with captions, ${WATCH_VIDEOS.length} video watch pages, ${indexLinks} AI-index links, and both practice ZIPs.` +
+  return `PASS: ${GUIDES.length} guides, ${BLOGS.length} blog posts, local links and anchors, screenshots, 5 image FAQs, ${videos.length} videos with captions, ${WATCH_VIDEOS.length} video watch pages, ${indexLinks} AI-index links, and ${PROJECTS.length} practice ZIPs.` +
     (release ? ' Release publication dates are complete.' : ' Preview metadata verified.');
 }
 

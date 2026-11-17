@@ -21,6 +21,7 @@ The guides open with **Phoenix Pro**, using Design Mode for visual editing. Choo
 
 ## Try something else
 
+- **[Put an image next to text](/docs/tutorials/image-text-layout):** arrange a photo and text with Flexbox, then check that they stack neatly on a phone. Includes its own practice project.
 - **[Build a page with Bootstrap](/docs/tutorials/bootstrap):** open a ready-made page, change its button color, and try it at a phone-sized width.
 - **[Run your first Python program](/docs/tutorials/run-python):** create a file and make it print a message in the desktop app.
 

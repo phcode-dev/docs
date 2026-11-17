@@ -104,17 +104,20 @@ these studies establishes an optimal duration for a sub-30-second silent clip:
 
 ## Files to use as the reference
 
-The image tutorial and PNG-to-PDF blog guides share the same player and watch-page layout:
+The image and layout tutorials share the same player and watch-page layout as the
+PNG-to-PDF blog guides:
 
 | File | Responsibility |
 | --- | --- |
 | [TutorialVideo.js](src/components/Video/TutorialVideo.js) | Shared playback behavior and `VideoObject` generated from the actual media URLs. |
 | [RecordedVideo.js](src/components/Video/RecordedVideo.js) | Shared recording player and small **Open video →** action for any guide. |
 | [image-tutorial-videos.json](src/data/image-tutorial-videos.json) | Shared recording details, metadata, watch and guide paths, and on-screen instructions for both image editions. |
+| [layout-tutorial-videos.json](src/data/layout-tutorial-videos.json) | Shared recording details for the image-next-to-text tutorial's Pro walkthrough. |
 | [png-pdf-videos.json](src/data/png-pdf-videos.json) | Recording details for the conversion and page-settings blog walkthroughs. |
 | [ImageTutorialVideo.js](src/components/Video/ImageTutorialVideo.js) and [PngPdfVideo.js](src/components/Video/PngPdfVideo.js) | Thin article components that choose a recording; `showWatchLink` adds **Open video →**. |
 | [VideoWatchPage.js](src/components/Video/VideoWatchPage.js) and [its styles](src/components/Video/VideoWatchPage.module.css) | Shared watch-page layout, metadata, return link, transcript, and responsive presentation. |
 | [Pro route](src/pages/videos/add-image-phoenix-pro.js) and [Community route](src/pages/videos/add-image-phoenix-community.js) | Separate `/videos/...` pages, one recording per page. |
+| [Pro layout route](src/pages/videos/image-next-to-text-phoenix-pro.js) | The same watch-page pattern linked to the image-next-to-text tutorial. |
 | [PNG conversion route](src/pages/videos/convert-png-to-pdf.js) and [page-settings route](src/pages/videos/png-to-pdf-page-settings.js) | The same watch-page pattern linked to blog guides. |
 | [tutorial-media-manifest.json](scripts/tutorial-media-manifest.json) | Capture provenance, project, measured duration, and any requested duration limit. |
 | [verify-tutorials.cjs](scripts/verify-tutorials.cjs) | Checks the built tutorial pages, media, watch pages, and publication metadata. |

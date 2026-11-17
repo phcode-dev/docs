@@ -1,0 +1,30 @@
+{
+  "pro": {
+    "watchPath": "/videos/image-next-to-text-phoenix-pro",
+    "guidePath": "/docs/tutorials/image-text-layout?edition=pro",
+    "title": "Put an image next to text in Phoenix Pro",
+    "context": "The image-text-layout practice project is already open in Design Mode, with Edit Mode on and Save changes to set to Inline. Select the shared container and set Flex, placement, wrapping, and spacing. Save index.html, then check the finished layout at desktop and phone widths. Download the project from the full guide.",
+    "source": "/tutorials/media/pro-image-text-layout.mp4",
+    "poster": "/tutorials/media/layout-result-desktop.png",
+    "captions": "/tutorials/media/pro-image-text-layout.vtt",
+    "label": "Phoenix Pro walkthrough: arrange a photo and text using Layout controls, save index.html, and check the phone preview",
+    "metadata": {
+      "name": "Put an image next to text with Phoenix Pro's Layout controls",
+      "description": "Select the photo-and-text container in Design Mode, set Flex with centered alignment, wrapping, and a 24 px gap, then save index.html and check the phone preview.",
+      "duration": "PT26S",
+      "dateCreated": "2026-11-17"
+    },
+    "width": 1360,
+    "height": 964,
+    "instructions": [
+      "Select the container around the photo and text.",
+      "Open Layout. Change Block to Flex.",
+      "Keep Row. Choose the middle-left placement dot.",
+      "Choose Wrap so the items can stack on a phone.",
+      "Set Gap to 24 px, then press Enter.",
+      "Close the panel. Click Save File to save index.html.",
+      "Turn off Edit Mode to check the finished row.",
+      "Choose iPhone 14 to check the narrow layout."
+    ]
+  }
+}

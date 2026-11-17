@@ -12,6 +12,11 @@
     },
     "bootstrap-starter": {
       "index.html": "71e816a1452cbd3ecb090b4268397aff8fcb6d585cd599c8551ae9f4bcea5461"
+    },
+    "image-text-layout": {
+      "images/woodland.jpg": "95ef6002ec0119b339ccf05f4eb5801563845a94092fe294454bb931f8dec556",
+      "index.html": "5ecd0f57d1829a47df753540f99ee3a626c92b9017fa9202483c593a9eb6aa6f",
+      "styles.css": "e10ac2b85a95c49d4f219f9213e447f30efb25fac73ee513c034c3323d3864b0"
     }
   },
   "recordings": [
@@ -145,6 +150,34 @@
       ],
       "presentation": "Real converter interface and native menus, followed by the actual downloaded file opened in the Chromium PDF viewer; original page layout preserved",
       "result_captured_at": "2026-11-12T05:45:27.346Z"
+    },
+    {
+      "file": "static/tutorials/media/pro-image-text-layout.mp4",
+      "project": "image-text-layout",
+      "workflow": "Design Mode throughout: select the shared section, keep the default Inline target, set Flex, Center / Left, Wrap, and a 24 px gap; click Save File to save index.html, disable Edit Mode, and choose iPhone 14 to check wrapping.",
+      "captured_at": "2026-11-17T10:29:48.833Z",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 26,
+      "duration_limit_seconds": 30,
+      "frame_size": [
+        1360,
+        964
+      ],
+      "caption_placement": "Instruction strip above the recording, clear of the controls",
+      "presentation": "Full-resolution Chrome screencast of real Phoenix Pro pointer and keyboard actions. The prepared practice project is already open. Timing is slowed uniformly to 26 seconds for readable instructions.",
+      "verification": [
+        "The saved index.html section has inline display:flex, align-items:center, flex-wrap:wrap, gap:24px and justify-content:flex-start",
+        "index.html is no longer dirty after clicking Save File",
+        "Computed layout uses Flex, Wrap, centered alignment, and a 24 px gap",
+        "The recorded phone preview stacks the text below the photo",
+        "The separate Community editor workflow saves the four CSS declarations; the wide preview forms a row, and the 390 px preview stacks with a 24 px gap and no horizontal overflow",
+        "Production documentation build, tutorial release tests, tutorial asset verification, and local destination checks passed",
+        "Article and watch page checked at 1440 px and 390 px widths in light and dark themes with no horizontal page overflow",
+        "Visible muted playback, offscreen pause, reader pause preservation, seeking, reduced-motion manual playback, keyboard FAQ use, and watch-page return navigation verified in Chrome",
+        "Article-to-watch-page navigation and return each retain one VideoObject without duplicate metadata"
+      ]
     }
   ],
   "sample_photo": {
