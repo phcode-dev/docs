@@ -66,7 +66,7 @@ npm run verify:tutorials
 ```
 
 The checks cover tutorial links and anchors, image descriptions, video metadata
-and captions, AI documentation indexes, and the contents of both practice ZIPs.
+and captions, AI documentation indexes, and the contents of the practice ZIPs.
 `npm run build` refreshes the API documentation from its source repository. If
 the API files are already generated locally, `npm run docusaurus -- build` builds
 the current checkout without refreshing them.
