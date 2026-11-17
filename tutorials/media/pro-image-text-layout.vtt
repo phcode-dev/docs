@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.530
+Select the container around the photo and text.
+
+00:00:02.530 --> 00:00:06.951
+Open Layout. Change Block to Flex.
+
+00:00:06.951 --> 00:00:09.388
+Keep Row. Choose the middle-left placement dot.
+
+00:00:09.388 --> 00:00:12.791
+Choose Wrap so the items can stack on a phone.
+
+00:00:12.791 --> 00:00:15.158
+Set Gap to 24 px, then press Enter.
+
+00:00:15.158 --> 00:00:17.960
+Close the panel. Click Save File to save index.html.
+
+00:00:17.960 --> 00:00:20.601
+Turn off Edit Mode to check the finished row.
+
+00:00:20.601 --> 00:00:26.000
+Choose iPhone 14 to check the narrow layout.
