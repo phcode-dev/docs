@@ -23,15 +23,26 @@
     {
       "file": "static/tutorials/media/community-add-image.mp4",
       "project": "first-website",
-      "workflow": "Highlight Mode, select and replace img tag, save",
+      "workflow": "Choose Highlight Mode, click the existing picture, select only its src path and replace it, update only the alt description, save, and check the replacement while keeping the other attributes.",
       "on_screen_instructions": true,
       "system_file_picker_recorded": false,
-      "duration_seconds": 31.16,
+      "duration_seconds": 28,
       "frame_size": [
-        1360,
-        980
+        1280,
+        844
       ],
-      "caption_placement": "Above the screen recording, clear of player controls"
+      "caption_placement": "Above the screen recording, clear of player controls",
+      "captured_at": "2026-11-18T19:27:57.585Z",
+      "duration_limit_seconds": 30,
+      "highlighted_controls": true,
+      "presentation": "Actual Phoenix Code pointer and keyboard actions in the first-website practice project, using free Community features. The full recording is slowed uniformly to 28 seconds for readable instructions.",
+      "verification": [
+        "Project root is first-website and the active file is index.html",
+        "Clicking the existing picture in Highlight Mode places the cursor on its img tag",
+        "The saved file matches the original exactly except for images/trail.svg becoming images/photo.jpg and the alt description becoming Sunlit forest path",
+        "index.html is no longer dirty after saving with Ctrl+S",
+        "Live Preview loads one image with src images/photo.jpg and alt Sunlit forest path; width 960 and height 480 are unchanged"
+      ]
     },
     {
       "file": "static/tutorials/media/pro-add-image-complete.mp4",
