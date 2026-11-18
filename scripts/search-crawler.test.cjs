@@ -178,6 +178,31 @@ test('AI extraction keeps descriptions when inline images have no usable source 
   }
 });
 
+test('AI extraction keeps published control icons inline and restores the article SVGs', () => {
+  const context = fixture('https://docs.phcode.dev/docs/guide', '<main><p>Click <span data-tutorial-icon-label="preview"><svg data-tutorial-icon="preview" data-tutorial-icon-src="/img/tutorial-icons/preview.svg"><polygon points="0,0 1,1" /></svg> <strong>lightning bolt</strong></span>, then <span data-tutorial-icon-label="pen"><svg data-tutorial-icon-src="/img/tutorial-icons/pen-active.svg"></svg>orange pen</span>.</p></main>');
+  const original = context.$.html();
+  context.helpers.markdown = selector => context.$(selector).html();
+  const [record] = extractMarkdownRecords(context);
+  assert.match(record.text, /src="https:\/\/docs\.phcode\.dev\/img\/tutorial-icons\/preview\.svg" alt="lightning bolt icon"/);
+  assert.match(record.text, /src="https:\/\/docs\.phcode\.dev\/img\/tutorial-icons\/pen-active\.svg"/);
+  assert.doesNotMatch(record.text, /<svg|<polygon/);
+  assert.equal(context.$.html(), original);
+  context.helpers.markdown = () => { throw new Error('conversion failed'); };
+  assert.throws(() => extractMarkdownRecords(context), /conversion failed/);
+  assert.equal(context.$.html(), original);
+});
+
+test('control-icon annotations cannot introduce foreign, unsafe or unrelated image URLs', () => {
+  for (const source of ['https://other.test/img/tutorial-icons/preview.svg', 'javascript:alert(1)', 'data:image/svg+xml,svg', '/img/other.svg', '/img/tutorial-icons/preview.svg?mode=unknown']) {
+    const context = fixture('https://docs.phcode.dev/docs/guide', `<main><span data-tutorial-icon-label="preview"><svg data-tutorial-icon-src="${source}"></svg>lightning bolt</span></main>`);
+    const original = context.$.html();
+    context.helpers.markdown = selector => context.$(selector).html();
+    const [record] = extractMarkdownRecords(context);
+    assert.doesNotMatch(record.text, /<img/);
+    assert.equal(context.$.html(), original);
+  }
+});
+
 test('generated hosted actions run without CommonJS imports or closure dependencies', () => {
   const actions = vm.runInNewContext(`(${renderActions()})`, {URL, URLSearchParams});
   assert.deepEqual(Array.from(actions, action => action.indexName), ['phcode', 'markdown-index']);
