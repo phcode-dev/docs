@@ -346,6 +346,52 @@ every generated answer includes an image.
   Answer completeness remains a sampled quality limitation; no separate automated
   review-and-repair stage is included in this release.
 
+### Retrieval review and text/font tutorial on 18 November 2026
+
+- Reviewed the text-editing and font-changing conversation that repeatedly
+  retrieved overlapping feature guides. Added
+  [Edit text and change fonts](../../docs/10-Tutorials/09-edit-text-fonts.md)
+  as a complete beginner walkthrough: Phoenix Pro's visual controls first,
+  Community's HTML/CSS alternative, and the existing Trail Notes practice ZIP.
+  The guide distinguishes website fonts from the editor font and explains why
+  Pro's inline styles can override the Community stylesheet example.
+- Captured four original 1360 × 900 screenshots in Phoenix Code for the web on
+  18 November 2026, using a fresh `first-website` project copied from the
+  repository's practice files. Verified direct text editing in Design Mode,
+  System → Arial, 40 px sizing, saved inline HTML, Highlight Mode's matching
+  heading, and the saved Community CSS result. The free workflow was tested
+  in the same licensed app; the screenshots do not imply a license switch.
+- Tested retrieval-instruction candidates in Agent Studio without publishing
+  them. In the same-UI image comparison, the original used two searches and
+  retained the necessary controls; candidates used one but omitted gallery
+  access or editing-mode steps. A project-replacement request and its current-file
+  correction used two searches followed by one with either configuration.
+  These samples do not establish a reliable efficiency gain. All candidate
+  prompt changes were discarded. Reloaded Agent Studio and verified both
+  published prompts exactly match the retained repository files.
+- The actual AI search tool response already excludes `_highlightResult`.
+  Its presence in a regular search API response is not evidence of duplicated
+  AI context. Dashboard aggregate token counts do not measure unique document
+  text or, by themselves, billing. No index-field truncation, retrieval cap,
+  model change, or procedure shortening was applied.
+- For future comparisons, use the same interface and retained conversation
+  history for both configurations. A text-only API replay that drops prior
+  tool results is not comparable to the Agent Studio follow-up. Include new
+  phrasings and complete action reviews; an identical cached opening question
+  is not another independent quality sample.
+- Live npm registry and official release notes checked again: DocSearch `5.2.0`
+  and Docusaurus `3.10.2` remain the latest stable versions. The installed and
+  locked `5.2.0-phcode.2` source build retains the documented fixes; no dependency
+  upgrade was needed.
+- The 32 search tests and seven tutorial release tests passed, along with
+  practice packaging, the production build, and generated search, tutorial,
+  and local-link checks. Browser review covered both editions at desktop and
+  390 px widths, light/dark themes, loaded full-size screenshot links, and the
+  Community section URL selecting its tab. Existing unrelated build warnings
+  remain. The new guide still needs website deployment and an Algolia recrawl;
+  measure retrieval again once it is in the live index. It is not yet evidence
+  of better production answers.
+
 ## Official references
 
 - [Docusaurus query-string tabs](https://docusaurus.io/docs/markdown-features/tabs#query-string)
