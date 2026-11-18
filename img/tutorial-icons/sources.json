@@ -1,0 +1,35 @@
+{
+  "font_awesome": {
+    "version": "6.1.2",
+    "copyright": "2022 Fonticons, Inc.",
+    "license": "CC BY 4.0",
+    "url": "https://fontawesome.com/license/free"
+  },
+  "bootstrap_icons": {
+    "copyright": "2019-2024 The Bootstrap Authors",
+    "license": "MIT",
+    "url": "https://github.com/twbs/icons/blob/main/LICENSE"
+  },
+  "adaptation": "Original shapes; colors inherit the documentation theme. SVG sprite symbols are isolated from their source sheets.",
+  "icons": {
+    "layout": "https://web.phcode.dev/ — original SVG from the Styles Bar Layout button, captured 2026-11-17",
+    "startProject": "phoenix/src/styles/images/sprites.svg#newFolder",
+    "search": "phoenix/src/styles/images/sprites.svg#search",
+    "showInTree": "phoenix/src/styles/images/sprites.svg#binoculars",
+    "expand": "svgs/solid/expand.svg",
+    "restore": "svgs/solid/compress.svg",
+    "pen": "svgs/solid/pencil.svg",
+    "modes": "svgs/solid/caret-down.svg",
+    "save": "svgs/solid/floppy-disk.svg",
+    "laptop": "svgs/solid/laptop.svg",
+    "gallery": "phoenix-pro/images/imageGallery.svg",
+    "link": "phoenix-pro/images/link.svg",
+    "insert": "phoenix-pro/images/insertElement.svg",
+    "add": "phoenix-pro/images/plusSmall.svg",
+    "chooseImage": "phoenix-pro/images/selectImageFromComputer.svg",
+    "close": "phoenix-pro/images/close.svg",
+    "share": "phoenix/src/styles/images/share-fill.svg",
+    "popout": "phoenix/src/extensionsIntegrated/Phoenix-live-preview/images/sprites.svg#open-icon",
+    "preview": "phoenix/src/styles/images/live_development_sprites.svg#bolt"
+  }
+}

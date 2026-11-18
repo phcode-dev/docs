@@ -17,6 +17,7 @@ Links below open the complete documentation pages, including screenshots, videos
 - [Replace text in one file](https://docs.phcode.dev/docs/tutorials/find-and-replace): Find and replace a word or phrase in the file you have open in Phoenix Code. Review each match, replace the text, and save your changes.
 - [Replace text across files](https://docs.phcode.dev/docs/tutorials/replace-in-files): Find text across your project with the magnifying glass, then use Replace in Files in Phoenix Code to review, replace, and save your changes.
 - [Put an image next to text in Phoenix Code](https://docs.phcode.dev/docs/tutorials/image-text-layout): Put an image next to text using Phoenix Pro's Layout controls or CSS in Community. Follow the steps with a practice project, screenshots, and a short video.
+- [Edit text and change fonts in Phoenix Code](https://docs.phcode.dev/docs/tutorials/edit-text-fonts): Change a heading, choose its font, and adjust its size in Phoenix Code. Follow Phoenix Pro's visual steps or edit HTML and CSS in Community with a practice website and screenshots.
 
 ## Getting Started
 
