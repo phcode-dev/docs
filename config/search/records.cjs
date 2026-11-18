@@ -136,6 +136,21 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
         return null;
       }
     };
+    // Inline SVG geometry disappears during Markdown conversion. The component
+    // supplies a build-generated image URL for each actual control shape.
+    $('main svg[data-tutorial-icon-src]').each((_, element) => {
+      const icon = $(element);
+      const source = imageUrl(icon.attr('data-tutorial-icon-src'), true);
+      if (!source) return;
+      const target = new URL(source);
+      if (target.origin !== pageUrl.origin ||
+          !/\/img\/tutorial-icons\/[a-zA-Z][a-zA-Z0-9-]*\.svg$/.test(target.pathname) ||
+          target.search || target.hash) return;
+      const label = icon.closest('[data-tutorial-icon-label]').text().trim();
+      const image = $('<img>').attr('src', source).attr('alt', label ? `${label} icon` : 'Control icon');
+      icon.replaceWith(image);
+      restoreMedia.push(() => image.replaceWith(icon));
+    });
     $('main img').each((_, element) => {
       const image = $(element);
       const source = image.attr('src');

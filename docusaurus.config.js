@@ -144,6 +144,7 @@ const config = {
 	],
 	plugins: [
 		"@docsearch/docusaurus-adapter",
+		"./plugins/tutorial-icons",
 		["./plugins/tutorial-media", {
 			publish: process.env.PHCODE_PUBLISH_TUTORIAL_VIDEOS === "1",
 			publicationsFile: process.env.PHCODE_VIDEO_PUBLICATIONS_FILE,

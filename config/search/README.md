@@ -164,6 +164,34 @@ Test a new conversation after publishing prompts; an existing saved answer does
 not regenerate. Prompt changes improve sampled behavior but do not guarantee that
 every generated answer includes an image.
 
+### Small control icons in answers
+
+`TutorialIcon` keeps the actual Phoenix control shapes inline in the article.
+The [tutorial-icons plugin](../../plugins/tutorial-icons/index.js) exports those
+same shapes to `/img/tutorial-icons/` after a production build, including active
+colors and the source/license files. The component supplies the exported URL in
+`data-tutorial-icon-src`. During AI extraction, the Crawler replaces that SVG with
+an image carrying its written control label, then restores the original DOM.
+Without this conversion, Markdown retains the label but loses the SVG icon.
+
+Use the shared component when documenting a control. Add new shapes and their
+attribution to its existing icon map and `sources.json`; the export automatically
+includes them. Do not maintain a separate set of AI icons, substitute emoji, or
+teach the agent invented image paths. The answer uses an ordinary Markdown image
+beside the written name, with empty alternative text when the label already names
+the control. Scoped CSS keeps these images at text size in both themes. They are
+separate from instructional screenshots and need no full-size link.
+
+Deploy the website before applying the generated Crawler actions and recrawling.
+In the hosted URL Tester, inspect a guide that uses the lightning bolt and another
+control: its AI Markdown must contain absolute `/img/tutorial-icons/` image URLs
+with the correct labels. Verify those images return HTTP 200, then test a fresh
+Ask AI conversation. Check a wide light-theme answer and a narrow dark-theme
+answer: the icons should load inline, retain the product's shapes, and leave the
+text and screenshots readable. `npm run test:search` checks export/extraction;
+`npm run verify:search` checks the built page annotations and exported assets.
+Prompt changes alone cannot restore an icon absent from the retrieved source.
+
 ## Verification recorded on 18 November 2026
 
 - The live npm registry and official release notes were checked: DocSearch
@@ -392,6 +420,46 @@ every generated answer includes an image.
   measure retrieval again once it is in the live index. It is not yet evidence
   of better production answers.
 
+### Sonnet and control-icon follow-up on 18 November 2026
+
+- The live documentation agent now uses the `Phoenix Docs Sonnet Production`
+  OpenAI-compatible provider with `anthropic/claude-sonnet-5.5` through OpenRouter.
+  Its agent ID is unchanged, so this model switch does not require a site build.
+  The separate production key has no expiry; billing uses the manually funded
+  prepaid balance. Automatic top-ups remain off. No secret is stored in this
+  repository. The former Azure `gpt-6-luna` provider remains available for rollback
+  through Agent Studio; save and reload after any provider change.
+- Live browser checks confirmed the new model/key were used, source screenshots
+  loaded, HTML was highlighted, and tested source links returned HTTP 200. A model
+  switch does not repair missing or misleading source evidence. The earlier
+  auto-update benchmark still needs a documentation/grounding fix: the internal
+  API command is not evidence of a user-facing menu option.
+- The new control-icon export retains all 19 original SVG shapes, with normal
+  and active variants, theme support, and attribution. All 36 JavaScript search
+  tests and 14 tutorial/link tests passed, along with practice packaging, the
+  production build, and generated search, tutorial, and local-link checks.
+  Existing unrelated anchor/blog warnings remain.
+- A local fixture rendered the exported icons through the installed DocSearch
+  Markdown renderer and built stylesheet. Desktop light and 390 px dark checks
+  confirmed loaded 20 px icons, readable labels, and no horizontal overflow.
+  This is renderer verification, not a claim that the live AI index already
+  contains the new icon URLs. Deploy this website change, apply the generated
+  Crawler actions, and recrawl before checking icon use in fresh live answers.
+- Shorter-answer experiments were saved in unpublished Agent Studio drafts and
+  checked against the prompts actually sent in preview requests. They produced
+  clearer action groups and some narrower follow-ups, but also omitted access
+  steps in one sample and favored replacement in a broad add-image request.
+  The original configuration also added unrequested alternatives. These samples
+  do not establish a reliable quality improvement, so the brevity changes were
+  not promoted. The repository retains the existing answer rules with only the
+  new source-backed icon guidance. Apply that guidance with the icon deployment;
+  the live agent still has its previous prompts. Do not publish the experimental
+  drafts as part of this release.
+- The live npm registry and official release notes were checked again: DocSearch
+  `5.2.0` and Docusaurus `3.10.2` remain the latest stable releases. Manifest,
+  lockfile, and the maintained `5.2.0-phcode.2` build agree; no package upgrade
+  was needed.
+
 ## Official references
 
 - [Docusaurus query-string tabs](https://docusaurus.io/docs/markdown-features/tabs#query-string)
@@ -400,3 +468,5 @@ every generated answer includes an image.
 - [Algolia attribute ranking strategies](https://www.algolia.com/doc/api-reference/api-parameters/attributeCriteriaComputedBy)
 - [Algolia response caching and cost controls](https://www.algolia.com/blog/product/guardrails-agent-studio)
 - [Google robots metadata](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag)
+- [Docusaurus postBuild lifecycle](https://docusaurus.io/docs/api/plugin-methods/lifecycle-apis#postbuildprops)
+- [Color schemes in embedded SVG images](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme#embedded_elements)

@@ -1,4 +1,18 @@
 /* Scope syntax colors to AI answers; ordinary documentation uses its own theme. */
+/* Control icons are inline images, unlike the larger instructional screenshots. */
+.DocSearch-Markdown-Content img[src*="/img/tutorial-icons/"] {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 0.1em;
+  vertical-align: -0.25em;
+  color-scheme: light;
+}
+
+[data-theme='dark'] .DocSearch-Markdown-Content img[src*="/img/tutorial-icons/"] {
+  color-scheme: dark;
+}
+
 .DocSearch-CodeSnippet {
   --ai-code-background: #f6f8fa;
   --ai-code-text: #24292f;

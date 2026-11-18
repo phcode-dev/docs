@@ -1,15 +1,18 @@
 import React, {cloneElement} from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import icons from './icons';
 import styles from './styles.module.css';
 
 // Always pair an icon with its written name in the instructions.
 export default function TutorialIcon({name, label, active = false}) {
+  const imageUrl = useBaseUrl(`/img/tutorial-icons/${name}${active ? '-active' : ''}.svg`);
   if (!icons[name]) throw new Error(`Unknown tutorial icon: ${name}`);
   const icon = cloneElement(icons[name], {
     className: `${styles.icon}${active ? ` ${styles.active}` : ''}`,
     'aria-hidden': true,
     focusable: 'false',
     'data-tutorial-icon': name,
+    'data-tutorial-icon-src': imageUrl,
   });
   const [firstWord, ...remainingWords] = label.split(' ');
   return (

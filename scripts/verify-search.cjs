@@ -29,7 +29,18 @@ function verifySearchBuild(buildDirectory = path.resolve(__dirname, '../build'))
     assert.equal(result.searchParams.get('edition'), edition, 'Search result must select the target edition');
     assert.equal(result.hash, `#${anchor}`, 'Search result must keep its target section');
   }
-  console.log('Search release checks passed: robots instructions and edition-specific section links.');
+  const tutorial = readPage('docs/tutorials/add-images.html');
+  const inlineIcons = tutorial('svg[data-tutorial-icon-src]');
+  assert.ok(inlineIcons.length > 0, 'Tutorial control icons need published image URLs for Ask AI');
+  inlineIcons.each((_, element) => {
+    const url = tutorial(element).attr('data-tutorial-icon-src');
+    assert.match(url, /^\/img\/tutorial-icons\/[a-zA-Z][a-zA-Z0-9-]*\.svg$/);
+    const xml = fs.readFileSync(path.join(buildDirectory, url.slice(1)), 'utf8');
+    const $ = cheerio.load(xml, {xmlMode: true});
+    assert.equal($('svg').attr('viewBox'), tutorial(element).attr('viewBox'), `${url}: control geometry must match the article`);
+    assert.equal($('svg').attr('width'), '20', `${url}: icons must have an intrinsic inline size`);
+  });
+  console.log('Search release checks passed: robots, edition links, and published control icons.');
 }
 
 if (require.main === module) verifySearchBuild(process.argv[2]);

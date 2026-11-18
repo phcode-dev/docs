@@ -6,7 +6,7 @@
     "docusaurus": "docusaurus",
     "test:tutorials": "node --test --test-reporter=tap scripts/tutorial-release.test.cjs",
     "test:links": "node --test --test-reporter=tap scripts/verify-links.test.cjs",
-    "test:search": "node --test --test-reporter=tap scripts/search-tabs.test.cjs scripts/search-crawler.test.cjs scripts/docsearch-package.test.cjs",
+    "test:search": "node --test --test-reporter=tap scripts/search-tabs.test.cjs scripts/search-crawler.test.cjs scripts/docsearch-package.test.cjs scripts/tutorial-icons.test.cjs",
     "package:tutorials": "node scripts/package-tutorials.cjs",
     "verify:tutorials": "node scripts/verify-tutorials.cjs",
     "verify:links": "node scripts/verify-links.cjs",
