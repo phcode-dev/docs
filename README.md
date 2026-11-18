@@ -9,7 +9,7 @@ CC BY License Copyright (c) 2022-present, core.ai
 
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern
+This website is built using [Docusaurus](https://docusaurus.io/), a modern
 static website generator.
 
 ### Installation
@@ -48,6 +48,19 @@ destination paths; Docusaurus and the tutorial checks handle section anchors.
 External site availability and temporary server errors still need live monitoring.
 Run `npm run test:links` to test the checker. After a direct
 `npm run docusaurus -- build`, run `npm run verify:links` separately.
+
+### Search and Ask AI checks
+
+Run `npm run test:search` before releasing search changes. The JavaScript tests
+cover edition-specific links, crawler extraction, and the maintained DocSearch
+package. Normal builds also run `npm run verify:search` to check the search page's
+robots tag and tab metadata in the generated HTML. Run it separately after a
+direct `npm run docusaurus -- build`.
+
+See [search configuration](config/search/README.md) for the supported Algolia
+settings, agent instructions, deployment and recrawl order, and query checks.
+The reviewed DocSearch source dependency has its own
+[provenance, rebuild instructions, and removal criteria](vendor/docsearch-react/README.md).
 
 ### Tutorial release checks
 

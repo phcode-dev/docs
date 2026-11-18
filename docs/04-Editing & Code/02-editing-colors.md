@@ -8,6 +8,36 @@ import VideoPlayer from '@site/src/components/Video/player';
 
 This section provides an overview of the core color editing features in **Phoenix Code**.
 
+## Change input text colors
+
+To change the color of text typed into an HTML input, set its CSS `color` property. Choose the steps for your edition below.
+
+### Phoenix Pro: use the Layers panel
+
+1. Open your page in **Live Preview**, turn on [Edit Mode](/docs/Pro%20Features/live-preview-edit), and select the input in the [Layers panel](/docs/Pro%20Features/layers-panel).
+2. In **Styles**, choose **element.style** to change only this input, or choose an existing CSS rule to change every element it matches.
+3. Click **+** in the rule header. Enter `color` as the property and `#2563eb` as the value, then press **Enter**. If a `color` declaration already exists, edit its value instead. You can also click the color swatch to open the picker.
+4. Save your changes. Turn off Edit Mode, type into the input in Live Preview, and check the result.
+
+The Layers panel is a Pro feature. The Styles Bar's **Text color** button is not shown for inputs.
+
+### Community (free): edit your CSS
+
+1. Open the stylesheet linked to your HTML page, such as `styles.css`.
+2. Add this rule, or update the `color` value in an existing input rule:
+
+```css
+input {
+  color: #2563eb;
+}
+```
+
+3. Save with **Ctrl+S** on Windows/Linux or **Cmd+S** on macOS. Type into the input in Live Preview to check it.
+
+This rule applies to all inputs. To target one field, use its class or ID instead of `input`. These code-editing steps also work in Pro.
+
+Placeholder text uses a separate rule, such as `input::placeholder { color: #6b7280; }`. See MDN's [`color` property](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color) and [`::placeholder` selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::placeholder).
+
 ## Inline Color Editor
 **Inline Color Editor** lets you edit colors directly inside **Phoenix Code** using a color picker.
 

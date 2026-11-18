@@ -1,0 +1,14 @@
+[
+  {"query":"text color","expectedPath":"/docs/Pro%20Features/styles-bar#text-color","maxRank":3},
+  {"query":"how to change input text colors","expectedPath":"/docs/editing-colors#change-input-text-colors","maxRank":5},
+  {"query":"find in files","expectedPath":"/docs/Features/find-in-files","maxRank":1},
+  {"query":"find and replace","expectedPath":"/docs/tutorials/find-and-replace","maxRank":3},
+  {"query":"run python","expectedPath":"/docs/tutorials/run-python","maxRank":3},
+  {"query":"image next to text","expectedPath":"/docs/tutorials/image-text-layout","maxRank":3},
+  {"query":"copy your picture","expectedPath":"/docs/tutorials/add-images?edition=community#copy-your-picture","maxRank":3},
+  {"query":"png to pdf quality","expectedPath":"/blog/how-to-convert-png-to-pdf-without-losing-quality","maxRank":3},
+  {"query":"png to pdf free online","expectedPath":"/blog/how-to-convert-png-to-pdf-free-online","maxRank":3},
+  {"query":"Phoenix Code 5.5","expectedPath":"/blog/release-5.5","maxRank":3},
+  {"query":"getCandidateFiles","expectedPath":"/api/API-Reference/search/FindInFiles#getcandidatefilesscope--promise","maxRank":3},
+  {"query":"CommandManager","expectedPath":"/api/API-Reference/command/CommandManager","maxRank":3}
+]
