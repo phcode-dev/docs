@@ -1,17 +1,53 @@
 ---
 title: Managing App Updates
 slug: "/managed-updates"
+description: Control automatic updates in the Phoenix Code desktop app or configure an update server for managed devices.
 ---
 
 # Managing App Updates
 
-🔄 Point the Phoenix Code desktop app at your own update server.
+Control updates on your computer or on devices you manage.
 
 ## Overview
 
 By default, the Phoenix Code desktop app checks the official Phoenix Code update server for new versions. System administrators can point it at their own server with a config file. This lets you decide which build your devices install and when.
 
 This applies to the desktop app only.
+
+## Turn off automatic updates on your computer
+
+There is no **Help → Auto Update** menu switch in Phoenix Code. The desktop app
+has an advanced `autoUpdate` preference, which you edit in the preferences file.
+The `HELP_AUTO_UPDATE` name in the developer API reference is an internal command;
+it is not a menu location.
+
+1. In the desktop app, choose **File → Open Preferences File**.
+2. Edit **phcode.json** on the right. The **defaultPreferences.json** file on the
+   left is read-only. Add `"autoUpdate": false` inside the existing outer braces,
+   keeping your other settings and separating properties with commas. If the
+   property already exists, change its value instead of adding a duplicate.
+
+   For an otherwise empty preferences file:
+
+   ```json
+   {
+     "autoUpdate": false
+   }
+   ```
+
+3. Save **phcode.json**. Reopen **File → Open Preferences File** and check that
+   `autoUpdate` is still `false` in your saved settings.
+
+The app can still check for new versions and show an update notification. This
+preference stops the automatic update flow; it does not cancel an update already
+downloaded or waiting for a restart. You can still choose **Help → Check for
+Updates** to update manually. To restore automatic updates, change the value to
+`true` and save.
+
+For screenshots of the preferences editor, see
+[Editing Preferences](/docs/editing-text#editing-preferences).
+To control which versions a school or workplace receives, use the administrator
+configuration below.
 
 ## Config File
 

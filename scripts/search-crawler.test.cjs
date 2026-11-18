@@ -52,6 +52,42 @@ test('section links select the edition without losing encoded paths, unrelated q
   assert.deepEqual(record.weight, {level: 3});
 });
 
+test('nested article results group by their containing section without merging editions or independent API entries', () => {
+  const html = '<main><h1 id="guide">Guide</h1><h2 id="colors">Colors</h2><h3 id="input">Input</h3><h3 id="button" data-search-params="edition=community">Button</h3><h2 id="fonts">Fonts</h2><h3 id="size">Size</h3></main>';
+  const url = 'https://docs.phcode.dev/docs/A%20Guide';
+  const docRecords = ['colors', 'input', 'button', 'size', 'unknown'].map(anchor => ({url: `${url}#${anchor}`}));
+  const context = fixture(url, html, docRecords);
+  const original = context.$.html();
+  const records = extractDocSearchRecords(context);
+  assert.equal(records[0].section_url, `${url}#colors`);
+  assert.equal(records[1].section_url, `${url}#colors`);
+  assert.equal(records[1].url, `${url}#input`); // Keep the best result's precise destination.
+  assert.equal(records[2].section_url, `${url}?edition=community#colors`);
+  assert.equal(records[3].section_url, `${url}#fonts`);
+  assert.equal(records[4].section_url, `${url}#unknown`); // Do not guess missing headings.
+  assert.equal(records.length, docRecords.length); // Group at query time; discard no content.
+  assert.equal(context.$.html(), original);
+  const apiUrl = 'https://docs.phcode.dev/api/API-Reference/example';
+  const api = extractDocSearchRecords(fixture(apiUrl, html, ['colors', 'input'].map(anchor => ({url: `${apiUrl}#${anchor}`}))));
+  assert.notEqual(api[0].section_url, api[1].section_url);
+});
+
+test('API evidence context survives every AI chunk without changing ordinary guide text', () => {
+  const api = fixture('https://docs.phcode.dev/api/API-Reference/command/Commands', '<main><h1>Commands</h1><p>HELP_AUTO_UPDATE toggles auto update.</p></main>');
+  api.helpers.splitTextIntoRecords = ({baseRecord}) => [
+    {...baseRecord, text: 'HELP_AUTO_UPDATE toggles auto update.'},
+    {...baseRecord, text: 'A second command.'},
+  ];
+  const original = api.$.html();
+  for (const record of extractMarkdownRecords(api)) {
+    assert.match(record.text, /^Source context: developer API reference\./);
+    assert.match(record.text, /does not establish a visible menu item/);
+  }
+  assert.equal(api.$.html(), original);
+  const guide = fixture('https://docs.phcode.dev/docs/guide', '<main><h1>Guide</h1><p>Open the menu.</p></main>');
+  assert.doesNotMatch(extractMarkdownRecords(guide)[0].text, /Source context: developer API/);
+});
+
 test('OS and sharing tabs use their own query keys; API and blog classification stays distinct', () => {
   for (const [path, parameters, category] of [
     ['/docs/tutorials/run-python', 'system=macos', 'Documentation'],

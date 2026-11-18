@@ -20,7 +20,9 @@ this directory.
    the existing indices through Algolia's settings UI or `setSettings` API.
    Preserve settings not listed in the deltas. Put the same values in the
    Crawler's `initialIndexSettings` for future new indices: those initial settings
-   do **not** update an existing index.
+   do **not** update an existing index. When introducing a grouping field such
+   as `section_url`, finish the crawl in step 7 and verify the field is present
+   before enabling that field on the existing index.
 6. Copy [agent-instructions.md](agent-instructions.md) into this application's
    Agent Studio agent prompt and [system-instructions.md](system-instructions.md)
    into its System prompt editor. Apply the system prompt for testing, test both
@@ -55,6 +57,17 @@ this directory.
 - Both indices omit blog listings, tag archives, and the site's search page.
   Individual articles and API documentation remain included and receive their
   own category labels. No client-side result filtering hides these sources.
+- Keyword records carry `section_url`, the nearest containing level-two heading
+  with the record's edition and other query parameters preserved. Native Algolia
+  distinct grouping returns the best matching subsection within each section;
+  its actual result URL still points to that subsection. All source records stay
+  searchable. API entries and unknown anchors keep their individual URLs so
+  independent interfaces are not collapsed into an article section.
+- Every API chunk in the AI index identifies itself as developer reference
+  material. Command names and preference keys alone do not establish visible
+  controls. An end-user guide must supply the access path; configuration advice
+  also needs the exact file, key, value, and scope. Keep this distinction in both
+  extraction and instructions rather than adding feature-specific prompt recipes.
 - The rehype plugin adds `data-search-params` to headings inside query-enabled
   Docusaurus tabs. Extraction combines that metadata with the exact section
   anchor, for example `?edition=community#copy-your-picture`. Docusaurus itself
@@ -129,6 +142,8 @@ source guides so future documentation changes do not require prompt recipes.
 | `find and replace` | The current-file walkthrough, opening Replace, entering both values, reviewing/replacing matches, and saving. Distinguish project-wide replacement without forcing both procedures into one answer. |
 | `What does alt mean?` | A short explanation of the image description, with a small example if useful. Do not repeat the full image tutorial. |
 | `Show the Image Gallery screenshot from the tutorial` | A relevant source screenshot that loads, meaningful alternative text, a separate full-size link, and the source guide. Check that it fits the desktop and mobile answer panel. |
+| `I cannot find Auto Update in Help` | Never infer a menu from `HELP_AUTO_UPDATE`. Once the updated Managing App Updates guide is deployed and crawled, explain the desktop `autoUpdate` preference in `phcode.json`, valid JSON, saving, and its limits. Until that evidence is retrieved, state the documentation gap without guessing a setting or substituting an update-server setup. |
+| A request for an undocumented scheduled sync control | Search the docs, distinguish missing evidence from an impossible feature, and avoid invented menus, intervals, or configuration keys. Ask for the visible label if needed; do not turn related Git or publishing features into the requested control. |
 
 Retain modes, dialogs, locations, and saving when shortening prose. A documentation
 link can provide screenshots and optional practice files; it should not replace
@@ -427,8 +442,8 @@ Prompt changes alone cannot restore an icon absent from the retrieved source.
   Its agent ID is unchanged, so this model switch does not require a site build.
   The separate production key has no expiry; billing uses the manually funded
   prepaid balance. Automatic top-ups remain off. No secret is stored in this
-  repository. The former Azure `gpt-6-luna` provider remains available for rollback
-  through Agent Studio; save and reload after any provider change.
+  repository. The former Azure `gpt-6-luna` provider was subsequently removed in
+  the production-only cleanup recorded below; it is no longer a rollback option.
 - Live browser checks confirmed the new model/key were used, source screenshots
   loaded, HTML was highlighted, and tested source links returned HTTP 200. A model
   switch does not repair missing or misleading source evidence. The earlier
@@ -460,12 +475,82 @@ Prompt changes alone cannot restore an icon absent from the retrieved source.
   lockfile, and the maintained `5.2.0-phcode.2` build agree; no package upgrade
   was needed.
 
+### Production cleanup and grounding follow-up on 18 November 2026
+
+- Removed the seven unused draft/benchmark agents and the unused OpenRouter test
+  and Azure providers from Algolia. Only the published documentation agent and
+  `Phoenix Docs Sonnet Production` provider remain. The two production indices
+  and crawler are retained; no public MCP server was configured. This cleanup
+  did not revoke keys or change billing in external provider accounts. Do not
+  recreate test endpoints during routine QA: use the retained agent's unsaved
+  preview, then save only the reviewed instructions.
+- The earlier control-icon website release is deployed. Its extraction and
+  prompt guidance were applied, crawled, and checked in fresh live answers.
+  The earlier pending-deployment and draft-prompt statements above describe
+  their respective checkpoints, not the current production state.
+- Checked the current Phoenix `prod` source at
+  `1cd3f2f3d59dc19f44c3d70d038728a6e5ba9959`. Both desktop updater implementations
+  register `HELP_AUTO_UPDATE` but do not add it to Help. They read the `autoUpdate`
+  preference; a pending update and some checks can precede that preference gate.
+  Added the precise desktop preference workflow and limitations to
+  [Managing App Updates](../../docs/09-Schools%20%26%20Workplaces/03-managed-updates.md).
+  This guide change is local and still needs website deployment and a recrawl.
+  Do not claim that the live assistant can already retrieve its new instructions.
+- Published and read back the new extraction actions and `initialIndexSettings`.
+  The completed crawl had 252 successful URLs, 43 ignored URLs, and no failures;
+  it retained 5,449 keyword records and 203 AI records. All 116 API records carry
+  the source-context label, and no AI record contains embedded image data.
+  A 1,000-record keyword sample had no missing `section_url`; sampled API entries
+  retained their exact URL as the grouping key. The managed configuration,
+  schedule, scope, and 30% record-loss safeguard were preserved.
+- After the refreshed records were live, changed only the existing keyword
+  index's distinct attribute from `url` to `section_url`. Its one-way
+  `find and replace → replace text` synonym remains. All 15 cases in
+  [evaluation.json](evaluation.json) passed. Styles Bar's Text Color section
+  moved from fourth to second for `text color` and `text colour`; font size and
+  Python terminal remained first. The actual full search page also showed the
+  corrected ordering. A tested proximity-first ranking candidate harmed font
+  results and was rejected; no query-specific boost or client-side filtering
+  was introduced.
+- Saved and reloaded both reviewed prompts, confirming exact matches with this
+  directory. The production provider/model and tools were retained. Preview
+  checks covered image insertion, an `alt` follow-up, Community replacement,
+  an undocumented scheduled-sync control, the missing auto-update switch, and
+  a change of topic to project-wide replacement. The image workflow kept both
+  editions, required controls, loaded icons, and two screenshots; replacement
+  kept Highlight Mode and editing the existing tag. The follow-up did not repeat
+  the tutorial. Unsupported-control samples did not invent a menu or config key.
+  Earlier candidates reproduced an unrelated administrator procedure; the final
+  instructions instead link adjacent material without substituting its steps.
+- These are sampled improvements, not a guarantee of concise or error-free
+  answers. Some responses still include extra explanation and repeated searches.
+  The current auto-update response acknowledges the missing end-user procedure;
+  retest it after deploying and crawling the new guide. Record visible answer
+  outcomes without saving raw diagnostic request/response traffic that may
+  include private configuration.
+- A fresh answer on the deployed search page retained the Pro and Community
+  insertion workflows, two loaded screenshots, six source-backed control icons
+  (including the lightning bolt), highlighted HTML, and encoded source links.
+  At 390 px, the screenshots fitted the panel, icons remained 20 px, and neither
+  the page nor panel overflowed horizontally. The answer still labeled the Pro
+  description step optional; keep checking source completeness rather than
+  treating visual rendering or answer length as a complete quality score.
+- The live npm registry and official release notes were checked again:
+  DocSearch `5.2.0` and Docusaurus `3.10.2` are still the latest stable versions.
+  Manifest, lockfile, and maintained `5.2.0-phcode.2` upstream provenance agree;
+  no dependency upgrade was needed. All 38 search tests and 14 tutorial/link
+  tests passed, along with packaging, the production build, and generated
+  search, tutorial, and local-link checks. Existing unrelated anchor/blog
+  warnings remain. The new preference instructions were reviewed at desktop
+  and 390 px widths with no horizontal overflow.
+
 ## Official references
 
 - [Docusaurus query-string tabs](https://docusaurus.io/docs/markdown-features/tabs#query-string)
 - [Algolia extraction actions](https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/)
 - [Algolia initial index settings](https://www.algolia.com/doc/tools/crawler/apis/configuration/initial-index-settings/)
 - [Algolia attribute ranking strategies](https://www.algolia.com/doc/api-reference/api-parameters/attributeCriteriaComputedBy)
+- [Algolia distinct grouping attribute](https://www.algolia.com/doc/api-reference/api-parameters/attributeForDistinct)
 - [Algolia response caching and cost controls](https://www.algolia.com/blog/product/guardrails-agent-studio)
 - [Google robots metadata](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag)
 - [Docusaurus postBuild lifecycle](https://docusaurus.io/docs/api/plugin-methods/lifecycle-apis#postbuildprops)
