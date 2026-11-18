@@ -96,7 +96,7 @@ Links below open the complete documentation pages, including screenshots, videos
 
 - [Phoenix Pro for Education (Free)](https://docs.phcode.dev/docs/phoenix-pro-school): A large portion of the Phoenix Code community comes from schools and universities, where students and teachers value ease of use and a low learning curve. Education has always been central to our mission, and we want every student to…
 - [AI Control For School And Work](https://docs.phcode.dev/docs/control-ai): 🔐 Disable or manage AI features in Phoenix Code for educational and enterprise environments.
-- [Managing App Updates](https://docs.phcode.dev/docs/managed-updates): 🔄 Point the Phoenix Code desktop app at your own update server.
+- [Managing App Updates](https://docs.phcode.dev/docs/managed-updates): Control automatic updates in the Phoenix Code desktop app or configure an update server for managed devices.
 
 ## Optional
 
