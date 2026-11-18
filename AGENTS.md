@@ -27,10 +27,11 @@ While `@docsearch/react` uses a local `file:` dependency, ordinary `npm update`
 will not bring Algolia's changes into that package. Follow the
 [DocSearch maintenance notes](vendor/docsearch-react/README.md) when upgrading:
 
-- Check whether the official release fixes encoded URLs and the Sidepanel's
-  accessible name, including its header translations. Verify the behavior with
-  the regression cases; keep unsafe URL scheme rejection intact.
-- If both fixes are included, return to the official package and retire the
+- Check whether the official release fixes encoded URLs, the Sidepanel's
+  accessible name (including its header translations), and linked-image Markdown
+  rendering. Verify the behavior with the regression cases; keep unsafe URL
+  scheme rejection and HTML escaping intact.
+- If all three fixes are included, return to the official package and retire the
   custom build and override. Update packaging-specific tests while retaining
   the behavior checks.
 - If a fix is still missing, update the custom build to the newer compatible

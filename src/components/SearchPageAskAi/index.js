@@ -1,7 +1,7 @@
 import React, {useCallback, useMemo, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import Translate from '@docusaurus/Translate';
+import Translate, {translate} from '@docusaurus/Translate';
 import {useAlgoliaAskAi, useAlgoliaThemeConfig} from '@docsearch/docusaurus-adapter/client';
 import {Sidepanel} from '@docsearch/react/sidepanelPanel';
 import '@docsearch/react/style';
@@ -56,6 +56,17 @@ export default function SearchPageAskAi({query}) {
               <Sidepanel
                 key={activeQuery}
                 {...sidePanelAskAi}
+                translations={{
+                  ...sidePanelAskAi.translations,
+                  header: {
+                    ...sidePanelAskAi.translations?.header,
+                    title: translate({
+                      id: 'searchPage.askAi.title',
+                      message: 'Phoenix Code AI',
+                      description: 'Title and accessible name of the documentation AI panel',
+                    }),
+                  },
+                }}
                 initialMessage={initialMessage}
                 isOpen={isOpen}
                 onOpen={openPanel}

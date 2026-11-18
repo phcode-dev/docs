@@ -56,6 +56,33 @@ index a398d866..6c845c46 100644
          </div>
          <div className="DocSearch-Sidepanel-Header--right">
            {sidepanelState !== 'conversation-history' &&
+diff --git a/src/utils/markdown.ts b/src/utils/markdown.ts
+index 5bc25966..15052f03 100644
+--- a/src/utils/markdown.ts
++++ b/src/utils/markdown.ts
+@@ -22,16 +22,18 @@ renderer.code = ({ text, lang = '', escaped }: Tokens.Code): string => {
+   `;
+ };
+
+-renderer.link = ({ href, title, text }: Tokens.Link): string => {
++renderer.link = function ({ href, title, tokens }: Tokens.Link): string {
+   const safeHref = escapeHtml(sanitizeUrl(href));
+-  const textEscaped = escapeHtml(text);
++  // Render nested Markdown through the same safe renderers. Escaping the raw
++  // label turns linked screenshots and formatted labels into literal Markdown.
++  const content = this.parser.parseInline(tokens);
+
+   if (!safeHref) {
+-    return textEscaped;
++    return content;
+   }
+
+   const titleAttr = title ? ` title="${escapeHtml(title)}"` : '';
+-  return `<a href="${safeHref}"${titleAttr} target="_blank" rel="noopener noreferrer">${textEscaped}</a>`;
++  return `<a href="${safeHref}"${titleAttr} target="_blank" rel="noopener noreferrer">${content}</a>`;
+ };
+
+ renderer.image = ({ href, title, text }: Tokens.Image): string => {
 diff --git a/src/utils/sanitize.ts b/src/utils/sanitize.ts
 index 7213793e..445d2a2b 100644
 --- a/src/utils/sanitize.ts
@@ -78,4 +105,4 @@ index 6f577f97..e92e8d8f 100644
 +++ b/src/version.ts
 @@ -1 +1 @@
 -export const version = '5.2.0';
-+export const version = '5.2.0-phcode.1';
++export const version = '5.2.0-phcode.2';

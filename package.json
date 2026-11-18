@@ -28,7 +28,7 @@
   "dependencies": {
     "@docsearch/css": "5.2.0",
     "@docsearch/docusaurus-adapter": "5.2.0",
-    "@docsearch/react": "file:vendor/docsearch-react/releases/docsearch-react-5.2.0-phcode.1.tgz",
+    "@docsearch/react": "file:vendor/docsearch-react/releases/docsearch-react-5.2.0-phcode.2.tgz",
     "@docusaurus/core": "3.10.2",
     "@docusaurus/plugin-client-redirects": "3.10.2",
     "@docusaurus/plugin-google-gtag": "3.10.2",

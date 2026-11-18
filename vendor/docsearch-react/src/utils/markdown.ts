@@ -22,16 +22,18 @@ renderer.code = ({ text, lang = '', escaped }: Tokens.Code): string => {
   `;
 };
 
-renderer.link = ({ href, title, text }: Tokens.Link): string => {
+renderer.link = function ({ href, title, tokens }: Tokens.Link): string {
   const safeHref = escapeHtml(sanitizeUrl(href));
-  const textEscaped = escapeHtml(text);
+  // Render nested Markdown through the same safe renderers. Escaping the raw
+  // label turns linked screenshots and formatted labels into literal Markdown.
+  const content = this.parser.parseInline(tokens);
 
   if (!safeHref) {
-    return textEscaped;
+    return content;
   }
 
   const titleAttr = title ? ` title="${escapeHtml(title)}"` : '';
-  return `<a href="${safeHref}"${titleAttr} target="_blank" rel="noopener noreferrer">${textEscaped}</a>`;
+  return `<a href="${safeHref}"${titleAttr} target="_blank" rel="noopener noreferrer">${content}</a>`;
 };
 
 renderer.image = ({ href, title, text }: Tokens.Image): string => {

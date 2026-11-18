@@ -20,6 +20,16 @@ const moduleContext = {exports: {}, URL};
 vm.runInNewContext(compiled, moduleContext, {filename: 'sanitize.js'});
 const {sanitizeUrl, sanitizeUserInput, escapeHtml} = moduleContext.exports;
 
+const markdownContext = {
+  exports: {},
+  require: (name) => name === './sanitize' ? moduleContext.exports : require(name),
+};
+vm.runInNewContext(ts.transpileModule(
+  fs.readFileSync(path.join(root, 'src/utils/markdown.ts'), 'utf8'),
+  {compilerOptions: {module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2017}},
+).outputText, markdownContext, {filename: 'markdown.js'});
+require('./markdown-cases.cjs')(markdownContext.exports.parseMarkdownToSafeHtml, 'source Markdown');
+
 test('preserves safe encoded absolute URLs without changing their meaning', () => {
   const urls = [
     'https://docs.phcode.dev/docs/Pro%20Features/styles-bar#text-color',
@@ -124,6 +134,7 @@ test('vendored production source differs only in the reviewed fixes and version'
   assert.deepEqual(changed.sort(), [
     'src/Sidepanel/Sidepanel.tsx',
     'src/Sidepanel/SidepanelHeader.tsx',
+    'src/utils/markdown.ts',
     'src/utils/sanitize.ts',
     'src/version.ts',
   ]);

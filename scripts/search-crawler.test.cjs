@@ -93,6 +93,45 @@ test('AI context labels each edition, supplies exact links and restores the sour
   assert.equal(context.$.html(), original);
 });
 
+test('server-rendered tabs retain workflow boundaries even without headings or ARIA IDs', () => {
+  const context = fixture('https://docs.phcode.dev/docs/guide', `<main><article><h1>Guide</h1>
+    <div class="theme-tabs-container"><ul role="tablist">
+      <li role="tab">Phoenix Pro</li><li role="tab">Community (free)</li>
+    </ul><div><div role="tabpanel"><ol><li>Maximize the preview.</li><li>Enable Edit Mode.</li></ol></div>
+      <div role="tabpanel" hidden><ol><li>Restore the editor.</li><li>Edit the code.</li></ol></div>
+    </div></div><p>Check the result.</p></article></main>`);
+  const original = context.$.html();
+  const [record] = extractMarkdownRecords(context);
+  assert.equal(record.edition, 'mixed');
+  assert.deepEqual(record.editions, ['pro', 'community']);
+  assert.match(record.text, /\[Start of tab: Phoenix Pro\]Maximize the preview\.Enable Edit Mode\.\[End of tab: Phoenix Pro\]/);
+  assert.match(record.text, /\[Start of tab: Community \(free\)\]Restore the editor\.Edit the code\.\[End of tab: Community \(free\)\]/);
+  assert.ok(record.text.indexOf('Check the result.') > record.text.indexOf('[End of tab: Community (free)]'));
+  assert.deepEqual(record.editionSections, []); // Do not invent section anchors.
+  assert.equal(context.$.html(), original);
+});
+
+test('nested tabs keep their own labels and malformed tab groups are not guessed', () => {
+  const context = fixture('https://docs.phcode.dev/docs/guide', `<main><h1>Guide</h1>
+    <div class="theme-tabs-container"><ul role="tablist"><li role="tab">Windows</li><li role="tab">macOS</li></ul><div>
+      <div role="tabpanel">Windows setup.<div class="theme-tabs-container"><ul role="tablist"><li role="tab">Phoenix Pro</li><li role="tab">Community</li></ul><div>
+        <div role="tabpanel">Visual steps.</div><div role="tabpanel">Code steps.</div>
+      </div></div></div><div role="tabpanel">Mac setup.</div>
+    </div></div>
+    <div class="theme-tabs-container"><ul role="tablist"><li role="tab">Unmatched label</li></ul><div>
+      <div role="tabpanel">Unknown one.</div><div role="tabpanel">Unknown two.</div>
+    </div></div></main>`);
+  const original = context.$.html();
+  const [record] = extractMarkdownRecords(context);
+  assert.match(record.text, /\[Start of tab: Windows\]Windows setup\./);
+  assert.match(record.text, /\[Start of tab: Phoenix Pro\]Visual steps\.\[End of tab: Phoenix Pro\]/);
+  assert.match(record.text, /\[End of tab: Community\].*\[End of tab: Windows\]/s);
+  assert.match(record.text, /\[Start of tab: macOS\]Mac setup\.\[End of tab: macOS\]/);
+  assert.doesNotMatch(record.text, /\[(?:Start|End) of tab: Unmatched label\]/);
+  assert.match(record.text, /Unknown one\.Unknown two\./);
+  assert.equal(context.$.html(), original);
+});
+
 test('introductory Pro notices and explicit metadata establish availability outside legacy URL paths', () => {
   const notice = '<div class="theme-admonition"><div>Pro Feature</div><div><p>Upgrade to access this feature.</p></div></div>';
   const pro = fixture('https://docs.phcode.dev/docs/layers-panel', `<main><article><h1>Layers</h1>${notice}<h2>Open Layers</h2></article></main>`);
@@ -106,11 +145,37 @@ test('introductory Pro notices and explicit metadata establish availability outs
 });
 
 test('source DOM is restored even when Markdown conversion fails', () => {
-  const context = fixture('https://docs.phcode.dev/docs/guide', '<main><h3 id="a" data-search-params="edition=pro">A</h3></main>');
+  const context = fixture('https://docs.phcode.dev/docs/guide', '<main><h3 id="a" data-search-params="edition=pro">A</h3><div class="theme-tabs-container"><ul role="tablist"><li role="tab">Phoenix Pro</li></ul><div><div role="tabpanel">Steps</div></div></div><a href="/gallery.png"><img src="data:image/png;base64,AAAA" alt="Gallery"></a><img src="data:image/png;base64,BBBB" alt="Unlinked image"><a href="data:image/png;base64,CCCC">Inline file</a></main>');
   const original = context.$.html();
   context.helpers.markdown = () => { throw new Error('conversion failed'); };
   assert.throws(() => extractMarkdownRecords(context), /conversion failed/);
   assert.equal(context.$.html(), original);
+});
+
+test('AI images use the page\'s full-size URL instead of embedded binary data', () => {
+  const context = fixture('https://docs.phcode.dev/docs/guide', '<main><h1>Guide</h1><a href="/assets/files/Photo%20One.png?edition=pro"><img src="data:image/png;base64,AAAA" alt="Image Gallery"></a><img src="blob:local" data-src="https://cdn.example.test/menu.webp" alt="Menu"><img src="/already-hosted.png" alt="Existing"><img data-src="/lazy.png" alt="Lazy image"></main>');
+  const original = context.$.html();
+  context.helpers.markdown = selector => context.$(selector).find('img').map((_, image) =>
+    `![${context.$(image).attr('alt')}](${context.$(image).attr('src')})`).get().join('\n');
+  const [record] = extractMarkdownRecords(context);
+  assert.match(record.text, /!\[Image Gallery\]\(https:\/\/docs\.phcode\.dev\/assets\/files\/Photo%20One\.png\?edition=pro\)/);
+  assert.match(record.text, /!\[Menu\]\(https:\/\/cdn\.example\.test\/menu\.webp\)/);
+  assert.match(record.text, /!\[Existing\]\(https:\/\/docs\.phcode\.dev\/already-hosted\.png\)/);
+  assert.match(record.text, /!\[Lazy image\]\(https:\/\/docs\.phcode\.dev\/lazy\.png\)/);
+  assert.doesNotMatch(record.text, /data:|blob:/);
+  assert.equal(context.$.html(), original);
+});
+
+test('AI extraction keeps descriptions when inline images have no usable source URL', () => {
+  for (const href of ['data:image/png;base64,BBBB', 'javascript:alert(1)', '/docs/unrelated-page', 'https://example.test/page']) {
+    const context = fixture('https://docs.phcode.dev/docs/guide', `<main><h1>Guide</h1><a href="${href}"><img src="data:image/png;base64,AAAA" alt="Control description"></a></main>`);
+    const original = context.$.html();
+    context.helpers.markdown = selector => context.$(selector).html();
+    const [record] = extractMarkdownRecords(context);
+    assert.match(record.text, /Control description/);
+    assert.doesNotMatch(record.text, /data:image|<img/);
+    assert.equal(context.$.html(), original);
+  }
 });
 
 test('generated hosted actions run without CommonJS imports or closure dependencies', () => {

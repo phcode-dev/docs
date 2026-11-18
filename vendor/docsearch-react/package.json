@@ -1,7 +1,7 @@
 {
   "name": "@docsearch/react",
   "description": "React package for DocSearch, the best search experience for docs.",
-  "version": "5.2.0-phcode.1",
+  "version": "5.2.0-phcode.2",
   "license": "MIT",
   "homepage": "https://docsearch.algolia.com",
   "repository": {
