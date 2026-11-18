@@ -16,12 +16,22 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
       path.startsWith('/videos/') ? 'Videos' : 'Documentation';
   const language = $('meta[name="docsearch:language"]').attr('content') || 'en';
   const parametersByAnchor = Object.create(null);
+  const sectionsByAnchor = Object.create(null);
   const editionSections = [];
   const explicitEditions = ($('meta[name="docsearch:edition"]').attr('content') || '')
     .split(',').map(value => value.trim()).filter(value => ['pro', 'community'].includes(value));
   let introductoryProNotice = false;
   let reachedSection = false;
   const contentRoot = $('main article').length ? $('main article').first() : $('main').first();
+  let sectionAnchor = '';
+  contentRoot.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each((_, element) => {
+    const heading = $(element);
+    const tag = element.tagName || element.name;
+    const anchor = heading.attr('id');
+    if (tag === 'h1') sectionAnchor = '';
+    if (tag === 'h2') sectionAnchor = anchor;
+    sectionsByAnchor[anchor] = sectionAnchor || anchor;
+  });
   contentRoot.find('h2, h3, h4, h5, h6, .theme-admonition').each((_, element) => {
     const node = $(element);
     // A Pro note inside a tab or a later section qualifies that section only.
@@ -93,6 +103,13 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
       const recordUrl = resolveTabUrl(record.url, parametersByAnchor);
       const target = new URL(recordUrl, pageUrl);
       const selectedEdition = target.searchParams.get('edition');
+      let anchor = target.hash.slice(1);
+      try { anchor = decodeURIComponent(anchor); } catch (error) { /* Keep malformed anchors distinct. */ }
+      const section = new URL(target);
+      // Keep the best matching nested heading for each article section. All
+      // records remain searchable, and different edition queries stay separate.
+      // API entries are independent interfaces, even under a shared heading.
+      if (category !== 'API' && sectionsByAnchor[anchor]) section.hash = sectionsByAnchor[anchor];
       target.hash = '';
       return {
         ...record,
@@ -103,6 +120,7 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
         } : {}),
         url: recordUrl,
         url_without_anchor: target.href,
+        section_url: section.href,
       };
     });
   }
@@ -207,6 +225,8 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
   const availability = edition === 'pro' ? 'Edition availability: Phoenix Pro only.\n\n' :
     edition === 'community' ? 'Edition availability: Community (free).\n\n' :
       edition === 'mixed' ? 'Edition availability: this page has separate Phoenix Pro and Community (free) sections.\n\n' : '';
+  const sourceContext = category === 'API' ?
+    'Source context: developer API reference. Command identifiers, functions, and preference keys describe code interfaces. Their presence does not establish a visible menu item, shortcut, or settings control. User-interface availability and access paths need separate end-user documentation.\n\n' : '';
   const records = helpers.splitTextIntoRecords({
     text,
     baseRecord: {
@@ -220,11 +240,11 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
       docusaurus_tag: tags.split(',').map(value => value.trim()).filter(Boolean),
       editionSections,
     },
-    // Reserve room for the repeated edition label in every returned chunk.
+    // Reserve room for source context and the edition label in every chunk.
     maxRecordBytes: 99000,
     orderingAttributeName: 'part',
   });
-  return records.map(record => ({...record, text: availability + record.text}));
+  return records.map(record => ({...record, text: sourceContext + availability + record.text}));
 }
 
 function extractDocSearchRecords(context) {

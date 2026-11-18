@@ -14,6 +14,10 @@ const indexSettings = {
     removeStopWords: ['en'],
     minProximity: 2,
     attributeCriteriaComputedBy: 'sum',
+    // Nested article headings should not crowd out other matching sections.
+    // section_url retains edition parameters; API entries keep their own URL.
+    attributeForDistinct: 'section_url',
+    distinct: true,
   },
   'markdown-index': {
     attributesForFaceting: [

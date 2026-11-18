@@ -1,5 +1,8 @@
 [
   {"query":"text color","expectedPath":"/docs/Pro%20Features/styles-bar#text-color","maxRank":3},
+  {"query":"text colour","expectedPath":"/docs/Pro%20Features/styles-bar#text-color","maxRank":3},
+  {"query":"change font size","expectedPath":"/docs/tutorials/edit-text-fonts?edition=pro#pro-change-font","maxRank":3},
+  {"query":"python terminal","expectedPath":"/docs/tutorials/run-python#3-open-the-terminal","maxRank":3},
   {"query":"how to change input text colors","expectedPath":"/docs/editing-colors#change-input-text-colors","maxRank":5},
   {"query":"find in files","expectedPath":"/docs/Features/find-in-files","maxRank":1},
   {"query":"find and replace","expectedPath":"/docs/tutorials/find-and-replace","maxRank":3},
