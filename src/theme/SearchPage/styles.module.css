@@ -4,15 +4,31 @@
 .pageHeader {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .pageTitle {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 1 26rem;
+  gap: 0.625rem;
+  min-width: 0;
   margin: 0;
   overflow-wrap: anywhere;
+}
+
+.pageLogo {
+  flex: 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 0.125rem;
+}
+
+.pageTitleText {
+  min-width: 0;
 }
 
 .searchForm {

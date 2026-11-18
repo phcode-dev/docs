@@ -44,6 +44,7 @@ test('all DocSearch integrations use the integrity-locked package and the same R
 
 test('the installed artifact contains the reviewed source fixes', () => {
   const expectedFiles = [
+    'src/utils/markdown.ts',
     'src/utils/sanitize.ts',
     'src/Sidepanel/Sidepanel.tsx',
     'src/Sidepanel/SidepanelHeader.tsx',
@@ -81,6 +82,26 @@ function installedSanitizer() {
   return vm.runInNewContext(`${sections[0]}\n({sanitizeUrl, escapeHtml})`, {URL},
     {filename: 'installed-docsearch-sanitizer.js', timeout: 1000});
 }
+
+function installedMarkdown() {
+  const marker = '// src/utils/markdown.ts\n';
+  const sections = [];
+  for (const filename of fs.readdirSync(esmDirectory).filter((name) => name.endsWith('.js'))) {
+    const code = fs.readFileSync(path.join(esmDirectory, filename), 'utf8');
+    const start = code.indexOf(marker);
+    if (start < 0) continue;
+    const end = code.indexOf('\n// src/', start + marker.length);
+    assert.ok(end > start, 'the compiled Markdown section must have a boundary');
+    sections.push(code.slice(start, end));
+  }
+  assert.equal(sections.length, 1, 'review the new bundle layout when upgrading DocSearch');
+  return vm.runInNewContext(`${sections[0]}\nparseMarkdownToSafeHtml`, {
+    ...installedSanitizer(),
+    marked: createRequire(entry)('marked').marked,
+  }, {filename: 'installed-docsearch-markdown.js', timeout: 1000});
+}
+
+require('../vendor/docsearch-react/tests/markdown-cases.cjs')(installedMarkdown(), 'installed Markdown');
 
 test('installed sanitizer preserves encoded URLs and retains unsafe-scheme blocking', () => {
   const {sanitizeUrl, escapeHtml} = installedSanitizer();

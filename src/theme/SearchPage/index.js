@@ -8,6 +8,7 @@
 import Head from '@docusaurus/Head';
 import { HtmlClassNameProvider, usePluralForm } from '@docusaurus/theme-common';
 import Translate, { translate } from '@docusaurus/Translate';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
@@ -97,6 +98,7 @@ function SearchPageContent() {
   const topSections = useTopSections();
 
   const pageTitle = getSearchPageTitle(searchQuery);
+  const logoUrl = useBaseUrl('/img/logo.svg');
   const showVersionSelects =
     contextualSearch && versionHelpers.versioningEnabled;
   const hasSidebar = showVersionSelects || facets.length > 0;
@@ -226,7 +228,8 @@ function SearchPageContent() {
       <div className="container margin-vert--lg">
         <header className={styles.pageHeader}>
           <Heading as="h1" className={styles.pageTitle}>
-            {pageTitle}
+            <img src={logoUrl} alt="" width="40" height="40" className={styles.pageLogo} />
+            <span className={styles.pageTitleText}>{pageTitle}</span>
           </Heading>
           <PoweredByAlgolia />
         </header>

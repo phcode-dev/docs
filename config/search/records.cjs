@@ -32,6 +32,24 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
   });
   const pageIsPro = /^\/docs\/pro[ -]features\//i.test(path) || introductoryProNotice;
   const knownEditions = new Set([...explicitEditions, ...(pageIsPro ? ['pro'] : [])]);
+  const tabSections = [];
+  // Docusaurus server-rendered tabs have no aria-labelledby connection. Their
+  // direct tab list and panel list are in matching order. Scope both lists to
+  // their own container so nested platform/edition tabs cannot label each other.
+  // Markdown otherwise retains a list of labels followed by unlabeled panels.
+  contentRoot.find('.theme-tabs-container').each((_, element) => {
+    const container = $(element);
+    const labels = container.children('[role="tablist"]').children('[role="tab"]');
+    const panels = container.children().children('[role="tabpanel"]');
+    if (!labels.length || labels.length !== panels.length) return;
+    panels.each((index, panel) => {
+      const label = labels.eq(index).text().replace(/\s+/g, ' ').trim();
+      if (!label) return;
+      tabSections.push({panel: $(panel), label});
+      if (/^Phoenix Pro$/i.test(label)) knownEditions.add('pro');
+      if (/^Community(?: \(free\))?$/i.test(label)) knownEditions.add('community');
+    });
+  });
 
   $('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each((_, element) => {
     const heading = $(element);
@@ -95,8 +113,59 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
   // as well as in structured attributes. Restore the source DOM afterwards so
   // another extraction action cannot inherit these indexing-only annotations.
   const annotations = [];
+  const restoreMedia = [];
   let text;
   try {
+    for (const {panel, label} of tabSections) {
+      const start = $('<p></p>').text(`[Start of tab: ${label}]`);
+      const end = $('<p></p>').text(`[End of tab: ${label}]`);
+      panel.prepend(start);
+      panel.append(end);
+      annotations.push(start, end);
+    }
+    // Small Docusaurus images can be inlined as data URLs. Index a real image
+    // link when the page provides one; binary data is not useful model context.
+    // Keep the article and the other extraction action unchanged.
+    const imageUrl = (value, requireImageFile = false) => {
+      if (!value) return null;
+      try {
+        const target = new URL(value, pageUrl);
+        return /^https?:$/.test(target.protocol) && (!requireImageFile ||
+          /\.(?:avif|gif|jpe?g|png|svg|webp)$/i.test(target.pathname)) ? target.href : null;
+      } catch (error) {
+        return null;
+      }
+    };
+    $('main img').each((_, element) => {
+      const image = $(element);
+      const source = image.attr('src');
+      const replacement = imageUrl(source) ||
+        imageUrl(image.closest('a[href]').attr('href'), true) || imageUrl(image.attr('data-src'));
+      if (replacement === source) return;
+      if (replacement) {
+        image.attr('src', replacement);
+        restoreMedia.push(() => source === undefined ? image.removeAttr('src') : image.attr('src', source));
+      } else {
+        // Preserve the description without presenting an unusable screenshot.
+        const description = $('<span></span>').text(image.attr('alt') || '');
+        image.replaceWith(description);
+        restoreMedia.push(() => description.replaceWith(image));
+      }
+    });
+    $('main a[href]').each((_, element) => {
+      const link = $(element);
+      const href = link.attr('href');
+      if (/^\s*(?:data|blob):/i.test(href)) {
+        link.removeAttr('href');
+        restoreMedia.push(() => link.attr('href', href));
+      } else if (link.find('img').length) {
+        const fullSize = imageUrl(href, true);
+        if (fullSize && fullSize !== href) {
+          link.attr('href', fullSize);
+          restoreMedia.push(() => link.attr('href', href));
+        }
+      }
+    });
     for (const section of editionSections) {
       const label = section.edition === 'pro' ? 'Phoenix Pro' : 'Community (free)';
       const anchor = decodeURIComponent(new URL(section.url).hash.slice(1));
@@ -112,6 +181,7 @@ function extractSearchRecords({$, url, helpers}, format, resolveTabUrl) {
     text = helpers.markdown('main');
   } finally {
     annotations.forEach(element => element.remove());
+    restoreMedia.reverse().forEach(restore => restore());
   }
   if (!text || !text.trim()) return [];
 

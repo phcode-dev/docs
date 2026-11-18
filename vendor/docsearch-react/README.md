@@ -1,7 +1,7 @@
 # Phoenix Code DocSearch source dependency
 
 This is a narrowly maintained source fork of `@docsearch/react` **5.2.0**, released
-locally as **5.2.0-phcode.1**. The application consumes the package in `releases/`;
+locally as **5.2.0-phcode.2**. The application consumes the package in `releases/`;
 it does not rewrite installed dependencies or modify DocSearch's DOM at runtime.
 
 ## Upstream provenance
@@ -30,7 +30,11 @@ The reviewed source differences are recorded in [upstream.patch](upstream.patch)
    heading ID with `React.useId()`, connects it with `aria-labelledby`, and passes
    the already supported header translations through to `SidepanelHeader.tsx`.
    The heading stays visible and gives the dialog its accessible name.
-3. **Identify the maintained build.** `src/version.ts` reports `5.2.0-phcode.1`.
+3. **Render linked screenshots.** `src/utils/markdown.ts` renders a link's child
+   tokens through the existing safe Markdown renderers. Previously, a screenshot
+   wrapped in a link appeared as literal Markdown. Image and link URLs still pass
+   through the sanitizer; embedded HTML and attribute values remain escaped.
+4. **Identify the maintained build.** `src/version.ts` reports `5.2.0-phcode.2`.
 
 The build configuration only relocates upstream's shared configuration into this
 directory. It preserves the public exports, ESM and UMD outputs, CSS entry points,
@@ -52,7 +56,10 @@ npm pack --pack-destination releases --ignore-scripts
 The JavaScript tests execute the sanitizer source through the TypeScript compiler,
 retain upstream's unsafe-scheme fixtures, test URL preservation, render the built
 Sidepanel to verify its accessible name, and check that every other production
-source file still matches its upstream hash. No test sends an AI request.
+source file still matches its upstream hash. Shared JavaScript cases cover linked
+and standalone images, formatted labels, encoded URLs, unsafe nested URLs, HTML
+and attribute injection, and partially streamed Markdown against both source and
+the installed compiled package. No test sends an AI request.
 
 Commit source changes and the rebuilt tarball together. Update the application
 lockfile so its integrity covers the new package. Do not run `npm publish` for this
@@ -64,11 +71,16 @@ modal, and sidepanel integrations share the corrected package.
 
 ## Retiring this fork
 
-Before upgrading, check upstream for fixes to the URL sanitizer and the Sidepanel
-accessible name. Run the same regression cases against the candidate release and
+Before upgrading, check upstream for fixes to the URL sanitizer, the Sidepanel
+accessible name, and linked-image rendering. Run the same regression cases against the candidate release and
 verify full-page Ask AI submission, encoded citation/source links, mobile layout,
 and keyboard close/focus behavior. Once an official release passes, replace the
 file dependency with that release, remove the override, and remove this directory.
+
+Checked on **18 November 2026**: the live npm registry and official release notes
+still list DocSearch **5.2.0** and Docusaurus **3.10.2** as latest stable. The
+upstream Markdown renderer still escapes the raw link label instead of rendering
+its child tokens. Keep the three fixes until upstream passes all regression cases.
 
 Relevant upstream implementation and documentation:
 
@@ -76,3 +88,5 @@ Relevant upstream implementation and documentation:
 - [Security change that introduced scheme checking](https://github.com/algolia/docsearch/pull/2929)
 - [Sidepanel source](https://github.com/algolia/docsearch/blob/db3337978a2c9be6ec9187e73105a94dc0b1bbf3/packages/docsearch-react/src/Sidepanel/Sidepanel.tsx)
 - [Supported Sidepanel API](https://docsearch.algolia.com/docs/packages/sidepanel/api/)
+- [Upstream Markdown renderer](https://github.com/algolia/docsearch/blob/db3337978a2c9be6ec9187e73105a94dc0b1bbf3/packages/docsearch-react/src/utils/markdown.ts)
+- [Marked renderer API](https://marked.js.org/using_pro#renderer)
