@@ -16,7 +16,7 @@ const ORIGIN = 'https://docs.phcode.dev';
 const GUIDES = ['tutorials', 'tutorials/add-images', 'tutorials/link-pages',
   'tutorials/share-website', 'tutorials/bootstrap', 'tutorials/run-python',
   'tutorials/find-and-replace', 'tutorials/replace-in-files', 'Features/find-in-files',
-  'tutorials/image-text-layout'];
+  'tutorials/image-text-layout', 'tutorials/edit-text-fonts'];
 const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-pdf-without-losing-quality'];
 const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
 const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos), ...Object.values(layoutVideos)];

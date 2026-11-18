@@ -27,6 +27,7 @@ The guides open with **Phoenix Pro**, using Design Mode for visual editing. Choo
 
 ## Work with text
 
+- **[Edit text and change fonts](/docs/tutorials/edit-text-fonts):** change a heading, choose its font, and adjust its size using Pro's visual controls or Community's HTML and CSS steps.
 - **[Find in Files](/docs/Features/find-in-files):** search across your project and open a matching line.
 - **[Replace text in one file](/docs/tutorials/find-and-replace):** change a word or phrase in the file you have open.
 - **[Replace text across files](/docs/tutorials/replace-in-files):** review matches and apply selected changes across your project.
