@@ -6,12 +6,14 @@
     "docusaurus": "docusaurus",
     "test:tutorials": "node --test --test-reporter=tap scripts/tutorial-release.test.cjs",
     "test:links": "node --test --test-reporter=tap scripts/verify-links.test.cjs",
+    "test:search": "node --test --test-reporter=tap scripts/search-tabs.test.cjs scripts/search-crawler.test.cjs scripts/docsearch-package.test.cjs",
     "package:tutorials": "node scripts/package-tutorials.cjs",
     "verify:tutorials": "node scripts/verify-tutorials.cjs",
     "verify:links": "node scripts/verify-links.cjs",
+    "verify:search": "node scripts/verify-search.cjs",
     "start": "docusaurus start",
-    "build": "npm run buildAPIDocsDev && docusaurus build && npm run verify:links",
-    "buildLocal": "npm run buildAPIDocsLocal && docusaurus build && npm run verify:links",
+    "build": "npm run buildAPIDocsDev && docusaurus build && npm run verify:links && npm run verify:search",
+    "buildLocal": "npm run buildAPIDocsLocal && docusaurus build && npm run verify:links && npm run verify:search",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -26,7 +28,7 @@
   "dependencies": {
     "@docsearch/css": "5.2.0",
     "@docsearch/docusaurus-adapter": "5.2.0",
-    "@docsearch/react": "5.2.0",
+    "@docsearch/react": "file:vendor/docsearch-react/releases/docsearch-react-5.2.0-phcode.1.tgz",
     "@docusaurus/core": "3.10.2",
     "@docusaurus/plugin-client-redirects": "3.10.2",
     "@docusaurus/plugin-google-gtag": "3.10.2",
@@ -43,9 +45,13 @@
     "rehype-katex": "7.0.1",
     "remark-math": "6.0.0"
   },
+  "overrides": {
+    "@docsearch/react": "$@docsearch/react"
+  },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/types": "3.10.2",
+    "acorn": "8.19.0",
     "baseline-browser-mapping": "^2.10.10",
     "cheerio": "1.0.0-rc.12",
     "fflate": "0.8.2",

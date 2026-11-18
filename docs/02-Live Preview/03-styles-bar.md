@@ -131,6 +131,8 @@ Colors written as `oklch()`, `lab()`, or `color()` open in the picker too.
 
 The **Text color** button works the same way as [Background Color](#background-color), but it controls the color of the element's text. It opens the same color picker.
 
+Text controls are not shown for `<input>` or `<select>` elements. To change input text colors, use the [Layers panel or CSS steps](/docs/editing-colors#change-input-text-colors).
+
 ## Border & Outline
 
 The popover has two tabs, **Border** and **Outline**.

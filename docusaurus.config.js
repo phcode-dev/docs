@@ -7,6 +7,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import searchTabHeadings from "./plugins/search-tabs/rehype.js";
 import { appLinks } from "./app-links.js";
 
 /** @type {import('@docusaurus/types').Config} */
@@ -117,12 +118,13 @@ const config = {
 					// https://docusaurus.io/docs/markdown-features/math-equations
 					path: "docs",
 					remarkPlugins: [remarkMath],
-					rehypePlugins: [rehypeKatex],
+					rehypePlugins: [rehypeKatex, searchTabHeadings],
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl: "https://github.com/phcode-dev/docs/blob/main/"
 				},
 				blog: {
+					rehypePlugins: [searchTabHeadings],
 					showReadingTime: true,
 					blogSidebarCount: 'ALL',
 					// Please change this to your repo.
@@ -153,6 +155,7 @@ const config = {
 				id: "api",
 				path: "api",
 				routeBasePath: "api",
+				rehypePlugins: [searchTabHeadings],
 				sidebarPath: "./sidebars.js"
 				// ... other options
 			}
@@ -201,10 +204,14 @@ const config = {
 						removeStopWords: ["en"],
 						// Keep "Find in Files" competitive with joined API names.
 						minProximity: 2,
+						// Rank all matched words, so an H1's partial match cannot dominate an exact section match.
+						attributeCriteriaComputedBy: "sum",
 					},
 				}],
 				// The crawler does not emit Docusaurus language/version facets.
 				contextualSearch: false,
+				// Measure which results readers select, in the modal and full search page.
+				insights: true,
 				askAi: {
 					agentId: "d43f2205-8075-439d-822b-b3825b74cb49",
 					// The agent's static search tool selects markdown-index.
