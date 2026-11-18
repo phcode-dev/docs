@@ -1,16 +1,19 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:04.050
-Community: choose Highlight Mode from the arrow beside the pen.
+00:00:00.000 --> 00:00:02.978
+Community: choose Highlight Mode beside the pen.
 
-00:00:04.050 --> 00:00:09.465
-Click the hills in Live Preview. The editor finds the image tag.
+00:00:02.978 --> 00:00:05.548
+Click the picture to find its existing image tag.
 
-00:00:09.465 --> 00:00:18.417
-In the editor, select the whole image tag before replacing it.
+00:00:05.548 --> 00:00:12.651
+Change only the src path to images/photo.jpg.
 
-00:00:18.417 --> 00:00:23.127
-Paste the new tag. Use your picture filename and a short description.
+00:00:12.651 --> 00:00:22.848
+Update the alt description. Keep the other attributes.
 
-00:00:23.127 --> 00:00:30.765
-Save with Ctrl+S (Windows/Linux) or Cmd+S (Mac). Your photo is in the page.
+00:00:22.848 --> 00:00:25.109
+Save with Ctrl+S on Windows/Linux or Cmd+S on Mac.
+
+00:00:25.109 --> 00:00:28.000
+Check your photo. Width and height are unchanged.

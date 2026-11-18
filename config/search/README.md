@@ -137,7 +137,7 @@ source guides so future documentation changes do not require prompt recipes.
 | --- | --- |
 | `how to add image` and `how to add ima` | Pro first: open the HTML page and Live Preview, enable Edit Mode, insert and select the new image, choose it through Image Gallery / Select from device, handle the folder prompt, add a description, save, and check the result. Community: the image-folder location, where to insert a complete HTML example, exact filename and description, saving, and preview. Each edition should include a relevant source screenshot and a full-size link. |
 | `add images` and `add imagfes` | The same complete, illustrated add-image walkthrough. Do not require a question, the words "how to", corrected spelling, or an explicit request for screenshots. |
-| `how do I replace a picture in Community?` | Community-only steps, Highlight Mode to locate the existing tag, selection or editing of that tag without adding a duplicate, and a saved result. |
+| `how do I replace a picture in Community?` | Community-only steps, Highlight Mode to locate the existing tag, editing only its `src` and `alt` values while preserving styling and other attributes, and a saved result without a duplicate image. |
 | `replace image community` | The same Community-only replacement workflow, with a relevant Community screenshot. Do not treat the short wording as permission to omit steps or claim that the assistant has edited the user's project. |
 | `find and replace` | The current-file walkthrough, opening Replace, entering both values, reviewing/replacing matches, and saving. Distinguish project-wide replacement without forcing both procedures into one answer. |
 | `What does alt mean?` | A short explanation of the image description, with a small example if useful. Do not repeat the full image tutorial. |
@@ -494,8 +494,9 @@ Prompt changes alone cannot restore an icon absent from the retrieved source.
   preference; a pending update and some checks can precede that preference gate.
   Added the precise desktop preference workflow and limitations to
   [Managing App Updates](../../docs/09-Schools%20%26%20Workplaces/03-managed-updates.md).
-  This guide change is local and still needs website deployment and a recrawl.
-  Do not claim that the live assistant can already retrieve its new instructions.
+  This guide was subsequently deployed and recrawled. The 19 November checks
+  confirmed the live page includes the preference workflow and limitations,
+  and the model comparison retrieved those instructions successfully.
 - Published and read back the new extraction actions and `initialIndexSettings`.
   The completed crawl had 252 successful URLs, 43 ignored URLs, and no failures;
   it retained 5,449 keyword records and 203 AI records. All 116 API records carry
@@ -524,9 +525,9 @@ Prompt changes alone cannot restore an icon absent from the retrieved source.
   instructions instead link adjacent material without substituting its steps.
 - These are sampled improvements, not a guarantee of concise or error-free
   answers. Some responses still include extra explanation and repeated searches.
-  The current auto-update response acknowledges the missing end-user procedure;
-  retest it after deploying and crawling the new guide. Record visible answer
-  outcomes without saving raw diagnostic request/response traffic that may
+  The auto-update response at this checkpoint acknowledged a missing end-user
+  procedure; the later deployment and retrieval checks above resolved that gap.
+  Record visible answer outcomes without saving raw diagnostic request/response traffic that may
   include private configuration.
 - A fresh answer on the deployed search page retained the Pro and Community
   insertion workflows, two loaded screenshots, six source-backed control icons
@@ -543,6 +544,74 @@ Prompt changes alone cannot restore an icon absent from the retrieved source.
   search, tutorial, and local-link checks. Existing unrelated anchor/blog
   warnings remain. The new preference instructions were reviewed at desktop
   and 390 px widths with no horizontal overflow.
+
+### Model comparison and rollback on 19 November 2026
+
+- At the owner's request, temporarily changed the published documentation
+  agent's model from `anthropic/claude-sonnet-5.5` to `openai/gpt-6.1-terra`,
+  then restored **`anthropic/claude-sonnet-5.5`** when the owner requested a
+  rollback later the same day. Both changes were saved in Agent Studio and
+  verified after reloading. The existing `Phoenix Docs Sonnet Production`
+  OpenRouter connection, prompts, tools, indices, credentials, and billing
+  settings were retained.
+- Before the switch, Terra completed six comparison questions, averaging
+  17.5 seconds and costing approximately $0.100 in OpenRouter charges. The
+  comparison included image insertion, a follow-up, Community replacement,
+  project replacement, update preferences, and an undocumented sync feature.
+  These are small-sample results, not a quality or latency guarantee; some
+  answers still omitted access steps or the large-project undo caveat.
+- While Terra was active, a fresh public-site image question completed with Pro
+  and Community steps, two loaded screenshots, seven loaded control icons, highlighted HTML, and
+  no horizontal overflow in the desktop answer panel. OpenRouter's visible
+  generation logs confirmed `GPT-6.1 Terra` through its OpenAI provider.
+- After restoring Sonnet, a fresh public Community replacement answer completed
+  with a loaded screenshot, control icon, and highlighted HTML. OpenRouter logs
+  confirmed `Claude Sonnet 5.5` for that public request. The answer recommended
+  whole-tag replacement and mentioned restoring dimensions, but did not explain
+  preserving other attributes; this check confirms operation, not error-free
+  guidance. Continue reviewing source completeness when sampling answers.
+- Change models through the same published agent's Model field, save, reload,
+  and verify a fresh public answer. Do not create another agent or provider.
+  These changes take effect without a website deployment or recrawl.
+- Checked the live npm registry and official
+  [DocSearch changelog](https://github.com/algolia/docsearch/blob/main/packages/docsearch-react/CHANGELOG.md)
+  and [Docusaurus release notes](https://github.com/meta/docusaurus/releases/tag/v3.10.2).
+  The latest stable versions remain DocSearch `5.2.0` and Docusaurus `3.10.2`.
+  The manifest, lockfile, and vendored `5.2.0-phcode.2` build agree with those
+  upstream versions; no dependency upgrade was needed. This was a hosted
+  model change and notes-only repository edit, so no website rebuild was needed
+  for the model rollback itself.
+
+### Community image replacement correction on 19 November 2026
+
+- Updated the existing [Add an image tutorial](../../docs/10-Tutorials/01-add-images.md)
+  to change only the existing image's `src` path and `alt` description. Keep
+  `class`, `id`, `style`, dimensions, and other attributes instead of replacing
+  the whole tag. The FAQ also covers relative paths and images selected through
+  `srcset` or `<picture>`. No new tutorial or topic-specific agent rule was added.
+- Re-recorded the Community walkthrough in the unchanged `first-website`
+  practice project. The saved file differs only in its image path and description;
+  Live Preview contains one loaded photo and retains `width="960" height="480"`.
+  The 28-second recording, screenshots, captions, and shared watch-page metadata
+  now show the same procedure. Its poster matches the video's dimensions.
+- Kept the article, replacement-section anchor, watch page, and MP4 URLs.
+  Restored the original publication manifest from `gh-pages`; the existing
+  Community video's `uploadDate` remains `2026-11-10T08:40:33.985Z`. Its
+  `dateCreated` records the new capture. Retained the older screenshot file so
+  links in previously generated answers do not become missing assets.
+- Passed the tutorial and search tests, practice-project packaging, production
+  build using the current generated API files, local-link and search checks,
+  and `verify:tutorials -- --release` with restored publication dates. Existing
+  blog truncation and unrelated blog/API anchor warnings remain. Reviewed the
+  article and watch page at 1440 px and 390 px in light and dark themes; checked
+  normal-speed playback, seeking, timed captions, keyboard controls, offscreen
+  pause, reader-pause preservation, reduced motion, and the Community return
+  link. The updated pages have no horizontal overflow or application exceptions.
+- This correction still needs website deployment, an Algolia recrawl, and a
+  fresh public Ask AI check. Test both `replace image community` and a question
+  about replacing a picture without losing its styling. Check the retrieved
+  instructions and screenshots as well as the answer; do not assume deployment
+  alone refreshes the index. The published Sonnet agent remains unchanged.
 
 ## Official references
 

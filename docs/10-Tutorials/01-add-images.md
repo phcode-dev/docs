@@ -112,7 +112,7 @@ For the steps below, we'll use the name `photo.jpg`. If your file is named `holi
 
 ### Watch the Community steps
 
-This 31-second recording starts with `photo.jpg` already copied into the project's `images` folder.
+This 28-second recording starts with `photo.jpg` already copied into the project's `images` folder.
 
 <ImageTutorialVideo edition="community" showWatchLink />
 
@@ -128,29 +128,34 @@ Keep the code editor and Live Preview side by side. If the preview fills the app
 
 [![Highlight Mode selected in the practice project's Live Preview mode menu](/tutorials/media/community-highlight-menu.png)](/tutorials/media/community-highlight-menu.png)
 
-### Replace the picture's HTML
+### Change the picture's file and description {#replace-the-pictures-html}
 
-Clicking the preview places the cursor at the tag. Select that tag before pasting so you replace the existing picture.
+Highlight Mode places the cursor at the existing `<img>` tag. Edit the values
+inside that tag to replace the picture while keeping its styling and position.
 
-1. In the code editor, drag to select the whole tag, from `<img` through its closing `>`.
+1. Find `src`, which tells the page which picture to load. Select only the path
+   **between its quotation marks**. In the practice project, select
+   `images/trail.svg` and type `images/photo.jpg` in its place. Keep the quotation marks.
 
-[![The whole img tag selected in the code editor, with the matching picture highlighted in Live Preview](/tutorials/media/community-select-image-tag.png)](/tutorials/media/community-select-image-tag.png)
+[![Only the image path selected inside src, with the rest of the img tag and its width and height left intact](/tutorials/media/community-edit-image-source.png)](/tutorials/media/community-edit-image-source.png)
 
-The blue selection in the editor shows the code to replace. It can wrap onto several screen lines and still be one `<img>` tag.
-
-2. Paste this in its place:
-
-```html
-<img src="images/photo.jpg" alt="Describe your photo here">
-```
-
-3. Change `photo.jpg` to your picture's exact filename.
-4. Replace `Describe your photo here` with a short description, such as `My dog playing in the park`.
+2. Use your picture's exact filename and extension. For example, a file named
+   `holiday.png` in the same folder needs `src="images/holiday.png"`.
+3. Find `alt` in the same tag. Replace only the description between its quotation
+   marks. For the sample photo, use `Sunlit forest path`. This description helps
+   people using screen readers understand the picture.
+4. Leave the rest of the tag in place, including any `class`, `id`, `style`,
+   `width`, and `height` attributes. These may control the picture's appearance
+   or connect it to the rest of your page. There is no need to paste a new
+   `<img>` tag or add another image.
 5. Save with **Ctrl+S** or **Cmd+S**.
+
+If your image has no `alt`, add `alt="Your description"` inside its existing
+`<img>` tag, with a space before the attribute. Keep the closing `>`.
 
 **You should see your photo replace the hills in Live Preview.** The practice website already makes pictures fit the page.
 
-[![The sample forest-path photo replacing the hills, with images/photo.jpg in the HTML](/tutorials/media/community-image-result.png)](/tutorials/media/community-image-result.png)
+[![The forest-path photo in Live Preview, with the new src and alt values and the original width and height in the HTML](/tutorials/media/community-image-result.png)](/tutorials/media/community-image-result.png)
 
 </TabItem>
 </Tabs>
@@ -172,7 +177,7 @@ The finished page above is shown in Design Mode. To check it inside Phoenix Code
 <details id="add-images-with-community">
 <summary>Can I add images with the free Community edition?</summary>
 
-Yes. Community includes **Highlight Mode**, which lets you click a picture in Live Preview to find its HTML. Select the whole `<img>` tag, replace the filename and description, and save. Follow the [Community steps](/docs/tutorials/add-images?edition=community#copy-your-picture) above.
+Yes. Community includes **Highlight Mode**, which lets you click a picture in Live Preview to find its HTML. Change the `src` path and `alt` description in the existing `<img>` tag, keep its other attributes, and save. Follow the [Community steps](/docs/tutorials/add-images?edition=community#copy-your-picture) above.
 
 </details>
 
@@ -189,6 +194,11 @@ You can also find this picture with **Ctrl+F** on Windows/Linux or **Cmd+F** on 
 <summary>Why is my image missing or showing its description?</summary>
 
 Check that your picture is inside `first-website/images`. Then compare its filename with the name after `images/` in the HTML. The spelling, capital letters, and extension must match. `photo.jpg` and `photo.jpeg` are different filenames.
+
+On your own website, the path is relative to the HTML file's folder. If the image
+also has `srcset`, or sits inside a `<picture>` element with `<source>` entries,
+the browser may choose one of those image files instead. Update the relevant
+image paths there too; keep the attributes that control your layout.
 
 In Pro, select the picture and choose **Image Gallery > Select from device** again to set its file automatically.
 
