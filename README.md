@@ -3,6 +3,10 @@
 This repository hosts the code for https://docs.phcode.dev/ . Please contribute
 to this repo for helping the Phoenix/Brackets community.
 
+For contributors and AI agents, start with the
+[documentation authoring guide](CONTRIBUTING.md#writing-and-updating-documentation).
+It covers planning, product verification, writing, media, and release review.
+
 ## License
 
 CC BY License Copyright (c) 2022-present, core.ai

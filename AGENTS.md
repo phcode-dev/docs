@@ -1,5 +1,12 @@
 # Guidance for AI contributors
 
+Before creating or revising documentation, read the
+[documentation authoring guide](CONTRIBUTING.md#writing-and-updating-documentation).
+It applies to tutorials, feature guides, troubleshooting, and blog articles.
+Verify the real workflow, write complete steps for a beginner, and keep the
+article, examples, screenshots, and recordings consistent. Correct an existing
+guide when it already covers the task; create a new page for a distinct outcome.
+
 Before adding or changing tutorial recordings, video players, video metadata,
 or watch pages, read the
 [video contributor notes](CONTRIBUTING.md#adding-or-updating-tutorial-videos).
