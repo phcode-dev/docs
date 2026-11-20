@@ -133,8 +133,12 @@ its label should change to <strong>Clicked</strong>.</p>
 Click it again after you change a setting.</p>
 <p>This tests JavaScript written inside the HTML. In pasted HTML, the Viewer can
 run inline scripts, but it blocks external <code>&lt;script src&gt;</code> files and <code>fetch</code>/XHR
-requests. If your page needs separate JavaScript files or modules, open the full
-project in an editor. If it also needs a backend server, run that server too.</p>
+requests.</p>
+<p>To test a small example with a separate stylesheet or script, open the
+<a href="https://phcode.dev/tools/html-editor.html" target="_blank" rel="noopener noreferrer" class="">online HTML editor</a>. Paste your HTML,
+CSS and JavaScript into the <code>index.html</code>, <code>style.css</code> and <code>script.js</code> tabs.</p>
+<p>For a project with more files or modules, open the full folder in an editor.
+If it also needs a backend server, run that server too.</p>
 <p>If your own inline script still fails, open the developer tools <strong>Console</strong>.
 Fix the first error from your script, then test again.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-the-complete-project-in-phoenix-code">Open the complete project in Phoenix Code<a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#open-the-complete-project-in-phoenix-code" class="hash-link" aria-label="Direct link to Open the complete project in Phoenix Code" title="Direct link to Open the complete project in Phoenix Code" translate="no">​</a></h2>
