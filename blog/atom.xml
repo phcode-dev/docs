@@ -77,6 +77,41 @@
         <category label="JSON" term="JSON"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to Convert Markdown to PDF with Page Breaks]]></title>
+        <id>https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks</id>
+        <link href="https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Convert a Markdown README to a two-page PDF in your browser. Try the sample file, add a page break, and check that the table and code survive export.]]></summary>
+        <content type="html"><![CDATA[<p>To convert a Markdown file to PDF, open it in the <a href="https://phcode.dev/tools/markdown-to-pdf.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Code Markdown to PDF Converter</a>, choose <strong>Save as PDF</strong>, then save from your browser’s print dialog. If you want a section to start on a new page, you can mark that spot in the Markdown.</p>
+<p>Try it with a short project README. The finished handout has a file table and a CSS example on page one, followed by a checklist on page two. You can do this in a browser without installing an editor or extension.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-the-readme-and-check-the-preview">Open the README and check the preview<a href="https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks#open-the-readme-and-check-the-preview" class="hash-link" aria-label="Direct link to Open the README and check the preview" title="Direct link to Open the README and check the preview" translate="no">​</a></h2>
+<ol>
+<li class="">Save <a href="https://docs.phcode.dev/tutorials/markdown-pdf/trail-notes.md" download="trail-notes.md">the example Markdown file</a>, or use a <code>.md</code> file of your own.</li>
+<li class="">Open the <a href="https://phcode.dev/tools/markdown-to-pdf.html" target="_blank" rel="noopener noreferrer" class="">converter</a>, click <strong>Open file</strong>, and select your file. If you already have the text on your clipboard, paste it into <strong>Markdown source</strong>.</li>
+<li class="">Under <strong>PDF page preview</strong>, look for the heading <strong>Trail Notes release handoff</strong>, a two-row table, and the CSS rule for <code>.route-label</code>. On a narrow screen, tap <strong>Preview</strong> to switch from the source to the rendered page.</li>
+</ol>
+<a href="https://docs.phcode.dev/tutorials/markdown-pdf/converter-preview.png"><img src="https://docs.phcode.dev/tutorials/markdown-pdf/converter-preview.png" width="1175" height="650" style="height:auto" loading="lazy" alt="Phoenix Code shows the README beside its rendered table, CSS rule, and checklist. The toolbar shows A4 paper, Normal margins, Page numbers, and Save as PDF."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="start-the-checklist-on-a-new-page">Start the checklist on a new page<a href="https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks#start-the-checklist-on-a-new-page" class="hash-link" aria-label="Direct link to Start the checklist on a new page" title="Direct link to Start the checklist on a new page" translate="no">​</a></h2>
+<p>The sample already contains a page break. For your own README, place <code>&lt;!-- pagebreak --&gt;</code> on a line by itself just before the heading you want on the next page. Leave a blank line above and below the marker. Put it outside any fenced code block so the converter reads it as an instruction.</p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">&lt;!-- pagebreak --&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token title important punctuation" style="color:#393A34">##</span><span class="token title important"> Before you publish</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">1.</span><span class="token plain"> Open the home page.</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">2.</span><span class="token plain"> Check the route label and the weekend walk link.</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token list punctuation" style="color:#393A34">3.</span><span class="token plain"> Save a copy of this handout.</span><br></div></code></pre></div></div>
+<p>In the converter preview, <strong>Before you publish</strong> still appears just below the CSS example. The print dialog shows where one sheet ends and the next begins.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="save-and-check-the-two-page-pdf">Save and check the two-page PDF<a href="https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks#save-and-check-the-two-page-pdf" class="hash-link" aria-label="Direct link to Save and check the two-page PDF" title="Direct link to Save and check the two-page PDF" translate="no">​</a></h2>
+<ol>
+<li class="">In the converter toolbar, set <strong>Paper</strong> to <strong>A4</strong> and <strong>Margins</strong> to <strong>Normal</strong> to match the example. For US Letter paper, choose <strong>Letter</strong>. If your browser shows <strong>Page numbers</strong>, turn it on to number the sheets.</li>
+<li class="">Click <strong>Save as PDF</strong> in the converter. In Chrome’s print dialog, choose <strong>Save as PDF</strong> under <strong>Destination</strong>. For the sample, check that the print preview shows two pages.</li>
+<li class="">Click <strong>Save</strong>, pick a folder, and name the file <code>trail-notes.pdf</code>. Open the saved PDF. On page one, search for <code>#256347</code> or select the CSS rule with your mouse. Page two should begin with <strong>Before you publish</strong>.</li>
+</ol>
+<p>You can check your result against the <a href="https://docs.phcode.dev/tutorials/markdown-pdf/trail-notes.pdf">PDF saved from the example</a>. If the checklist stayed on page one, look for a code block above the marker that still needs its closing three backticks. If your PDF includes the converter’s toolbar, use the converter’s <strong>Save as PDF</strong> button to print the document.</p>
+<p>If you want to keep editing the README in Phoenix Code, open the original <code>.md</code> file there. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/markdown-editor">Editing Markdown with Live Preview</a>.</p>]]></content>
+        <author>
+            <name>Phoenix Code Bot</name>
+            <uri>https://github.com/phoenixide</uri>
+        </author>
+        <category label="Tools" term="Tools"/>
+        <category label="Markdown" term="Markdown"/>
+        <category label="PDF" term="PDF"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Why Your HTML Preview Is Missing CSS, Images or JavaScript]]></title>
         <id>https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript</id>
         <link href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript"/>
