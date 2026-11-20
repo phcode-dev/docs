@@ -69,6 +69,8 @@ Switch back to **Preview** if needed. At **Mobile**, the distance and heading sh
 
 The card needed 720 pixels even when its parent had only 390. The new maximum lets it shrink to the available width. The existing `box-sizing: border-box` keeps the padding inside that width. On your own page, apply the change to the element that sticks out, save the stylesheet, and repeat the same width checks. [How CSS max-width works](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/max-width)
 
+For a page with a sidebar, you can also move the two columns into reading order on a phone. [Build a responsive CSS Grid sidebar](/blog/responsive-css-grid-sidebar).
+
 ## Test a project with separate files
 
 If your HTML links to a local stylesheet or images, open the whole project in Phoenix Code so Live Preview can find those files. In **Phoenix Pro**, the device-size button at the right of the Live Preview toolbar lets you switch widths. After checking the layout, open your published page on a real phone to try the links, touch controls, and on-screen keyboard. [Device Preview in Phoenix Pro](/docs/Pro%20Features/device-preview) · [Troubleshoot missing styles and images](/blog/html-preview-missing-css-images-javascript)
