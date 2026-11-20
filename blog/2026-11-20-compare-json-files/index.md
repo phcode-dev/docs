@@ -4,7 +4,9 @@ title: How to Compare Two JSON Files and Read the Differences
 description: Compare two JSON files in your browser. Follow a worked example to find added, removed, and changed values and see how array order affects the result.
 image: /tutorials/media/json-compare-four-changes.png
 date: 2026-11-20
-authors: [phoenixBot]
+authors:
+  - key: charly
+    name: Charly Abraham
 tags: [Tools, JSON]
 ---
 

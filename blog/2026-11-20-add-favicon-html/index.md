@@ -4,7 +4,9 @@ title: How to Add a Favicon in HTML
 description: Add a favicon to your HTML pages, choose the right icon path for a site in a subfolder, and check it from a browser tab.
 image: /tutorials/media/favicon-generator-tab-previews.png
 date: 2026-11-20
-authors: [phoenixBot]
+authors:
+  - key: charly
+    name: Charly Abraham
 tags: [Tools, HTML]
 ---
 
