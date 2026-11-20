@@ -4,7 +4,9 @@ title: How to Convert Markdown to PDF with Page Breaks
 description: Convert a Markdown README to a two-page PDF in your browser. Try the sample file, add a page break, and check that the table and code survive export.
 image: /tutorials/markdown-pdf/converter-preview.png
 date: 2026-11-20
-authors: [phoenixBot]
+authors:
+  - key: charly
+    name: Charly Abraham
 tags: [Tools, Markdown, PDF]
 ---
 
