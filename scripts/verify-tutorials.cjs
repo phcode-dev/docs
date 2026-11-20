@@ -20,7 +20,7 @@ const GUIDES = ['tutorials', 'tutorials/add-images', 'tutorials/link-pages',
   'tutorials/image-text-layout', 'tutorials/edit-text-fonts'];
 const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-pdf-without-losing-quality',
   'html-preview-missing-css-images-javascript', 'how-to-add-a-favicon-in-html', 'compare-two-json-files',
-  'convert-markdown-to-pdf-with-page-breaks'];
+  'convert-markdown-to-pdf-with-page-breaks', 'open-an-html-file-in-chrome'];
 const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
 const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos), ...Object.values(layoutVideos),
   ...Object.values(htmlPreviewVideos)];

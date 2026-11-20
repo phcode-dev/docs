@@ -94,6 +94,8 @@ To check your own file, choose **Open .html file** above the source editor. This
 replaces the current source. To keep your edits, use **Download .html** in the
 source toolbar first. On desktop, this is the download-arrow button with that tooltip.
 
+To see a saved page with the CSS and images beside it on your computer, [open the local HTML file in Chrome](/blog/open-an-html-file-in-chrome).
+
 If changes stop appearing, check whether **Live preview** is on. Its checkbox
 and **Allow external resources** are above the editor on a wide screen. On a
 narrow screen, open **Preview settings** below the workspace. When **Live
