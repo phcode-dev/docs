@@ -49,6 +49,8 @@ You can open a folder from your desktop in Phoenix Code by following these steps
 
 > The **Open Folder** feature is not supported in Firefox browser due to local folder access restrictions. Please use Chrome, Edge, or Opera for working with local folders.
 
+If you started with a single file in the [HTML Viewer](https://phcode.dev/tools/html-viewer.html), see [why an HTML preview may be missing CSS, images or JavaScript](/blog/html-preview-missing-css-images-javascript). The guide explains when to open the complete project folder.
+
 ![Open Folder Image](../images/quickStartProject/open-folder.png "Click on Open Folder to work with local folders")
 
 

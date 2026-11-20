@@ -189,6 +189,60 @@
         "Visible muted playback, offscreen pause, reader pause preservation, seeking, reduced-motion manual playback, keyboard FAQ use, and watch-page return navigation verified in Chrome",
         "Article-to-watch-page navigation and return each retain one VideoObject without duplicate metadata"
       ]
+    },
+    {
+      "file": "static/tutorials/media/html-preview-hosted-resources.mp4",
+      "product": "Phoenix Code HTML Viewer",
+      "product_url": "https://phcode.dev/tools/html-viewer.html",
+      "project": "Hosted version of the image-text-layout stylesheet and woodland photo",
+      "workflow": "The hosted example from the guide is already in HTML Viewer. Turn on Allow external resources to load its stylesheet and woodland photo from docs.phcode.dev. Scripts stay off; this setting does not open neighboring files on your computer.",
+      "captured_at": "2026-11-19T15:14:46.032Z",
+      "platform": "Chromium 147.0.7727.15 on Linux",
+      "edition": "Free browser-based HTML Viewer",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 11.4,
+      "duration_limit_seconds": 30,
+      "frame_size": [
+        638,
+        742
+      ],
+      "caption_placement": "Instruction strip above the actual screen recording, clear of application and player controls",
+      "verification": [
+        "Hosted requests absent with external access off",
+        "Image naturalWidth is zero before access",
+        "Real docs stylesheet changes body background to rgb(248, 247, 242)",
+        "Real docs photo loads after access"
+      ],
+      "presentation": "Real pointer actions in the live HTML Viewer, recorded at original timing. The crop focuses on preview settings and the rendered result. A pointer and temporary control outline are annotations; product layout, text, and state are unchanged. Analytics were blocked and inputs contain only the public practice examples."
+    },
+    {
+      "file": "static/tutorials/media/html-preview-inline-javascript.mp4",
+      "product": "Phoenix Code HTML Viewer",
+      "product_url": "https://phcode.dev/tools/html-viewer.html",
+      "project": "Self-contained HTML and inline Test button from the troubleshooting article",
+      "workflow": "The guide’s self-contained HTML example and Test button are already in the source. Click with scripts off, enable Allow external resources and Run scripts, then click again to see Clicked. This demonstrates inline code, not an external script file.",
+      "captured_at": "2026-11-19T15:14:46.032Z",
+      "platform": "Chromium 147.0.7727.15 on Linux",
+      "edition": "Free browser-based HTML Viewer",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 17.533333,
+      "duration_limit_seconds": 30,
+      "frame_size": [
+        638,
+        742
+      ],
+      "caption_placement": "Instruction strip above the actual screen recording, clear of application and player controls",
+      "verification": [
+        "Exact article example",
+        "Button unchanged after click with scripts disabled",
+        "External permission reveals the scripts control",
+        "Button becomes Clicked after both permissions and a real click"
+      ],
+      "presentation": "Real pointer actions in the live HTML Viewer, recorded at original timing. The crop focuses on preview settings and the rendered result. A pointer and temporary control outline are annotations; product layout, text, and state are unchanged. Analytics were blocked and inputs contain only the public practice examples."
     }
   ],
   "sample_photo": {
@@ -232,5 +286,31 @@
     ]
   },
   "presentation": "Separate walkthroughs for each tutorial task or edition, with screenshots and native video controls",
-  "playback": "Muted inline autoplay when visible; pauses offscreen and in hidden tabs, preserves the reader's pause, and starts manually for reduced-motion preferences"
+  "playback": "Muted inline autoplay when visible; pauses offscreen and in hidden tabs, preserves the reader's pause, and starts manually for reduced-motion preferences",
+  "html_preview_screenshots": [
+    {
+      "file": "static/tutorials/media/html-preview-inline-result.png",
+      "product": "Phoenix Code HTML Viewer",
+      "product_url": "https://phcode.dev/tools/html-viewer.html",
+      "captured_at": "2026-11-19T15:14:46.032Z",
+      "capture": "The article’s exact self-contained example, external resources off",
+      "presentation": "Actual HTML Viewer screenshot with synthetic example data; analytics blocked; product UI unchanged"
+    },
+    {
+      "file": "static/tutorials/media/html-preview-hosted-result.png",
+      "product": "Phoenix Code HTML Viewer",
+      "product_url": "https://phcode.dev/tools/html-viewer.html",
+      "captured_at": "2026-11-19T15:14:46.032Z",
+      "capture": "Hosted CSS and photo loaded with external access on and scripts off",
+      "presentation": "Actual HTML Viewer screenshot with synthetic example data; analytics blocked; product UI unchanged"
+    },
+    {
+      "file": "static/tutorials/media/html-preview-mobile-settings.png",
+      "product": "Phoenix Code HTML Viewer",
+      "product_url": "https://phcode.dev/tools/html-viewer.html",
+      "captured_at": "2026-11-19T15:14:46.032Z",
+      "capture": "Expanded mobile Preview settings, external access on and Run scripts still off",
+      "presentation": "Actual HTML Viewer screenshot with synthetic example data; analytics blocked; product UI unchanged"
+    }
+  ]
 }

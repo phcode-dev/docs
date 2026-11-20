@@ -1,0 +1,29 @@
+/* Follow the existing blog figure rhythm and shared native video player. */
+.html-preview-figure {
+  margin: 1.5rem 0 2rem;
+}
+
+.html-preview-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.html-preview-figure figcaption {
+  margin-top: 0.75rem;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.html-preview-mobile-figure {
+  max-width: 20.125rem;
+}
+
+.html-preview-video {
+  max-width: 39.875rem;
+}
+
+.html-preview-video video {
+  display: block;
+}
