@@ -89,9 +89,40 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-moving-a-key-is-different-from-moving-an-array-item">Why moving a key is different from moving an array item<a href="https://docs.phcode.dev/blog/compare-two-json-files#why-moving-a-key-is-different-from-moving-an-array-item" class="hash-link" aria-label="Direct link to Why moving a key is different from moving an array item" title="Direct link to Why moving a key is different from moving an array item" translate="no">​</a></h2>
 <p>The <code>project</code> key appears first in the original and last in the changed file. Its value is still <code>"Trail Notes"</code>, so it has no entry in the report. An object identifies each value by its key.</p>
 <p>An array identifies items by position. To see this, replace the original pane with <code>{"pages":["home","walks"]}</code> and the changed pane with <code>{"pages":["walks","home"]}</code>. Click <strong>Compare JSON</strong> again. You’ll get <strong>2 changed</strong>. Position <code>/pages/0</code> now holds <code>"walks"</code>, and <code>/pages/1</code> now holds <code>"home"</code>.</p>
-<p>To apply a change, open the source file in your editor, edit that setting, and save. Then open the saved version in <strong>Changed JSON</strong> and compare again. If you’re editing a project configuration in Phoenix Code, see <a class="" href="https://docs.phcode.dev/docs/Features/json-code-intelligence">JSON editing and error checks</a>.</p>]]></content:encoded>
+<p>To apply a change, open the source file in your editor, edit that setting, and save. Then open the saved version in <strong>Changed JSON</strong> and compare again. If you’re editing a project configuration in Phoenix Code, see <a class="" href="https://docs.phcode.dev/docs/Features/json-code-intelligence">JSON editing and error checks</a>.</p>
+<p>If the comparison stops at a closing bracket, check for an extra comma after the last value. <a class="" href="https://docs.phcode.dev/blog/fix-trailing-comma-json">Find and fix a trailing comma in JSON</a>.</p>]]></content:encoded>
             <category>Tools</category>
             <category>JSON</category>
+        </item>
+        <item>
+            <title><![CDATA[Build a responsive CSS Grid sidebar that stacks on phones]]></title>
+            <link>https://docs.phcode.dev/blog/responsive-css-grid-sidebar</link>
+            <guid>https://docs.phcode.dev/blog/responsive-css-grid-sidebar</guid>
+            <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Make a header, sidebar, and content area in Phoenix’s CSS Grid Generator. Check the layout at two widths and open the finished HTML file in your browser.]]></description>
+            <content:encoded><![CDATA[<p>A walking guide needs room for a list of walks beside the route description. On a phone, people should be able to read the description without scrolling sideways. You can build both layouts in Phoenix’s free CSS Grid Generator and download a single HTML file that switches between them.</p>
+<p>You’ll make three blocks called <strong>Trail notes</strong>, <strong>Walks</strong>, and <strong>Route details</strong>. All you need is a browser.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="set-up-the-sidebar">Set up the sidebar<a href="https://docs.phcode.dev/blog/responsive-css-grid-sidebar#set-up-the-sidebar" class="hash-link" aria-label="Direct link to Set up the sidebar" title="Direct link to Set up the sidebar" translate="no">​</a></h2>
+<ol>
+<li class="">Open the <a href="https://phcode.dev/tools/css-grid-generator.html" target="_blank" rel="noopener noreferrer" class="">CSS Grid Generator</a>. At the top of the builder, choose <strong>Sidebar</strong>. The first block stretches across the top. The two below it share a row.</li>
+<li class="">Under <strong>Selected item</strong>, choose <strong>Item 1</strong>. Change <strong>Label</strong> to <code>Trail notes</code> and press <strong>Tab</strong>. Repeat with <strong>Item 2</strong> for <code>Walks</code> and <strong>Item 3</strong> for <code>Route details</code>. On a phone, open <strong>Layout controls</strong> to see these fields.</li>
+<li class="">Under <strong>Layout</strong>, keep <strong>Stack on small screens</strong> checked. Beside <strong>Live preview</strong>, open the width menu and choose <strong>Desktop · 960px</strong>. On a phone, tap <strong>Preview &amp; code</strong> first.</li>
+</ol>
+<p>The preset uses four equal columns. The heading spans all four. Below it, <strong>Walks</strong> takes the first column and <strong>Route details</strong> takes the other three.</p>
+<a href="https://docs.phcode.dev/tutorials/media/grid-sidebar-960.png"><img src="https://docs.phcode.dev/tutorials/media/grid-sidebar-960.png" width="908" height="565" style="height:auto" loading="lazy" alt="The 960-pixel grid preview shows Trail notes across the top, Walks in the narrow left column, and Route details beside it."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="check-what-happens-on-a-phone">Check what happens on a phone<a href="https://docs.phcode.dev/blog/responsive-css-grid-sidebar#check-what-happens-on-a-phone" class="hash-link" aria-label="Direct link to Check what happens on a phone" title="Direct link to Check what happens on a phone" translate="no">​</a></h2>
+<p>Choose <strong>Mobile · 375px</strong> from the same menu. <strong>Stacked layout</strong> appears under the preview. Read from the top down and you should see <strong>Trail notes</strong>, <strong>Walks</strong>, then <strong>Route details</strong>. Each takes the full width available inside the page margins.</p>
+<a href="https://docs.phcode.dev/tutorials/media/grid-sidebar-375.png"><img src="https://docs.phcode.dev/tutorials/media/grid-sidebar-375.png" width="908" height="590" style="height:auto" loading="lazy" alt="The 375-pixel preview shows the three labeled blocks in one column with Route details below Walks."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="save-and-try-the-finished-page">Save and try the finished page<a href="https://docs.phcode.dev/blog/responsive-css-grid-sidebar#save-and-try-the-finished-page" class="hash-link" aria-label="Direct link to Save and try the finished page" title="Direct link to Save and try the finished page" translate="no">​</a></h2>
+<ol>
+<li class="">Click <strong>Download HTML</strong> below the code. Open the downloaded <code>phoenix-grid.html</code> in your browser.</li>
+<li class="">Make the window narrow, then wide again. The exported CSS uses <code>@media (max-width: 640px)</code>. At 640 CSS pixels and below you get one column. Above that width the sidebar and content sit side by side.</li>
+<li class="">To use the layout for your own page, open the downloaded file in your editor and find <code>Route details</code> inside <code>&lt;body&gt;</code>. Replace that label with a route description, save, and reload the browser. Keep the three blocks in the order you want people to read them on a phone. The small-screen layout follows their order in the HTML.</li>
+</ol>
+<p>If your own content sticks out past the right edge after the columns stack, check whether an item inside the grid has a fixed width. <a class="" href="https://docs.phcode.dev/blog/test-website-on-different-screen-sizes">Test a page at different screen sizes</a>.</p>]]></content:encoded>
+            <category>Tools</category>
+            <category>CSS</category>
+            <category>HTML</category>
         </item>
         <item>
             <title><![CDATA[How to Decode Base64 Text and Preview an Encoded Image]]></title>
@@ -186,6 +217,55 @@
             <category>CSS</category>
         </item>
         <item>
+            <title><![CDATA[Find and fix a trailing comma in JSON]]></title>
+            <link>https://docs.phcode.dev/blog/fix-trailing-comma-json</link>
+            <guid>https://docs.phcode.dev/blog/fix-trailing-comma-json</guid>
+            <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Use the reported line and column to find an extra comma in a JSON array or object. Try a broken example, keep the comma inside a place name, and save the corrected file.]]></description>
+            <content:encoded><![CDATA[<p>In JSON, a comma tells the reader to expect another value or property. A comma immediately before the closing <code>]</code> or <code>}</code> is a <strong>trailing comma</strong> and makes the file invalid. A comma inside quoted text is an ordinary character. Removing every comma can break the file and change your data.</p>
+<p>Here’s how to find the extra comma in a list of stops, keep the place name <strong>Lake, north</strong> intact, and save the corrected file.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="find-the-error">Find the error<a href="https://docs.phcode.dev/blog/fix-trailing-comma-json#find-the-error" class="hash-link" aria-label="Direct link to Find the error" title="Direct link to Find the error" translate="no">​</a></h2>
+<ol>
+<li class="">Open the <a href="https://phcode.dev/tools/json-formatter.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Code JSON Formatter</a>. Paste the example below into <strong>Input JSON</strong>. If you’re checking a file of your own, choose <strong>Open file</strong> instead.</li>
+<li class="">Click <strong>Validate</strong>. For this exact example, the red message points to <strong>line 3, column 39</strong>. That position is the closing square bracket. The character immediately before it is the extra comma.</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">{</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  "walk": "Woodland loop",</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  "stops": ["Oak gate", "Lake, north",],</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  "open": true</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+<a href="https://docs.phcode.dev/tutorials/media/json-trailing-comma-error.png"><img src="https://docs.phcode.dev/tutorials/media/json-trailing-comma-error.png" width="1230" height="483" style="height:auto" loading="lazy" alt="The JSON Formatter shows the sample under Input JSON and points to line 3, column 39, where the stops array closes after an extra comma."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove-the-one-extra-comma">Remove the one extra comma<a href="https://docs.phcode.dev/blog/fix-trailing-comma-json#remove-the-one-extra-comma" class="hash-link" aria-label="Direct link to Remove the one extra comma" title="Direct link to Remove the one extra comma" translate="no">​</a></h2>
+<p>In <strong>Input JSON</strong>, replace the <code>stops</code> line with the one below.</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">"stops"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">"Oak gate"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"Lake, north"</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><br></div></code></pre></div></div>
+<p>The comma between the two stops separates two values. The comma inside <code>"Lake, north"</code> belongs to the name. The comma after the closing <code>]</code> also stays, because the <code>open</code> property follows on the next line.</p>
+<p>Click <strong>Validate</strong> again. You should see <strong>Valid JSON</strong>. Then click <strong>Format</strong> and choose <strong>Download</strong> above the result. Open <code>formatted.json</code> from your downloads and check that the second stop still reads <code>"Lake, north"</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-if-the-error-points-to-a-closing-brace">What if the error points to a closing brace?<a href="https://docs.phcode.dev/blog/fix-trailing-comma-json#what-if-the-error-points-to-a-closing-brace" class="hash-link" aria-label="Direct link to What if the error points to a closing brace?" title="Direct link to What if the error points to a closing brace?" translate="no">​</a></h2>
+<p>The same rule applies to objects. For example, <code>{"open": true,}</code> has a comma after its last property. Change it to <code>{"open": true}</code>. A parser can report the closing character because that’s where it discovers the expected next value or property is missing. <a href="https://www.rfc-editor.org/rfc/rfc8259#section-4" target="_blank" rel="noopener noreferrer" class="">JSON object and array syntax</a>.</p>
+<p>If both versions of your file now validate and you want to see whether any values changed, <a class="" href="https://docs.phcode.dev/blog/compare-two-json-files">compare the two JSON files</a>.</p>]]></content:encoded>
+            <category>Tools</category>
+            <category>JSON</category>
+        </item>
+        <item>
+            <title><![CDATA[Make a Markdown table with aligned columns]]></title>
+            <link>https://docs.phcode.dev/blog/make-a-markdown-table</link>
+            <guid>https://docs.phcode.dev/blog/make-a-markdown-table</guid>
+            <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Build a GitHub-style Markdown table, line up distances on the right, and put a literal pipe inside a cell. Preview the example and download its HTML.]]></description>
+            <content:encoded><![CDATA[<p>A Markdown table starts with a heading row and a row of dashes. A vertical bar, also called a pipe (<code>|</code>), separates the cells. For a numeric column, put a colon after its dashes (<code>---:</code>) to line up the values on the right.</p>
+<p>Try it with a walking club’s README. The table needs to keep distances in one column and show the meeting point <strong>Gate A | East car park</strong> in a single cell.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="paste-the-table-into-a-preview">Paste the table into a preview<a href="https://docs.phcode.dev/blog/make-a-markdown-table#paste-the-table-into-a-preview" class="hash-link" aria-label="Direct link to Paste the table into a preview" title="Direct link to Paste the table into a preview" translate="no">​</a></h2>
+<p>Open the <a href="https://phcode.dev/tools/markdown-viewer.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Code Markdown Viewer</a> and paste this example into <strong>Markdown source</strong>. You can also <a href="https://docs.phcode.dev/tutorials/markdown-table/weekend-walks.md" download="weekend-walks.md">download the example Markdown file</a> and choose <strong>Open file</strong>. On a narrow screen, tap <strong>Preview</strong> to see the result.</p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token title important punctuation" style="color:#393A34">#</span><span class="token title important"> Weekend walks</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token table table-header-row punctuation" style="color:#393A34">|</span><span class="token table table-header-row table-header important"> Walk </span><span class="token table table-header-row punctuation" style="color:#393A34">|</span><span class="token table table-header-row table-header important"> Distance (km) </span><span class="token table table-header-row punctuation" style="color:#393A34">|</span><span class="token table table-header-row table-header important"> Meeting point </span><span class="token table table-header-row punctuation" style="color:#393A34">|</span><span class="token table table-header-row"></span><br></div><div class="token-line" style="color:#393A34"><span class="token table table-header-row"></span><span class="token table table-line punctuation" style="color:#393A34">|</span><span class="token table table-line"> </span><span class="token table table-line punctuation" style="color:#393A34">:---</span><span class="token table table-line"> </span><span class="token table table-line punctuation" style="color:#393A34">|</span><span class="token table table-line"> </span><span class="token table table-line punctuation" style="color:#393A34">---:</span><span class="token table table-line"> </span><span class="token table table-line punctuation" style="color:#393A34">|</span><span class="token table table-line"> </span><span class="token table table-line punctuation" style="color:#393A34">:---</span><span class="token table table-line"> </span><span class="token table table-line punctuation" style="color:#393A34">|</span><span class="token table table-line"></span><br></div><div class="token-line" style="color:#393A34"><span class="token table table-line"></span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><span class="token table table-data-rows table-data"> Woodland loop </span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><span class="token table table-data-rows table-data"> 4 </span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><span class="token table table-data-rows table-data"> Gate A \| East car park </span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><span class="token table table-data-rows"></span><br></div><div class="token-line" style="color:#393A34"><span class="token table table-data-rows"></span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><span class="token table table-data-rows table-data"> River path </span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><span class="token table table-data-rows table-data"> 12 </span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><span class="token table table-data-rows table-data"> Footbridge </span><span class="token table table-data-rows punctuation" style="color:#393A34">|</span><br></div></code></pre></div></div>
+<p>Look for three columns under <strong>Weekend walks</strong>. The <strong>4</strong> sits directly above the last digit of <strong>12</strong>. The first meeting point shows a vertical bar between <strong>Gate A</strong> and <strong>East car park</strong>. The backslash is gone.</p>
+<a href="https://docs.phcode.dev/tutorials/media/markdown-table-preview.png"><img src="https://docs.phcode.dev/tutorials/media/markdown-table-preview.png" width="1230" height="492" style="height:auto" loading="lazy" alt="Markdown source and its rendered table appear side by side. The distances 4 and 12 line up on the right, and Gate A | East car park stays in one cell."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="change-the-alignment-or-add-a-row">Change the alignment or add a row<a href="https://docs.phcode.dev/blog/make-a-markdown-table#change-the-alignment-or-add-a-row" class="hash-link" aria-label="Direct link to Change the alignment or add a row" title="Direct link to Change the alignment or add a row" translate="no">​</a></h2>
+<p>The second line of the table controls how each column looks. Use <code>:---</code> for left, <code>:---:</code> for center, or <code>---:</code> for right. Leave a blank line between a preceding paragraph and the table, and keep one stretch of dashes for each heading. <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables" target="_blank" rel="noopener noreferrer" class="">GitHub’s guide to Markdown tables</a>.</p>
+<p>To add another walk, put this line immediately after the <strong>River path</strong> row in the source. The preview should gain a third walk, with <strong>7</strong> under the other distances.</p>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">| Hill climb | 7 | West gate |</span><br></div></code></pre></div></div>
+<p>If part of a cell disappears, look for a pipe in its text. In this example, changing <code>\|</code> to <code>|</code> splits the meeting point and puts <strong>East car park</strong> beyond the table’s three columns. Put the backslash back to keep the whole name together.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="save-the-version-you-need">Save the version you need<a href="https://docs.phcode.dev/blog/make-a-markdown-table#save-the-version-you-need" class="hash-link" aria-label="Direct link to Save the version you need" title="Direct link to Save the version you need" translate="no">​</a></h2>
+<p>For a GitHub README, copy the Markdown source into <code>README.md</code>, save it, and use GitHub’s <strong>Preview</strong> when you edit the file there. To share a page someone can open directly in a browser, choose <strong>Download HTML</strong> in the viewer. Open the downloaded file and check the meeting point and distances once more. For a printed handout, <a class="" href="https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks">turn your Markdown into a PDF</a>.</p>]]></content:encoded>
+            <category>Tools</category>
+            <category>Markdown</category>
+        </item>
+        <item>
             <title><![CDATA[How to Convert Markdown to PDF with Page Breaks]]></title>
             <link>https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks</link>
             <guid>https://docs.phcode.dev/blog/convert-markdown-to-pdf-with-page-breaks</guid>
@@ -211,7 +291,8 @@
 <li class="">Click <strong>Save</strong>, pick a folder, and name the file <code>trail-notes.pdf</code>. Open the saved PDF. On page one, search for <code>#256347</code> or select the CSS rule with your mouse. Page two should begin with <strong>Before you publish</strong>.</li>
 </ol>
 <p>You can check your result against the <a href="https://docs.phcode.dev/tutorials/markdown-pdf/trail-notes.pdf">PDF saved from the example</a>. If the checklist stayed on page one, look for a code block above the marker that still needs its closing three backticks. If your PDF includes the converter’s toolbar, use the converter’s <strong>Save as PDF</strong> button to print the document.</p>
-<p>If you want to keep editing the README in Phoenix Code, open the original <code>.md</code> file there. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/markdown-editor">Editing Markdown with Live Preview</a>.</p>]]></content:encoded>
+<p>If you want to keep editing the README in Phoenix Code, open the original <code>.md</code> file there. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/markdown-editor">Editing Markdown with Live Preview</a>.</p>
+<p>If a table cell splits at a vertical bar or the numbers are hard to compare, fix the table in the Markdown before printing. <a class="" href="https://docs.phcode.dev/blog/make-a-markdown-table">Make a Markdown table with aligned columns</a>.</p>]]></content:encoded>
             <category>Tools</category>
             <category>Markdown</category>
             <category>PDF</category>
@@ -246,6 +327,27 @@
             <category>HTML</category>
         </item>
         <item>
+            <title><![CDATA[Why a Unix timestamp shows 1970 in JavaScript]]></title>
+            <link>https://docs.phcode.dev/blog/unix-timestamp-seconds-or-milliseconds</link>
+            <guid>https://docs.phcode.dev/blog/unix-timestamp-seconds-or-milliseconds</guid>
+            <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Compare Unix timestamps in seconds and milliseconds, fix a JavaScript date that lands in 1970, and read the same event in UTC and local time.]]></description>
+            <content:encoded><![CDATA[<p>Suppose a log says an event happened at <code>1735689600</code>. You expect January 1, 2025, but <code>new Date(1735689600)</code> gives you a date in January 1970. That log counts <strong>seconds</strong> since January 1, 1970 at midnight UTC. JavaScript expects <strong>milliseconds</strong> when you pass a number to <code>new Date()</code>.</p>
+<p>There are 1,000 milliseconds in a second. You can check the units in a browser before changing any code.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="check-the-same-instant-two-ways">Check the same instant two ways<a href="https://docs.phcode.dev/blog/unix-timestamp-seconds-or-milliseconds#check-the-same-instant-two-ways" class="hash-link" aria-label="Direct link to Check the same instant two ways" title="Direct link to Check the same instant two ways" translate="no">​</a></h2>
+<p>Open the <a href="https://phcode.dev/tools/unix-timestamp-converter.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Code Unix Timestamp Converter</a>. Under <strong>Timestamp to Date</strong>, enter each number in turn, click <strong>Convert</strong>, and look at <strong>ISO 8601</strong> in the result. The final <code>Z</code> means the time is in UTC.</p>
+<table><thead><tr><th>Number you enter</th><th>Units in this example</th><th>ISO 8601 result</th></tr></thead><tbody><tr><td><code>1735689600</code></td><td>Seconds</td><td><code>2025-01-01T00:00:00.000Z</code></td></tr><tr><td><code>1735689600000</code></td><td>Milliseconds</td><td><code>2025-01-01T00:00:00.000Z</code></td></tr><tr><td><code>1735689600123</code></td><td>Milliseconds, 123 ms after midnight</td><td><code>2025-01-01T00:00:00.123Z</code></td></tr></tbody></table>
+<p>The first two numbers identify the same instant. For a value from your own system, check the field description for <strong>seconds</strong> or <strong>milliseconds</strong>. A number’s length is a clue for recent dates. The documented units also work for older dates and values close to zero.</p>
+<a href="https://docs.phcode.dev/tutorials/media/unix-seconds-milliseconds.png"><img src="https://docs.phcode.dev/tutorials/media/unix-seconds-milliseconds.png" width="1052" height="427" style="height:auto" loading="lazy" alt="The converter shows 1735689600123 as January 1, 2025 in UTC and December 31, 2024 at 7 p.m. in New York. Its ISO result preserves .123 seconds."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pass-milliseconds-to-javascript">Pass milliseconds to JavaScript<a href="https://docs.phcode.dev/blog/unix-timestamp-seconds-or-milliseconds#pass-milliseconds-to-javascript" class="hash-link" aria-label="Direct link to Pass milliseconds to JavaScript" title="Direct link to Pass milliseconds to JavaScript" translate="no">​</a></h2>
+<p>If the field contains seconds, multiply by 1,000 once. If the field already contains milliseconds, pass the number through directly. Try these lines in a browser console or your JavaScript file. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date" target="_blank" rel="noopener noreferrer" class="">JavaScript Date constructor</a>.</p>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> logSeconds </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1735689600</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> logMilliseconds </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1735689600123</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token console class-name">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">Date</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">logSeconds</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">toISOString</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">// 1970-01-21T02:08:09.600Z</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token console class-name">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">Date</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">logSeconds </span><span class="token operator" style="color:#393A34">*</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1000</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">toISOString</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// 2025-01-01T00:00:00.000Z</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token console class-name">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">Date</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">logMilliseconds</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">toISOString</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">   </span><span class="token comment" style="color:#999988;font-style:italic">// 2025-01-01T00:00:00.123Z</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-local-time-can-show-the-previous-day">Why local time can show the previous day<a href="https://docs.phcode.dev/blog/unix-timestamp-seconds-or-milliseconds#why-local-time-can-show-the-previous-day" class="hash-link" aria-label="Direct link to Why local time can show the previous day" title="Direct link to Why local time can show the previous day" translate="no">​</a></h2>
+<p>For the first example, <strong>UTC</strong> shows midnight on January 1. With the browser set to New York, <strong>Local Time</strong> shows 7 p.m. on December 31. New York was five hours behind UTC at that instant. Your local result depends on your time zone. When comparing events from two machines, compare their ISO values including the <code>Z</code> and any fractional seconds.</p>]]></content:encoded>
+            <category>Tools</category>
+            <category>JavaScript</category>
+        </item>
+        <item>
             <title><![CDATA[How to Test Your Website on Different Screen Sizes]]></title>
             <link>https://docs.phcode.dev/blog/test-website-on-different-screen-sizes</link>
             <guid>https://docs.phcode.dev/blog/test-website-on-different-screen-sizes</guid>
@@ -266,6 +368,7 @@
 <p>Switch back to <strong>Preview</strong> if needed. At <strong>Mobile</strong>, the distance and heading should now be visible together. The description wraps to a second line. Switch back to <strong>Tablet</strong> and <strong>Desktop</strong>. The card still stops at 720 pixels on those wider screens.</p>
 <a href="https://docs.phcode.dev/tutorials/media/responsive-card-mobile-fit.png"><img src="https://docs.phcode.dev/tutorials/media/responsive-card-mobile-fit.png" width="692" height="350" style="height:auto" loading="lazy" alt="After adding max-width, the Mobile preview shows both Woodland loop and 2 miles inside the green card. The description wraps within its right edge."></a>
 <p>The card needed 720 pixels even when its parent had only 390. The new maximum lets it shrink to the available width. The existing <code>box-sizing: border-box</code> keeps the padding inside that width. On your own page, apply the change to the element that sticks out, save the stylesheet, and repeat the same width checks. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/max-width" target="_blank" rel="noopener noreferrer" class="">How CSS max-width works</a></p>
+<p>For a page with a sidebar, you can also move the two columns into reading order on a phone. <a class="" href="https://docs.phcode.dev/blog/responsive-css-grid-sidebar">Build a responsive CSS Grid sidebar</a>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="test-a-project-with-separate-files">Test a project with separate files<a href="https://docs.phcode.dev/blog/test-website-on-different-screen-sizes#test-a-project-with-separate-files" class="hash-link" aria-label="Direct link to Test a project with separate files" title="Direct link to Test a project with separate files" translate="no">​</a></h2>
 <p>If your HTML links to a local stylesheet or images, open the whole project in Phoenix Code so Live Preview can find those files. In <strong>Phoenix Pro</strong>, the device-size button at the right of the Live Preview toolbar lets you switch widths. After checking the layout, open your published page on a real phone to try the links, touch controls, and on-screen keyboard. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/device-preview">Device Preview in Phoenix Pro</a> · <a class="" href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript">Troubleshoot missing styles and images</a></p>]]></content:encoded>
             <category>Tools</category>
@@ -878,280 +981,6 @@ text, continue with the <a class="" href="https://docs.phcode.dev/docs/tutorials
             <category>Linux</category>
             <category>Mac</category>
             <category>Release</category>
-        </item>
-        <item>
-            <title><![CDATA[Brackets Editor in 2026: Phoenix Code Picks Up Where It Left Off]]></title>
-            <link>https://docs.phcode.dev/blog/brackets-editor-phoenix-code</link>
-            <guid>https://docs.phcode.dev/blog/brackets-editor-phoenix-code</guid>
-            <pubDate>Wed, 04 Mar 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Brackets editor is in maintenance mode — Phoenix Code continues where it left off. Same team, same live preview DNA, rebuilt for 2026. Free and open source.]]></description>
-            <content:encoded><![CDATA[<p>If you've used Brackets, Phoenix Code will feel immediately familiar.</p>
-<p>Built by the same team behind Brackets, Phoenix Code keeps Live Preview and fast visual front-end development at its core — now rebuilt on a modern foundation.</p>
-<p>Phoenix Code isn’t a tribute or a spiritual successor. It’s the natural continuation of the ideas that started with Brackets.</p>
-<p>Here’s what’s changed — and how to switch.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="brackets-vs-phoenix-code-whats-new">Brackets vs Phoenix Code: What's New<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#brackets-vs-phoenix-code-whats-new" class="hash-link" aria-label="Direct link to Brackets vs Phoenix Code: What's New" title="Direct link to Brackets vs Phoenix Code: What's New" translate="no">​</a></h2>
-<p>Phoenix Code includes everything Brackets offered — Live Preview, lightweight workflow, web-first focus — plus built-in Git, a browser edition, visual CSS editing, and an active extension marketplace. Here's the full comparison.</p>
-<table><thead><tr><th>Feature</th><th>Brackets</th><th>Phoenix Code</th></tr></thead><tbody><tr><td>Live Preview</td><td>Basic (view only)</td><td>Full live preview (editing in preview with <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Pro</a>)</td></tr><tr><td>Visual Editing</td><td>Limited</td><td>Color pickers, number dials, gradient editors, drag-and-drop</td></tr><tr><td>Git Integration</td><td>Required third-party extension</td><td>Built-in</td></tr><tr><td>Browser Version</td><td>No</td><td>Yes — <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a>, no install needed</td></tr><tr><td>Chromebook / Tablet Support</td><td>No</td><td>Yes</td></tr><tr><td>Extension Marketplace</td><td>No longer maintained</td><td>Active and growing</td></tr><tr><td>Active Development</td><td>In maintenance mode since 2021</td><td>Regular releases, active team</td></tr><tr><td>Open Source</td><td>Yes</td><td>Yes (AGPL-3.0)</td></tr><tr><td>Built-in Image Library</td><td>No</td><td>Yes — stock photos you can drag into projects</td></tr><tr><td>Price</td><td>Free</td><td>Free (<a href="https://phcode.dev/pricing" target="_blank" rel="noopener noreferrer" class="">Pro</a> from $9/mo for Live Preview Edit)</td></tr></tbody></table>
-<p>The free version of Phoenix Code covers everything Brackets did and more — Git, the browser edition, visual editing tools, all included. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Phoenix Pro</a> adds Live Preview Edit, and exists to help sustain full-time development by a small indie team.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-happened-to-the-brackets-editor">What Happened to the Brackets Editor?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#what-happened-to-the-brackets-editor" class="hash-link" aria-label="Direct link to What Happened to the Brackets Editor?" title="Direct link to What Happened to the Brackets Editor?" translate="no">​</a></h2>
-<p>Brackets was created at Adobe and built on CEF (Chromium Embedded Framework) — a technology choice that made sense in 2014 but became increasingly difficult to maintain. Security patches, OS compatibility, performance work — it all got harder every year. In 2021, we took over Brackets from Adobe, continuing its development under the community we founded and now lead.</p>
-<p>Rather than keep patching an aging foundation, we modernized the platform so it can run anywhere — in browsers, on desktop with Electron or Tauri, pretty much any modern system. One codebase that works everywhere, from <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a> in your browser to a native desktop app.</p>
-<p>The architecture changed. The team didn't. The design philosophy didn't. We named it Phoenix Code — Brackets, reborn.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-carried-over-from-brackets">What Carried Over from Brackets<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#what-carried-over-from-brackets" class="hash-link" aria-label="Direct link to What Carried Over from Brackets" title="Direct link to What Carried Over from Brackets" translate="no">​</a></h2>
-<p>If you're wondering whether Phoenix Code will feel familiar — it will.</p>
-<p><strong>Live Preview</strong> is still the core of the experience. Edit HTML or CSS and watch the browser update in real time, no manual refresh. This is the feature that defined Brackets, and it's still front and center.</p>
-<p><strong>The lightweight workflow</strong> is intact. Open a folder, start editing. Everything just works out of the box.</p>
-<p><strong>Web-first focus.</strong> HTML, CSS, JavaScript — that's the sweet spot. Phoenix Code is purpose-built for front-end work, not trying to be a general-purpose IDE.</p>
-<p><strong>Keyboard shortcuts and UI layout</strong> are familiar. If you had muscle memory in Brackets, most of it still applies.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-new-in-phoenix-code">What's New in Phoenix Code<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#whats-new-in-phoenix-code" class="hash-link" aria-label="Direct link to What's New in Phoenix Code" title="Direct link to What's New in Phoenix Code" translate="no">​</a></h2>
-<p>These are the features the Brackets community asked for — and we finally built them.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="edit-directly-in-the-live-preview-pro">Edit Directly in the Live Preview (Pro)<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#edit-directly-in-the-live-preview-pro" class="hash-link" aria-label="Direct link to Edit Directly in the Live Preview (Pro)" title="Direct link to Edit Directly in the Live Preview (Pro)" translate="no">​</a></h3>
-<p>Brackets' live preview was view-only. You could see changes reflected in real time, but you always had to make edits in the code. With <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Phoenix Pro</a>, you can click on any element in the live preview and edit it right there — change text, swap images by dragging, rearrange elements visually. The source code updates automatically.</p>
-<p><img decoding="async" loading="lazy" alt="Phoenix Code live preview modes for editing HTML and CSS visually" src="https://docs.phcode.dev/assets/images/lp-mode-ac20eab6478729ef3661377fc0533495.png" width="476" height="265" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="visual-css-editing">Visual CSS Editing<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#visual-css-editing" class="hash-link" aria-label="Direct link to Visual CSS Editing" title="Direct link to Visual CSS Editing" translate="no">​</a></h3>
-<p>Brackets had inline color pickers — Phoenix Code keeps those and adds number dials you can scrub to adjust CSS values like margins, padding, font sizes, and more. Hover over a number, drag to adjust, and see the result update in live preview instantly.</p>
-<p><img decoding="async" loading="lazy" alt="Phoenix Code CSS number dial for adjusting margins and padding" src="https://docs.phcode.dev/assets/images/number-dial-a65a9e9c4dde31e902c401a5d20b3e3e.gif" width="863" height="408" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-in-git">Built-in Git<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#built-in-git" class="hash-link" aria-label="Direct link to Built-in Git" title="Direct link to Built-in Git" translate="no">​</a></h3>
-<p>Phoenix Code ships with native Git support based on the familiar Brackets Git extension, addressing many of its earlier limitations with a simpler UX and improved reliability. Commit, push, pull, diff, and branch management, all built in.</p>
-<p><img decoding="async" loading="lazy" alt="Built-in Git integration in Phoenix Code — commit and push" src="https://docs.phcode.dev/assets/images/git-commit-cadf7ef1960a86877135ff05f7ee5165.png" width="1520" height="315" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="runs-in-your-browser">Runs in Your Browser<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#runs-in-your-browser" class="hash-link" aria-label="Direct link to Runs in Your Browser" title="Direct link to Runs in Your Browser" translate="no">​</a></h3>
-<p>Open <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a> and start editing — no install or admin privileges needed. Works on Chromebooks, tablets, shared computers, anywhere you have a browser. The web app runs the same core as the desktop app, so for website editing and live preview it's just as capable. For Git, AI features, and the full experience, grab the <a href="https://phcode.dev/download" target="_blank" rel="noopener noreferrer" class="">native app</a>.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="measurement-and-inspection-tools">Measurement and Inspection Tools<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#measurement-and-inspection-tools" class="hash-link" aria-label="Direct link to Measurement and Inspection Tools" title="Direct link to Measurement and Inspection Tools" translate="no">​</a></h3>
-<p>Inspect spacing between elements, measure distances, and check alignment directly in the live preview. If you work from design mockups, this replaces the constant back-and-forth between your editor and a separate design tool.</p>
-<p><img decoding="async" loading="lazy" alt="Phoenix Code measurement and inspection tools in live preview" src="https://docs.phcode.dev/assets/images/measurements-b9b5af176bc880f6e7c0f8042c8df901.png" width="997" height="578" class="img_ev3q"></p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-switch-from-brackets">How to Switch from Brackets<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#how-to-switch-from-brackets" class="hash-link" aria-label="Direct link to How to Switch from Brackets" title="Direct link to How to Switch from Brackets" translate="no">​</a></h2>
-<p>Short version: open your project folder in Phoenix Code. That's it.</p>
-<p><strong>No migration needed.</strong> Your project files work as-is. No config conversion, no import wizard. Just open the folder.</p>
-<p><strong>Extensions.</strong> The most popular Brackets extensions are now built into Phoenix Code: Emmet for abbreviations, Git for version control, <a class="" href="https://docs.phcode.dev/docs/Features/beautify-code">Beautify/Prettier</a> for code formatting, and a Tab Bar for managing open files. The extension marketplace is active and growing for anything else you need.</p>
-<p><strong>Learning curve.</strong> Minimal. The UI layout is familiar, the shortcuts are similar, and all the new features are additive — nothing you relied on was removed. You'll be productive in minutes.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="frequently-asked-questions">Frequently Asked Questions<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#frequently-asked-questions" class="hash-link" aria-label="Direct link to Frequently Asked Questions" title="Direct link to Frequently Asked Questions" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-happened-to-the-brackets-code-editor">What happened to the Brackets code editor?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#what-happened-to-the-brackets-code-editor" class="hash-link" aria-label="Direct link to What happened to the Brackets code editor?" title="Direct link to What happened to the Brackets code editor?" translate="no">​</a></h3>
-<p>Brackets was created at Adobe and actively developed until 2021. The Phoenix Code project took over the development of Brackets, and rather than keep patching an aging foundation, we rebuilt it to run in browsers and as a desktop app. Brackets, reborn.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-phoenix-code-the-same-as-brackets">Is Phoenix Code the same as Brackets?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#is-phoenix-code-the-same-as-brackets" class="hash-link" aria-label="Direct link to Is Phoenix Code the same as Brackets?" title="Direct link to Is Phoenix Code the same as Brackets?" translate="no">​</a></h3>
-<p>Phoenix Code is built by the same team and carries forward the same design philosophy — Live Preview, lightweight workflow, and a focus on HTML, CSS, and JavaScript. The codebase was rewritten on modern web technologies, but the experience is familiar. If you used Brackets, you'll feel at home.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-phoenix-code-free">Is Phoenix Code free?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#is-phoenix-code-free" class="hash-link" aria-label="Direct link to Is Phoenix Code free?" title="Direct link to Is Phoenix Code free?" translate="no">​</a></h3>
-<p>Yes. The free version includes everything Brackets had and more — Git, the browser edition, visual editing tools, and the extension marketplace. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Phoenix Pro</a> adds Live Preview Edit starting at $9/month and helps sustain full-time development.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-brackets-still-safe-to-use">Is Brackets still safe to use?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#is-brackets-still-safe-to-use" class="hash-link" aria-label="Direct link to Is Brackets still safe to use?" title="Direct link to Is Brackets still safe to use?" translate="no">​</a></h3>
-<p>Brackets runs on an outdated version of Chromium that no longer receives security patches. For active web development, Phoenix Code is the maintained alternative with regular updates and security fixes.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="does-phoenix-code-work-on-chromebook">Does Phoenix Code work on Chromebook?<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#does-phoenix-code-work-on-chromebook" class="hash-link" aria-label="Direct link to Does Phoenix Code work on Chromebook?" title="Direct link to Does Phoenix Code work on Chromebook?" translate="no">​</a></h3>
-<p>Yes. Open <a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">phcode.dev</a> in any browser — no install or admin privileges needed. It works on Chromebooks, tablets, and shared computers.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-phoenix-code">Try Phoenix Code<a href="https://docs.phcode.dev/blog/brackets-editor-phoenix-code#try-phoenix-code" class="hash-link" aria-label="Direct link to Try Phoenix Code" title="Direct link to Try Phoenix Code" translate="no">​</a></h2>
-<p>Phoenix Code was built for the Brackets community by the team behind Brackets.
-If you've been waiting for the update Brackets deserved, this is it.</p>
-<ul>
-<li class=""><strong><a href="https://phcode.dev/" target="_blank" rel="noopener noreferrer" class="">Open Phoenix Code in your browser</a></strong> — no install, start immediately</li>
-<li class=""><a href="https://phcode.dev/download" target="_blank" rel="noopener noreferrer" class="">Download the desktop app</a></li>
-<li class=""><a class="" href="https://docs.phcode.dev/docs/Features/Live%20Preview">Live Preview documentation</a></li>
-<li class=""><a class="" href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit">Edit Mode (Pro)</a></li>
-<li class=""><a class="" href="https://docs.phcode.dev/blog/Blog-Legacy">Read more about the Brackets legacy</a></li>
-</ul>]]></content:encoded>
-            <category>Brackets</category>
-            <category>Comparison</category>
-            <category>Migration</category>
-            <category>Code Editor</category>
-            <category>Live Preview</category>
-            <category>Open Source</category>
-        </item>
-        <item>
-            <title><![CDATA[Phoenix Pro Release (January-2026, V-5.0) is now Live]]></title>
-            <link>https://docs.phcode.dev/blog/release-5.0</link>
-            <guid>https://docs.phcode.dev/blog/release-5.0</guid>
-            <pubDate>Sun, 18 Jan 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[Phoenix Code 5.0 introduces Phoenix Pro with Live Preview Edit, Emmet support, Tab Bar, and Custom Snippets. The biggest update yet.]]></description>
-            <content:encoded><![CDATA[<p>2026 January release (5.0) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>Our biggest update yet - introducing <code>Phoenix Pro</code> and major upgrades like <code>Live Preview Edit</code>, <code>Emmet</code>,
-<code>Tab Bar</code>, and <code>Custom Snippets</code>.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="phoenix-pro---a-sustainable-future">Phoenix Pro - A Sustainable Future<a href="https://docs.phcode.dev/blog/release-5.0#phoenix-pro---a-sustainable-future" class="hash-link" aria-label="Direct link to Phoenix Pro - A Sustainable Future" title="Direct link to Phoenix Pro - A Sustainable Future" translate="no">​</a></h2>
-<p>Phoenix Code has been free and open source from day one - and <strong>everything you’ve used so far will remain free forever</strong>, including <strong>Live Preview</strong>.</p>
-<p>We’re a small, full-time indie team with <strong>no VC backing</strong>, building Phoenix Code because we believe the web deserves a
-code editor that’s genuinely <strong>simple and joyful to use</strong>. We tried to sustain development through community donations
-(<a href="https://opencollective.com/phoenix-ide" target="_blank" rel="noopener noreferrer" class="">Open Collective</a>), but over the last few years it hasn’t been enough to
-support full-time work - and we reached a hard choice: slow down drastically, or find a sustainable path that keeps Phoenix Code healthy.</p>
-<p>So we’re introducing <strong>Phoenix Pro</strong> as an <em>optional</em> way to support Phoenix Code’s future - with <strong>one Pro feature: Live Preview Edit</strong>.
-If Phoenix Code has helped you, Phoenix Pro is a way to help keep the project moving forward.</p>
-<p>Students &amp; educators get <strong>Phoenix Pro for Education</strong> at no cost, because we want classrooms to have easy
-access to modern, easy-to-use development tooling. <a href="https://docs.phcode.dev/docs/phoenix-pro-school" target="_blank" rel="noopener noreferrer" class="">Read More</a></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="live-preview-edit">Live Preview Edit<a href="https://docs.phcode.dev/blog/release-5.0#live-preview-edit" class="hash-link" aria-label="Direct link to Live Preview Edit" title="Direct link to Live Preview Edit" translate="no">​</a></h2>
-<p><em>Included with Phoenix Pro.</em></p>
-<p><strong>Live Preview Edit</strong> lets you make changes directly on your page — and updates your source code instantly.</p>
-<p>Edit text, links, and images. Drag &amp; drop to rearrange elements. Cut, copy, paste, and use measurement tools
-to place things precisely.</p>
-<p>Learn more: <a href="https://docs.phcode.dev/docs/Pro%20Features/live-preview-edit" target="_blank" rel="noopener noreferrer" class="">Live Preview Edit</a>, <a href="https://docs.phcode.dev/docs/Pro%20Features/image-gallery" target="_blank" rel="noopener noreferrer" class="">Image Gallery</a>, <a href="https://docs.phcode.dev/docs/Pro%20Features/measurements" target="_blank" rel="noopener noreferrer" class="">Measurements</a>.</p>
-<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/live-preview-edit/live-preview-edit.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emmet">Emmet<a href="https://docs.phcode.dev/blog/release-5.0#emmet" class="hash-link" aria-label="Direct link to Emmet" title="Direct link to Emmet" translate="no">​</a></h2>
-<p><strong>Emmet</strong> one of our most requested features is finally here.</p>
-<p>Write Emmet abbreviations and Phoenix Code shows you hints. Select a hint to expand it into a full code snippet. Code faster than ever. <a href="https://docs.phcode.dev/docs/Features/emmet" target="_blank" rel="noopener noreferrer" class="">Read More</a></p>
-<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/editing-text/emmet-html.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tab-bar">Tab Bar<a href="https://docs.phcode.dev/blog/release-5.0#tab-bar" class="hash-link" aria-label="Direct link to Tab Bar" title="Direct link to Tab Bar" translate="no">​</a></h2>
-<p>Tab Bar is here. View all your open files at the top of the editor and switch between them instantly.</p>
-<p>Choose what works for you -Tab Bar, Working Files, or both at the same time. <a href="https://docs.phcode.dev/docs/file-management#tab-bar" target="_blank" rel="noopener noreferrer" class="">Read More</a></p>
-<p><img decoding="async" loading="lazy" alt="Tab Bar" src="https://docs.phcode.dev/assets/images/tab-bar-801b0cfbb476f004a8e738a49d8ae35a.png" title="Tab Bar" width="1919" height="1104" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-snippets">Custom Snippets<a href="https://docs.phcode.dev/blog/release-5.0#custom-snippets" class="hash-link" aria-label="Direct link to Custom Snippets" title="Direct link to Custom Snippets" translate="no">​</a></h2>
-<p>Define your own code hints with Custom Snippets.</p>
-<p>Create hints that expand into full code blocks. You can also add cursor positions so Phoenix Code places your cursor exactly where you need it after expansion. <a href="https://docs.phcode.dev/docs/Features/custom-snippets" target="_blank" rel="noopener noreferrer" class="">Read More</a></p>
-<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/custom-snippets/custom-snippets-main.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="collapse-folders">Collapse Folders<a href="https://docs.phcode.dev/blog/release-5.0#collapse-folders" class="hash-link" aria-label="Direct link to Collapse Folders" title="Direct link to Collapse Folders" translate="no">​</a></h2>
-<p>After working for some time, your project structure gets messy with lots of open and nested directories.</p>
-<p>But no worries now. Phoenix Code supports Collapse All Folders, which lets you reset your view by collapsing all expanded folders to their root level in one click. <a href="https://docs.phcode.dev/docs/file-management#collapse-all-folders" target="_blank" rel="noopener noreferrer" class="">Read More</a></p>
-<div style="max-height:68vh;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column"><video style="height:90%;width:100%" controls="" autoplay="" muted="" loop=""><source src="https://docs-images.phcode.dev/videos/file-management/collapse-folders.mp4" type="video/mp4">Your browser does not support the video tag.</video><div style="width:100%;text-align:center;font-size:1em;margin-top:10px"></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="notable-changes-and-fixes">Notable changes and fixes<a href="https://docs.phcode.dev/blog/release-5.0#notable-changes-and-fixes" class="hash-link" aria-label="Direct link to Notable changes and fixes" title="Direct link to Notable changes and fixes" translate="no">​</a></h2>
-<ul>
-<li class="">Improved Live Preview to support internal stylesheets and SVGs better than before.</li>
-<li class="">Smarter color hints. Phoenix Code prioritizes your previously used colors. <a href="https://docs.phcode.dev/docs/editing-colors#color-hints" target="_blank" rel="noopener noreferrer" class="">Read More</a></li>
-<li class="">Git markers now appear in the scrollbar, making it easier to locate changes in a file.</li>
-<li class="">Improved Git so that it doesn't show stale project status.</li>
-<li class="">Reduced the number of popups shown when first installing Phoenix.</li>
-<li class="">Fixed an issue where macOS/iOS and browser autocorrect or smart keyboards altered filenames during renames.</li>
-<li class="">Added a dialog to notify users when they have security compromised extensions installed.</li>
-<li class="">Slowed down the Quick View popup on hover as it was interfering with user workflows.</li>
-<li class="">Fixed ghost image appearing in Safari when dragging from CodeMirror.</li>
-<li class="">Long names in Working Files are now truncated for better readability.</li>
-<li class="">Added Horizontal Scroll support. Use Shift + mouse scroll.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="all-changes">All changes<a href="https://docs.phcode.dev/blog/release-5.0#all-changes" class="hash-link" aria-label="Direct link to All changes" title="Direct link to All changes" translate="no">​</a></h2>
-<p>Please see <a href="https://github.com/phcode-dev/phoenix/commits/main/?since=2025-01-30&amp;until=2026-01-18" target="_blank" rel="noopener noreferrer" class="">this link</a> for a full list of changes
-in GitHub.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-5.0#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content:encoded>
-            <category>Phoenix Pro</category>
-            <category>Live Preview Edit</category>
-            <category>Emmet</category>
-            <category>Tab Bar</category>
-            <category>Custom Snippets</category>
-            <category>Collapse Folders</category>
-            <category>Smarter hint suggestions</category>
-            <category>Stability Improvements</category>
-            <category>Windows</category>
-            <category>Linux</category>
-            <category>Mac</category>
-            <category>Release</category>
-        </item>
-        <item>
-            <title><![CDATA[Git It Release (January-2025, V-4.0) is now Live]]></title>
-            <link>https://docs.phcode.dev/blog/release-4.0</link>
-            <guid>https://docs.phcode.dev/blog/release-4.0</guid>
-            <pubDate>Thu, 30 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Phoenix Code 4.0 introduces built-in Git integration, color previews, and open-in-terminal support. The largest release in the Brackets legacy.]]></description>
-            <content:encoded><![CDATA[<p>2025 January release(4.0) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>This is the largest release we had in a while, and we are happy to announce the next phase of Phoenix Code with
-a major version bump to 4.0.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-legacy-of-brackets---continued">The legacy of Brackets - Continued<a href="https://docs.phcode.dev/blog/release-4.0#the-legacy-of-brackets---continued" class="hash-link" aria-label="Direct link to The legacy of Brackets - Continued" title="Direct link to The legacy of Brackets - Continued" translate="no">​</a></h2>
-<p>A decade-long journey of pushing web development forward: The Brackets story continues with Phoenix Code.
-<a href="https://docs.phcode.dev/blog/Blog-Legacy" target="_blank" rel="noopener noreferrer" class="">Read more about the story of Brackets and the journey to build Phoenix Code and the Brackets community.</a></p>
-<p>This release's core theme is <code>Git, Color previews, UX imporovements and stability</code>.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="git-for-desktop">Git for Desktop<a href="https://docs.phcode.dev/blog/release-4.0#git-for-desktop" class="hash-link" aria-label="Direct link to Git for Desktop" title="Direct link to Git for Desktop" translate="no">​</a></h2>
-<p>Git is finally here.  Integrated Git source control with a clean, intuitive interface.
-Stage changes, commit, and sync with a single click while keeping your focus on the code.
-Now available in the Windows, Mac and Linux desktop apps of Phoenix code. <a href="https://docs.phcode.dev/docs/Features/git" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
-<p>Our Git integration is built upon the incredible work of the developers behind <a href="https://github.com/brackets-userland/brackets-git" target="_blank" rel="noopener noreferrer" class="">Brackets-Git</a>,
-whose contributions made this possible. Thank you!</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/aeacc7c0-3ee3-4a80-9b05-f2b48140bcdd" alt="Image" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/6e7b9faf-d57b-448b-a5bb-a111c67489b5" alt="Image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="color-previews">Color Previews<a href="https://docs.phcode.dev/blog/release-4.0#color-previews" class="hash-link" aria-label="Direct link to Color Previews" title="Direct link to Color Previews" translate="no">​</a></h2>
-<p>Preview the color(s) used in the file in the gutter area. Hovering over a color box highlights the corresponding color
-text in the editor to quickly jump to editing that color. <a href="https://docs.phcode.dev/docs/editing-colors#color-preview" target="_blank" rel="noopener noreferrer" class="">Read More...</a></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/bedecc32-761b-448e-aced-61828ad3fec6" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-in-terminal-and-file-explorer">Open in Terminal and File Explorer<a href="https://docs.phcode.dev/blog/release-4.0#open-in-terminal-and-file-explorer" class="hash-link" aria-label="Direct link to Open in Terminal and File Explorer" title="Direct link to Open in Terminal and File Explorer" translate="no">​</a></h2>
-<p>New "Open In" feature lets you instantly open directories and files in the system Terminal or File Explorer across
-Windows, macOS, and Linux desktop apps!</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/710330ae-8b34-4a51-a1f9-4c02736ed9bd" alt="Image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="better-translations">Better Translations<a href="https://docs.phcode.dev/blog/release-4.0#better-translations" class="hash-link" aria-label="Direct link to Better Translations" title="Direct link to Better Translations" translate="no">​</a></h2>
-<p>We've moved to an LLM-assisted translation framework, delivering higher-quality translations for non-English locales.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="notable-changes-and-fixes">Notable changes and fixes<a href="https://docs.phcode.dev/blog/release-4.0#notable-changes-and-fixes" class="hash-link" aria-label="Direct link to Notable changes and fixes" title="Direct link to Notable changes and fixes" translate="no">​</a></h2>
-<ul>
-<li class="">We've removed some inconsistent and rarely used keyboard shortcuts to free up more key combinations for customization.
-<a href="https://docs.phcode.dev/docs/Features/keyboard-shortcuts" target="_blank" rel="noopener noreferrer" class="">Easily configure your own keyboard shortcuts through the UI.</a></li>
-<li class="">Fixed <code>Option-[shift]-left</code> and <code>option-[shift]-right</code> keyboard shortcuts not working in mac to select/move words.</li>
-<li class="">Survey popups are now less intrusive, appearing as notifications without disrupting your workflow.</li>
-<li class="">Moved back <code>line:ch</code> status to left of statusbar. Go to line will accept <code>:ln:col</code> format along with <code>:ln,col</code>. <img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7429ae42-cb56-444c-8546-6d565bedaaf9" alt="Image" class="img_ev3q"></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/2035" target="_blank" rel="noopener noreferrer" class="">Remove specific files from Recent Files</a></li>
-<li class="">Fixes <a href="https://github.com/phcode-dev/phoenix/pull/2015" target="_blank" rel="noopener noreferrer" class="">holding ctrl key in windows should not ui overlay mode.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1994" target="_blank" rel="noopener noreferrer" class="">fix: <code>cmd-click</code> in mac app and safari didn't open context menu.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1999" target="_blank" rel="noopener noreferrer" class="">Switching between Ctrl+F and Ctrl+Shift+F now correctly updates the search box with the latest selection.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1997" target="_blank" rel="noopener noreferrer" class="">fix: clicking on prevent defaulted A tags in desktop live preview opens browser tab.</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance--stability-tweaks">Performance &amp; Stability Tweaks<a href="https://docs.phcode.dev/blog/release-4.0#performance--stability-tweaks" class="hash-link" aria-label="Direct link to Performance &amp; Stability Tweaks" title="Direct link to Performance &amp; Stability Tweaks" translate="no">​</a></h2>
-<ul>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/2055" target="_blank" rel="noopener noreferrer" class="">Faster boot times with extension compression and load changes</a>
-consistency and performance, especially on Safari and macOS.</li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/2082" target="_blank" rel="noopener noreferrer" class="">File recovery should only be shown on crash, and fix some file recovery issues.</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="all-changes">All changes<a href="https://docs.phcode.dev/blog/release-4.0#all-changes" class="hash-link" aria-label="Direct link to All changes" title="Direct link to All changes" translate="no">​</a></h2>
-<p>Please see <a href="https://github.com/phcode-dev/phoenix/commits/main/?since=2024-11-27&amp;until=2025-01-30" target="_blank" rel="noopener noreferrer" class="">this link</a> for a full list of changes
-in GitHub.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-4.0#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-<li class=""><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer" class=""><strong>Consider supporting us</strong> on GitHub Sponsors</a>. Every contribution helps us
-to keep improving Phoenix Code.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content:encoded>
-            <category>Git</category>
-            <category>Color previews</category>
-            <category>Version Control</category>
-            <category>open in terminal</category>
-            <category>Stability Improvements</category>
-            <category>Windows</category>
-            <category>Linux</category>
-            <category>Mac</category>
-            <category>Release</category>
-        </item>
-        <item>
-            <title><![CDATA[Phoenix Code: The Legacy of Brackets - Continued]]></title>
-            <link>https://docs.phcode.dev/blog/Blog-Legacy</link>
-            <guid>https://docs.phcode.dev/blog/Blog-Legacy</guid>
-            <pubDate>Thu, 30 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[The story of Brackets — from its birth at Adobe to Phoenix Code. How a community kept the spirit of Brackets alive and built its future.]]></description>
-            <content:encoded><![CDATA[<p>Some stories refuse to end because of the people who believe in them. Brackets was one such story. Born at Adobe,
-it wasn’t just a code editor; it was a vision to bridge the gap between designers and developers on
-how we build for the web. But when its creators moved on, the future of Brackets seemed uncertain.</p>
-<p>Yet, Brackets lived on. Too many people loved it, relied on it, and believed in its potential. From that
-passion, Phoenix Code was born—not as a replacement, but as a continuation of everything Brackets stood for.
-Join us as we trace this journey from the birth of Brackets to the rise of Phoenix Code—and discover how a
-community’s dedication kept the spirit of Brackets alive.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="brackets-10---the-beginning">Brackets 1.0 - The Beginning<a href="https://docs.phcode.dev/blog/Blog-Legacy#brackets-10---the-beginning" class="hash-link" aria-label="Direct link to Brackets 1.0 - The Beginning" title="Direct link to Brackets 1.0 - The Beginning" translate="no">​</a></h2>
-<p>Brackets 1.0 was released 10 years ago at Adobe, on the 4th of November 2014. At the time, Atom from GitHub was
-the only peer editor built on the same web-based architecture as Brackets. The web was a very different place then.
-Adobe was preparing for a post-Flash world (Read: Thoughts on Flash - an open letter by Steve Jobs, April 2010).
-Just a month earlier, in October 2014, HTML5 had become a W3C Recommendation.</p>
-<p>Brackets was born as an editor built on web standards, designed for building the web—a window into the future
-from Adobe. Adobe was mostly right in this vision. Visual Studio Code (VSCode), built on similar web technologies,
-has since risen to dominate the landscape of code editors.</p>
-<p>Brackets was created to serve as a bridge between Designer and Developer workflows before the time of Figma and XD.
-However, Adobe was primarily about design tools. As a free developer tool, Brackets was never able to find a place
-among its design-focused peers.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="brackets-20---the-brackets-open-source-community-is-born">Brackets 2.0 - The Brackets Open Source Community is Born<a href="https://docs.phcode.dev/blog/Blog-Legacy#brackets-20---the-brackets-open-source-community-is-born" class="hash-link" aria-label="Direct link to Brackets 2.0 - The Brackets Open Source Community is Born" title="Direct link to Brackets 2.0 - The Brackets Open Source Community is Born" translate="no">​</a></h2>
-<p>In January 2022, Adobe <a href="https://x.com/brackets/status/1480581149604782080" target="_blank" rel="noopener noreferrer" class="">transitioned the development of Brackets</a> to the newly formed Brackets Community.
-Version 2.0 focused on establishing an independent foothold to continue Brackets' development.</p>
-<p>We kick-started the Phoenix Code project as we recognized the need to address nearly three years of
-development backlog. This laid the groundwork for the next generation of Brackets.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="phoenix-code---30-the-next-generation-of-brackets">Phoenix Code - 3.0, The Next Generation of Brackets<a href="https://docs.phcode.dev/blog/Blog-Legacy#phoenix-code---30-the-next-generation-of-brackets" class="hash-link" aria-label="Direct link to Phoenix Code - 3.0, The Next Generation of Brackets" title="Direct link to Phoenix Code - 3.0, The Next Generation of Brackets" translate="no">​</a></h2>
-<p>With Phoenix Code, we built the foundation to run Brackets almost anywhere with a web browser. The first web
-version launched in June 2023, followed by desktop builds in February 2024.</p>
-<p>Version 3.0 was primarily about achieving feature parity and stability with Brackets—and then surpassing it.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="phoenix-code---40-present--future">Phoenix Code - 4.0, Present &amp; Future<a href="https://docs.phcode.dev/blog/Blog-Legacy#phoenix-code---40-present--future" class="hash-link" aria-label="Direct link to Phoenix Code - 4.0, Present &amp; Future" title="Direct link to Phoenix Code - 4.0, Present &amp; Future" translate="no">​</a></h2>
-<p>We start this year(2025) with the <a href="https://docs.phcode.dev/blog/release-4.0" target="_blank" rel="noopener noreferrer" class="">release of Phoenix Code 4.0</a>- as we reach feature parity with Brackets and exceeds it
-in most cases. With this milestone, we return to the original mission of Brackets - to serve as a
-bridge between Designer and Developer workflows for the Web. To help <em>people</em> get things done simpler and faster.</p>
-<p>With immense gratitude for our users' support, we're excited to begin this next chapter of Phoenix Code.</p>]]></content:encoded>
-            <category>Brackets</category>
-            <category>Continued</category>
-            <category>Phoenix Code</category>
-            <category>History</category>
         </item>
     </channel>
 </rss>
