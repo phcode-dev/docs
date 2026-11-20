@@ -30,6 +30,8 @@ To read the tags behind the page, press **Ctrl+U** on Windows or Linux, or **Com
 
 To change the heading, open the same `index.html` in a text editor such as Phoenix Code. Find `<h1>A little time outside.</h1>`, change the words between the tags to `My weekend walks.`, and save the file. Return to the **Home | Trail Notes** tab and click **Reload**, the circular arrow beside the address bar. The new heading should appear.
 
+Once the page looks right on your computer, check a phone width too. [Test your website on different screen sizes](/blog/test-website-on-different-screen-sizes)
+
 ## Why do I see tags or a missing image?
 
 - **The entire tab shows HTML tags.** If the address starts with `view-source:`, switch back to the page tab. If the filename ends in `.html.txt`, Chrome is opening a text file. Save the HTML as plain text named `index.html` in your editor, then open that file in Chrome.
