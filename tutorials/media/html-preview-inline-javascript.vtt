@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.434
+With scripts off, the button does nothing.
+
+00:00:04.434 --> 00:00:07.819
+First, turn on Allow external resources.
+
+00:00:07.819 --> 00:00:11.212
+Then turn on Run scripts.
+
+00:00:11.212 --> 00:00:14.022
+Click Test button again.
+
+00:00:14.022 --> 00:00:17.526
+Clicked confirms the inline code ran.
