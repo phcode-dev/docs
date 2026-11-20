@@ -22,7 +22,9 @@ const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-p
   'html-preview-missing-css-images-javascript', 'how-to-add-a-favicon-in-html', 'compare-two-json-files',
   'convert-markdown-to-pdf-with-page-breaks', 'open-an-html-file-in-chrome',
   'test-website-on-different-screen-sizes', 'get-hex-color-from-image', 'convert-webp-to-jpg-background',
-  'decode-base64-text-and-images', 'change-all-caps-website-text', 'change-svg-fill-and-stroke'];
+  'decode-base64-text-and-images', 'change-all-caps-website-text', 'change-svg-fill-and-stroke',
+  'make-a-markdown-table', 'responsive-css-grid-sidebar', 'fix-trailing-comma-json',
+  'unix-timestamp-seconds-or-milliseconds'];
 const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
 const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos), ...Object.values(layoutVideos),
   ...Object.values(htmlPreviewVideos)];

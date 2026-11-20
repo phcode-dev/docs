@@ -49,3 +49,5 @@ In the converter preview, **Before you publish** still appears just below the CS
 You can check your result against the <a href="/tutorials/markdown-pdf/trail-notes.pdf">PDF saved from the example</a>. If the checklist stayed on page one, look for a code block above the marker that still needs its closing three backticks. If your PDF includes the converter’s toolbar, use the converter’s **Save as PDF** button to print the document.
 
 If you want to keep editing the README in Phoenix Code, open the original `.md` file there. [Editing Markdown with Live Preview](/docs/Pro%20Features/markdown-editor).
+
+If a table cell splits at a vertical bar or the numbers are hard to compare, fix the table in the Markdown before printing. [Make a Markdown table with aligned columns](/blog/make-a-markdown-table).

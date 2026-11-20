@@ -68,3 +68,5 @@ The `project` key appears first in the original and last in the changed file. It
 An array identifies items by position. To see this, replace the original pane with `{"pages":["home","walks"]}` and the changed pane with `{"pages":["walks","home"]}`. Click **Compare JSON** again. You’ll get **2 changed**. Position `/pages/0` now holds `"walks"`, and `/pages/1` now holds `"home"`.
 
 To apply a change, open the source file in your editor, edit that setting, and save. Then open the saved version in **Changed JSON** and compare again. If you’re editing a project configuration in Phoenix Code, see [JSON editing and error checks](/docs/Features/json-code-intelligence).
+
+If the comparison stops at a closing bracket, check for an extra comma after the last value. [Find and fix a trailing comma in JSON](/blog/fix-trailing-comma-json).
