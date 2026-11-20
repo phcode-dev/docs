@@ -254,8 +254,14 @@ Click it again after you change a setting.
 
 This tests JavaScript written inside the HTML. In pasted HTML, the Viewer can
 run inline scripts, but it blocks external `<script src>` files and `fetch`/XHR
-requests. If your page needs separate JavaScript files or modules, open the full
-project in an editor. If it also needs a backend server, run that server too.
+requests.
+
+To test a small example with a separate stylesheet or script, open the
+[online HTML editor](https://phcode.dev/tools/html-editor.html). Paste your HTML,
+CSS and JavaScript into the `index.html`, `style.css` and `script.js` tabs.
+
+For a project with more files or modules, open the full folder in an editor.
+If it also needs a backend server, run that server too.
 
 If your own inline script still fails, open the developer tools **Console**.
 Fix the first error from your script, then test again.
