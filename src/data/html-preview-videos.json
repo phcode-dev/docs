@@ -1,0 +1,50 @@
+{
+  "hosted": {
+    "watchPath": "/videos/html-viewer-hosted-resources",
+    "guidePath": "/blog/html-preview-missing-css-images-javascript#distinguish-hosted-addresses-from-relative-paths",
+    "title": "Load hosted CSS and images in HTML Viewer",
+    "context": "The hosted example from the guide is already in HTML Viewer. Turn on Allow external resources to load its stylesheet and woodland photo from docs.phcode.dev. Scripts stay off; this setting does not open neighboring files on your computer.",
+    "source": "/tutorials/media/html-preview-hosted-resources.mp4",
+    "poster": "/tutorials/media/html-preview-hosted-resources-poster.png",
+    "captions": "/tutorials/media/html-preview-hosted-resources.vtt",
+    "label": "Load hosted CSS and images in HTML Viewer: a silent recording of the real controls and result",
+    "metadata": {
+      "name": "Load hosted CSS and images in HTML Viewer",
+      "description": "The hosted example from the guide is already in HTML Viewer. Turn on Allow external resources to load its stylesheet and woodland photo from docs.phcode.dev. Scripts stay off; this setting does not open neighboring files on your computer.",
+      "duration": "PT11.4S",
+      "dateCreated": "2026-11-19"
+    },
+    "width": 638,
+    "height": 742,
+    "instructions": [
+      "The hosted stylesheet and photo are blocked.",
+      "Turn on Allow external resources.",
+      "The real hosted styles and image now load."
+    ]
+  },
+  "scripts": {
+    "watchPath": "/videos/html-viewer-inline-javascript",
+    "guidePath": "/blog/html-preview-missing-css-images-javascript#check-a-small-javascript-interaction",
+    "title": "Test inline JavaScript in HTML Viewer",
+    "context": "The guide’s self-contained HTML example and Test button are already in the source. Click with scripts off, enable Allow external resources and Run scripts, then click again to see Clicked. This demonstrates inline code, not an external script file.",
+    "source": "/tutorials/media/html-preview-inline-javascript.mp4",
+    "poster": "/tutorials/media/html-preview-inline-javascript-poster.png",
+    "captions": "/tutorials/media/html-preview-inline-javascript.vtt",
+    "label": "Test inline JavaScript in HTML Viewer: a silent recording of the real controls and result",
+    "metadata": {
+      "name": "Test inline JavaScript in HTML Viewer",
+      "description": "The guide’s self-contained HTML example and Test button are already in the source. Click with scripts off, enable Allow external resources and Run scripts, then click again to see Clicked. This demonstrates inline code, not an external script file.",
+      "duration": "PT17.533333S",
+      "dateCreated": "2026-11-19"
+    },
+    "width": 638,
+    "height": 742,
+    "instructions": [
+      "With scripts off, the button does nothing.",
+      "First, turn on Allow external resources.",
+      "Then turn on Run scripts.",
+      "Click Test button again.",
+      "Clicked confirms the inline code ran."
+    ]
+  }
+}
