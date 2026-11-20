@@ -143,6 +143,8 @@ Opening only `index.html` in the Viewer leaves those files behind.
 your computer. Keep the files together and use
 the [full-project workflow below](#open-the-complete-project-in-phoenix-code).
 
+If the missing image is the small icon in the browser tab, follow [Add a favicon in HTML](/blog/how-to-add-a-favicon-in-html) to check it on both the home page and a nested page.
+
 ## Check hosted URLs and relative paths {#distinguish-hosted-addresses-from-relative-paths}
 
 A full URL such as `https://example.com/images/logo.png` points to a file on a

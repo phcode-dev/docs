@@ -28,3 +28,5 @@ Phoenix Code knows the valid fields of well-known config files like `package.jso
 :::info Desktop Only
 Config file intelligence runs in the desktop app.
 :::
+
+To see which settings changed between two versions of a configuration file, follow [Compare two JSON files](/blog/compare-two-json-files).
