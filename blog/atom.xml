@@ -45,6 +45,34 @@
         <category label="HTML" term="HTML"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to Change an SVG Icon’s Fill and Stroke Colors]]></title>
+        <id>https://docs.phcode.dev/blog/change-svg-fill-and-stroke</id>
+        <link href="https://docs.phcode.dev/blog/change-svg-fill-and-stroke"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Recolor the inside and outline of an inline SVG separately. Try a trail-marker icon in the Phoenix HTML Editor, then download and reopen the finished page.]]></summary>
+        <content type="html"><![CDATA[<p>To change the color inside an SVG shape, edit its <code>fill</code>. To change the line around it, edit its <code>stroke</code>. Try both on the trail marker below. You’ll start with an orange circle and a white border, then save a green circle with a dark border. The white arrow in the middle keeps its color.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-the-practice-icon">Open the practice icon<a href="https://docs.phcode.dev/blog/change-svg-fill-and-stroke#open-the-practice-icon" class="hash-link" aria-label="Direct link to Open the practice icon" title="Direct link to Open the practice icon" translate="no">​</a></h2>
+<p>Open the <a href="https://phcode.dev/tools/html-editor.html" target="_blank" rel="noopener noreferrer" class="">Phoenix HTML Editor</a>. In the <strong>index.html</strong> tab, replace the example code with the block below. Leave <strong>Auto-run</strong> on, or click <strong>Run</strong> after an edit. If your screen shows separate panels, select <strong>Preview</strong> to see the icon.</p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token doctype punctuation" style="color:#393A34;font-style:italic">&lt;!</span><span class="token doctype doctype-tag" style="color:#999988;font-style:italic">doctype</span><span class="token doctype" style="color:#999988;font-style:italic"> </span><span class="token doctype name" style="color:#999988;font-style:italic">html</span><span class="token doctype punctuation" style="color:#393A34;font-style:italic">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">html</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">lang</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">en</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">head</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">title</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Trail marker</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">title</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">head</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">svg</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">xmlns</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">http://www.w3.org/2000/svg</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">       </span><span class="token tag attr-name" style="color:#00a4db">width</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">160</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">height</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">160</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">viewBox</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">0 0 80 80</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">       </span><span class="token tag attr-name" style="color:#00a4db">role</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">img</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">Trail marker pointing right</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">circle</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">cx</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">40</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">cy</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">40</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">r</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">32</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">            </span><span class="token tag attr-name" style="color:#00a4db">fill</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">#ff8c42</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">stroke</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">#ffffff</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">stroke-width</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">6</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">path</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">d</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">M29 40h22m-8-8 8 8-8 8</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">          </span><span class="token tag attr-name" style="color:#00a4db">fill</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">none</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">stroke</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">#ffffff</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">stroke-width</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">4</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">          </span><span class="token tag attr-name" style="color:#00a4db">stroke-linecap</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">round</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">stroke-linejoin</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">round</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">svg</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">html</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="change-one-part-at-a-time">Change one part at a time<a href="https://docs.phcode.dev/blog/change-svg-fill-and-stroke#change-one-part-at-a-time" class="hash-link" aria-label="Direct link to Change one part at a time" title="Direct link to Change one part at a time" translate="no">​</a></h2>
+<ol>
+<li class="">Find the line with <strong><code>&lt;circle</code></strong>. Change its <code>fill</code> from <code>#ff8c42</code> to <code>#237a58</code>. The disc turns green. The arrow stays white.</li>
+<li class="">On that same circle, change <code>stroke="#ffffff"</code> to <code>stroke="#17382e"</code>. A dark green ring appears around the disc. Keep <code>stroke-width="6"</code> so the outline stays visible.</li>
+<li class="">Look at the <strong><code>&lt;path</code></strong> beneath the circle. This is the arrow. Its <code>fill="none"</code> keeps its interior empty, and its white <code>stroke</code> draws the line. To recolor only the arrow in your own version, edit the stroke on this path.</li>
+</ol>
+<a href="https://docs.phcode.dev/tutorials/media/svg-fill-stroke-result.png"><img src="https://docs.phcode.dev/tutorials/media/svg-fill-stroke-result.png" width="711" height="310" style="height:auto" loading="lazy" alt="The HTML Editor preview shows the completed trail icon with a green disc, dark outline, and white arrow pointing right."></a>
+<p>Click <strong>Download</strong> (the downward arrow) in the editor toolbar. Open the downloaded <strong>index.html</strong> in your browser. The green disc, dark ring, and white arrow should appear in that copy too. <a class="" href="https://docs.phcode.dev/blog/open-an-html-file-in-chrome">Open a downloaded HTML page in Chrome</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="my-html-only-shows-an-image-tag">My HTML only shows an image tag<a href="https://docs.phcode.dev/blog/change-svg-fill-and-stroke#my-html-only-shows-an-image-tag" class="hash-link" aria-label="Direct link to My HTML only shows an image tag" title="Direct link to My HTML only shows an image tag" translate="no">​</a></h2>
+<p>If the page contains <code>&lt;img src="images/marker.svg" alt="Trail marker"&gt;</code>, the shapes live in <strong>images/marker.svg</strong>. Open that file in your code editor, find the shape, edit its fill or stroke there, and save. Reload the page that uses the image. A CSS <code>fill</code> on the outer <code>&lt;img&gt;</code> won’t reach the circle inside the separate file. <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Fills_and_strokes" target="_blank" rel="noopener noreferrer" class="">SVG fill and stroke</a></p>]]></content>
+        <author>
+            <name>Charly Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Tools" term="Tools"/>
+        <category label="HTML" term="HTML"/>
+        <category label="SVG" term="SVG"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[How to Compare Two JSON Files and Read the Differences]]></title>
         <id>https://docs.phcode.dev/blog/compare-two-json-files</id>
         <link href="https://docs.phcode.dev/blog/compare-two-json-files"/>
@@ -75,6 +103,110 @@
         </author>
         <category label="Tools" term="Tools"/>
         <category label="JSON" term="JSON"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Decode Base64 Text and Preview an Encoded Image]]></title>
+        <id>https://docs.phcode.dev/blog/decode-base64-text-and-images</id>
+        <link href="https://docs.phcode.dev/blog/decode-base64-text-and-images"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Decode a UTF-8 message, check an invalid Base64 string, and display a PNG data URL in an HTML preview. Both examples work in your browser.]]></summary>
+        <content type="html"><![CDATA[<p>If you have a Base64-encoded message, paste it into <strong>Base64 Encoded</strong> in the Phoenix decoder and click <strong>Decode</strong>. If you copied something starting with <code>data:image/png;base64,</code> from an HTML file, you have a picture. Here’s how to read the message and see the picture.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="decode-a-text-message">Decode a text message<a href="https://docs.phcode.dev/blog/decode-base64-text-and-images#decode-a-text-message" class="hash-link" aria-label="Direct link to Decode a text message" title="Direct link to Decode a text message" translate="no">​</a></h2>
+<ol>
+<li class="">
+<p>Open the <a href="https://phcode.dev/tools/base64-encode-decode.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Base64 Encoder &amp; Decoder</a>. Find the box labeled <strong>Base64 Encoded</strong>.</p>
+</li>
+<li class="">
+<p>Copy this whole string into the box, including the two equals signs at the end.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Q2Fmw6kgYnkgdGhlIHRyYWlsLg==</span><br></div></code></pre></div></div>
+</li>
+<li class="">
+<p>Click <strong>Decode</strong> below that box. The <strong>Text</strong> box should now read <strong>Café by the trail.</strong> The accent in <em>Café</em> is part of the original UTF-8 text. Click <strong>Copy</strong> beside <strong>Text</strong> to keep the readable version.</p>
+</li>
+<li class="">
+<p>To check it the other way, click <strong>Encode</strong> beneath the text. You should get the original string back, including its ending.</p>
+</li>
+</ol>
+<a href="https://docs.phcode.dev/tutorials/media/base64-text-decoded.png"><img src="https://docs.phcode.dev/tutorials/media/base64-text-decoded.png" width="1052" height="390" style="height:auto" loading="lazy" alt="The Text box contains Café by the trail. and the Base64 Encoded box contains the matching encoded string."></a>
+<p>If the tool reports <strong>Invalid Base64 string</strong>, recopy the complete value. For example, <code>Q2Fm%</code> produces that error. Check for punctuation copied from the surrounding sentence or quotation marks from the HTML. A Base64 string by itself doesn’t tell you which kind of file it contains.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="see-an-image-copied-from-html">See an image copied from HTML<a href="https://docs.phcode.dev/blog/decode-base64-text-and-images#see-an-image-copied-from-html" class="hash-link" aria-label="Direct link to See an image copied from HTML" title="Direct link to See an image copied from HTML" translate="no">​</a></h2>
+<p>In a data URL, the part before the comma describes what follows. In <code>data:image/png;base64,...</code>, the type is PNG and the rest represents the image bytes. Keep the prefix and the bytes together when you use the URL as an image source. <a href="https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data" target="_blank" rel="noopener noreferrer" class="">Data URL syntax</a></p>
+<p>Open the <a href="https://phcode.dev/tools/html-viewer.html" target="_blank" rel="noopener noreferrer" class="">Phoenix HTML Viewer</a> and paste this complete image tag into <strong>HTML source</strong>. If the Viewer shows tabs, click <strong>Preview</strong>.</p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">img</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">width</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">64</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">height</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">64</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">Green square</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">src</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAADElEQVQImWPQqwkCAAHYAP0XYDMkAAAAAElFTkSuQmCC</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></div></code></pre></div></div>
+<p>The preview shows a green square. The example PNG contains one green pixel. The HTML displays it at <strong>64 × 64</strong> so you can see it. If you see a broken-image icon, check that the comma and the start and end of the encoded data all made it inside the quotes. <a class="" href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript">Troubleshoot missing images in an HTML preview</a></p>]]></content>
+        <author>
+            <name>Charly Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Tools" term="Tools"/>
+        <category label="HTML" term="HTML"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Change All Caps to Sentence Case on a Website]]></title>
+        <id>https://docs.phcode.dev/blog/change-all-caps-website-text</id>
+        <link href="https://docs.phcode.dev/blog/change-all-caps-website-text"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fix a heading typed in all caps, or one that CSS displays in uppercase. Try both cases with a short HTML example and check the saved result.]]></summary>
+        <content type="html"><![CDATA[<p>You change a heading to “Meet at the NASA exhibit,” save the file, and the page still shows <strong>MEET AT THE NASA EXHIBIT</strong>. Open the HTML and look between the heading tags. If the words are uppercase there, edit the text. If they already look right there, check the CSS.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-the-letters-in-the-file-are-all-capitals">When the letters in the file are all capitals<a href="https://docs.phcode.dev/blog/change-all-caps-website-text#when-the-letters-in-the-file-are-all-capitals" class="hash-link" aria-label="Direct link to When the letters in the file are all capitals" title="Direct link to When the letters in the file are all capitals" translate="no">​</a></h2>
+<ol>
+<li class="">
+<p>Open the <a href="https://phcode.dev/tools/case-converter.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Case Converter</a>. Paste this example into <strong>Your text</strong>.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">MEET AT THE NASA EXHIBIT. BRING A MAP.</span><br></div></code></pre></div></div>
+</li>
+<li class="">
+<p>Under <strong>For writing</strong>, click <strong>Sentence case</strong>. The result is <strong>Meet at the NASA exhibit. Bring a map.</strong> If you choose <strong>lowercase</strong> instead, you get <strong>meet at the nasa exhibit. bring a map.</strong> That choice also changes the acronym.</p>
+</li>
+<li class="">
+<p>Read through names, initials, and brand spellings before copying. Click <strong>Copy</strong>, replace only the words between the heading’s opening and closing tags, and save your HTML file. For example, the first sentence could become <code>&lt;h1&gt;Meet at the NASA exhibit&lt;/h1&gt;</code>.</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-the-html-looks-right-but-the-page-is-still-uppercase">When the HTML looks right but the page is still uppercase<a href="https://docs.phcode.dev/blog/change-all-caps-website-text#when-the-html-looks-right-but-the-page-is-still-uppercase" class="hash-link" aria-label="Direct link to When the HTML looks right but the page is still uppercase" title="Direct link to When the HTML looks right but the page is still uppercase" translate="no">​</a></h2>
+<p>Paste this example into <strong>HTML source</strong> in the <a href="https://phcode.dev/tools/html-viewer.html" target="_blank" rel="noopener noreferrer" class="">Phoenix HTML Viewer</a>. Choose <strong>Preview</strong> if the source and preview appear as tabs.</p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">style</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">  </span><span class="token style language-css selector" style="color:#00009f">h1</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style="color:#393A34">{</span><span class="token style language-css"> </span><span class="token style language-css property" style="color:#36acaa">text-transform</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> uppercase</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style="color:#393A34">}</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">style</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Meet at the NASA exhibit</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></div></code></pre></div></div>
+<p>The heading in the preview reads <strong>MEET AT THE NASA EXHIBIT</strong>. The letters between the <code>&lt;h1&gt;</code> tags still have their original spelling.</p>
+<a href="https://docs.phcode.dev/tutorials/media/case-heading-css.png"><img src="https://docs.phcode.dev/tutorials/media/case-heading-css.png" width="1032" height="265" style="height:auto" loading="lazy" alt="The HTML source mixes uppercase and lowercase letters in Meet at the NASA exhibit. The live preview displays the entire heading in capitals."></a>
+<p>Change <code>text-transform: uppercase;</code> to <code>text-transform: none;</code>. The preview now reads <strong>Meet at the NASA exhibit</strong>. The <code>none</code> value lets the text display as you typed it, including the capitals in NASA. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform" target="_blank" rel="noopener noreferrer" class="">CSS text-transform</a></p>
+<p>On your own site, look for <code>text-transform</code> in the stylesheet that applies to the heading. If the file contains several matches, check the selector before editing. The example’s <code>h1</code> rule affects every first-level heading. To change only this one, give it a class such as <code>exhibit-title</code> and add <code>.exhibit-title { text-transform: none; }</code> to the stylesheet. Save, reload the page, and check another heading as well. <a class="" href="https://docs.phcode.dev/docs/Features/find-in-files">Find text across project files in Phoenix Code</a></p>]]></content>
+        <author>
+            <name>Charly Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Tools" term="Tools"/>
+        <category label="HTML" term="HTML"/>
+        <category label="CSS" term="CSS"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Get a Hex Color From an Image and Use It in CSS]]></title>
+        <id>https://docs.phcode.dev/blog/get-hex-color-from-image</id>
+        <link href="https://docs.phcode.dev/blog/get-hex-color-from-image"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pick an exact pixel from a logo, copy its hex code, and test two text colors against it. Follow along with a downloadable trail marker.]]></summary>
+        <content type="html"><![CDATA[<p>Suppose you want a label on your website to match the orange on a trail sign. Which orange should you copy, and will white lettering be readable on it? You can answer both questions using the picture itself. In this example the orange is <code>#FF8C42</code>. Dark text on it measures <strong>7.75:1</strong> for contrast.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pick-one-pixel-from-the-picture">Pick one pixel from the picture<a href="https://docs.phcode.dev/blog/get-hex-color-from-image#pick-one-pixel-from-the-picture" class="hash-link" aria-label="Direct link to Pick one pixel from the picture" title="Direct link to Pick one pixel from the picture" translate="no">​</a></h2>
+<ol>
+<li class="">Save the <a href="https://docs.phcode.dev/tutorials/trail-marker/trail-marker.webp" download="trail-marker.webp">practice trail marker</a>, or use your own logo. Open the <a href="https://phcode.dev/tools/image-color-picker.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Image Color Picker</a>, click <strong>Choose image</strong>, and select the file.</li>
+<li class="">Click a flat patch of orange inside the sign. <strong>Pixel magnifier</strong> shows the spot you picked. An edge pixel can be partly transparent, so move a little farther inside if you want the solid color.</li>
+<li class="">To pick the exact practice pixel, go to <strong>Source coordinates</strong>, enter <strong>60</strong> in <strong>X</strong> and <strong>80</strong> in <strong>Y</strong>, and click <strong>Sample pixel</strong>. The coordinates count from the top-left corner of the original image.</li>
+<li class="">Under <strong>Selected pixel values</strong>, find <strong>HEX / HEXA</strong>. Click the copy icon beside it. For the marker, you should get <code>#FF8C42</code>. If you sample X <strong>5</strong>, Y <strong>5</strong> instead, you get <code>#00000000</code>. The final <code>00</code> means that corner is fully transparent. Return to <strong>60</strong>, <strong>80</strong> before copying the orange.</li>
+</ol>
+<a href="https://docs.phcode.dev/tutorials/media/image-pixel-coordinates.png"><img src="https://docs.phcode.dev/tutorials/media/image-pixel-coordinates.png" width="443" height="215" style="height:auto" loading="lazy" alt="Source coordinates in the Image Color Picker show X 60 and Y 80 above the Sample pixel controls."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="choose-the-lettering">Choose the lettering<a href="https://docs.phcode.dev/blog/get-hex-color-from-image#choose-the-lettering" class="hash-link" aria-label="Direct link to Choose the lettering" title="Direct link to Choose the lettering" translate="no">​</a></h2>
+<p>Open the <a href="https://phcode.dev/tools/color-contrast-checker.html" target="_blank" rel="noopener noreferrer" class="">Phoenix Color Contrast Checker</a>. Paste <code>#FF8C42</code> into <strong>Background</strong> and leave both color layers at full opacity. Enter each of the following values in <strong>Foreground</strong> and read the <strong>AA normal text</strong> result.</p>
+<table><thead><tr><th>Text color on the orange</th><th>Contrast ratio</th><th>Result for ordinary text</th></tr></thead><tbody><tr><td>White, <code>#FFFFFF</code></td><td>2.31:1</td><td>Does not pass</td></tr><tr><td>Near-black, <code>#171717</code></td><td>7.75:1</td><td>Passes</td></tr></tbody></table>
+<p>The usual WCAG AA minimum for ordinary text is 4.5:1. The white lettering can look crisp on a large graphic and still be hard to read on a small label. <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html" target="_blank" rel="noopener noreferrer" class="">W3C guidance on minimum contrast</a></p>
+<a href="https://docs.phcode.dev/tutorials/media/marker-text-contrast.png"><img src="https://docs.phcode.dev/tutorials/media/marker-text-contrast.png" width="604" height="575" style="height:auto" loading="lazy" alt="The contrast checker marks AA normal text and AA large text as passing for the dark lettering on the sampled orange background."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="apply-the-two-colors-to-a-label">Apply the two colors to a label<a href="https://docs.phcode.dev/blog/get-hex-color-from-image#apply-the-two-colors-to-a-label" class="hash-link" aria-label="Direct link to Apply the two colors to a label" title="Direct link to Apply the two colors to a label" translate="no">​</a></h2>
+<p>In your page’s HTML, put <code>&lt;span class="trail-label"&gt;Woodland loop&lt;/span&gt;</code> where you want the label. Add this rule to the stylesheet the page uses, then save and open the page in Live Preview.</p>
+<div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token selector class" style="color:#00009f">.trail-label</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token hexcode color">#171717</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">background-color</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token hexcode color">#ff8c42</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">padding</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0.25</span><span class="token unit">em</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0.5</span><span class="token unit">em</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<p>You should see dark lettering on the same orange you picked from the marker. If your real label sits on a photo or uses a translucent overlay, sample and check the background behind the letters as well. <a class="" href="https://docs.phcode.dev/docs/editing-colors">Editing colors in Phoenix Code</a></p>
+<p>If the logo is an SVG, you can <a class="" href="https://docs.phcode.dev/blog/change-svg-fill-and-stroke">recolor one shape in its source</a>. If an upload form asks for a JPG, you can <a class="" href="https://docs.phcode.dev/blog/convert-webp-to-jpg-background">replace the transparent corners with your page’s background color</a>.</p>]]></content>
+        <author>
+            <name>Charly Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Tools" term="Tools"/>
+        <category label="CSS" term="CSS"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to Convert Markdown to PDF with Page Breaks]]></title>
@@ -129,6 +261,7 @@
 <p>To read the tags behind the page, press <strong>Ctrl+U</strong> on Windows or Linux, or <strong>Command+Option+U</strong> on a Mac. Chrome opens a second tab whose address starts with <code>view-source:</code>. In the sample, the line containing <code>href="styles.css"</code> tells Chrome which stylesheet to load. <a href="https://support.google.com/chrome/answer/157179?hl=en" target="_blank" rel="noopener noreferrer" class="">Chrome keyboard shortcuts</a></p>
 <a href="https://docs.phcode.dev/tutorials/media/chrome-local-html-source.png"><img src="https://docs.phcode.dev/tutorials/media/chrome-local-html-source.png" width="1000" height="248" style="height:auto" loading="lazy" alt="The Chrome source tab shows view-source: before the local file path. Below it, the HTML head links to styles.css."></a>
 <p>To change the heading, open the same <code>index.html</code> in a text editor such as Phoenix Code. Find <code>&lt;h1&gt;A little time outside.&lt;/h1&gt;</code>, change the words between the tags to <code>My weekend walks.</code>, and save the file. Return to the <strong>Home | Trail Notes</strong> tab and click <strong>Reload</strong>, the circular arrow beside the address bar. The new heading should appear.</p>
+<p>Once the page looks right on your computer, check a phone width too. <a class="" href="https://docs.phcode.dev/blog/test-website-on-different-screen-sizes">Test your website on different screen sizes</a></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-do-i-see-tags-or-a-missing-image">Why do I see tags or a missing image?<a href="https://docs.phcode.dev/blog/open-an-html-file-in-chrome#why-do-i-see-tags-or-a-missing-image" class="hash-link" aria-label="Direct link to Why do I see tags or a missing image?" title="Direct link to Why do I see tags or a missing image?" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>The entire tab shows HTML tags.</strong> If the address starts with <code>view-source:</code>, switch back to the page tab. If the filename ends in <code>.html.txt</code>, Chrome is opening a text file. Save the HTML as plain text named <code>index.html</code> in your editor, then open that file in Chrome.</li>
@@ -142,6 +275,65 @@
         </author>
         <category label="Tools" term="Tools"/>
         <category label="HTML" term="HTML"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Test Your Website on Different Screen Sizes]]></title>
+        <id>https://docs.phcode.dev/blog/test-website-on-different-screen-sizes</id>
+        <link href="https://docs.phcode.dev/blog/test-website-on-different-screen-sizes"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Preview one HTML page at desktop, tablet, and phone widths. Find the card that makes the phone scroll sideways, fix its CSS, and check all three sizes again.]]></summary>
+        <content type="html"><![CDATA[<p>The <strong>Woodland loop</strong> card below fits on a laptop and a tablet. On a phone, the distance disappears off the right edge. Try the three screen widths in the free Phoenix HTML Viewer, then add one line of CSS to bring <strong>2 miles</strong> back into view.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-the-same-page-at-three-widths">Open the same page at three widths<a href="https://docs.phcode.dev/blog/test-website-on-different-screen-sizes#open-the-same-page-at-three-widths" class="hash-link" aria-label="Direct link to Open the same page at three widths" title="Direct link to Open the same page at three widths" translate="no">​</a></h2>
+<ol>
+<li class="">Open the <a href="https://phcode.dev/tools/html-viewer.html" target="_blank" rel="noopener noreferrer" class="">Phoenix HTML Viewer</a>. Paste the whole example below into <strong>HTML source</strong>, replacing any text already there. If you see separate <strong>Source</strong> and <strong>Preview</strong> tabs, paste into <strong>Source</strong> and switch to <strong>Preview</strong>.</li>
+<li class="">Under <strong>Rendered preview</strong>, open the screen-width menu. It initially reads <strong>Responsive</strong>. Select <strong>Desktop</strong>, then <strong>Tablet</strong>, then <strong>Mobile</strong>. Look for <strong>2 miles</strong> on the right of the green card each time.</li>
+</ol>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token doctype punctuation" style="color:#393A34;font-style:italic">&lt;!</span><span class="token doctype doctype-tag" style="color:#999988;font-style:italic">doctype</span><span class="token doctype" style="color:#999988;font-style:italic"> </span><span class="token doctype name" style="color:#999988;font-style:italic">html</span><span class="token doctype punctuation" style="color:#393A34;font-style:italic">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">html</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">lang</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">en</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">head</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">meta</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">name</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">viewport</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">content</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">width=device-width, initial-scale=1</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">title</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Weekend walks</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">title</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">style</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">    </span><span class="token style language-css selector" style="color:#00009f">body</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style="color:#393A34">{</span><span class="token style language-css"> </span><span class="token style language-css property" style="color:#36acaa">margin</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> </span><span class="token style language-css number" style="color:#36acaa">0</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"> </span><span class="token style language-css property" style="color:#36acaa">font</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> </span><span class="token style language-css number" style="color:#36acaa">18</span><span class="token style language-css unit">px</span><span class="token style language-css">/</span><span class="token style language-css number" style="color:#36acaa">1.5</span><span class="token style language-css"> system-ui</span><span class="token style language-css punctuation" style="color:#393A34">,</span><span class="token style language-css"> sans-serif</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style="color:#393A34">}</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">    </span><span class="token style language-css selector class" style="color:#00009f">.walk</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style="color:#393A34">{</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">      </span><span class="token style language-css property" style="color:#36acaa">box-sizing</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> border-box</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">      </span><span class="token style language-css property" style="color:#36acaa">width</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> </span><span class="token style language-css number" style="color:#36acaa">720</span><span class="token style language-css unit">px</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">      </span><span class="token style language-css property" style="color:#36acaa">padding</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> </span><span class="token style language-css number" style="color:#36acaa">24</span><span class="token style language-css unit">px</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">      </span><span class="token style language-css property" style="color:#36acaa">color</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> </span><span class="token style language-css hexcode color">#173c32</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">      </span><span class="token style language-css property" style="color:#36acaa">background</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> </span><span class="token style language-css hexcode color">#e5f2e8</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">    </span><span class="token style language-css punctuation" style="color:#393A34">}</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">    </span><span class="token style language-css selector class" style="color:#00009f">.distance</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style="color:#393A34">{</span><span class="token style language-css"> </span><span class="token style language-css property" style="color:#36acaa">float</span><span class="token style language-css punctuation" style="color:#393A34">:</span><span class="token style language-css"> right</span><span class="token style language-css punctuation" style="color:#393A34">;</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style="color:#393A34">}</span><span class="token style language-css"></span><br></div><div class="token-line" style="color:#393A34"><span class="token style language-css">  </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">style</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">head</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">main</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">class</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">walk</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">strong</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">class</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">distance</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">2 miles</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">strong</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Woodland loop</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">p</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Start at the old oak and follow the green signs.</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">p</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">main</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">html</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></div></code></pre></div></div>
+<table><thead><tr><th>Viewport preset</th><th>What you should see</th></tr></thead><tbody><tr><td>Desktop, 1280 pixels</td><td>The full green card and some white space to its right.</td></tr><tr><td>Tablet, 768 pixels</td><td>The full card, with a much smaller gap on the right.</td></tr><tr><td>Mobile, 390 pixels</td><td>The heading is visible. You have to scroll sideways inside the preview to reach <strong>2 miles</strong>.</td></tr></tbody></table>
+<a href="https://docs.phcode.dev/tutorials/media/responsive-card-mobile-overflow.png"><img src="https://docs.phcode.dev/tutorials/media/responsive-card-mobile-overflow.png" width="692" height="350" style="height:auto" loading="lazy" alt="Mobile is selected in the Phoenix HTML Viewer. The Woodland loop heading is visible, but the distance lies outside the right edge of the phone preview."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fix-the-card-and-test-again">Fix the card and test again<a href="https://docs.phcode.dev/blog/test-website-on-different-screen-sizes#fix-the-card-and-test-again" class="hash-link" aria-label="Direct link to Fix the card and test again" title="Direct link to Fix the card and test again" translate="no">​</a></h2>
+<p>In <strong>HTML source</strong>, find <code>width: 720px;</code> inside the <code>.walk</code> rule. Keep that line and add the following one immediately below it.</p>
+<div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token property" style="color:#36acaa">max-width</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">100</span><span class="token unit">%</span><span class="token punctuation" style="color:#393A34">;</span><br></div></code></pre></div></div>
+<p>Switch back to <strong>Preview</strong> if needed. At <strong>Mobile</strong>, the distance and heading should now be visible together. The description wraps to a second line. Switch back to <strong>Tablet</strong> and <strong>Desktop</strong>. The card still stops at 720 pixels on those wider screens.</p>
+<a href="https://docs.phcode.dev/tutorials/media/responsive-card-mobile-fit.png"><img src="https://docs.phcode.dev/tutorials/media/responsive-card-mobile-fit.png" width="692" height="350" style="height:auto" loading="lazy" alt="After adding max-width, the Mobile preview shows both Woodland loop and 2 miles inside the green card. The description wraps within its right edge."></a>
+<p>The card needed 720 pixels even when its parent had only 390. The new maximum lets it shrink to the available width. The existing <code>box-sizing: border-box</code> keeps the padding inside that width. On your own page, apply the change to the element that sticks out, save the stylesheet, and repeat the same width checks. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/max-width" target="_blank" rel="noopener noreferrer" class="">How CSS max-width works</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="test-a-project-with-separate-files">Test a project with separate files<a href="https://docs.phcode.dev/blog/test-website-on-different-screen-sizes#test-a-project-with-separate-files" class="hash-link" aria-label="Direct link to Test a project with separate files" title="Direct link to Test a project with separate files" translate="no">​</a></h2>
+<p>If your HTML links to a local stylesheet or images, open the whole project in Phoenix Code so Live Preview can find those files. In <strong>Phoenix Pro</strong>, the device-size button at the right of the Live Preview toolbar lets you switch widths. After checking the layout, open your published page on a real phone to try the links, touch controls, and on-screen keyboard. <a class="" href="https://docs.phcode.dev/docs/Pro%20Features/device-preview">Device Preview in Phoenix Pro</a> · <a class="" href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript">Troubleshoot missing styles and images</a></p>]]></content>
+        <author>
+            <name>Charly Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Tools" term="Tools"/>
+        <category label="HTML" term="HTML"/>
+        <category label="CSS" term="CSS"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Convert WebP to JPG and Choose the Background Color]]></title>
+        <id>https://docs.phcode.dev/blog/convert-webp-to-jpg-background</id>
+        <link href="https://docs.phcode.dev/blog/convert-webp-to-jpg-background"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Convert a transparent WebP to a JPG with a white or custom background. Compare two actual downloads and see when to keep a transparent PNG instead.]]></summary>
+        <content type="html"><![CDATA[<p>A logo can float over any page color as a transparent WebP. A JPG needs a color in every pixel. If an upload form requires JPG, choose the background <strong>before adding the file</strong>. These two images came from the same WebP. Only the background setting changed.</p>
+<table><thead><tr><th>White background</th><th>Dark green background</th></tr></thead><tbody><tr><td><img src="https://docs.phcode.dev/tutorials/trail-marker/marker-white.jpg" width="240" height="160" style="height:auto" alt="The orange trail marker on a white rectangular background."></td><td><img src="https://docs.phcode.dev/tutorials/trail-marker/marker-dark.jpg" width="240" height="160" style="height:auto" alt="The same orange trail marker on a dark green rectangular background."></td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="download-a-jpg-with-the-background-you-want">Download a JPG with the background you want<a href="https://docs.phcode.dev/blog/convert-webp-to-jpg-background#download-a-jpg-with-the-background-you-want" class="hash-link" aria-label="Direct link to Download a JPG with the background you want" title="Direct link to Download a JPG with the background you want" translate="no">​</a></h2>
+<ol>
+<li class="">Open the <a href="https://phcode.dev/tools/webp-to-jpg.html" target="_blank" rel="noopener noreferrer" class="">Phoenix WebP to JPG Converter</a>. Use your own WebP, or download the <a href="https://docs.phcode.dev/tutorials/trail-marker/trail-marker.webp" download="trail-marker.webp">transparent trail marker</a> to follow along.</li>
+<li class="">Leave <strong>Image quality</strong> at <strong>90%</strong> for this example. Under <strong>Background color</strong>, keep white (<code>#FFFFFF</code>) for the first result, or click the color swatch and choose the color you want behind the image. We used dark green (<code>#21392F</code>) for the second version.</li>
+<li class="">Click <strong>Choose files</strong> and select the WebP. Conversion starts when you select it. In <strong>Your JPG files</strong>, use the download button on the row for your image.</li>
+<li class="">Open the downloaded <code>trail-marker.jpg</code>. The marker still measures <strong>240 × 160 pixels</strong>. Look at the four corners to see the chosen background. If you want another version, set the new color and add the original WebP again.</li>
+</ol>
+<a href="https://docs.phcode.dev/tutorials/media/webp-jpg-download.png"><img src="https://docs.phcode.dev/tutorials/media/webp-jpg-download.png" width="1092" height="300" style="height:auto" loading="lazy" alt="The converted trail-marker.jpg is ready under Your JPG files, with its download control beside the file."></a>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-does-the-white-box-stay">Why does the white box stay?<a href="https://docs.phcode.dev/blog/convert-webp-to-jpg-background#why-does-the-white-box-stay" class="hash-link" aria-label="Direct link to Why does the white box stay?" title="Direct link to Why does the white box stay?" translate="no">​</a></h2>
+<p>Check which file you added. If you start the second conversion with the <strong>white JPG</strong>, the white corners are already part of the picture. Go back to the original transparent WebP. The background setting fills transparent pixels. It leaves an opaque white area in a photo or logo in place.</p>
+<p>The quality slider controls JPG compression. Increasing it won’t restore transparency, and decreasing it can soften the sharp edges of lettering. Compare the downloaded file at the size visitors will see it. <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types" target="_blank" rel="noopener noreferrer" class="">Image formats and transparency</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="keep-the-transparent-corners">Keep the transparent corners<a href="https://docs.phcode.dev/blog/convert-webp-to-jpg-background#keep-the-transparent-corners" class="hash-link" aria-label="Direct link to Keep the transparent corners" title="Direct link to Keep the transparent corners" translate="no">​</a></h2>
+<p>If the same logo must sit on both light and dark pages, keep the original WebP or open it in the <a href="https://phcode.dev/tools/webp-to-png.html" target="_blank" rel="noopener noreferrer" class="">Phoenix WebP to PNG Converter</a>. Choose the original file and download the PNG. In our practice export, the corner pixel stayed fully transparent. You can check your own file by sampling a corner in the <a class="" href="https://docs.phcode.dev/blog/get-hex-color-from-image#pick-one-pixel-from-the-picture">image color picker walkthrough</a>.</p>]]></content>
+        <author>
+            <name>Charly Abraham</name>
+            <uri>https://github.com/charlypa</uri>
+        </author>
+        <category label="Tools" term="Tools"/>
+        <category label="Images" term="Images"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Why Your HTML Preview Is Missing CSS, Images or JavaScript]]></title>
@@ -165,7 +357,8 @@ are in both Phoenix Pro and the free Community edition.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="identify-what-is-missing">Identify what is missing<a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#identify-what-is-missing" class="hash-link" aria-label="Direct link to Identify what is missing" title="Direct link to Identify what is missing" translate="no">​</a></h2>
 <table><thead><tr><th>What you see</th><th>First check</th><th>Next step</th></tr></thead><tbody><tr><td>Hosted CSS is not loading</td><td>Is external access enabled?</td><td>For trusted content, turn on <strong>Allow external resources</strong>. Then <a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#distinguish-hosted-addresses-from-relative-paths" class="">try the hosted example</a>.</td></tr><tr><td>A local <code>styles.css</code> file is not loading</td><td>Did you open only the HTML file?</td><td><a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#open-the-complete-project-in-phoenix-code" class="">Open the full project folder</a> in Phoenix Code.</td></tr><tr><td>An image is not showing</td><td>Is its address a hosted URL or a local path?</td><td><a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#keep-local-files-in-the-expected-folders" class="">Check the path and filename</a>.</td></tr><tr><td>A hosted file still does not load</td><td>What URL did the browser request?</td><td><a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#check-a-failed-resource" class="">Check the failed request</a>.</td></tr><tr><td>A button does nothing</td><td>Is JavaScript allowed?</td><td><a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#check-a-small-javascript-interaction" class="">Test a small inline script</a> before you debug a bigger one.</td></tr></tbody></table>
 <p>If the stylesheet loads but the page still looks wrong, check whether the CSS
-rule targets the right element or another rule overrides it.</p>
+rule targets the right element or another rule overrides it. For a heading that
+stays in capitals, <a class="" href="https://docs.phcode.dev/blog/change-all-caps-website-text#when-the-html-looks-right-but-the-page-is-still-uppercase">compare the HTML text with its CSS text-transform rule</a>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="check-a-self-contained-html-example">Test HTML and inline CSS<a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javascript#check-a-self-contained-html-example" class="hash-link" aria-label="Direct link to Test HTML and inline CSS" title="Direct link to Test HTML and inline CSS" translate="no">​</a></h2>
 <ol>
 <li class="">Open the <a href="https://phcode.dev/tools/html-viewer.html" target="_blank" rel="noopener noreferrer" class="">HTML Viewer</a>.</li>
@@ -214,6 +407,7 @@ the <a href="https://docs.phcode.dev/blog/html-preview-missing-css-images-javasc
 <p>A full URL such as <code>https://example.com/images/logo.png</code> points to a file on a
 website. This is an example URL; replace it with your own image URL when testing.
 Hosted images, stylesheets, and fonts need <strong>Allow external resources</strong> in the Viewer.</p>
+<p>An image address that starts with <code>data:image/</code> carries the image inside the HTML. If that image is missing, <a class="" href="https://docs.phcode.dev/blog/decode-base64-text-and-images#see-an-image-copied-from-html">test the complete data URL with a working Base64 image</a>.</p>
 <p>To see the difference, replace the Viewer source with this complete example.
 It loads the same practice stylesheet and woodland photo from the docs website:</p>
 <div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token doctype punctuation" style="color:#393A34;font-style:italic">&lt;!</span><span class="token doctype doctype-tag" style="color:#999988;font-style:italic">doctype</span><span class="token doctype" style="color:#999988;font-style:italic"> </span><span class="token doctype name" style="color:#999988;font-style:italic">html</span><span class="token doctype punctuation" style="color:#393A34;font-style:italic">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">html</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">lang</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">en</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">head</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">meta</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">charset</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">utf-8</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">meta</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">name</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">viewport</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">content</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">width=device-width, initial-scale=1</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">title</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">Hosted resource check</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">title</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">link</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">rel</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">stylesheet</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">    </span><span class="token tag attr-name" style="color:#00a4db">href</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">https://docs.phcode.dev/tutorials/image-text-layout/styles.css</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">head</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain">A woodland walk</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">h1</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">class</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">feature</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">img</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">      </span><span class="token tag attr-name" style="color:#00a4db">src</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">https://docs.phcode.dev/tutorials/image-text-layout/images/woodland.jpg</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag" style="color:#00009f"></span><br></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">      </span><span class="token tag attr-name" style="color:#00a4db">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">A sunlit path between tall trees</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">width</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">320</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">height</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag attr-value" style="color:#e3116c">180</span><span class="token tag attr-value punctuation" style="color:#393A34">'</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">body</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">html</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></div></code></pre></div></div>
@@ -1125,444 +1319,5 @@ bridge between Designer and Developer workflows for the Web. To help <em>people<
         <category label="Continued" term="Continued"/>
         <category label="Phoenix Code" term="Phoenix Code"/>
         <category label="History" term="History"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Editor Experience Release (November-2024, V-3.10) is now Live]]></title>
-        <id>https://docs.phcode.dev/blog/release-3.10</id>
-        <link href="https://docs.phcode.dev/blog/release-3.10"/>
-        <updated>2024-11-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Phoenix Code 3.10 improves the editor UI with indent guide lines, better performance, and visual feedback. Updated extension developer docs.]]></summary>
-        <content type="html"><![CDATA[<p>November release(3.10) of Phoenix Code is now available for download at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>This month's core theme is <code>Editor UI improvements</code>. We have fine-tuned the editing experience for better
-performance and visual feedback.
-We've also made substantial improvements to <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer" class="">docs.phcode.dev</a> to better support extension
-developers.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="indent-guide-lines">Indent Guide Lines<a href="https://docs.phcode.dev/blog/release-3.10#indent-guide-lines" class="hash-link" aria-label="Direct link to Indent Guide Lines" title="Direct link to Indent Guide Lines" translate="no">​</a></h2>
-<p>Phoenix Code now supports indent guidelines to help you better visualize code structure. This feature can
-be toggled via <code>View &gt; Indent Guide Lines</code>. <a href="https://docs.phcode.dev/docs/editing-text#indent-guide-lines" target="_blank" rel="noopener noreferrer" class="">Read more...</a></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/3d9d0c55-3c9e-4ab3-bbc0-53b563d19e39" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="customizable-editor-line-height">Customizable Editor Line Height<a href="https://docs.phcode.dev/blog/release-3.10#customizable-editor-line-height" class="hash-link" aria-label="Direct link to Customizable Editor Line Height" title="Direct link to Customizable Editor Line Height" translate="no">​</a></h2>
-<p>Theme Settings (<code>View &gt; Themes...</code>) now has a new <code>Line Height</code> slider. Adjust the editor line height between 1x and 3x to find your
-perfect balance of readability and screen real estate. <a href="https://docs.phcode.dev/docs/editing-text#line-height" target="_blank" rel="noopener noreferrer" class="">Read more...</a></p>
-<p>Also added a <code>Get More...</code> button to the Themes dialog, linking directly to the themes section in Extension Manager.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/97a46d9a-e971-401d-8a77-015afa6d5972" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="linecol-indicator-relocation"><code>Line:Col</code> Indicator Relocation<a href="https://docs.phcode.dev/blog/release-3.10#linecol-indicator-relocation" class="hash-link" aria-label="Direct link to linecol-indicator-relocation" title="Direct link to linecol-indicator-relocation" translate="no">​</a></h2>
-<p>Moved to the right of the status bar, accommodating future status bar extensions. Click on the <code>line:col</code> section in the
-statusbar to jump to specific lines.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/540ea992-dda0-4a2c-8042-3c6228616636" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-tweaks">Performance Tweaks<a href="https://docs.phcode.dev/blog/release-3.10#performance-tweaks" class="hash-link" aria-label="Direct link to Performance Tweaks" title="Direct link to Performance Tweaks" translate="no">​</a></h2>
-<ul>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1943" target="_blank" rel="noopener noreferrer" class="">Major improvements to editor rendering</a> with better editor scroll
-consistency and performance, especially on Safari and macOS.</li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1937" target="_blank" rel="noopener noreferrer" class="">Faster startup of extension manager.</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stability-improvements">Stability Improvements<a href="https://docs.phcode.dev/blog/release-3.10#stability-improvements" class="hash-link" aria-label="Direct link to Stability Improvements" title="Direct link to Stability Improvements" translate="no">​</a></h2>
-<ul>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1889" target="_blank" rel="noopener noreferrer" class="">File recovery now does integrity checks for more reliable crash recovery.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1838" target="_blank" rel="noopener noreferrer" class="">Fixed Markdown image link handling within href tags.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1932" target="_blank" rel="noopener noreferrer" class="">Improved extension registry management to prevent quota issues on Mac/Linux.</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="documentation-updates">Documentation Updates<a href="https://docs.phcode.dev/blog/release-3.10#documentation-updates" class="hash-link" aria-label="Direct link to Documentation Updates" title="Direct link to Documentation Updates" translate="no">​</a></h2>
-<p>Our documentation site - <a href="https://docs.phcode.dev/" target="_blank" rel="noopener noreferrer" class="">docs.phcode.dev</a> has received a major overhaul:</p>
-<ul>
-<li class="">Updated user guide: <a href="https://docs.phcode.dev/docs/intro" target="_blank" rel="noopener noreferrer" class="">docs.phcode.dev/docs/intro</a></li>
-<li class="">New API documentation for extension developers: <a href="https://docs.phcode.dev/api/getting-started" target="_blank" rel="noopener noreferrer" class="">docs.phcode.dev/api/getting-started</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="all-changes">All changes<a href="https://docs.phcode.dev/blog/release-3.10#all-changes" class="hash-link" aria-label="Direct link to All changes" title="Direct link to All changes" translate="no">​</a></h2>
-<p>Please see <a href="https://github.com/phcode-dev/phoenix/commits/main/?since=2024-09-11&amp;until=2024-11-24" target="_blank" rel="noopener noreferrer" class="">this link</a> for a full list of changes
-in GitHub.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.10#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-<li class=""><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer" class=""><strong>Consider supporting us</strong> on GitHub Sponsors</a>. Every contribution helps us
-to keep improving Phoenix Code.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content>
-        <author>
-            <name>Arun Bose</name>
-            <uri>https://github.com/abose</uri>
-        </author>
-        <author>
-            <name>Charly P Abraham</name>
-            <uri>https://github.com/charlypa</uri>
-        </author>
-        <author>
-            <name>Devansh Agarwal</name>
-            <uri>https://github.com/devvaannsh</uri>
-        </author>
-        <author>
-            <name>Phoenix Code Bot</name>
-            <uri>https://github.com/phoenixide</uri>
-        </author>
-        <category label="Editor Experience" term="Editor Experience"/>
-        <category label="UI Improvements" term="UI Improvements"/>
-        <category label="Windows" term="Windows"/>
-        <category label="Linux" term="Linux"/>
-        <category label="Mac" term="Mac"/>
-        <category label="Release" term="Release"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HTML Workflows and stability Release (September-2024, V-3.9) is now Live]]></title>
-        <id>https://docs.phcode.dev/blog/release-3.9</id>
-        <link href="https://docs.phcode.dev/blog/release-3.9"/>
-        <updated>2024-09-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Phoenix Code 3.9 improves app stability and robustness, adds HTML and text editing workflow enhancements, and ChromeOS support.]]></summary>
-        <content type="html"><![CDATA[<p>September release(3.9) of Phoenix Code is now available for download at
-<a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>This month's core theme is <code>App robustness</code> and <code>stability</code> improvements.
-We have also added several <code>HTML and Text Editing</code> workflow improvements.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="now-available-on-chromeos">Now Available on ChromeOS<a href="https://docs.phcode.dev/blog/release-3.9#now-available-on-chromeos" class="hash-link" aria-label="Direct link to Now Available on ChromeOS" title="Direct link to Now Available on ChromeOS" translate="no">​</a></h2>
-<p>All new native ChromeOS app is now available on the Google Play Store.
-The ChromeOS app is a highly requested feature and is specially made for education and student use.</p>
-<p><a href="https://play.google.com/store/apps/details?id=prod.phcode.twa" target="_blank" rel="noopener noreferrer" class=""><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/0a7f20ce-653c-43a8-ac3e-3875ea74df5b" alt="google play icon (1)" class="img_ev3q"></a></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="auto-rename-start-and-end-of-htmlxmlsvg-tags">Auto rename start and end of HTML/XML/SVG tags<a href="https://docs.phcode.dev/blog/release-3.9#auto-rename-start-and-end-of-htmlxmlsvg-tags" class="hash-link" aria-label="Direct link to Auto rename start and end of HTML/XML/SVG tags" title="Direct link to Auto rename start and end of HTML/XML/SVG tags" translate="no">​</a></h2>
-<p>Automatically rename paired HTML/XML/SVG tags as you type at the start or end of the tag. <a href="https://docs.phcode.dev/docs/editing-text/#auto-rename-tag" target="_blank" rel="noopener noreferrer" class="">Read more...</a></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/ad82db8c-df1c-4c83-a5db-145caab539ec" alt="tag sync" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="auto-tab-and-spacing-detection">Auto Tab and Spacing detection<a href="https://docs.phcode.dev/blog/release-3.9#auto-tab-and-spacing-detection" class="hash-link" aria-label="Direct link to Auto Tab and Spacing detection" title="Direct link to Auto Tab and Spacing detection" translate="no">​</a></h2>
-<p>Phoenix Code can now automatically detect and apply the indentation style (tabs or spaces) based on the existing code in the file.
-<a href="https://docs.phcode.dev/docs/editing-text/#auto-space-detection" target="_blank" rel="noopener noreferrer" class="">Read more...</a></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/0adc47c5-a561-4002-bffb-d7bcde999b9d" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ux-improvements">UX Improvements<a href="https://docs.phcode.dev/blog/release-3.9#ux-improvements" class="hash-link" aria-label="Direct link to UX Improvements" title="Direct link to UX Improvements" translate="no">​</a></h2>
-<ul>
-<li class=""><code>Reopen closed files</code> option added to <code>File</code> menu. Shortcut: <code>Ctrl-Shift-T</code>, or (<code>Cmd-Shift-T</code> on Mac).</li>
-<li class=""><code>Go to Next Problem</code> and <code>Go to Previous Problem</code> option added to <a href="https://github.com/phcode-dev/phoenix/pull/1732" target="_blank" rel="noopener noreferrer" class=""><code>Navigate</code> menu.</a></li>
-<li class=""><a href="https://github.com/orgs/phcode-dev/discussions/1809" target="_blank" rel="noopener noreferrer" class="">Tab key press to insert code hints</a></li>
-<li class=""><code>window.alert</code>, <code>window.confirm</code> and <code>window.prompt</code> APIs <a href="https://github.com/phcode-dev/phoenix/pull/1814" target="_blank" rel="noopener noreferrer" class="">will work in live preview</a></li>
-<li class="">Clicking on live preview no longer automatically switches from your <a href="https://github.com/phcode-dev/phoenix/pull/1800" target="_blank" rel="noopener noreferrer" class="">current unrelated file to the main HTML file.</a></li>
-<li class="">Live preview usability and navigation improvements - (<a href="https://github.com/phcode-dev/phoenix/pull/1741" target="_blank" rel="noopener noreferrer" class="">1</a>, <a href="https://github.com/phcode-dev/phoenix/pull/1760" target="_blank" rel="noopener noreferrer" class="">2</a>)</li>
-<li class="">Increase/Decrease font size will <a href="https://github.com/phcode-dev/phoenix/pull/1799" target="_blank" rel="noopener noreferrer" class="">change the Editor Font size Only</a>.</li>
-<li class="">Fixed issue where code folding markers disappear when hovering over gutter in dark theme.</li>
-<li class=""><code>.cjs</code> and <code>.mjs</code> files support as javascript files.</li>
-<li class="">Support for <code>shtml</code> custom server live preview.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stability-improvements">Stability Improvements<a href="https://docs.phcode.dev/blog/release-3.9#stability-improvements" class="hash-link" aria-label="Direct link to Stability Improvements" title="Direct link to Stability Improvements" translate="no">​</a></h2>
-<ul>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/issues/1791" target="_blank" rel="noopener noreferrer" class="">Fixes node crashes after wakeup from sleep in Windows/Mac.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/issues/1821" target="_blank" rel="noopener noreferrer" class="">Kaspersky AV trojan horse false positive mitigation.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1818" target="_blank" rel="noopener noreferrer" class="">Corrupt preferences auto reset.</a></li>
-<li class=""><a href="https://github.com/phcode-dev/phoenix/pull/1812" target="_blank" rel="noopener noreferrer" class="">Boot time crash recovery.</a></li>
-<li class="">Phoenix Code won't start in <a href="https://github.com/phcode-dev/phoenix/pull/1740" target="_blank" rel="noopener noreferrer" class="">some Fedora/other Linux distros.</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="update-on-release-schedule">Update on Release Schedule<a href="https://docs.phcode.dev/blog/release-3.9#update-on-release-schedule" class="hash-link" aria-label="Direct link to Update on Release Schedule" title="Direct link to Update on Release Schedule" translate="no">​</a></h2>
-<p>In the past, we've released Phoenix Code updates on a monthly basis. However, last month we encountered an issue with our release that led to stability problems for our users.</p>
-<p>To address this, we've taken a step back to reevaluate our release process and make improvements to ensure greater robustness and reliability going forward.</p>
-<p>As a result, we've decided to slow down the desktop release schedule to once every two months. This will allow us to thoroughly test each update and deliver a more stable experience.</p>
-<p>We apologize for any inconvenience caused by the previous release and appreciate your patience and understanding as we work to improve the quality of Phoenix Code.</p>
-<p>We look forward to bringing you new features and improvements in a more controlled and reliable manner.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.9#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-<li class=""><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer" class=""><strong>Consider supporting us</strong> on GitHub Sponsors</a>.
-Every contribution helps us to keep improving Phoenix Code.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content>
-        <author>
-            <name>Arun Bose</name>
-            <uri>https://github.com/abose</uri>
-        </author>
-        <author>
-            <name>Charly P Abraham</name>
-            <uri>https://github.com/charlypa</uri>
-        </author>
-        <author>
-            <name>Kiran Bose</name>
-            <uri>https://github.com/kiranbose</uri>
-        </author>
-        <author>
-            <name>Devansh Agarwal</name>
-            <uri>https://github.com/devvaannsh</uri>
-        </author>
-        <author>
-            <name>Jozsef</name>
-            <uri>https://github.com/jozsefk9</uri>
-        </author>
-        <author>
-            <name>acemi1</name>
-            <uri>https://github.com/acemi1</uri>
-        </author>
-        <author>
-            <name>Phoenix Code Bot</name>
-            <uri>https://github.com/phoenixide</uri>
-        </author>
-        <category label="Live Preview" term="Live Preview"/>
-        <category label="Live Code Hints" term="Live Code Hints"/>
-        <category label="Windows" term="Windows"/>
-        <category label="Linux" term="Linux"/>
-        <category label="Mac" term="Mac"/>
-        <category label="Release" term="Release"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Critical Update + HTML Helpers Release (June-2024, V-3.8) is now Live]]></title>
-        <id>https://docs.phcode.dev/blog/release-3.8</id>
-        <link href="https://docs.phcode.dev/blog/release-3.8"/>
-        <updated>2024-06-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Phoenix Code 3.8 fixes crashes on M1 Macs and Linux, adds HTML drag-and-drop editing, and improves live preview stability.]]></summary>
-        <content type="html"><![CDATA[<p>June release(3.8) of Phoenix Code is now available for download at
-<a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>This update addresses a critical issue where Phoenix Code crashes in M1 Macs
-at app start after a recent macOS update. Also fixes app start issues in some
-newer Linux distributions with latest webkitGTK.</p>
-<p>This month's theme is all about <code>HTML assistance</code>, <code>Drag and Drop</code> and
-<code>ESLint</code>. We've also addressed numerous feature requests and bug reports, along
-with improving app UX and stability.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="html-validation">HTML Validation<a href="https://docs.phcode.dev/blog/release-3.8#html-validation" class="hash-link" aria-label="Direct link to HTML Validation" title="Direct link to HTML Validation" translate="no">​</a></h4>
-<p>We have added HTML Validator to help you find errors like duplicate IDs,
-unrecognized tags, and more. <a href="https://docs.phcode.dev/docs/Features/Problems%20Panel/html-lint/" target="_blank" rel="noopener noreferrer" class="">Read more here.</a></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/5bc4a1cc-2429-477c-83ca-91f19dcc0b0f" alt="HTML validate" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="drag-and-drop-files-and-folders-in-desktop-apps---experimental">Drag and Drop Files and Folders in Desktop Apps - Experimental<a href="https://docs.phcode.dev/blog/release-3.8#drag-and-drop-files-and-folders-in-desktop-apps---experimental" class="hash-link" aria-label="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" title="Direct link to Drag and Drop Files and Folders in Desktop Apps - Experimental" translate="no">​</a></h4>
-<p>Drag files from Explorer (Windows) or Finder (Mac) and drop them into Phoenix
-Code to open individual files. Drop a folder to open it as a project.</p>
-<blockquote>
-<p>Note: This feature is currently disabled on Linux due to UI issues in some
-Linux distributions. To enable it, select menu
-<code>Debug -&gt; Experimental Features -&gt; Drag And Drop Files.</code></p>
-</blockquote>
-<blockquote>
-<p>This feature is not yet available in the browser version @ phcode.dev</p>
-</blockquote>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/ddd96ff7-bc99-46a6-a62d-6f6f5b78438b" alt="drag and drop" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="eslint-support">ESLint Support<a href="https://docs.phcode.dev/blog/release-3.8#eslint-support" class="hash-link" aria-label="Direct link to ESLint Support" title="Direct link to ESLint Support" translate="no">​</a></h4>
-<p>All new and simplified ESLint experience that displays all ESLint errors in a
-file. Fix one or all errors with a single click. To enable, open a project that
-uses ESLint in Phoenix Code. <a href="https://docs.phcode.dev/docs/Features/Problems%20Panel/ESLint/" target="_blank" rel="noopener noreferrer" class="">Read more here.</a></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/eb00691a-a0b4-4c1a-9209-d78fc7db764d" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ux-improvements">UX Improvements<a href="https://docs.phcode.dev/blog/release-3.8#ux-improvements" class="hash-link" aria-label="Direct link to UX Improvements" title="Direct link to UX Improvements" translate="no">​</a></h4>
-<ul>
-<li class=""><strong>Non-Intrusive Automatic Updates:</strong> Updates are now installed in the
-background with no more distracting dialogs when an update is available.</li>
-<li class=""><strong>Case-Sensitive File Renaming:</strong> Renaming files to a different case, such as
-<code>a.txt</code> to <code>A.TXT</code>, is now supported.</li>
-<li class=""><code>File &gt; New Project</code> is now renamed to <code>Start Project</code>.</li>
-<li class="">Increased stability and app startup experience.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.8#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-<li class=""><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer" class=""><strong>Consider supporting us</strong> on GitHub Sponsors</a>.
-Every contribution helps us to keep improving Phoenix Code.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content>
-        <author>
-            <name>Arun Bose</name>
-            <uri>https://github.com/abose</uri>
-        </author>
-        <author>
-            <name>Charly P Abraham</name>
-            <uri>https://github.com/charlypa</uri>
-        </author>
-        <author>
-            <name>Phoenix Code Bot</name>
-            <uri>https://github.com/phoenixide</uri>
-        </author>
-        <category label="Live Preview" term="Live Preview"/>
-        <category label="Live Code Hints" term="Live Code Hints"/>
-        <category label="Windows" term="Windows"/>
-        <category label="Linux" term="Linux"/>
-        <category label="Mac" term="Mac"/>
-        <category label="Release" term="Release"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Little Things Release (May-2024, V-3.7) is now Live]]></title>
-        <id>https://docs.phcode.dev/blog/release-3.7</id>
-        <link href="https://docs.phcode.dev/blog/release-3.7"/>
-        <updated>2024-05-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Phoenix Code 3.7 focuses on live preview improvements, CSS class and style code hints, and small UX refinements.]]></summary>
-        <content type="html"><![CDATA[<p>May release(3.7) of Phoenix Code is now available for download at
-<a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>This month's release is all about Live previews and the little things that make
-your work just a bit easier. We've also addressed numerous feature requests and
-UX bug reports, along with improving app UX and stability.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="live-css-class-and-style-code-hints">Live CSS Class and Style Code Hints<a href="https://docs.phcode.dev/blog/release-3.7#live-css-class-and-style-code-hints" class="hash-link" aria-label="Direct link to Live CSS Class and Style Code Hints" title="Direct link to Live CSS Class and Style Code Hints" translate="no">​</a></h4>
-<p>Interactively edit CSS styles and classes using the up/down arrow keys in code
-hints. This is available in CSS files and inline CSS styles/class names in HTML
-files. This provides an instant boost to your HTML and CSS workflows.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/502c8751-5269-4c34-9178-5ad08f8ad837" alt="classLiveHints" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="csshtml-code-hints-improvements">CSS/HTML Code Hints improvements<a href="https://docs.phcode.dev/blog/release-3.7#csshtml-code-hints-improvements" class="hash-link" aria-label="Direct link to CSS/HTML Code Hints improvements" title="Direct link to CSS/HTML Code Hints improvements" translate="no">​</a></h4>
-<p>Improved relevance of suggestions in CSS and HTML code hints. For E.g.,
-typing <code>b</code> in a CSS file will prioritize <code>background-color</code>. Typing <code>between</code>
-will bring up relevant CSS property-value combinations like <code>align-content: space-between;</code>
-(see image below), so you don't have to remember which value is under which CSS property.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/2a9f8809-de19-43cf-bdcd-d1a5def2e080" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="move-to-trashbin-when-deleting-files">Move to trash/bin when deleting files<a href="https://docs.phcode.dev/blog/release-3.7#move-to-trashbin-when-deleting-files" class="hash-link" aria-label="Direct link to Move to trash/bin when deleting files" title="Direct link to Move to trash/bin when deleting files" translate="no">​</a></h4>
-<p>Deleting files from the files panel in desktop apps will move the file/folder to
-trash/recycle bin instead of permanently deleting it.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ux-improvements">UX Improvements<a href="https://docs.phcode.dev/blog/release-3.7#ux-improvements" class="hash-link" aria-label="Direct link to UX Improvements" title="Direct link to UX Improvements" translate="no">​</a></h4>
-<ul>
-<li class="">Deleting the <code>Phoenix Code</code> folder in user <code>Documents</code> directory is now supported.</li>
-<li class="">Increased stability and app startup experience.</li>
-<li class=""><code>Copy Error Message</code> button is now available in the problems panel.</li>
-</ul>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/95c59e71-5ce8-4697-963e-0fa567062ab0" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.7#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-<li class=""><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer" class=""><strong>Consider supporting us</strong> on GitHub Sponsors</a>.
-Every contribution helps us to keep improving Phoenix Code.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content>
-        <author>
-            <name>Arun Bose</name>
-            <uri>https://github.com/abose</uri>
-        </author>
-        <author>
-            <name>Charly P Abraham</name>
-            <uri>https://github.com/charlypa</uri>
-        </author>
-        <author>
-            <name>Phoenix Code Bot</name>
-            <uri>https://github.com/phoenixide</uri>
-        </author>
-        <category label="Live Preview" term="Live Preview"/>
-        <category label="Live Code Hints" term="Live Code Hints"/>
-        <category label="Windows" term="Windows"/>
-        <category label="Linux" term="Linux"/>
-        <category label="Mac" term="Mac"/>
-        <category label="Release" term="Release"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[April-2024 Release (V-3.6) is now Live]]></title>
-        <id>https://docs.phcode.dev/blog/release-3.6</id>
-        <link href="https://docs.phcode.dev/blog/release-3.6"/>
-        <updated>2024-04-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Phoenix Code 3.6 adds PHP and custom live preview servers, advanced CSS/LESS/SCSS code intelligence, and UX improvements.]]></summary>
-        <content type="html"><![CDATA[<p>April release(3.6) of Phoenix Code is now available for download at
-<a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.</p>
-<p>This month's upgrade is big! with a lot of features you asked for - PHP/Custom
-live preview servers, advanced CSS/LESS/SCSS/HTML code intelligence and tooling,
-UX and app stability improvements.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-live-preview-servers">Custom Live Preview Servers<a href="https://docs.phcode.dev/blog/release-3.6#custom-live-preview-servers" class="hash-link" aria-label="Direct link to Custom Live Preview Servers" title="Direct link to Custom Live Preview Servers" translate="no">​</a></h4>
-<p>Preview PHP, React, and other dynamically rendered files with the
-new server settings dialog. Read more at
-<a href="https://docs.phcode.dev/docs/Features/live-preview-settings/" target="_blank" rel="noopener noreferrer" class="">Live Preview Settings Docs</a>.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/69fa0ee4-7262-42af-97d2-26154ec4a3b9" alt="Screenshot from 2024-04-12 13-08-34" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="html-code-intelligence">HTML Code Intelligence<a href="https://docs.phcode.dev/blog/release-3.6#html-code-intelligence" class="hash-link" aria-label="Direct link to HTML Code Intelligence" title="Direct link to HTML Code Intelligence" translate="no">​</a></h4>
-<p>CSS class hints are now shown within the HTML file's class attribute.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/112ad909-8fd0-4fc4-8042-041ecade9481" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-css-tooling">Advanced CSS Tooling<a href="https://docs.phcode.dev/blog/release-3.6#advanced-css-tooling" class="hash-link" aria-label="Direct link to Advanced CSS Tooling" title="Direct link to Advanced CSS Tooling" translate="no">​</a></h4>
-<p>Support for the latest CSS/LESS/SCSS syntax. Code intelligence and error
-detection for CSS, SCSS, and LESS files.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/9c083bd3-9e34-418d-a1c8-c152393c37b2" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="reverse-css-highlighting">Reverse CSS Highlighting<a href="https://docs.phcode.dev/blog/release-3.6#reverse-css-highlighting" class="hash-link" aria-label="Direct link to Reverse CSS Highlighting" title="Direct link to Reverse CSS Highlighting" translate="no">​</a></h4>
-<p>Clicking an element in the live preview now highlights its selector in the
-source CSS file editor.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/dcb9a111-60fa-479b-8766-dd3109b2134f" alt="Reverse CSS Highlighting gif" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="editor-rulers">Editor Rulers<a href="https://docs.phcode.dev/blog/release-3.6#editor-rulers" class="hash-link" aria-label="Direct link to Editor Rulers" title="Direct link to Editor Rulers" translate="no">​</a></h4>
-<p>Add multiple, color-customizable rulers in the editor to better visualize line
-lengths. <a class="" href="https://docs.phcode.dev/docs/customizing-editor#editor-rulers">Read more...</a></p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/71b8b04c-d2ca-47b8-84bb-53cd0fb4593c" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="open-live-preview-in-any-browser">Open Live Preview in any Browser<a href="https://docs.phcode.dev/blog/release-3.6#open-live-preview-in-any-browser" class="hash-link" aria-label="Direct link to Open Live Preview in any Browser" title="Direct link to Open Live Preview in any Browser" translate="no">​</a></h4>
-<p>Direct buttons to open live previews in Chrome, Edge, Safari, and Firefox.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/05f92c99-8a35-45a5-a8ee-75d581e6e96a" alt="image" class="img_ev3q"></p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="docusaurus-support">Docusaurus Support<a href="https://docs.phcode.dev/blog/release-3.6#docusaurus-support" class="hash-link" aria-label="Direct link to Docusaurus Support" title="Direct link to Docusaurus Support" translate="no">​</a></h4>
-<p>Live preview <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer" class="">docusaurus.io</a> based markdown
-documentation server.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ux-improvements">UX Improvements<a href="https://docs.phcode.dev/blog/release-3.6#ux-improvements" class="hash-link" aria-label="Direct link to UX Improvements" title="Direct link to UX Improvements" translate="no">​</a></h4>
-<p>Increased stability and more predictable live preview behavior.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="community-contributions">Community Contributions<a href="https://docs.phcode.dev/blog/release-3.6#community-contributions" class="hash-link" aria-label="Direct link to Community Contributions" title="Direct link to Community Contributions" translate="no">​</a></h4>
-<ol>
-<li class="">Changes to files and folders made externally are now automatically synced in
-the Browser version of Phoenix Code.
-(<a href="https://github.com/phcode-dev/phoenix/pull/1566" target="_blank" rel="noopener noreferrer" class="">view change</a>) - By
-<a href="https://github.com/ayoung5555" target="_blank" rel="noopener noreferrer" class="">Andrew Young</a>,
-<a href="https://github.com/faizanbhagat" target="_blank" rel="noopener noreferrer" class="">Faizan Bhagat</a></li>
-</ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.6#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-<li class=""><a href="https://github.com/sponsors/phcode-dev" target="_blank" rel="noopener noreferrer" class=""><strong>Consider supporting us</strong> on GitHub Sponsors</a>.
-Every contribution helps us to keep improving Phoenix Code.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content>
-        <author>
-            <name>Arun Bose</name>
-            <uri>https://github.com/abose</uri>
-        </author>
-        <author>
-            <name>Charly P Abraham</name>
-            <uri>https://github.com/charlypa</uri>
-        </author>
-        <author>
-            <name>Andrew Young</name>
-            <uri>https://github.com/ayoung5555</uri>
-        </author>
-        <author>
-            <name>Faizan Bhagat</name>
-            <uri>https://github.com/faizanbhagat</uri>
-        </author>
-        <author>
-            <name>Phoenix Code Bot</name>
-            <uri>https://github.com/phoenixide</uri>
-        </author>
-        <category label="Native Apps" term="Native Apps"/>
-        <category label="Windows" term="Windows"/>
-        <category label="Linux" term="Linux"/>
-        <category label="Mac" term="Mac"/>
-        <category label="Release" term="Release"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[March-2024 Release (V-3.5) is now Live]]></title>
-        <id>https://docs.phcode.dev/blog/release-3.5</id>
-        <link href="https://docs.phcode.dev/blog/release-3.5"/>
-        <updated>2024-03-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Phoenix Code 3.5 improves large project support, Find in Files, inline HTML number dials, and app stability. Download for Windows, Mac, and Linux.]]></summary>
-        <content type="html"><![CDATA[<p>The March release(3.5) of Phoenix Code is now available for download
-at <a href="https://phcode.io/" target="_blank" rel="noopener noreferrer" class="">phcode.io</a>.
-This month's update improves support for large projects, Find in Files, and app stability.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="inline-html-number-dials">Inline HTML Number Dials<a href="https://docs.phcode.dev/blog/release-3.5#inline-html-number-dials" class="hash-link" aria-label="Direct link to Inline HTML Number Dials" title="Direct link to Inline HTML Number Dials" translate="no">​</a></h2>
-<p>You can now use number dials in inline HTML styles, not just in CSS files.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/f56ab73b-c080-4f01-a083-f41aa10c3d16" alt="image" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-filters---advanced-find-in-files">Search Filters - Advanced Find in Files<a href="https://docs.phcode.dev/blog/release-3.5#search-filters---advanced-find-in-files" class="hash-link" aria-label="Direct link to Search Filters - Advanced Find in Files" title="Direct link to Search Filters - Advanced Find in Files" translate="no">​</a></h2>
-<p>All new search filters to find exactly what you want. <code>Search in files</code> or
-<code>Exclude files</code> matching the given pattern instantly.</p>
-<p><img decoding="async" loading="lazy" src="https://github.com/phcode-dev/phoenix/assets/5336369/9a46a6a8-01a2-45db-aebc-9b280977bdc1" alt="new find in files" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="other-improvements">Other Improvements<a href="https://docs.phcode.dev/blog/release-3.5#other-improvements" class="hash-link" aria-label="Direct link to Other Improvements" title="Direct link to Other Improvements" translate="no">​</a></h2>
-<ul>
-<li class="">Projects with very large number of files can now be opened.</li>
-<li class="">Performance improvement when opening minified CSS/JS files and other formats
-with very long lines.</li>
-<li class="">Added support for beautifying SCSS, SASS, LESS, TSX, and JSX files. The
-beautification feature now preserves the cursor position.</li>
-<li class="">Improved startup speed and overall app stability.</li>
-<li class="">Bug fixes and improvements to new project dialog.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-request-from-the-phoenix-team">A Request from the Phoenix Team:<a href="https://docs.phcode.dev/blog/release-3.5#a-request-from-the-phoenix-team" class="hash-link" aria-label="Direct link to A Request from the Phoenix Team:" title="Direct link to A Request from the Phoenix Team:" translate="no">​</a></h2>
-<ul>
-<li class=""><strong>Share your feedback:</strong> <a href="https://github.com/orgs/phcode-dev/discussions" target="_blank" rel="noopener noreferrer" class="">https://github.com/orgs/phcode-dev/discussions</a></li>
-<li class=""><strong>Spread the word</strong> about Phoenix to friends and colleagues.</li>
-<li class=""><a href="https://opencollective.com/phoenix-ide" target="_blank" rel="noopener noreferrer" class=""><strong>Consider supporting us</strong> on Open Collective</a>. Every contribution helps us to keep improving and expanding Phoenix Code.</li>
-</ul>
-<p>With gratitude,</p>
-<p>The Phoenix Team</p>]]></content>
-        <author>
-            <name>Arun Bose</name>
-            <uri>https://github.com/abose</uri>
-        </author>
-        <author>
-            <name>Charly P Abraham</name>
-            <uri>https://github.com/charlypa</uri>
-        </author>
-        <author>
-            <name>Kiran Bose</name>
-            <uri>https://github.com/kiranbose</uri>
-        </author>
-        <author>
-            <name>Phoenix Code Bot</name>
-            <uri>https://github.com/phoenixide</uri>
-        </author>
-        <category label="Native Apps" term="Native Apps"/>
-        <category label="Windows" term="Windows"/>
-        <category label="Linux" term="Linux"/>
-        <category label="Mac" term="Mac"/>
-        <category label="Release" term="Release"/>
     </entry>
 </feed>
