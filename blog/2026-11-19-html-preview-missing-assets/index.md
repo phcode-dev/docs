@@ -192,8 +192,8 @@ A relative path starts from another location. For paths in your HTML:
 
 - `styles.css` and `./styles.css` resolve from the current directory.
 - `../styles.css` resolves from the parent directory.
-- The server resolves `/styles.css` from the site root when it serves the page
-  over HTTP or HTTPS.
+- On an HTTP or HTTPS page, the browser resolves `/styles.css` from the site
+  root, even when the page is in a subfolder.
 
 A relative path does not mean 'find this file anywhere on my computer.'
 [MDN explains how relative references are resolved](https://developer.mozilla.org/en-US/docs/Web/API/URL_API/Resolving_relative_references).
@@ -230,8 +230,8 @@ do not trust. Do not disable browser security to make a preview work.
 ## Test a button with inline JavaScript {#check-a-small-javascript-interaction}
 
 Paste the [first, self-contained example](#check-a-self-contained-html-example)
-back into the Viewer. Add this button inside its `body`, after the paragraph and
-before . Start with **Allow external resources** off:
+back into the Viewer. Add this button after the paragraph, just before the
+closing `</body>` tag. Start with **Allow external resources** off.
 
 ```html
 <button type='button' onclick='this.textContent=`Clicked`'>
