@@ -41,7 +41,8 @@ are in both Phoenix Pro and the free Community edition.
 | A button does nothing | Is JavaScript allowed? | [Test a small inline script](#check-a-small-javascript-interaction) before you debug a bigger one. |
 
 If the stylesheet loads but the page still looks wrong, check whether the CSS
-rule targets the right element or another rule overrides it.
+rule targets the right element or another rule overrides it. For a heading that
+stays in capitals, [compare the HTML text with its CSS text-transform rule](/blog/change-all-caps-website-text#when-the-html-looks-right-but-the-page-is-still-uppercase).
 
 ## Test HTML and inline CSS {#check-a-self-contained-html-example}
 
@@ -152,6 +153,8 @@ If the missing image is the small icon in the browser tab, follow [Add a favicon
 A full URL such as `https://example.com/images/logo.png` points to a file on a
 website. This is an example URL; replace it with your own image URL when testing.
 Hosted images, stylesheets, and fonts need **Allow external resources** in the Viewer.
+
+An image address that starts with `data:image/` carries the image inside the HTML. If that image is missing, [test the complete data URL with a working Base64 image](/blog/decode-base64-text-and-images#see-an-image-copied-from-html).
 
 To see the difference, replace the Viewer source with this complete example.
 It loads the same practice stylesheet and woodland photo from the docs website:
