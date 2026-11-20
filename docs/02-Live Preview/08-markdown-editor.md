@@ -27,6 +27,8 @@ The preview toolbar also has a **theme toggle** *(sun/moon icon)* to switch betw
 
 > Print is not available on macOS desktop apps.
 
+To export a README from your browser and put a section on its own page, follow [Convert Markdown to PDF with page breaks](/blog/convert-markdown-to-pdf-with-page-breaks).
+
 ## Viewing Images
 
 Click an image in the preview to see it full size. Press `Esc`, or click anywhere, to go back to the document. While [editing](#editing-markdown-pro), double-click the image instead, or click the **expand** button at its top-right corner.
