@@ -24,7 +24,7 @@ const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-p
   'test-website-on-different-screen-sizes', 'get-hex-color-from-image', 'convert-webp-to-jpg-background',
   'decode-base64-text-and-images', 'change-all-caps-website-text', 'change-svg-fill-and-stroke',
   'make-a-markdown-table', 'responsive-css-grid-sidebar', 'fix-trailing-comma-json',
-  'unix-timestamp-seconds-or-milliseconds'];
+  'unix-timestamp-seconds-or-milliseconds', 'convert-word-to-markdown'];
 const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
 const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos), ...Object.values(layoutVideos),
   ...Object.values(htmlPreviewVideos)];

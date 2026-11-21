@@ -48,3 +48,5 @@ If part of a cell disappears, look for a pipe in its text. In this example, chan
 ## Save the version you need
 
 For a GitHub README, copy the Markdown source into `README.md`, save it, and use GitHub’s **Preview** when you edit the file there. To share a page someone can open directly in a browser, choose **Download HTML** in the viewer. Open the downloaded file and check the meeting point and distances once more. For a printed handout, [turn your Markdown into a PDF](/blog/convert-markdown-to-pdf-with-page-breaks).
+
+If your table is already in a Word document, you can convert the file and check the cells in the same viewer. [Convert a Word document to Markdown](/blog/convert-word-to-markdown).
