@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alder Street Café menu</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fffcf6;
+      color: #1d3d37;
+      font: 1rem/1.55 system-ui, sans-serif;
+    }
+    main {
+      display: grid;
+      align-items: center;
+      gap: 2rem;
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: clamp(1.5rem, 6vw, 4rem);
+    }
+    h1 {
+      margin: 0 0 1rem;
+      font: normal clamp(2.5rem, 6vw, 4rem)/1.05 Georgia, serif;
+    }
+    p { max-width: 29ch; margin: 0; }
+    .menu-link {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      width: fit-content;
+      max-width: 100%;
+      color: #85402b;
+      text-underline-offset: 0.2em;
+    }
+    .menu-link img {
+      display: block;
+      width: 18rem;
+      max-width: 100%;
+      height: auto;
+    }
+    .menu-link:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+    @media (min-width: 44rem) {
+      main { grid-template-columns: 1fr 18rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Alder Street Café</h1>
+      <p>Breakfast and lunch are on the first page. Open the menu for drinks and sweets.</p>
+    </header>
+    <a class="menu-link" href="menu.pdf">
+      <img src="menu-preview.jpg" alt="" width="600" height="800">
+      <span>Read the full menu (PDF)</span>
+    </a>
+  </main>
+</body>
+</html>

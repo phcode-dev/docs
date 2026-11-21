@@ -92,6 +92,8 @@ You should return to the home page. Your link works in both directions because t
 
 Use the separate browser window to check how a visitor will use the page.
 
+An image can link to a document, too. [Make a clickable PDF preview with a two-page café menu](/blog/clickable-pdf-preview-html).
+
 ## 5. Try one more change
 
 Change the link to open the About page instead. Use `about.html` as the destination and `About me` as the text. Save and test it again.
