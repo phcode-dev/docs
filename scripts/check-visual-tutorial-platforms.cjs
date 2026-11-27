@@ -23,7 +23,7 @@ function run(command, args, options = {}) {
 }
 function extract(zip, folder) {
   if (windows) {
-    run('powershell.exe',['-NoProfile','-Command','Expand-Archive -LiteralPath $env:TUTORIAL_ARCHIVE -DestinationPath $env:TUTORIAL_DESTINATION'],{env:{...process.env,TUTORIAL_ARCHIVE:zip,TUTORIAL_DESTINATION:folder}});
+    run('powershell.exe',['-NoProfile','-Command',"$ErrorActionPreference='Stop'; Expand-Archive -Force -LiteralPath $env:TUTORIAL_ARCHIVE -DestinationPath $env:TUTORIAL_DESTINATION"],{env:{...process.env,TUTORIAL_ARCHIVE:zip,TUTORIAL_DESTINATION:folder}});
   } else if (mac) run('ditto',['-x','-k',zip,folder]);
   else run('unzip',['-q',zip,'-d',folder]);
 }
@@ -33,8 +33,11 @@ async function main() {
   extract(path.join(samples,'first-website.zip'),scratch);
   extract(path.join(samples,'compare-css.zip'),scratch);
   const css=path.join(scratch,'compare-css');
+  console.log('Native extraction created:',await fs.readdir(scratch));
+  assert.ok((await fs.stat(css)).isDirectory(),'compare-css practice directory missing');
+  console.log('Practice files:',await fs.readdir(css));
   const command='git --no-pager diff --no-index -- old.css new.css';
-  const shell=windows?path.join(process.env.SystemRoot,'System32','WindowsPowerShell','v1.0','powershell.exe'):mac?'/bin/zsh':'/bin/bash';
+  const shell=windows?run('where.exe',['powershell.exe']).trim().split('\n')[0].trim():mac?'/bin/zsh':'/bin/bash';
   const args=windows?['-NoProfile','-Command',command+'; exit $LASTEXITCODE']:['-c',command];
   const diff=run(shell,args,{cwd:css,expected:1});
   assert.match(diff,/^-  color: navy;$/m);
