@@ -23,7 +23,7 @@ function run(command, args, options = {}) {
 }
 function extract(zip, folder) {
   if (windows) {
-    run('powershell.exe',['-NoProfile','-Command',"$ErrorActionPreference='Stop'; Expand-Archive -Force -LiteralPath $env:TUTORIAL_ARCHIVE -DestinationPath $env:TUTORIAL_DESTINATION"],{env:{...process.env,TUTORIAL_ARCHIVE:zip,TUTORIAL_DESTINATION:folder}});
+    run('powershell.exe',['-NoProfile','-Command',"$ErrorActionPreference='Stop'; Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory($env:TUTORIAL_ARCHIVE,$env:TUTORIAL_DESTINATION)"],{env:{...process.env,TUTORIAL_ARCHIVE:zip,TUTORIAL_DESTINATION:folder}});
   } else if (mac) run('ditto',['-x','-k',zip,folder]);
   else run('unzip',['-q',zip,'-d',folder]);
 }
