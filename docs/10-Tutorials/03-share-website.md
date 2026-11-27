@@ -115,7 +115,7 @@ If you upload a ZIP, extract it there. Check that it hasn't left `index.html` in
 
 See Hostinger's [File Manager instructions](https://www.hostinger.com/support/1869114-how-to-upload-backups-with-file-manager-in-hostinger/) for the upload steps. This method is for hosting that accepts your own files; a site managed by its AI Website Builder uses a different workflow.
 
-If your host gives you FTP or SFTP details, you can use a transfer client to upload the same files. After editing in Phoenix Code, upload the changed files again.
+If your host gives you SFTP details, follow [Upload your website with SFTP](/docs/tutorials/upload-website-sftp). It shows where to put the files in FileZilla and how to check a later edit online. If your account lists only FTP, ask your provider whether SFTP is available.
 
 </details>
 
