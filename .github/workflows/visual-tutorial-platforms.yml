@@ -1,0 +1,22 @@
+name: Check visual tutorial practice files
+on:
+  push:
+    branches: [qa/visual-tutorials-cross-platform]
+permissions:
+  contents: read
+jobs:
+  practice:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: node scripts/check-visual-tutorial-platforms.cjs
