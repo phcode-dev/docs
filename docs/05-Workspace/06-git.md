@@ -98,17 +98,17 @@ Click or tap either screenshot to see it full size.
 1. [Download the two practice files](pathname:///tutorials/compare-css.zip). Extract the ZIP. On Windows, right-click it and choose **Extract All**. On macOS, double-click it in Finder. On Linux, open it in your archive manager and choose **Extract**.
 2. In Phoenix Code, choose **File → Open Folder…** and select the extracted `compare-css` folder containing `old.css` and `new.css`. In the file list on the left, right-click `old.css` (or **Control-click** on a Mac). Choose **Open In → Integrated Terminal**. A panel opens at the bottom, already in the folder containing both files.
 
-[![The compare-css project with old.css selected and its Open In menu showing Integrated Terminal.](/tutorials/media/git-compare-open-terminal.png)](pathname:///tutorials/media/git-compare-open-terminal.png)
+   [![The compare-css project with old.css selected and its Open In menu showing Integrated Terminal.](/tutorials/media/git-compare-open-terminal.png)](pathname:///tutorials/media/git-compare-open-terminal.png)
 
 3. Copy the command below. Right-click inside the terminal, choose **Paste**, and press **Enter**. Use the same command on all three systems.
 
-```sh
-git --no-pager diff --no-index -- old.css new.css
-```
+   ```sh
+   git --no-pager diff --no-index -- old.css new.css
+   ```
 
 4. Find the line starting with a single **minus**. It shows `color: navy;` from `old.css`. The next line starts with a **plus** and shows `color: teal;` from `new.css`. The underline stays the same. The command only reads the files.
 
-[![The Phoenix Code terminal shows a minus beside color: navy; and a plus beside color: teal; with the underline rule unchanged.](/tutorials/media/git-compare-result.png)](pathname:///tutorials/media/git-compare-result.png)
+   [![The Phoenix Code terminal shows a minus beside color: navy; and a plus beside color: teal; with the underline rule unchanged.](/tutorials/media/git-compare-result.png)](pathname:///tutorials/media/git-compare-result.png)
 
 For your own files, put their names in the same order, older copy first. Put double quotes around a name containing spaces, such as `"old styles.css"`. If the prompt returns without any lines of output, the two files match. If you see a file-access error, check both filenames in the sidebar and open the terminal from that folder again.
 
