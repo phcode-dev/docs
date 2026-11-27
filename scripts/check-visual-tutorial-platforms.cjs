@@ -34,7 +34,7 @@ async function main() {
   extract(path.join(samples,'compare-css.zip'),scratch);
   const css=path.join(scratch,'compare-css');
   const command='git --no-pager diff --no-index -- old.css new.css';
-  const shell=windows?'pwsh':mac?'/bin/zsh':'/bin/bash';
+  const shell=windows?path.join(process.env.SystemRoot,'System32','WindowsPowerShell','v1.0','powershell.exe'):mac?'/bin/zsh':'/bin/bash';
   const args=windows?['-NoProfile','-Command',command+'; exit $LASTEXITCODE']:['-c',command];
   const diff=run(shell,args,{cwd:css,expected:1});
   assert.match(diff,/^-  color: navy;$/m);
@@ -88,7 +88,7 @@ async function main() {
       const known=path.join(scratch,'known_hosts').replaceAll('\\','/');
       run(ssh('sftp'),['-P',String(port),'-i',path.join(scratch,'client'),'-o','IdentitiesOnly=yes','-o','StrictHostKeyChecking=yes','-o','UserKnownHostsFile="'+known+'"','-b',batch,'trail@127.0.0.1'],{cwd:local});
     }
-    await transfer(['cd public_html','mkdir trail-notes','cd trail-notes','mkdir images',...files.map(name=>'put '+name)]);
+    await transfer(['cd public_html','mkdir trail-notes','cd trail-notes','mkdir images',...files.map(name=>'put '+name+' '+name)]);
     await new Promise(resolve=>web.listen(0,'127.0.0.1',resolve));
     const url='http://127.0.0.1:'+web.address().port+'/';
     for(const name of files){
