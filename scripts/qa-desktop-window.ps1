@@ -17,14 +17,18 @@ $app = Find-App
 if (!$app) {throw 'Phoenix Code was not installed'}
 $exe = $app.UninstallString.Trim('"')
 Write-Output ("Installed program: " + $app.DisplayName + " " + $app.DisplayVersion)
-Start-Process -FilePath $exe
+$running = Start-Process -PassThru -FilePath $exe -ArgumentList ("_?=" + (Split-Path $exe -Parent))
 $root = [Windows.Automation.AutomationElement]::RootElement
 $trueCondition = [Windows.Automation.Condition]::TrueCondition
 $scope = [Windows.Automation.TreeScope]
 $buttonProp = [Windows.Automation.AutomationElement]::ControlTypeProperty
 function Get-Dialog {
   foreach ($win in $root.FindAll($scope::Children,$trueCondition)) {
-    if ($win.Current.Name -match 'Phoenix Code' -and $win.Current.ClassName -eq '#32770') {return $win}
+    if ($win.Current.Name -match 'Installer Language|Language Selection') {
+      $ok = $win.FindAll($scope::Descendants,$trueCondition) | Where-Object { $_.Current.Name -eq 'OK' } | Select-Object -First 1
+      if ($ok) { $ok.GetCurrentPattern([Windows.Automation.InvokePattern]::Pattern).Invoke() }
+    }
+    if (($win.Current.Name -match 'Phoenix Code' -or $win.Current.ProcessId -eq $running.Id) -and $win.Current.ClassName -eq '#32770') {return $win}
   }
 }
 $limit = [datetime]::UtcNow.AddSeconds(38)
@@ -36,7 +40,17 @@ do {
     $uninstall = $controls | Where-Object { $_.Current.Name.Trim('&') -eq 'Uninstall' -and $_.Current.ControlType -eq [Windows.Automation.ControlType]::Button } | Select-Object -First 1
   }
 } until ($uninstall -or [datetime]::UtcNow -gt $limit)
-if (!$uninstall) {throw 'The native confirmation dialog or Uninstall button was unavailable.'}
+if (!$uninstall) {
+  $detail = foreach ($win in $root.FindAll($scope::Children,$trueCondition)) {
+    $win.Current.Name + ' | ' + $win.Current.ClassName + ' | ' + $win.Current.ProcessId
+    if ($win.Current.Name -match 'Phoenix|Language|Setup|Uninstall') {
+      @($win.FindAll($scope::Descendants,$trueCondition) | ForEach-Object { $_.Current.Name })
+    }
+  }
+  $detail += (Get-Process | Where-Object { $_.ProcessName -match 'install|^Au_|phoenix' } | Format-Table Name,MainWindowTitle,MainWindowHandle,Id,SessionId | Out-String)
+  $detail | Out-File (Join-Path $ArtifactDir 'native-windows.txt')
+  throw "The native confirmation dialog or Uninstall button was unavailable: $detail"
+}
 $names = @($controls | ForEach-Object { $_.Current.Name } | Where-Object { $_ } | Select-Object -Unique)
 Write-Output $dialog.Current.Name
 Write-Output ($names -join ' / ')

@@ -83,7 +83,13 @@ for w in list where (w[kCGWindowOwnerName as String] as? String) == "Finder" && 
 } else {
   const script=path.join(temp,'phoenix-installer.sh');
   run('curl',['-fsSL','--retry','3','https://updates.phcode.io/linux/installer.sh','-o',script]);
-  run('xvfb-run',['-a','bash',script],{timeout:480000});
+  fs.mkdirSync(path.join(os.homedir(),'.config'),{recursive:true});
+  fs.mkdirSync(path.join(os.homedir(),'.local','bin'),{recursive:true});
+  const install = require('node:child_process').spawnSync('xvfb-run',['-a','bash',script],{
+    timeout:480000,encoding:'utf8',maxBuffer:32*1024*1024,env:{...process.env,XDG_CURRENT_DESKTOP:'GNOME'}});
+  const output=(install.stdout+'\n'+install.stderr).split('\n').filter(l=>!/^\s*\d+K /.test(l)).slice(-32).join('\n');
+  record(output);
+  if(install.status !== 0) record('Installer exited '+install.status+'; checking its actual installed files before testing removal.');
   for (const item of ['.phoenix-code/phoenix-code.AppImage','.local/share/applications/PhoenixCode.desktop','.local/bin/phcode']) {
     assert(fs.existsSync(path.join(os.homedir(),item)), 'Installed file '+item);
   }
