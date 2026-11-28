@@ -36,15 +36,10 @@ jobs:
         uses: wei/wget@v1
         with:
           args: -O ./.tmp/commitDetails.json ${{ toJSON(github.event.pull_request._links.commits.href) }}
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
-        run: | 
-          echo "$GITHUB_CONTEXT" > ./.tmp/github.json
-          echo ${{ github.event.number }} > ./.tmp/PRNumber
-          cat ./.tmp/github.json
-          echo "commit details: "
-          cat ./.tmp/commitDetails.json
+      - name: Read pull request details
+        run: |
+          jq --arg name "$GITHUB_EVENT_NAME" --arg repo "$GITHUB_REPOSITORY" \
+            '{event_name: $name, repository: $repo, event: .}' "$GITHUB_EVENT_PATH" > .tmp/github.json
       
       - name: Review pull request
         run: |
@@ -58,11 +53,6 @@ jobs:
         env:
           EMPLOYER_CLA_LINK: https://raw.githubusercontent.com/phcode-dev/contributor-license-agreement/main/employer_contributor_license_agreement.md
           PERSONAL_CLA_LINK: https://raw.githubusercontent.com/phcode-dev/contributor-license-agreement/main/personal_contributor_licence_agreement.md
-      
-      - uses: actions/upload-artifact@v5
-        with:
-          name: prcontext
-          path: .tmp/
       
       - name: Fail on validation errors
         run: |
