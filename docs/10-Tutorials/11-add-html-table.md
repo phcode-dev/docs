@@ -9,6 +9,8 @@ toc_max_heading_level: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import TutorialIcon from '@site/src/components/TutorialIcon';
+import RecordedVideo from '@site/src/components/Video/RecordedVideo';
+import tableVideos from '@site/src/data/table-tutorial-videos.json';
 
 Build this trail guide on the About page of the Trail Notes practice website. In **Phoenix Pro**, you'll work in Live Preview. In **Community (free)**, you'll edit the HTML beside it. Both methods work on Windows, macOS, and Linux.
 
@@ -42,6 +44,10 @@ You'll put the table between the bulleted list and **Visit the contact page**.
 
 ### Insert the table in Design Mode {#pro-insert-table}
 
+Watch the table take shape in Live Preview. The recording starts with **about.html** open in **Design Mode** and ends with both trails saved.
+
+<RecordedVideo video={tableVideos.pro} showWatchLink />
+
 1. Click the <TutorialIcon name="expand" label="maximize icon" /> in the Live Preview toolbar to enter **Design Mode**. If the pen is gray, click it. The <TutorialIcon name="pen" active label="orange pen" /> means **Edit Mode** is on.
 2. Click **Visit the contact page** once to select the link. On the blue toolbar that appears, click **+** (**Insert Element**). Choose **Before** so the table will sit above the link.
 3. Type `table` in **Search elements**. Click **Table**, the result with the grid icon. It adds two column headings and one row.
@@ -64,6 +70,10 @@ You'll put the table between the bulleted list and **Visit the contact page**.
 <TabItem value="community" label="Community (free)">
 
 ### Insert the table in HTML {#community-insert-table}
+
+Watch where to paste each code sample in **about.html**. The recording starts with the editor and Live Preview side by side. You can copy both samples from the steps below.
+
+<RecordedVideo video={tableVideos.community} showWatchLink />
 
 1. Keep the code and Live Preview side by side. If the preview fills the window, click the <TutorialIcon name="restore" label="restore icon" />. Open the <TutorialIcon name="modes" label="down arrow" /> beside the pen and choose **Highlight Mode**. In the preview, click the last bullet, **Change the colors in styles.css.** Phoenix Code moves the cursor to that bullet in `about.html`.
 2. Look at the next line for `</ul>`, the end of the bulleted list. Click just after its `>` and press **Enter**.

@@ -243,6 +243,56 @@
         "Button becomes Clicked after both permissions and a real click"
       ],
       "presentation": "Real pointer actions in the live HTML Viewer, recorded at original timing. The crop focuses on preview settings and the rendered result. A pointer and temporary control outline are annotations; product layout, text, and state are unchanged. Analytics were blocked and inputs contain only the public practice examples."
+    },
+    {
+      "file": "static/tutorials/media/trail-table-pro.mp4",
+      "product": "Phoenix Code for the web",
+      "product_url": "https://web.phcode.dev/",
+      "edition": "Phoenix Pro",
+      "platform": "Phoenix Code web 5.5.12-23833 in Chrome on Linux",
+      "project": "first-website",
+      "source_archive_sha256": "ce1dfc47d17982ebe1a2a700bca41e81168f81a6e56dbb261b5cda9328af4b92",
+      "captured_at": "2026-11-28T09:36:37.879Z",
+      "workflow": "Insert and style the Trail Notes table in Design Mode. Name the columns, add an illustrated caption, duplicate the first row, and check the two saved distances.",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 75.25,
+      "frame_size": [
+        1032,
+        820
+      ],
+      "caption_placement": "Instruction strip above the recording, clear of the product and player controls",
+      "presentation": "Real pointer and keyboard actions in the extracted practice project. A ring follows the pointer. Setup and pauses between completed steps are omitted.",
+      "verification": [
+        "Checked the saved about.html against the practice file with only the new table removed.",
+        "Verified its caption, both headings, Pine Loop at 3 km, and Lake Walk at 4 km. The table follows the list and precedes the original Contact link."
+      ]
+    },
+    {
+      "file": "static/tutorials/media/trail-table-community.mp4",
+      "product": "Phoenix Code Desktop",
+      "product_url": "https://phcode.dev/",
+      "edition": "Community (free)",
+      "platform": "Phoenix Code Desktop 5.5.11-23832 on Linux",
+      "project": "first-website",
+      "source_archive_sha256": "ce1dfc47d17982ebe1a2a700bca41e81168f81a6e56dbb261b5cda9328af4b92",
+      "captured_at": "2026-11-28T09:35:00.823Z",
+      "workflow": "Use Highlight Mode to find the insertion point in about.html. Paste the table, change Pine Loop to 3 km, add Lake Walk at 4 km, and check both rows in Live Preview.",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "system_file_picker_recorded": false,
+      "duration_seconds": 33.65,
+      "frame_size": [
+        1120,
+        820
+      ],
+      "caption_placement": "Instruction strip above the recording, clear of the product and player controls",
+      "presentation": "Real pointer and keyboard actions in the extracted practice project. A ring follows the pointer. Setup and pauses between completed steps are omitted.",
+      "verification": [
+        "Checked the saved about.html against the practice file with only the new table removed.",
+        "Verified its caption, both headings, Pine Loop at 3 km, and Lake Walk at 4 km. The table follows the list and precedes the original Contact link."
+      ]
     }
   ],
   "sample_photo": {

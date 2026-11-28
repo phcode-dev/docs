@@ -11,6 +11,7 @@ const imageVideos = require('../src/data/image-tutorial-videos.json');
 const pngPdfVideos = require('../src/data/png-pdf-videos.json');
 const layoutVideos = require('../src/data/layout-tutorial-videos.json');
 const htmlPreviewVideos = require('../src/data/html-preview-videos.json');
+const tableVideos = require('../src/data/table-tutorial-videos.json');
 
 const SITE = path.join(__dirname, '..');
 const ORIGIN = 'https://docs.phcode.dev';
@@ -28,7 +29,7 @@ const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-p
   'unix-timestamp-seconds-or-milliseconds', 'convert-word-to-markdown', 'clickable-pdf-preview-html'];
 const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
 const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos), ...Object.values(layoutVideos),
-  ...Object.values(htmlPreviewVideos)];
+  ...Object.values(htmlPreviewVideos), ...Object.values(tableVideos)];
 
 function videoDuration(file) {
   const data = fs.readFileSync(file);
