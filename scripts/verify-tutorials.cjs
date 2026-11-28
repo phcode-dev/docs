@@ -125,6 +125,21 @@ function verify(build, release = false) {
 
   const imagePage = page(target('/docs/tutorials/add-images'));
   assert.equal(imagePage('article details').length, 5, 'Expected five image FAQs');
+  const tableGuide = page(target('/docs/tutorials/add-html-table'));
+  const preview = tableGuide('article iframe[src="/tutorials/trail-table.html"][title]');
+  assert.equal(preview.length, 1, 'Missing live trail table example');
+  const example = page(target(preview.attr('src')));
+  const snippets = tableGuide('article pre code').map((_, node) => tableGuide(node).text()).get();
+  assert.equal(snippets.length, 2, 'Expected the starting table and the row to add');
+  const walked = load(snippets[0]);
+  walked('tbody td').last().text('3 km');
+  walked('tbody').append(snippets[1]);
+  assert(walked('table.trail-table').length === 1 && example('table.trail-table').length === 1,
+    'The walkthrough and preview must use the practice table style');
+  for (const selector of ['caption', 'thead th[scope="col"]', 'tbody td']) {
+    assert.deepEqual(example(selector).map((_, node) => example(node).text()).get(),
+      walked(selector).map((_, node) => walked(node).text()).get(), `Trail table example differs at ${selector}`);
+  }
   const captures = JSON.parse(fs.readFileSync(path.join(SITE, 'scripts/tutorial-media-manifest.json'), 'utf8'));
   const publications = validatePublications(JSON.parse(fs.readFileSync(path.join(build, PUBLICATIONS_PATH), 'utf8'))).videos;
   const videos = ARTICLE_ROUTES.flatMap(route => {
