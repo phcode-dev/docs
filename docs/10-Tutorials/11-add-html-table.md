@@ -17,7 +17,7 @@ Click or tap any screenshot to open it full size.
 If you already have Trail Notes open, click **about.html** and continue with step 3.
 
 1. [Download the Trail Notes practice website](pathname:///tutorials/first-website.zip). On **Windows**, right-click the ZIP and choose **Extract All**. On **macOS**, double-click the ZIP in Finder. On **Linux**, open it in your archive manager and choose **Extract**.
-2. In Phoenix Code, choose **File → Open Folder…** and select the extracted `first-website` folder. In the file list on the left, click **about.html**.
+2. In Phoenix Code, choose **File → Open Folder…**. Select the folder that contains `about.html`, `contact.html`, and `index.html`. If you see another `first-website` folder inside the first one, open that inner folder. In the file list on the left, click **about.html**.
 
    [![The first-website file list with about.html selected above contact.html and index.html.](/tutorials/media/html-table-about-file.png)](pathname:///tutorials/media/html-table-about-file.png)
 
@@ -28,7 +28,7 @@ If you already have Trail Notes open, click **about.html** and continue with ste
 
 ## 2. Add the first trail
 
-1. Copy this whole block. Return to the blank line in `about.html` and choose **Edit → Paste**.
+1. Use the copy button in the top-right corner of the code block below. Return to the blank line in `about.html` and choose **Edit → Paste**.
 
    ```html
    <table>
