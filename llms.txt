@@ -19,7 +19,7 @@ Links below open the complete documentation pages, including screenshots, videos
 - [Put an image next to text in Phoenix Code](https://docs.phcode.dev/docs/tutorials/image-text-layout): Put an image next to text using Phoenix Pro's Layout controls or CSS in Community. Follow the steps with a practice project, screenshots, and a short video.
 - [Edit text and change fonts in Phoenix Code](https://docs.phcode.dev/docs/tutorials/edit-text-fonts): Change a heading, choose its font, and adjust its size in Phoenix Code. Follow Phoenix Pro's visual steps or edit HTML and CSS in Community with a practice website and screenshots.
 - [Upload your website with SFTP](https://docs.phcode.dev/docs/tutorials/upload-website-sftp): Use FileZilla Client to upload a Phoenix Code website to your web host, open it in a browser, and publish one small edit. Follow along on Windows, macOS, or Linux.
-- [Add a table to an HTML page](https://docs.phcode.dev/docs/tutorials/add-html-table): Add a two-column HTML table in Phoenix Code, edit a cell, and add a row. Follow each change in Live Preview on Windows, macOS, or Linux.
+- [Add a table to an HTML page](https://docs.phcode.dev/docs/tutorials/add-html-table): Insert an HTML table visually in Phoenix Pro or edit the HTML in Community (free). Add a trail, change its distance, and check both rows in Live Preview.
 
 ## Getting Started
 
@@ -91,7 +91,7 @@ Links below open the complete documentation pages, including screenshots, videos
 
 ## Extensions & Themes
 
-- [Extensions](https://docs.phcode.dev/docs/extensions): Phoenix Code supports extensions for adding features, themes, and language support. Everything is managed through the built-in Extension Manager.
+- [Extensions](https://docs.phcode.dev/docs/extensions): Phoenix Pro and Community (free) use the same Extension Manager to add features, themes, and language support.
 - [Popular Extensions](https://docs.phcode.dev/docs/popular-extensions): A curated list of community extensions worth checking out. Install any of them from the Extension Manager.
 
 ## Schools & Workplaces
