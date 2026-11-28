@@ -20,7 +20,7 @@ If you click Phoenix Code and it closes or no editor window appears, start with 
 2. Click **Quit App**. Wait for the Phoenix Code window to close, then open Phoenix Code again.
 3. If the editor opens, [check your files](#recover-files). If the same error returns, **Get Help** opens the [Phoenix Code support discussions](https://github.com/phcode-dev/phoenix/discussions) in your browser.
 
-## If no window opens {#no-window}
+## How do I fix startup crashes if no window opens? {#no-window}
 
 Save any work you have open in other apps, then restart your computer. Once you’re signed in, open Phoenix Code from **Start** on Windows, **Finder → Go → Applications** on Mac, or your **applications menu** on Linux.
 
