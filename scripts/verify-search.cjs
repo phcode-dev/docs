@@ -16,6 +16,8 @@ function verifySearchBuild(buildDirectory = path.resolve(__dirname, '../build'))
     ['docs/tutorials/add-images.html', 'copy-your-picture', 'community'],
     ['docs/tutorials/image-text-layout.html', 'add-four-css-settings', 'community'],
     ['docs/tutorials/image-text-layout.html', 'set-the-layout', 'pro'],
+    ['docs/tutorials/add-html-table.html', 'pro-insert-table', 'pro'],
+    ['docs/tutorials/add-html-table.html', 'community-add-row', 'community'],
   ];
   for (const [file, anchor, edition] of sections) {
     const $ = readPage(file);

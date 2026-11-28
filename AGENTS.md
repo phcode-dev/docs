@@ -6,6 +6,9 @@ It applies to tutorials, feature guides, troubleshooting, and blog articles.
 Verify the real workflow, write complete steps for a beginner, and keep the
 article, examples, screenshots, and recordings consistent. Correct an existing
 guide when it already covers the task; create a new page for a distinct outcome.
+When the methods differ, show Phoenix Pro first and by default, then Community
+(free), using the [edition tabs](CONTRIBUTING.md#show-editions-platforms-and-practice-files-clearly).
+When the steps are the same, name both editions and give the procedure once.
 
 Before adding or changing tutorial recordings, video players, video metadata,
 or watch pages, read the
