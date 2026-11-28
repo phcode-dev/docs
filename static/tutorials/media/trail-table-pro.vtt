@@ -1,0 +1,58 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.600
+In Design Mode, click the pen to turn on editing.
+
+00:00:03.600 --> 00:00:07.450
+Select the Contact link, then click Insert Element (+).
+
+00:00:07.450 --> 00:00:11.150
+Choose Before. Search for table.
+
+00:00:11.150 --> 00:00:14.550
+Choose Table, the result with the grid icon.
+
+00:00:14.550 --> 00:00:18.000
+Click table on the blue toolbar to open its properties.
+
+00:00:18.000 --> 00:00:22.450
+Under Class, type trail-table and press Enter.
+
+00:00:22.450 --> 00:00:27.650
+Double-click each heading. Enter Trail and Distance.
+
+00:00:27.650 --> 00:00:32.850
+Name the first trail Pine Loop and set it to 2 km.
+
+00:00:32.850 --> 00:00:37.200
+Click Trail. Use the up arrow twice to select thead.
+
+00:00:37.200 --> 00:00:41.800
+Click Insert Element (+). Choose Before and search for caption.
+
+00:00:41.800 --> 00:00:45.050
+Choose the Create caption result to add the banner.
+
+00:00:45.050 --> 00:00:49.250
+Double-click the banner. Enter Trail distances.
+
+00:00:49.250 --> 00:00:52.550
+Click Save File. Check Pine Loop at 2 km.
+
+00:00:52.550 --> 00:00:56.150
+Double-click 2 km and change it to 3 km.
+
+00:00:56.150 --> 00:00:59.900
+Click Pine Loop, then the up arrow to select the row.
+
+00:00:59.900 --> 00:01:03.150
+Click Duplicate to make a second row.
+
+00:01:03.150 --> 00:01:08.300
+In the second row, enter Lake Walk and 4 km.
+
+00:01:08.300 --> 00:01:11.700
+Click Save File, then turn off the pen.
+
+00:01:11.700 --> 00:01:15.250
+Check the saved trails and the Contact link below.
