@@ -30,7 +30,7 @@ function filesIntact(){
 }
 function removeFromTestInstall(file){
  assert(fs.statSync(file).size>1000000);
- fs.renameSync(file,path.join(temp,'app-binary-before-repair'));
+ fs.renameSync(file,file+'.held-for-recovery-check');
  assert(!fs.existsSync(file));record('An incomplete test installation was prepared by moving only the executable on this disposable runner.');
 }
 function linux(){
@@ -55,15 +55,22 @@ function linux(){
  const app=path.join(os.homedir(),'.local','bin','phcode');
  assert(fs.existsSync(app));assert(fs.existsSync(path.join(os.homedir(),'.local','share','applications','PhoenixCode.desktop')));
  const start=path.join(temp,'show-editor.sh');
- const commands=['set -eu','"$1" "$2" >"$3/linux-launch.log" 2>&1 &','for n in $(seq 1 60); do','  windows=$(xwininfo -root -tree 2>/dev/null || true)','  if echo "$windows" | grep -Eiq "Garden Notes|default project|index.html"; then echo "$windows" | grep -Ei "Garden Notes|default project|index.html" | head -5; exit 0; fi','  sleep 1','done','tail -12 "$3/linux-launch.log"; exit 1'];
+ const commands=['set -eu','mkdir -p "$HOME/.local/share/keyrings"','echo guide-test-password | gnome-keyring-daemon --unlock >/dev/null','gnome-keyring-daemon --start --components=secrets >/dev/null','if command -v xfwm4 >/dev/null; then xfwm4 >/dev/null 2>&1 & elif command -v openbox >/dev/null; then openbox >/dev/null 2>&1 & fi','"$1" "$2" >"$3/linux-launch.log" 2>&1 &','for n in $(seq 1 60); do','  windows=$(xwininfo -root -tree 2>/dev/null || true); echo "$windows" > "$3/linux-windows.txt"','  if echo "$windows" | grep -Eiq "Garden Notes|default project|index.html"; then echo "$windows" | grep -Ei "Garden Notes|default project|index.html" | head -5; exit 0; fi','  sleep 1','done','tail -12 "$3/linux-launch.log"; exit 1'];
  fs.writeFileSync(start,commands.join('\n'));
+ run('sudo',['apt-get','install','-y','openbox','xterm','xdotool','scrot'],{stdio:'ignore'});
  const titles=run('xvfb-run',['-a','dbus-run-session','--','bash',start,app,project,output],{timeout:95000});
  record('Reopened editor: '+titles.trim());filesIntact();
 }
 function mac(){
  const dmg=release('Phoenix.Code_5.5.11_aarch64.dmg','911abf90c1d1972c54d4fa010af691e6c05354f942b495719392a2413129299e');
  const mount=path.join(temp,'Phoenix Code installer');
- fs.mkdirSync(mount,{recursive:true});run('hdiutil',['attach','-quiet','-nobrowse','-mountpoint',mount,dmg]);
+ let mounted=false;
+ for(let i=0;i<3;i++){
+  const result=spawnSync('hdiutil',['attach','-readonly','-nobrowse','-mountpoint',mount,dmg],{input:'Y\n',encoding:'utf8',timeout:90000});
+  record('Disk image mount: '+result.status+' '+(result.stdout+' '+result.stderr).slice(-800));
+  if(result.status===0){mounted=true;break;}wait(2000);
+ }
+ assert(mounted,'Could not open the official disk image');
  const source=path.join(mount,'Phoenix Code.app'),folder='/Applications',dest=path.join(folder,'Phoenix Code.app');
  assert(fs.existsSync(path.join(mount,'Applications')));assert(!fs.existsSync(dest));
  run('ditto',[source,dest]);
