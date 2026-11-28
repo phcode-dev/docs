@@ -24,7 +24,7 @@ Links below open the complete documentation pages, including screenshots, videos
 ## Getting Started
 
 - [What is Phoenix Code?](https://docs.phcode.dev/docs/what-is-phoenix-code): Phoenix Code is a lightweight editor built for the web. See your HTML and CSS changes instantly in Live Preview, or edit the page visually and let Phoenix update your code.
-- [Install or uninstall Phoenix Code](https://docs.phcode.dev/docs/intro): Install or uninstall the Phoenix Code desktop app on Windows, macOS, or Linux. Learn how to remove the app and keep your saved projects and settings.
+- [Phoenix Code Installation Guide](https://docs.phcode.dev/docs/intro): Install or uninstall the Phoenix Code desktop app on Windows, macOS, or Linux. Learn how to remove the app and keep your saved projects and settings.
 - [Quick Start Project](https://docs.phcode.dev/docs/quick-start-project): This section provides an overview of how to create and manage projects using the Start Project Dialog in Phoenix Code.
 
 ## Live Preview
