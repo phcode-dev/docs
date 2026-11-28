@@ -1,0 +1,27 @@
+name: Check Phoenix Code startup recovery on native desktops
+on:
+  push:
+    branches: [qa/startup-recovery-platforms]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-2022, macos-15, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Test in-place recovery of the stable desktop application
+        run: node scripts/qa-startup-recovery.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recovery-${{ matrix.os }}
+          path: recovery-results/
+          retention-days: 5
