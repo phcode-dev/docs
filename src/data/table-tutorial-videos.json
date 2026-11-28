@@ -1,0 +1,70 @@
+{
+  "pro": {
+    "watchPath": "/videos/add-html-table-phoenix-pro",
+    "guidePath": "/docs/tutorials/add-html-table?edition=pro#pro-insert-table",
+    "title": "Build an illustrated HTML table in Phoenix Pro",
+    "context": "The Trail Notes practice project is open to about.html in Design Mode. Follow the highlighted pointer to insert a table above the Contact link, apply its trail-table class, and save both trails.",
+    "source": "/tutorials/media/trail-table-pro.mp4",
+    "poster": "/tutorials/media/trail-table-pro-poster.jpg",
+    "captions": "/tutorials/media/trail-table-pro.vtt",
+    "width": 1032,
+    "height": 780,
+    "label": "Build the Trail Notes table visually in Phoenix Pro",
+    "metadata": {
+      "name": "Build an illustrated HTML table in Phoenix Pro",
+      "description": "Insert and style the Trail Notes table in Design Mode. Name the columns, add an illustrated caption, duplicate the first row, and check the two saved distances.",
+      "duration": "PT75.25S",
+      "dateCreated": "2026-11-28"
+    },
+    "instructions": [
+      "In Design Mode, click the pen to turn on editing.",
+      "Select the Contact link, then click Insert Element (+).",
+      "Choose Before. Search for table.",
+      "Choose Table, the result with the grid icon.",
+      "Click table on the blue toolbar to open its properties.",
+      "Under Class, type trail-table and press Enter.",
+      "Double-click each heading. Enter Trail and Distance.",
+      "Name the first trail Pine Loop and set it to 2 km.",
+      "Click Trail. Use the up arrow twice to select thead.",
+      "Click Insert Element (+). Choose Before and search for caption.",
+      "Choose the Create caption result to add the banner.",
+      "Double-click the banner. Enter Trail distances.",
+      "Click Save File. Check Pine Loop at 2 km.",
+      "Double-click 2 km and change it to 3 km.",
+      "Click Pine Loop, then the up arrow to select the row.",
+      "Click Duplicate to make a second row.",
+      "In the second row, enter Lake Walk and 4 km.",
+      "Click Save File, then turn off the pen.",
+      "Check the saved trails and the Contact link below."
+    ]
+  },
+  "community": {
+    "watchPath": "/videos/add-html-table-phoenix-community",
+    "guidePath": "/docs/tutorials/add-html-table?edition=community#community-insert-table",
+    "title": "Build an illustrated HTML table in Phoenix Code Community",
+    "context": "The Trail Notes practice project is open to about.html with the editor and Live Preview side by side. Copy the table and row from the written guide before each paste. The recording shows where both pieces go and what you should see after saving.",
+    "source": "/tutorials/media/trail-table-community.mp4",
+    "poster": "/tutorials/media/trail-table-community-poster.jpg",
+    "captions": "/tutorials/media/trail-table-community.vtt",
+    "width": 1120,
+    "height": 780,
+    "label": "Build the Trail Notes table in HTML using Community features",
+    "metadata": {
+      "name": "Build an illustrated HTML table in Phoenix Code Community",
+      "description": "Use Highlight Mode to find the insertion point in about.html. Paste the table, change Pine Loop to 3 km, add Lake Walk at 4 km, and check both rows in Live Preview.",
+      "duration": "PT33.65S",
+      "dateCreated": "2026-11-28"
+    },
+    "instructions": [
+      "Choose Highlight Mode beside the pen.",
+      "Click the last bullet to find its HTML.",
+      "Press Enter just after the closing list tag.",
+      "Paste the table from the guide with Edit → Paste.",
+      "Save about.html. Pine Loop starts at 2 km.",
+      "In the first row, change 2 km to 3 km.",
+      "Press Enter just after the first row’s closing tag.",
+      "Paste the Lake Walk row inside the table body.",
+      "Save. Check Pine Loop at 3 km and Lake Walk at 4 km."
+    ]
+  }
+}

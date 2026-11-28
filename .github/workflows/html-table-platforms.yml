@@ -26,3 +26,5 @@ jobs:
         run: npm install --prefix .qa-runtime --no-save --no-package-lock --ignore-scripts --no-audit --fund=false playwright-core@1.59.1
       - name: Test the HTML snippets with the starter website
         run: node scripts/check-table-walkthrough.cjs
+      - name: Play, pause, and seek both table recordings with captions
+        run: node scripts/check-table-movies.cjs
