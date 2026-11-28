@@ -6,7 +6,7 @@ slug: "/extensions"
 import React from 'react';
 import VideoPlayer from '@site/src/components/Video/player';
 
-Phoenix Code supports extensions for adding features, themes, and language support. Everything is managed through the built-in **Extension Manager**.
+Phoenix Pro and Community (free) use the same **Extension Manager** to add features, themes, and language support.
 
 To open the Extension Manager, click the extension icon on the right-hand toolbar, as shown below.
 

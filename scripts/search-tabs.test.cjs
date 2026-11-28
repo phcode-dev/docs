@@ -2,6 +2,7 @@ const assert = require('node:assert/strict');
 const {test} = require('node:test');
 const rehypeSearchTabs = require('../plugins/search-tabs/rehype');
 const {addTabQueryToRecordUrl} = require('../plugins/search-tabs/record-url');
+const {onRouteDidUpdate} = require('../src/clientModules/scroll-to-tab-heading');
 
 const imports = "import Tabs from '@theme/Tabs';\nimport TabItem from '@theme/TabItem';\n\n";
 
@@ -174,6 +175,37 @@ test('search links to an inactive edition select that edition and retain the exa
     }),
     'https://docs.phcode.dev/docs/tutorials/add-images?edition=community#copy-your-picture',
   );
+});
+
+test('scrolls to a linked heading when its requested tab becomes visible', (t) => {
+  let scrolls = 0;
+  let notifyResize;
+  const heading = {
+    dataset: {searchParams: 'edition=community'},
+    scrollIntoView: () => { scrolls++; },
+  };
+  globalThis.document = {getElementById: (id) => id === 'table' ? heading : null};
+  globalThis.ResizeObserver = class {
+    constructor(callback) { notifyResize = callback; }
+    observe(target) { assert.equal(target, heading); }
+    disconnect() { notifyResize = undefined; }
+  };
+  t.after(() => {
+    delete globalThis.document;
+    delete globalThis.ResizeObserver;
+  });
+  const location = {pathname: '/guide', hash: '#table', search: '?edition=community'};
+  onRouteDidUpdate({location: {...location, search: '?edition=pro'}});
+  assert.equal(notifyResize, undefined);
+  onRouteDidUpdate({location});
+  notifyResize([{contentRect: {height: 0}}]);
+  assert.equal(scrolls, 0);
+  notifyResize([{contentRect: {height: 32}}]);
+  assert.equal(scrolls, 1);
+  assert.equal(notifyResize, undefined);
+  onRouteDidUpdate({location});
+  onRouteDidUpdate({location: {...location, hash: ''}, previousLocation: location});
+  assert.equal(notifyResize, undefined);
 });
 
 test('preserves unrelated query parameters, encoded paths, and nested tab choices', () => {
