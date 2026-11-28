@@ -11,6 +11,8 @@ public class NativeDialog {
  [DllImport("user32.dll")] public static extern bool GetCursorPos(out Point p);
  [DllImport("user32.dll")] public static extern bool SetCursorPos(int x,int y);
  [StructLayout(LayoutKind.Sequential)] public struct Point {public int x,y;}
+ [DllImport("user32.dll")] public static extern void mouse_event(uint flags,int dx,int dy,uint data,UIntPtr extra);
+ public static void ClickHere(){mouse_event(2,0,0,0,UIntPtr.Zero);System.Threading.Thread.Sleep(85);mouse_event(4,0,0,0,UIntPtr.Zero);}
  static System.Threading.Thread capture;
  static volatile bool recording;
  static int count;
@@ -94,6 +96,7 @@ $end=[datetime]::UtcNow.AddSeconds(145)
 $sawMaintenance=$false
 $sawFinish=$false
 $previous=''
+$lastClickScreen=''
 while([datetime]::UtcNow -lt $end -and !$sawFinish){
  Start-Sleep -Milliseconds 450
  foreach($w in [NativeDialog]::Windows($z)){
@@ -136,7 +139,14 @@ while([datetime]::UtcNow -lt $end -and !$sawFinish){
     $sawFinish=$true
     [NativeDialog]::StopMovie()
    }
-   [void][NativeDialog]::PostMessage($button.Handle,245,$z,$z)
+   if($sawMaintenance){
+    if($lastClickScreen -eq $all){
+     [void][NativeDialog]::PostMessage($w,273,[IntPtr]1,$button.Handle)
+    } else {
+     [NativeDialog]::ClickHere()
+    }
+   } else {[void][NativeDialog]::PostMessage($button.Handle,245,$z,$z)}
+   $lastClickScreen=$all
    Start-Sleep -Milliseconds 650
   }
  }
