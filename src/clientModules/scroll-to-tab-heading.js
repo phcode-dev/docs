@@ -8,13 +8,13 @@ function onRouteDidUpdate({location, previousLocation}) {
     return;
   }
 
-  let heading;
+  let id;
   try {
-    heading = document.getElementById(decodeURIComponent(hash.slice(1)));
+    id = decodeURIComponent(hash.slice(1));
   } catch {
     return;
   }
-  const tabParams = heading?.dataset.searchParams;
+  const tabParams = document.getElementById(id)?.dataset.searchParams;
   if (!tabParams) {
     return;
   }
@@ -23,16 +23,22 @@ function onRouteDidUpdate({location, previousLocation}) {
     if (query.get(key) !== value) return;
   }
 
-  // The browser can reach the anchor before Docusaurus opens the requested tab.
-  const observer = new ResizeObserver(([entry]) => {
-    if (entry.contentRect.height > 0) {
+  // Hydration can replace the original heading before its tab becomes visible.
+  function scrollWhenVisible() {
+    if (document.documentElement.dataset.hasHydrated === 'false') return;
+    const heading = document.getElementById(id);
+    if (heading?.getClientRects().length) {
       observer.disconnect();
       pendingScroll = undefined;
       heading.scrollIntoView();
     }
-  });
+  }
+  const observer = new MutationObserver(scrollWhenVisible);
   pendingScroll = observer;
-  observer.observe(heading);
+  observer.observe(document.documentElement, {
+    subtree: true, childList: true, attributes: true, attributeFilter: ['hidden', 'data-has-hydrated'],
+  });
+  scrollWhenVisible();
 }
 
 module.exports = {onRouteDidUpdate};

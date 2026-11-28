@@ -177,35 +177,40 @@ test('search links to an inactive edition select that edition and retain the exa
   );
 });
 
-test('scrolls to a linked heading when its requested tab becomes visible', (t) => {
+test('scrolls to the visible edition heading even when hydration replaces the original', (t) => {
   let scrolls = 0;
-  let notifyResize;
-  const heading = {
+  let notifyMutation;
+  let heading = {
     dataset: {searchParams: 'edition=community'},
+    getClientRects: () => [],
     scrollIntoView: () => { scrolls++; },
   };
-  globalThis.document = {getElementById: (id) => id === 'table' ? heading : null};
-  globalThis.ResizeObserver = class {
-    constructor(callback) { notifyResize = callback; }
-    observe(target) { assert.equal(target, heading); }
-    disconnect() { notifyResize = undefined; }
+  const root = {dataset: {hasHydrated: 'false'}};
+  globalThis.document = {documentElement: root, getElementById: (id) => id === 'table' ? heading : null};
+  globalThis.MutationObserver = class {
+    constructor(callback) { notifyMutation = callback; }
+    observe(target) { assert.equal(target, root); }
+    disconnect() { notifyMutation = undefined; }
   };
   t.after(() => {
     delete globalThis.document;
-    delete globalThis.ResizeObserver;
+    delete globalThis.MutationObserver;
   });
   const location = {pathname: '/guide', hash: '#table', search: '?edition=community'};
   onRouteDidUpdate({location: {...location, search: '?edition=pro'}});
-  assert.equal(notifyResize, undefined);
+  assert.equal(notifyMutation, undefined);
   onRouteDidUpdate({location});
-  notifyResize([{contentRect: {height: 0}}]);
+  root.dataset.hasHydrated = 'true';
+  notifyMutation();
   assert.equal(scrolls, 0);
-  notifyResize([{contentRect: {height: 32}}]);
+  heading = {...heading, getClientRects: () => [{}]};
+  notifyMutation();
   assert.equal(scrolls, 1);
-  assert.equal(notifyResize, undefined);
+  assert.equal(notifyMutation, undefined);
+  heading = {...heading, getClientRects: () => []};
   onRouteDidUpdate({location});
   onRouteDidUpdate({location: {...location, hash: ''}, previousLocation: location});
-  assert.equal(notifyResize, undefined);
+  assert.equal(notifyMutation, undefined);
 });
 
 test('preserves unrelated query parameters, encoded paths, and nested tab choices', () => {
