@@ -48,16 +48,18 @@ function linux(){
  };
  const file=path.join(os.homedir(),'.phoenix-code','phoenix-code.AppImage');
  install();createExample();removeFromTestInstall(file);
- const log=install();
+ run('sudo',['apt-get','install','-y','openbox','x11-utils','xterm','xdotool','scrot','fonts-dejavu-core'],{stdio:'ignore'});
+ run('xvfb-run',['-a','-s','-screen 0 1280x840x24','dbus-run-session','--','bash',path.resolve('scripts/qa-repair-terminal.sh'),output],{timeout:240000});
+ const log=fs.readFileSync(path.join(output,'terminal-log'),'utf8');fs.unlinkSync(path.join(output,'terminal-log'));
+ record('The terminal displayed the real reinstall command and installer completion.');
  assert(fs.existsSync(file));
  assert.match(log,/Reinstalling Phoenix Code|already installed/i);
  filesIntact();
  const app=path.join(os.homedir(),'.local','bin','phcode');
  assert(fs.existsSync(app));assert(fs.existsSync(path.join(os.homedir(),'.local','share','applications','PhoenixCode.desktop')));
  const start=path.join(temp,'show-editor.sh');
- const commands=['set -eu','mkdir -p "$HOME/.local/share/keyrings"','echo guide-test-password | gnome-keyring-daemon --unlock >/dev/null','gnome-keyring-daemon --start --components=secrets >/dev/null','if command -v xfwm4 >/dev/null; then xfwm4 >/dev/null 2>&1 & elif command -v openbox >/dev/null; then openbox >/dev/null 2>&1 & fi','"$1" "$2" >"$3/linux-launch.log" 2>&1 &','for n in $(seq 1 60); do','  windows=$(xwininfo -root -tree 2>/dev/null || true); echo "$windows" > "$3/linux-windows.txt"','  if echo "$windows" | grep -Eiq "Garden Notes|default project|index.html"; then echo "$windows" | grep -Ei "Garden Notes|default project|index.html" | head -5; exit 0; fi','  sleep 1','done','tail -12 "$3/linux-launch.log"; exit 1'];
+ const commands=['set -eu','mkdir -p "$HOME/.local/share/keyrings"','echo guide-test-password | gnome-keyring-daemon --unlock >/dev/null','gnome-keyring-daemon --start --components=secrets >/dev/null','if command -v xfwm4 >/dev/null; then xfwm4 >/dev/null 2>&1 & elif command -v openbox >/dev/null; then openbox >/dev/null 2>&1 & fi','"$1" "$2" >"$3/linux-launch.log" 2>&1 &','for n in $(seq 1 60); do','  windows=$(xdotool search --onlyvisible --name ".*" getwindowname %@ 2>/dev/null || true); echo "$windows" > "$3/linux-windows.txt"','  if echo "$windows" | grep -Eiq "Garden Notes|default project|index.html"; then echo "$windows" | grep -Ei "Garden Notes|default project|index.html" | head -5; exit 0; fi','  sleep 1','done','tail -12 "$3/linux-launch.log"; exit 1'];
  fs.writeFileSync(start,commands.join('\n'));
- run('sudo',['apt-get','install','-y','openbox','xterm','xdotool','scrot'],{stdio:'ignore'});
  const titles=run('xvfb-run',['-a','dbus-run-session','--','bash',start,app,project,output],{timeout:95000});
  record('Reopened editor: '+titles.trim());filesIntact();
 }
