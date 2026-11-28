@@ -69,7 +69,7 @@ Phoenix Pro and Community (free) use the same desktop app. Save your open files 
 2. Find **Phoenix Code**. On Windows 11, click the three dots next to its name and choose **Uninstall**. On Windows 10, click **Phoenix Code**, then **Uninstall**. Confirm if Windows asks.
 3. If the uninstaller asks you to choose a language, select yours and click **OK**. In the **Phoenix Code Uninstall** window, leave **Delete the application data** unchecked to keep your settings. Click **Uninstall**.
 
-   [![Phoenix Code Uninstall on Windows with “Delete the application data” unchecked and the Uninstall button at the bottom right.](/img/installation/windows-uninstall-phoenix-code.png)](/img/installation/windows-uninstall-phoenix-code.png)
+   [![Phoenix Code Uninstall on Windows with “Delete the application data” unchecked and the Uninstall button at the bottom right.](/img/installation/windows-uninstall-phoenix-code.png)](pathname:///img/installation/windows-uninstall-phoenix-code.png)
 
 When removal finishes, **Phoenix Code** disappears from the installed apps list. If you downloaded the **portable ZIP** instead of the installer, use File Explorer to remove the folder where you extracted the app.
 
@@ -78,7 +78,7 @@ When removal finishes, **Phoenix Code** disappears from the installed apps list.
 1. Click **Finder** in the Dock. From the menu bar at the top of the screen, choose **Go → Applications**.
 2. Click **Phoenix Code** once to select the app. If you installed it just for your account, look in **Go → Home → Applications** instead.
 
-   [![Phoenix Code selected in Finder’s Applications folder, with Application in the Kind column.](/img/installation/mac-select-phoenix-code.png)](/img/installation/mac-select-phoenix-code.png)
+   [![Phoenix Code selected in Finder’s Applications folder, with Application in the Kind column.](/img/installation/mac-select-phoenix-code.png)](pathname:///img/installation/mac-select-phoenix-code.png)
 
 3. In Finder's menu bar, choose **File → Move to Trash** (or **Move to Bin**, depending on your region). Enter your Mac login details if Finder asks.
 
