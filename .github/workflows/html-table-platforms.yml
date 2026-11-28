@@ -1,0 +1,28 @@
+name: Check HTML table walkthrough
+
+on:
+  push:
+    branches: [qa/html-table-platform-checks]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Native archive and browser on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install browser test driver
+        run: npm install --prefix .qa-runtime --no-save --no-package-lock --ignore-scripts --no-audit --fund=false playwright-core@1.59.1
+      - name: Test the HTML snippets with the starter website
+        run: node scripts/check-table-walkthrough.cjs
