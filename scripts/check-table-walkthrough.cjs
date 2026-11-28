@@ -42,6 +42,30 @@ async function checkTable(page, cells) {
   assert.equal(await table.locator('xpath=following-sibling::*[1]').getAttribute('href'), 'contact.html');
 }
 
+async function checkStyle(page) {
+  for (const width of [320, 390, 1280]) {
+    await page.setViewportSize({width, height: 850});
+    const result = await page.locator('table.trail-table').evaluate(async (table) => {
+      const caption = table.caption;
+      const url = getComputedStyle(caption, '::after').backgroundImage.match(/url\(["']?(.*?)["']?\)/)[1];
+      const drawing = new Image();
+      drawing.src = url;
+      await drawing.decode();
+      const rightEdges = Array.from(table.rows, row => row.cells[row.cells.length - 1].getBoundingClientRect().right);
+      return {
+        art: [drawing.naturalWidth, drawing.naturalHeight],
+        align: getComputedStyle(table.tBodies[0].rows[0].cells[1]).textAlign,
+        edgeDifference: Math.max(...rightEdges) - Math.min(...rightEdges),
+        overflow: document.documentElement.scrollWidth - innerWidth,
+      };
+    });
+    assert.deepEqual(result.art, [960, 480], 'packaged trail illustration must load offline');
+    assert.equal(result.align, 'right');
+    assert.ok(result.edgeDifference <= 1);
+    assert.ok(result.overflow <= 1, 'table must fit at ' + width);
+  }
+}
+
 async function verify(destination, browser) {
   extract(path.join(root, 'static/tutorials/first-website.zip'), destination);
   const project = path.join(destination, 'first-website');
@@ -69,12 +93,16 @@ async function verify(destination, browser) {
   await fs.writeFile(about, final);
   await page.reload();
   await checkTable(page, ['Pine Loop', '3 km', 'Lake Walk', '4 km']);
+  await checkStyle(page);
   await page.getByRole('link', {name: 'Visit the contact page'}).click();
   assert.equal(await page.getByRole('heading', {level: 1}).innerText(), 'Keep in touch.');
   for (const [i, file] of preserved.entries()) {
     assert.deepEqual(await fs.readFile(path.join(project, file)), originals[i]);
   }
   console.log('Second save displays both updated rows and preserves the Contact link and other practice files.');
+  await page.goto(pathToFileURL(path.join(root, 'static/tutorials/trail-table.html')).href);
+  await checkStyle(page);
+  console.log('The finished example and an extracted practice project both load their artwork and align the distances at three widths.');
 }
 
 async function main() {

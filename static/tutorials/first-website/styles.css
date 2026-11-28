@@ -78,3 +78,73 @@ footer {
   color: #586b5c;
   font-size: 0.9rem;
 }
+
+/* Trail table */
+.trail-table {
+  width: 100%;
+  max-width: 40rem;
+  margin: 1.5rem 0;
+  border-spacing: 0;
+  border-bottom: 3px solid #243d32;
+  color: #243d32;
+  overflow-wrap: anywhere;
+}
+
+.trail-table caption {
+  position: relative;
+  padding: 1.35rem 39% 1.45rem clamp(1rem, 4vw, 1.75rem);
+  border-bottom: 3px solid #f3ca74;
+  color: #f8f7f2;
+  background: #243d32;
+  font: bold clamp(1.65rem, 4.5vw, 2.6rem)/1.08 Georgia, serif;
+  text-align: left;
+}
+
+.trail-table caption::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 37%;
+  background: url("images/trail.svg") 72% center / cover no-repeat;
+  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+  pointer-events: none;
+}
+
+.trail-table th,
+.trail-table td {
+  padding: 0.7rem clamp(1rem, 4vw, 1.75rem);
+  text-align: left;
+}
+
+.trail-table thead th {
+  color: #243d32;
+  background: #dce8e5;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trail-table tbody td {
+  background: #f8f7f2;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.trail-table tbody tr + tr td {
+  border-top: 1px solid #92ad8e;
+}
+
+.trail-table tbody td:first-child {
+  font: normal 1.4rem/1.4 Georgia, serif;
+}
+
+.trail-table th:last-child,
+.trail-table td:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.trail-table td:last-child {
+  font-weight: 700;
+}
