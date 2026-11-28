@@ -21,6 +21,7 @@ The guides open with **Phoenix Pro**, using Design Mode for visual editing. Choo
 
 ## Try something else
 
+- **[Add a table to an HTML page](/docs/tutorials/add-html-table).** Put trail distances on the practice site's About page, then change a cell and add a row.
 - **[Upload your website with SFTP](/docs/tutorials/upload-website-sftp).** Put the practice site on your own web host with FileZilla, then change one heading and check it online.
 - **[Put an image next to text](/docs/tutorials/image-text-layout):** arrange a photo and text with Flexbox, then check that they stack neatly on a phone. Includes its own practice project.
 - **[Build a page with Bootstrap](/docs/tutorials/bootstrap):** open a ready-made page, change its button color, and try it at a phone-sized width.
@@ -38,3 +39,4 @@ The guides open with **Phoenix Pro**, using Design Mode for visual editing. Choo
 
 - [Open or create a project](/docs/quick-start-project)
 - [Install extensions and themes](/docs/extensions)
+- [Why won't my extension install?](/docs/extensions#extension-wont-install)

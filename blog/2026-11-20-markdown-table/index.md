@@ -16,6 +16,8 @@ Try it with a walking club’s README. The table needs to keep distances in one 
 
 <!-- truncate -->
 
+Working in an `.html` file? [Add a table to an HTML page in Phoenix Code](/docs/tutorials/add-html-table) to edit a cell and see it change in Live Preview.
+
 ## Paste the table into a preview
 
 Open the [Phoenix Code Markdown Viewer](https://phcode.dev/tools/markdown-viewer.html) and paste this example into **Markdown source**. You can also <a href="/tutorials/markdown-table/weekend-walks.md" download="weekend-walks.md">download the example Markdown file</a> and choose **Open file**. On a narrow screen, tap **Preview** to see the result.

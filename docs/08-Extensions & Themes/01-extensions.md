@@ -29,6 +29,28 @@ A **Sort** dropdown at the top of the dialog orders the list by **Last Updated**
 - **Update**: when a newer version is available, an **Update** button appears on the extension's card in **Installed**.
 - **Remove**: click **Remove** on the card in **Installed**, then confirm with **Remove Extensions and Reload**.
 
+## Why won't my extension install? {#extension-wont-install}
+
+Open the **Extension Manager** on the right. Choose **Available** for features or **Themes** for color themes, then type the name in **Search**. Look at the message on the matching item. Click or tap the screenshots below to see them full size.
+
+### I found the extension, but there’s no Install button
+
+Check the note beside its name. For example, the **Code Folding** listing says it works only with older versions of Phoenix Code. Choose another compatible item with an **Install** button. Some features already come with the editor, including [Beautify Code](/docs/Features/beautify-code).
+
+[![The Code Folding listing in Available says it only works with older versions of Phoenix Code. There is no Install button on its row.](/tutorials/media/extension-older-version.png)](pathname:///tutorials/media/extension-older-version.png)
+
+### I clicked Install and saw “Installation failed.”
+
+1. Read the second line of the message and click **Close**. An interrupted download can show **Unknown internal error**. If your connection dropped, reconnect and click **Install** on the same item again.
+
+   [![The Install Extension dialog shows Installation failed, the detail Unknown internal error, and a Close button.](/tutorials/media/extension-download-failed.png)](pathname:///tutorials/media/extension-download-failed.png)
+
+2. When you see **Installation successful!**, click **Close**. Choose **Installed** and search for the same name. Here the **Earth** theme has an **Apply** button. Click it if you want to switch to that theme, then click **Done**.
+
+   [![Under Installed, searching for Earth shows the theme with Apply and Remove buttons.](/tutorials/media/extension-installed-theme.png)](pathname:///tutorials/media/extension-installed-theme.png)
+
+If the next attempt also fails, choose **Help → Phoenix Code Support**. Include the extension name, the exact message, your operating system, and your Phoenix Code version.
+
 ## Themes
 
 Themes use the same flow under the **Themes** tab.

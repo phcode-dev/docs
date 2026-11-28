@@ -119,6 +119,8 @@ You can also use standard Markdown shortcuts as you type:
 
 ### Table Editing
 
+For a table on an HTML web page, follow [Add a table to an HTML page](/docs/tutorials/add-html-table).
+
 When you insert a table, you can edit it directly in the preview. Click any cell to start typing in it. Use `Tab` to move to the next cell.
 
 Right-click a cell to open a context menu with options to:
