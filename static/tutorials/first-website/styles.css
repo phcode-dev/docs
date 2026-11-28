@@ -135,10 +135,6 @@ footer {
   border-top: 1px solid #92ad8e;
 }
 
-.trail-table tbody td:first-child {
-  font: normal 1.4rem/1.4 Georgia, serif;
-}
-
 .trail-table th:last-child,
 .trail-table td:last-child {
   text-align: right;
@@ -147,4 +143,8 @@ footer {
 
 .trail-table td:last-child {
   font-weight: 700;
+}
+
+.trail-table tbody td:first-child {
+  font: normal 1.4rem/1.4 Georgia, serif;
 }
