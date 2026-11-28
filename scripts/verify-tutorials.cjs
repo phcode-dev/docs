@@ -12,10 +12,11 @@ const pngPdfVideos = require('../src/data/png-pdf-videos.json');
 const layoutVideos = require('../src/data/layout-tutorial-videos.json');
 const htmlPreviewVideos = require('../src/data/html-preview-videos.json');
 const tableVideos = require('../src/data/table-tutorial-videos.json');
+const startupVideos = require('../src/data/startup-recovery-videos.json');
 
 const SITE = path.join(__dirname, '..');
 const ORIGIN = 'https://docs.phcode.dev';
-const GUIDES = ['tutorials', 'tutorials/add-images', 'tutorials/link-pages',
+const GUIDES = ['intro', 'startup-crash', 'tutorials', 'tutorials/add-images', 'tutorials/link-pages',
   'tutorials/share-website', 'tutorials/bootstrap', 'tutorials/run-python',
   'tutorials/find-and-replace', 'tutorials/replace-in-files', 'Features/find-in-files',
   'tutorials/image-text-layout', 'tutorials/edit-text-fonts', 'tutorials/upload-website-sftp',
@@ -29,7 +30,7 @@ const BLOGS = ['how-to-convert-png-to-pdf-free-online', 'how-to-convert-png-to-p
   'unix-timestamp-seconds-or-milliseconds', 'convert-word-to-markdown', 'clickable-pdf-preview-html'];
 const ARTICLE_ROUTES = [...GUIDES.map(guide => '/docs/' + guide), ...BLOGS.map(slug => '/blog/' + slug)];
 const WATCH_VIDEOS = [...Object.values(imageVideos), ...Object.values(pngPdfVideos), ...Object.values(layoutVideos),
-  ...Object.values(htmlPreviewVideos), ...Object.values(tableVideos)];
+  ...Object.values(htmlPreviewVideos), ...Object.values(tableVideos), ...Object.values(startupVideos)];
 
 function videoDuration(file) {
   const data = fs.readFileSync(file);

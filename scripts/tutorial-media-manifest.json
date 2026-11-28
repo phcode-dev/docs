@@ -293,6 +293,29 @@
         "Checked the saved about.html against the practice file with only the new table removed.",
         "Verified its caption, both headings, Pine Loop at 3 km, and Lake Walk at 4 km. The table follows the list and precedes the original Contact link."
       ]
+    },
+    {
+      "file": "static/tutorials/media/windows-startup-repair.mp4",
+      "product": "Phoenix Code Windows Setup",
+      "product_url": "https://github.com/phcode-dev/phoenix-desktop/releases/tag/prod-app-v5.5.11",
+      "edition": "Phoenix Pro and Community (free)",
+      "platform": "Windows Server 2022, Phoenix Code Desktop 5.5.11 x64",
+      "project": "Garden Notes",
+      "captured_at": "2026-11-28",
+      "workflow": "Repair an existing installation with the same Windows installer and reopen the desktop editor.",
+      "on_screen_instructions": true,
+      "highlighted_controls": true,
+      "duration_seconds": 23.3,
+      "frame_size": [
+        1006,
+        852
+      ],
+      "caption_placement": "Instruction strip above the native wizard.",
+      "presentation": "Continuous capture of the native setup window and pointer. Two cuts shorten file copying. The clip ends on the Finish screen.",
+      "verification": [
+        "Reinstalled the missing editor executable, opened a desktop editor window, and verified the saved project and user tab-size preference."
+      ],
+      "verification_url": "https://github.com/phcode-dev/docs/actions/runs/46163951794"
     }
   ],
   "sample_photo": {

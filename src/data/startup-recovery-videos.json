@@ -1,0 +1,29 @@
+{
+  "windows": {
+    "watchPath": "/videos/repair-phoenix-code-windows",
+    "guidePath": "/docs/startup-crash#windows",
+    "title": "Reinstall Phoenix Code with Windows Setup",
+    "context": "The Windows installer has already opened, and Setup has found the same version of Phoenix Code. Follow the pointer from Already Installed to the Finish screen. The wait while Setup copies files is shortened.",
+    "source": "/tutorials/media/windows-startup-repair.mp4",
+    "poster": "/tutorials/media/windows-startup-repair-poster.jpg",
+    "captions": "/tutorials/media/windows-startup-repair.vtt",
+    "width": 1006,
+    "height": 852,
+    "label": "Reinstall the Windows desktop app with Add/Reinstall components",
+    "metadata": {
+      "name": "Reinstall Phoenix Code with Windows Setup",
+      "description": "Follow the same-version Windows repair from Add/Reinstall components through the destination folder, installation, and Finish screen.",
+      "duration": "PT23.3S",
+      "dateCreated": "2026-11-28"
+    },
+    "instructions": [
+      "Choose Add/Reinstall components.",
+      "Click Next to keep this installation.",
+      "Keep the app folder and click Next.",
+      "Keep the Start Menu folder and click Install.",
+      "Wait while Setup replaces the app files.",
+      "At Installation Complete, click Next.",
+      "Leave Run Phoenix Code checked and click Finish."
+    ]
+  }
+}

@@ -5,9 +5,6 @@ slug: "/intro"
 description: Install or uninstall the Phoenix Code desktop app on Windows, macOS, or Linux. Learn how to remove the app and keep your saved projects and settings.
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 You can install Phoenix Code on Windows, macOS, or Linux, or [use it in your browser](#use-it-in-the-browser). If you're here to remove the desktop app, jump to the steps for [Windows](#uninstall-windows), [Mac](#uninstall-mac), or [Linux](#uninstalling).
 
 ## Download
@@ -31,9 +28,11 @@ Phoenix Code supports a wide range of operating systems:
 
 - **macOS** — Apple Silicon (M1+) and Intel chipsets
 - **Windows** — x64 architectures
-- **Linux** — Ubuntu, Debian, Pop!_OS, Fedora, Arch, and more
+- **Linux** — 64-bit Intel or AMD computers (x86_64)
 
 ## Install
+
+If you already installed Phoenix Code and it closes before you can use it, follow [Recover from a startup crash](/docs/startup-crash).
 
 ### Windows & macOS
 
@@ -41,17 +40,21 @@ Run the downloaded installer and follow the on-screen instructions. Once it fini
 
 ### Linux {#linux}
 
-Open a terminal and run the official installer script — copy it from the website or use the command below:
+Phoenix Pro and Community (free) use the same Linux **AppImage**, a single file that contains the app. The installer downloads it and adds **Phoenix Code** to your applications menu.
 
-```bash
-wget -qO- https://updates.phcode.io/linux/installer.sh | bash
-```
+1. Open **Terminal** from your Linux desktop’s applications menu.
+2. Copy this command, paste it into Terminal, and press **Enter**.
 
-![Linux install command](../images/Website/linuxCmd.png)
+   ```bash
+   wget -qO- https://updates.phcode.io/linux/installer.sh | bash
+   ```
 
-This installs Phoenix Code along with all required dependencies, and sets up app-drawer shortcuts and file associations automatically. It works on all major distributions, including Ubuntu, Debian, Fedora, and Arch-based systems.
+3. If Terminal asks for your password to install a missing package, type your Linux login password and press **Enter**. The characters stay hidden as you type.
+4. When you see **Installation completed successfully. Phoenix Code is now installed.**, open **Phoenix Code** from your applications menu.
 
-If you need help with this installation, see [manual setup and dependencies](#linux-advanced) or [how to remove the Linux app](#uninstalling).
+   [![The Ubuntu terminal shows where the AppImage was installed. The last green line confirms that Phoenix Code is now installed.](/img/installation/linux-appimage-installed.png)](pathname:///img/installation/linux-appimage-installed.png)
+
+If the installer reports a missing library or an older system, see [Linux requirements](#dependencies). If you downloaded a single `.AppImage` file yourself, follow the [standalone AppImage steps](#manual-installation).
 
 ## Use it in the browser
 
@@ -98,114 +101,32 @@ If you downloaded a standalone **AppImage**, move that file to the Trash in your
 
 ## Advanced Linux installation {#linux-advanced}
 
-The one-line installer above is all most users need. The sections below cover manual installation, runtime dependencies, and common questions.
+### Run a standalone AppImage {#manual-installation}
 
-### Manual installation
+For a copy you launch directly from your file manager, download the Linux file ending in **.AppImage** from the [latest Phoenix Code desktop release](https://github.com/phcode-dev/phoenix-desktop/releases/latest). In the release’s **Assets** list, the file ending in `.sig` is its signature.
 
-If automatic installation fails, or you prefer to install by hand:
+1. Open **Downloads** in your file manager and find the Phoenix Code **.AppImage** file.
+2. Right-click the file, choose **Properties**, and allow it to run as a program. Depending on your file manager, look for **Executable as Program** or a **Permissions** tab with an **Is executable** checkbox.
+3. Close **Properties** and double-click the AppImage. Keep the file in the folder you want to launch it from.
 
-1. **Check your GLIBC version:**
-   ```bash
-   ldd --version | awk '/ldd/{print $NF}'
-   ```
+If double-clicking produces no window, use the [one-line installer](#linux) to set up the desktop launcher and check for missing libraries. The [AppImage quickstart](https://docs.appimage.org/introduction/quickstart.html#how-to-run-an-appimage) shows the file permissions step.
 
-2. **Download the package:** visit the [Phoenix Code releases page](https://github.com/phcode-dev/phoenix-desktop/releases) and download a build compatible with your GLIBC version.
+### Desktop menu shortcut {#desktop-environment-compatibility}
 
-3. **Extract it:**
-   ```bash
-   tar -xvf phoenix_code_version.tar.gz
-   ```
+With the one-line installation, search for **Phoenix Code** in your desktop’s applications menu. If the shortcut hasn’t appeared yet, sign out and back in, or type `~/.local/bin/phcode` in Terminal and press **Enter**.
 
-4. **Read the bundled instructions:**
-   ```bash
-   cat extracted_folder/ReadMe.txt
-   ```
+### Linux requirements {#dependencies}
 
-5. **Follow the steps** in `ReadMe.txt` to complete the installation.
+The official installer checks for a **64-bit Intel or AMD system (x86_64)** and **glibc 2.35 or newer**. glibc is part of your Linux distribution. If Terminal says your version is too old, use [Phoenix Code in your browser](#use-it-in-the-browser) or upgrade to a supported distribution release.
 
-### Desktop environment compatibility
-
-Phoenix Code is tested on both **GNOME** and **KDE**. Other desktop environments may work via [manual installation](#manual-installation).
-
-### Dependencies
-
-If Phoenix doesn't start after installing, restart your system and confirm the required dependencies for your distribution are installed:
-
-<Tabs
-  defaultValue="ubuntu"
-  values={[
-    { label: 'Ubuntu/Debian', value: 'ubuntu' },
-    { label: 'Fedora/Red Hat', value: 'fedora' },
-    { label: 'Arch Linux', value: 'arch' },
-  ]}>
-
-<TabItem value="ubuntu">
-
-Update your package list:
-```bash
-sudo apt update
-```
-
-Install WebKitGTK and GTK:
-```bash
-sudo apt install libgtk-3-0 libwebkit2gtk-4.0-37
-```
-*Note: In Ubuntu 22+ versions, WebKitGTK may be pre-installed.*
-
-Install optional GStreamer plugins for media playback:
-```bash
-sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-tools gstreamer1.0-libav
-```
-
-</TabItem>
-<TabItem value="fedora">
-
-Update your package list:
-```bash
-sudo dnf update
-```
-
-Install WebKitGTK and GTK:
-```bash
-sudo dnf install webkit2gtk3 gtk3
-```
-
-Install optional GStreamer plugins for media playback:
-```bash
-sudo dnf install gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly gstreamer1-libav
-```
-
-</TabItem>
-<TabItem value="arch">
-
-Ensure your system is up to date:
-```bash
-sudo pacman -Syu
-```
-
-Install WebKitGTK and GTK:
-```bash
-sudo pacman -S webkit2gtk gtk3
-```
-
-Install optional GStreamer plugins for media playback:
-```bash
-sudo pacman -S gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav
-```
-
-</TabItem>
-</Tabs>
+On many desktops the AppImage runs with the libraries already installed. If Terminal mentions **FUSE** or **libfuse.so.2**, run the [one-line installer](#linux). It chooses the FUSE package for your distribution, such as `libfuse2t64` on Ubuntu 24.04. For storing credentials, the installer also handles **libsecret** and checks for **GNOME Keyring** on desktops other than KDE. [Read the official installer script](https://updates.phcode.io/linux/installer.sh).
 
 ### FAQ
 
-**How can I verify my distribution is supported?**
+**How do I update the Linux app?**
 
-Run the [one-line installer](#linux). If it completes successfully, your distribution is supported.
+If you used the installer, open Phoenix Code and follow its update notification. If you use a standalone AppImage, download the new **.AppImage** from the same release page and repeat the [file permissions step](#manual-installation).
 
-**How do I upgrade Phoenix Code?**
+**Phoenix won’t start after installing. What can I do?**
 
-For automatic installations, you'll get an update notification in the app itself. For manual installations, repeat the [manual installation](#manual-installation) steps.
-
-**Phoenix won't start after installing — what can I do?**
-
-Restart your system, then confirm the [dependencies](#dependencies) for your distribution are installed.
+Follow the [startup recovery steps](/docs/startup-crash#no-window). They cover the first restart and how to reinstall the Linux AppImage while keeping your saved projects.
