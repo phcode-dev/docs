@@ -28,7 +28,7 @@ function release(asset, sha) {
 function sleep(ms) { Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms); }
 const project = path.join(os.homedir(), 'Documents', 'Phoenix Code guide example', 'index.html');
 seed(project, '<h1>My saved project</h1>');
-const prefs = path.join(process.platform === 'win32' ? process.env.LOCALAPPDATA : process.platform === 'darwin' ? path.join(os.homedir(), 'Library', 'Application Support') : path.join(os.homedir(), '.local', 'share'), 'io.phcode','user','phcode.json');
+const prefs = path.join(process.platform === 'win32' ? process.env.LOCALAPPDATA : process.platform === 'darwin' ? path.join(os.homedir(), 'Library', 'Application Support') : path.join(os.homedir(), '.local', 'share'), 'io.phcode','phcode.json');
 seed(prefs, '{"tabSize":2}');
 record('Native host: ' + process.platform + ' ' + os.release());
 if (process.platform === 'darwin') {
