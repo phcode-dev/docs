@@ -1,14 +1,14 @@
 ---
-title: Installation Guide
+title: Install or uninstall Phoenix Code
+sidebar_label: Installation Guide
 slug: "/intro"
+description: Install or uninstall the Phoenix Code desktop app on Windows, macOS, or Linux. Learn how to remove the app and keep your saved projects and settings.
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Phoenix Code Installation Guide
-
-Phoenix Code is a text editor designed to make coding as intuitive and fun as playing a video game — specially crafted for web developers, designers, and students. This guide walks you through downloading and installing Phoenix Code on Windows, macOS, and Linux, or running it straight from your browser with no install at all.
+You can install Phoenix Code on Windows, macOS, or Linux, or [use it in your browser](#use-it-in-the-browser). If you're here to remove the desktop app, jump to the steps for [Windows](#uninstall-windows), [Mac](#uninstall-mac), or [Linux](#uninstalling).
 
 ## Download
 
@@ -51,7 +51,7 @@ wget -qO- https://updates.phcode.io/linux/installer.sh | bash
 
 This installs Phoenix Code along with all required dependencies, and sets up app-drawer shortcuts and file associations automatically. It works on all major distributions, including Ubuntu, Debian, Fedora, and Arch-based systems.
 
-Need to install by hand, check dependencies, or uninstall? See [Advanced Linux installation](#linux-advanced) below.
+To remove this installation, follow [Uninstall on Linux](#uninstalling). For manual setup or dependencies, see [Advanced Linux installation](#linux-advanced).
 
 ## Use it in the browser
 
@@ -59,21 +59,46 @@ Prefer not to install anything? Run the full editor right in your browser at [we
 
 If you used the browser app at phcode.dev before, your projects, settings, and extensions are copied over the first time you open web.phcode.dev. To run the copy again, choose **Help > Migrate My Data From phcode.dev…**. This transfer is not available in Safari or on iOS.
 
----
+## Uninstall Phoenix Code {#uninstall-phoenix-code}
 
-## Advanced Linux installation {#linux-advanced}
+Phoenix Pro and Community (free) use the same desktop app. Save your open files and quit Phoenix Code before you start. Projects you've saved in a folder such as **Documents** stay there when you remove the app. If you put a project inside the app's installation folder, move it to **Documents** first.
 
-The one-line installer above is all most users need. The sections below cover manual installation, runtime dependencies, and common questions.
+### Uninstall on Windows {#uninstall-windows}
 
-### Uninstalling
+1. Open **Start → Settings → Apps**. On Windows 11, choose **Installed apps**. On Windows 10, choose **Apps & features**.
+2. Find **Phoenix Code**. On Windows 11, click the three dots next to its name and choose **Uninstall**. On Windows 10, click **Phoenix Code**, then **Uninstall**. Confirm if Windows asks.
+3. If the uninstaller asks you to choose a language, select yours and click **OK**. In the **Phoenix Code Uninstall** window, leave **Delete the application data** unchecked to keep your settings. Click **Uninstall**.
 
-To remove an automatic installation, run:
+   [![Phoenix Code Uninstall on Windows with “Delete the application data” unchecked and the Uninstall button at the bottom right.](/img/installation/windows-uninstall-phoenix-code.png)](/img/installation/windows-uninstall-phoenix-code.png)
+
+When removal finishes, **Phoenix Code** disappears from the installed apps list. If you downloaded the **portable ZIP** instead of the installer, use File Explorer to remove the folder where you extracted the app.
+
+### Uninstall on a Mac (macOS) {#uninstall-mac}
+
+1. Click **Finder** in the Dock. From the menu bar at the top of the screen, choose **Go → Applications**.
+2. Click **Phoenix Code** once to select the app. If you installed it just for your account, look in **Go → Home → Applications** instead.
+
+   [![Phoenix Code selected in Finder’s Applications folder, with Application in the Kind column.](/img/installation/mac-select-phoenix-code.png)](/img/installation/mac-select-phoenix-code.png)
+
+3. In Finder's menu bar, choose **File → Move to Trash** (or **Move to Bin**, depending on your region). Enter your Mac login details if Finder asks.
+
+Phoenix Code moves from **Applications** to the **Trash**. Your saved projects and the settings in your personal Library stay in place.
+
+### Uninstall on Linux {#uninstalling}
+
+If you installed Phoenix Code with the [one-line installer](#linux), open **Terminal** from your desktop's applications menu. Paste the following command and press **Enter**. It removes the installed app and its launcher immediately.
 
 ```bash
 wget -qO- https://updates.phcode.io/linux/installer.sh | bash -s -- --uninstall
 ```
 
-For a manual installation, delete the folder where you placed the Phoenix Code app, along with any related files.
+When Terminal shows **Uninstallation of Phoenix Code completed.**, the app and its launcher have been removed. Your saved projects and personal settings stay in place.
+
+If you downloaded a standalone **AppImage**, move that file to the Trash in your file manager. For an older manual installation from an archive, remove the folder where you extracted the app after moving any projects out of it.
+
+## Advanced Linux installation {#linux-advanced}
+
+The one-line installer above is all most users need. The sections below cover manual installation, runtime dependencies, and common questions.
 
 ### Manual installation
 
