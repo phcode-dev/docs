@@ -1,0 +1,27 @@
+name: Verify Phoenix Code removal on native desktops
+on:
+  push:
+    branches: [qa/uninstall-platform-checks]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, windows-2022, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Check saved files, preferences and app removal
+        run: node scripts/qa-desktop-removal.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: desktop-${{ matrix.os }}
+          path: removal-results/
+          retention-days: 3
