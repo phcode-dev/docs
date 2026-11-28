@@ -1,5 +1,5 @@
 ---
-title: Install or uninstall Phoenix Code
+title: Phoenix Code Installation Guide
 sidebar_label: Installation Guide
 slug: "/intro"
 description: Install or uninstall the Phoenix Code desktop app on Windows, macOS, or Linux. Learn how to remove the app and keep your saved projects and settings.
@@ -51,7 +51,7 @@ wget -qO- https://updates.phcode.io/linux/installer.sh | bash
 
 This installs Phoenix Code along with all required dependencies, and sets up app-drawer shortcuts and file associations automatically. It works on all major distributions, including Ubuntu, Debian, Fedora, and Arch-based systems.
 
-To remove this installation, follow [Uninstall on Linux](#uninstalling). For manual setup or dependencies, see [Advanced Linux installation](#linux-advanced).
+If you need help with this installation, see [manual setup and dependencies](#linux-advanced) or [how to remove the Linux app](#uninstalling).
 
 ## Use it in the browser
 
@@ -63,7 +63,7 @@ If you used the browser app at phcode.dev before, your projects, settings, and e
 
 Phoenix Pro and Community (free) use the same desktop app. Save your open files and quit Phoenix Code before you start. Projects you've saved in a folder such as **Documents** stay there when you remove the app. If you put a project inside the app's installation folder, move it to **Documents** first.
 
-### Uninstall on Windows {#uninstall-windows}
+### Uninstall Phoenix Code on Windows {#uninstall-windows}
 
 1. Open **Start → Settings → Apps**. On Windows 11, choose **Installed apps**. On Windows 10, choose **Apps & features**.
 2. Find **Phoenix Code**. On Windows 11, click the three dots next to its name and choose **Uninstall**. On Windows 10, click **Phoenix Code**, then **Uninstall**. Confirm if Windows asks.
@@ -73,7 +73,7 @@ Phoenix Pro and Community (free) use the same desktop app. Save your open files 
 
 When removal finishes, **Phoenix Code** disappears from the installed apps list. If you downloaded the **portable ZIP** instead of the installer, use File Explorer to remove the folder where you extracted the app.
 
-### Uninstall on a Mac (macOS) {#uninstall-mac}
+### Uninstall Phoenix Code on a Mac (macOS) {#uninstall-mac}
 
 1. Click **Finder** in the Dock. From the menu bar at the top of the screen, choose **Go → Applications**.
 2. Click **Phoenix Code** once to select the app. If you installed it just for your account, look in **Go → Home → Applications** instead.
@@ -84,7 +84,7 @@ When removal finishes, **Phoenix Code** disappears from the installed apps list.
 
 Phoenix Code moves from **Applications** to the **Trash**. Your saved projects and the settings in your personal Library stay in place.
 
-### Uninstall on Linux {#uninstalling}
+### Uninstall Phoenix Code on Linux {#uninstalling}
 
 If you installed Phoenix Code with the [one-line installer](#linux), open **Terminal** from your desktop's applications menu. Paste the following command and press **Enter**. It removes the installed app and its launcher immediately.
 
