@@ -8,7 +8,7 @@
     "poster": "/tutorials/media/trail-table-pro-poster.jpg",
     "captions": "/tutorials/media/trail-table-pro.vtt",
     "width": 1032,
-    "height": 780,
+    "height": 820,
     "label": "Build the Trail Notes table visually in Phoenix Pro",
     "metadata": {
       "name": "Build an illustrated HTML table in Phoenix Pro",
@@ -47,7 +47,7 @@
     "poster": "/tutorials/media/trail-table-community-poster.jpg",
     "captions": "/tutorials/media/trail-table-community.vtt",
     "width": 1120,
-    "height": 780,
+    "height": 820,
     "label": "Build the Trail Notes table in HTML using Community features",
     "metadata": {
       "name": "Build an illustrated HTML table in Phoenix Code Community",
