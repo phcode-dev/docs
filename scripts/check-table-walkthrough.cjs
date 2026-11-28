@@ -11,9 +11,9 @@ const root = path.resolve(__dirname, '..');
 function extract(archive, destination) {
   switch (process.platform) {
     case 'win32':
-      execFileSync('powershell.exe', [
-        '-NoProfile', '-Command',
-        'Expand-Archive -LiteralPath $env:TABLE_ZIP -DestinationPath $env:TABLE_DESTINATION'
+      execFileSync('pwsh.exe', [
+        '-NoProfile', '-NonInteractive', '-Command',
+        'Expand-Archive -LiteralPath $env:TABLE_ZIP -DestinationPath $env:TABLE_DESTINATION -ErrorAction Stop'
       ], {env: {...process.env, TABLE_ZIP: archive, TABLE_DESTINATION: destination}});
       break;
     case 'darwin':
